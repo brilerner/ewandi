@@ -1,0 +1,11 @@
+{
+    "name": "string (Name)",
+    "type": "string (Type of event)",
+    "part": "string (Part of body)",
+    "status": {
+        "pain": "bool",
+        "intensity": "int (0-10)"
+    },
+    "start_datetime": "string (Start Timestamp)",
+    "end_datetime": "string (End Timestamp)"
+}

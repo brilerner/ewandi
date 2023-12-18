@@ -1,0 +1,1 @@
+OPENAI = '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'

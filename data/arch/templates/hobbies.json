@@ -1,0 +1,7 @@
+{
+    "name": "string (Name)",
+    "type": "personal time",
+    "enjoyed": "bool",
+    "start_datetime": "string (Start Timestamp)",
+    "end_datetime": "string (End Timestamp)"
+}

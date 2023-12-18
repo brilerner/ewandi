@@ -1,0 +1,51 @@
+{
+    "id": "AAMkAGI2THk0NzJjLTk3OTAtNGExMi1hODIwLWUxNmU0Y2UzYmRkYQBGAAAAAAD5LOF2x6FURK9LutWkBwCQ-4Gz",
+    "subject": "Team Meeting",
+    "body": {
+        "contentType": "HTML",
+        "content": "Discuss project updates and next steps."
+    },
+    "start": {
+        "dateTime": "2023-12-05T09:00:00",
+        "timeZone": "Pacific Standard Time"
+    },
+    "end": {
+        "dateTime": "2023-12-05T10:00:00",
+        "timeZone": "Pacific Standard Time"
+    },
+    "location": {
+        "displayName": "Conference Room B"
+    },
+    "attendees": [
+        {
+            "emailAddress": {
+                "name": "John Doe",
+                "address": "johndoe@example.com"
+            },
+            "type": "required"
+        },
+        {
+            "emailAddress": {
+                "name": "Jane Smith",
+                "address": "janesmith@example.com"
+            },
+            "type": "optional"
+        }
+    ],
+    "organizer": {
+        "emailAddress": {
+            "name": "Alice Johnson",
+            "address": "alicej@example.com"
+        }
+    },
+    "importance": "normal",
+    "sensitivity": "normal",
+    "isAllDay": false,
+    "isCancelled": false,
+    "isOrganizer": true,
+    "recurrence": null,
+    "responseRequested": true,
+    "seriesMasterId": null,
+    "showAs": "busy",
+    "type": "singleInstance"
+}

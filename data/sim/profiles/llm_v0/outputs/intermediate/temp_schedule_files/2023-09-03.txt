@@ -1,0 +1,20 @@
+Date: 2023-09-03 (Sunday)
+
+Calendar Events:
+  Event 1:
+    - Name: Basketball Practice
+    - Location: The K Center
+    - Description: Practice for the Duke basketball team.
+    - Start Time: 18:00
+    - Duration: 2 hours
+
+Hobbies:
+  Event 1:
+    - Name: playing videogames
+    - Location: Len's apartment
+    - Description: Helps Len destress.
+    - Start Time: 23:00
+    - Duration: 45 minutes
+    - Type: personal time
+    - Enjoyed: True
+

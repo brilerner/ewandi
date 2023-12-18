@@ -1,0 +1,18 @@
+# name: cerebra_v1
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - numpy
+  - pandas
+  - scipy
+  - matplotlib
+  - scikit-learn
+  - nodejs
+  - jupyter
+  - jupyterlab
+  - langchain
+  - plotly
+  - openai
+  - streamlit
+  - pymongo

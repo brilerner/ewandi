@@ -1,0 +1,8 @@
+{
+    "name": "string (Event Name)",
+    "description": "string (Event Description)",
+    "start_datetime": "string (Start Timestamp)",
+    "end_datetime": "string (End Timestamp)",
+    "location": "string (Location Name)"
+  }
+  

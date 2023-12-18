@@ -1,0 +1,25 @@
+# start server
+mongod --dbpath /Users/brianlerner/Library/CloudStorage/OneDrive-Personal/Code/Cerebra v2/data/db
+
+# tips
+If Apple suspicious of mongodb, check in system prefs to allow
+`mongosh` will auto connect to a server
+When working locally, I need to start the mongodb server each time I want to use it
+
+# conda
+conda env create -f environment.yml -n my_env
+conda env remove --name cerebra_proto   
+
+# mongodb
+inserting a single entry json: insertOne
+inserting a json array: insertMany
+
+# terminal
+To run a file in a subfolder but maintain access to the utils code:
+python -m folder.subfolder.python_filename (need to run from root)
+
+# vs code
+use the multi-cursor feature to edit multiple lines at the same time. Here's how to do it on a Mac:
+Select the Text: Click and drag to select /mnt/data in the first line.
+Find Next: Hold down the Cmd key and press D to find the next instance of /mnt/data. Repeat this step until you've selected all instances you want to replace.
+Type the Replacement: Start typing the new path. All instances of /mnt/data will be replaced with what you type.

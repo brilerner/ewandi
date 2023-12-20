@@ -7,7 +7,7 @@ from openai import OpenAI
 import sys
 sys.path.append('/Users/brianlerner/Library/CloudStorage/OneDrive-Personal/Code/cerebra/src')
 from utils.viz import get_plotly_figure
-import prompts.prompts as PROMPTS
+import prompts.clowngpt as PROMPTS
 
 client = OpenAI()
 MODEL_NAME = 'gpt-3.5-turbo'

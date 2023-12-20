@@ -11,7 +11,7 @@ dependencies:
   - nodejs
   - jupyter
   - jupyterlab
-  - langchain
+  # - langchain
   - plotly
   - openai
   - streamlit

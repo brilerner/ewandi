@@ -2,6 +2,8 @@
 
 # After I start ther server, check if working using `mongosh` command
 
+# to run: sh start_mongodb.sh
+
 # Custom MongoDB Data Directory
 MONGO_DATA_DIR="$HOME/Library/CloudStorage/OneDrive-Personal/Code/cerebra_v2/data/db"
 

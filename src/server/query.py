@@ -68,7 +68,7 @@ def get_events(
     pipeline = [
         {"$match": {"profile_id": profile}},  # Filter to the specific profile
         {"$project": {  # Project only the calendarEvents field
-            "calendar_events": {
+            cat: {
                 "$filter": {  # Filter the calendarEvents array
                     "input": f"${cat}",
                     "as": "event",
@@ -89,12 +89,12 @@ def get_events(
         for events in events_list:
             # print(events)
             print()
-            for event in events.get("calendar_events", []):
+            for event in events.get(cat, []):
                 print(event)
 
-
-    return events_list
+    return events_list[0][cat]
 
 def get_n_occurrences(variable):
-    events = get_events(event_name=variable_name)
+    events = get_events(event_name=variable)
     return len(events)
+    # return events

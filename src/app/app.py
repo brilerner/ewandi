@@ -7,13 +7,26 @@ from openai import OpenAI
 import sys
 sys.path.append('/Users/brianlerner/Library/CloudStorage/OneDrive-Personal/Code/cerebra/src')
 from utils.viz import get_plotly_figure
-import prompts.prompts as PROMPTS
+import prompts.engine as PROMPTS
+
+from llm.chat import chat_completion_request, Conversation
+from tools.tools import tools, call_function
+
+import logging
 
 client = OpenAI()
-MODEL_NAME = 'gpt-3.5-turbo'
+# MODEL_NAME = 'gpt-3.5-turbo'
+# # MODEL_NAME = 'gpt-4'
+
+MODEL_NAME = "gpt-3.5-turbo-0613"
+STREAM=False
+
+logging.info("--------------------------- NEW RUN ------------------------------------------------------")
 
 def main():
 
+
+    logging.info("Starting CerebraChat")
     st.sidebar.title("Navigation")
     choice = st.sidebar.radio(
         "Choose a Tab", 
@@ -33,43 +46,56 @@ def main():
 
 def show_chatbot_tab():
 
-    if "openai_model" not in st.session_state:
-        st.session_state["openai_model"] = MODEL_NAME
 
-    if "messages" not in st.session_state:
-        st.session_state.messages = [
-            {"role": "system", "content": PROMPTS.system}
-        ]
+    conversation = Conversation(first_message = ("system", PROMPTS.system))
+    # conversation.add_message("system", PROMPTS.system)
 
-    # Omit system messages from chat history
-    for message in st.session_state.messages:
-        if message["role"] != "system":
+    for message in conversation.messages:
+        if type(message) != dict:
+            message = dict(message)
+        logging.info(f"check role: {message}")
+        if message["role"] != "system" and message["role"] != "tool" :
             with st.chat_message(message["role"]):
                 st.markdown(message["content"])
 
-    # Accept user input
-    if prompt := st.chat_input(PROMPTS.opener):
-        st.session_state.messages.append({"role": "user", "content": prompt})
+    with st.chat_message("user"):
+        st.write("How many occurrences of Basketball Game are there?")
+
+    # Accept user input; uses walrus operator
+    # if prompt := st.chat_input(PROMPTS.opener):
+        # if prompt == "q":
+        #     prompt = "How many occurrences of Basketball Game are there?"
+        # conversation.messages.append({"role": "user", "content": prompt})
+        
+    testing = True
+    if testing:
+        prompt = "How many occurrences of Basketball Game are there?"
+        conversation.messages.append({"role": "user", "content": prompt})
+        
         with st.chat_message("user"):
             st.markdown(prompt)
+
 
         with st.chat_message("assistant"):
             message_placeholder = st.empty()
             full_response = ""
-            for response in client.chat.completions.create(
-                model=st.session_state["openai_model"],
-                messages=[
-                    {"role": m["role"], "content": m["content"]}
-                    for m in st.session_state.messages
-                ],
-                stream=True,
-            ):
-                full_response += (response.choices[0].delta.content or "")
-                message_placeholder.markdown(full_response + "▌")
+            if STREAM:
+                for response in chat_completion_request(conversation, model=MODEL_NAME, tools=tools, stream=STREAM):
+                    full_response += (response.choices[0].delta.content or "")
+                    # logging.info(f"full response: {full_response}")
+                    message_placeholder.markdown(full_response + "▌")
+                    time.sleep(0.1)
+            else:
+                    response = chat_completion_request(conversation, model=MODEL_NAME, tools=tools, stream=STREAM)
+                    logging.info("non steam response in app.py: " + str(response))
+                    full_response = response.choices[0].message.content 
+                    # logging.info(f"full response: {full_response}")
+                    # message_placeholder.markdown(full_response + "▌")
+                    # time.sleep(0.1)     
             message_placeholder.markdown(full_response)
-            st.session_state.messages.append({"role": "assistant", "content": full_response})
+                
         # plot chart to test
-        st.plotly_chart(get_plotly_figure(), use_container_width=True)
+        # st.plotly_chart(get_plotly_figure(), use_container_width=True)
 
 def show_overview_tab():
 

@@ -9,12 +9,11 @@ from termcolor import colored
 import json
 
 from utils.logging import set_logger
-from utils.viz import pretty_print_conversation
 from viz.plot import plot_occurrence
 from server.query import get_n_occurrences
 from tools.tools import tools
-import prompts.engine as PROMPTS
-from pathlib import Path_
+import prompts.engine_basic as PROMPTS
+from pathlib import Path
 
 
 # to do
@@ -41,20 +40,21 @@ def chat_completion_request(conversation, tools=None, tool_choice=None, model=GP
 
     logger.info("Generating ChatCompletion response")
 
+
     try:
         client = OpenAI()
         response = client.chat.completions.create(
                         model=model,
-                        messages=conversation.messages,
+                        messages=conversation.conversation_history,
                         # stream=True,
                         tools=tools,
                         tool_choice=tool_choice,
                     )
-
+        logger.info(f"ChatCompletion response: {response}")
         if append:
             assistant_message = response.choices[0].message
             logger.info(f"Appending assistant message: {assistant_message}")
-            conversation.messages.append(assistant_message)
+            conversation.conversation_history.append((assistant_message))
 
         # make tool call if necessary
         full_message = response.choices[0].message
@@ -63,7 +63,7 @@ def chat_completion_request(conversation, tools=None, tool_choice=None, model=GP
             function = full_message.tool_calls[0].function
                         
             function_content = call_function(function, conversation)
-            conversation.messages.append(
+            conversation.conversation_history.append(
                     {
                         "tool_call_id": full_message.tool_calls[0].id,
                         "role": "tool",
@@ -79,7 +79,7 @@ def chat_completion_request(conversation, tools=None, tool_choice=None, model=GP
         
     except Exception as e:
         logger.exception("Unable to generate ChatCompletion response")
-        logger.info(conversation.messages)
+        logger.info(conversation.conversation_history)
         print("Unable to generate ChatCompletion response")
         print(f"Exception: {e}")
         return e
@@ -112,16 +112,16 @@ def get_occurrence_information(variable):
 
 class Conversation:
     def __init__(self):
-        self.messages = []
+        self.conversation_history = []
 
     def add_message(self, role, content):
         logger.info(f"Adding message to conversation: {role}: {content}")
         message = {"role": role, "content": content}
         # message = {"role": role, "content": content}
-        self.messages.append(message)
+        self.conversation_history.append(message)
 
     def append_message(self, obj):
-        self.messages.append(obj)
+        self.conversation_history.append(obj)
 
     def display_conversation(self, detailed=False):
         role_to_color = {
@@ -130,13 +130,35 @@ class Conversation:
             "assistant": "blue",
             "function": "magenta",
         }
-        for message in self.messages:
+        for message in self.conversation_history:
             print(
                 colored(
                     f"{message['role']}: {message['content']}\n\n",
                     role_to_color[message["role"]],
                 )
             )
+
+def pretty_print_conversation(messages):
+    role_to_color = {
+        "system": "red",
+        "user": "green",
+        "assistant": "blue",
+        "tool": "magenta",
+    }
+    
+    for message in messages:
+        if type(message) != dict:
+            message = dict(message)
+        if message["role"] == "system":
+            print(colored(f"system: {message['content']}\n", role_to_color[message["role"]]))
+        elif message["role"] == "user":
+            print(colored(f"user: {message['content']}\n", role_to_color[message["role"]]))
+        elif message["role"] == "assistant" and message.get("function_call"):
+            print(colored(f"assistant: {message['function_call']}\n", role_to_color[message["role"]]))
+        elif message["role"] == "assistant" and not message.get("function_call"):
+            print(colored(f"assistant: {message['content']}\n", role_to_color[message["role"]]))
+        elif message["role"] == "tool":
+            print(colored(f"function ({message['name']}): {message['content']}\n", role_to_color[message["role"]]))
 
 ### Conversation
 
@@ -152,5 +174,11 @@ chat_response = chat_completion_request(
     conversation, tools=tools
 )
 # assistant_message = chat_response.choices[0].message
-pretty_print_conversation(conversation.messages)
+pretty_print_conversation(conversation.conversation_history)
+print()
+print("Here is the list of messages:")
+print()
+for message in conversation.conversation_history:
+    print(message)
+    print()
 # display(Markdown(assistant_message))

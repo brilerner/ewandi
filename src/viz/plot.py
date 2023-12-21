@@ -1,6 +1,6 @@
 import sys
 sys.path.append('/Users/brianlerner/Library/CloudStorage/OneDrive-Personal/Code/cerebra/src')
-from server.query_data import get_events
+from server.query import get_events
 from datetime import datetime, timedelta
 import pandas as pd
 import plotly.express as px

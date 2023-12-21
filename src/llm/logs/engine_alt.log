@@ -1,0 +1,266 @@
+2023-12-20 00:54:37,933:INFO: Adding message to conversation: system: You are Cerebra, a helpful assistant that pulls a user's personal data to help them know themselves better. You answer the user's question concisely and helpfully.
+You always provide the stored name of the accessed data so the user can understand the process better.
+Begin!
+2023-12-20 00:54:37,933:INFO: Adding message to conversation: user: How many times does the Basketball Game occur?
+2023-12-20 00:54:37,933:INFO: Generating ChatCompletion response
+2023-12-20 00:54:38,811:INFO: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2023-12-20 00:54:38,814:INFO: Appending assistant message: None
+2023-12-20 00:54:38,815:INFO: Adding message to conversation: assistant: None
+2023-12-20 00:54:38,815:INFO: Function call: get_occurrence
+2023-12-20 00:54:38,815:INFO: Adding message to conversation: system: The mapping between the dataset variable names and the categories they belong to:
+{'elbow pain': 'extracted', 'Basketball Game': 'calendar_events', 'Computer Programming': 'calendar_events', 'Basketball Practice': 'calendar_events', 'Discrete Mathematics': 'calendar_events', 'Discrete Mathematics HW due': 'calendar_events', 'Computer Programming HW due': 'calendar_events'}
+
+2023-12-20 00:54:38,926:INFO: Resubmitting function: get_occurrence
+2023-12-20 00:54:38,926:INFO: Generating ChatCompletion response
+2023-12-20 00:54:39,132:INFO: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 400 Bad Request"
+2023-12-20 00:54:39,133:ERROR: Unable to generate ChatCompletion response
+Traceback (most recent call last):
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-Personal/Code/cerebra/src/llm/engine_alt.py", line 47, in chat_completion_request
+    response = client.chat.completions.create(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/brianlerner/miniconda3/envs/c2/lib/python3.12/site-packages/openai/_utils/_utils.py", line 303, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/brianlerner/miniconda3/envs/c2/lib/python3.12/site-packages/openai/resources/chat/completions.py", line 645, in create
+    return self._post(
+           ^^^^^^^^^^^
+  File "/Users/brianlerner/miniconda3/envs/c2/lib/python3.12/site-packages/openai/_base_client.py", line 1088, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/brianlerner/miniconda3/envs/c2/lib/python3.12/site-packages/openai/_base_client.py", line 853, in request
+    return self._request(
+           ^^^^^^^^^^^^^^
+  File "/Users/brianlerner/miniconda3/envs/c2/lib/python3.12/site-packages/openai/_base_client.py", line 930, in _request
+    raise self._make_status_error_from_response(err.response) from None
+openai.BadRequestError: Error code: 400 - {'error': {'message': "Invalid value for 'content': expected a string, got null.", 'type': 'invalid_request_error', 'param': 'messages.[2].content', 'code': None}}
+2023-12-20 00:54:39,135:INFO: [{'role': 'system', 'content': "You are Cerebra, a helpful assistant that pulls a user's personal data to help them know themselves better. You answer the user's question concisely and helpfully.\nYou always provide the stored name of the accessed data so the user can understand the process better.\nBegin!"}, {'role': 'user', 'content': 'How many times does the Basketball Game occur?'}, {'role': 'assistant', 'content': None}, {'role': 'system', 'content': "The mapping between the dataset variable names and the categories they belong to:\n{'elbow pain': 'extracted', 'Basketball Game': 'calendar_events', 'Computer Programming': 'calendar_events', 'Basketball Practice': 'calendar_events', 'Discrete Mathematics': 'calendar_events', 'Discrete Mathematics HW due': 'calendar_events', 'Computer Programming HW due': 'calendar_events'}\n"}, {'tool_call_id': 'call_X8u4FcPPRdKzqpODwvhV2Cyu', 'role': 'tool', 'name': 'get_occurrence', 'content': '1'}]
+2023-12-20 01:05:42,533:INFO: Adding message to conversation: system: You are Cerebra, a helpful assistant that pulls a user's personal data to help them know themselves better. You answer the user's question concisely and helpfully.
+You always provide the stored name of the accessed data so the user can understand the process better.
+Begin!
+2023-12-20 01:05:42,533:INFO: Adding message to conversation: user: How many times does the Basketball Game occur?
+2023-12-20 01:05:42,533:INFO: Generating ChatCompletion response
+2023-12-20 01:05:43,405:INFO: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2023-12-20 01:05:43,408:INFO: Appending assistant message: ChatCompletionMessage(content=None, role='assistant', function_call=None, tool_calls=[ChatCompletionMessageToolCall(id='call_lJ2dbqrQVHOaerMXgPsbUmTv', function=Function(arguments='{\n"variable": "Basketball Game"\n}', name='get_occurrence'), type='function')])
+2023-12-20 01:05:43,408:INFO: Function call: get_occurrence
+2023-12-20 01:05:43,408:INFO: Adding message to conversation: system: The mapping between the dataset variable names and the categories they belong to:
+{'elbow pain': 'extracted', 'Basketball Game': 'calendar_events', 'Computer Programming': 'calendar_events', 'Basketball Practice': 'calendar_events', 'Discrete Mathematics': 'calendar_events', 'Discrete Mathematics HW due': 'calendar_events', 'Computer Programming HW due': 'calendar_events'}
+
+2023-12-20 01:05:43,519:INFO: Resubmitting function: get_occurrence
+2023-12-20 01:05:43,519:INFO: Generating ChatCompletion response
+2023-12-20 01:05:43,722:INFO: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 400 Bad Request"
+2023-12-20 01:05:43,722:ERROR: Unable to generate ChatCompletion response
+Traceback (most recent call last):
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-Personal/Code/cerebra/src/llm/engine_alt.py", line 47, in chat_completion_request
+    response = client.chat.completions.create(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/brianlerner/miniconda3/envs/c2/lib/python3.12/site-packages/openai/_utils/_utils.py", line 303, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/brianlerner/miniconda3/envs/c2/lib/python3.12/site-packages/openai/resources/chat/completions.py", line 645, in create
+    return self._post(
+           ^^^^^^^^^^^
+  File "/Users/brianlerner/miniconda3/envs/c2/lib/python3.12/site-packages/openai/_base_client.py", line 1088, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/brianlerner/miniconda3/envs/c2/lib/python3.12/site-packages/openai/_base_client.py", line 853, in request
+    return self._request(
+           ^^^^^^^^^^^^^^
+  File "/Users/brianlerner/miniconda3/envs/c2/lib/python3.12/site-packages/openai/_base_client.py", line 930, in _request
+    raise self._make_status_error_from_response(err.response) from None
+openai.BadRequestError: Error code: 400 - {'error': {'message': "An assistant message with 'tool_calls' must be followed by tool messages responding to each 'tool_call_id'. The following tool_call_ids did not have response messages: call_lJ2dbqrQVHOaerMXgPsbUmTv", 'type': 'invalid_request_error', 'param': 'messages.[3].role', 'code': None}}
+2023-12-20 01:05:43,725:INFO: [{'role': 'system', 'content': "You are Cerebra, a helpful assistant that pulls a user's personal data to help them know themselves better. You answer the user's question concisely and helpfully.\nYou always provide the stored name of the accessed data so the user can understand the process better.\nBegin!"}, {'role': 'user', 'content': 'How many times does the Basketball Game occur?'}, ChatCompletionMessage(content=None, role='assistant', function_call=None, tool_calls=[ChatCompletionMessageToolCall(id='call_lJ2dbqrQVHOaerMXgPsbUmTv', function=Function(arguments='{\n"variable": "Basketball Game"\n}', name='get_occurrence'), type='function')]), {'role': 'system', 'content': "The mapping between the dataset variable names and the categories they belong to:\n{'elbow pain': 'extracted', 'Basketball Game': 'calendar_events', 'Computer Programming': 'calendar_events', 'Basketball Practice': 'calendar_events', 'Discrete Mathematics': 'calendar_events', 'Discrete Mathematics HW due': 'calendar_events', 'Computer Programming HW due': 'calendar_events'}\n"}, {'tool_call_id': 'call_lJ2dbqrQVHOaerMXgPsbUmTv', 'role': 'tool', 'name': 'get_occurrence', 'content': '1'}]
+2023-12-20 01:06:21,820:INFO: Adding message to conversation: system: You are Cerebra, a helpful assistant that pulls a user's personal data to help them know themselves better. You answer the user's question concisely and helpfully.
+You always provide the stored name of the accessed data so the user can understand the process better.
+Begin!
+2023-12-20 01:06:21,821:INFO: Adding message to conversation: user: How many times does the Basketball Game occur?
+2023-12-20 01:06:21,821:INFO: Generating ChatCompletion response
+2023-12-20 01:06:22,726:INFO: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2023-12-20 01:06:22,728:INFO: Appending assistant message: ChatCompletionMessage(content=None, role='assistant', function_call=None, tool_calls=[ChatCompletionMessageToolCall(id='call_ifUajNATLYwlAgH04623HfQY', function=Function(arguments='{\n  "variable": "Basketball Game"\n}', name='get_occurrence'), type='function')])
+2023-12-20 01:06:22,728:INFO: Function call: get_occurrence
+2023-12-20 01:06:22,728:INFO: Adding message to conversation: system: The mapping between the dataset variable names and the categories they belong to:
+{'elbow pain': 'extracted', 'Basketball Game': 'calendar_events', 'Computer Programming': 'calendar_events', 'Basketball Practice': 'calendar_events', 'Discrete Mathematics': 'calendar_events', 'Discrete Mathematics HW due': 'calendar_events', 'Computer Programming HW due': 'calendar_events'}
+
+2023-12-20 01:06:22,837:INFO: Resubmitting function: get_occurrence
+2023-12-20 01:06:22,837:INFO: Generating ChatCompletion response
+2023-12-20 01:06:23,032:INFO: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 400 Bad Request"
+2023-12-20 01:06:23,033:ERROR: Unable to generate ChatCompletion response
+Traceback (most recent call last):
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-Personal/Code/cerebra/src/llm/engine_alt.py", line 47, in chat_completion_request
+    response = client.chat.completions.create(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/brianlerner/miniconda3/envs/c2/lib/python3.12/site-packages/openai/_utils/_utils.py", line 303, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/brianlerner/miniconda3/envs/c2/lib/python3.12/site-packages/openai/resources/chat/completions.py", line 645, in create
+    return self._post(
+           ^^^^^^^^^^^
+  File "/Users/brianlerner/miniconda3/envs/c2/lib/python3.12/site-packages/openai/_base_client.py", line 1088, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/brianlerner/miniconda3/envs/c2/lib/python3.12/site-packages/openai/_base_client.py", line 853, in request
+    return self._request(
+           ^^^^^^^^^^^^^^
+  File "/Users/brianlerner/miniconda3/envs/c2/lib/python3.12/site-packages/openai/_base_client.py", line 930, in _request
+    raise self._make_status_error_from_response(err.response) from None
+openai.BadRequestError: Error code: 400 - {'error': {'message': "None is not of type 'object' - 'messages.2.function_call'", 'type': 'invalid_request_error', 'param': None, 'code': None}}
+2023-12-20 01:06:23,034:INFO: [{'role': 'system', 'content': "You are Cerebra, a helpful assistant that pulls a user's personal data to help them know themselves better. You answer the user's question concisely and helpfully.\nYou always provide the stored name of the accessed data so the user can understand the process better.\nBegin!"}, {'role': 'user', 'content': 'How many times does the Basketball Game occur?'}, {'content': None, 'role': 'assistant', 'function_call': None, 'tool_calls': [ChatCompletionMessageToolCall(id='call_ifUajNATLYwlAgH04623HfQY', function=Function(arguments='{\n  "variable": "Basketball Game"\n}', name='get_occurrence'), type='function')]}, {'role': 'system', 'content': "The mapping between the dataset variable names and the categories they belong to:\n{'elbow pain': 'extracted', 'Basketball Game': 'calendar_events', 'Computer Programming': 'calendar_events', 'Basketball Practice': 'calendar_events', 'Discrete Mathematics': 'calendar_events', 'Discrete Mathematics HW due': 'calendar_events', 'Computer Programming HW due': 'calendar_events'}\n"}, {'tool_call_id': 'call_ifUajNATLYwlAgH04623HfQY', 'role': 'tool', 'name': 'get_occurrence', 'content': '1'}]
+2023-12-20 01:07:17,055:INFO: Adding message to conversation: system: You are Cerebra, a helpful assistant that pulls a user's personal data to help them know themselves better. You answer the user's question concisely and helpfully.
+You always provide the stored name of the accessed data so the user can understand the process better.
+Begin!
+2023-12-20 01:07:17,056:INFO: Adding message to conversation: user: How many times does the Basketball Game occur?
+2023-12-20 01:07:17,056:INFO: Generating ChatCompletion response
+2023-12-20 01:07:17,810:INFO: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2023-12-20 01:07:17,816:INFO: Appending assistant message: ChatCompletionMessage(content=None, role='assistant', function_call=None, tool_calls=[ChatCompletionMessageToolCall(id='call_JjCN56vPFWTTRTuJktuQDhTI', function=Function(arguments='{\n  "variable": "Basketball Game"\n}', name='get_occurrence'), type='function')])
+2023-12-20 01:07:17,817:INFO: Function call: get_occurrence
+2023-12-20 01:07:17,817:INFO: Adding message to conversation: system: The mapping between the dataset variable names and the categories they belong to:
+{'elbow pain': 'extracted', 'Basketball Game': 'calendar_events', 'Computer Programming': 'calendar_events', 'Basketball Practice': 'calendar_events', 'Discrete Mathematics': 'calendar_events', 'Discrete Mathematics HW due': 'calendar_events', 'Computer Programming HW due': 'calendar_events'}
+
+2023-12-20 01:07:17,928:INFO: Resubmitting function: get_occurrence
+2023-12-20 01:07:17,928:INFO: Generating ChatCompletion response
+2023-12-20 01:07:18,140:INFO: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 400 Bad Request"
+2023-12-20 01:07:18,140:ERROR: Unable to generate ChatCompletion response
+Traceback (most recent call last):
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-Personal/Code/cerebra/src/llm/engine_alt.py", line 47, in chat_completion_request
+    response = client.chat.completions.create(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/brianlerner/miniconda3/envs/c2/lib/python3.12/site-packages/openai/_utils/_utils.py", line 303, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/brianlerner/miniconda3/envs/c2/lib/python3.12/site-packages/openai/resources/chat/completions.py", line 645, in create
+    return self._post(
+           ^^^^^^^^^^^
+  File "/Users/brianlerner/miniconda3/envs/c2/lib/python3.12/site-packages/openai/_base_client.py", line 1088, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/brianlerner/miniconda3/envs/c2/lib/python3.12/site-packages/openai/_base_client.py", line 853, in request
+    return self._request(
+           ^^^^^^^^^^^^^^
+  File "/Users/brianlerner/miniconda3/envs/c2/lib/python3.12/site-packages/openai/_base_client.py", line 930, in _request
+    raise self._make_status_error_from_response(err.response) from None
+openai.BadRequestError: Error code: 400 - {'error': {'message': "An assistant message with 'tool_calls' must be followed by tool messages responding to each 'tool_call_id'. The following tool_call_ids did not have response messages: call_JjCN56vPFWTTRTuJktuQDhTI", 'type': 'invalid_request_error', 'param': 'messages.[3].role', 'code': None}}
+2023-12-20 01:07:18,143:INFO: [{'role': 'system', 'content': "You are Cerebra, a helpful assistant that pulls a user's personal data to help them know themselves better. You answer the user's question concisely and helpfully.\nYou always provide the stored name of the accessed data so the user can understand the process better.\nBegin!"}, {'role': 'user', 'content': 'How many times does the Basketball Game occur?'}, ChatCompletionMessage(content=None, role='assistant', function_call=None, tool_calls=[ChatCompletionMessageToolCall(id='call_JjCN56vPFWTTRTuJktuQDhTI', function=Function(arguments='{\n  "variable": "Basketball Game"\n}', name='get_occurrence'), type='function')]), {'role': 'system', 'content': "The mapping between the dataset variable names and the categories they belong to:\n{'elbow pain': 'extracted', 'Basketball Game': 'calendar_events', 'Computer Programming': 'calendar_events', 'Basketball Practice': 'calendar_events', 'Discrete Mathematics': 'calendar_events', 'Discrete Mathematics HW due': 'calendar_events', 'Computer Programming HW due': 'calendar_events'}\n"}, {'tool_call_id': 'call_JjCN56vPFWTTRTuJktuQDhTI', 'role': 'tool', 'name': 'get_occurrence', 'content': '1'}]
+2023-12-20 01:07:47,548:INFO: Adding message to conversation: system: You are Cerebra, a helpful assistant that pulls a user's personal data to help them know themselves better. You answer the user's question concisely and helpfully.
+You always provide the stored name of the accessed data so the user can understand the process better.
+Begin!
+2023-12-20 01:07:47,548:INFO: Adding message to conversation: user: How many times does the Basketball Game occur?
+2023-12-20 01:07:47,548:INFO: Generating ChatCompletion response
+2023-12-20 01:07:50,395:INFO: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2023-12-20 01:07:50,399:INFO: Appending assistant message: ChatCompletionMessage(content=None, role='assistant', function_call=None, tool_calls=[ChatCompletionMessageToolCall(id='call_X8u4FcPPRdKzqpODwvhV2Cyu', function=Function(arguments='{\n  "variable": "Basketball Game"\n}', name='get_occurrence'), type='function')])
+2023-12-20 01:07:50,399:INFO: Function call: get_occurrence
+2023-12-20 01:07:50,399:INFO: Adding message to conversation: system: The mapping between the dataset variable names and the categories they belong to:
+{'elbow pain': 'extracted', 'Basketball Game': 'calendar_events', 'Computer Programming': 'calendar_events', 'Basketball Practice': 'calendar_events', 'Discrete Mathematics': 'calendar_events', 'Discrete Mathematics HW due': 'calendar_events', 'Computer Programming HW due': 'calendar_events'}
+
+2023-12-20 01:07:50,507:INFO: Resubmitting function: get_occurrence
+2023-12-20 01:07:50,507:INFO: Generating ChatCompletion response
+2023-12-20 01:07:50,712:INFO: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 400 Bad Request"
+2023-12-20 01:07:50,713:ERROR: Unable to generate ChatCompletion response
+Traceback (most recent call last):
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-Personal/Code/cerebra/src/llm/engine_alt.py", line 47, in chat_completion_request
+    response = client.chat.completions.create(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/brianlerner/miniconda3/envs/c2/lib/python3.12/site-packages/openai/_utils/_utils.py", line 303, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/brianlerner/miniconda3/envs/c2/lib/python3.12/site-packages/openai/resources/chat/completions.py", line 645, in create
+    return self._post(
+           ^^^^^^^^^^^
+  File "/Users/brianlerner/miniconda3/envs/c2/lib/python3.12/site-packages/openai/_base_client.py", line 1088, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/brianlerner/miniconda3/envs/c2/lib/python3.12/site-packages/openai/_base_client.py", line 853, in request
+    return self._request(
+           ^^^^^^^^^^^^^^
+  File "/Users/brianlerner/miniconda3/envs/c2/lib/python3.12/site-packages/openai/_base_client.py", line 930, in _request
+    raise self._make_status_error_from_response(err.response) from None
+openai.BadRequestError: Error code: 400 - {'error': {'message': "An assistant message with 'tool_calls' must be followed by tool messages responding to each 'tool_call_id'. The following tool_call_ids did not have response messages: call_X8u4FcPPRdKzqpODwvhV2Cyu", 'type': 'invalid_request_error', 'param': 'messages.[3].role', 'code': None}}
+2023-12-20 01:07:50,717:INFO: [{'role': 'system', 'content': "You are Cerebra, a helpful assistant that pulls a user's personal data to help them know themselves better. You answer the user's question concisely and helpfully.\nYou always provide the stored name of the accessed data so the user can understand the process better.\nBegin!"}, {'role': 'user', 'content': 'How many times does the Basketball Game occur?'}, ChatCompletionMessage(content=None, role='assistant', function_call=None, tool_calls=[ChatCompletionMessageToolCall(id='call_X8u4FcPPRdKzqpODwvhV2Cyu', function=Function(arguments='{\n  "variable": "Basketball Game"\n}', name='get_occurrence'), type='function')]), {'role': 'system', 'content': "The mapping between the dataset variable names and the categories they belong to:\n{'elbow pain': 'extracted', 'Basketball Game': 'calendar_events', 'Computer Programming': 'calendar_events', 'Basketball Practice': 'calendar_events', 'Discrete Mathematics': 'calendar_events', 'Discrete Mathematics HW due': 'calendar_events', 'Computer Programming HW due': 'calendar_events'}\n"}, {'tool_call_id': 'call_X8u4FcPPRdKzqpODwvhV2Cyu', 'role': 'tool', 'name': 'get_occurrence', 'content': '1'}]
+2023-12-20 01:11:39,673:INFO: Adding message to conversation: system: You are Cerebra, a helpful assistant that pulls a user's personal data to help them know themselves better. You answer the user's question concisely and helpfully.
+You always provide the stored name of the accessed data so the user can understand the process better.
+Begin!
+2023-12-20 01:11:39,674:INFO: Adding message to conversation: system: The mapping between the dataset variable names and the categories they belong to:
+{'elbow pain': 'extracted', 'Basketball Game': 'calendar_events', 'Computer Programming': 'calendar_events', 'Basketball Practice': 'calendar_events', 'Discrete Mathematics': 'calendar_events', 'Discrete Mathematics HW due': 'calendar_events', 'Computer Programming HW due': 'calendar_events'}
+
+2023-12-20 01:11:39,674:INFO: Adding message to conversation: user: How many times does the Basketball Game occur?
+2023-12-20 01:11:39,674:INFO: Generating ChatCompletion response
+2023-12-20 01:11:46,005:INFO: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2023-12-20 01:11:46,007:INFO: Appending assistant message: ChatCompletionMessage(content=None, role='assistant', function_call=None, tool_calls=[ChatCompletionMessageToolCall(id='call_plaZn6VdAysLE64lcGGyLdyp', function=Function(arguments='{\n  "variable": "Basketball Game"\n}', name='get_occurrence'), type='function')])
+2023-12-20 01:11:46,007:INFO: Function call: get_occurrence
+2023-12-20 01:11:46,113:INFO: Resubmitting function: get_occurrence
+2023-12-20 01:11:46,113:INFO: Generating ChatCompletion response
+2023-12-20 01:11:46,723:INFO: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2023-12-20 01:11:46,724:INFO: Appending assistant message: ChatCompletionMessage(content='The Basketball Game occurs 1 time.', role='assistant', function_call=None, tool_calls=None)
+2023-12-20 01:12:49,795:INFO: Adding message to conversation: system: You are Cerebra, a helpful assistant that pulls a user's personal data to help them know themselves better. You answer the user's question concisely and helpfully.
+You always provide the stored name of the accessed data so the user can understand the process better.
+Begin!
+2023-12-20 01:12:49,795:INFO: Adding message to conversation: system: The mapping between the dataset variable names and the categories they belong to:
+{'elbow pain': 'extracted', 'Basketball Game': 'calendar_events', 'Computer Programming': 'calendar_events', 'Basketball Practice': 'calendar_events', 'Discrete Mathematics': 'calendar_events', 'Discrete Mathematics HW due': 'calendar_events', 'Computer Programming HW due': 'calendar_events'}
+
+2023-12-20 01:12:49,795:INFO: Adding message to conversation: user: How many times does the Basketball Game occur?
+2023-12-20 01:12:49,795:INFO: Generating ChatCompletion response
+2023-12-20 01:12:50,567:INFO: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2023-12-20 01:12:50,571:INFO: Appending assistant message: ChatCompletionMessage(content=None, role='assistant', function_call=None, tool_calls=[ChatCompletionMessageToolCall(id='call_DwSCHiwlneGmBDbPi8Zl99MQ', function=Function(arguments='{\n"variable": "Basketball Game"\n}', name='get_occurrence'), type='function')])
+2023-12-20 01:12:50,571:INFO: Function call: get_occurrence
+2023-12-20 01:12:50,680:INFO: Resubmitting function: get_occurrence
+2023-12-20 01:12:50,680:INFO: Generating ChatCompletion response
+2023-12-20 01:12:51,724:INFO: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2023-12-20 01:12:51,725:INFO: Appending assistant message: ChatCompletionMessage(content='The Basketball Game occurs 1 time.', role='assistant', function_call=None, tool_calls=None)
+2023-12-20 01:14:19,452:INFO: Adding message to conversation: system: You are Cerebra, a helpful assistant that pulls a user's personal data to help them know themselves better. You answer the user's question concisely and helpfully.
+You always provide the stored name of the accessed data so the user can understand the process better.
+Begin!
+2023-12-20 01:14:19,452:INFO: Adding message to conversation: system: The mapping between the dataset variable names and the categories they belong to:
+{'elbow pain': 'extracted', 'Basketball Game': 'calendar_events', 'Computer Programming': 'calendar_events', 'Basketball Practice': 'calendar_events', 'Discrete Mathematics': 'calendar_events', 'Discrete Mathematics HW due': 'calendar_events', 'Computer Programming HW due': 'calendar_events'}
+
+2023-12-20 01:14:19,452:INFO: Adding message to conversation: user: How many times does the Basketball Game occur?
+2023-12-20 01:14:19,452:INFO: Generating ChatCompletion response
+2023-12-20 01:14:20,307:INFO: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2023-12-20 01:14:20,311:INFO: Appending assistant message: ChatCompletionMessage(content=None, role='assistant', function_call=None, tool_calls=[ChatCompletionMessageToolCall(id='call_tftXztX2NTAXeuMye3DifWNW', function=Function(arguments='{\n  "variable": "Basketball Game"\n}', name='get_occurrence'), type='function')])
+2023-12-20 01:14:20,311:INFO: Function call: get_occurrence
+2023-12-20 01:14:20,440:INFO: Resubmitting function: get_occurrence
+2023-12-20 01:14:20,440:INFO: Generating ChatCompletion response
+2023-12-20 01:14:21,040:INFO: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2023-12-20 01:14:21,042:INFO: Appending assistant message: ChatCompletionMessage(content='The Basketball Game occurs once.', role='assistant', function_call=None, tool_calls=None)
+2023-12-20 01:14:35,835:INFO: Adding message to conversation: system: You are Cerebra, a helpful assistant that pulls a user's personal data to help them know themselves better. You answer the user's question concisely and helpfully.
+You always provide the stored name of the accessed data so the user can understand the process better.
+Begin!
+2023-12-20 01:14:35,835:INFO: Adding message to conversation: system: The mapping between the dataset variable names and the categories they belong to:
+{'elbow pain': 'extracted', 'Basketball Game': 'calendar_events', 'Computer Programming': 'calendar_events', 'Basketball Practice': 'calendar_events', 'Discrete Mathematics': 'calendar_events', 'Discrete Mathematics HW due': 'calendar_events', 'Computer Programming HW due': 'calendar_events'}
+
+2023-12-20 01:14:35,835:INFO: Adding message to conversation: user: How many times does the Basketball Game occur?
+2023-12-20 01:14:35,835:INFO: Generating ChatCompletion response
+2023-12-20 01:14:36,607:INFO: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2023-12-20 01:14:36,611:INFO: Appending assistant message: ChatCompletionMessage(content=None, role='assistant', function_call=None, tool_calls=[ChatCompletionMessageToolCall(id='call_qK1A4MUdkCf9PDgX6ZLjVpp8', function=Function(arguments='{\n  "variable": "Basketball Game"\n}', name='get_occurrence'), type='function')])
+2023-12-20 01:14:36,611:INFO: Function call: get_occurrence
+2023-12-20 01:14:36,740:INFO: Resubmitting function: get_occurrence
+2023-12-20 01:14:36,741:INFO: Generating ChatCompletion response
+2023-12-20 01:14:37,313:INFO: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2023-12-20 01:14:37,314:INFO: Appending assistant message: ChatCompletionMessage(content='The Basketball Game occurs 1 time.', role='assistant', function_call=None, tool_calls=None)
+2023-12-20 01:15:54,241:INFO: Adding message to conversation: system: You are Cerebra, a helpful assistant that pulls a user's personal data to help them know themselves better. You answer the user's question concisely and helpfully.
+You always provide the stored name of the accessed data so the user can understand the process better.
+Begin!
+2023-12-20 01:15:54,242:INFO: Adding message to conversation: system: The mapping between the dataset variable names and the categories they belong to:
+{'elbow pain': 'extracted', 'Basketball Game': 'calendar_events', 'Computer Programming': 'calendar_events', 'Basketball Practice': 'calendar_events', 'Discrete Mathematics': 'calendar_events', 'Discrete Mathematics HW due': 'calendar_events', 'Computer Programming HW due': 'calendar_events'}
+
+2023-12-20 01:15:54,242:INFO: Adding message to conversation: user: How many times does the Basketball Game occur?
+2023-12-20 01:15:54,242:INFO: Generating ChatCompletion response
+2023-12-20 01:15:55,048:INFO: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2023-12-20 01:15:55,054:INFO: Appending assistant message: ChatCompletionMessage(content=None, role='assistant', function_call=None, tool_calls=[ChatCompletionMessageToolCall(id='call_ycy1sbd6fqKhRkF6ZCBAPrAK', function=Function(arguments='{\n"variable": "Basketball Game"\n}', name='get_occurrence'), type='function')])
+2023-12-20 01:15:55,054:INFO: Function call: get_occurrence
+2023-12-20 01:15:55,167:INFO: Resubmitting function: get_occurrence
+2023-12-20 01:15:55,167:INFO: Generating ChatCompletion response
+2023-12-20 01:15:55,634:INFO: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2023-12-20 01:15:55,637:INFO: Appending assistant message: ChatCompletionMessage(content='The Basketball Game occurs once.', role='assistant', function_call=None, tool_calls=None)
+2023-12-20 02:13:35,028:INFO: Adding message to conversation: system: You are Cerebra, a helpful assistant that pulls a user's personal data to help them know themselves better. You answer the user's question concisely and helpfully.
+You always provide the stored name of the accessed data so the user can understand the process better.
+Begin!
+2023-12-20 02:13:35,029:INFO: Adding message to conversation: system: The mapping between the dataset variable names and the categories they belong to:
+{'elbow pain': 'extracted', 'Basketball Game': 'calendar_events', 'Computer Programming': 'calendar_events', 'Basketball Practice': 'calendar_events', 'Discrete Mathematics': 'calendar_events', 'Discrete Mathematics HW due': 'calendar_events', 'Computer Programming HW due': 'calendar_events'}
+
+2023-12-20 02:13:35,029:INFO: Adding message to conversation: user: How many times does the Basketball Game occur?
+2023-12-20 02:13:35,029:INFO: Generating ChatCompletion response
+2023-12-20 02:13:35,984:INFO: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2023-12-20 02:13:35,990:INFO: Appending assistant message: ChatCompletionMessage(content=None, role='assistant', function_call=None, tool_calls=[ChatCompletionMessageToolCall(id='call_xX9yHgBiaORsGqk3ZWWeyrYg', function=Function(arguments='{\n  "variable": "Basketball Game"\n}', name='get_occurrence'), type='function')])
+2023-12-20 02:13:35,990:INFO: Function call: get_occurrence
+2023-12-20 02:13:36,097:INFO: Resubmitting function: get_occurrence
+2023-12-20 02:13:36,097:INFO: Generating ChatCompletion response
+2023-12-20 02:13:36,700:INFO: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2023-12-20 02:13:36,702:INFO: Appending assistant message: ChatCompletionMessage(content='The Basketball Game occurs 18 times.', role='assistant', function_call=None, tool_calls=None)

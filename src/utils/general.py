@@ -23,3 +23,36 @@ def to_snake_case(s):
     
     # Convert to lowercase and replace spaces with underscores
     return s.lower().replace(' ', '_')
+
+
+
+def update_score(current_score, changes=[1, 0, -1], probabilities=None):
+    """
+    Updates a score based on given changes and probabilities.
+
+    Parameters:
+    current_score (int or float): Current score.
+    changes (list): List of possible changes (can be int or float). Default is [1, 0, -1].
+    probabilities (list): Corresponding probabilities for each change. Default is equal probability for each change.
+
+    Returns:
+    int or float: Updated score.
+    """
+    import random
+    import math
+    # Set equal probabilities if none provided
+    if probabilities is None:
+        probabilities = [1/len(changes)] * len(changes)
+
+    # Ensure the probabilities sum up to 1
+    if not math.isclose(sum(probabilities), 1, abs_tol=0.001):
+        raise ValueError("Probabilities must sum up to 1")
+
+    # Choose a change based on the given probabilities
+    change = random.choices(changes, weights=probabilities, k=1)[0]
+
+    # Update and return the new score
+    new_score = current_score + change
+    return new_score
+
+

@@ -59,19 +59,18 @@ def main():
 
     st.sidebar.title("Navigation")
     choice = st.sidebar.radio("Choose a Tab", [
-        "Main",
-        "Chatbot",
-        "Data Visualization", 
+        "Overview",
+        "Available Data",
+        "CerebraChat", 
         "App Interaction",
     ])
 
-    if choice == "Main":
+    if choice == "Overview":
         show_main_tab()
-    if choice == "Chatbot":
-        # st.write("Chatbot Placeholder")
-        show_chatbot_tab()
-    if choice == "Data Visualization":
+    if choice == "Available Data":
         show_data_visualization_tab()
+    if choice == "CerebraChat":
+        show_chatbot_tab()
     elif choice == "App Interaction":
         show_app_interaction_tab()
         # st.write("App Interaction Placeholder")

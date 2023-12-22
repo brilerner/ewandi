@@ -4,6 +4,7 @@ from utils.dates import convert_datetime, calculate_end_time, extract_date
 import utils.keys as keys
 from pathlib import Path
 import json
+import prompts.bio as PROMPTS
 
 # MODEL = "gpt-4"
 MODEL = "gpt-3.5-turbo-1106" # this is faster!
@@ -26,8 +27,7 @@ def make_entry_prompt(biography, information):
     "state the date at the beginning of your entry. You may begin writing now." 
     return prompt
 
-def process_files(biography_file_path, information_file_paths, entry_dir):
-    biography = load_text_from_file(biography_file_path)
+def process_files(bio, information_file_paths, entry_dir):
     entries = []  # List to store all entries
     for file_path in information_file_paths:
         information = load_text_from_file(file_path)
@@ -60,7 +60,9 @@ def get_file_paths(directory):
 
 def make_journal_entries(profile='llm_v0'):
 
-    biography_file_path = 'prompts/bio.txt'
+
+    # get bio
+    bio = getattr(PROMPTS, profile)
 
     # set up directories
     profile_dir = Path.cwd().parent /'data'/'sim' / 'profiles'/profile
@@ -78,6 +80,6 @@ def make_journal_entries(profile='llm_v0'):
     openai.api_key = keys.OPENAI
 
     # Process each file
-    process_files(biography_file_path, information_file_paths, entry_dir)
+    process_files(bio, information_file_paths, entry_dir)
 
 

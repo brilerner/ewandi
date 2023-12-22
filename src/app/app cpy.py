@@ -28,7 +28,6 @@ def main():
 
     logging.info("Starting CerebraChat")
     st.sidebar.title("Navigation")
-    
     choice = st.sidebar.radio("Choose a Tab", [
         "Overview",
         "Available Data",
@@ -38,45 +37,21 @@ def main():
     if choice == "Overview":
         show_overview_tab()
     if choice == "Available Data":
-        show_dataset_tab()
+        show_data_visualization_tab()
     if choice == "CerebraChat":
         show_chatbot_tab()
 
 def show_overview_tab():
+    import streamlit as st
 
     col1, col2 = st.columns([0.4,0.6])
 
-    img_path = "/Users/brianlerner/Library/CloudStorage/OneDrive-Personal/Code/Cerebra/src/app/imgs/streamlit_splash.png"
+    img_path = "/Users/brianlerner/Library/CloudStorage/OneDrive-Personal/Code/Cerebra/src/app/working_examples/streamlit_splash.png"
     with col1:
         st.image(img_path)
 
     with col2:
         st.header("Text")
-
-def show_dataset_tab():
-
-    st.header("Overview")
-
-    tab1, tab2, tab3 = st.tabs([
-        "Calendar",
-        "Nutrition",
-        "Fitness"
-    ])
-
-
-    with tab1:
-        st.header("A cat")
-        st.image("https://static.streamlit.io/examples/cat.jpg", width=200)
-
-    with tab2:
-        st.header("A dog")
-        st.plotly_chart(get_plotly_figure(), use_container_width=True)
-
-    with tab3:
-        st.header("An owl")
-        st.image("https://static.streamlit.io/examples/owl.jpg", width=200)
-
-    
 
 def show_chatbot_tab():
 
@@ -118,7 +93,7 @@ def show_chatbot_tab():
                     full_response += (response.choices[0].delta.content or "")
                     # logging.info(f"full response: {full_response}")
                     message_placeholder.markdown(full_response + "▌")
-                    time.sleep(0.1)
+                    # time.sleep(0.1)
             else:
                     response = chat_completion_request(conversation, model=MODEL_NAME, tools=tools, stream=STREAM)
                     logging.info("non steam response in app.py: " + str(response))
@@ -131,6 +106,11 @@ def show_chatbot_tab():
         # plot chart to test
         # st.plotly_chart(get_plotly_figure(), use_container_width=True)
 
+def show_overview_tab():
+
+    st.header("Overview")
+    
+    st.plotly_chart(get_plotly_figure(), use_container_width=True)
 
 if __name__ == "__main__":
     main()

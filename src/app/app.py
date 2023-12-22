@@ -19,7 +19,7 @@ client = OpenAI()
 # # MODEL_NAME = 'gpt-4'
 
 MODEL_NAME = "gpt-3.5-turbo-0613"
-STREAM=False
+STREAM=True
 
 logging.info("--------------------------- NEW RUN ------------------------------------------------------")
 
@@ -84,7 +84,7 @@ def show_chatbot_tab():
                     full_response += (response.choices[0].delta.content or "")
                     # logging.info(f"full response: {full_response}")
                     message_placeholder.markdown(full_response + "▌")
-                    time.sleep(0.1)
+                    # time.sleep(0.1)
             else:
                     response = chat_completion_request(conversation, model=MODEL_NAME, tools=tools, stream=STREAM)
                     logging.info("non steam response in app.py: " + str(response))

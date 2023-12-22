@@ -1469,3 +1469,99 @@ openai.BadRequestError: Error code: 400 - {'error': {'message': "'gpt-3.5-turbo-
 2023-12-21 14:33:41,847:INFO: Finish reason: stop
 2023-12-21 14:33:41,847:INFO: Finish reason: tool_calls
 2023-12-21 14:33:41,848:INFO: non steam response in app.py: ChatCompletion(id='chatcmpl-8YJ5ZAPK3kvOpDRObDiPBqJyu1dYk', choices=[Choice(finish_reason='stop', index=0, logprobs=None, message=ChatCompletionMessage(content='There have been 18 occurrences of the "Basketball Game" event.', role='assistant', function_call=None, tool_calls=None))], created=1703187221, model='gpt-3.5-turbo-0613', object='chat.completion', system_fingerprint=None, usage=CompletionUsage(completion_tokens=15, prompt_tokens=105, total_tokens=120))
+2023-12-21 14:36:17,598:INFO: --------------------------- NEW RUN ------------------------------------------------------
+2023-12-21 14:36:17,598:INFO: Starting CerebraChat
+2023-12-21 14:36:17,683:INFO: check role: {'role': 'system', 'content': "You are Cerebra, a helpful assistant that pulls a user's personal data to help them know themselves better. You answer the user's question concisely and helpfully.\nYou always provide the stored name of the accessed data so the user can understand the process better.\nBegin!"}
+2023-12-21 14:36:17,684:INFO: Generating ChatCompletion response
+2023-12-21 14:36:17,684:INFO: COMPL_INPUT: {'model': 'gpt-3.5-turbo-0613', 'messages': [{'role': 'system', 'content': "You are Cerebra, a helpful assistant that pulls a user's personal data to help them know themselves better. You answer the user's question concisely and helpfully.\nYou always provide the stored name of the accessed data so the user can understand the process better.\nBegin!"}, {'role': 'user', 'content': 'How many occurrences of Basketball Game are there?'}], 'tools': [{'type': 'function', 'function': {'name': 'get_occurrence', 'description': 'Tell the number of occurrences to the user.', 'parameters': {'type': 'object', 'properties': {'variable': {'type': 'string', 'description': 'The variable to describe.'}}, 'required': ['variable']}}}], 'tool_choice': None, 'stream': True}
+2023-12-21 14:36:17,690:INFO: Calling OpenAI API
+2023-12-21 14:36:18,528:INFO: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2023-12-21 14:36:18,529:INFO: COMPL_OUTPUT: {response}
+2023-12-21 14:36:18,529:INFO: Received response from OpenAI API
+2023-12-21 14:36:18,529:INFO: Processing stream response
+2023-12-21 14:36:18,784:INFO: Appending assistant message: {'role': 'assistant', 'content': None, 'tool_calls': [{'id': 'call_0MOwYRhfYllC4mF4MtSPjQFv', 'function': {'name': 'get_occurrence', 'arguments': '{\n  "variable": "Basketball Game"\n}'}, 'type': 'function'}]}
+2023-12-21 14:36:18,784:INFO: Function call: get_occurrence
+2023-12-21 14:36:18,883:INFO: Resubmitting function: get_occurrence
+2023-12-21 14:36:18,883:INFO: Generating ChatCompletion response
+2023-12-21 14:36:18,883:INFO: COMPL_INPUT: {'model': 'gpt-3.5-turbo-0613', 'messages': [{'role': 'system', 'content': "You are Cerebra, a helpful assistant that pulls a user's personal data to help them know themselves better. You answer the user's question concisely and helpfully.\nYou always provide the stored name of the accessed data so the user can understand the process better.\nBegin!"}, {'role': 'user', 'content': 'How many occurrences of Basketball Game are there?'}, {'role': 'assistant', 'content': None, 'tool_calls': [{'id': 'call_0MOwYRhfYllC4mF4MtSPjQFv', 'function': {'name': 'get_occurrence', 'arguments': '{\n  "variable": "Basketball Game"\n}'}, 'type': 'function'}]}, {'tool_call_id': 'call_0MOwYRhfYllC4mF4MtSPjQFv', 'role': 'tool', 'name': 'get_occurrence', 'content': '18'}], 'tools': None, 'tool_choice': None, 'stream': True}
+2023-12-21 14:36:18,914:INFO: Calling OpenAI API
+2023-12-21 14:36:19,293:INFO: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2023-12-21 14:36:19,293:INFO: COMPL_OUTPUT: {response}
+2023-12-21 14:36:19,293:INFO: Received response from OpenAI API
+2023-12-21 14:36:19,293:INFO: Processing stream response
+2023-12-21 14:36:19,638:INFO: Appending assistant message: {'role': 'assistant', 'content': 'There are 18 occurrences of "Basketball Game" in your stored data.'}
+2023-12-21 14:36:19,638:INFO: Finish reason: stop
+2023-12-21 14:36:19,638:INFO: Finish reason: tool_calls
+2023-12-21 14:37:16,410:INFO: --------------------------- NEW RUN ------------------------------------------------------
+2023-12-21 14:37:16,410:INFO: Starting CerebraChat
+2023-12-21 14:37:16,490:INFO: check role: {'role': 'system', 'content': "You are Cerebra, a helpful assistant that pulls a user's personal data to help them know themselves better. You answer the user's question concisely and helpfully.\nYou always provide the stored name of the accessed data so the user can understand the process better.\nBegin!"}
+2023-12-21 14:37:16,491:INFO: Generating ChatCompletion response
+2023-12-21 14:37:16,491:INFO: COMPL_INPUT: {'model': 'gpt-3.5-turbo-0613', 'messages': [{'role': 'system', 'content': "You are Cerebra, a helpful assistant that pulls a user's personal data to help them know themselves better. You answer the user's question concisely and helpfully.\nYou always provide the stored name of the accessed data so the user can understand the process better.\nBegin!"}, {'role': 'user', 'content': 'How many occurrences of Basketball Game are there?'}], 'tools': [{'type': 'function', 'function': {'name': 'get_occurrence', 'description': 'Tell the number of occurrences to the user.', 'parameters': {'type': 'object', 'properties': {'variable': {'type': 'string', 'description': 'The variable to describe.'}}, 'required': ['variable']}}}], 'tool_choice': None, 'stream': True}
+2023-12-21 14:37:16,496:INFO: Calling OpenAI API
+2023-12-21 14:37:17,107:INFO: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2023-12-21 14:37:17,108:INFO: COMPL_OUTPUT: {response}
+2023-12-21 14:37:17,108:INFO: Received response from OpenAI API
+2023-12-21 14:37:17,108:INFO: Processing stream response
+2023-12-21 14:37:17,255:INFO: Appending assistant message: {'role': 'assistant', 'content': None, 'tool_calls': [{'id': 'call_6hOFX9WXdE1gEL0PvDmuQDD4', 'function': {'name': 'get_occurrence', 'arguments': '{\n  "variable": "Basketball Game"\n}'}, 'type': 'function'}]}
+2023-12-21 14:37:17,255:INFO: Function call: get_occurrence
+2023-12-21 14:37:17,368:INFO: Resubmitting function: get_occurrence
+2023-12-21 14:37:17,368:INFO: Generating ChatCompletion response
+2023-12-21 14:37:17,368:INFO: COMPL_INPUT: {'model': 'gpt-3.5-turbo-0613', 'messages': [{'role': 'system', 'content': "You are Cerebra, a helpful assistant that pulls a user's personal data to help them know themselves better. You answer the user's question concisely and helpfully.\nYou always provide the stored name of the accessed data so the user can understand the process better.\nBegin!"}, {'role': 'user', 'content': 'How many occurrences of Basketball Game are there?'}, {'role': 'assistant', 'content': None, 'tool_calls': [{'id': 'call_6hOFX9WXdE1gEL0PvDmuQDD4', 'function': {'name': 'get_occurrence', 'arguments': '{\n  "variable": "Basketball Game"\n}'}, 'type': 'function'}]}, {'tool_call_id': 'call_6hOFX9WXdE1gEL0PvDmuQDD4', 'role': 'tool', 'name': 'get_occurrence', 'content': '18'}], 'tools': None, 'tool_choice': None, 'stream': True}
+2023-12-21 14:37:17,386:INFO: Calling OpenAI API
+2023-12-21 14:37:17,925:INFO: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2023-12-21 14:37:17,926:INFO: COMPL_OUTPUT: {response}
+2023-12-21 14:37:17,926:INFO: Received response from OpenAI API
+2023-12-21 14:37:17,926:INFO: Processing stream response
+2023-12-21 14:37:18,081:INFO: Appending assistant message: {'role': 'assistant', 'content': 'There are 18 occurrences of the variable "Basketball Game".'}
+2023-12-21 14:37:18,081:INFO: Finish reason: stop
+2023-12-21 14:37:18,081:INFO: Finish reason: tool_calls
+2023-12-21 15:42:48,689:INFO: Generating ChatCompletion response
+2023-12-21 15:42:48,690:INFO: COMPL_INPUT: {'model': 'gpt-3.5-turbo-0613', 'messages': [{'role': 'system', 'content': "You are Cerebra, a helpful assistant that pulls a user's personal data to help them know themselves better. You answer the user's question concisely and helpfully.\nYou always provide the stored name of the accessed data so the user can understand the process better.\nBegin!"}, {'role': 'user', 'content': 'Do I have a headache on the same days that I drink coffee?'}], 'tools': None, 'tool_choice': None, 'stream': True}
+2023-12-21 15:42:48,697:INFO: Calling OpenAI API
+2023-12-21 15:42:49,282:INFO: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2023-12-21 15:42:49,283:INFO: COMPL_OUTPUT: {response}
+2023-12-21 15:42:49,283:INFO: Received response from OpenAI API
+2023-12-21 15:42:49,283:INFO: Processing stream response
+2023-12-21 15:42:50,451:INFO: Appending assistant message: {'role': 'assistant', 'content': 'To determine if you have a headache on the same days that you drink coffee, I would need access to your personal data. May I have your permission to access your daily headache and coffee consumption records? Once granted, I can provide you with a conclusive answer.'}
+2023-12-21 15:42:50,451:INFO: Finish reason: stop
+2023-12-21 15:43:23,457:INFO: Generating ChatCompletion response
+2023-12-21 15:43:23,461:INFO: COMPL_INPUT: {'model': 'gpt-3.5-turbo-0613', 'messages': [{'role': 'system', 'content': "You are Cerebra, a helpful assistant that pulls a user's personal data to help them know themselves better. You answer the user's question concisely and helpfully.\nYou always provide the stored name of the accessed data so the user can understand the process better.\nBegin!"}, {'role': 'user', 'content': 'Do I have a headache on the same days that I drink coffee?'}], 'tools': None, 'tool_choice': None, 'stream': True}
+2023-12-21 15:43:23,469:INFO: Calling OpenAI API
+2023-12-21 15:43:24,141:INFO: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2023-12-21 15:43:24,142:INFO: COMPL_OUTPUT: {response}
+2023-12-21 15:43:24,142:INFO: Received response from OpenAI API
+2023-12-21 15:43:24,143:INFO: Processing stream response
+2023-12-21 15:43:25,746:INFO: Appending assistant message: {'role': 'assistant', 'content': "Based on the available data, I don't have any information regarding your coffee consumption or headaches. In order to determine if there is a pattern between drinking coffee and experiencing headaches, it would be helpful to track your coffee intake and record any headaches you have over a period of time. This will enable you to analyze any potential correlation between the two."}
+2023-12-21 15:43:25,747:INFO: Finish reason: stop
+2023-12-21 15:44:36,271:INFO: Generating ChatCompletion response
+2023-12-21 15:44:36,271:INFO: COMPL_INPUT: {'model': 'gpt-3.5-turbo-0613', 'messages': [{'role': 'system', 'content': "\nYou are an application that breakdowns a query into a list of steps. You are part of a larger application that tracks a user's life data and allows them to query it.\nBegin.\n"}, {'role': 'user', 'content': 'Do I have a headache on the same days that I drink coffee?'}], 'tools': None, 'tool_choice': None, 'stream': True}
+2023-12-21 15:44:36,278:INFO: Calling OpenAI API
+2023-12-21 15:44:37,006:INFO: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2023-12-21 15:44:37,007:INFO: COMPL_OUTPUT: {response}
+2023-12-21 15:44:37,007:INFO: Received response from OpenAI API
+2023-12-21 15:44:37,007:INFO: Processing stream response
+2023-12-21 15:44:39,110:INFO: Appending assistant message: {'role': 'assistant', 'content': 'To determine if you have a headache on the days you drink coffee, we need to break down your query into a list of steps:\n\n1. Retrieve a list of days when you drank coffee.\n2. Retrieve a list of days when you had a headache.\n3. Compare the two lists to find the common days.\n4. Return the result.\n\nPlease provide me with the necessary data to complete the steps mentioned above.'}
+2023-12-21 15:44:39,110:INFO: Finish reason: stop
+2023-12-21 20:12:15,173:INFO: --------------------------- NEW RUN ------------------------------------------------------
+2023-12-21 20:12:15,179:INFO: Starting CerebraChat
+2023-12-21 20:12:15,180:INFO: check role: {'role': 'system', 'content': "You are Cerebra, a helpful assistant that pulls a user's personal data to help them know themselves better. You answer the user's question concisely and helpfully.\nYou always provide the stored name of the accessed data so the user can understand the process better.\nBegin!"}
+2023-12-21 20:12:15,182:INFO: Generating ChatCompletion response
+2023-12-21 20:12:15,182:INFO: COMPL_INPUT: {'model': 'gpt-3.5-turbo-0613', 'messages': [{'role': 'system', 'content': "You are Cerebra, a helpful assistant that pulls a user's personal data to help them know themselves better. You answer the user's question concisely and helpfully.\nYou always provide the stored name of the accessed data so the user can understand the process better.\nBegin!"}, {'role': 'user', 'content': 'How many occurrences of Basketball Game are there?'}], 'tools': [{'type': 'function', 'function': {'name': 'get_occurrence', 'description': 'Tell the number of occurrences to the user.', 'parameters': {'type': 'object', 'properties': {'variable': {'type': 'string', 'description': 'The variable to describe.'}}, 'required': ['variable']}}}], 'tool_choice': None, 'stream': True}
+2023-12-21 20:12:15,192:INFO: Calling OpenAI API
+2023-12-21 20:12:15,782:INFO: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2023-12-21 20:12:15,782:INFO: COMPL_OUTPUT: {response}
+2023-12-21 20:12:15,782:INFO: Received response from OpenAI API
+2023-12-21 20:12:15,782:INFO: Processing stream response
+2023-12-21 20:12:16,031:INFO: Appending assistant message: {'role': 'assistant', 'content': None, 'tool_calls': [{'id': 'call_d50JiRfhqn4qIpKvrMV0CcoN', 'function': {'name': 'get_occurrence', 'arguments': '{\n"variable": "Basketball Game"\n}'}, 'type': 'function'}]}
+2023-12-21 20:12:16,031:INFO: Function call: get_occurrence
+2023-12-21 20:12:16,379:INFO: Resubmitting function: get_occurrence
+2023-12-21 20:12:16,379:INFO: Generating ChatCompletion response
+2023-12-21 20:12:16,380:INFO: COMPL_INPUT: {'model': 'gpt-3.5-turbo-0613', 'messages': [{'role': 'system', 'content': "You are Cerebra, a helpful assistant that pulls a user's personal data to help them know themselves better. You answer the user's question concisely and helpfully.\nYou always provide the stored name of the accessed data so the user can understand the process better.\nBegin!"}, {'role': 'user', 'content': 'How many occurrences of Basketball Game are there?'}, {'role': 'assistant', 'content': None, 'tool_calls': [{'id': 'call_d50JiRfhqn4qIpKvrMV0CcoN', 'function': {'name': 'get_occurrence', 'arguments': '{\n"variable": "Basketball Game"\n}'}, 'type': 'function'}]}, {'tool_call_id': 'call_d50JiRfhqn4qIpKvrMV0CcoN', 'role': 'tool', 'name': 'get_occurrence', 'content': '18'}], 'tools': None, 'tool_choice': None, 'stream': True}
+2023-12-21 20:12:16,393:INFO: Calling OpenAI API
+2023-12-21 20:12:16,735:INFO: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2023-12-21 20:12:16,735:INFO: COMPL_OUTPUT: {response}
+2023-12-21 20:12:16,735:INFO: Received response from OpenAI API
+2023-12-21 20:12:16,735:INFO: Processing stream response
+2023-12-21 20:12:16,982:INFO: Appending assistant message: {'role': 'assistant', 'content': 'There have been 18 occurrences of the "Basketball Game".'}
+2023-12-21 20:12:16,982:INFO: Finish reason: stop
+2023-12-21 20:12:16,982:INFO: Finish reason: tool_calls

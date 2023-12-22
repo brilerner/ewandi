@@ -11,7 +11,7 @@ import json
 from utils.logging import set_logger
 from utils.general import get_value
 from viz.plot import plot_occurrence
-# from server.query import get_n_occurrences
+from server.query import get_n_occurrences
 from tools.tools import tools, call_function_v2
 import prompts.engine as PROMPTS
 from pathlib import Path

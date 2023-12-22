@@ -23,3 +23,5 @@ use the multi-cursor feature to edit multiple lines at the same time. Here's how
 Select the Text: Click and drag to select /mnt/data in the first line.
 Find Next: Hold down the Cmd key and press D to find the next instance of /mnt/data. Repeat this step until you've selected all instances you want to replace.
 Type the Replacement: Start typing the new path. All instances of /mnt/data will be replaced with what you type.
+close sidebar: cmd+B
+open terminal: ctr+`

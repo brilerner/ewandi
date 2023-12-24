@@ -105,6 +105,7 @@ def show_chatbot_tab():
     # if testing:
         # prompt = "How many occurrences of Basketball Game are there?"
     if prompt := st.chat_input(PROMPTS.opener):
+        
         conversation.messages.append({"role": "user", "content": prompt})
         
         with st.chat_message("user"):

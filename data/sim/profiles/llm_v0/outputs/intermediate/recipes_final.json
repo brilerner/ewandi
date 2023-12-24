@@ -1,0 +1,3671 @@
+{
+    "breakfast": [
+        {
+            "recipe_name": "Healthy Athlete's Power Breakfast Sandwich",
+            "ingredients": [
+                {
+                    "name": "Bread, whole-wheat, commercially prepared",
+                    "grams": 60,
+                    "nutrients": [
+                        {
+                            "name": "energy",
+                            "unit": "kcal",
+                            "amount_per_100g": 0.002621168418816001,
+                            "amount": 0.002096934735052801
+                        }
+                    ]
+                },
+                {
+                    "name": "Egg, whole, raw, frozen, pasteurized",
+                    "grams": 100,
+                    "nutrients": [
+                        {
+                            "name": "energy",
+                            "unit": "kcal",
+                            "amount_per_100g": 156.75,
+                            "amount": 156.75
+                        }
+                    ]
+                },
+                {
+                    "name": "Cheese, cheddar",
+                    "grams": 30,
+                    "nutrients": [
+                        {
+                            "name": "energy",
+                            "unit": "kcal",
+                            "amount_per_100g": 0.02676888000000001,
+                            "amount": 0.008030664000000003
+                        }
+                    ]
+                },
+                {
+                    "name": "Tomatoes, grape, raw",
+                    "grams": 50,
+                    "nutrients": [
+                        {
+                            "name": "energy",
+                            "unit": "kcal",
+                            "amount_per_100g": 3.862380981445312e-06,
+                            "amount": 3.862380981445312e-06
+                        }
+                    ]
+                },
+                {
+                    "name": "Spinach, baby",
+                    "grams": 30,
+                    "nutrients": [
+                        {
+                            "name": "energy",
+                            "unit": "kcal",
+                            "amount_per_100g": 4.712110200000003e-05,
+                            "amount": 1.4136330600000009e-05
+                        }
+                    ]
+                },
+                {
+                    "name": "Oil, olive, extra virgin",
+                    "grams": 15,
+                    "nutrients": []
+                },
+                {
+                    "name": "Turkey, ground, 93% lean, 7% fat, pan-broiled crumbles",
+                    "grams": 50,
+                    "nutrients": [
+                        {
+                            "name": "energy",
+                            "unit": "kcal",
+                            "amount_per_100g": 110.0,
+                            "amount": 55.0
+                        }
+                    ]
+                },
+                {
+                    "name": "Mustard, prepared, yellow",
+                    "grams": 10,
+                    "nutrients": [
+                        {
+                            "name": "energy",
+                            "unit": "kcal",
+                            "amount_per_100g": 1.5875000000000008e-08,
+                            "amount": 1.5875000000000008e-09
+                        }
+                    ]
+                },
+                {
+                    "name": "Avocado, raw",
+                    "grams": 50
+                }
+            ],
+            "kcal": 1058.68
+        },
+        {
+            "recipe_name": "Healthy Athlete's Power Lunch Sandwich",
+            "ingredients": [
+                {
+                    "name": "Bread, whole-wheat, commercially prepared",
+                    "grams": 60,
+                    "nutrients": [
+                        {
+                            "name": "energy",
+                            "unit": "kcal",
+                            "amount_per_100g": 0.002621168418816001,
+                            "amount": 0.002096934735052801
+                        }
+                    ]
+                },
+                {
+                    "name": "Chicken, breast, boneless, skinless, raw",
+                    "grams": 120,
+                    "nutrients": [
+                        {
+                            "name": "energy",
+                            "unit": "kcal",
+                            "amount_per_100g": 594134.4304687502,
+                            "amount": 891201.6457031253
+                        }
+                    ]
+                },
+                {
+                    "name": "Lettuce, cos or romaine, raw",
+                    "grams": 30,
+                    "nutrients": [
+                        {
+                            "name": "energy",
+                            "unit": "kcal",
+                            "amount_per_100g": 17.0,
+                            "amount": 5.1000000000000005
+                        }
+                    ]
+                },
+                {
+                    "name": "Tomatoes, grape, raw",
+                    "grams": 50,
+                    "nutrients": [
+                        {
+                            "name": "energy",
+                            "unit": "kcal",
+                            "amount_per_100g": 3.862380981445312e-06,
+                            "amount": 3.862380981445312e-06
+                        }
+                    ]
+                },
+                {
+                    "name": "Cheese, cheddar",
+                    "grams": 30,
+                    "nutrients": [
+                        {
+                            "name": "energy",
+                            "unit": "kcal",
+                            "amount_per_100g": 0.02676888000000001,
+                            "amount": 0.008030664000000003
+                        }
+                    ]
+                },
+                {
+                    "name": "Mustard, prepared, yellow",
+                    "grams": 10,
+                    "nutrients": [
+                        {
+                            "name": "energy",
+                            "unit": "kcal",
+                            "amount_per_100g": 1.5875000000000008e-08,
+                            "amount": 1.5875000000000008e-09
+                        }
+                    ]
+                },
+                {
+                    "name": "Hummus, commercial",
+                    "grams": 30,
+                    "nutrients": [
+                        {
+                            "name": "energy",
+                            "unit": "kcal",
+                            "amount_per_100g": 0.34992000000000006,
+                            "amount": 0.10497600000000003
+                        }
+                    ]
+                },
+                {
+                    "name": "Kale, raw",
+                    "grams": 20,
+                    "nutrients": [
+                        {
+                            "name": "energy",
+                            "unit": "kcal",
+                            "amount_per_100g": 0.00224775,
+                            "amount": 0.001123875
+                        }
+                    ]
+                },
+                {
+                    "name": "Oil, olive, extra virgin",
+                    "grams": 10,
+                    "nutrients": []
+                },
+                {
+                    "name": "Vinegar, balsamic",
+                    "grams": 5
+                },
+                {
+                    "name": "Pickles, cucumber, dill or kosher dill",
+                    "grams": 20,
+                    "nutrients": [
+                        {
+                            "name": "energy",
+                            "unit": "kcal",
+                            "amount_per_100g": 50.0,
+                            "amount": 10.0
+                        }
+                    ]
+                }
+            ],
+            "kcal": 597.35
+        }
+    ],
+    "lunch": [
+        {
+            "recipe_name": "Healthy Chicken Parmesan with Steamed Green Beans and Grape Tomatoes",
+            "ingredients": [
+                {
+                    "name": "Chicken, breast, boneless, skinless, raw",
+                    "grams": 200,
+                    "nutrients": [
+                        {
+                            "name": "energy",
+                            "unit": "kcal",
+                            "amount_per_100g": 594134.4304687502,
+                            "amount": 891201.6457031253
+                        }
+                    ]
+                },
+                {
+                    "name": "Bread, whole-wheat, commercially prepared",
+                    "grams": 30,
+                    "nutrients": [
+                        {
+                            "name": "energy",
+                            "unit": "kcal",
+                            "amount_per_100g": 0.002621168418816001,
+                            "amount": 0.002096934735052801
+                        }
+                    ]
+                },
+                {
+                    "name": "Egg, whole, raw, frozen, pasteurized",
+                    "grams": 50,
+                    "nutrients": [
+                        {
+                            "name": "energy",
+                            "unit": "kcal",
+                            "amount_per_100g": 156.75,
+                            "amount": 156.75
+                        }
+                    ]
+                },
+                {
+                    "name": "Cheese, parmesan, grated",
+                    "grams": 20,
+                    "nutrients": [
+                        {
+                            "name": "energy",
+                            "unit": "kcal",
+                            "amount_per_100g": 5.052000000000003e-07,
+                            "amount": 1.0104000000000005e-07
+                        }
+                    ]
+                },
+                {
+                    "name": "Cheese, mozzarella, low moisture, part-skim",
+                    "grams": 40,
+                    "nutrients": [
+                        {
+                            "name": "energy",
+                            "unit": "kcal",
+                            "amount_per_100g": 0.4017600000000001,
+                            "amount": 0.08035200000000003
+                        }
+                    ]
+                },
+                {
+                    "name": "Sauce, pasta, spaghetti/marinara, ready-to-serve",
+                    "grams": 100,
+                    "nutrients": [
+                        {
+                            "name": "energy",
+                            "unit": "kcal",
+                            "amount_per_100g": 45.0,
+                            "amount": 45.0
+                        }
+                    ]
+                },
+                {
+                    "name": "Beans, snap, green, canned, regular pack, drained solids",
+                    "grams": 150,
+                    "nutrients": [
+                        {
+                            "name": "energy",
+                            "unit": "kcal",
+                            "amount_per_100g": 31.5,
+                            "amount": 15.75
+                        }
+                    ]
+                },
+                {
+                    "name": "Tomatoes, grape, raw",
+                    "grams": 100,
+                    "nutrients": [
+                        {
+                            "name": "energy",
+                            "unit": "kcal",
+                            "amount_per_100g": 3.862380981445312e-06,
+                            "amount": 3.862380981445312e-06
+                        }
+                    ]
+                },
+                {
+                    "name": "Oil, olive, extra virgin",
+                    "grams": 15,
+                    "nutrients": []
+                },
+                {
+                    "name": "Salt, table, iodized",
+                    "grams": 2,
+                    "nutrients": []
+                },
+                {
+                    "name": "Garlic, raw",
+                    "grams": 5,
+                    "nutrients": [
+                        {
+                            "name": "energy",
+                            "unit": "kcal",
+                            "amount_per_100g": 2.6812500000000005e-05,
+                            "amount": 1.3406250000000002e-06
+                        }
+                    ]
+                }
+            ],
+            "kcal": 1265.9320000000002
+        }
+    ],
+    "dinner": [
+        {
+            "recipe_name": "Healthy Athlete's Breakfast Scramble",
+            "ingredients": [
+                {
+                    "name": "Egg, whole, raw, frozen, pasteurized",
+                    "grams": 100,
+                    "nutrients": [
+                        {
+                            "name": "energy",
+                            "unit": "kcal",
+                            "amount_per_100g": 156.75,
+                            "amount": 156.75
+                        }
+                    ]
+                },
+                {
+                    "name": "Egg, white, raw, frozen, pasteurized",
+                    "grams": 60,
+                    "nutrients": [
+                        {
+                            "name": "energy",
+                            "unit": "kcal",
+                            "amount_per_100g": 3.732480000000001,
+                            "amount": 2.2394880000000006
+                        }
+                    ]
+                },
+                {
+                    "name": "Tomatoes, grape, raw",
+                    "grams": 50,
+                    "nutrients": [
+                        {
+                            "name": "energy",
+                            "unit": "kcal",
+                            "amount_per_100g": 3.862380981445312e-06,
+                            "amount": 3.862380981445312e-06
+                        }
+                    ]
+                },
+                {
+                    "name": "Spinach, baby",
+                    "grams": 30,
+                    "nutrients": [
+                        {
+                            "name": "energy",
+                            "unit": "kcal",
+                            "amount_per_100g": 4.712110200000003e-05,
+                            "amount": 1.4136330600000009e-05
+                        }
+                    ]
+                },
+                {
+                    "name": "Cheese, cheddar",
+                    "grams": 30,
+                    "nutrients": [
+                        {
+                            "name": "energy",
+                            "unit": "kcal",
+                            "amount_per_100g": 0.02676888000000001,
+                            "amount": 0.008030664000000003
+                        }
+                    ]
+                },
+                {
+                    "name": "Oil, olive, extra virgin",
+                    "grams": 15,
+                    "nutrients": []
+                },
+                {
+                    "name": "Peppers, bell, green, raw",
+                    "grams": 50,
+                    "nutrients": [
+                        {
+                            "name": "energy",
+                            "unit": "kcal",
+                            "amount_per_100g": 1.0305000000000002,
+                            "amount": 0.3091500000000001
+                        }
+                    ]
+                },
+                {
+                    "name": "Onions, yellow, raw",
+                    "grams": 30,
+                    "nutrients": [
+                        {
+                            "name": "energy",
+                            "unit": "kcal",
+                            "amount_per_100g": 11.4,
+                            "amount": 3.42
+                        }
+                    ]
+                },
+                {
+                    "name": "Mushrooms, white button",
+                    "grams": 50,
+                    "nutrients": [
+                        {
+                            "name": "energy",
+                            "unit": "kcal",
+                            "amount_per_100g": 4.68,
+                            "amount": 2.34
+                        }
+                    ]
+                },
+                {
+                    "name": "Nuts, almonds, dry roasted, with salt added",
+                    "grams": 20,
+                    "nutrients": [
+                        {
+                            "name": "energy",
+                            "unit": "kcal",
+                            "amount_per_100g": 3.7068009750000025e-12,
+                            "amount": 7.413601950000005e-13
+                        }
+                    ]
+                },
+                {
+                    "name": "Bread, whole-wheat, commercially prepared",
+                    "grams": 40,
+                    "nutrients": [
+                        {
+                            "name": "energy",
+                            "unit": "kcal",
+                            "amount_per_100g": 0.002621168418816001,
+                            "amount": 0.002096934735052801
+                        }
+                    ]
+                },
+                {
+                    "name": "Salt, table, iodized",
+                    "grams": 2,
+                    "nutrients": []
+                },
+                {
+                    "name": "Pepper, black",
+                    "grams": 1
+                }
+            ],
+            "kcal": 532.5078000000001
+        },
+        {
+            "recipe_name": "Healthy Grilled Chicken Salad with Hummus Dressing",
+            "ingredients": [
+                {
+                    "name": "Chicken, breast, boneless, skinless, raw",
+                    "grams": 150,
+                    "nutrients": [
+                        {
+                            "name": "energy",
+                            "unit": "kcal",
+                            "amount_per_100g": 594134.4304687502,
+                            "amount": 891201.6457031253
+                        }
+                    ]
+                },
+                {
+                    "name": "Kale, raw",
+                    "grams": 50,
+                    "nutrients": [
+                        {
+                            "name": "energy",
+                            "unit": "kcal",
+                            "amount_per_100g": 0.00224775,
+                            "amount": 0.001123875
+                        }
+                    ]
+                },
+                {
+                    "name": "Tomatoes, grape, raw",
+                    "grams": 50,
+                    "nutrients": [
+                        {
+                            "name": "energy",
+                            "unit": "kcal",
+                            "amount_per_100g": 3.862380981445312e-06,
+                            "amount": 3.862380981445312e-06
+                        }
+                    ]
+                },
+                {
+                    "name": "Cucumber, with peel, raw",
+                    "grams": 50,
+                    "nutrients": [
+                        {
+                            "name": "energy",
+                            "unit": "kcal",
+                            "amount_per_100g": 0.2484375,
+                            "amount": 0.12421875
+                        }
+                    ]
+                },
+                {
+                    "name": "Carrots, mature, raw",
+                    "grams": 30,
+                    "nutrients": [
+                        {
+                            "name": "energy",
+                            "unit": "kcal",
+                            "amount_per_100g": 7.2,
+                            "amount": 3.6
+                        }
+                    ]
+                },
+                {
+                    "name": "Beans, snap, green, raw",
+                    "grams": 50,
+                    "nutrients": [
+                        {
+                            "name": "energy",
+                            "unit": "kcal",
+                            "amount_per_100g": 0.625,
+                            "amount": 0.625
+                        }
+                    ]
+                },
+                {
+                    "name": "Nuts, almonds, dry roasted, with salt added",
+                    "grams": 15,
+                    "nutrients": [
+                        {
+                            "name": "energy",
+                            "unit": "kcal",
+                            "amount_per_100g": 3.7068009750000025e-12,
+                            "amount": 7.413601950000005e-13
+                        }
+                    ]
+                },
+                {
+                    "name": "Hummus, commercial",
+                    "grams": 30,
+                    "nutrients": [
+                        {
+                            "name": "energy",
+                            "unit": "kcal",
+                            "amount_per_100g": 0.34992000000000006,
+                            "amount": 0.10497600000000003
+                        }
+                    ]
+                },
+                {
+                    "name": "Oil, olive, extra virgin",
+                    "grams": 10,
+                    "nutrients": []
+                },
+                {
+                    "name": "Lemon juice, raw",
+                    "grams": 10
+                },
+                {
+                    "name": "Cheese, parmesan, grated",
+                    "grams": 10,
+                    "nutrients": [
+                        {
+                            "name": "energy",
+                            "unit": "kcal",
+                            "amount_per_100g": 5.052000000000003e-07,
+                            "amount": 1.0104000000000005e-07
+                        }
+                    ]
+                },
+                {
+                    "name": "Salt, table, iodized",
+                    "grams": 2,
+                    "nutrients": []
+                },
+                {
+                    "name": "Pepper, black",
+                    "grams": 1
+                }
+            ],
+            "kcal": 553.8575
+        },
+        {
+            "recipe_name": "Healthy Chicken Parmesan with Kale Salad",
+            "ingredients": [
+                {
+                    "name": "Chicken, breast, boneless, skinless, raw",
+                    "grams": 200,
+                    "nutrients": [
+                        {
+                            "name": "energy",
+                            "unit": "kcal",
+                            "amount_per_100g": 594134.4304687502,
+                            "amount": 891201.6457031253
+                        }
+                    ]
+                },
+                {
+                    "name": "Bread, whole-wheat, commercially prepared",
+                    "grams": 50,
+                    "nutrients": [
+                        {
+                            "name": "energy",
+                            "unit": "kcal",
+                            "amount_per_100g": 0.002621168418816001,
+                            "amount": 0.002096934735052801
+                        }
+                    ]
+                },
+                {
+                    "name": "Egg, whole, raw, frozen, pasteurized",
+                    "grams": 50,
+                    "nutrients": [
+                        {
+                            "name": "energy",
+                            "unit": "kcal",
+                            "amount_per_100g": 156.75,
+                            "amount": 156.75
+                        }
+                    ]
+                },
+                {
+                    "name": "Cheese, parmesan, grated",
+                    "grams": 20,
+                    "nutrients": [
+                        {
+                            "name": "energy",
+                            "unit": "kcal",
+                            "amount_per_100g": 5.052000000000003e-07,
+                            "amount": 1.0104000000000005e-07
+                        }
+                    ]
+                },
+                {
+                    "name": "Cheese, mozzarella, low moisture, part-skim",
+                    "grams": 50,
+                    "nutrients": [
+                        {
+                            "name": "energy",
+                            "unit": "kcal",
+                            "amount_per_100g": 0.4017600000000001,
+                            "amount": 0.08035200000000003
+                        }
+                    ]
+                },
+                {
+                    "name": "Sauce, pasta, spaghetti/marinara, ready-to-serve",
+                    "grams": 100,
+                    "nutrients": [
+                        {
+                            "name": "energy",
+                            "unit": "kcal",
+                            "amount_per_100g": 45.0,
+                            "amount": 45.0
+                        }
+                    ]
+                },
+                {
+                    "name": "Kale, raw",
+                    "grams": 100,
+                    "nutrients": [
+                        {
+                            "name": "energy",
+                            "unit": "kcal",
+                            "amount_per_100g": 0.00224775,
+                            "amount": 0.001123875
+                        }
+                    ]
+                },
+                {
+                    "name": "Tomatoes, grape, raw",
+                    "grams": 50,
+                    "nutrients": [
+                        {
+                            "name": "energy",
+                            "unit": "kcal",
+                            "amount_per_100g": 3.862380981445312e-06,
+                            "amount": 3.862380981445312e-06
+                        }
+                    ]
+                },
+                {
+                    "name": "Oil, olive, extra virgin",
+                    "grams": 15,
+                    "nutrients": []
+                },
+                {
+                    "name": "Nuts, almonds, dry roasted, with salt added",
+                    "grams": 30,
+                    "nutrients": [
+                        {
+                            "name": "energy",
+                            "unit": "kcal",
+                            "amount_per_100g": 3.7068009750000025e-12,
+                            "amount": 7.413601950000005e-13
+                        }
+                    ]
+                },
+                {
+                    "name": "Salt, table, iodized",
+                    "grams": 2,
+                    "nutrients": []
+                },
+                {
+                    "name": "Peppers, bell, red, raw",
+                    "grams": 50,
+                    "nutrients": [
+                        {
+                            "name": "energy",
+                            "unit": "kcal",
+                            "amount_per_100g": 0.019014750000000004,
+                            "amount": 0.009507375000000002
+                        }
+                    ]
+                }
+            ],
+            "kcal": 1256.99415
+        },
+        {
+            "recipe_name": "Healthy Athlete's Power Breakfast",
+            "ingredients": [
+                {
+                    "name": "Eggs, Grade A, Large, egg whole",
+                    "grams": 100,
+                    "nutrients": [
+                        {
+                            "name": "energy",
+                            "unit": "kcal",
+                            "amount_per_100g": 148.0,
+                            "amount": 148.0
+                        }
+                    ]
+                },
+                {
+                    "name": "Spinach, baby",
+                    "grams": 30,
+                    "nutrients": [
+                        {
+                            "name": "energy",
+                            "unit": "kcal",
+                            "amount_per_100g": 4.712110200000003e-05,
+                            "amount": 1.4136330600000009e-05
+                        }
+                    ]
+                },
+                {
+                    "name": "Tomatoes, grape, raw",
+                    "grams": 50,
+                    "nutrients": [
+                        {
+                            "name": "energy",
+                            "unit": "kcal",
+                            "amount_per_100g": 3.862380981445312e-06,
+                            "amount": 3.862380981445312e-06
+                        }
+                    ]
+                },
+                {
+                    "name": "Cheese, cheddar",
+                    "grams": 30,
+                    "nutrients": [
+                        {
+                            "name": "energy",
+                            "unit": "kcal",
+                            "amount_per_100g": 0.02676888000000001,
+                            "amount": 0.008030664000000003
+                        }
+                    ]
+                },
+                {
+                    "name": "Bread, whole-wheat, commercially prepared",
+                    "grams": 80,
+                    "nutrients": [
+                        {
+                            "name": "energy",
+                            "unit": "kcal",
+                            "amount_per_100g": 0.002621168418816001,
+                            "amount": 0.002096934735052801
+                        }
+                    ]
+                },
+                {
+                    "name": "Oil, olive, extra virgin",
+                    "grams": 15,
+                    "nutrients": []
+                },
+                {
+                    "name": "Nuts, almonds, dry roasted, with salt added",
+                    "grams": 20,
+                    "nutrients": [
+                        {
+                            "name": "energy",
+                            "unit": "kcal",
+                            "amount_per_100g": 3.7068009750000025e-12,
+                            "amount": 7.413601950000005e-13
+                        }
+                    ]
+                },
+                {
+                    "name": "Yogurt, Greek, plain, nonfat",
+                    "grams": 150,
+                    "nutrients": [
+                        {
+                            "name": "energy",
+                            "unit": "kcal",
+                            "amount_per_100g": 77.76,
+                            "amount": 38.88
+                        }
+                    ]
+                },
+                {
+                    "name": "Kiwifruit, green, raw",
+                    "grams": 75,
+                    "nutrients": [
+                        {
+                            "name": "energy",
+                            "unit": "kcal",
+                            "amount_per_100g": 32.625,
+                            "amount": 24.46875
+                        }
+                    ]
+                },
+                {
+                    "name": "Milk, nonfat, fluid, with added vitamin A and vitamin D (fat free or skim)",
+                    "grams": 200,
+                    "nutrients": [
+                        {
+                            "name": "energy",
+                            "unit": "kcal",
+                            "amount_per_100g": 34.0,
+                            "amount": 68.0
+                        }
+                    ]
+                }
+            ],
+            "kcal": 653.449995
+        },
+        {
+            "recipe_name": "Healthy Chicken Caesar Wrap",
+            "ingredients": [
+                {
+                    "name": "Chicken, breast, boneless, skinless, raw",
+                    "grams": 150,
+                    "nutrients": [
+                        {
+                            "name": "energy",
+                            "unit": "kcal",
+                            "amount_per_100g": 594134.4304687502,
+                            "amount": 891201.6457031253
+                        }
+                    ]
+                },
+                {
+                    "name": "Lettuce, romaine, green, raw",
+                    "grams": 50,
+                    "nutrients": [
+                        {
+                            "name": "energy",
+                            "unit": "kcal",
+                            "amount_per_100g": 10.4,
+                            "amount": 3.12
+                        }
+                    ]
+                },
+                {
+                    "name": "Cheese, parmesan, grated",
+                    "grams": 10,
+                    "nutrients": [
+                        {
+                            "name": "energy",
+                            "unit": "kcal",
+                            "amount_per_100g": 5.052000000000003e-07,
+                            "amount": 1.0104000000000005e-07
+                        }
+                    ]
+                },
+                {
+                    "name": "Yogurt, Greek, plain, nonfat",
+                    "grams": 30,
+                    "nutrients": [
+                        {
+                            "name": "energy",
+                            "unit": "kcal",
+                            "amount_per_100g": 77.76,
+                            "amount": 38.88
+                        }
+                    ]
+                },
+                {
+                    "name": "Mustard, prepared, yellow",
+                    "grams": 5,
+                    "nutrients": [
+                        {
+                            "name": "energy",
+                            "unit": "kcal",
+                            "amount_per_100g": 1.5875000000000008e-08,
+                            "amount": 1.5875000000000008e-09
+                        }
+                    ]
+                },
+                {
+                    "name": "Bread, whole-wheat, commercially prepared",
+                    "grams": 80,
+                    "nutrients": [
+                        {
+                            "name": "energy",
+                            "unit": "kcal",
+                            "amount_per_100g": 0.002621168418816001,
+                            "amount": 0.002096934735052801
+                        }
+                    ]
+                },
+                {
+                    "name": "Tomatoes, grape, raw",
+                    "grams": 30,
+                    "nutrients": [
+                        {
+                            "name": "energy",
+                            "unit": "kcal",
+                            "amount_per_100g": 3.862380981445312e-06,
+                            "amount": 3.862380981445312e-06
+                        }
+                    ]
+                },
+                {
+                    "name": "Oil, olive, extra virgin",
+                    "grams": 5,
+                    "nutrients": []
+                },
+                {
+                    "name": "Garlic, raw",
+                    "grams": 3,
+                    "nutrients": [
+                        {
+                            "name": "energy",
+                            "unit": "kcal",
+                            "amount_per_100g": 2.6812500000000005e-05,
+                            "amount": 1.3406250000000002e-06
+                        }
+                    ]
+                },
+                {
+                    "name": "Lemon juice, raw",
+                    "grams": 10
+                },
+                {
+                    "name": "Salt, table, iodized",
+                    "grams": 1,
+                    "nutrients": []
+                },
+                {
+                    "name": "Pepper, black",
+                    "grams": 0.5
+                }
+            ],
+            "kcal": 1274.5477585
+        },
+        {
+            "recipe_name": "Healthy Grilled Chicken Salad with Almonds",
+            "ingredients": [
+                {
+                    "name": "Chicken, breast, boneless, skinless, raw",
+                    "grams": 150,
+                    "nutrients": [
+                        {
+                            "name": "energy",
+                            "unit": "kcal",
+                            "amount_per_100g": 594134.4304687502,
+                            "amount": 891201.6457031253
+                        }
+                    ]
+                },
+                {
+                    "name": "Spinach, baby",
+                    "grams": 30,
+                    "nutrients": [
+                        {
+                            "name": "energy",
+                            "unit": "kcal",
+                            "amount_per_100g": 4.712110200000003e-05,
+                            "amount": 1.4136330600000009e-05
+                        }
+                    ]
+                },
+                {
+                    "name": "Kale, raw",
+                    "grams": 30,
+                    "nutrients": [
+                        {
+                            "name": "energy",
+                            "unit": "kcal",
+                            "amount_per_100g": 0.00224775,
+                            "amount": 0.001123875
+                        }
+                    ]
+                },
+                {
+                    "name": "Tomatoes, grape, raw",
+                    "grams": 50,
+                    "nutrients": [
+                        {
+                            "name": "energy",
+                            "unit": "kcal",
+                            "amount_per_100g": 3.862380981445312e-06,
+                            "amount": 3.862380981445312e-06
+                        }
+                    ]
+                },
+                {
+                    "name": "Cucumbers, with peel, raw",
+                    "grams": 50
+                },
+                {
+                    "name": "Carrots, baby, raw",
+                    "grams": 30,
+                    "nutrients": [
+                        {
+                            "name": "energy",
+                            "unit": "kcal",
+                            "amount_per_100g": 0.08262000000000001,
+                            "amount": 0.024786000000000006
+                        }
+                    ]
+                },
+                {
+                    "name": "Oil, olive, extra virgin",
+                    "grams": 15,
+                    "nutrients": []
+                },
+                {
+                    "name": "Vinegar, balsamic",
+                    "grams": 10
+                },
+                {
+                    "name": "Nuts, almonds, dry roasted, with salt added",
+                    "grams": 15,
+                    "nutrients": [
+                        {
+                            "name": "energy",
+                            "unit": "kcal",
+                            "amount_per_100g": 3.7068009750000025e-12,
+                            "amount": 7.413601950000005e-13
+                        }
+                    ]
+                },
+                {
+                    "name": "Cheese, parmesan, grated",
+                    "grams": 10,
+                    "nutrients": [
+                        {
+                            "name": "energy",
+                            "unit": "kcal",
+                            "amount_per_100g": 5.052000000000003e-07,
+                            "amount": 1.0104000000000005e-07
+                        }
+                    ]
+                },
+                {
+                    "name": "Salt, table, iodized",
+                    "grams": 2,
+                    "nutrients": []
+                },
+                {
+                    "name": "Pepper, black",
+                    "grams": 1
+                }
+            ],
+            "kcal": 1734.34298125
+        },
+        {
+            "recipe_name": "Healthy Athlete's Breakfast Scramble",
+            "ingredients": [
+                {
+                    "name": "Egg, whole, raw, frozen, pasteurized",
+                    "grams": 100,
+                    "nutrients": [
+                        {
+                            "name": "energy",
+                            "unit": "kcal",
+                            "amount_per_100g": 156.75,
+                            "amount": 156.75
+                        }
+                    ]
+                },
+                {
+                    "name": "Egg, white, raw, frozen, pasteurized",
+                    "grams": 60,
+                    "nutrients": [
+                        {
+                            "name": "energy",
+                            "unit": "kcal",
+                            "amount_per_100g": 3.732480000000001,
+                            "amount": 2.2394880000000006
+                        }
+                    ]
+                },
+                {
+                    "name": "Kale, raw",
+                    "grams": 30,
+                    "nutrients": [
+                        {
+                            "name": "energy",
+                            "unit": "kcal",
+                            "amount_per_100g": 0.00224775,
+                            "amount": 0.001123875
+                        }
+                    ]
+                },
+                {
+                    "name": "Tomatoes, grape, raw",
+                    "grams": 50,
+                    "nutrients": [
+                        {
+                            "name": "energy",
+                            "unit": "kcal",
+                            "amount_per_100g": 3.862380981445312e-06,
+                            "amount": 3.862380981445312e-06
+                        }
+                    ]
+                },
+                {
+                    "name": "Cheese, cheddar",
+                    "grams": 30,
+                    "nutrients": [
+                        {
+                            "name": "energy",
+                            "unit": "kcal",
+                            "amount_per_100g": 0.02676888000000001,
+                            "amount": 0.008030664000000003
+                        }
+                    ]
+                },
+                {
+                    "name": "Bread, whole-wheat, commercially prepared",
+                    "grams": 50,
+                    "nutrients": [
+                        {
+                            "name": "energy",
+                            "unit": "kcal",
+                            "amount_per_100g": 0.002621168418816001,
+                            "amount": 0.002096934735052801
+                        }
+                    ]
+                },
+                {
+                    "name": "Oil, olive, extra virgin",
+                    "grams": 15,
+                    "nutrients": []
+                },
+                {
+                    "name": "Nuts, almonds, dry roasted, with salt added",
+                    "grams": 20,
+                    "nutrients": [
+                        {
+                            "name": "energy",
+                            "unit": "kcal",
+                            "amount_per_100g": 3.7068009750000025e-12,
+                            "amount": 7.413601950000005e-13
+                        }
+                    ]
+                },
+                {
+                    "name": "Beans, snap, green, raw",
+                    "grams": 50,
+                    "nutrients": [
+                        {
+                            "name": "energy",
+                            "unit": "kcal",
+                            "amount_per_100g": 0.625,
+                            "amount": 0.625
+                        }
+                    ]
+                },
+                {
+                    "name": "Salt, table, iodized",
+                    "grams": 2,
+                    "nutrients": []
+                },
+                {
+                    "name": "Peppers, bell, green, raw",
+                    "grams": 30,
+                    "nutrients": [
+                        {
+                            "name": "energy",
+                            "unit": "kcal",
+                            "amount_per_100g": 1.0305000000000002,
+                            "amount": 0.3091500000000001
+                        }
+                    ]
+                }
+            ],
+            "kcal": 191.609208625
+        },
+        {
+            "recipe_name": "Healthy Athlete's Chicken and Kale Salad with Hummus Dressing",
+            "ingredients": [
+                {
+                    "name": "Chicken, breast, boneless, skinless, raw",
+                    "grams": 150,
+                    "nutrients": [
+                        {
+                            "name": "energy",
+                            "unit": "kcal",
+                            "amount_per_100g": 594134.4304687502,
+                            "amount": 891201.6457031253
+                        }
+                    ]
+                },
+                {
+                    "name": "Kale, raw",
+                    "grams": 100,
+                    "nutrients": [
+                        {
+                            "name": "energy",
+                            "unit": "kcal",
+                            "amount_per_100g": 0.00224775,
+                            "amount": 0.001123875
+                        }
+                    ]
+                },
+                {
+                    "name": "Tomatoes, grape, raw",
+                    "grams": 50,
+                    "nutrients": [
+                        {
+                            "name": "energy",
+                            "unit": "kcal",
+                            "amount_per_100g": 3.862380981445312e-06,
+                            "amount": 3.862380981445312e-06
+                        }
+                    ]
+                },
+                {
+                    "name": "Cucumber, with peel, raw",
+                    "grams": 50,
+                    "nutrients": [
+                        {
+                            "name": "energy",
+                            "unit": "kcal",
+                            "amount_per_100g": 0.2484375,
+                            "amount": 0.12421875
+                        }
+                    ]
+                },
+                {
+                    "name": "Carrots, baby, raw",
+                    "grams": 30,
+                    "nutrients": [
+                        {
+                            "name": "energy",
+                            "unit": "kcal",
+                            "amount_per_100g": 0.08262000000000001,
+                            "amount": 0.024786000000000006
+                        }
+                    ]
+                },
+                {
+                    "name": "Nuts, almonds, dry roasted, with salt added",
+                    "grams": 20,
+                    "nutrients": [
+                        {
+                            "name": "energy",
+                            "unit": "kcal",
+                            "amount_per_100g": 3.7068009750000025e-12,
+                            "amount": 7.413601950000005e-13
+                        }
+                    ]
+                },
+                {
+                    "name": "Hummus, commercial",
+                    "grams": 30,
+                    "nutrients": [
+                        {
+                            "name": "energy",
+                            "unit": "kcal",
+                            "amount_per_100g": 0.34992000000000006,
+                            "amount": 0.10497600000000003
+                        }
+                    ]
+                },
+                {
+                    "name": "Oil, olive, extra virgin",
+                    "grams": 10,
+                    "nutrients": []
+                },
+                {
+                    "name": "Vinegar, balsamic",
+                    "grams": 5
+                },
+                {
+                    "name": "Salt, table, iodized",
+                    "grams": 2,
+                    "nutrients": []
+                },
+                {
+                    "name": "Pepper, black",
+                    "grams": 1
+                },
+                {
+                    "name": "Cheese, parmesan, grated",
+                    "grams": 10,
+                    "nutrients": [
+                        {
+                            "name": "energy",
+                            "unit": "kcal",
+                            "amount_per_100g": 5.052000000000003e-07,
+                            "amount": 1.0104000000000005e-07
+                        }
+                    ]
+                }
+            ],
+            "kcal": 2610.7232003125
+        },
+        {
+            "recipe_name": "Healthy Chicken and Veggie Stir Fry",
+            "ingredients": [
+                {
+                    "name": "Chicken, breast, boneless, skinless, raw",
+                    "grams": 200,
+                    "nutrients": [
+                        {
+                            "name": "energy",
+                            "unit": "kcal",
+                            "amount_per_100g": 594134.4304687502,
+                            "amount": 891201.6457031253
+                        }
+                    ]
+                },
+                {
+                    "name": "Oil, olive, extra virgin",
+                    "grams": 15,
+                    "nutrients": []
+                },
+                {
+                    "name": "Broccoli, raw",
+                    "grams": 100,
+                    "nutrients": [
+                        {
+                            "name": "energy",
+                            "unit": "kcal",
+                            "amount_per_100g": 132,
+                            "amount": 132.0
+                        }
+                    ]
+                },
+                {
+                    "name": "Carrots, mature, raw",
+                    "grams": 50,
+                    "nutrients": [
+                        {
+                            "name": "energy",
+                            "unit": "kcal",
+                            "amount_per_100g": 7.2,
+                            "amount": 3.6
+                        }
+                    ]
+                },
+                {
+                    "name": "Peppers, bell, red, raw",
+                    "grams": 50,
+                    "nutrients": [
+                        {
+                            "name": "energy",
+                            "unit": "kcal",
+                            "amount_per_100g": 0.019014750000000004,
+                            "amount": 0.009507375000000002
+                        }
+                    ]
+                },
+                {
+                    "name": "Onions, red, raw",
+                    "grams": 50,
+                    "nutrients": [
+                        {
+                            "name": "energy",
+                            "unit": "kcal",
+                            "amount_per_100g": 4.4,
+                            "amount": 1.32
+                        }
+                    ]
+                },
+                {
+                    "name": "Garlic, raw",
+                    "grams": 5,
+                    "nutrients": [
+                        {
+                            "name": "energy",
+                            "unit": "kcal",
+                            "amount_per_100g": 2.6812500000000005e-05,
+                            "amount": 1.3406250000000002e-06
+                        }
+                    ]
+                },
+                {
+                    "name": "Soy sauce, low sodium",
+                    "grams": 30
+                },
+                {
+                    "name": "Ginger, raw",
+                    "grams": 5
+                },
+                {
+                    "name": "Honey, pure",
+                    "grams": 10
+                },
+                {
+                    "name": "Sesame seeds, whole, dried",
+                    "grams": 5
+                },
+                {
+                    "name": "Rice, brown, long grain, unenriched, raw",
+                    "grams": 50,
+                    "nutrients": [
+                        {
+                            "name": "energy",
+                            "unit": "kcal",
+                            "amount_per_100g": 366,
+                            "amount": 183.0
+                        }
+                    ]
+                }
+            ],
+            "kcal": 5503.635725
+        },
+        {
+            "recipe_name": "Healthy Athlete's Power Breakfast Sandwich",
+            "ingredients": [
+                {
+                    "name": "Eggs, Grade A, Large, egg whole",
+                    "grams": 100,
+                    "nutrients": [
+                        {
+                            "name": "energy",
+                            "unit": "kcal",
+                            "amount_per_100g": 148.0,
+                            "amount": 148.0
+                        }
+                    ]
+                },
+                {
+                    "name": "Bread, whole-wheat, commercially prepared",
+                    "grams": 60,
+                    "nutrients": [
+                        {
+                            "name": "energy",
+                            "unit": "kcal",
+                            "amount_per_100g": 0.002621168418816001,
+                            "amount": 0.002096934735052801
+                        }
+                    ]
+                },
+                {
+                    "name": "Cheese, cheddar",
+                    "grams": 30,
+                    "nutrients": [
+                        {
+                            "name": "energy",
+                            "unit": "kcal",
+                            "amount_per_100g": 0.02676888000000001,
+                            "amount": 0.008030664000000003
+                        }
+                    ]
+                },
+                {
+                    "name": "Tomatoes, grape, raw",
+                    "grams": 50,
+                    "nutrients": [
+                        {
+                            "name": "energy",
+                            "unit": "kcal",
+                            "amount_per_100g": 3.862380981445312e-06,
+                            "amount": 3.862380981445312e-06
+                        }
+                    ]
+                },
+                {
+                    "name": "Spinach, baby",
+                    "grams": 30,
+                    "nutrients": [
+                        {
+                            "name": "energy",
+                            "unit": "kcal",
+                            "amount_per_100g": 4.712110200000003e-05,
+                            "amount": 1.4136330600000009e-05
+                        }
+                    ]
+                },
+                {
+                    "name": "Oil, olive, extra virgin",
+                    "grams": 15,
+                    "nutrients": []
+                },
+                {
+                    "name": "Turkey, ground, 93% lean, 7% fat, pan-broiled crumbles",
+                    "grams": 50,
+                    "nutrients": [
+                        {
+                            "name": "energy",
+                            "unit": "kcal",
+                            "amount_per_100g": 110.0,
+                            "amount": 55.0
+                        }
+                    ]
+                },
+                {
+                    "name": "Yogurt, Greek, plain, nonfat",
+                    "grams": 150,
+                    "nutrients": [
+                        {
+                            "name": "energy",
+                            "unit": "kcal",
+                            "amount_per_100g": 77.76,
+                            "amount": 38.88
+                        }
+                    ]
+                },
+                {
+                    "name": "Nuts, almonds, dry roasted, with salt added",
+                    "grams": 20,
+                    "nutrients": [
+                        {
+                            "name": "energy",
+                            "unit": "kcal",
+                            "amount_per_100g": 3.7068009750000025e-12,
+                            "amount": 7.413601950000005e-13
+                        }
+                    ]
+                },
+                {
+                    "name": "Kiwifruit, green, raw",
+                    "grams": 75,
+                    "nutrients": [
+                        {
+                            "name": "energy",
+                            "unit": "kcal",
+                            "amount_per_100g": 32.625,
+                            "amount": 24.46875
+                        }
+                    ]
+                }
+            ],
+            "kcal": 409.84970815625
+        },
+        {
+            "recipe_name": "Healthy Grilled Chicken Salad with Almonds and Green Beans",
+            "ingredients": [
+                {
+                    "name": "Chicken, breast, boneless, skinless, raw",
+                    "grams": 150,
+                    "nutrients": [
+                        {
+                            "name": "energy",
+                            "unit": "kcal",
+                            "amount_per_100g": 594134.4304687502,
+                            "amount": 891201.6457031253
+                        }
+                    ]
+                },
+                {
+                    "name": "Oil, olive, extra virgin",
+                    "grams": 15,
+                    "nutrients": []
+                },
+                {
+                    "name": "Salt, table, iodized",
+                    "grams": 2,
+                    "nutrients": []
+                },
+                {
+                    "name": "Kale, raw",
+                    "grams": 50,
+                    "nutrients": [
+                        {
+                            "name": "energy",
+                            "unit": "kcal",
+                            "amount_per_100g": 0.00224775,
+                            "amount": 0.001123875
+                        }
+                    ]
+                },
+                {
+                    "name": "Beans, snap, green, raw",
+                    "grams": 50,
+                    "nutrients": [
+                        {
+                            "name": "energy",
+                            "unit": "kcal",
+                            "amount_per_100g": 0.625,
+                            "amount": 0.625
+                        }
+                    ]
+                },
+                {
+                    "name": "Tomatoes, grape, raw",
+                    "grams": 100,
+                    "nutrients": [
+                        {
+                            "name": "energy",
+                            "unit": "kcal",
+                            "amount_per_100g": 3.862380981445312e-06,
+                            "amount": 3.862380981445312e-06
+                        }
+                    ]
+                },
+                {
+                    "name": "Nuts, almonds, dry roasted, with salt added",
+                    "grams": 30,
+                    "nutrients": [
+                        {
+                            "name": "energy",
+                            "unit": "kcal",
+                            "amount_per_100g": 3.7068009750000025e-12,
+                            "amount": 7.413601950000005e-13
+                        }
+                    ]
+                },
+                {
+                    "name": "Cheese, parmesan, grated",
+                    "grams": 10,
+                    "nutrients": [
+                        {
+                            "name": "energy",
+                            "unit": "kcal",
+                            "amount_per_100g": 5.052000000000003e-07,
+                            "amount": 1.0104000000000005e-07
+                        }
+                    ]
+                },
+                {
+                    "name": "Mustard, prepared, yellow",
+                    "grams": 10,
+                    "nutrients": [
+                        {
+                            "name": "energy",
+                            "unit": "kcal",
+                            "amount_per_100g": 1.5875000000000008e-08,
+                            "amount": 1.5875000000000008e-09
+                        }
+                    ]
+                },
+                {
+                    "name": "Vinegar, balsamic",
+                    "grams": 10
+                },
+                {
+                    "name": "Peppers, bell, red, raw",
+                    "grams": 30,
+                    "nutrients": [
+                        {
+                            "name": "energy",
+                            "unit": "kcal",
+                            "amount_per_100g": 0.019014750000000004,
+                            "amount": 0.009507375000000002
+                        }
+                    ]
+                },
+                {
+                    "name": "Cucumbers, with peel, raw",
+                    "grams": 50
+                }
+            ],
+            "kcal": 7735.434680316251
+        },
+        {
+            "recipe_name": "Healthy Grilled Chicken Salad with Almonds",
+            "ingredients": [
+                {
+                    "name": "Chicken, breast, boneless, skinless, raw",
+                    "grams": 150,
+                    "nutrients": [
+                        {
+                            "name": "energy",
+                            "unit": "kcal",
+                            "amount_per_100g": 594134.4304687502,
+                            "amount": 891201.6457031253
+                        }
+                    ]
+                },
+                {
+                    "name": "Kale, raw",
+                    "grams": 50,
+                    "nutrients": [
+                        {
+                            "name": "energy",
+                            "unit": "kcal",
+                            "amount_per_100g": 0.00224775,
+                            "amount": 0.001123875
+                        }
+                    ]
+                },
+                {
+                    "name": "Tomatoes, grape, raw",
+                    "grams": 100,
+                    "nutrients": [
+                        {
+                            "name": "energy",
+                            "unit": "kcal",
+                            "amount_per_100g": 3.862380981445312e-06,
+                            "amount": 3.862380981445312e-06
+                        }
+                    ]
+                },
+                {
+                    "name": "Cucumber, with peel, raw",
+                    "grams": 50,
+                    "nutrients": [
+                        {
+                            "name": "energy",
+                            "unit": "kcal",
+                            "amount_per_100g": 0.2484375,
+                            "amount": 0.12421875
+                        }
+                    ]
+                },
+                {
+                    "name": "Carrots, baby, raw",
+                    "grams": 50,
+                    "nutrients": [
+                        {
+                            "name": "energy",
+                            "unit": "kcal",
+                            "amount_per_100g": 0.08262000000000001,
+                            "amount": 0.024786000000000006
+                        }
+                    ]
+                },
+                {
+                    "name": "Nuts, almonds, dry roasted, with salt added",
+                    "grams": 30,
+                    "nutrients": [
+                        {
+                            "name": "energy",
+                            "unit": "kcal",
+                            "amount_per_100g": 3.7068009750000025e-12,
+                            "amount": 7.413601950000005e-13
+                        }
+                    ]
+                },
+                {
+                    "name": "Oil, olive, extra virgin",
+                    "grams": 15,
+                    "nutrients": []
+                },
+                {
+                    "name": "Vinegar, balsamic",
+                    "grams": 10
+                },
+                {
+                    "name": "Mustard, prepared, yellow",
+                    "grams": 5,
+                    "nutrients": [
+                        {
+                            "name": "energy",
+                            "unit": "kcal",
+                            "amount_per_100g": 1.5875000000000008e-08,
+                            "amount": 1.5875000000000008e-09
+                        }
+                    ]
+                },
+                {
+                    "name": "Honey, raw",
+                    "grams": 10
+                },
+                {
+                    "name": "Salt, table, iodized",
+                    "grams": 2,
+                    "nutrients": []
+                },
+                {
+                    "name": "Pepper, black",
+                    "grams": 1
+                }
+            ],
+            "kcal": 11595.26516568425
+        },
+        {
+            "recipe_name": "Healthy Athlete's Breakfast Burrito",
+            "ingredients": [
+                {
+                    "name": "Egg, whole, raw, frozen, pasteurized",
+                    "grams": 100,
+                    "nutrients": [
+                        {
+                            "name": "energy",
+                            "unit": "kcal",
+                            "amount_per_100g": 156.75,
+                            "amount": 156.75
+                        }
+                    ]
+                },
+                {
+                    "name": "Egg, white, raw, frozen, pasteurized",
+                    "grams": 60,
+                    "nutrients": [
+                        {
+                            "name": "energy",
+                            "unit": "kcal",
+                            "amount_per_100g": 3.732480000000001,
+                            "amount": 2.2394880000000006
+                        }
+                    ]
+                },
+                {
+                    "name": "Cheese, cheddar",
+                    "grams": 30,
+                    "nutrients": [
+                        {
+                            "name": "energy",
+                            "unit": "kcal",
+                            "amount_per_100g": 0.02676888000000001,
+                            "amount": 0.008030664000000003
+                        }
+                    ]
+                },
+                {
+                    "name": "Tomatoes, grape, raw",
+                    "grams": 50,
+                    "nutrients": [
+                        {
+                            "name": "energy",
+                            "unit": "kcal",
+                            "amount_per_100g": 3.862380981445312e-06,
+                            "amount": 3.862380981445312e-06
+                        }
+                    ]
+                },
+                {
+                    "name": "Spinach, baby",
+                    "grams": 30,
+                    "nutrients": [
+                        {
+                            "name": "energy",
+                            "unit": "kcal",
+                            "amount_per_100g": 4.712110200000003e-05,
+                            "amount": 1.4136330600000009e-05
+                        }
+                    ]
+                },
+                {
+                    "name": "Bread, whole-wheat, commercially prepared",
+                    "grams": 80,
+                    "nutrients": [
+                        {
+                            "name": "energy",
+                            "unit": "kcal",
+                            "amount_per_100g": 0.002621168418816001,
+                            "amount": 0.002096934735052801
+                        }
+                    ]
+                },
+                {
+                    "name": "Chicken, broilers or fryers, drumstick, meat only, cooked, braised",
+                    "grams": 75,
+                    "nutrients": [
+                        {
+                            "name": "energy",
+                            "unit": "kcal",
+                            "amount_per_100g": 652,
+                            "amount": 489.0
+                        }
+                    ]
+                },
+                {
+                    "name": "Beans, snap, green, raw",
+                    "grams": 50,
+                    "nutrients": [
+                        {
+                            "name": "energy",
+                            "unit": "kcal",
+                            "amount_per_100g": 0.625,
+                            "amount": 0.625
+                        }
+                    ]
+                },
+                {
+                    "name": "Avocado, raw",
+                    "grams": 45
+                },
+                {
+                    "name": "Oil, olive, extra virgin",
+                    "grams": 5,
+                    "nutrients": []
+                },
+                {
+                    "name": "Sauce, salsa, ready-to-serve",
+                    "grams": 30,
+                    "nutrients": [
+                        {
+                            "name": "energy",
+                            "unit": "kcal",
+                            "amount_per_100g": 122,
+                            "amount": 36.6
+                        }
+                    ]
+                }
+            ],
+            "kcal": 696.173287118125
+        },
+        {
+            "recipe_name": "Healthy Chicken Salad Sandwich",
+            "ingredients": [
+                {
+                    "name": "Chicken, breast, boneless, skinless, raw",
+                    "grams": 150,
+                    "nutrients": [
+                        {
+                            "name": "energy",
+                            "unit": "kcal",
+                            "amount_per_100g": 594134.4304687502,
+                            "amount": 891201.6457031253
+                        }
+                    ]
+                },
+                {
+                    "name": "Bread, whole-wheat, commercially prepared",
+                    "grams": 60,
+                    "nutrients": [
+                        {
+                            "name": "energy",
+                            "unit": "kcal",
+                            "amount_per_100g": 0.002621168418816001,
+                            "amount": 0.002096934735052801
+                        }
+                    ]
+                },
+                {
+                    "name": "Lettuce, romaine, green, raw",
+                    "grams": 30,
+                    "nutrients": [
+                        {
+                            "name": "energy",
+                            "unit": "kcal",
+                            "amount_per_100g": 10.4,
+                            "amount": 3.12
+                        }
+                    ]
+                },
+                {
+                    "name": "Tomatoes, grape, raw",
+                    "grams": 50,
+                    "nutrients": [
+                        {
+                            "name": "energy",
+                            "unit": "kcal",
+                            "amount_per_100g": 3.862380981445312e-06,
+                            "amount": 3.862380981445312e-06
+                        }
+                    ]
+                },
+                {
+                    "name": "Cucumbers, with peel, raw",
+                    "grams": 50
+                },
+                {
+                    "name": "Cheese, mozzarella, low moisture, part-skim",
+                    "grams": 30,
+                    "nutrients": [
+                        {
+                            "name": "energy",
+                            "unit": "kcal",
+                            "amount_per_100g": 0.4017600000000001,
+                            "amount": 0.08035200000000003
+                        }
+                    ]
+                },
+                {
+                    "name": "Mustard, prepared, yellow",
+                    "grams": 10,
+                    "nutrients": [
+                        {
+                            "name": "energy",
+                            "unit": "kcal",
+                            "amount_per_100g": 1.5875000000000008e-08,
+                            "amount": 1.5875000000000008e-09
+                        }
+                    ]
+                },
+                {
+                    "name": "Yogurt, Greek, plain, nonfat",
+                    "grams": 30,
+                    "nutrients": [
+                        {
+                            "name": "energy",
+                            "unit": "kcal",
+                            "amount_per_100g": 77.76,
+                            "amount": 38.88
+                        }
+                    ]
+                },
+                {
+                    "name": "Nuts, almonds, dry roasted, with salt added",
+                    "grams": 15,
+                    "nutrients": [
+                        {
+                            "name": "energy",
+                            "unit": "kcal",
+                            "amount_per_100g": 3.7068009750000025e-12,
+                            "amount": 7.413601950000005e-13
+                        }
+                    ]
+                },
+                {
+                    "name": "Peppers, bell, red, raw",
+                    "grams": 30,
+                    "nutrients": [
+                        {
+                            "name": "energy",
+                            "unit": "kcal",
+                            "amount_per_100g": 0.019014750000000004,
+                            "amount": 0.009507375000000002
+                        }
+                    ]
+                },
+                {
+                    "name": "Oil, olive, extra virgin",
+                    "grams": 5,
+                    "nutrients": []
+                },
+                {
+                    "name": "Salt, table, iodized",
+                    "grams": 1,
+                    "nutrients": []
+                },
+                {
+                    "name": "Pepper, black, ground",
+                    "grams": 1
+                }
+            ],
+            "kcal": 17517.221935742262
+        },
+        {
+            "recipe_name": "Healthy Chicken Parmesan with Steamed Green Beans and Almonds",
+            "ingredients": [
+                {
+                    "name": "Chicken, breast, boneless, skinless, raw",
+                    "grams": 150,
+                    "nutrients": [
+                        {
+                            "name": "energy",
+                            "unit": "kcal",
+                            "amount_per_100g": 594134.4304687502,
+                            "amount": 891201.6457031253
+                        }
+                    ]
+                },
+                {
+                    "name": "Bread, whole-wheat, commercially prepared",
+                    "grams": 30,
+                    "nutrients": [
+                        {
+                            "name": "energy",
+                            "unit": "kcal",
+                            "amount_per_100g": 0.002621168418816001,
+                            "amount": 0.002096934735052801
+                        }
+                    ]
+                },
+                {
+                    "name": "Cheese, parmesan, grated",
+                    "grams": 15,
+                    "nutrients": [
+                        {
+                            "name": "energy",
+                            "unit": "kcal",
+                            "amount_per_100g": 5.052000000000003e-07,
+                            "amount": 1.0104000000000005e-07
+                        }
+                    ]
+                },
+                {
+                    "name": "Cheese, mozzarella, low moisture, part-skim",
+                    "grams": 30,
+                    "nutrients": [
+                        {
+                            "name": "energy",
+                            "unit": "kcal",
+                            "amount_per_100g": 0.4017600000000001,
+                            "amount": 0.08035200000000003
+                        }
+                    ]
+                },
+                {
+                    "name": "Sauce, pasta, spaghetti/marinara, ready-to-serve",
+                    "grams": 100,
+                    "nutrients": [
+                        {
+                            "name": "energy",
+                            "unit": "kcal",
+                            "amount_per_100g": 45.0,
+                            "amount": 45.0
+                        }
+                    ]
+                },
+                {
+                    "name": "Beans, snap, green, raw",
+                    "grams": 100,
+                    "nutrients": [
+                        {
+                            "name": "energy",
+                            "unit": "kcal",
+                            "amount_per_100g": 0.625,
+                            "amount": 0.625
+                        }
+                    ]
+                },
+                {
+                    "name": "Nuts, almonds, dry roasted, with salt added",
+                    "grams": 15,
+                    "nutrients": [
+                        {
+                            "name": "energy",
+                            "unit": "kcal",
+                            "amount_per_100g": 3.7068009750000025e-12,
+                            "amount": 7.413601950000005e-13
+                        }
+                    ]
+                },
+                {
+                    "name": "Oil, olive, extra virgin",
+                    "grams": 10,
+                    "nutrients": []
+                },
+                {
+                    "name": "Salt, table, iodized",
+                    "grams": 2,
+                    "nutrients": []
+                },
+                {
+                    "name": "Garlic, raw",
+                    "grams": 5,
+                    "nutrients": [
+                        {
+                            "name": "energy",
+                            "unit": "kcal",
+                            "amount_per_100g": 2.6812500000000005e-05,
+                            "amount": 1.3406250000000002e-06
+                        }
+                    ]
+                }
+            ],
+            "kcal": 26149.947252209084
+        },
+        {
+            "recipe_name": "Healthy Athlete's Power Breakfast Sandwich",
+            "ingredients": [
+                {
+                    "name": "Eggs, Grade A, Large, egg whole",
+                    "grams": 100,
+                    "nutrients": [
+                        {
+                            "name": "energy",
+                            "unit": "kcal",
+                            "amount_per_100g": 148.0,
+                            "amount": 148.0
+                        }
+                    ]
+                },
+                {
+                    "name": "Bread, whole-wheat, commercially prepared",
+                    "grams": 60,
+                    "nutrients": [
+                        {
+                            "name": "energy",
+                            "unit": "kcal",
+                            "amount_per_100g": 0.002621168418816001,
+                            "amount": 0.002096934735052801
+                        }
+                    ]
+                },
+                {
+                    "name": "Cheese, cheddar",
+                    "grams": 30,
+                    "nutrients": [
+                        {
+                            "name": "energy",
+                            "unit": "kcal",
+                            "amount_per_100g": 0.02676888000000001,
+                            "amount": 0.008030664000000003
+                        }
+                    ]
+                },
+                {
+                    "name": "Tomatoes, grape, raw",
+                    "grams": 50,
+                    "nutrients": [
+                        {
+                            "name": "energy",
+                            "unit": "kcal",
+                            "amount_per_100g": 3.862380981445312e-06,
+                            "amount": 3.862380981445312e-06
+                        }
+                    ]
+                },
+                {
+                    "name": "Spinach, baby",
+                    "grams": 30,
+                    "nutrients": [
+                        {
+                            "name": "energy",
+                            "unit": "kcal",
+                            "amount_per_100g": 4.712110200000003e-05,
+                            "amount": 1.4136330600000009e-05
+                        }
+                    ]
+                },
+                {
+                    "name": "Oil, olive, extra virgin",
+                    "grams": 15,
+                    "nutrients": []
+                },
+                {
+                    "name": "Nuts, almonds, dry roasted, with salt added",
+                    "grams": 15,
+                    "nutrients": [
+                        {
+                            "name": "energy",
+                            "unit": "kcal",
+                            "amount_per_100g": 3.7068009750000025e-12,
+                            "amount": 7.413601950000005e-13
+                        }
+                    ]
+                },
+                {
+                    "name": "Yogurt, Greek, plain, nonfat",
+                    "grams": 150,
+                    "nutrients": [
+                        {
+                            "name": "energy",
+                            "unit": "kcal",
+                            "amount_per_100g": 77.76,
+                            "amount": 38.88
+                        }
+                    ]
+                },
+                {
+                    "name": "Kiwifruit, green, raw",
+                    "grams": 75,
+                    "nutrients": [
+                        {
+                            "name": "energy",
+                            "unit": "kcal",
+                            "amount_per_100g": 32.625,
+                            "amount": 24.46875
+                        }
+                    ]
+                }
+            ],
+            "kcal": 250.35333826863325
+        },
+        {
+            "recipe_name": "Healthy Grilled Chicken Salad with Hummus Dressing",
+            "ingredients": [
+                {
+                    "name": "Chicken, breast, boneless, skinless, raw",
+                    "grams": 150,
+                    "nutrients": [
+                        {
+                            "name": "energy",
+                            "unit": "kcal",
+                            "amount_per_100g": 594134.4304687502,
+                            "amount": 891201.6457031253
+                        }
+                    ]
+                },
+                {
+                    "name": "Kale, raw",
+                    "grams": 50,
+                    "nutrients": [
+                        {
+                            "name": "energy",
+                            "unit": "kcal",
+                            "amount_per_100g": 0.00224775,
+                            "amount": 0.001123875
+                        }
+                    ]
+                },
+                {
+                    "name": "Tomatoes, grape, raw",
+                    "grams": 50,
+                    "nutrients": [
+                        {
+                            "name": "energy",
+                            "unit": "kcal",
+                            "amount_per_100g": 3.862380981445312e-06,
+                            "amount": 3.862380981445312e-06
+                        }
+                    ]
+                },
+                {
+                    "name": "Cucumbers, with peel, raw",
+                    "grams": 50
+                },
+                {
+                    "name": "Carrots, baby, raw",
+                    "grams": 30,
+                    "nutrients": [
+                        {
+                            "name": "energy",
+                            "unit": "kcal",
+                            "amount_per_100g": 0.08262000000000001,
+                            "amount": 0.024786000000000006
+                        }
+                    ]
+                },
+                {
+                    "name": "Beans, snap, green, raw",
+                    "grams": 50,
+                    "nutrients": [
+                        {
+                            "name": "energy",
+                            "unit": "kcal",
+                            "amount_per_100g": 0.625,
+                            "amount": 0.625
+                        }
+                    ]
+                },
+                {
+                    "name": "Nuts, almonds, dry roasted, with salt added",
+                    "grams": 15,
+                    "nutrients": [
+                        {
+                            "name": "energy",
+                            "unit": "kcal",
+                            "amount_per_100g": 3.7068009750000025e-12,
+                            "amount": 7.413601950000005e-13
+                        }
+                    ]
+                },
+                {
+                    "name": "Hummus, commercial",
+                    "grams": 30,
+                    "nutrients": [
+                        {
+                            "name": "energy",
+                            "unit": "kcal",
+                            "amount_per_100g": 0.34992000000000006,
+                            "amount": 0.10497600000000003
+                        }
+                    ]
+                },
+                {
+                    "name": "Oil, olive, extra virgin",
+                    "grams": 10,
+                    "nutrients": []
+                },
+                {
+                    "name": "Lemon juice, raw",
+                    "grams": 10
+                },
+                {
+                    "name": "Salt, table, iodized",
+                    "grams": 2,
+                    "nutrients": []
+                },
+                {
+                    "name": "Pepper, black",
+                    "grams": 1
+                }
+            ],
+            "kcal": 39129.70629444579
+        },
+        {
+            "recipe_name": "Healthy Grilled Chicken Salad with Hummus Dressing",
+            "ingredients": [
+                {
+                    "name": "Chicken, breast, boneless, skinless, raw",
+                    "grams": 200,
+                    "nutrients": [
+                        {
+                            "name": "energy",
+                            "unit": "kcal",
+                            "amount_per_100g": 594134.4304687502,
+                            "amount": 891201.6457031253
+                        }
+                    ]
+                },
+                {
+                    "name": "Kale, raw",
+                    "grams": 100,
+                    "nutrients": [
+                        {
+                            "name": "energy",
+                            "unit": "kcal",
+                            "amount_per_100g": 0.00224775,
+                            "amount": 0.001123875
+                        }
+                    ]
+                },
+                {
+                    "name": "Tomatoes, grape, raw",
+                    "grams": 100,
+                    "nutrients": [
+                        {
+                            "name": "energy",
+                            "unit": "kcal",
+                            "amount_per_100g": 3.862380981445312e-06,
+                            "amount": 3.862380981445312e-06
+                        }
+                    ]
+                },
+                {
+                    "name": "Cucumbers, with peel, raw",
+                    "grams": 50
+                },
+                {
+                    "name": "Carrots, mature, raw",
+                    "grams": 50,
+                    "nutrients": [
+                        {
+                            "name": "energy",
+                            "unit": "kcal",
+                            "amount_per_100g": 7.2,
+                            "amount": 3.6
+                        }
+                    ]
+                },
+                {
+                    "name": "Beans, snap, green, raw",
+                    "grams": 50,
+                    "nutrients": [
+                        {
+                            "name": "energy",
+                            "unit": "kcal",
+                            "amount_per_100g": 0.625,
+                            "amount": 0.625
+                        }
+                    ]
+                },
+                {
+                    "name": "Nuts, almonds, dry roasted, with salt added",
+                    "grams": 30,
+                    "nutrients": [
+                        {
+                            "name": "energy",
+                            "unit": "kcal",
+                            "amount_per_100g": 3.7068009750000025e-12,
+                            "amount": 7.413601950000005e-13
+                        }
+                    ]
+                },
+                {
+                    "name": "Hummus, commercial",
+                    "grams": 50,
+                    "nutrients": [
+                        {
+                            "name": "energy",
+                            "unit": "kcal",
+                            "amount_per_100g": 0.34992000000000006,
+                            "amount": 0.10497600000000003
+                        }
+                    ]
+                },
+                {
+                    "name": "Oil, olive, extra virgin",
+                    "grams": 15,
+                    "nutrients": []
+                },
+                {
+                    "name": "Cheese, parmesan, grated",
+                    "grams": 20,
+                    "nutrients": [
+                        {
+                            "name": "energy",
+                            "unit": "kcal",
+                            "amount_per_100g": 5.052000000000003e-07,
+                            "amount": 1.0104000000000005e-07
+                        }
+                    ]
+                },
+                {
+                    "name": "Salt, table, iodized",
+                    "grams": 2,
+                    "nutrients": []
+                },
+                {
+                    "name": "Pepper, black",
+                    "grams": 1
+                }
+            ],
+            "kcal": 78248.2049994551
+        },
+        {
+            "recipe_name": "Healthy Athlete's Power Omelette",
+            "ingredients": [
+                {
+                    "name": "Egg, whole, raw, frozen, pasteurized",
+                    "grams": 100,
+                    "nutrients": [
+                        {
+                            "name": "energy",
+                            "unit": "kcal",
+                            "amount_per_100g": 156.75,
+                            "amount": 156.75
+                        }
+                    ]
+                },
+                {
+                    "name": "Egg, white, raw, frozen, pasteurized",
+                    "grams": 60,
+                    "nutrients": [
+                        {
+                            "name": "energy",
+                            "unit": "kcal",
+                            "amount_per_100g": 3.732480000000001,
+                            "amount": 2.2394880000000006
+                        }
+                    ]
+                },
+                {
+                    "name": "Cheese, mozzarella, low moisture, part-skim",
+                    "grams": 30,
+                    "nutrients": [
+                        {
+                            "name": "energy",
+                            "unit": "kcal",
+                            "amount_per_100g": 0.4017600000000001,
+                            "amount": 0.08035200000000003
+                        }
+                    ]
+                },
+                {
+                    "name": "Tomatoes, grape, raw",
+                    "grams": 50,
+                    "nutrients": [
+                        {
+                            "name": "energy",
+                            "unit": "kcal",
+                            "amount_per_100g": 3.862380981445312e-06,
+                            "amount": 3.862380981445312e-06
+                        }
+                    ]
+                },
+                {
+                    "name": "Spinach, baby",
+                    "grams": 30,
+                    "nutrients": [
+                        {
+                            "name": "energy",
+                            "unit": "kcal",
+                            "amount_per_100g": 4.712110200000003e-05,
+                            "amount": 1.4136330600000009e-05
+                        }
+                    ]
+                },
+                {
+                    "name": "Oil, olive, extra virgin",
+                    "grams": 10,
+                    "nutrients": []
+                },
+                {
+                    "name": "Nuts, almonds, dry roasted, with salt added",
+                    "grams": 15,
+                    "nutrients": [
+                        {
+                            "name": "energy",
+                            "unit": "kcal",
+                            "amount_per_100g": 3.7068009750000025e-12,
+                            "amount": 7.413601950000005e-13
+                        }
+                    ]
+                },
+                {
+                    "name": "Bread, whole-wheat, commercially prepared",
+                    "grams": 30,
+                    "nutrients": [
+                        {
+                            "name": "energy",
+                            "unit": "kcal",
+                            "amount_per_100g": 0.002621168418816001,
+                            "amount": 0.002096934735052801
+                        }
+                    ]
+                },
+                {
+                    "name": "Avocado, raw, California",
+                    "grams": 50
+                }
+            ],
+            "kcal": 169.69609625882455
+        },
+        {
+            "recipe_name": "Healthy Grilled Chicken Salad with Hummus Dressing",
+            "ingredients": [
+                {
+                    "name": "Chicken, breast, boneless, skinless, raw",
+                    "grams": 150,
+                    "nutrients": [
+                        {
+                            "name": "energy",
+                            "unit": "kcal",
+                            "amount_per_100g": 594134.4304687502,
+                            "amount": 891201.6457031253
+                        }
+                    ]
+                },
+                {
+                    "name": "Spinach, baby",
+                    "grams": 30,
+                    "nutrients": [
+                        {
+                            "name": "energy",
+                            "unit": "kcal",
+                            "amount_per_100g": 4.712110200000003e-05,
+                            "amount": 1.4136330600000009e-05
+                        }
+                    ]
+                },
+                {
+                    "name": "Kale, raw",
+                    "grams": 30,
+                    "nutrients": [
+                        {
+                            "name": "energy",
+                            "unit": "kcal",
+                            "amount_per_100g": 0.00224775,
+                            "amount": 0.001123875
+                        }
+                    ]
+                },
+                {
+                    "name": "Tomatoes, grape, raw",
+                    "grams": 50,
+                    "nutrients": [
+                        {
+                            "name": "energy",
+                            "unit": "kcal",
+                            "amount_per_100g": 3.862380981445312e-06,
+                            "amount": 3.862380981445312e-06
+                        }
+                    ]
+                },
+                {
+                    "name": "Cucumber, with peel, raw",
+                    "grams": 50,
+                    "nutrients": [
+                        {
+                            "name": "energy",
+                            "unit": "kcal",
+                            "amount_per_100g": 0.2484375,
+                            "amount": 0.12421875
+                        }
+                    ]
+                },
+                {
+                    "name": "Peppers, bell, red, raw",
+                    "grams": 30,
+                    "nutrients": [
+                        {
+                            "name": "energy",
+                            "unit": "kcal",
+                            "amount_per_100g": 0.019014750000000004,
+                            "amount": 0.009507375000000002
+                        }
+                    ]
+                },
+                {
+                    "name": "Carrots, baby, raw",
+                    "grams": 30,
+                    "nutrients": [
+                        {
+                            "name": "energy",
+                            "unit": "kcal",
+                            "amount_per_100g": 0.08262000000000001,
+                            "amount": 0.024786000000000006
+                        }
+                    ]
+                },
+                {
+                    "name": "Nuts, almonds, dry roasted, with salt added",
+                    "grams": 15,
+                    "nutrients": [
+                        {
+                            "name": "energy",
+                            "unit": "kcal",
+                            "amount_per_100g": 3.7068009750000025e-12,
+                            "amount": 7.413601950000005e-13
+                        }
+                    ]
+                },
+                {
+                    "name": "Hummus, commercial",
+                    "grams": 30,
+                    "nutrients": [
+                        {
+                            "name": "energy",
+                            "unit": "kcal",
+                            "amount_per_100g": 0.34992000000000006,
+                            "amount": 0.10497600000000003
+                        }
+                    ]
+                },
+                {
+                    "name": "Oil, olive, extra virgin",
+                    "grams": 10,
+                    "nutrients": []
+                },
+                {
+                    "name": "Vinegar, balsamic",
+                    "grams": 5
+                },
+                {
+                    "name": "Salt, table, iodized",
+                    "grams": 1,
+                    "nutrients": []
+                },
+                {
+                    "name": "Pepper, black",
+                    "grams": 1
+                }
+            ],
+            "kcal": 117362.47476216442
+        },
+        {
+            "recipe_name": "Healthy Grilled Chicken Salad with Almond Dressing",
+            "ingredients": [
+                {
+                    "name": "Chicken, breast, boneless, skinless, raw",
+                    "grams": 150,
+                    "nutrients": [
+                        {
+                            "name": "energy",
+                            "unit": "kcal",
+                            "amount_per_100g": 594134.4304687502,
+                            "amount": 891201.6457031253
+                        }
+                    ]
+                },
+                {
+                    "name": "Kale, raw",
+                    "grams": 50,
+                    "nutrients": [
+                        {
+                            "name": "energy",
+                            "unit": "kcal",
+                            "amount_per_100g": 0.00224775,
+                            "amount": 0.001123875
+                        }
+                    ]
+                },
+                {
+                    "name": "Tomatoes, grape, raw",
+                    "grams": 100,
+                    "nutrients": [
+                        {
+                            "name": "energy",
+                            "unit": "kcal",
+                            "amount_per_100g": 3.862380981445312e-06,
+                            "amount": 3.862380981445312e-06
+                        }
+                    ]
+                },
+                {
+                    "name": "Cucumber, with peel, raw",
+                    "grams": 50,
+                    "nutrients": [
+                        {
+                            "name": "energy",
+                            "unit": "kcal",
+                            "amount_per_100g": 0.2484375,
+                            "amount": 0.12421875
+                        }
+                    ]
+                },
+                {
+                    "name": "Carrots, baby, raw",
+                    "grams": 50,
+                    "nutrients": [
+                        {
+                            "name": "energy",
+                            "unit": "kcal",
+                            "amount_per_100g": 0.08262000000000001,
+                            "amount": 0.024786000000000006
+                        }
+                    ]
+                },
+                {
+                    "name": "Nuts, almonds, dry roasted, with salt added",
+                    "grams": 30,
+                    "nutrients": [
+                        {
+                            "name": "energy",
+                            "unit": "kcal",
+                            "amount_per_100g": 3.7068009750000025e-12,
+                            "amount": 7.413601950000005e-13
+                        }
+                    ]
+                },
+                {
+                    "name": "Oil, olive, extra virgin",
+                    "grams": 15,
+                    "nutrients": []
+                },
+                {
+                    "name": "Vinegar, balsamic",
+                    "grams": 10
+                },
+                {
+                    "name": "Mustard, prepared, yellow",
+                    "grams": 5,
+                    "nutrients": [
+                        {
+                            "name": "energy",
+                            "unit": "kcal",
+                            "amount_per_100g": 1.5875000000000008e-08,
+                            "amount": 1.5875000000000008e-09
+                        }
+                    ]
+                },
+                {
+                    "name": "Garlic, raw",
+                    "grams": 5,
+                    "nutrients": [
+                        {
+                            "name": "energy",
+                            "unit": "kcal",
+                            "amount_per_100g": 2.6812500000000005e-05,
+                            "amount": 1.3406250000000002e-06
+                        }
+                    ]
+                },
+                {
+                    "name": "Salt, table, iodized",
+                    "grams": 2,
+                    "nutrients": []
+                },
+                {
+                    "name": "Peppers, bell, red, raw",
+                    "grams": 30,
+                    "nutrients": [
+                        {
+                            "name": "energy",
+                            "unit": "kcal",
+                            "amount_per_100g": 0.019014750000000004,
+                            "amount": 0.009507375000000002
+                        }
+                    ]
+                }
+            ],
+            "kcal": 176040.49925608386
+        },
+        {
+            "recipe_name": "Healthy Athlete's Breakfast Scramble",
+            "ingredients": [
+                {
+                    "name": "Egg, whole, raw, frozen, pasteurized",
+                    "grams": 100,
+                    "nutrients": [
+                        {
+                            "name": "energy",
+                            "unit": "kcal",
+                            "amount_per_100g": 156.75,
+                            "amount": 156.75
+                        }
+                    ]
+                },
+                {
+                    "name": "Egg, white, raw, frozen, pasteurized",
+                    "grams": 60,
+                    "nutrients": [
+                        {
+                            "name": "energy",
+                            "unit": "kcal",
+                            "amount_per_100g": 3.732480000000001,
+                            "amount": 2.2394880000000006
+                        }
+                    ]
+                },
+                {
+                    "name": "Spinach, baby",
+                    "grams": 30,
+                    "nutrients": [
+                        {
+                            "name": "energy",
+                            "unit": "kcal",
+                            "amount_per_100g": 4.712110200000003e-05,
+                            "amount": 1.4136330600000009e-05
+                        }
+                    ]
+                },
+                {
+                    "name": "Tomatoes, grape, raw",
+                    "grams": 50,
+                    "nutrients": [
+                        {
+                            "name": "energy",
+                            "unit": "kcal",
+                            "amount_per_100g": 3.862380981445312e-06,
+                            "amount": 3.862380981445312e-06
+                        }
+                    ]
+                },
+                {
+                    "name": "Cheese, mozzarella, low moisture, part-skim",
+                    "grams": 30,
+                    "nutrients": [
+                        {
+                            "name": "energy",
+                            "unit": "kcal",
+                            "amount_per_100g": 0.4017600000000001,
+                            "amount": 0.08035200000000003
+                        }
+                    ]
+                },
+                {
+                    "name": "Nuts, almonds, dry roasted, with salt added",
+                    "grams": 15,
+                    "nutrients": [
+                        {
+                            "name": "energy",
+                            "unit": "kcal",
+                            "amount_per_100g": 3.7068009750000025e-12,
+                            "amount": 7.413601950000005e-13
+                        }
+                    ]
+                },
+                {
+                    "name": "Oil, olive, extra virgin",
+                    "grams": 10,
+                    "nutrients": []
+                },
+                {
+                    "name": "Bread, whole-wheat, commercially prepared",
+                    "grams": 40,
+                    "nutrients": [
+                        {
+                            "name": "energy",
+                            "unit": "kcal",
+                            "amount_per_100g": 0.002621168418816001,
+                            "amount": 0.002096934735052801
+                        }
+                    ]
+                },
+                {
+                    "name": "Avocado, raw",
+                    "grams": 50
+                },
+                {
+                    "name": "Peppers, bell, red, raw",
+                    "grams": 30,
+                    "nutrients": [
+                        {
+                            "name": "energy",
+                            "unit": "kcal",
+                            "amount_per_100g": 0.019014750000000004,
+                            "amount": 0.009507375000000002
+                        }
+                    ]
+                },
+                {
+                    "name": "Onions, red, raw",
+                    "grams": 20,
+                    "nutrients": [
+                        {
+                            "name": "energy",
+                            "unit": "kcal",
+                            "amount_per_100g": 4.4,
+                            "amount": 1.32
+                        }
+                    ]
+                },
+                {
+                    "name": "Mushrooms, white button",
+                    "grams": 30,
+                    "nutrients": [
+                        {
+                            "name": "energy",
+                            "unit": "kcal",
+                            "amount_per_100g": 4.68,
+                            "amount": 2.34
+                        }
+                    ]
+                },
+                {
+                    "name": "Salt, table, iodized",
+                    "grams": 1,
+                    "nutrients": []
+                },
+                {
+                    "name": "Pepper, black",
+                    "grams": 1
+                }
+            ],
+            "kcal": 171.6014351535327
+        },
+        {
+            "recipe_name": "Healthy Chicken & Veggie Wrap",
+            "ingredients": [
+                {
+                    "name": "Chicken, breast, boneless, skinless, raw",
+                    "grams": 150,
+                    "nutrients": [
+                        {
+                            "name": "energy",
+                            "unit": "kcal",
+                            "amount_per_100g": 594134.4304687502,
+                            "amount": 891201.6457031253
+                        }
+                    ]
+                },
+                {
+                    "name": "Kale, raw",
+                    "grams": 30,
+                    "nutrients": [
+                        {
+                            "name": "energy",
+                            "unit": "kcal",
+                            "amount_per_100g": 0.00224775,
+                            "amount": 0.001123875
+                        }
+                    ]
+                },
+                {
+                    "name": "Tomatoes, grape, raw",
+                    "grams": 50,
+                    "nutrients": [
+                        {
+                            "name": "energy",
+                            "unit": "kcal",
+                            "amount_per_100g": 3.862380981445312e-06,
+                            "amount": 3.862380981445312e-06
+                        }
+                    ]
+                },
+                {
+                    "name": "Hummus, commercial",
+                    "grams": 30,
+                    "nutrients": [
+                        {
+                            "name": "energy",
+                            "unit": "kcal",
+                            "amount_per_100g": 0.34992000000000006,
+                            "amount": 0.10497600000000003
+                        }
+                    ]
+                },
+                {
+                    "name": "Cheese, mozzarella, low moisture, part-skim",
+                    "grams": 20,
+                    "nutrients": [
+                        {
+                            "name": "energy",
+                            "unit": "kcal",
+                            "amount_per_100g": 0.4017600000000001,
+                            "amount": 0.08035200000000003
+                        }
+                    ]
+                },
+                {
+                    "name": "Bread, whole-wheat, commercially prepared",
+                    "grams": 60,
+                    "nutrients": [
+                        {
+                            "name": "energy",
+                            "unit": "kcal",
+                            "amount_per_100g": 0.002621168418816001,
+                            "amount": 0.002096934735052801
+                        }
+                    ]
+                },
+                {
+                    "name": "Beans, snap, green, canned, regular pack, drained solids",
+                    "grams": 50,
+                    "nutrients": [
+                        {
+                            "name": "energy",
+                            "unit": "kcal",
+                            "amount_per_100g": 31.5,
+                            "amount": 15.75
+                        }
+                    ]
+                },
+                {
+                    "name": "Oil, olive, extra virgin",
+                    "grams": 5,
+                    "nutrients": []
+                },
+                {
+                    "name": "Mustard, prepared, yellow",
+                    "grams": 10,
+                    "nutrients": [
+                        {
+                            "name": "energy",
+                            "unit": "kcal",
+                            "amount_per_100g": 1.5875000000000008e-08,
+                            "amount": 1.5875000000000008e-09
+                        }
+                    ]
+                }
+            ],
+            "kcal": 264076.2626316377
+        },
+        {
+            "recipe_name": "Healthy Chicken and Kale Salad with Almonds",
+            "ingredients": [
+                {
+                    "name": "Chicken, breast, boneless, skinless, raw",
+                    "grams": 150,
+                    "nutrients": [
+                        {
+                            "name": "energy",
+                            "unit": "kcal",
+                            "amount_per_100g": 594134.4304687502,
+                            "amount": 891201.6457031253
+                        }
+                    ]
+                },
+                {
+                    "name": "Kale, raw",
+                    "grams": 100,
+                    "nutrients": [
+                        {
+                            "name": "energy",
+                            "unit": "kcal",
+                            "amount_per_100g": 0.00224775,
+                            "amount": 0.001123875
+                        }
+                    ]
+                },
+                {
+                    "name": "Tomatoes, grape, raw",
+                    "grams": 50,
+                    "nutrients": [
+                        {
+                            "name": "energy",
+                            "unit": "kcal",
+                            "amount_per_100g": 3.862380981445312e-06,
+                            "amount": 3.862380981445312e-06
+                        }
+                    ]
+                },
+                {
+                    "name": "Cucumber, with peel, raw",
+                    "grams": 50,
+                    "nutrients": [
+                        {
+                            "name": "energy",
+                            "unit": "kcal",
+                            "amount_per_100g": 0.2484375,
+                            "amount": 0.12421875
+                        }
+                    ]
+                },
+                {
+                    "name": "Carrots, baby, raw",
+                    "grams": 30,
+                    "nutrients": [
+                        {
+                            "name": "energy",
+                            "unit": "kcal",
+                            "amount_per_100g": 0.08262000000000001,
+                            "amount": 0.024786000000000006
+                        }
+                    ]
+                },
+                {
+                    "name": "Nuts, almonds, dry roasted, with salt added",
+                    "grams": 20,
+                    "nutrients": [
+                        {
+                            "name": "energy",
+                            "unit": "kcal",
+                            "amount_per_100g": 3.7068009750000025e-12,
+                            "amount": 7.413601950000005e-13
+                        }
+                    ]
+                },
+                {
+                    "name": "Oil, olive, extra virgin",
+                    "grams": 15,
+                    "nutrients": []
+                },
+                {
+                    "name": "Vinegar, balsamic",
+                    "grams": 10
+                },
+                {
+                    "name": "Mustard, prepared, yellow",
+                    "grams": 5,
+                    "nutrients": [
+                        {
+                            "name": "energy",
+                            "unit": "kcal",
+                            "amount_per_100g": 1.5875000000000008e-08,
+                            "amount": 1.5875000000000008e-09
+                        }
+                    ]
+                },
+                {
+                    "name": "Salt, table, iodized",
+                    "grams": 2,
+                    "nutrients": []
+                },
+                {
+                    "name": "Pepper, black",
+                    "grams": 1
+                },
+                {
+                    "name": "Cheese, parmesan, grated",
+                    "grams": 10,
+                    "nutrients": [
+                        {
+                            "name": "energy",
+                            "unit": "kcal",
+                            "amount_per_100g": 5.052000000000003e-07,
+                            "amount": 1.0104000000000005e-07
+                        }
+                    ]
+                },
+                {
+                    "name": "Lemon juice, raw",
+                    "grams": 5
+                }
+            ],
+            "kcal": 396089.9010444707
+        },
+        {
+            "recipe_name": "Healthy Athlete's Breakfast Scramble",
+            "ingredients": [
+                {
+                    "name": "Egg, whole, raw, frozen, pasteurized",
+                    "grams": 100,
+                    "nutrients": [
+                        {
+                            "name": "energy",
+                            "unit": "kcal",
+                            "amount_per_100g": 156.75,
+                            "amount": 156.75
+                        }
+                    ]
+                },
+                {
+                    "name": "Egg, white, raw, frozen, pasteurized",
+                    "grams": 60,
+                    "nutrients": [
+                        {
+                            "name": "energy",
+                            "unit": "kcal",
+                            "amount_per_100g": 3.732480000000001,
+                            "amount": 2.2394880000000006
+                        }
+                    ]
+                },
+                {
+                    "name": "Tomatoes, grape, raw",
+                    "grams": 50,
+                    "nutrients": [
+                        {
+                            "name": "energy",
+                            "unit": "kcal",
+                            "amount_per_100g": 3.862380981445312e-06,
+                            "amount": 3.862380981445312e-06
+                        }
+                    ]
+                },
+                {
+                    "name": "Spinach, baby",
+                    "grams": 30,
+                    "nutrients": [
+                        {
+                            "name": "energy",
+                            "unit": "kcal",
+                            "amount_per_100g": 4.712110200000003e-05,
+                            "amount": 1.4136330600000009e-05
+                        }
+                    ]
+                },
+                {
+                    "name": "Cheese, cheddar",
+                    "grams": 30,
+                    "nutrients": [
+                        {
+                            "name": "energy",
+                            "unit": "kcal",
+                            "amount_per_100g": 0.02676888000000001,
+                            "amount": 0.008030664000000003
+                        }
+                    ]
+                },
+                {
+                    "name": "Oil, olive, extra virgin",
+                    "grams": 15,
+                    "nutrients": []
+                },
+                {
+                    "name": "Bread, whole-wheat, commercially prepared",
+                    "grams": 40,
+                    "nutrients": [
+                        {
+                            "name": "energy",
+                            "unit": "kcal",
+                            "amount_per_100g": 0.002621168418816001,
+                            "amount": 0.002096934735052801
+                        }
+                    ]
+                },
+                {
+                    "name": "Nuts, almonds, dry roasted, with salt added",
+                    "grams": 20,
+                    "nutrients": [
+                        {
+                            "name": "energy",
+                            "unit": "kcal",
+                            "amount_per_100g": 3.7068009750000025e-12,
+                            "amount": 7.413601950000005e-13
+                        }
+                    ]
+                },
+                {
+                    "name": "Kale, raw",
+                    "grams": 30,
+                    "nutrients": [
+                        {
+                            "name": "energy",
+                            "unit": "kcal",
+                            "amount_per_100g": 0.00224775,
+                            "amount": 0.001123875
+                        }
+                    ]
+                },
+                {
+                    "name": "Mushrooms, white button",
+                    "grams": 50,
+                    "nutrients": [
+                        {
+                            "name": "energy",
+                            "unit": "kcal",
+                            "amount_per_100g": 4.68,
+                            "amount": 2.34
+                        }
+                    ]
+                },
+                {
+                    "name": "Onions, yellow, raw",
+                    "grams": 30,
+                    "nutrients": [
+                        {
+                            "name": "energy",
+                            "unit": "kcal",
+                            "amount_per_100g": 11.4,
+                            "amount": 3.42
+                        }
+                    ]
+                },
+                {
+                    "name": "Peppers, bell, green, raw",
+                    "grams": 30,
+                    "nutrients": [
+                        {
+                            "name": "energy",
+                            "unit": "kcal",
+                            "amount_per_100g": 1.0305000000000002,
+                            "amount": 0.3091500000000001
+                        }
+                    ]
+                },
+                {
+                    "name": "Salt, table, iodized",
+                    "grams": 2,
+                    "nutrients": []
+                },
+                {
+                    "name": "Milk, lowfat, fluid, 1% milkfat, with added vitamin A and vitamin D",
+                    "grams": 240,
+                    "nutrients": [
+                        {
+                            "name": "energy",
+                            "unit": "kcal",
+                            "amount_per_100g": 179,
+                            "amount": 429.6
+                        }
+                    ]
+                }
+            ],
+            "kcal": 595.3929424282835
+        },
+        {
+            "recipe_name": "Healthy Chicken and Veggie Wrap",
+            "ingredients": [
+                {
+                    "name": "Chicken, breast, boneless, skinless, raw",
+                    "grams": 150,
+                    "nutrients": [
+                        {
+                            "name": "energy",
+                            "unit": "kcal",
+                            "amount_per_100g": 594134.4304687502,
+                            "amount": 891201.6457031253
+                        }
+                    ]
+                },
+                {
+                    "name": "Spinach, baby",
+                    "grams": 30,
+                    "nutrients": [
+                        {
+                            "name": "energy",
+                            "unit": "kcal",
+                            "amount_per_100g": 4.712110200000003e-05,
+                            "amount": 1.4136330600000009e-05
+                        }
+                    ]
+                },
+                {
+                    "name": "Tomatoes, grape, raw",
+                    "grams": 50,
+                    "nutrients": [
+                        {
+                            "name": "energy",
+                            "unit": "kcal",
+                            "amount_per_100g": 3.862380981445312e-06,
+                            "amount": 3.862380981445312e-06
+                        }
+                    ]
+                },
+                {
+                    "name": "Cucumber, with peel, raw",
+                    "grams": 50,
+                    "nutrients": [
+                        {
+                            "name": "energy",
+                            "unit": "kcal",
+                            "amount_per_100g": 0.2484375,
+                            "amount": 0.12421875
+                        }
+                    ]
+                },
+                {
+                    "name": "Hummus, commercial",
+                    "grams": 30,
+                    "nutrients": [
+                        {
+                            "name": "energy",
+                            "unit": "kcal",
+                            "amount_per_100g": 0.34992000000000006,
+                            "amount": 0.10497600000000003
+                        }
+                    ]
+                },
+                {
+                    "name": "Cheese, mozzarella, low moisture, part-skim",
+                    "grams": 20,
+                    "nutrients": [
+                        {
+                            "name": "energy",
+                            "unit": "kcal",
+                            "amount_per_100g": 0.4017600000000001,
+                            "amount": 0.08035200000000003
+                        }
+                    ]
+                },
+                {
+                    "name": "Bread, whole-wheat, commercially prepared",
+                    "grams": 80,
+                    "nutrients": [
+                        {
+                            "name": "energy",
+                            "unit": "kcal",
+                            "amount_per_100g": 0.002621168418816001,
+                            "amount": 0.002096934735052801
+                        }
+                    ]
+                },
+                {
+                    "name": "Oil, olive, extra virgin",
+                    "grams": 5,
+                    "nutrients": []
+                },
+                {
+                    "name": "Salt, table, iodized",
+                    "grams": 1,
+                    "nutrients": []
+                },
+                {
+                    "name": "Peppers, bell, green, raw",
+                    "grams": 30,
+                    "nutrients": [
+                        {
+                            "name": "energy",
+                            "unit": "kcal",
+                            "amount_per_100g": 1.0305000000000002,
+                            "amount": 0.3091500000000001
+                        }
+                    ]
+                }
+            ],
+            "kcal": 594135.0512804337
+        },
+        {
+            "recipe_name": "Healthy Chicken & Veggie Bowl",
+            "ingredients": [
+                {
+                    "name": "Chicken, breast, boneless, skinless, raw",
+                    "grams": 150,
+                    "nutrients": [
+                        {
+                            "name": "energy",
+                            "unit": "kcal",
+                            "amount_per_100g": 594134.4304687502,
+                            "amount": 891201.6457031253
+                        }
+                    ]
+                },
+                {
+                    "name": "Kale, raw",
+                    "grams": 50,
+                    "nutrients": [
+                        {
+                            "name": "energy",
+                            "unit": "kcal",
+                            "amount_per_100g": 0.00224775,
+                            "amount": 0.001123875
+                        }
+                    ]
+                },
+                {
+                    "name": "Beans, snap, green, raw",
+                    "grams": 100,
+                    "nutrients": [
+                        {
+                            "name": "energy",
+                            "unit": "kcal",
+                            "amount_per_100g": 0.625,
+                            "amount": 0.625
+                        }
+                    ]
+                },
+                {
+                    "name": "Tomatoes, grape, raw",
+                    "grams": 100,
+                    "nutrients": [
+                        {
+                            "name": "energy",
+                            "unit": "kcal",
+                            "amount_per_100g": 3.862380981445312e-06,
+                            "amount": 3.862380981445312e-06
+                        }
+                    ]
+                },
+                {
+                    "name": "Oil, olive, extra virgin",
+                    "grams": 15,
+                    "nutrients": []
+                },
+                {
+                    "name": "Cheese, parmesan, grated",
+                    "grams": 20,
+                    "nutrients": [
+                        {
+                            "name": "energy",
+                            "unit": "kcal",
+                            "amount_per_100g": 5.052000000000003e-07,
+                            "amount": 1.0104000000000005e-07
+                        }
+                    ]
+                },
+                {
+                    "name": "Salt, table, iodized",
+                    "grams": 2,
+                    "nutrients": []
+                },
+                {
+                    "name": "Peppers, bell, red, raw",
+                    "grams": 50,
+                    "nutrients": [
+                        {
+                            "name": "energy",
+                            "unit": "kcal",
+                            "amount_per_100g": 0.019014750000000004,
+                            "amount": 0.009507375000000002
+                        }
+                    ]
+                },
+                {
+                    "name": "Onions, red, raw",
+                    "grams": 30,
+                    "nutrients": [
+                        {
+                            "name": "energy",
+                            "unit": "kcal",
+                            "amount_per_100g": 4.4,
+                            "amount": 1.32
+                        }
+                    ]
+                },
+                {
+                    "name": "Garlic, raw",
+                    "grams": 5,
+                    "nutrients": [
+                        {
+                            "name": "energy",
+                            "unit": "kcal",
+                            "amount_per_100g": 2.6812500000000005e-05,
+                            "amount": 1.3406250000000002e-06
+                        }
+                    ]
+                },
+                {
+                    "name": "Yogurt, Greek, plain, nonfat",
+                    "grams": 50,
+                    "nutrients": [
+                        {
+                            "name": "energy",
+                            "unit": "kcal",
+                            "amount_per_100g": 77.76,
+                            "amount": 38.88
+                        }
+                    ]
+                },
+                {
+                    "name": "Mustard, prepared, yellow",
+                    "grams": 10,
+                    "nutrients": [
+                        {
+                            "name": "energy",
+                            "unit": "kcal",
+                            "amount_per_100g": 1.5875000000000008e-08,
+                            "amount": 1.5875000000000008e-09
+                        }
+                    ]
+                },
+                {
+                    "name": "Lemon juice, raw",
+                    "grams": 10
+                }
+            ],
+            "kcal": 891242.481339681
+        }
+    ]
+}

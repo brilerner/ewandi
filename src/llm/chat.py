@@ -35,7 +35,8 @@ logger = set_logger(log_path)
 
 
 @retry(wait=wait_random_exponential(multiplier=1, max=40), stop=stop_after_attempt(3))
-def chat_completion_request(conversation, tools=None, tool_choice=None, model=GPT_MODEL, stream=True, resubmit=True, append=True):
+# def chat_completion_request(conversation, tools=None, tool_choice=None, model=GPT_MODEL, stream=True, resubmit=True, append=True):
+def chat_completion_request(conversation, tools=None, tool_choice=None, model=GPT_MODEL, stream=True, resubmit=True, append=True, response_format=None, temperature=0):
 
     logger.info("Generating ChatCompletion response")
 
@@ -45,6 +46,8 @@ def chat_completion_request(conversation, tools=None, tool_choice=None, model=GP
         "tools": tools,
         "tool_choice": tool_choice,
         "stream": stream,
+        "response_format": response_format,
+        "temperature": temperature,
     }
     logger.info(f"COMPL_INPUT: {compl_input}")
     try:
@@ -156,6 +159,19 @@ def recombine_chunks(chunks, role='assistant'):
         msg["tool_calls"][0]['type'] = 'function'
                 
     return finish_reason, msg
+
+
+def get_completion(prompt, model="gpt-4", response_format=None):
+    messages = [{"role": "user", "content": prompt}]
+    print(response_format)
+    response = client.chat.completions.create(
+        model=model,
+        messages=messages,
+        temperature=0,
+        response_format = response_format
+    )
+    return response.choices[0].message.content
+
 
 ## working version
 # @retry(wait=wait_random_exponential(multiplier=1, max=40), stop=stop_after_attempt(3))

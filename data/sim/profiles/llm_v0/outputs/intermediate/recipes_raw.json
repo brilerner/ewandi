@@ -1,0 +1,1545 @@
+{
+    "breakfast":
+    [
+        {
+            "recipe_name": "Healthy Athlete's Power Breakfast Sandwich",
+            "ingredients": [
+                {
+                    "name": "Bread, whole-wheat, commercially prepared",
+                    "grams": 60
+                },
+                {
+                    "name": "Egg, whole, raw, frozen, pasteurized",
+                    "grams": 100
+                },
+                {
+                    "name": "Cheese, cheddar",
+                    "grams": 30
+                },
+                {
+                    "name": "Tomatoes, grape, raw",
+                    "grams": 50
+                },
+                {
+                    "name": "Spinach, baby",
+                    "grams": 30
+                },
+                {
+                    "name": "Oil, olive, extra virgin",
+                    "grams": 15
+                },
+                {
+                    "name": "Turkey, ground, 93% lean, 7% fat, pan-broiled crumbles",
+                    "grams": 50
+                },
+                {
+                    "name": "Mustard, prepared, yellow",
+                    "grams": 10
+                },
+                {
+                    "name": "Avocado, raw",
+                    "grams": 50
+                }
+            ]
+        },
+        {
+            "recipe_name": "Healthy Athlete's Power Lunch Sandwich",
+            "ingredients": [
+                {
+                    "name": "Bread, whole-wheat, commercially prepared",
+                    "grams": 60
+                },
+                {
+                    "name": "Chicken, breast, boneless, skinless, raw",
+                    "grams": 120
+                },
+                {
+                    "name": "Lettuce, cos or romaine, raw",
+                    "grams": 30
+                },
+                {
+                    "name": "Tomatoes, grape, raw",
+                    "grams": 50
+                },
+                {
+                    "name": "Cheese, cheddar",
+                    "grams": 30
+                },
+                {
+                    "name": "Mustard, prepared, yellow",
+                    "grams": 10
+                },
+                {
+                    "name": "Hummus, commercial",
+                    "grams": 30
+                },
+                {
+                    "name": "Kale, raw",
+                    "grams": 20
+                },
+                {
+                    "name": "Oil, olive, extra virgin",
+                    "grams": 10
+                },
+                {
+                    "name": "Vinegar, balsamic",
+                    "grams": 5
+                },
+                {
+                    "name": "Pickles, cucumber, dill or kosher dill",
+                    "grams": 20
+                }
+            ]
+        }
+    ],
+    "lunch":
+     [
+        {
+            "recipe_name": "Healthy Chicken Parmesan with Steamed Green Beans and Grape Tomatoes",
+            "ingredients": [
+                {
+                    "name": "Chicken, breast, boneless, skinless, raw",
+                    "grams": 200
+                },
+                {
+                    "name": "Bread, whole-wheat, commercially prepared",
+                    "grams": 30
+                },
+                {
+                    "name": "Egg, whole, raw, frozen, pasteurized",
+                    "grams": 50
+                },
+                {
+                    "name": "Cheese, parmesan, grated",
+                    "grams": 20
+                },
+                {
+                    "name": "Cheese, mozzarella, low moisture, part-skim",
+                    "grams": 40
+                },
+                {
+                    "name": "Sauce, pasta, spaghetti/marinara, ready-to-serve",
+                    "grams": 100
+                },
+                {
+                    "name": "Beans, snap, green, canned, regular pack, drained solids",
+                    "grams": 150
+                },
+                {
+                    "name": "Tomatoes, grape, raw",
+                    "grams": 100
+                },
+                {
+                    "name": "Oil, olive, extra virgin",
+                    "grams": 15
+                },
+                {
+                    "name": "Salt, table, iodized",
+                    "grams": 2
+                },
+                {
+                    "name": "Garlic, raw",
+                    "grams": 5
+                }
+            ]
+        }
+    ],
+    "dinner":
+        [
+        {
+            "recipe_name": "Healthy Athlete's Breakfast Scramble",
+            "ingredients": [
+                {
+                    "name": "Egg, whole, raw, frozen, pasteurized",
+                    "grams": 100
+                },
+                {
+                    "name": "Egg, white, raw, frozen, pasteurized",
+                    "grams": 60
+                },
+                {
+                    "name": "Tomatoes, grape, raw",
+                    "grams": 50
+                },
+                {
+                    "name": "Spinach, baby",
+                    "grams": 30
+                },
+                {
+                    "name": "Cheese, cheddar",
+                    "grams": 30
+                },
+                {
+                    "name": "Oil, olive, extra virgin",
+                    "grams": 15
+                },
+                {
+                    "name": "Peppers, bell, green, raw",
+                    "grams": 50
+                },
+                {
+                    "name": "Onions, yellow, raw",
+                    "grams": 30
+                },
+                {
+                    "name": "Mushrooms, white button",
+                    "grams": 50
+                },
+                {
+                    "name": "Nuts, almonds, dry roasted, with salt added",
+                    "grams": 20
+                },
+                {
+                    "name": "Bread, whole-wheat, commercially prepared",
+                    "grams": 40
+                },
+                {
+                    "name": "Salt, table, iodized",
+                    "grams": 2
+                },
+                {
+                    "name": "Pepper, black",
+                    "grams": 1
+                }
+            ]
+        },
+        {
+            "recipe_name": "Healthy Grilled Chicken Salad with Hummus Dressing",
+            "ingredients": [
+                {
+                    "name": "Chicken, breast, boneless, skinless, raw",
+                    "grams": 150
+                },
+                {
+                    "name": "Kale, raw",
+                    "grams": 50
+                },
+                {
+                    "name": "Tomatoes, grape, raw",
+                    "grams": 50
+                },
+                {
+                    "name": "Cucumber, with peel, raw",
+                    "grams": 50
+                },
+                {
+                    "name": "Carrots, mature, raw",
+                    "grams": 30
+                },
+                {
+                    "name": "Beans, snap, green, raw",
+                    "grams": 50
+                },
+                {
+                    "name": "Nuts, almonds, dry roasted, with salt added",
+                    "grams": 15
+                },
+                {
+                    "name": "Hummus, commercial",
+                    "grams": 30
+                },
+                {
+                    "name": "Oil, olive, extra virgin",
+                    "grams": 10
+                },
+                {
+                    "name": "Lemon juice, raw",
+                    "grams": 10
+                },
+                {
+                    "name": "Cheese, parmesan, grated",
+                    "grams": 10
+                },
+                {
+                    "name": "Salt, table, iodized",
+                    "grams": 2
+                },
+                {
+                    "name": "Pepper, black",
+                    "grams": 1
+                }
+            ]
+        },
+        {
+            "recipe_name": "Healthy Chicken Parmesan with Kale Salad",
+            "ingredients": [
+                {
+                    "name": "Chicken, breast, boneless, skinless, raw",
+                    "grams": 200
+                },
+                {
+                    "name": "Bread, whole-wheat, commercially prepared",
+                    "grams": 50
+                },
+                {
+                    "name": "Egg, whole, raw, frozen, pasteurized",
+                    "grams": 50
+                },
+                {
+                    "name": "Cheese, parmesan, grated",
+                    "grams": 20
+                },
+                {
+                    "name": "Cheese, mozzarella, low moisture, part-skim",
+                    "grams": 50
+                },
+                {
+                    "name": "Sauce, pasta, spaghetti/marinara, ready-to-serve",
+                    "grams": 100
+                },
+                {
+                    "name": "Kale, raw",
+                    "grams": 100
+                },
+                {
+                    "name": "Tomatoes, grape, raw",
+                    "grams": 50
+                },
+                {
+                    "name": "Oil, olive, extra virgin",
+                    "grams": 15
+                },
+                {
+                    "name": "Nuts, almonds, dry roasted, with salt added",
+                    "grams": 30
+                },
+                {
+                    "name": "Salt, table, iodized",
+                    "grams": 2
+                },
+                {
+                    "name": "Peppers, bell, red, raw",
+                    "grams": 50
+                }
+            ]
+        },
+        {
+            "recipe_name": "Healthy Athlete's Power Breakfast",
+            "ingredients": [
+                {
+                    "name": "Eggs, Grade A, Large, egg whole",
+                    "grams": 100
+                },
+                {
+                    "name": "Spinach, baby",
+                    "grams": 30
+                },
+                {
+                    "name": "Tomatoes, grape, raw",
+                    "grams": 50
+                },
+                {
+                    "name": "Cheese, cheddar",
+                    "grams": 30
+                },
+                {
+                    "name": "Bread, whole-wheat, commercially prepared",
+                    "grams": 80
+                },
+                {
+                    "name": "Oil, olive, extra virgin",
+                    "grams": 15
+                },
+                {
+                    "name": "Nuts, almonds, dry roasted, with salt added",
+                    "grams": 20
+                },
+                {
+                    "name": "Yogurt, Greek, plain, nonfat",
+                    "grams": 150
+                },
+                {
+                    "name": "Kiwifruit, green, raw",
+                    "grams": 75
+                },
+                {
+                    "name": "Milk, nonfat, fluid, with added vitamin A and vitamin D (fat free or skim)",
+                    "grams": 200
+                }
+            ]
+        },
+        {
+            "recipe_name": "Healthy Chicken Caesar Wrap",
+            "ingredients": [
+                {
+                    "name": "Chicken, breast, boneless, skinless, raw",
+                    "grams": 150
+                },
+                {
+                    "name": "Lettuce, romaine, green, raw",
+                    "grams": 50
+                },
+                {
+                    "name": "Cheese, parmesan, grated",
+                    "grams": 10
+                },
+                {
+                    "name": "Yogurt, Greek, plain, nonfat",
+                    "grams": 30
+                },
+                {
+                    "name": "Mustard, prepared, yellow",
+                    "grams": 5
+                },
+                {
+                    "name": "Bread, whole-wheat, commercially prepared",
+                    "grams": 80
+                },
+                {
+                    "name": "Tomatoes, grape, raw",
+                    "grams": 30
+                },
+                {
+                    "name": "Oil, olive, extra virgin",
+                    "grams": 5
+                },
+                {
+                    "name": "Garlic, raw",
+                    "grams": 3
+                },
+                {
+                    "name": "Lemon juice, raw",
+                    "grams": 10
+                },
+                {
+                    "name": "Salt, table, iodized",
+                    "grams": 1
+                },
+                {
+                    "name": "Pepper, black",
+                    "grams": 0.5
+                }
+            ]
+        },
+        {
+            "recipe_name": "Healthy Grilled Chicken Salad with Almonds",
+            "ingredients": [
+                {
+                    "name": "Chicken, breast, boneless, skinless, raw",
+                    "grams": 150
+                },
+                {
+                    "name": "Spinach, baby",
+                    "grams": 30
+                },
+                {
+                    "name": "Kale, raw",
+                    "grams": 30
+                },
+                {
+                    "name": "Tomatoes, grape, raw",
+                    "grams": 50
+                },
+                {
+                    "name": "Cucumbers, with peel, raw",
+                    "grams": 50
+                },
+                {
+                    "name": "Carrots, baby, raw",
+                    "grams": 30
+                },
+                {
+                    "name": "Oil, olive, extra virgin",
+                    "grams": 15
+                },
+                {
+                    "name": "Vinegar, balsamic",
+                    "grams": 10
+                },
+                {
+                    "name": "Nuts, almonds, dry roasted, with salt added",
+                    "grams": 15
+                },
+                {
+                    "name": "Cheese, parmesan, grated",
+                    "grams": 10
+                },
+                {
+                    "name": "Salt, table, iodized",
+                    "grams": 2
+                },
+                {
+                    "name": "Pepper, black",
+                    "grams": 1
+                }
+            ]
+        },
+        {
+            "recipe_name": "Healthy Athlete's Breakfast Scramble",
+            "ingredients": [
+                {
+                    "name": "Egg, whole, raw, frozen, pasteurized",
+                    "grams": 100
+                },
+                {
+                    "name": "Egg, white, raw, frozen, pasteurized",
+                    "grams": 60
+                },
+                {
+                    "name": "Kale, raw",
+                    "grams": 30
+                },
+                {
+                    "name": "Tomatoes, grape, raw",
+                    "grams": 50
+                },
+                {
+                    "name": "Cheese, cheddar",
+                    "grams": 30
+                },
+                {
+                    "name": "Bread, whole-wheat, commercially prepared",
+                    "grams": 50
+                },
+                {
+                    "name": "Oil, olive, extra virgin",
+                    "grams": 15
+                },
+                {
+                    "name": "Nuts, almonds, dry roasted, with salt added",
+                    "grams": 20
+                },
+                {
+                    "name": "Beans, snap, green, raw",
+                    "grams": 50
+                },
+                {
+                    "name": "Salt, table, iodized",
+                    "grams": 2
+                },
+                {
+                    "name": "Peppers, bell, green, raw",
+                    "grams": 30
+                }
+            ]
+        },
+        {
+            "recipe_name": "Healthy Athlete's Chicken and Kale Salad with Hummus Dressing",
+            "ingredients": [
+                {
+                    "name": "Chicken, breast, boneless, skinless, raw",
+                    "grams": 150
+                },
+                {
+                    "name": "Kale, raw",
+                    "grams": 100
+                },
+                {
+                    "name": "Tomatoes, grape, raw",
+                    "grams": 50
+                },
+                {
+                    "name": "Cucumber, with peel, raw",
+                    "grams": 50
+                },
+                {
+                    "name": "Carrots, baby, raw",
+                    "grams": 30
+                },
+                {
+                    "name": "Nuts, almonds, dry roasted, with salt added",
+                    "grams": 20
+                },
+                {
+                    "name": "Hummus, commercial",
+                    "grams": 30
+                },
+                {
+                    "name": "Oil, olive, extra virgin",
+                    "grams": 10
+                },
+                {
+                    "name": "Vinegar, balsamic",
+                    "grams": 5
+                },
+                {
+                    "name": "Salt, table, iodized",
+                    "grams": 2
+                },
+                {
+                    "name": "Pepper, black",
+                    "grams": 1
+                },
+                {
+                    "name": "Cheese, parmesan, grated",
+                    "grams": 10
+                }
+            ]
+        },
+        {
+            "recipe_name": "Healthy Chicken and Veggie Stir Fry",
+            "ingredients": [
+                {
+                    "name": "Chicken, breast, boneless, skinless, raw",
+                    "grams": 200
+                },
+                {
+                    "name": "Oil, olive, extra virgin",
+                    "grams": 15
+                },
+                {
+                    "name": "Broccoli, raw",
+                    "grams": 100
+                },
+                {
+                    "name": "Carrots, mature, raw",
+                    "grams": 50
+                },
+                {
+                    "name": "Peppers, bell, red, raw",
+                    "grams": 50
+                },
+                {
+                    "name": "Onions, red, raw",
+                    "grams": 50
+                },
+                {
+                    "name": "Garlic, raw",
+                    "grams": 5
+                },
+                {
+                    "name": "Soy sauce, low sodium",
+                    "grams": 30
+                },
+                {
+                    "name": "Ginger, raw",
+                    "grams": 5
+                },
+                {
+                    "name": "Honey, pure",
+                    "grams": 10
+                },
+                {
+                    "name": "Sesame seeds, whole, dried",
+                    "grams": 5
+                },
+                {
+                    "name": "Rice, brown, long grain, unenriched, raw",
+                    "grams": 50
+                }
+            ]
+        },
+        {
+            "recipe_name": "Healthy Athlete's Power Breakfast Sandwich",
+            "ingredients": [
+                {
+                    "name": "Eggs, Grade A, Large, egg whole",
+                    "grams": 100
+                },
+                {
+                    "name": "Bread, whole-wheat, commercially prepared",
+                    "grams": 60
+                },
+                {
+                    "name": "Cheese, cheddar",
+                    "grams": 30
+                },
+                {
+                    "name": "Tomatoes, grape, raw",
+                    "grams": 50
+                },
+                {
+                    "name": "Spinach, baby",
+                    "grams": 30
+                },
+                {
+                    "name": "Oil, olive, extra virgin",
+                    "grams": 15
+                },
+                {
+                    "name": "Turkey, ground, 93% lean, 7% fat, pan-broiled crumbles",
+                    "grams": 50
+                },
+                {
+                    "name": "Yogurt, Greek, plain, nonfat",
+                    "grams": 150
+                },
+                {
+                    "name": "Nuts, almonds, dry roasted, with salt added",
+                    "grams": 20
+                },
+                {
+                    "name": "Kiwifruit, green, raw",
+                    "grams": 75
+                }
+            ]
+        },
+        {
+            "recipe_name": "Healthy Grilled Chicken Salad with Almonds and Green Beans",
+            "ingredients": [
+                {
+                    "name": "Chicken, breast, boneless, skinless, raw",
+                    "grams": 150
+                },
+                {
+                    "name": "Oil, olive, extra virgin",
+                    "grams": 15
+                },
+                {
+                    "name": "Salt, table, iodized",
+                    "grams": 2
+                },
+                {
+                    "name": "Kale, raw",
+                    "grams": 50
+                },
+                {
+                    "name": "Beans, snap, green, raw",
+                    "grams": 50
+                },
+                {
+                    "name": "Tomatoes, grape, raw",
+                    "grams": 100
+                },
+                {
+                    "name": "Nuts, almonds, dry roasted, with salt added",
+                    "grams": 30
+                },
+                {
+                    "name": "Cheese, parmesan, grated",
+                    "grams": 10
+                },
+                {
+                    "name": "Mustard, prepared, yellow",
+                    "grams": 10
+                },
+                {
+                    "name": "Vinegar, balsamic",
+                    "grams": 10
+                },
+                {
+                    "name": "Peppers, bell, red, raw",
+                    "grams": 30
+                },
+                {
+                    "name": "Cucumbers, with peel, raw",
+                    "grams": 50
+                }
+            ]
+        },
+        {
+            "recipe_name": "Healthy Grilled Chicken Salad with Almonds",
+            "ingredients": [
+                {
+                    "name": "Chicken, breast, boneless, skinless, raw",
+                    "grams": 150
+                },
+                {
+                    "name": "Kale, raw",
+                    "grams": 50
+                },
+                {
+                    "name": "Tomatoes, grape, raw",
+                    "grams": 100
+                },
+                {
+                    "name": "Cucumber, with peel, raw",
+                    "grams": 50
+                },
+                {
+                    "name": "Carrots, baby, raw",
+                    "grams": 50
+                },
+                {
+                    "name": "Nuts, almonds, dry roasted, with salt added",
+                    "grams": 30
+                },
+                {
+                    "name": "Oil, olive, extra virgin",
+                    "grams": 15
+                },
+                {
+                    "name": "Vinegar, balsamic",
+                    "grams": 10
+                },
+                {
+                    "name": "Mustard, prepared, yellow",
+                    "grams": 5
+                },
+                {
+                    "name": "Honey, raw",
+                    "grams": 10
+                },
+                {
+                    "name": "Salt, table, iodized",
+                    "grams": 2
+                },
+                {
+                    "name": "Pepper, black",
+                    "grams": 1
+                }
+            ]
+        },
+        {
+            "recipe_name": "Healthy Athlete's Breakfast Burrito",
+            "ingredients": [
+                {
+                    "name": "Egg, whole, raw, frozen, pasteurized",
+                    "grams": 100
+                },
+                {
+                    "name": "Egg, white, raw, frozen, pasteurized",
+                    "grams": 60
+                },
+                {
+                    "name": "Cheese, cheddar",
+                    "grams": 30
+                },
+                {
+                    "name": "Tomatoes, grape, raw",
+                    "grams": 50
+                },
+                {
+                    "name": "Spinach, baby",
+                    "grams": 30
+                },
+                {
+                    "name": "Bread, whole-wheat, commercially prepared",
+                    "grams": 80
+                },
+                {
+                    "name": "Chicken, broilers or fryers, drumstick, meat only, cooked, braised",
+                    "grams": 75
+                },
+                {
+                    "name": "Beans, snap, green, raw",
+                    "grams": 50
+                },
+                {
+                    "name": "Avocado, raw",
+                    "grams": 45
+                },
+                {
+                    "name": "Oil, olive, extra virgin",
+                    "grams": 5
+                },
+                {
+                    "name": "Sauce, salsa, ready-to-serve",
+                    "grams": 30
+                }
+            ]
+        },
+        {
+            "recipe_name": "Healthy Chicken Salad Sandwich",
+            "ingredients": [
+                {
+                    "name": "Chicken, breast, boneless, skinless, raw",
+                    "grams": 150
+                },
+                {
+                    "name": "Bread, whole-wheat, commercially prepared",
+                    "grams": 60
+                },
+                {
+                    "name": "Lettuce, romaine, green, raw",
+                    "grams": 30
+                },
+                {
+                    "name": "Tomatoes, grape, raw",
+                    "grams": 50
+                },
+                {
+                    "name": "Cucumbers, with peel, raw",
+                    "grams": 50
+                },
+                {
+                    "name": "Cheese, mozzarella, low moisture, part-skim",
+                    "grams": 30
+                },
+                {
+                    "name": "Mustard, prepared, yellow",
+                    "grams": 10
+                },
+                {
+                    "name": "Yogurt, Greek, plain, nonfat",
+                    "grams": 30
+                },
+                {
+                    "name": "Nuts, almonds, dry roasted, with salt added",
+                    "grams": 15
+                },
+                {
+                    "name": "Peppers, bell, red, raw",
+                    "grams": 30
+                },
+                {
+                    "name": "Oil, olive, extra virgin",
+                    "grams": 5
+                },
+                {
+                    "name": "Salt, table, iodized",
+                    "grams": 1
+                },
+                {
+                    "name": "Pepper, black, ground",
+                    "grams": 1
+                }
+            ]
+        },
+        {
+            "recipe_name": "Healthy Chicken Parmesan with Steamed Green Beans and Almonds",
+            "ingredients": [
+                {
+                    "name": "Chicken, breast, boneless, skinless, raw",
+                    "grams": 150
+                },
+                {
+                    "name": "Bread, whole-wheat, commercially prepared",
+                    "grams": 30
+                },
+                {
+                    "name": "Cheese, parmesan, grated",
+                    "grams": 15
+                },
+                {
+                    "name": "Cheese, mozzarella, low moisture, part-skim",
+                    "grams": 30
+                },
+                {
+                    "name": "Sauce, pasta, spaghetti/marinara, ready-to-serve",
+                    "grams": 100
+                },
+                {
+                    "name": "Beans, snap, green, raw",
+                    "grams": 100
+                },
+                {
+                    "name": "Nuts, almonds, dry roasted, with salt added",
+                    "grams": 15
+                },
+                {
+                    "name": "Oil, olive, extra virgin",
+                    "grams": 10
+                },
+                {
+                    "name": "Salt, table, iodized",
+                    "grams": 2
+                },
+                {
+                    "name": "Garlic, raw",
+                    "grams": 5
+                }
+            ]
+        },
+        {
+            "recipe_name": "Healthy Athlete's Power Breakfast Sandwich",
+            "ingredients": [
+                {
+                    "name": "Eggs, Grade A, Large, egg whole",
+                    "grams": 100
+                },
+                {
+                    "name": "Bread, whole-wheat, commercially prepared",
+                    "grams": 60
+                },
+                {
+                    "name": "Cheese, cheddar",
+                    "grams": 30
+                },
+                {
+                    "name": "Tomatoes, grape, raw",
+                    "grams": 50
+                },
+                {
+                    "name": "Spinach, baby",
+                    "grams": 30
+                },
+                {
+                    "name": "Oil, olive, extra virgin",
+                    "grams": 15
+                },
+                {
+                    "name": "Nuts, almonds, dry roasted, with salt added",
+                    "grams": 15
+                },
+                {
+                    "name": "Yogurt, Greek, plain, nonfat",
+                    "grams": 150
+                },
+                {
+                    "name": "Kiwifruit, green, raw",
+                    "grams": 75
+                }
+            ]
+        },
+        {
+            "recipe_name": "Healthy Grilled Chicken Salad with Hummus Dressing",
+            "ingredients": [
+                {
+                    "name": "Chicken, breast, boneless, skinless, raw",
+                    "grams": 150
+                },
+                {
+                    "name": "Kale, raw",
+                    "grams": 50
+                },
+                {
+                    "name": "Tomatoes, grape, raw",
+                    "grams": 50
+                },
+                {
+                    "name": "Cucumbers, with peel, raw",
+                    "grams": 50
+                },
+                {
+                    "name": "Carrots, baby, raw",
+                    "grams": 30
+                },
+                {
+                    "name": "Beans, snap, green, raw",
+                    "grams": 50
+                },
+                {
+                    "name": "Nuts, almonds, dry roasted, with salt added",
+                    "grams": 15
+                },
+                {
+                    "name": "Hummus, commercial",
+                    "grams": 30
+                },
+                {
+                    "name": "Oil, olive, extra virgin",
+                    "grams": 10
+                },
+                {
+                    "name": "Lemon juice, raw",
+                    "grams": 10
+                },
+                {
+                    "name": "Salt, table, iodized",
+                    "grams": 2
+                },
+                {
+                    "name": "Pepper, black",
+                    "grams": 1
+                }
+            ]
+        },
+        {
+            "recipe_name": "Healthy Grilled Chicken Salad with Hummus Dressing",
+            "ingredients": [
+                {
+                    "name": "Chicken, breast, boneless, skinless, raw",
+                    "grams": 200
+                },
+                {
+                    "name": "Kale, raw",
+                    "grams": 100
+                },
+                {
+                    "name": "Tomatoes, grape, raw",
+                    "grams": 100
+                },
+                {
+                    "name": "Cucumbers, with peel, raw",
+                    "grams": 50
+                },
+                {
+                    "name": "Carrots, mature, raw",
+                    "grams": 50
+                },
+                {
+                    "name": "Beans, snap, green, raw",
+                    "grams": 50
+                },
+                {
+                    "name": "Nuts, almonds, dry roasted, with salt added",
+                    "grams": 30
+                },
+                {
+                    "name": "Hummus, commercial",
+                    "grams": 50
+                },
+                {
+                    "name": "Oil, olive, extra virgin",
+                    "grams": 15
+                },
+                {
+                    "name": "Cheese, parmesan, grated",
+                    "grams": 20
+                },
+                {
+                    "name": "Salt, table, iodized",
+                    "grams": 2
+                },
+                {
+                    "name": "Pepper, black",
+                    "grams": 1
+                }
+            ]
+        },
+        {
+            "recipe_name": "Healthy Athlete's Power Omelette",
+            "ingredients": [
+                {
+                    "name": "Egg, whole, raw, frozen, pasteurized",
+                    "grams": 100
+                },
+                {
+                    "name": "Egg, white, raw, frozen, pasteurized",
+                    "grams": 60
+                },
+                {
+                    "name": "Cheese, mozzarella, low moisture, part-skim",
+                    "grams": 30
+                },
+                {
+                    "name": "Tomatoes, grape, raw",
+                    "grams": 50
+                },
+                {
+                    "name": "Spinach, baby",
+                    "grams": 30
+                },
+                {
+                    "name": "Oil, olive, extra virgin",
+                    "grams": 10
+                },
+                {
+                    "name": "Nuts, almonds, dry roasted, with salt added",
+                    "grams": 15
+                },
+                {
+                    "name": "Bread, whole-wheat, commercially prepared",
+                    "grams": 30
+                },
+                {
+                    "name": "Avocado, raw, California",
+                    "grams": 50
+                }
+            ]
+        },
+        {
+            "recipe_name": "Healthy Grilled Chicken Salad with Hummus Dressing",
+            "ingredients": [
+                {
+                    "name": "Chicken, breast, boneless, skinless, raw",
+                    "grams": 150
+                },
+                {
+                    "name": "Spinach, baby",
+                    "grams": 30
+                },
+                {
+                    "name": "Kale, raw",
+                    "grams": 30
+                },
+                {
+                    "name": "Tomatoes, grape, raw",
+                    "grams": 50
+                },
+                {
+                    "name": "Cucumber, with peel, raw",
+                    "grams": 50
+                },
+                {
+                    "name": "Peppers, bell, red, raw",
+                    "grams": 30
+                },
+                {
+                    "name": "Carrots, baby, raw",
+                    "grams": 30
+                },
+                {
+                    "name": "Nuts, almonds, dry roasted, with salt added",
+                    "grams": 15
+                },
+                {
+                    "name": "Hummus, commercial",
+                    "grams": 30
+                },
+                {
+                    "name": "Oil, olive, extra virgin",
+                    "grams": 10
+                },
+                {
+                    "name": "Vinegar, balsamic",
+                    "grams": 5
+                },
+                {
+                    "name": "Salt, table, iodized",
+                    "grams": 1
+                },
+                {
+                    "name": "Pepper, black",
+                    "grams": 1
+                }
+            ]
+        },
+        {
+            "recipe_name": "Healthy Grilled Chicken Salad with Almond Dressing",
+            "ingredients": [
+                {
+                    "name": "Chicken, breast, boneless, skinless, raw",
+                    "grams": 150
+                },
+                {
+                    "name": "Kale, raw",
+                    "grams": 50
+                },
+                {
+                    "name": "Tomatoes, grape, raw",
+                    "grams": 100
+                },
+                {
+                    "name": "Cucumber, with peel, raw",
+                    "grams": 50
+                },
+                {
+                    "name": "Carrots, baby, raw",
+                    "grams": 50
+                },
+                {
+                    "name": "Nuts, almonds, dry roasted, with salt added",
+                    "grams": 30
+                },
+                {
+                    "name": "Oil, olive, extra virgin",
+                    "grams": 15
+                },
+                {
+                    "name": "Vinegar, balsamic",
+                    "grams": 10
+                },
+                {
+                    "name": "Mustard, prepared, yellow",
+                    "grams": 5
+                },
+                {
+                    "name": "Garlic, raw",
+                    "grams": 5
+                },
+                {
+                    "name": "Salt, table, iodized",
+                    "grams": 2
+                },
+                {
+                    "name": "Peppers, bell, red, raw",
+                    "grams": 30
+                }
+            ]
+        },
+        {
+            "recipe_name": "Healthy Athlete's Breakfast Scramble",
+            "ingredients": [
+                {
+                    "name": "Egg, whole, raw, frozen, pasteurized",
+                    "grams": 100
+                },
+                {
+                    "name": "Egg, white, raw, frozen, pasteurized",
+                    "grams": 60
+                },
+                {
+                    "name": "Spinach, baby",
+                    "grams": 30
+                },
+                {
+                    "name": "Tomatoes, grape, raw",
+                    "grams": 50
+                },
+                {
+                    "name": "Cheese, mozzarella, low moisture, part-skim",
+                    "grams": 30
+                },
+                {
+                    "name": "Nuts, almonds, dry roasted, with salt added",
+                    "grams": 15
+                },
+                {
+                    "name": "Oil, olive, extra virgin",
+                    "grams": 10
+                },
+                {
+                    "name": "Bread, whole-wheat, commercially prepared",
+                    "grams": 40
+                },
+                {
+                    "name": "Avocado, raw",
+                    "grams": 50
+                },
+                {
+                    "name": "Peppers, bell, red, raw",
+                    "grams": 30
+                },
+                {
+                    "name": "Onions, red, raw",
+                    "grams": 20
+                },
+                {
+                    "name": "Mushrooms, white button",
+                    "grams": 30
+                },
+                {
+                    "name": "Salt, table, iodized",
+                    "grams": 1
+                },
+                {
+                    "name": "Pepper, black",
+                    "grams": 1
+                }
+            ]
+        },
+        {
+            "recipe_name": "Healthy Chicken & Veggie Wrap",
+            "ingredients": [
+                {
+                    "name": "Chicken, breast, boneless, skinless, raw",
+                    "grams": 150
+                },
+                {
+                    "name": "Kale, raw",
+                    "grams": 30
+                },
+                {
+                    "name": "Tomatoes, grape, raw",
+                    "grams": 50
+                },
+                {
+                    "name": "Hummus, commercial",
+                    "grams": 30
+                },
+                {
+                    "name": "Cheese, mozzarella, low moisture, part-skim",
+                    "grams": 20
+                },
+                {
+                    "name": "Bread, whole-wheat, commercially prepared",
+                    "grams": 60
+                },
+                {
+                    "name": "Beans, snap, green, canned, regular pack, drained solids",
+                    "grams": 50
+                },
+                {
+                    "name": "Oil, olive, extra virgin",
+                    "grams": 5
+                },
+                {
+                    "name": "Mustard, prepared, yellow",
+                    "grams": 10
+                }
+            ]
+        },
+        {
+            "recipe_name": "Healthy Chicken and Kale Salad with Almonds",
+            "ingredients": [
+                {
+                    "name": "Chicken, breast, boneless, skinless, raw",
+                    "grams": 150
+                },
+                {
+                    "name": "Kale, raw",
+                    "grams": 100
+                },
+                {
+                    "name": "Tomatoes, grape, raw",
+                    "grams": 50
+                },
+                {
+                    "name": "Cucumber, with peel, raw",
+                    "grams": 50
+                },
+                {
+                    "name": "Carrots, baby, raw",
+                    "grams": 30
+                },
+                {
+                    "name": "Nuts, almonds, dry roasted, with salt added",
+                    "grams": 20
+                },
+                {
+                    "name": "Oil, olive, extra virgin",
+                    "grams": 15
+                },
+                {
+                    "name": "Vinegar, balsamic",
+                    "grams": 10
+                },
+                {
+                    "name": "Mustard, prepared, yellow",
+                    "grams": 5
+                },
+                {
+                    "name": "Salt, table, iodized",
+                    "grams": 2
+                },
+                {
+                    "name": "Pepper, black",
+                    "grams": 1
+                },
+                {
+                    "name": "Cheese, parmesan, grated",
+                    "grams": 10
+                },
+                {
+                    "name": "Lemon juice, raw",
+                    "grams": 5
+                }
+            ]
+        },
+        {
+            "recipe_name": "Healthy Athlete's Breakfast Scramble",
+            "ingredients": [
+                {
+                    "name": "Egg, whole, raw, frozen, pasteurized",
+                    "grams": 100
+                },
+                {
+                    "name": "Egg, white, raw, frozen, pasteurized",
+                    "grams": 60
+                },
+                {
+                    "name": "Tomatoes, grape, raw",
+                    "grams": 50
+                },
+                {
+                    "name": "Spinach, baby",
+                    "grams": 30
+                },
+                {
+                    "name": "Cheese, cheddar",
+                    "grams": 30
+                },
+                {
+                    "name": "Oil, olive, extra virgin",
+                    "grams": 15
+                },
+                {
+                    "name": "Bread, whole-wheat, commercially prepared",
+                    "grams": 40
+                },
+                {
+                    "name": "Nuts, almonds, dry roasted, with salt added",
+                    "grams": 20
+                },
+                {
+                    "name": "Kale, raw",
+                    "grams": 30
+                },
+                {
+                    "name": "Mushrooms, white button",
+                    "grams": 50
+                },
+                {
+                    "name": "Onions, yellow, raw",
+                    "grams": 30
+                },
+                {
+                    "name": "Peppers, bell, green, raw",
+                    "grams": 30
+                },
+                {
+                    "name": "Salt, table, iodized",
+                    "grams": 2
+                },
+                {
+                    "name": "Milk, lowfat, fluid, 1% milkfat, with added vitamin A and vitamin D",
+                    "grams": 240
+                }
+            ]
+        },
+        {
+            "recipe_name": "Healthy Chicken and Veggie Wrap",
+            "ingredients": [
+                {
+                    "name": "Chicken, breast, boneless, skinless, raw",
+                    "grams": 150
+                },
+                {
+                    "name": "Spinach, baby",
+                    "grams": 30
+                },
+                {
+                    "name": "Tomatoes, grape, raw",
+                    "grams": 50
+                },
+                {
+                    "name": "Cucumber, with peel, raw",
+                    "grams": 50
+                },
+                {
+                    "name": "Hummus, commercial",
+                    "grams": 30
+                },
+                {
+                    "name": "Cheese, mozzarella, low moisture, part-skim",
+                    "grams": 20
+                },
+                {
+                    "name": "Bread, whole-wheat, commercially prepared",
+                    "grams": 80
+                },
+                {
+                    "name": "Oil, olive, extra virgin",
+                    "grams": 5
+                },
+                {
+                    "name": "Salt, table, iodized",
+                    "grams": 1
+                },
+                {
+                    "name": "Peppers, bell, green, raw",
+                    "grams": 30
+                }
+            ]
+        },
+        {
+            "recipe_name": "Healthy Chicken & Veggie Bowl",
+            "ingredients": [
+                {
+                    "name": "Chicken, breast, boneless, skinless, raw",
+                    "grams": 150
+                },
+                {
+                    "name": "Kale, raw",
+                    "grams": 50
+                },
+                {
+                    "name": "Beans, snap, green, raw",
+                    "grams": 100
+                },
+                {
+                    "name": "Tomatoes, grape, raw",
+                    "grams": 100
+                },
+                {
+                    "name": "Oil, olive, extra virgin",
+                    "grams": 15
+                },
+                {
+                    "name": "Cheese, parmesan, grated",
+                    "grams": 20
+                },
+                {
+                    "name": "Salt, table, iodized",
+                    "grams": 2
+                },
+                {
+                    "name": "Peppers, bell, red, raw",
+                    "grams": 50
+                },
+                {
+                    "name": "Onions, red, raw",
+                    "grams": 30
+                },
+                {
+                    "name": "Garlic, raw",
+                    "grams": 5
+                },
+                {
+                    "name": "Yogurt, Greek, plain, nonfat",
+                    "grams": 50
+                },
+                {
+                    "name": "Mustard, prepared, yellow",
+                    "grams": 10
+                },
+                {
+                    "name": "Lemon juice, raw",
+                    "grams": 10
+                }
+            ]
+        }
+    ]
+}

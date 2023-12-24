@@ -5,6 +5,11 @@
     # timeZone: Eastern Standard Time
 # probability of cancelling
 
+# FALL_SEMESTER_START = "2022-09-01"
+# FALL_SEMESTER_END = "2022-12-15"
+
+# SPRING_SEMESTER_START = "2023-01-15"
+# SPRING_SEMESTER_END = "2023-05-10"
 
 # calendar_events:
 # basketball team
@@ -13,7 +18,9 @@
   group: basketball_team
   location: The K Center
   description: Practice for the Duke basketball team.
-  days: [Sun, Mon, Tue, Wed, Thu]
+  days: [Mon, Tue, Wed, Thu]
+  start_date: "2022-08-15"
+  end_date: "2023-04-30"
   start_time: "18:00:00"
   duration: {hours: 2, minutes: 0}
   # end_time: "20:00:00"
@@ -23,6 +30,8 @@
   location: Cameron Indoor Stadium
   description: Game for the Duke basketball team.
   days: Fri
+  start_date: "2022-08-15"
+  end_date: "2023-03-31"
   start_time: "19:00:00"
   duration: {hours: 3, minutes: 0}
 # classes
@@ -32,6 +41,8 @@
   location: Hudson Hall
   description: Class.
   days: [Mon, Wed]
+  start_date: FALL
+  end_date: "2022-12-15"
   start_time: "08:30:00"
   duration: {hours: 1, minutes: 15}
   # end_time: "09:45:00"
@@ -41,6 +52,8 @@
   location: Hudson Hall
   description: Class.
   days: [Thu, Fri]
+  start_date: "2022-09-01"
+  end_date: "2022-12-15"
   start_time: "08:30:00"
   duration: {hours: 1, minutes: 15}
 # HWs
@@ -51,6 +64,8 @@
   description: HW.
   days: Mon
   all_day: True
+  start_date: "2022-09-01"
+  end_date: "2022-12-15"
   start_time: "00:00:00"
   duration: {hours: 24, minutes: 0}
 - name: Computer Programming HW due
@@ -60,10 +75,23 @@
   description: HW.
   days: Thu
   all_day: True
+  start_date: "2022-09-01"
+  end_date: "2022-12-15"
   start_time: "00:00:00"
   duration: {hours: 24, minutes: 0}
 
+# activities
 
-
-
-
+- name: Movie Night
+  # group: homeworks
+  # id: hw_computer_programming
+  location: null
+  description: Movie night with a friend.
+  days: Sun
+  # all_day: True
+  start_date: "2022-09-01"
+  end_date: "2022-12-15"
+  start_time: "00:19:00"
+  duration: {hours: 3, minutes: 0}
+  people: [Bobby, Tanya]
+  prob: 0.5

@@ -25,3 +25,6 @@ Find Next: Hold down the Cmd key and press D to find the next instance of /mnt/d
 Type the Replacement: Start typing the new path. All instances of /mnt/data will be replaced with what you type.
 close sidebar: cmd+B
 open terminal: ctr+`
+go to bottom of page: command - downarrow
+go to previous place: ctrl - +/-
+toggle between prev files: ctrl-tab

@@ -1,0 +1,33 @@
+Date: 2023-09-04 (Monday)
+
+Calendar Events:
+  Event 1:
+    - Name: Discrete Mathematics HW due
+    - Location: None
+    - Description: HW.
+    - All Day: True
+    - Start Time: 00:00
+    - Duration: 24 hours
+  Event 2:
+    - Name: Discrete Mathematics
+    - Location: Hudson Hall
+    - Description: Class.
+    - Start Time: 08:30
+    - Duration: 1 hours, 15 minutes
+  Event 3:
+    - Name: Basketball Practice
+    - Location: The K Center
+    - Description: Practice for the Duke basketball team.
+    - Start Time: 18:00
+    - Duration: 2 hours
+
+Hobbies:
+  Event 1:
+    - Name: playing videogames
+    - Location: Len's apartment
+    - Description: Helps Len destress.
+    - Start Time: 23:00
+    - Duration: 45 minutes
+    - Type: personal time
+    - Enjoyed: True
+

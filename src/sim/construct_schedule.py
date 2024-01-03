@@ -49,7 +49,13 @@ def handle_dependencies(schedule, date, event, category):
                     add_event_to_schedule(schedule, date, event, category)
 
 
-def construct_schedule(profile='llm_v0'):
+# new method
+def construct_schedule(profile='llm_v1'):
+
+    # the first thing to do is to construct the events that are scheduled
+
+def construct_schedule(profile='llm_v1'):
+
 
     sim_params, calendar_events, sensations, hobbies = load_input_yaml(profile=profile)
     # Extract start and end dates from sim_params

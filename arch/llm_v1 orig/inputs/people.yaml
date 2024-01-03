@@ -17,14 +17,14 @@
 
 - name: Bobby
   effects:
-    mood:
+    - name: mood
       vals: [-1,0]
       probs: [0.8,0.2]
   description: friend
 
 - name: Tanya
   effects:
-    mood:
+    - name: mood
       vals: [-1,0,1]
       probs: [0.1,0.3,0.6]
   description: girlfriend

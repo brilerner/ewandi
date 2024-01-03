@@ -1,0 +1,26 @@
+{
+    "playing_videogames": {
+        "name": "playing videogames",
+        "type": "personal time",
+        "enjoyed": true,
+        "start": {
+            "dateTime": null
+        },
+        "end": {
+            "dateTime": null
+        },
+        "isAllDay": false
+    },
+    "hiking": {
+        "name": "hiking",
+        "type": "exercise",
+        "enjoyed": true,
+        "start": {
+            "dateTime": null
+        },
+        "end": {
+            "dateTime": null
+        },
+        "isAllDay": false
+        }
+}

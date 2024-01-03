@@ -14,71 +14,95 @@
 # calendar_events:
 # basketball team
 - name: Basketball Practice
-  id: basketball_practice
+  # id: basketball_practice
   group: basketball_team
   location: The K Center
   description: Practice for the Duke basketball team.
-  days: [Mon, Tue, Wed, Thu]
-  start_date: "2022-08-15"
-  end_date: "2023-04-30"
+  days: 
+    - Mon
+    - Tue
+    - Wed
+    - Thu
+  # start_date: "2022-08-15"
+  # end_date: "2023-04-30"
   start_time: "18:00:00"
-  duration: {hours: 2, minutes: 0}
-  # end_time: "20:00:00"
+  duration: {hours: 2}
+  # duration: "02:00:00"
 - name: Basketball Game
-  id: basketball_game
+  # id: basketball_game
   group: basketball_team
   location: Cameron Indoor Stadium
   description: Game for the Duke basketball team.
-  days: Fri
+  days:
+    - Tue
+    - Thu
+    - Sat
+  prob: 0.5
   start_date: "2022-08-15"
   end_date: "2023-03-31"
   start_time: "19:00:00"
-  duration: {hours: 3, minutes: 0}
+  # duration: "03:00:00"
+  duration: {hours: 3}
+  precedence: 0
+
+  # duration: {hours: 3, minutes: 0}
 # classes
 - name: Discrete Mathematics
   group: classes
-  id: class_discrete_math
+  # id: class_discrete_math
   location: Hudson Hall
   description: Class.
-  days: [Mon, Wed]
-  start_date: FALL
-  end_date: "2022-12-15"
-  start_time: "08:30:00"
-  duration: {hours: 1, minutes: 15}
-  # end_time: "09:45:00"
-- name: Computer Programming
-  group: classes
-  id: class_computer_programming
-  location: Hudson Hall
-  description: Class.
-  days: [Thu, Fri]
+  days:
+    - Mon
+    - Wed
   start_date: "2022-09-01"
   end_date: "2022-12-15"
   start_time: "08:30:00"
+  # duration: "01:15:00"
+  duration: {hours: 1, minutes: 15}
+  # end_time: "09:45:00"
+- name: Computer Programming
+  # group: classes
+  # id: class_computer_programming
+  location: Hudson Hall
+  description: Class.
+  days:
+    - Thu
+    - Fri
+  start_date: "2022-09-01"
+  end_date: "2022-12-15"
+  start_time: "08:30:00"
+  # duration: "01:15:00"
   duration: {hours: 1, minutes: 15}
 # HWs
 - name: Discrete Mathematics HW due
   group: homeworks
-  id: hw_discrete_math
+  # id: hw_discrete_math
   location: null
   description: HW.
-  days: Mon
+  days:
+    - Mon
   all_day: True
   start_date: "2022-09-01"
   end_date: "2022-12-15"
-  start_time: "00:00:00"
-  duration: {hours: 24, minutes: 0}
+  precedence: -1
+  effects:
+    - name: stress
+      vals: [-1,0]
+
 - name: Computer Programming HW due
   group: homeworks
-  id: hw_computer_programming
+  # id: hw_computer_programming
   location: null
   description: HW.
-  days: Thu
+  days: 
+    - Thu
   all_day: True
   start_date: "2022-09-01"
   end_date: "2022-12-15"
-  start_time: "00:00:00"
-  duration: {hours: 24, minutes: 0}
+  precedence: -1
+  # start_time: "00:00:00"
+  # duration: {hours: 24, minutes: 0}
 
 # activities
 
@@ -87,11 +111,29 @@
   # id: hw_computer_programming
   location: null
   description: Movie night with a friend.
-  days: Sun
+  days: 
+    - Sun
   # all_day: True
   start_date: "2022-09-01"
   end_date: "2022-12-15"
   start_time: "00:19:00"
-  duration: {hours: 3, minutes: 0}
+  # duration: "03:00:00"
+  duration: {hours: 3}
+  people: [Bobby, Tanya]
+  prob: 0.5
+
+- name: All Day Party
+  # group: homeworks
+  # id: hw_computer_programming
+  location: null
+  description: Movie night with a friend.
+  days: 
+    - Sun
+  # all_day: True
+  start_date: "2022-09-01"
+  end_date: "2022-12-15"
+  start_time: "00:19:00"
+  # duration: "03:00:00"
+  duration: {hours: 3}
   people: [Bobby, Tanya]
   prob: 0.5

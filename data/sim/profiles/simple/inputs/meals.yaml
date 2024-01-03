@@ -1,0 +1,16 @@
+  # duration: {distribution: "normal", mean: "00:30:00", std: "00:10:00"}
+
+- name: breakfast
+  prob: 0.5
+  start_time: "08:00:00"
+  duration: {"minutes": 30}
+  precedence: -1
+- name: lunch
+  start_time: "12:00:00"
+  duration: {"minutes": 30}
+  precedence: -1
+- name: dinner 
+  start_time: "17:30:00"
+  duration: {"minutes": 30}
+  precedence: -1
+# - name: Snack

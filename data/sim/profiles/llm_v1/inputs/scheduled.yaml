@@ -1,0 +1,130 @@
+# basketball team
+
+- name: Basketball Practice
+  groups: ['basketball team', 'exercise']
+  location: The K Center
+  description: Practice for the Duke basketball team.
+  days: 
+    - Mon
+    - Tue
+    - Wed
+    - Thu
+  start_time: "18:00:00"
+  duration: {hours: 2}
+  precedence: 1
+  prob: 0.8
+
+
+- name: Basketball Game
+  groups: ['basketball team', 'exercise']
+  location: Cameron Indoor Stadium
+  description: Game for the Duke basketball team.
+  days:
+    - Tue
+    - Thu
+    - Sat
+  prob: 0.5
+  start_date: "2022-08-15"
+  end_date: "2023-03-31"
+  start_time: "19:00:00"
+  duration: {hours: 3}
+  precedence: 0
+
+- name: Weightlifting
+  groups: ['exercise']
+  location: The K Center
+  description: Weightlifting.
+  days: 
+    - Mon
+    - Wed
+    - Fri
+  start_time: "18:00:00"
+  duration: {hours: 2}
+  precedence: 1
+  people: [Tyrese]
+
+# classes
+- name: Discrete Mathematics
+  groups: [classes, school]
+  location: Hudson Hall
+  description: Class.
+  days:
+    - Mon
+    - Wed
+  start_date: PH_fall_semester_start
+  end_date: PH_fall_semester_end
+  start_time: "1:15:00"
+  duration: {hours: 1, minutes: 15}
+
+- name: Computer Programming
+  groups: [classes, school]
+  location: Hudson Hall
+  description: Class.
+  days:
+    - Thu
+    - Fri
+  start_date: PH_fall_semester_start
+  end_date: PH_fall_semester_end
+  start_time: "01:15:00"
+  duration: {hours: 1, minutes: 15}
+
+# HWs
+- name: Discrete Mathematics HW due
+  groups: [homeworks, assignments, school]
+  description: The due day for the current homework.
+  days:
+    - Mon
+  all_day: True
+  start_date: PH_fall_semester_start
+  end_date: PH_fall_semester_end
+  precedence: -1
+  effects:
+    - name: stress
+      vals: [1,0]
+
+- name: Computer Programming HW due
+  groups: [homeworks, assignments, school]
+  description: The due day for the current homework.
+  days: 
+    - Thu
+  all_day: True
+  start_date: PH_fall_semester_start
+  end_date: PH_fall_semester_end
+  precedence: -1
+
+
+# activities
+
+- name: Movie Night
+  groups: [movies, friendship]
+  description: Movie night with friends.
+  days: 
+    - Sun
+  start_time: "00:19:00"
+  duration: {hours: 3}
+  people: [Ron, Mara]
+  prob: 0.5
+
+- name: Party
+  groups: [social]
+  description: Going to a party with friends.
+  days: 
+    - Fri
+  start_time: "00:20:00"
+  duration: {hours: 3}
+  people: [Ron, Tyrese, Mara]
+  prob: 0.7
+
+- name: Date Night
+  groups: [social, relationship]
+  description: Going on a date night.
+  days: 
+    - Fri
+    - Sat
+    - Sun
+  start_time: "00:19:00"
+  duration: {hours: 2}
+  people: [Mara]
+  prob: 0.4
+
+

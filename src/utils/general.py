@@ -56,3 +56,11 @@ def update_score(current_score, changes=[1, 0, -1], probabilities=None):
     return new_score
 
 
+# Function to parse days into a standardized format
+def enforce_list(_):
+    if isinstance(_, list):
+        return _
+    else:
+        return [_]
+    
+

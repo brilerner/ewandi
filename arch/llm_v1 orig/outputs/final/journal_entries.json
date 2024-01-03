@@ -1,0 +1,22 @@
+[
+    {
+        "start_datetime": "2023-09-01T23:55:00",
+        "end_datetime": "2023-09-02T00:00:00",
+        "entry": "Today was a long and fulfilling day. I started off with my computer programming class in the morning, which went well. Then, I had a tough basketball game in the evening, but we managed to pull off the win. After the game, I spent some time with my friends and family before heading back to my apartment. I ended the night by playing some video games to unwind. Overall, I feel accomplished and grateful for the day. I'm looking forward to getting some rest and tackling whatever tomorrow brings."
+    },
+    {
+        "start_datetime": "2023-09-02T23:55:00",
+        "end_datetime": "2023-09-03T00:00:00",
+        "entry": "Today was a good day. I started off with a refreshing hike at Eno River State Park, which always puts me in a good mood. It's a great way to clear my mind and get some exercise in. Then, I spent some time playing video games at my apartment, which helped me destress and unwind after a long week of classes and basketball practice. Overall, I feel satisfied with how I spent my day and I'm looking forward to getting some rest before another busy week."
+    },
+    {
+        "start_datetime": "2023-09-03T23:55:00",
+        "end_datetime": "2023-09-04T00:00:00",
+        "entry": "Today was a long and productive day. Basketball practice went well, and I feel like I'm really starting to hit my stride on the court. It's always a great feeling to be able to do what I love and work towards my goal of making it to the NBA.\n\nAfter practice, I hit the books for a few hours to stay on top of my classes. Balancing basketball and my major in Computer Science can be tough, but I know it's all worth it in the end.\n\nOnce I finished studying, I took some time to unwind and play video games. It's a great way for me to relax and clear my mind after a busy day. I'm grateful for the time I get to spend with friends, family, and my girlfriend, and I'm looking forward to the week ahead.\n\nNow, it's time to get some rest and recharge for tomorrow. Goodnight."
+    },
+    {
+        "start_datetime": "2023-09-04T23:55:00",
+        "end_datetime": "2023-09-05T00:00:00",
+        "entry": "Today was a busy day, but I managed to get everything done. Discrete Mathematics class and homework took up a good chunk of my day, but I feel good about my understanding of the material. Basketball practice was intense, but I know it's all part of the process to reach my goal of making it to the NBA. I'm glad I got to unwind with some video games before bed. Overall, I'm feeling accomplished and ready to tackle whatever tomorrow brings."
+    }
+]

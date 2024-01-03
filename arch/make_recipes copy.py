@@ -22,6 +22,31 @@ root = Path('/Users/brianlerner/Library/CloudStorage/OneDrive-Personal/Code/cere
 
 
 
+
+
+def make_recipe(food_prefs, foods, meal_info='lunch'):
+    food_descriptions = [food['description'] for food in foods]
+
+    system_prompt = f"""Here are is a person's general food preferences:
+{food_prefs}
+Your job is to construct a {meal_info} recipe for this person. The recipe should be a list of ingredients and their amounts.You can use the following ingredients:
+------------------
+{food_descriptions}
+------------------  
+In the form of a JSON, return the recipe name "recipe_name" and the ingredients "ingredients" as a list containing dictionaries with the keys "name" and "grams". The "grams" is the estimated grams used in the recipe. Make sure to use the ingredient string in the list above when outputting the JSON.
+"""
+# Await information from the user on their desired meal.
+
+    # print(prompt)
+    # recipe =  get_completion(prompt, MODEL, response_format={'type':'json_object'})
+
+    conversation = Conversation(first_message = ("system", system_prompt))
+    # conversation.add_message("user", meal_info)
+    response = chat_completion_request(conversation, model=MODEL, response_format={'type':'json_object'}, stream=False, temperature=0.5)
+    recipe = response.choices[0].message.content 
+
+    return recipe
+
 def make_recipes(profile='llm_v0', n_days=1, all_meals=False):
 
 
@@ -67,28 +92,5 @@ def make_recipes(profile='llm_v0', n_days=1, all_meals=False):
         json.dump(recipes, file, indent=4)
 
 
-def make_recipe(food_prefs, foods, meal_info='lunch'):
-    food_descriptions = [food['description'] for food in foods]
-
-    system_prompt = f"""Here are is a person's general food preferences:
-{food_prefs}
-Your job is to construct a {meal_info} recipe for this person. The recipe should be a list of ingredients and their amounts.You can use the following ingredients:
-------------------
-{food_descriptions}
-------------------  
-In the form of a JSON, return the recipe name "recipe_name" and the ingredients "ingredients" as a list containing dictionaries with the keys "name" and "grams". The "grams" is the estimated grams used in the recipe. Make sure to use the ingredient string in the list above when outputting the JSON.
-"""
-# Await information from the user on their desired meal.
-
-    # print(prompt)
-    # recipe =  get_completion(prompt, MODEL, response_format={'type':'json_object'})
-
-    conversation = Conversation(first_message = ("system", system_prompt))
-    # conversation.add_message("user", meal_info)
-    response = chat_completion_request(conversation, model=MODEL, response_format={'type':'json_object'}, stream=False, temperature=0.5)
-    recipe = response.choices[0].message.content 
-
-    return recipe
-
 if __name__ == "__main__":
-    make_recipes(profile='llm_v0', n_days=10, all_meals=True)
+    make_recipes(profile='llm_v0', n_days=2, all_meals=True)

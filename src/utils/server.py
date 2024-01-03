@@ -8,6 +8,7 @@ from pymongo.errors import ConnectionFailure
 HOST = 'localhost'
 PORT = 27017
 DATABASE_NAME = 'CerebraDB'
+TIMEOUT_MS = 500
 
 # Atlas
 PASSWORD = "kYQaeGNL0NyOVnAh"
@@ -16,7 +17,7 @@ uri = f"mongodb+srv://brianelerner:{PASSWORD}@cerebra.manrrcm.mongodb.net/?retry
 def connect_to_db(db_loc = 'atlas'):
     if db_loc == 'atlas':
         # Create a new client and connect to the server
-        client = MongoClient(uri, server_api=ServerApi('1'))
+        client = MongoClient(uri, server_api=ServerApi('1'), serverSelectionTimeoutMS=TIMEOUT_MS)
 
         # Send a ping to confirm a successful connection
         try:
@@ -26,7 +27,7 @@ def connect_to_db(db_loc = 'atlas'):
             print(e)
 
     elif db_loc == 'local':
-        client = MongoClient(HOST, PORT, serverSelectionTimeoutMS=5000)  # Connects to the default host and port.
+        client = MongoClient(HOST, PORT, serverSelectionTimeoutMS=TIMEOUT_MS)  # Connects to the default host and port.
         
         try:
             # The ismaster command is cheap and does not require auth.

@@ -1,0 +1,17 @@
+{
+    "elbow_pain" : {
+        "name": "elbow pain",
+        "type": "physical sensation",
+        "part": "elbow",
+        "status": {
+            "pain": true
+        },
+        "start": {
+            "dateTime": null
+        },
+        "end": {
+            "dateTime": null
+        },
+        "isAllDay": false
+    }
+}

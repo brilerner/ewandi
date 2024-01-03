@@ -1,0 +1,22 @@
+# make sure meals are in lower case
+
+# set up default adjustments for different categories?
+
+- name: mood
+  baseline: 5
+  max: 10
+  min: 0
+  all_day: True
+
+
+- name: energy
+  baseline: 5
+  max: 10
+  min: 0
+  all_day: True
+
+- name: stress
+  baseline: 5
+  max: 10
+  min: 0
+  all_day: True

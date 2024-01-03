@@ -1,0 +1,13 @@
+## Exercise
+
+- name: Walking
+  groups: [nature, exercise]
+  location: Duke Gardens
+  description: Going for a walk at Duke Gardens.
+  start_time: "00:16:00"
+  duration: {minutes: 30}
+  prob: 0.4
+  effects:
+    - name: stress
+      vals: [2]
+  precedence: 3

@@ -7,10 +7,19 @@ import shutil
 
 
 
+def load_yaml(path):
     
+    with open(path, 'r') as file:
+        data = yaml.safe_load(file)
+
+    return data
+
 def load_input_yaml(profile='llm_v0'):
+
+    root_dir = "/Users/brianlerner/Library/CloudStorage/OneDrive-Personal/Code/Cerebra/data/sim/profiles"
+    inputs_dir = Path(root_dir) / profile / 'inputs'
     # set up directories
-    inputs_dir = Path.cwd().parent /'data'/'sim' / 'profiles'/profile/'inputs'
+    # inputs_dir = Path.cwd().parent /'data'/'sim' / 'profiles'/profile/'inputs'
     sim_params_path = inputs_dir / 'sim_params.yaml'
     calendar_events_path = inputs_dir /'calendar_events.yaml'
     sensations_path = inputs_dir / 'sensations.yaml'

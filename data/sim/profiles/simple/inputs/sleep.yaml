@@ -1,0 +1,27 @@
+- name: sleep
+  start_time: "00:00"
+  precedence: -1
+  duration: 
+    'vals':
+      - 'val' : {'hours': 6}
+        'effects':
+          - name: energy
+            vals: [0]
+      - 'val' : {'hours': 7}
+        'effects':
+          - name: energy
+            vals: [1]
+
+# - name: sleep
+#   start_time: "00:00"
+#   precedence: -1
+#   duration: 
+#     'mode': 'sampled'
+#     'vals':
+#       - {'hours': 7}
+#       - {'hours': 6}
+#   effects:
+#     - name: energy
+#       sampled : 
+#         - vals: [1]
+#         - vals: [0]

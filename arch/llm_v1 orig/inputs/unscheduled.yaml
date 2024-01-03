@@ -15,7 +15,8 @@
   name: hiking
   location: Eno River State Park
   description: Puts Len in a good mood.
-  days: Sat
+  days:
+    - Sat
   start_time: "09:00:00"
   duration: {hours: 1, minutes: 0}
   type: exercise
@@ -24,7 +25,14 @@
   name: playing videogames
   location: Len's apartment
   description: Helps Len destress.
-  days: [Sun, Mon, Tue, Wed, Thu, Fri, Sat]
+  days:
+    - Sun
+    - Mon
+    - Tue
+    - Wed
+    - Thu, 
+    - Fri
+    - Sat
   start_time: "23:00:00"
   duration: {hours: 0, minutes: 45}
   type: "personal time"

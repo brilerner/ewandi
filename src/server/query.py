@@ -6,9 +6,11 @@ from utils.server import connect_to_collection
 from datetime import datetime
 
 
-collection = connect_to_collection()
+# how to define collection?? better to define as class?
 
 def get_schema():
+
+    collection = connect_to_collection()
 
     def add_name_to_schema(event, schema, cat):
         if 'name' not in event:
@@ -44,6 +46,8 @@ def get_events(
     print_events=False
     ):
     
+
+    collection = connect_to_collection()
 
     schema = get_schema()
     if event_name in schema:

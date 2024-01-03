@@ -82,21 +82,25 @@ def check_recipes(profile='llm_v0'):
     for meal_type in recipes:
         print(meal_type)
         print()
-        for i in range(len(recipes[meal_type])):
+        # for i in range(len(recipes[meal_type])):
+        for recipe in recipes[meal_type]:
             # print(recipes[meal_type][i])
             # print()
             
             # print out any missing ingredients
-            check_recipe(recipes[meal_type][i], foods)
+            # check_recipe(recipes[meal_type][i], foods)
+            check_recipe(recipe, foods)
 
             # add nutrients where they exist
-            add_nutrients(recipes[meal_type][i], foods)
+            # add_nutrients(recipes[meal_type][i], foods)
+            add_nutrients(recipe, foods)
 
     # print(recipes) 
+    # recipes_path = profile_dir / 'outputs' / 'intermediate' / 'recipes_final.json'
     recipes_path = profile_dir / 'outputs' / 'intermediate' / 'recipes_final.json'
     with open(recipes_path, 'w') as file:
         json.dump(recipes, file, indent=4)
 
 
 if __name__ == "__main__":
-    check_recipes(profile='llm_v0')
+    check_recipes(profile='llm_v1')

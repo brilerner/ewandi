@@ -1,6 +1,4 @@
 openai
-pip
-python # == 3.11.7
 pymongo
 tenacity
 streamlit-calendar

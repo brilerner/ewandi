@@ -2,6 +2,7 @@ openai
 load_dotenv
 pymongo
 pyyaml
+plotly
 tenacity
 streamlit-calendar
 

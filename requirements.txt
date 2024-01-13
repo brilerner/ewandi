@@ -1,4 +1,5 @@
 openai
+load_dotenv
 pymongo
 tenacity
 streamlit-calendar

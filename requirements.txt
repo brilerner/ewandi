@@ -2,4 +2,5 @@ openai
 pymongo
 tenacity
 streamlit-calendar
+yaml
 

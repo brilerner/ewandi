@@ -36,6 +36,7 @@ openers = prompts.engine.openers
 
 #### Dataset Tabs
 
+
 def convert_event_keys(events):
     def convert_event(event):
         # Define a mapping of old keys to new keys
@@ -259,10 +260,10 @@ def main():
     ]
 
     tab_funcs = [
-        show_chatbot_tab,
         show_overview_tab,
         show_bio_tab,
         show_dataset_tab,
+        show_chatbot_tab,
     ]
 
     choice = st.sidebar.radio("Choose a Tab", tabs)
@@ -281,7 +282,8 @@ def main():
 
 
 if __name__ == "__main__":
-    main()
+    st.markdown("# Currently debugging some key features. Please come back soon.")
+    # main()
 
 # if "session" not in st.session_state:
 # logging.info(st.session_state)

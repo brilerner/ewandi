@@ -16,7 +16,6 @@ from utils.errors import (
     handle_error,
 )
 
-from termcolor import colored
 import prompts.engine as engine_prompts
 
 # from utils.chat import Conversation
@@ -68,6 +67,7 @@ class Conversation:
         return messages_to_display
 
     def display_conversation(self):
+        from termcolor import colored       
         role_to_color = {
             "system": "red",
             "user": "green",

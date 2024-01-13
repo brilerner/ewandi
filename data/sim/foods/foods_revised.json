@@ -1,0 +1,4020 @@
+[
+    {
+        "description": "Water",
+        "nutrients": [],
+        "is_supplement": true,
+        "name": "water",
+        "subtypes": [],
+        "preparations": []
+    },
+    {
+        "description": "Hummus, commercial",
+        "nutrients": [
+            {
+                "name": "energy",
+                "unit": "kcal",
+                "amount": 960
+            }
+        ],
+        "name": "hummus",
+        "subtypes": [],
+        "preparations": [
+            "commercial"
+        ]
+    },
+    {
+        "description": "Tomatoes, grape, raw",
+        "nutrients": [
+            {
+                "name": "energy",
+                "unit": "kcal",
+                "amount": 27.0
+            }
+        ],
+        "name": "tomatoes",
+        "subtypes": [
+            "grape"
+        ],
+        "preparations": [
+            "raw"
+        ]
+    },
+    {
+        "description": "Beans, snap, green, canned, regular pack, drained solids",
+        "nutrients": [
+            {
+                "name": "energy",
+                "unit": "kcal",
+                "amount": 21.0
+            }
+        ],
+        "name": "green snap beans",
+        "subtypes": [
+            "canned"
+        ],
+        "preparations": [
+            "regular pack",
+            "drained solids"
+        ]
+    },
+    {
+        "description": "Frankfurter, beef, unheated",
+        "nutrients": [
+            {
+                "name": "energy",
+                "unit": "kcal",
+                "amount": 314
+            }
+        ],
+        "name": "frankfurter",
+        "subtypes": [
+            "beef"
+        ],
+        "preparations": [
+            "unheated"
+        ]
+    },
+    {
+        "description": "Nuts, almonds, dry roasted, with salt added",
+        "nutrients": [
+            {
+                "name": "energy",
+                "unit": "kcal",
+                "amount": 620
+            }
+        ],
+        "name": "almonds",
+        "subtypes": [],
+        "preparations": [
+            "dry roasted",
+            "with salt added"
+        ]
+    },
+    {
+        "description": "Kale, raw",
+        "nutrients": [
+            {
+                "name": "energy",
+                "unit": "kcal",
+                "amount": 148
+            }
+        ],
+        "name": "kale",
+        "subtypes": [],
+        "preparations": [
+            "raw"
+        ]
+    },
+    {
+        "description": "Egg, whole, raw, frozen, pasteurized",
+        "nutrients": [
+            {
+                "name": "energy",
+                "unit": "kcal",
+                "amount": 627
+            }
+        ],
+        "name": "egg",
+        "subtypes": [
+            "whole"
+        ],
+        "preparations": [
+            "raw",
+            "frozen",
+            "pasteurized"
+        ]
+    },
+    {
+        "description": "Egg, white, raw, frozen, pasteurized",
+        "nutrients": [
+            {
+                "name": "energy",
+                "unit": "kcal",
+                "amount": 48.0
+            }
+        ],
+        "name": "egg white",
+        "subtypes": [],
+        "preparations": [
+            "raw",
+            "frozen",
+            "pasteurized"
+        ]
+    },
+    {
+        "description": "Egg, white, dried",
+        "nutrients": [
+            {
+                "name": "energy",
+                "unit": "kcal",
+                "amount": 1570.0
+            }
+        ],
+        "name": "egg white",
+        "subtypes": [],
+        "preparations": [
+            "dried"
+        ]
+    },
+    {
+        "description": "Onion rings, breaded, par fried, frozen, prepared, heated in oven",
+        "nutrients": [
+            {
+                "name": "energy",
+                "unit": "kcal",
+                "amount": 288
+            }
+        ],
+        "name": "onion rings",
+        "subtypes": [
+            "breaded"
+        ],
+        "preparations": [
+            "par fried",
+            "frozen",
+            "heated in oven"
+        ]
+    },
+    {
+        "description": "Pickles, cucumber, dill or kosher dill",
+        "nutrients": [
+            {
+                "name": "energy",
+                "unit": "kcal",
+                "amount": 50.0
+            }
+        ],
+        "name": "pickles",
+        "subtypes": [
+            "cucumber",
+            "dill",
+            "kosher dill"
+        ],
+        "preparations": []
+    },
+    {
+        "description": "Cheese, parmesan, grated",
+        "nutrients": [
+            {
+                "name": "energy",
+                "unit": "kcal",
+                "amount": 421
+            }
+        ],
+        "name": "parmesan cheese",
+        "subtypes": [],
+        "preparations": [
+            "grated"
+        ]
+    },
+    {
+        "description": "Cheese, pasteurized process, American, vitamin D fortified",
+        "nutrients": [
+            {
+                "name": "energy",
+                "unit": "kcal",
+                "amount": 1530.0
+            }
+        ],
+        "name": "cheese",
+        "subtypes": [
+            "pasteurized process",
+            "American"
+        ],
+        "preparations": [
+            "vitamin D fortified"
+        ]
+    },
+    {
+        "description": "Grapefruit juice, white, canned or bottled, unsweetened",
+        "nutrients": [
+            {
+                "name": "energy",
+                "unit": "kcal",
+                "amount": 157
+            }
+        ],
+        "name": "grapefruit juice",
+        "subtypes": [
+            "white"
+        ],
+        "preparations": [
+            "canned or bottled",
+            "unsweetened"
+        ]
+    },
+    {
+        "description": "Peaches, yellow, raw",
+        "nutrients": [
+            {
+                "name": "energy",
+                "unit": "kcal",
+                "amount": 42.0
+            }
+        ],
+        "name": "peaches",
+        "subtypes": [
+            "yellow"
+        ],
+        "preparations": [
+            "raw"
+        ]
+    },
+    {
+        "description": "Seeds, sunflower seed kernels, dry roasted, with salt added",
+        "nutrients": [
+            {
+                "name": "energy",
+                "unit": "kcal",
+                "amount": 612
+            }
+        ],
+        "name": "sunflower seed kernels",
+        "subtypes": [],
+        "preparations": [
+            "dry roasted",
+            "with salt added"
+        ]
+    },
+    {
+        "description": "Bread, white, commercially prepared",
+        "nutrients": [
+            {
+                "name": "energy",
+                "unit": "kcal",
+                "amount": 270
+            }
+        ],
+        "name": "bread",
+        "subtypes": [
+            "white"
+        ],
+        "preparations": [
+            "commercially prepared"
+        ]
+    },
+    {
+        "description": "Kale, frozen, cooked, boiled, drained, without salt",
+        "nutrients": [
+            {
+                "name": "energy",
+                "unit": "kcal",
+                "amount": 36.0
+            }
+        ],
+        "name": "kale",
+        "subtypes": [
+            "frozen"
+        ],
+        "preparations": [
+            "cooked",
+            "boiled",
+            "drained",
+            "without salt"
+        ]
+    },
+    {
+        "description": "Mustard, prepared, yellow",
+        "nutrients": [
+            {
+                "name": "energy",
+                "unit": "kcal",
+                "amount": 254
+            }
+        ],
+        "name": "mustard",
+        "subtypes": [
+            "yellow"
+        ],
+        "preparations": [
+            "prepared"
+        ]
+    },
+    {
+        "description": "Kiwifruit, green, raw",
+        "nutrients": [
+            {
+                "name": "energy",
+                "unit": "kcal",
+                "amount": 58.0
+            }
+        ],
+        "name": "kiwifruit",
+        "subtypes": [
+            "green"
+        ],
+        "preparations": [
+            "raw"
+        ]
+    },
+    {
+        "description": "Nectarines, raw",
+        "nutrients": [
+            {
+                "name": "energy",
+                "unit": "kcal",
+                "amount": 163
+            }
+        ],
+        "name": "nectarines",
+        "subtypes": [],
+        "preparations": [
+            "raw"
+        ]
+    },
+    {
+        "description": "Cheese, cheddar",
+        "nutrients": [
+            {
+                "name": "energy",
+                "unit": "kcal",
+                "amount": 408
+            }
+        ],
+        "name": "cheddar cheese",
+        "subtypes": [],
+        "preparations": []
+    },
+    {
+        "description": "Cheese, cottage, lowfat, 2% milkfat",
+        "nutrients": [
+            {
+                "name": "energy",
+                "unit": "kcal",
+                "amount": 84.0
+            }
+        ],
+        "name": "cottage cheese",
+        "subtypes": [],
+        "preparations": [
+            "lowfat",
+            "2% milkfat"
+        ]
+    },
+    {
+        "description": "Cheese, mozzarella, low moisture, part-skim",
+        "nutrients": [
+            {
+                "name": "energy",
+                "unit": "kcal",
+                "amount": 1240.0
+            }
+        ],
+        "name": "cheese",
+        "subtypes": [
+            "mozzarella"
+        ],
+        "preparations": [
+            "low moisture",
+            "part-skim"
+        ]
+    },
+    {
+        "description": "Egg, whole, dried",
+        "nutrients": [
+            {
+                "name": "energy",
+                "unit": "kcal",
+                "amount": 2410.0
+            }
+        ],
+        "name": "egg",
+        "subtypes": [
+            "whole"
+        ],
+        "preparations": [
+            "dried"
+        ]
+    },
+    {
+        "description": "Egg, yolk, raw, frozen, pasteurized",
+        "nutrients": [
+            {
+                "name": "energy",
+                "unit": "kcal",
+                "amount": 296
+            }
+        ],
+        "name": "egg yolk",
+        "subtypes": [],
+        "preparations": [
+            "raw",
+            "frozen",
+            "pasteurized"
+        ]
+    },
+    {
+        "description": "Egg, yolk, dried",
+        "nutrients": [
+            {
+                "name": "energy",
+                "unit": "kcal",
+                "amount": 654
+            }
+        ],
+        "name": "egg yolk",
+        "subtypes": [],
+        "preparations": [
+            "dried"
+        ]
+    },
+    {
+        "description": "Yogurt, Greek, plain, nonfat",
+        "nutrients": [
+            {
+                "name": "energy",
+                "unit": "kcal",
+                "amount": 256
+            }
+        ],
+        "name": "yogurt",
+        "subtypes": [
+            "Greek"
+        ],
+        "preparations": [
+            "plain",
+            "nonfat"
+        ]
+    },
+    {
+        "description": "Yogurt, Greek, strawberry, nonfat",
+        "nutrients": [
+            {
+                "name": "energy",
+                "unit": "kcal",
+                "amount": 83.0
+            }
+        ],
+        "name": "yogurt",
+        "subtypes": [
+            "Greek",
+            "strawberry"
+        ],
+        "preparations": [
+            "nonfat"
+        ]
+    },
+    {
+        "description": "Oil, coconut",
+        "nutrients": [
+            {
+                "name": "energy",
+                "unit": "kcal",
+                "amount": 3480.0
+            }
+        ],
+        "name": "coconut oil",
+        "subtypes": [],
+        "preparations": []
+    },
+    {
+        "description": "Chicken, broilers or fryers, drumstick, meat only, cooked, braised",
+        "nutrients": [
+            {
+                "name": "energy",
+                "unit": "kcal",
+                "amount": 652
+            }
+        ],
+        "name": "chicken drumstick",
+        "subtypes": [
+            "broilers or fryers",
+            "meat only"
+        ],
+        "preparations": [
+            "cooked",
+            "braised"
+        ]
+    },
+    {
+        "description": "Chicken, broiler or fryers, breast, skinless, boneless, meat only, cooked, braised",
+        "nutrients": [
+            {
+                "name": "energy",
+                "unit": "kcal",
+                "amount": 166
+            }
+        ],
+        "name": "chicken breast",
+        "subtypes": [
+            "broiler or fryers",
+            "skinless",
+            "boneless",
+            "meat only"
+        ],
+        "preparations": [
+            "cooked",
+            "braised"
+        ]
+    },
+    {
+        "description": "Sauce, pasta, spaghetti/marinara, ready-to-serve",
+        "nutrients": [
+            {
+                "name": "energy",
+                "unit": "kcal",
+                "amount": 45.0
+            }
+        ],
+        "name": "pasta sauce",
+        "subtypes": [
+            "spaghetti",
+            "marinara"
+        ],
+        "preparations": [
+            "ready-to-serve"
+        ]
+    },
+    {
+        "description": "Ham, sliced, pre-packaged, deli meat (96%fat free, water added)",
+        "nutrients": [
+            {
+                "name": "energy",
+                "unit": "kcal",
+                "amount": 443
+            }
+        ],
+        "name": "ham",
+        "subtypes": [
+            "deli meat"
+        ],
+        "preparations": [
+            "sliced",
+            "pre-packaged",
+            "96% fat free",
+            "water added"
+        ]
+    },
+    {
+        "description": "Olives, green, Manzanilla, stuffed with pimiento",
+        "nutrients": [
+            {
+                "name": "energy",
+                "unit": "kcal",
+                "amount": 130
+            }
+        ],
+        "name": "olives",
+        "subtypes": [
+            "green",
+            "Manzanilla"
+        ],
+        "preparations": [
+            "stuffed with pimiento"
+        ]
+    },
+    {
+        "description": "Cookies, oatmeal, soft, with raisins",
+        "nutrients": [
+            {
+                "name": "energy",
+                "unit": "kcal",
+                "amount": 430
+            }
+        ],
+        "name": "cookies",
+        "subtypes": [
+            "oatmeal"
+        ],
+        "preparations": [
+            "soft",
+            "with raisins"
+        ]
+    },
+    {
+        "description": "Tomatoes, canned, red, ripe, diced",
+        "nutrients": [
+            {
+                "name": "energy",
+                "unit": "kcal",
+                "amount": 18.0
+            }
+        ],
+        "name": "tomatoes",
+        "subtypes": [
+            "canned",
+            "red",
+            "ripe"
+        ],
+        "preparations": [
+            "diced"
+        ]
+    },
+    {
+        "description": "Fish, haddock, raw",
+        "nutrients": [
+            {
+                "name": "energy",
+                "unit": "kcal",
+                "amount": 74.0
+            }
+        ],
+        "name": "haddock",
+        "subtypes": [],
+        "preparations": [
+            "raw"
+        ]
+    },
+    {
+        "description": "Fish, pollock, raw",
+        "nutrients": [
+            {
+                "name": "energy",
+                "unit": "kcal",
+                "amount": 56.0
+            }
+        ],
+        "name": "pollock",
+        "subtypes": [],
+        "preparations": [
+            "raw"
+        ]
+    },
+    {
+        "description": "Fish, tuna, light, canned in water, drained solids",
+        "nutrients": [
+            {
+                "name": "energy",
+                "unit": "kcal",
+                "amount": 90.0
+            }
+        ],
+        "name": "tuna",
+        "subtypes": [
+            "light",
+            "canned in water"
+        ],
+        "preparations": [
+            "drained solids"
+        ]
+    },
+    {
+        "description": "Restaurant, Chinese, fried rice, without meat",
+        "nutrients": [
+            {
+                "name": "energy",
+                "unit": "kcal",
+                "amount": 174
+            }
+        ],
+        "name": "fried rice",
+        "subtypes": [],
+        "preparations": [
+            "without meat"
+        ]
+    },
+    {
+        "description": "Restaurant, Latino, tamale, pork",
+        "nutrients": [
+            {
+                "name": "energy",
+                "unit": "kcal",
+                "amount": 728
+            }
+        ],
+        "name": "tamale",
+        "subtypes": [
+            "pork"
+        ],
+        "preparations": []
+    },
+    {
+        "description": "Restaurant, Latino, pupusas con frijoles (pupusas, bean)",
+        "nutrients": [
+            {
+                "name": "energy",
+                "unit": "kcal",
+                "amount": 959
+            }
+        ],
+        "name": "pupusas",
+        "subtypes": [
+            "bean"
+        ],
+        "preparations": []
+    },
+    {
+        "description": "Bread, whole-wheat, commercially prepared",
+        "nutrients": [
+            {
+                "name": "energy",
+                "unit": "kcal",
+                "amount": 254
+            }
+        ],
+        "name": "bread",
+        "subtypes": [
+            "whole-wheat"
+        ],
+        "preparations": [
+            "commercially prepared"
+        ]
+    },
+    {
+        "description": "Beef, loin, tenderloin roast, separable lean only, boneless, trimmed to 0\" fat, select, cooked, roasted",
+        "nutrients": [
+            {
+                "name": "energy",
+                "unit": "kcal",
+                "amount": 176
+            }
+        ],
+        "name": "beef tenderloin roast",
+        "subtypes": [
+            "loin",
+            "separable lean only",
+            "boneless",
+            "select"
+        ],
+        "preparations": [
+            "trimmed to 0\" fat",
+            "cooked",
+            "roasted"
+        ]
+    },
+    {
+        "description": "Beef, loin, top loin steak, boneless, lip-on, separable lean only, trimmed to 1/8\" fat, choice, raw",
+        "nutrients": [
+            {
+                "name": "energy",
+                "unit": "kcal",
+                "amount": 155
+            }
+        ],
+        "name": "beef top loin steak",
+        "subtypes": [
+            "boneless",
+            "lip-on",
+            "choice"
+        ],
+        "preparations": [
+            "separable lean only",
+            "trimmed to 1/8\" fat",
+            "raw"
+        ]
+    },
+    {
+        "description": "Beef, round, eye of round roast, boneless, separable lean only, trimmed to 0\" fat, select, raw",
+        "nutrients": [
+            {
+                "name": "energy",
+                "unit": "kcal",
+                "amount": 512
+            }
+        ],
+        "name": "beef",
+        "subtypes": [
+            "round",
+            "eye of round roast",
+            "boneless",
+            "separable lean only",
+            "select"
+        ],
+        "preparations": [
+            "trimmed to 0\" fat",
+            "raw"
+        ]
+    },
+    {
+        "description": "Beef, round, top round roast, boneless, separable lean only, trimmed to 0\" fat, select, raw",
+        "nutrients": [
+            {
+                "name": "energy",
+                "unit": "kcal",
+                "amount": 123
+            }
+        ],
+        "name": "beef",
+        "subtypes": [
+            "round",
+            "top round roast",
+            "boneless",
+            "separable lean only",
+            "select"
+        ],
+        "preparations": [
+            "trimmed to 0\" fat",
+            "raw"
+        ]
+    },
+    {
+        "description": "Beef, short loin, porterhouse steak, separable lean only, trimmed to 1/8\" fat, select, raw",
+        "nutrients": [
+            {
+                "name": "energy",
+                "unit": "kcal",
+                "amount": 145
+            }
+        ],
+        "name": "beef porterhouse steak",
+        "subtypes": [
+            "short loin",
+            "separable lean only",
+            "select"
+        ],
+        "preparations": [
+            "trimmed to 1/8\" fat",
+            "raw"
+        ]
+    },
+    {
+        "description": "Beef, short loin, t-bone steak, bone-in, separable lean only, trimmed to 1/8\" fat, choice, cooked, grilled",
+        "nutrients": [
+            {
+                "name": "energy",
+                "unit": "kcal",
+                "amount": 918
+            }
+        ],
+        "name": "beef",
+        "subtypes": [
+            "short loin",
+            "t-bone steak",
+            "choice"
+        ],
+        "preparations": [
+            "bone-in",
+            "separable lean only",
+            "trimmed to 1/8\" fat",
+            "cooked",
+            "grilled"
+        ]
+    },
+    {
+        "description": "Carrots, frozen, unprepared",
+        "nutrients": [
+            {
+                "name": "energy",
+                "unit": "kcal",
+                "amount": 37.0
+            }
+        ],
+        "name": "carrots",
+        "subtypes": [
+            "frozen"
+        ],
+        "preparations": [
+            "unprepared"
+        ]
+    },
+    {
+        "description": "Cheese, dry white, queso seco",
+        "nutrients": [
+            {
+                "name": "energy",
+                "unit": "kcal",
+                "amount": 1360.0
+            }
+        ],
+        "name": "cheese",
+        "subtypes": [
+            "dry white",
+            "queso seco"
+        ],
+        "preparations": []
+    },
+    {
+        "description": "Cheese, ricotta, whole milk",
+        "nutrients": [
+            {
+                "name": "energy",
+                "unit": "kcal",
+                "amount": 657
+            }
+        ],
+        "name": "ricotta cheese",
+        "subtypes": [
+            "whole milk"
+        ],
+        "preparations": []
+    },
+    {
+        "description": "Cheese, swiss",
+        "nutrients": [
+            {
+                "name": "energy",
+                "unit": "kcal",
+                "amount": 393
+            }
+        ],
+        "name": "cheese",
+        "subtypes": [
+            "swiss"
+        ],
+        "preparations": []
+    },
+    {
+        "description": "Figs, dried, uncooked",
+        "nutrients": [
+            {
+                "name": "energy",
+                "unit": "kcal",
+                "amount": 1040.0
+            }
+        ],
+        "name": "figs",
+        "subtypes": [
+            "dried"
+        ],
+        "preparations": [
+            "uncooked"
+        ]
+    },
+    {
+        "description": "Lettuce, cos or romaine, raw",
+        "nutrients": [
+            {
+                "name": "energy",
+                "unit": "kcal",
+                "amount": 17.0
+            }
+        ],
+        "name": "lettuce",
+        "subtypes": [
+            "cos",
+            "romaine"
+        ],
+        "preparations": [
+            "raw"
+        ]
+    },
+    {
+        "description": "Melons, cantaloupe, raw",
+        "nutrients": [
+            {
+                "name": "energy",
+                "unit": "kcal",
+                "amount": 34.0
+            }
+        ],
+        "name": "cantaloupe",
+        "subtypes": [],
+        "preparations": [
+            "raw"
+        ]
+    },
+    {
+        "description": "Oranges, raw, navels",
+        "nutrients": [
+            {
+                "name": "energy",
+                "unit": "kcal",
+                "amount": 47.0
+            }
+        ],
+        "name": "oranges",
+        "subtypes": [
+            "navels"
+        ],
+        "preparations": [
+            "raw"
+        ]
+    },
+    {
+        "description": "Milk, lowfat, fluid, 1% milkfat, with added vitamin A and vitamin D",
+        "nutrients": [
+            {
+                "name": "energy",
+                "unit": "kcal",
+                "amount": 179
+            }
+        ],
+        "name": "milk",
+        "subtypes": [
+            "lowfat"
+        ],
+        "preparations": [
+            "fluid",
+            "1% milkfat",
+            "with added vitamin A",
+            "with added vitamin D"
+        ]
+    },
+    {
+        "description": "Pears, raw, bartlett",
+        "nutrients": [
+            {
+                "name": "energy",
+                "unit": "kcal",
+                "amount": 238
+            }
+        ],
+        "name": "pears",
+        "subtypes": [
+            "bartlett"
+        ],
+        "preparations": [
+            "raw"
+        ]
+    },
+    {
+        "description": "Restaurant, Chinese, sweet and sour pork",
+        "nutrients": [
+            {
+                "name": "energy",
+                "unit": "kcal",
+                "amount": 1090.0
+            }
+        ],
+        "name": "sweet and sour pork",
+        "subtypes": [],
+        "preparations": []
+    },
+    {
+        "description": "Salt, table, iodized",
+        "nutrients": [],
+        "is_supplement": true,
+        "name": "salt",
+        "subtypes": [
+            "table"
+        ],
+        "preparations": [
+            "iodized"
+        ]
+    },
+    {
+        "description": "Milk, nonfat, fluid, with added vitamin A and vitamin D (fat free or skim)",
+        "nutrients": [
+            {
+                "name": "energy",
+                "unit": "kcal",
+                "amount": 34.0
+            }
+        ],
+        "name": "milk",
+        "subtypes": [
+            "nonfat"
+        ],
+        "preparations": [
+            "fluid",
+            "with added vitamin A",
+            "with added vitamin D",
+            "fat free",
+            "skim"
+        ]
+    },
+    {
+        "description": "Sauce, salsa, ready-to-serve",
+        "nutrients": [
+            {
+                "name": "energy",
+                "unit": "kcal",
+                "amount": 122
+            }
+        ],
+        "name": "salsa",
+        "subtypes": [],
+        "preparations": [
+            "ready-to-serve"
+        ]
+    },
+    {
+        "description": "Milk, reduced fat, fluid, 2% milkfat, with added vitamin A and vitamin D",
+        "nutrients": [
+            {
+                "name": "energy",
+                "unit": "kcal",
+                "amount": 209
+            }
+        ],
+        "name": "milk",
+        "subtypes": [],
+        "preparations": [
+            "reduced fat",
+            "fluid",
+            "2% milkfat",
+            "with added vitamin A",
+            "with added vitamin D"
+        ]
+    },
+    {
+        "description": "Sausage, breakfast sausage, beef, pre-cooked, unprepared",
+        "nutrients": [
+            {
+                "name": "energy",
+                "unit": "kcal",
+                "amount": 328
+            }
+        ],
+        "name": "sausage",
+        "subtypes": [
+            "breakfast sausage",
+            "beef"
+        ],
+        "preparations": [
+            "pre-cooked",
+            "unprepared"
+        ]
+    },
+    {
+        "description": "Sausage, Italian, pork, mild, cooked, pan-fried",
+        "nutrients": [
+            {
+                "name": "energy",
+                "unit": "kcal",
+                "amount": 322
+            }
+        ],
+        "name": "sausage",
+        "subtypes": [
+            "Italian",
+            "pork",
+            "mild"
+        ],
+        "preparations": [
+            "cooked",
+            "pan-fried"
+        ]
+    },
+    {
+        "description": "Sausage, pork, chorizo, link or ground, cooked, pan-fried",
+        "nutrients": [
+            {
+                "name": "energy",
+                "unit": "kcal",
+                "amount": 346
+            }
+        ],
+        "name": "sausage",
+        "subtypes": [
+            "pork",
+            "chorizo"
+        ],
+        "preparations": [
+            "link or ground",
+            "cooked",
+            "pan-fried"
+        ]
+    },
+    {
+        "description": "Milk, whole, 3.25% milkfat, with added vitamin D",
+        "nutrients": [
+            {
+                "name": "energy",
+                "unit": "kcal",
+                "amount": 60.0
+            }
+        ],
+        "name": "milk",
+        "subtypes": [
+            "whole"
+        ],
+        "preparations": [
+            "3.25% milkfat",
+            "with added vitamin D"
+        ]
+    },
+    {
+        "description": "Sausage, turkey, breakfast links, mild, raw",
+        "nutrients": [
+            {
+                "name": "energy",
+                "unit": "kcal",
+                "amount": 706
+            }
+        ],
+        "name": "turkey sausage",
+        "subtypes": [
+            "breakfast links"
+        ],
+        "preparations": [
+            "mild",
+            "raw"
+        ]
+    },
+    {
+        "description": "Sugars, granulated",
+        "nutrients": [
+            {
+                "name": "energy",
+                "unit": "kcal",
+                "amount": 1610.0
+            }
+        ],
+        "name": "sugar",
+        "subtypes": [
+            "granulated"
+        ],
+        "preparations": []
+    },
+    {
+        "description": "Turkey, ground, 93% lean, 7% fat, pan-broiled crumbles",
+        "nutrients": [
+            {
+                "name": "energy",
+                "unit": "kcal",
+                "amount": 220
+            }
+        ],
+        "name": "ground turkey",
+        "subtypes": [
+            "93% lean",
+            "7% fat"
+        ],
+        "preparations": [
+            "pan-broiled crumbles"
+        ]
+    },
+    {
+        "description": "Ham, sliced, restaurant",
+        "nutrients": [
+            {
+                "name": "energy",
+                "unit": "kcal",
+                "amount": 121
+            }
+        ],
+        "name": "ham",
+        "subtypes": [],
+        "preparations": [
+            "sliced"
+        ]
+    },
+    {
+        "description": "Cheese, American, restaurant",
+        "nutrients": [
+            {
+                "name": "energy",
+                "unit": "kcal",
+                "amount": 375
+            }
+        ],
+        "name": "cheese",
+        "subtypes": [
+            "American"
+        ],
+        "preparations": []
+    },
+    {
+        "description": "Broccoli, raw",
+        "nutrients": [
+            {
+                "name": "energy",
+                "unit": "kcal",
+                "amount": 132
+            }
+        ],
+        "name": "broccoli",
+        "subtypes": [],
+        "preparations": [
+            "raw"
+        ]
+    },
+    {
+        "description": "Ketchup, restaurant",
+        "nutrients": [
+            {
+                "name": "energy",
+                "unit": "kcal",
+                "amount": 117
+            }
+        ],
+        "name": "ketchup",
+        "subtypes": [],
+        "preparations": []
+    },
+    {
+        "description": "Eggs, Grade A, Large, egg white",
+        "nutrients": [
+            {
+                "name": "energy",
+                "unit": "kcal",
+                "amount": 231
+            }
+        ],
+        "name": "egg white",
+        "subtypes": [
+            "Grade A",
+            "Large"
+        ],
+        "preparations": []
+    },
+    {
+        "description": "Eggs, Grade A, Large, egg yolk",
+        "nutrients": [
+            {
+                "name": "energy",
+                "unit": "kcal",
+                "amount": 334
+            }
+        ],
+        "name": "egg yolk",
+        "subtypes": [
+            "Grade A",
+            "Large"
+        ],
+        "preparations": []
+    },
+    {
+        "description": "Oil, olive, extra virgin",
+        "nutrients": [],
+        "is_supplement": true,
+        "name": "olive oil",
+        "subtypes": [],
+        "preparations": [
+            "extra virgin"
+        ]
+    },
+    {
+        "description": "Eggs, Grade A, Large, egg whole",
+        "nutrients": [
+            {
+                "name": "energy",
+                "unit": "kcal",
+                "amount": 148
+            }
+        ],
+        "name": "egg",
+        "subtypes": [
+            "Grade A",
+            "Large"
+        ],
+        "preparations": [
+            "whole"
+        ]
+    },
+    {
+        "description": "Pork, cured, bacon, cooked, restaurant",
+        "nutrients": [
+            {
+                "name": "energy",
+                "unit": "kcal",
+                "amount": 500
+            }
+        ],
+        "name": "bacon",
+        "subtypes": [
+            "cured"
+        ],
+        "preparations": [
+            "cooked"
+        ]
+    },
+    {
+        "description": "Butter, stick, unsalted",
+        "nutrients": [],
+        "is_supplement": true,
+        "name": "butter",
+        "subtypes": [],
+        "preparations": [
+            "stick",
+            "unsalted"
+        ]
+    },
+    {
+        "description": "Flour, wheat, all-purpose, enriched, bleached",
+        "nutrients": [
+            {
+                "name": "energy",
+                "unit": "kcal",
+                "amount": 1530.0
+            }
+        ],
+        "name": "flour",
+        "subtypes": [
+            "wheat",
+            "all-purpose"
+        ],
+        "preparations": [
+            "enriched",
+            "bleached"
+        ]
+    },
+    {
+        "description": "Flour, wheat, all-purpose, enriched, unbleached",
+        "nutrients": [
+            {
+                "name": "energy",
+                "unit": "kcal",
+                "amount": 1500.0
+            }
+        ],
+        "name": "flour",
+        "subtypes": [
+            "wheat",
+            "all-purpose"
+        ],
+        "preparations": [
+            "enriched",
+            "unbleached"
+        ]
+    },
+    {
+        "description": "Flour, wheat, all-purpose, unenriched, unbleached",
+        "nutrients": [
+            {
+                "name": "energy",
+                "unit": "kcal",
+                "amount": 362
+            }
+        ],
+        "name": "flour",
+        "subtypes": [
+            "wheat",
+            "all-purpose"
+        ],
+        "preparations": [
+            "unenriched",
+            "unbleached"
+        ]
+    },
+    {
+        "description": "Flour, whole wheat, unenriched",
+        "nutrients": [
+            {
+                "name": "energy",
+                "unit": "kcal",
+                "amount": 370
+            }
+        ],
+        "name": "flour",
+        "subtypes": [
+            "whole_wheat"
+        ],
+        "preparations": [
+            "unenriched"
+        ]
+    },
+    {
+        "description": "Flour, bread, white, enriched, unbleached",
+        "nutrients": [
+            {
+                "name": "energy",
+                "unit": "kcal",
+                "amount": 363
+            }
+        ],
+        "name": "flour",
+        "subtypes": [
+            "bread",
+            "white"
+        ],
+        "preparations": [
+            "enriched",
+            "unbleached"
+        ]
+    },
+    {
+        "description": "Flour, rice, white, unenriched",
+        "nutrients": [
+            {
+                "name": "energy",
+                "unit": "kcal",
+                "amount": 1500.0
+            }
+        ],
+        "name": "rice flour",
+        "subtypes": [
+            "white"
+        ],
+        "preparations": [
+            "unenriched"
+        ]
+    },
+    {
+        "description": "Flour, corn, yellow, fine meal, enriched",
+        "nutrients": [
+            {
+                "name": "energy",
+                "unit": "kcal",
+                "amount": 364
+            }
+        ],
+        "name": "corn flour",
+        "subtypes": [
+            "yellow"
+        ],
+        "preparations": [
+            "fine meal",
+            "enriched"
+        ]
+    },
+    {
+        "description": "Onions, red, raw",
+        "nutrients": [
+            {
+                "name": "energy",
+                "unit": "kcal",
+                "amount": 44.0
+            }
+        ],
+        "name": "onions",
+        "subtypes": [
+            "red"
+        ],
+        "preparations": [
+            "raw"
+        ]
+    },
+    {
+        "description": "Onions, yellow, raw",
+        "nutrients": [
+            {
+                "name": "energy",
+                "unit": "kcal",
+                "amount": 38.0
+            }
+        ],
+        "name": "onions",
+        "subtypes": [
+            "yellow"
+        ],
+        "preparations": [
+            "raw"
+        ]
+    },
+    {
+        "description": "Garlic, raw",
+        "nutrients": [
+            {
+                "name": "energy",
+                "unit": "kcal",
+                "amount": 143
+            }
+        ],
+        "name": "garlic",
+        "subtypes": [],
+        "preparations": [
+            "raw"
+        ]
+    },
+    {
+        "description": "Flour, soy, defatted",
+        "nutrients": [
+            {
+                "name": "energy",
+                "unit": "kcal",
+                "amount": 366
+            }
+        ],
+        "name": "flour",
+        "subtypes": [
+            "soy"
+        ],
+        "preparations": [
+            "defatted"
+        ]
+    },
+    {
+        "description": "Flour, soy, full-fat",
+        "nutrients": [
+            {
+                "name": "energy",
+                "unit": "kcal",
+                "amount": 452
+            }
+        ],
+        "name": "soy flour",
+        "subtypes": [],
+        "preparations": [
+            "full-fat"
+        ]
+    },
+    {
+        "description": "Flour, rice, brown",
+        "nutrients": [
+            {
+                "name": "energy",
+                "unit": "kcal",
+                "amount": 1580.0
+            }
+        ],
+        "name": "rice flour",
+        "subtypes": [
+            "brown"
+        ],
+        "preparations": []
+    },
+    {
+        "description": "Flour, rice, glutinous",
+        "nutrients": [
+            {
+                "name": "energy",
+                "unit": "kcal",
+                "amount": 358
+            }
+        ],
+        "name": "rice flour",
+        "subtypes": [
+            "glutinous"
+        ],
+        "preparations": []
+    },
+    {
+        "description": "Flour, pastry, unenriched, unbleached",
+        "nutrients": [
+            {
+                "name": "energy",
+                "unit": "kcal",
+                "amount": 358
+            }
+        ],
+        "name": "flour",
+        "subtypes": [
+            "pastry"
+        ],
+        "preparations": [
+            "unenriched",
+            "unbleached"
+        ]
+    },
+    {
+        "description": "Onions, white, raw",
+        "nutrients": [
+            {
+                "name": "energy",
+                "unit": "kcal",
+                "amount": 35.0
+            }
+        ],
+        "name": "onions",
+        "subtypes": [
+            "white"
+        ],
+        "preparations": [
+            "raw"
+        ]
+    },
+    {
+        "description": "Bananas, overripe, raw",
+        "nutrients": [
+            {
+                "name": "energy",
+                "unit": "kcal",
+                "amount": 85.0
+            }
+        ],
+        "name": "bananas",
+        "subtypes": [],
+        "preparations": [
+            "overripe",
+            "raw"
+        ]
+    },
+    {
+        "description": "Bananas, ripe and slightly ripe, raw",
+        "nutrients": [
+            {
+                "name": "energy",
+                "unit": "kcal",
+                "amount": 408
+            }
+        ],
+        "name": "bananas",
+        "subtypes": [
+            "ripe",
+            "slightly ripe"
+        ],
+        "preparations": [
+            "raw"
+        ]
+    },
+    {
+        "description": "Apples, red delicious, with skin, raw",
+        "nutrients": [
+            {
+                "name": "energy",
+                "unit": "kcal",
+                "amount": 61.8
+            }
+        ],
+        "name": "apples",
+        "subtypes": [
+            "red delicious"
+        ],
+        "preparations": [
+            "with skin",
+            "raw"
+        ]
+    },
+    {
+        "description": "Apples, fuji, with skin, raw",
+        "nutrients": [
+            {
+                "name": "energy",
+                "unit": "kcal",
+                "amount": 64.7
+            }
+        ],
+        "name": "apples",
+        "subtypes": [
+            "fuji"
+        ],
+        "preparations": [
+            "with skin",
+            "raw"
+        ]
+    },
+    {
+        "description": "Apples, gala, with skin, raw",
+        "nutrients": [
+            {
+                "name": "energy",
+                "unit": "kcal",
+                "amount": 61.0
+            }
+        ],
+        "name": "apples",
+        "subtypes": [
+            "gala"
+        ],
+        "preparations": [
+            "with skin",
+            "raw"
+        ]
+    },
+    {
+        "description": "Apples, granny smith, with skin, raw",
+        "nutrients": [
+            {
+                "name": "energy",
+                "unit": "kcal",
+                "amount": 58.9
+            }
+        ],
+        "name": "apples",
+        "subtypes": [
+            "granny smith"
+        ],
+        "preparations": [
+            "with skin",
+            "raw"
+        ]
+    },
+    {
+        "description": "Apples, honeycrisp, with skin, raw",
+        "nutrients": [
+            {
+                "name": "energy",
+                "unit": "kcal",
+                "amount": 60.0
+            }
+        ],
+        "name": "apples",
+        "subtypes": [
+            "honeycrisp"
+        ],
+        "preparations": [
+            "with skin",
+            "raw"
+        ]
+    },
+    {
+        "description": "Mushroom, lion's mane",
+        "nutrients": [
+            {
+                "name": "energy",
+                "unit": "kcal",
+                "amount": 42.7
+            }
+        ],
+        "name": "lion's mane mushroom",
+        "subtypes": [],
+        "preparations": []
+    },
+    {
+        "description": "Mushroom, oyster",
+        "nutrients": [
+            {
+                "name": "energy",
+                "unit": "kcal",
+                "amount": 41.0
+            }
+        ],
+        "name": "oyster mushroom",
+        "subtypes": [],
+        "preparations": []
+    },
+    {
+        "description": "Mushrooms, shiitake",
+        "nutrients": [
+            {
+                "name": "energy",
+                "unit": "kcal",
+                "amount": 44.1
+            }
+        ],
+        "name": "mushrooms",
+        "subtypes": [
+            "shiitake"
+        ],
+        "preparations": []
+    },
+    {
+        "description": "Mushrooms, white button",
+        "nutrients": [
+            {
+                "name": "energy",
+                "unit": "kcal",
+                "amount": 31.2
+            }
+        ],
+        "name": "mushrooms",
+        "subtypes": [
+            "white button"
+        ],
+        "preparations": []
+    },
+    {
+        "description": "Soy milk, unsweetened, plain, shelf stable",
+        "nutrients": [
+            {
+                "name": "energy",
+                "unit": "kcal",
+                "amount": 38.5
+            }
+        ],
+        "name": "soy milk",
+        "subtypes": [],
+        "preparations": [
+            "unsweetened",
+            "plain",
+            "shelf stable"
+        ]
+    },
+    {
+        "description": "Almond milk, unsweetened, plain, shelf stable",
+        "nutrients": [
+            {
+                "name": "energy",
+                "unit": "kcal",
+                "amount": 14.6
+            }
+        ],
+        "name": "almond milk",
+        "subtypes": [],
+        "preparations": [
+            "unsweetened",
+            "plain",
+            "shelf stable"
+        ]
+    },
+    {
+        "description": "Spinach, baby",
+        "nutrients": [
+            {
+                "name": "energy",
+                "unit": "kcal",
+                "amount": 26.6
+            }
+        ],
+        "name": "spinach",
+        "subtypes": [
+            "baby"
+        ],
+        "preparations": []
+    },
+    {
+        "description": "Spinach, mature",
+        "nutrients": [
+            {
+                "name": "energy",
+                "unit": "kcal",
+                "amount": 27.6
+            }
+        ],
+        "name": "spinach",
+        "subtypes": [
+            "mature"
+        ],
+        "preparations": []
+    },
+    {
+        "description": "Tomato, roma",
+        "nutrients": [
+            {
+                "name": "energy",
+                "unit": "kcal",
+                "amount": 22.0
+            }
+        ],
+        "name": "tomato",
+        "subtypes": [
+            "roma"
+        ],
+        "preparations": []
+    },
+    {
+        "description": "Flour, 00",
+        "nutrients": [
+            {
+                "name": "energy",
+                "unit": "kcal",
+                "amount": 357
+            }
+        ],
+        "name": "flour",
+        "subtypes": [
+            "00"
+        ],
+        "preparations": []
+    },
+    {
+        "description": "Flour, spelt, whole grain",
+        "nutrients": [
+            {
+                "name": "energy",
+                "unit": "kcal",
+                "amount": 364
+            }
+        ],
+        "name": "flour",
+        "subtypes": [
+            "spelt",
+            "whole grain"
+        ],
+        "preparations": []
+    },
+    {
+        "description": "Flour, semolina, coarse and semi-coarse",
+        "nutrients": [
+            {
+                "name": "energy",
+                "unit": "kcal",
+                "amount": 357
+            }
+        ],
+        "name": "flour",
+        "subtypes": [
+            "semolina"
+        ],
+        "preparations": [
+            "coarse",
+            "semi-coarse"
+        ]
+    },
+    {
+        "description": "Flour, semolina, fine",
+        "nutrients": [
+            {
+                "name": "energy",
+                "unit": "kcal",
+                "amount": 358
+            }
+        ],
+        "name": "flour",
+        "subtypes": [
+            "semolina"
+        ],
+        "preparations": [
+            "fine"
+        ]
+    },
+    {
+        "description": "Apple juice, with added vitamin C, from concentrate, shelf stable",
+        "nutrients": [
+            {
+                "name": "energy",
+                "unit": "kcal",
+                "amount": 48.4
+            }
+        ],
+        "name": "apple juice",
+        "subtypes": [],
+        "preparations": [
+            "with added vitamin C",
+            "from concentrate",
+            "shelf stable"
+        ]
+    },
+    {
+        "description": "Orange juice, no pulp, not fortified, from concentrate, refrigerated",
+        "nutrients": [
+            {
+                "name": "energy",
+                "unit": "kcal",
+                "amount": 47.2
+            }
+        ],
+        "name": "orange juice",
+        "subtypes": [],
+        "preparations": [
+            "no pulp",
+            "not fortified",
+            "from concentrate"
+        ]
+    },
+    {
+        "description": "Grape juice, purple, with added vitamin C, from concentrate, shelf stable",
+        "nutrients": [
+            {
+                "name": "energy",
+                "unit": "kcal",
+                "amount": 66.1
+            }
+        ],
+        "name": "grape juice",
+        "subtypes": [
+            "purple"
+        ],
+        "preparations": [
+            "with added vitamin C",
+            "from concentrate",
+            "shelf stable"
+        ]
+    },
+    {
+        "description": "Grape juice, white, with added vitamin C, from concentrate, shelf stable",
+        "nutrients": [
+            {
+                "name": "energy",
+                "unit": "kcal",
+                "amount": 66.1
+            }
+        ],
+        "name": "grape juice",
+        "subtypes": [
+            "white"
+        ],
+        "preparations": [
+            "with added vitamin C",
+            "from concentrate",
+            "shelf stable"
+        ]
+    },
+    {
+        "description": "Cranberry juice, not fortified, from concentrate, shelf stable",
+        "nutrients": [
+            {
+                "name": "energy",
+                "unit": "kcal",
+                "amount": 32.1
+            }
+        ],
+        "name": "cranberry juice",
+        "subtypes": [],
+        "preparations": [
+            "not fortified",
+            "from concentrate",
+            "shelf stable"
+        ]
+    },
+    {
+        "description": "Grapefruit juice, red, not fortified, not from concentrate, refrigerated",
+        "nutrients": [
+            {
+                "name": "energy",
+                "unit": "kcal",
+                "amount": 41.1
+            }
+        ],
+        "name": "grapefruit juice",
+        "subtypes": [
+            "red"
+        ],
+        "preparations": [
+            "not fortified",
+            "not from concentrate"
+        ]
+    },
+    {
+        "description": "Tomato juice, with added ingredients, from concentrate, shelf stable",
+        "nutrients": [
+            {
+                "name": "energy",
+                "unit": "kcal",
+                "amount": 23.3
+            }
+        ],
+        "name": "tomato juice",
+        "subtypes": [],
+        "preparations": [
+            "with added ingredients",
+            "from concentrate",
+            "shelf stable"
+        ]
+    },
+    {
+        "description": "Orange juice, no pulp, not fortified, not from concentrate, refrigerated",
+        "nutrients": [
+            {
+                "name": "energy",
+                "unit": "kcal",
+                "amount": 46.5
+            }
+        ],
+        "name": "orange juice",
+        "subtypes": [],
+        "preparations": [
+            "no pulp",
+            "not fortified",
+            "not from concentrate"
+        ]
+    },
+    {
+        "description": "Mushroom, portabella",
+        "nutrients": [
+            {
+                "name": "energy",
+                "unit": "kcal",
+                "amount": 32.4
+            }
+        ],
+        "name": "mushroom",
+        "subtypes": [
+            "portabella"
+        ],
+        "preparations": []
+    },
+    {
+        "description": "Mushroom, king oyster",
+        "nutrients": [
+            {
+                "name": "energy",
+                "unit": "kcal",
+                "amount": 46.4
+            }
+        ],
+        "name": "mushroom",
+        "subtypes": [
+            "king oyster"
+        ],
+        "preparations": []
+    },
+    {
+        "description": "Mushroom, enoki",
+        "nutrients": [
+            {
+                "name": "energy",
+                "unit": "kcal",
+                "amount": 44.4
+            }
+        ],
+        "name": "enoki mushroom",
+        "subtypes": [],
+        "preparations": []
+    },
+    {
+        "description": "Mushroom, crimini",
+        "nutrients": [
+            {
+                "name": "energy",
+                "unit": "kcal",
+                "amount": 30.2
+            }
+        ],
+        "name": "mushroom",
+        "subtypes": [
+            "crimini"
+        ],
+        "preparations": []
+    },
+    {
+        "description": "Mushroom, maitake",
+        "nutrients": [
+            {
+                "name": "energy",
+                "unit": "kcal",
+                "amount": 37.6
+            }
+        ],
+        "name": "mushroom",
+        "subtypes": [
+            "maitake"
+        ],
+        "preparations": []
+    },
+    {
+        "description": "Mushroom, beech",
+        "nutrients": [
+            {
+                "name": "energy",
+                "unit": "kcal",
+                "amount": 39.8
+            }
+        ],
+        "name": "mushroom",
+        "subtypes": [
+            "beech"
+        ],
+        "preparations": []
+    },
+    {
+        "description": "Mushroom, pioppini",
+        "nutrients": [
+            {
+                "name": "energy",
+                "unit": "kcal",
+                "amount": 39.2
+            }
+        ],
+        "name": "mushroom",
+        "subtypes": [
+            "pioppini"
+        ],
+        "preparations": []
+    },
+    {
+        "description": "Soy milk, sweetened, plain, refrigerated",
+        "nutrients": [
+            {
+                "name": "energy",
+                "unit": "kcal",
+                "amount": 40.7
+            }
+        ],
+        "name": "soy milk",
+        "subtypes": [],
+        "preparations": [
+            "sweetened",
+            "plain"
+        ]
+    },
+    {
+        "description": "Almond milk, unsweetened, plain, refrigerated",
+        "nutrients": [
+            {
+                "name": "energy",
+                "unit": "kcal",
+                "amount": 19.3
+            }
+        ],
+        "name": "almond milk",
+        "subtypes": [],
+        "preparations": [
+            "unsweetened",
+            "plain"
+        ]
+    },
+    {
+        "description": "Oat milk, unsweetened, plain, refrigerated",
+        "nutrients": [
+            {
+                "name": "energy",
+                "unit": "kcal",
+                "amount": 48.3
+            }
+        ],
+        "name": "oat milk",
+        "subtypes": [],
+        "preparations": [
+            "unsweetened",
+            "plain"
+        ]
+    },
+    {
+        "description": "Carrots, mature, raw",
+        "nutrients": [
+            {
+                "name": "energy",
+                "unit": "kcal",
+                "amount": 48.0
+            }
+        ],
+        "name": "carrots",
+        "subtypes": [
+            "mature"
+        ],
+        "preparations": [
+            "raw"
+        ]
+    },
+    {
+        "description": "Carrots, baby, raw",
+        "nutrients": [
+            {
+                "name": "energy",
+                "unit": "kcal",
+                "amount": 40.8
+            }
+        ],
+        "name": "carrots",
+        "subtypes": [
+            "baby"
+        ],
+        "preparations": [
+            "raw"
+        ]
+    },
+    {
+        "description": "Peppers, bell, green, raw",
+        "nutrients": [
+            {
+                "name": "energy",
+                "unit": "kcal",
+                "amount": 22.9
+            }
+        ],
+        "name": "bell peppers",
+        "subtypes": [
+            "green"
+        ],
+        "preparations": [
+            "raw"
+        ]
+    },
+    {
+        "description": "Peppers, bell, yellow, raw",
+        "nutrients": [
+            {
+                "name": "energy",
+                "unit": "kcal",
+                "amount": 30.8
+            }
+        ],
+        "name": "bell peppers",
+        "subtypes": [
+            "yellow"
+        ],
+        "preparations": [
+            "raw"
+        ]
+    },
+    {
+        "description": "Peppers, bell, red, raw",
+        "nutrients": [
+            {
+                "name": "energy",
+                "unit": "kcal",
+                "amount": 31.3
+            }
+        ],
+        "name": "bell peppers",
+        "subtypes": [
+            "red"
+        ],
+        "preparations": [
+            "raw"
+        ]
+    },
+    {
+        "description": "Peppers, bell, orange, raw",
+        "nutrients": [
+            {
+                "name": "energy",
+                "unit": "kcal",
+                "amount": 31.7
+            }
+        ],
+        "name": "bell peppers",
+        "subtypes": [
+            "orange"
+        ],
+        "preparations": [
+            "raw"
+        ]
+    },
+    {
+        "description": "Buttermilk, low fat",
+        "nutrients": [
+            {
+                "name": "energy",
+                "unit": "kcal",
+                "amount": 42.8
+            }
+        ],
+        "name": "buttermilk",
+        "subtypes": [],
+        "preparations": [
+            "low fat"
+        ]
+    },
+    {
+        "description": "Yogurt, plain, whole milk",
+        "nutrients": [
+            {
+                "name": "energy",
+                "unit": "kcal",
+                "amount": 78.0
+            }
+        ],
+        "name": "yogurt",
+        "subtypes": [],
+        "preparations": [
+            "plain",
+            "whole milk"
+        ]
+    },
+    {
+        "description": "Yogurt, Greek, plain, whole milk",
+        "nutrients": [
+            {
+                "name": "energy",
+                "unit": "kcal",
+                "amount": 93.7
+            }
+        ],
+        "name": "yogurt",
+        "subtypes": [
+            "Greek"
+        ],
+        "preparations": [
+            "plain",
+            "whole milk"
+        ]
+    },
+    {
+        "description": "Cheese, parmesan, grated, refrigerated",
+        "nutrients": [
+            {
+                "name": "energy",
+                "unit": "kcal",
+                "amount": 403
+            }
+        ],
+        "name": "parmesan cheese",
+        "subtypes": [],
+        "preparations": [
+            "grated"
+        ]
+    },
+    {
+        "description": "Cheese, feta, whole milk, crumbled",
+        "nutrients": [
+            {
+                "name": "energy",
+                "unit": "kcal",
+                "amount": 273
+            }
+        ],
+        "name": "feta cheese",
+        "subtypes": [],
+        "preparations": [
+            "whole milk",
+            "crumbled"
+        ]
+    },
+    {
+        "description": "Flour, almond",
+        "nutrients": [
+            {
+                "name": "energy",
+                "unit": "kcal",
+                "amount": 622
+            }
+        ],
+        "name": "almond flour",
+        "subtypes": [],
+        "preparations": []
+    },
+    {
+        "description": "Flour, oat, whole grain",
+        "nutrients": [
+            {
+                "name": "energy",
+                "unit": "kcal",
+                "amount": 389
+            }
+        ],
+        "name": "flour",
+        "subtypes": [
+            "oat",
+            "whole grain"
+        ],
+        "preparations": []
+    },
+    {
+        "description": "Flour, potato",
+        "nutrients": [
+            {
+                "name": "energy",
+                "unit": "kcal",
+                "amount": 361
+            }
+        ],
+        "name": "potato flour",
+        "subtypes": [],
+        "preparations": []
+    },
+    {
+        "description": "Peanut butter, creamy",
+        "nutrients": [
+            {
+                "name": "energy",
+                "unit": "kcal",
+                "amount": 632
+            }
+        ],
+        "name": "peanut butter",
+        "subtypes": [],
+        "preparations": [
+            "creamy"
+        ]
+    },
+    {
+        "description": "Sesame butter, creamy",
+        "nutrients": [
+            {
+                "name": "energy",
+                "unit": "kcal",
+                "amount": 697
+            }
+        ],
+        "name": "sesame butter",
+        "subtypes": [],
+        "preparations": [
+            "creamy"
+        ]
+    },
+    {
+        "description": "Almond butter, creamy",
+        "nutrients": [
+            {
+                "name": "energy",
+                "unit": "kcal",
+                "amount": 645
+            }
+        ],
+        "name": "almond butter",
+        "subtypes": [],
+        "preparations": [
+            "creamy"
+        ]
+    },
+    {
+        "description": "Flaxseed, ground",
+        "nutrients": [
+            {
+                "name": "energy",
+                "unit": "kcal",
+                "amount": 545
+            }
+        ],
+        "name": "flaxseed",
+        "subtypes": [],
+        "preparations": [
+            "ground"
+        ]
+    },
+    {
+        "description": "Cottage cheese, full fat, large or small curd",
+        "nutrients": [
+            {
+                "name": "energy",
+                "unit": "kcal",
+                "amount": 103
+            }
+        ],
+        "name": "cottage cheese",
+        "subtypes": [],
+        "preparations": [
+            "full fat",
+            "large curd",
+            "small curd"
+        ]
+    },
+    {
+        "description": "Cream cheese, full fat, block",
+        "nutrients": [
+            {
+                "name": "energy",
+                "unit": "kcal",
+                "amount": 343
+            }
+        ],
+        "name": "cream cheese",
+        "subtypes": [],
+        "preparations": [
+            "full fat",
+            "block"
+        ]
+    },
+    {
+        "description": "Cream, heavy",
+        "nutrients": [
+            {
+                "name": "energy",
+                "unit": "kcal",
+                "amount": 343
+            }
+        ],
+        "name": "cream",
+        "subtypes": [
+            "heavy"
+        ],
+        "preparations": []
+    },
+    {
+        "description": "Cream, sour, full fat",
+        "nutrients": [
+            {
+                "name": "energy",
+                "unit": "kcal",
+                "amount": 196
+            }
+        ],
+        "name": "sour cream",
+        "subtypes": [],
+        "preparations": [
+            "full fat"
+        ]
+    },
+    {
+        "description": "Lettuce, iceberg, raw",
+        "nutrients": [
+            {
+                "name": "energy",
+                "unit": "kcal",
+                "amount": 17.1
+            }
+        ],
+        "name": "lettuce",
+        "subtypes": [
+            "iceberg"
+        ],
+        "preparations": [
+            "raw"
+        ]
+    },
+    {
+        "description": "Lettuce, romaine, green, raw",
+        "nutrients": [
+            {
+                "name": "energy",
+                "unit": "kcal",
+                "amount": 20.8
+            }
+        ],
+        "name": "lettuce",
+        "subtypes": [
+            "romaine"
+        ],
+        "preparations": [
+            "green",
+            "raw"
+        ]
+    },
+    {
+        "description": "Lettuce, leaf, red, raw",
+        "nutrients": [
+            {
+                "name": "energy",
+                "unit": "kcal",
+                "amount": 17.5
+            }
+        ],
+        "name": "lettuce",
+        "subtypes": [
+            "leaf",
+            "red"
+        ],
+        "preparations": [
+            "raw"
+        ]
+    },
+    {
+        "description": "Lettuce, leaf, green, raw",
+        "nutrients": [
+            {
+                "name": "energy",
+                "unit": "kcal",
+                "amount": 22.0
+            }
+        ],
+        "name": "lettuce",
+        "subtypes": [
+            "leaf",
+            "green"
+        ],
+        "preparations": [
+            "raw"
+        ]
+    },
+    {
+        "description": "Nuts, pine nuts, raw",
+        "nutrients": [
+            {
+                "name": "energy",
+                "unit": "kcal",
+                "amount": 689
+            }
+        ],
+        "name": "pine nuts",
+        "subtypes": [],
+        "preparations": [
+            "raw"
+        ]
+    },
+    {
+        "description": "Nuts, almonds, whole, raw",
+        "nutrients": [
+            {
+                "name": "energy",
+                "unit": "kcal",
+                "amount": 626
+            }
+        ],
+        "name": "almonds",
+        "subtypes": [],
+        "preparations": [
+            "whole",
+            "raw"
+        ]
+    },
+    {
+        "description": "Nuts, walnuts, English, halves, raw",
+        "nutrients": [
+            {
+                "name": "energy",
+                "unit": "kcal",
+                "amount": 730
+            }
+        ],
+        "name": "walnuts",
+        "subtypes": [
+            "English"
+        ],
+        "preparations": [
+            "halves",
+            "raw"
+        ]
+    },
+    {
+        "description": "Nuts, pecans, halves, raw",
+        "nutrients": [
+            {
+                "name": "energy",
+                "unit": "kcal",
+                "amount": 750
+            }
+        ],
+        "name": "pecans",
+        "subtypes": [],
+        "preparations": [
+            "halves",
+            "raw"
+        ]
+    },
+    {
+        "description": "Oats, whole grain, rolled, old fashioned",
+        "nutrients": [
+            {
+                "name": "energy",
+                "unit": "kcal",
+                "amount": 382
+            }
+        ],
+        "name": "oats",
+        "subtypes": [
+            "whole grain",
+            "rolled",
+            "old fashioned"
+        ],
+        "preparations": []
+    },
+    {
+        "description": "Oats, whole grain, steel cut",
+        "nutrients": [
+            {
+                "name": "energy",
+                "unit": "kcal",
+                "amount": 381
+            }
+        ],
+        "name": "oats",
+        "subtypes": [
+            "whole grain",
+            "steel cut"
+        ],
+        "preparations": []
+    },
+    {
+        "description": "Pineapple, raw",
+        "nutrients": [
+            {
+                "name": "energy",
+                "unit": "kcal",
+                "amount": 60.1
+            }
+        ],
+        "name": "pineapple",
+        "subtypes": [],
+        "preparations": [
+            "raw"
+        ]
+    },
+    {
+        "description": "Cherries, sweet, dark red, raw",
+        "nutrients": [
+            {
+                "name": "energy",
+                "unit": "kcal",
+                "amount": 70.5
+            }
+        ],
+        "name": "cherries",
+        "subtypes": [
+            "sweet",
+            "dark red"
+        ],
+        "preparations": [
+            "raw"
+        ]
+    },
+    {
+        "description": "Beans, snap, green, raw",
+        "nutrients": [
+            {
+                "name": "energy",
+                "unit": "kcal",
+                "amount": 40.0
+            }
+        ],
+        "name": "green beans",
+        "subtypes": [
+            "snap"
+        ],
+        "preparations": [
+            "raw"
+        ]
+    },
+    {
+        "description": "Potatoes, russet, without skin, raw",
+        "nutrients": [
+            {
+                "name": "energy",
+                "unit": "kcal",
+                "amount": 83.4
+            }
+        ],
+        "name": "potatoes",
+        "subtypes": [
+            "russet"
+        ],
+        "preparations": [
+            "without skin",
+            "raw"
+        ]
+    },
+    {
+        "description": "Potatoes, red, without skin, raw",
+        "nutrients": [
+            {
+                "name": "energy",
+                "unit": "kcal",
+                "amount": 75.6
+            }
+        ],
+        "name": "potatoes",
+        "subtypes": [
+            "red"
+        ],
+        "preparations": [
+            "without skin",
+            "raw"
+        ]
+    },
+    {
+        "description": "Potatoes, gold, without skin, raw",
+        "nutrients": [
+            {
+                "name": "energy",
+                "unit": "kcal",
+                "amount": 73.5
+            }
+        ],
+        "name": "potatoes",
+        "subtypes": [
+            "gold"
+        ],
+        "preparations": [
+            "without skin",
+            "raw"
+        ]
+    },
+    {
+        "description": "Sweet potatoes, orange flesh, without skin, raw",
+        "nutrients": [
+            {
+                "name": "energy",
+                "unit": "kcal",
+                "amount": 79.0
+            }
+        ],
+        "name": "sweet potatoes",
+        "subtypes": [
+            "orange flesh"
+        ],
+        "preparations": [
+            "without skin",
+            "raw"
+        ]
+    },
+    {
+        "description": "Celery, raw",
+        "nutrients": [
+            {
+                "name": "energy",
+                "unit": "kcal",
+                "amount": 16.7
+            }
+        ],
+        "name": "celery",
+        "subtypes": [],
+        "preparations": [
+            "raw"
+        ]
+    },
+    {
+        "description": "Cucumber, with peel, raw",
+        "nutrients": [
+            {
+                "name": "energy",
+                "unit": "kcal",
+                "amount": 15.9
+            }
+        ],
+        "name": "cucumber",
+        "subtypes": [],
+        "preparations": [
+            "with peel",
+            "raw"
+        ]
+    },
+    {
+        "description": "Cabbage, green, raw",
+        "nutrients": [
+            {
+                "name": "energy",
+                "unit": "kcal",
+                "amount": 31.4
+            }
+        ],
+        "name": "cabbage",
+        "subtypes": [
+            "green"
+        ],
+        "preparations": [
+            "raw"
+        ]
+    },
+    {
+        "description": "Cabbage, red, raw",
+        "nutrients": [
+            {
+                "name": "energy",
+                "unit": "kcal",
+                "amount": 34.1
+            }
+        ],
+        "name": "cabbage",
+        "subtypes": [
+            "red"
+        ],
+        "preparations": [
+            "raw"
+        ]
+    },
+    {
+        "description": "Strawberries, raw",
+        "nutrients": [
+            {
+                "name": "energy",
+                "unit": "kcal",
+                "amount": 36.4
+            }
+        ],
+        "name": "strawberries",
+        "subtypes": [],
+        "preparations": [
+            "raw"
+        ]
+    },
+    {
+        "description": "Raspberries, raw",
+        "nutrients": [
+            {
+                "name": "energy",
+                "unit": "kcal",
+                "amount": 57.3
+            }
+        ],
+        "name": "raspberries",
+        "subtypes": [],
+        "preparations": [
+            "raw"
+        ]
+    },
+    {
+        "description": "Blueberries, raw",
+        "nutrients": [
+            {
+                "name": "energy",
+                "unit": "kcal",
+                "amount": 63.9
+            }
+        ],
+        "name": "blueberries",
+        "subtypes": [],
+        "preparations": [
+            "raw"
+        ]
+    },
+    {
+        "description": "Grapes, red, seedless, raw",
+        "nutrients": [
+            {
+                "name": "energy",
+                "unit": "kcal",
+                "amount": 85.9
+            }
+        ],
+        "name": "grapes",
+        "subtypes": [
+            "red",
+            "seedless"
+        ],
+        "preparations": [
+            "raw"
+        ]
+    },
+    {
+        "description": "Grapes, green, seedless, raw",
+        "nutrients": [
+            {
+                "name": "energy",
+                "unit": "kcal",
+                "amount": 80.1
+            }
+        ],
+        "name": "grapes",
+        "subtypes": [
+            "green",
+            "seedless"
+        ],
+        "preparations": [
+            "raw"
+        ]
+    },
+    {
+        "description": "Applesauce, unsweetened, with added vitamin C",
+        "nutrients": [
+            {
+                "name": "energy",
+                "unit": "kcal",
+                "amount": 51.6
+            }
+        ],
+        "name": "applesauce",
+        "subtypes": [],
+        "preparations": [
+            "unsweetened",
+            "with added vitamin C"
+        ]
+    },
+    {
+        "description": "Flour, amaranth",
+        "nutrients": [
+            {
+                "name": "energy",
+                "unit": "kcal",
+                "amount": 384
+            }
+        ],
+        "name": "flour",
+        "subtypes": [
+            "amaranth"
+        ],
+        "preparations": []
+    },
+    {
+        "description": "Flour, quinoa",
+        "nutrients": [
+            {
+                "name": "energy",
+                "unit": "kcal",
+                "amount": 385
+            }
+        ],
+        "name": "flour",
+        "subtypes": [
+            "quinoa"
+        ],
+        "preparations": []
+    },
+    {
+        "description": "Flour, sorghum",
+        "nutrients": [
+            {
+                "name": "energy",
+                "unit": "kcal",
+                "amount": 375
+            }
+        ],
+        "name": "flour",
+        "subtypes": [
+            "sorghum"
+        ],
+        "preparations": []
+    },
+    {
+        "description": "Flour, buckwheat",
+        "nutrients": [
+            {
+                "name": "energy",
+                "unit": "kcal",
+                "amount": 358
+            }
+        ],
+        "name": "flour",
+        "subtypes": [
+            "buckwheat"
+        ],
+        "preparations": []
+    },
+    {
+        "description": "Flour, rye",
+        "nutrients": [
+            {
+                "name": "energy",
+                "unit": "kcal",
+                "amount": 359
+            }
+        ],
+        "name": "flour",
+        "subtypes": [
+            "rye"
+        ],
+        "preparations": []
+    },
+    {
+        "description": "Flour, barley",
+        "nutrients": [
+            {
+                "name": "energy",
+                "unit": "kcal",
+                "amount": 367
+            }
+        ],
+        "name": "barley flour",
+        "subtypes": [],
+        "preparations": []
+    },
+    {
+        "description": "Flour, cassava",
+        "nutrients": [
+            {
+                "name": "energy",
+                "unit": "kcal",
+                "amount": 357
+            }
+        ],
+        "name": "flour",
+        "subtypes": [
+            "cassava"
+        ],
+        "preparations": []
+    },
+    {
+        "description": "Buckwheat, whole grain",
+        "nutrients": [
+            {
+                "name": "energy",
+                "unit": "kcal",
+                "amount": 356
+            }
+        ],
+        "name": "buckwheat",
+        "subtypes": [
+            "whole grain"
+        ],
+        "preparations": []
+    },
+    {
+        "description": "Millet, whole grain",
+        "nutrients": [
+            {
+                "name": "energy",
+                "unit": "kcal",
+                "amount": 376
+            }
+        ],
+        "name": "millet",
+        "subtypes": [
+            "whole grain"
+        ],
+        "preparations": []
+    },
+    {
+        "description": "Rice, brown, long grain, unenriched, raw",
+        "nutrients": [
+            {
+                "name": "energy",
+                "unit": "kcal",
+                "amount": 366
+            }
+        ],
+        "name": "rice",
+        "subtypes": [
+            "brown",
+            "long grain"
+        ],
+        "preparations": [
+            "unenriched",
+            "raw"
+        ]
+    },
+    {
+        "description": "Rice, white, long grain, unenriched, raw",
+        "nutrients": [
+            {
+                "name": "energy",
+                "unit": "kcal",
+                "amount": 359
+            }
+        ],
+        "name": "rice",
+        "subtypes": [
+            "white",
+            "long grain"
+        ],
+        "preparations": [
+            "unenriched",
+            "raw"
+        ]
+    },
+    {
+        "description": "Beef, ground, 90% lean meat / 10% fat, raw",
+        "nutrients": [
+            {
+                "name": "energy",
+                "unit": "kcal",
+                "amount": 185
+            }
+        ],
+        "name": "ground beef",
+        "subtypes": [
+            "90% lean meat / 10% fat"
+        ],
+        "preparations": [
+            "raw"
+        ]
+    },
+    {
+        "description": "Beef, ground, 80% lean meat / 20% fat, raw",
+        "nutrients": [
+            {
+                "name": "energy",
+                "unit": "kcal",
+                "amount": 243
+            }
+        ],
+        "name": "ground beef",
+        "subtypes": [
+            "80% lean meat / 20% fat"
+        ],
+        "preparations": [
+            "raw"
+        ]
+    },
+    {
+        "description": "Pork, ground, raw",
+        "nutrients": [
+            {
+                "name": "energy",
+                "unit": "kcal",
+                "amount": 228
+            }
+        ],
+        "name": "pork",
+        "subtypes": [
+            "ground"
+        ],
+        "preparations": [
+            "raw"
+        ]
+    },
+    {
+        "description": "Chicken, ground, with additives, raw",
+        "nutrients": [
+            {
+                "name": "energy",
+                "unit": "kcal",
+                "amount": 133
+            }
+        ],
+        "name": "ground chicken",
+        "subtypes": [],
+        "preparations": [
+            "with additives",
+            "raw"
+        ]
+    },
+    {
+        "description": "Turkey, ground, 93% lean/ 7% fat, raw",
+        "nutrients": [
+            {
+                "name": "energy",
+                "unit": "kcal",
+                "amount": 153
+            }
+        ],
+        "name": "ground turkey",
+        "subtypes": [],
+        "preparations": [
+            "93% lean",
+            "7% fat",
+            "raw"
+        ]
+    },
+    {
+        "description": "Nuts, brazilnuts, raw",
+        "nutrients": [
+            {
+                "name": "energy",
+                "unit": "kcal",
+                "amount": 664
+            }
+        ],
+        "name": "brazil nuts",
+        "subtypes": [],
+        "preparations": [
+            "raw"
+        ]
+    },
+    {
+        "description": "Nuts, cashew nuts, raw",
+        "nutrients": [
+            {
+                "name": "energy",
+                "unit": "kcal",
+                "amount": 565
+            }
+        ],
+        "name": "cashew nuts",
+        "subtypes": [],
+        "preparations": [
+            "raw"
+        ]
+    },
+    {
+        "description": "Nuts, hazelnuts or filberts, raw",
+        "nutrients": [
+            {
+                "name": "energy",
+                "unit": "kcal",
+                "amount": 641
+            }
+        ],
+        "name": "hazelnuts",
+        "subtypes": [],
+        "preparations": [
+            "raw"
+        ]
+    },
+    {
+        "description": "Peanuts, raw",
+        "nutrients": [
+            {
+                "name": "energy",
+                "unit": "kcal",
+                "amount": 588
+            }
+        ],
+        "name": "peanuts",
+        "subtypes": [],
+        "preparations": [
+            "raw"
+        ]
+    },
+    {
+        "description": "Flour, chestnut",
+        "nutrients": [
+            {
+                "name": "energy",
+                "unit": "kcal",
+                "amount": 385
+            }
+        ],
+        "name": "chestnut flour",
+        "subtypes": [],
+        "preparations": []
+    },
+    {
+        "description": "Nuts, macadamia nuts, raw",
+        "nutrients": [
+            {
+                "name": "energy",
+                "unit": "kcal",
+                "amount": 712
+            }
+        ],
+        "name": "macadamia nuts",
+        "subtypes": [],
+        "preparations": [
+            "raw"
+        ]
+    },
+    {
+        "description": "Nuts, pistachio nuts, raw",
+        "nutrients": [
+            {
+                "name": "energy",
+                "unit": "kcal",
+                "amount": 598
+            }
+        ],
+        "name": "pistachio nuts",
+        "subtypes": [],
+        "preparations": [
+            "raw"
+        ]
+    },
+    {
+        "description": "Seeds, pumpkin seeds (pepitas), raw",
+        "nutrients": [
+            {
+                "name": "energy",
+                "unit": "kcal",
+                "amount": 555
+            }
+        ],
+        "name": "pumpkin seeds",
+        "subtypes": [
+            "pepitas"
+        ],
+        "preparations": [
+            "raw"
+        ]
+    },
+    {
+        "description": "Seeds, sunflower seed, kernel, raw",
+        "nutrients": [
+            {
+                "name": "energy",
+                "unit": "kcal",
+                "amount": 609
+            }
+        ],
+        "name": "sunflower seed",
+        "subtypes": [
+            "kernel"
+        ],
+        "preparations": [
+            "raw"
+        ]
+    },
+    {
+        "description": "Flour, coconut",
+        "nutrients": [
+            {
+                "name": "energy",
+                "unit": "kcal",
+                "amount": 438
+            }
+        ],
+        "name": "flour",
+        "subtypes": [
+            "coconut"
+        ],
+        "preparations": []
+    },
+    {
+        "description": "Beans, cannellini, dry",
+        "nutrients": [
+            {
+                "name": "energy",
+                "unit": "kcal",
+                "amount": 345
+            }
+        ],
+        "name": "cannellini beans",
+        "subtypes": [],
+        "preparations": [
+            "dry"
+        ]
+    },
+    {
+        "description": "Chickpeas, (garbanzo beans, bengal gram), dry",
+        "nutrients": [
+            {
+                "name": "energy",
+                "unit": "kcal",
+                "amount": 383
+            }
+        ],
+        "name": "chickpeas",
+        "subtypes": [
+            "garbanzo beans",
+            "bengal gram"
+        ],
+        "preparations": [
+            "dry"
+        ]
+    },
+    {
+        "description": "Lentils, dry",
+        "nutrients": [
+            {
+                "name": "energy",
+                "unit": "kcal",
+                "amount": 360
+            }
+        ],
+        "name": "lentils",
+        "subtypes": [],
+        "preparations": [
+            "dry"
+        ]
+    },
+    {
+        "description": "Blackeye pea, dry",
+        "nutrients": [
+            {
+                "name": "energy",
+                "unit": "kcal",
+                "amount": 354
+            }
+        ],
+        "name": "blackeye pea",
+        "subtypes": [],
+        "preparations": [
+            "dry"
+        ]
+    },
+    {
+        "description": "Beans, black, canned, sodium added, drained and rinsed",
+        "nutrients": [
+            {
+                "name": "energy",
+                "unit": "kcal",
+                "amount": 115
+            }
+        ],
+        "name": "black beans",
+        "subtypes": [
+            "canned"
+        ],
+        "preparations": [
+            "sodium added",
+            "drained and rinsed"
+        ]
+    },
+    {
+        "description": "Beans, navy, canned, sodium added, drained and rinsed",
+        "nutrients": [
+            {
+                "name": "energy",
+                "unit": "kcal",
+                "amount": 119
+            }
+        ],
+        "name": "navy beans",
+        "subtypes": [
+            "canned"
+        ],
+        "preparations": [
+            "sodium added",
+            "drained and rinsed"
+        ]
+    },
+    {
+        "description": "Beans, cannellini, canned, sodium added, drained and rinsed",
+        "nutrients": [
+            {
+                "name": "energy",
+                "unit": "kcal",
+                "amount": 115
+            }
+        ],
+        "name": "cannellini beans",
+        "subtypes": [
+            "canned"
+        ],
+        "preparations": [
+            "sodium added",
+            "drained and rinsed"
+        ]
+    },
+    {
+        "description": "Chickpeas (garbanzo beans, bengal gram), canned, sodium added, drained and rinsed",
+        "nutrients": [
+            {
+                "name": "energy",
+                "unit": "kcal",
+                "amount": 137
+            }
+        ],
+        "name": "chickpeas",
+        "subtypes": [
+            "canned"
+        ],
+        "preparations": [
+            "sodium added",
+            "drained",
+            "rinsed"
+        ]
+    },
+    {
+        "description": "Beans, kidney, dark red, canned, sodium added, sugar added, drained and rinsed",
+        "nutrients": [
+            {
+                "name": "energy",
+                "unit": "kcal",
+                "amount": 127
+            }
+        ],
+        "name": "kidney beans",
+        "subtypes": [
+            "dark red",
+            "canned"
+        ],
+        "preparations": [
+            "sodium added",
+            "sugar added",
+            "drained",
+            "rinsed"
+        ]
+    },
+    {
+        "description": "Beans, kidney, light red, canned, sodium added, sugar added, drained and rinsed",
+        "nutrients": [
+            {
+                "name": "energy",
+                "unit": "kcal",
+                "amount": 127
+            }
+        ],
+        "name": "kidney beans",
+        "subtypes": [
+            "light red",
+            "canned"
+        ],
+        "preparations": [
+            "sodium added",
+            "sugar added",
+            "drained",
+            "rinsed"
+        ]
+    },
+    {
+        "description": "Peas, green, sweet, canned, sodium added, sugar added, drained and rinsed",
+        "nutrients": [
+            {
+                "name": "energy",
+                "unit": "kcal",
+                "amount": 80.1
+            }
+        ],
+        "name": "peas",
+        "subtypes": [
+            "green",
+            "sweet",
+            "canned"
+        ],
+        "preparations": [
+            "sodium added",
+            "sugar added",
+            "drained and rinsed"
+        ]
+    },
+    {
+        "description": "Beans, pinto, canned, sodium added, drained and rinsed",
+        "nutrients": [
+            {
+                "name": "energy",
+                "unit": "kcal",
+                "amount": 117
+            }
+        ],
+        "name": "pinto beans",
+        "subtypes": [
+            "canned"
+        ],
+        "preparations": [
+            "sodium added",
+            "drained",
+            "rinsed"
+        ]
+    },
+    {
+        "description": "Blackeye pea, canned, sodium added, drained and rinsed",
+        "nutrients": [
+            {
+                "name": "energy",
+                "unit": "kcal",
+                "amount": 116
+            }
+        ],
+        "name": "blackeye pea",
+        "subtypes": [
+            "canned"
+        ],
+        "preparations": [
+            "sodium added",
+            "drained and rinsed"
+        ]
+    },
+    {
+        "description": "Beans, great northern, canned, sodium added, drained and rinsed",
+        "nutrients": [
+            {
+                "name": "energy",
+                "unit": "kcal",
+                "amount": 117
+            }
+        ],
+        "name": "great northern beans",
+        "subtypes": [
+            "canned"
+        ],
+        "preparations": [
+            "sodium added",
+            "drained",
+            "rinsed"
+        ]
+    },
+    {
+        "description": "Pork, loin, boneless, raw",
+        "nutrients": [
+            {
+                "name": "energy",
+                "unit": "kcal",
+                "amount": 168
+            }
+        ],
+        "name": "pork loin",
+        "subtypes": [
+            "boneless"
+        ],
+        "preparations": [
+            "raw"
+        ]
+    },
+    {
+        "description": "Pork, loin, tenderloin, boneless, raw",
+        "nutrients": [
+            {
+                "name": "energy",
+                "unit": "kcal",
+                "amount": 119
+            }
+        ],
+        "name": "pork tenderloin",
+        "subtypes": [
+            "loin",
+            "boneless"
+        ],
+        "preparations": [
+            "raw"
+        ]
+    },
+    {
+        "description": "Chicken, breast, boneless, skinless, raw",
+        "nutrients": [
+            {
+                "name": "energy",
+                "unit": "kcal",
+                "amount": 106
+            }
+        ],
+        "name": "chicken breast",
+        "subtypes": [
+            "boneless",
+            "skinless"
+        ],
+        "preparations": [
+            "raw"
+        ]
+    },
+    {
+        "description": "Chicken, thigh, boneless, skinless, raw",
+        "nutrients": [
+            {
+                "name": "energy",
+                "unit": "kcal",
+                "amount": 144
+            }
+        ],
+        "name": "chicken thigh",
+        "subtypes": [
+            "boneless",
+            "skinless"
+        ],
+        "preparations": [
+            "raw"
+        ]
+    },
+    {
+        "description": "Beef, ribeye, steak, boneless, choice, raw",
+        "nutrients": [
+            {
+                "name": "energy",
+                "unit": "kcal",
+                "amount": 254
+            }
+        ],
+        "name": "beef ribeye steak",
+        "subtypes": [
+            "boneless",
+            "choice"
+        ],
+        "preparations": [
+            "raw"
+        ]
+    },
+    {
+        "description": "Beef, round, top round, boneless, choice, raw",
+        "nutrients": [
+            {
+                "name": "energy",
+                "unit": "kcal",
+                "amount": 141
+            }
+        ],
+        "name": "beef",
+        "subtypes": [
+            "round",
+            "top round",
+            "boneless",
+            "choice"
+        ],
+        "preparations": [
+            "raw"
+        ]
+    },
+    {
+        "description": "Beef, chuck, roast, boneless, choice, raw",
+        "nutrients": [
+            {
+                "name": "energy",
+                "unit": "kcal",
+                "amount": 232
+            }
+        ],
+        "name": "beef chuck roast",
+        "subtypes": [
+            "boneless",
+            "choice"
+        ],
+        "preparations": [
+            "raw"
+        ]
+    },
+    {
+        "description": "Beef, flank, steak, boneless, choice, raw",
+        "nutrients": [
+            {
+                "name": "energy",
+                "unit": "kcal",
+                "amount": 164
+            }
+        ],
+        "name": "beef flank steak",
+        "subtypes": [
+            "boneless",
+            "choice"
+        ],
+        "preparations": [
+            "raw"
+        ]
+    },
+    {
+        "description": "Yogurt, plain, nonfat",
+        "nutrients": [
+            {
+                "name": "energy",
+                "unit": "kcal",
+                "amount": 50.0
+            }
+        ],
+        "name": "yogurt",
+        "subtypes": [],
+        "preparations": [
+            "plain",
+            "nonfat"
+        ]
+    },
+    {
+        "description": "Cheese, monterey jack, solid",
+        "nutrients": [
+            {
+                "name": "energy",
+                "unit": "kcal",
+                "amount": 392
+            }
+        ],
+        "name": "monterey jack cheese",
+        "subtypes": [],
+        "preparations": [
+            "solid"
+        ]
+    },
+    {
+        "description": "Cheese, pasteurized process cheese food or product, American, singles",
+        "nutrients": [
+            {
+                "name": "energy",
+                "unit": "kcal",
+                "amount": 310
+            }
+        ],
+        "name": "cheese",
+        "subtypes": [
+            "pasteurized process cheese food",
+            "pasteurized process cheese product",
+            "American"
+        ],
+        "preparations": [
+            "singles"
+        ]
+    },
+    {
+        "description": "Cheese, provolone, sliced",
+        "nutrients": [
+            {
+                "name": "energy",
+                "unit": "kcal",
+                "amount": 357
+            }
+        ],
+        "name": "cheese",
+        "subtypes": [
+            "provolone"
+        ],
+        "preparations": [
+            "sliced"
+        ]
+    },
+    {
+        "description": "Cheese, oaxaca, solid",
+        "nutrients": [
+            {
+                "name": "energy",
+                "unit": "kcal",
+                "amount": 297
+            }
+        ],
+        "name": "cheese",
+        "subtypes": [
+            "oaxaca"
+        ],
+        "preparations": [
+            "solid"
+        ]
+    },
+    {
+        "description": "Cheese, queso fresco, solid",
+        "nutrients": [
+            {
+                "name": "energy",
+                "unit": "kcal",
+                "amount": 298
+            }
+        ],
+        "name": "cheese",
+        "subtypes": [
+            "queso fresco"
+        ],
+        "preparations": [
+            "solid"
+        ]
+    },
+    {
+        "description": "Cheese, cotija, solid",
+        "nutrients": [
+            {
+                "name": "energy",
+                "unit": "kcal",
+                "amount": 351
+            }
+        ],
+        "name": "cheese",
+        "subtypes": [
+            "cotija"
+        ],
+        "preparations": [
+            "solid"
+        ]
+    }
+]

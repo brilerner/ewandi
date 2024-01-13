@@ -1,12 +1,18 @@
 import openai
-from utils.io import load_text_from_file
-from utils.dates import convert_datetime, calculate_end_time, extract_date
+from utils.io import load_text_from_file, load_yaml_file
+from utils.dates import convert_datetime, calculate_end_time, extract_date, get_days_from_range
 import utils.keys as keys
 from pathlib import Path
 import json
+import prompts.bio as PROMPTS
+from utils.hardcoded import ENTRY_PROMPT_DIVIDER
+
 
 # MODEL = "gpt-4"
 MODEL = "gpt-3.5-turbo-1106" # this is faster!
+
+ENTRY_START_TIME = "23:55:00"
+ENTRY_DURATION = {'minutes': 5}
 
 def get_completion(prompt, model="gpt-4"):
     messages = [{"role": "user", "content": prompt}]
@@ -26,20 +32,19 @@ def make_entry_prompt(biography, information):
     "state the date at the beginning of your entry. You may begin writing now." 
     return prompt
 
-def process_files(biography_file_path, information_file_paths, entry_dir):
-    biography = load_text_from_file(biography_file_path)
+def process_files(bio, entry_prompts, dates, entry_dir):
     entries = []  # List to store all entries
-    for file_path in information_file_paths:
-        information = load_text_from_file(file_path)
-        prompt = make_entry_prompt(biography, information)
-        response = get_completion(prompt, MODEL)
+    for day_entry_prompt, date in zip(entry_prompts, dates):
+
+        # form full prompt
+        entry_prompt = make_entry_prompt(bio, day_entry_prompt)
+
+        # get response
+        response = get_completion(entry_prompt, MODEL)
 
         # set up date
-        date = Path(file_path).stem
-        start_time = "23:55:00"
-        duration = {'minutes': 5}
-        start_datetime = convert_datetime(date, start_time)
-        end_datetime = calculate_end_time(start_datetime, duration)
+        start_datetime = convert_datetime(date, ENTRY_START_TIME)
+        end_datetime = calculate_end_time(start_datetime, ENTRY_DURATION)
 
         entry_data = {
                 "start_datetime": start_datetime.isoformat(),
@@ -60,24 +65,38 @@ def get_file_paths(directory):
 
 def make_journal_entries(profile='llm_v0'):
 
-    biography_file_path = 'prompts/bio.txt'
-
     # set up directories
     profile_dir = Path.cwd().parent /'data'/'sim' / 'profiles'/profile
-
-    # List of information file paths
-    information_file_folder = profile_dir / 'outputs' / 'intermediate' / 'temp_schedule_files'
-    information_file_paths = get_file_paths(information_file_folder)
-    # information_file_paths = information_file_paths[:] # for testing purposes
-
+    inputs_dir = profile_dir / "inputs"
     # Create a directory for the journal entries
     entry_dir = profile_dir / 'outputs' / 'final'
     entry_dir.mkdir(parents=True, exist_ok=True)
+
+    # get sim params
+    sim_params_path = inputs_dir / "sim_params.yaml"
+    sim_params = load_yaml_file(sim_params_path)
+    sim_dates = sim_params.get("dates")
+    for k in sim_dates:
+        sim_params['dates'][k] = convert_date(sim_dates[k])
+    dates = get_days_from_range(sim_dates['start_date'], sim_dates['end_date'])
+
+
+    # get bio
+    bio = getattr(PROMPTS, profile)
+
+
+    # get entry prompts
+    entry_prompts_path = profile_dir / 'outputs' / 'intermediate' / 'entry_prompts.txt'
+    full_text = load_text_from_file(entry_prompts_path)
+    entry_prompts = full_text.split(ENTRY_PROMPT_DIVIDER)
+
+
+
 
     # Set up OpenAI API key
     openai.api_key = keys.OPENAI
 
     # Process each file
-    process_files(biography_file_path, information_file_paths, entry_dir)
+    process_files(bio, entry_prompts, dates, entry_dir)
 
 

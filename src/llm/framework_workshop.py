@@ -3,31 +3,42 @@ import random
 from openai import OpenAI
 
 import sys
-sys.path.append('/Users/brianlerner/Library/CloudStorage/OneDrive-Personal/Code/cerebra/src')
+from pathlib import Path
+
+root_path = str(Path(__file__).resolve().parent.parent)
+sys.path.append(root_path)
 # from utils.viz import get_plotly_figure
 import prompts.engine as PROMPTS
 
-from llm.chat import Conversation 
-#, chat_completion_request
+from llm.chat import Conversation
+# , chat_completion_request
 # from tools.tools import tools, call_function
 
-from utils.logging import set_logger
+from utils.logging_setup import set_logger
 from pathlib import Path
 
 client = OpenAI()
-GPT_MODEL = 'gpt-3.5-turbo-1106'
+GPT_MODEL = "gpt-3.5-turbo-1106"
 # GPT_MODEL = 'gpt-4-1106-preview'
 # GPT_MODEL = 'gpt-4-0613'
 # set up logs
-log_dir = Path(__file__).parent / 'logs'
+log_dir = Path(__file__).parent / "logs"
 log_dir.mkdir(parents=True, exist_ok=True)
 log_path = log_dir / f"{Path(__file__).stem}.log"
 logger = set_logger(log_path)
 
 
 # @retry(wait=wait_random_exponential(multiplier=1, max=40), stop=stop_after_attempt(3))
-def chat_completion_request(conversation, tools=None, tool_choice=None, model=GPT_MODEL, stream=False, resubmit=True, append=True, response_format=None):
-
+def chat_completion_request(
+    conversation,
+    tools=None,
+    tool_choice=None,
+    model=GPT_MODEL,
+    stream=False,
+    resubmit=True,
+    append=True,
+    response_format=None,
+):
     logger.info("Generating ChatCompletion response")
 
     compl_input = {
@@ -36,16 +47,15 @@ def chat_completion_request(conversation, tools=None, tool_choice=None, model=GP
         "tools": tools,
         "tool_choice": tool_choice,
         "stream": stream,
-        "response_format": {"type":response_format},
-
+        "response_format": {"type": response_format},
     }
     logger.info(f"COMPL_INPUT: {compl_input}")
     try:
         client = OpenAI()
         logger.info("Calling OpenAI API")
         response = client.chat.completions.create(
-                        **compl_input,
-                    )
+            **compl_input,
+        )
         # response = client.chat.completions.create(
         #                 model=model,
         #                 messages=conversation.messages,
@@ -77,37 +87,35 @@ def chat_completion_request(conversation, tools=None, tool_choice=None, model=GP
             function = get_value(tool_call, "function")
             name = get_value(function, "name")
 
-
             arguments_string = get_value(function, "arguments")
             try:
                 arguments = json.loads(arguments_string)
             except:
                 raise Exception(f"Unable to parse arguments: {arguments_string}")
-            
+
             content_output = call_function_v2(name, arguments)
             content = str(content_output)
 
             conversation.messages.append(
-                    {
-                        "tool_call_id": id,
-                        "role": "tool",
-                        "name": name,
-                        "content": content,
-                    }
+                {
+                    "tool_call_id": id,
+                    "role": "tool",
+                    "name": name,
+                    "content": content,
+                }
             )
             if resubmit:
                 logger.info(f"Resubmitting function: {name}")
                 response = chat_completion_request(conversation, stream=stream)
         logger.info(f"Finish reason: {finish_reason}")
         return response
-        
+
     except Exception as e:
         logger.exception("Unable to generate ChatCompletion response")
         logger.info(conversation.messages)
         print("Unable to generate ChatCompletion response")
         print(f"Exception: {e}")
         return e
-    
 
 
 # sytem_message = """
@@ -221,6 +229,8 @@ If something is not present, please return an empty string.
 #     your response: {'v': [['coffee', '', '','','']]}
 Go! Remember, structure each entry as a list and not a dictionary without keys.
 """
+
+
 # sytem_message = """
 # You are an application that breakdowns a query into a list of steps. You are part of a larger application that tracks a user's life data and allows them to query it.
 # If there is more than one variable present, please return a JSON object where the key is "v" and the value is a list of the variable names extracted from the query.
@@ -232,8 +242,7 @@ def main():
     start = time.time()
     PROMPTS.system = sytem_message
     # Startthe conversation with a system message
-    conversation = Conversation(first_message = ("system", PROMPTS.system))
-
+    conversation = Conversation(first_message=("system", PROMPTS.system))
 
     # prompt = "Do I have a headache on the same days that I drink coffee?"
     prompt = "On days when I play bball at 6pm do I also eat pizza in the morning?"
@@ -248,6 +257,5 @@ def main():
     print(f"Duration: {duration}")
 
 
-    
 if __name__ == "__main__":
-    main()  
+    main()

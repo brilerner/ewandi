@@ -5,7 +5,9 @@ import random
 from openai import OpenAI
 
 import sys
-sys.path.append('/Users/brianlerner/Library/CloudStorage/OneDrive-Personal/Code/cerebra/src')
+from pathlib import Path
+root_path = str(Path(__file__).resolve().parent.parent)
+sys.path.append(root_path)
 from utils.viz import get_plotly_figure
 import prompts.clowngpt as PROMPTS
 

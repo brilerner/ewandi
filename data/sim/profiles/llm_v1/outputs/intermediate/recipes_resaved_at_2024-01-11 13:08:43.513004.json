@@ -1,0 +1,74 @@
+{
+    "breakfast": [
+        {
+            "name": "Mediterranean Frittata with Oats and Fresh Fruit",
+            "ingredients": [
+                "eggs",
+                "spinach",
+                "feta cheese",
+                "olive oil",
+                "garlic",
+                "onions",
+                "bell peppers",
+                "mushrooms",
+                "tomatoes",
+                "basil",
+                "oregano",
+                "pepper",
+                "salt",
+                "oats",
+                "milk",
+                "kiwis",
+                "strawberries",
+                "bananas",
+                "honey"
+            ],
+            "calories": 302
+        }
+    ],
+    "lunch": [
+        {
+            "name": "Mediterranean Grilled Chicken and Avocado Sandwich",
+            "ingredients": [
+                "bread",
+                "chicken",
+                "onions",
+                "lettuce",
+                "tomatoes",
+                "avocado",
+                "feta cheese",
+                "olive oil",
+                "lemons",
+                "garlic",
+                "basil",
+                "salt",
+                "pepper"
+            ],
+            "calories": 366
+        }
+    ],
+    "dinner": [
+        {
+            "name": "Mediterranean Quinoa Tuna Salad",
+            "ingredients": [
+                "onions",
+                "quinoa",
+                "tuna",
+                "lemons",
+                "feta cheese",
+                "olive oil",
+                "tomatoes",
+                "cucumbers",
+                "garlic",
+                "black beans",
+                "avocado",
+                "spinach",
+                "olives",
+                "salt",
+                "pepper",
+                "basil"
+            ],
+            "calories": 304
+        }
+    ]
+}

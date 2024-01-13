@@ -434,3 +434,28 @@ openai.BadRequestError: Error code: 400 - {'error': {'message': "'messages' must
 2023-12-21 17:36:01,093:INFO: Processing non-stream response
 2023-12-21 17:36:01,093:INFO: Appending assistant message: ChatCompletionMessage(content='{"v": [["bball", "", "", "18:00", "18:00"], ["pizza", "", "", "","12:00"]]}', role='assistant', function_call=None, tool_calls=None)
 2023-12-21 17:36:01,093:INFO: Finish reason: stop
+2024-01-04 20:38:12,835:INFO: Generating ChatCompletion response
+2024-01-04 20:38:12,835:INFO: COMPL_INPUT: {'model': 'gpt-3.5-turbo-1106', 'messages': [{'role': 'system', 'content': ('system', "\nYou are an application that breakdowns a query into a list of steps. You are part of a larger application that tracks a user's life data and allows them to query it.\nDon't make assumptions about what values to plug into functions. Ask for clarification if a user request is ambiguous.\n")}, {'role': 'user', 'content': 'How many times have I gone to a basketball game?'}], 'tools': [{'type': 'function', 'function': {'name': 'retrieve_events', 'description': 'Determine the event name and the associated date and time range if specified so that the events can be retrieved from the database.', 'parameters': {'type': 'object', 'properties': {'name': {'type': 'string', 'description': 'The name of the event.'}, 'start_date': {'type': 'string', 'description': 'The start date of the event. Format: YYYY-MM-DD'}, 'end_date': {'type': 'string', 'description': 'The end date of the event. Format: YYYY-MM-DD'}, 'start_time': {'type': 'string', 'description': 'The start time of the event. Format: HH:MM:SS'}, 'end_time': {'type': 'string', 'description': 'The end time of the event. Format: HH:MM:SS'}}, 'required': ['name']}}}], 'tool_choice': None, 'stream': False, 'response_format': {'type': None}}
+2024-01-04 20:38:12,842:INFO: Calling OpenAI API
+2024-01-04 20:38:13,053:INFO: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 400 Bad Request"
+2024-01-04 20:38:13,056:ERROR: Unable to generate ChatCompletion response
+Traceback (most recent call last):
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-Personal/Code/Cerebra/src/llm/framework.py", line 46, in chat_completion_request
+    response = client.chat.completions.create(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/brianlerner/miniconda3/envs/c2/lib/python3.12/site-packages/openai/_utils/_utils.py", line 303, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/brianlerner/miniconda3/envs/c2/lib/python3.12/site-packages/openai/resources/chat/completions.py", line 645, in create
+    return self._post(
+           ^^^^^^^^^^^
+  File "/Users/brianlerner/miniconda3/envs/c2/lib/python3.12/site-packages/openai/_base_client.py", line 1088, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/brianlerner/miniconda3/envs/c2/lib/python3.12/site-packages/openai/_base_client.py", line 853, in request
+    return self._request(
+           ^^^^^^^^^^^^^^
+  File "/Users/brianlerner/miniconda3/envs/c2/lib/python3.12/site-packages/openai/_base_client.py", line 930, in _request
+    raise self._make_status_error_from_response(err.response) from None
+openai.BadRequestError: Error code: 400 - {'error': {'message': "'$.messages[0].content' is invalid. Please check the API reference: https://platform.openai.com/docs/api-reference.", 'type': 'invalid_request_error', 'param': None, 'code': None}}
+2024-01-04 20:38:13,060:INFO: [{'role': 'system', 'content': ('system', "\nYou are an application that breakdowns a query into a list of steps. You are part of a larger application that tracks a user's life data and allows them to query it.\nDon't make assumptions about what values to plug into functions. Ask for clarification if a user request is ambiguous.\n")}, {'role': 'user', 'content': 'How many times have I gone to a basketball game?'}]

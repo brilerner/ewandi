@@ -1,0 +1,15 @@
+
+name: cerebra
+dependencies:
+- numpy
+- openai
+- pip
+- pandas
+- plotly
+- python=3.11
+- pymongo
+- streamlit
+- tenacity
+- pip:
+  - streamlit-calendar
+

@@ -1,9 +1,0 @@
-numpy
-openai
-pandas
-plotly
-python=3.11.*
-pymongo
-streamlit
-streamlit-calendar
-tenacity

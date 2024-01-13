@@ -14,7 +14,8 @@ from pathlib import Path
 import prompts
 import app_text
 from utils.general import get_root
-from utils.io import load_json
+
+# from utils.io import load_json
 from viz.plot import plot_events
 from llm.chat import start_cerebra_session, cerebra_completion_request
 from openai import OpenAI
@@ -34,6 +35,18 @@ openers = prompts.engine.openers
 
 
 #### Dataset Tabs
+def load_json(file_path):
+    """
+    Load a JSON template file and return its content.
+
+    Args:
+    file_path (str): Path to the JSON file.
+
+    Returns:
+    dict: Content of the JSON file.
+    """
+    with open(file_path, "r") as file:
+        return json.load(file)
 
 
 def convert_event_keys(events):

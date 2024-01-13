@@ -1,9 +1,15 @@
-
+import sys
 from pathlib import Path
+
+root_path = str(Path(__file__).resolve().parent.parent)
+sys.path.append(root_path)
+
+
 import yaml
 import pandas as pd
 import json
 import shutil
+
 
 
 

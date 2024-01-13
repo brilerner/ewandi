@@ -1,3 +1,0 @@
-- name: sleep
-  function: sleep_quality 
-  # type: time_duration

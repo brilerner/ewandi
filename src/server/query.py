@@ -1,7 +1,7 @@
 import sys
 # print(sys.path)
 sys.path.append('/Users/brianlerner/Library/CloudStorage/OneDrive-Personal/Code/cerebra_v2/src')
-from utils.server import connect_to_collection
+from server import connect_to_collection
 
 from datetime import datetime
 

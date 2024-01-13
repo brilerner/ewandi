@@ -1,0 +1,16 @@
+  # duration: {distribution: "normal", mean: "00:30:00", std: "00:10:00"}
+
+- name: breakfast
+  description: The first meal of the day, usually consumed in the morning.
+  prob: 0.5
+  start_time: "08:00:00"
+  duration: {"minutes": 30}
+- name: lunch
+  description: The second meal of the day, usually consumed in the afternoon.
+  start_time: "12:00:00"
+  duration: {"minutes": 30}
+- name: dinner 
+  description: The third meal of the day, usually consumed in the evening.
+  start_time: "17:30:00"
+  duration: {"minutes": 30}
+# - name: Snack

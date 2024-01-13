@@ -1,0 +1,19 @@
+# make sure meals are in lower case
+# - name: "Bread, whole-wheat, commercially prepared"
+
+health_values:
+  vals: ['low', 'medium', 'high']
+  probs: [0.3, 0.3, 0.4]
+
+ingredients:
+  - name: "bread"
+    meals:
+      - lunch
+    prob: 0.5
+  - name: "onions"
+    meals:
+      - lunch
+      - dinner
+    prob: 0.25
+
+

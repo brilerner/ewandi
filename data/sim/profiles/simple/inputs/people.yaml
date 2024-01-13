@@ -1,6 +1,0 @@
-
-- name: Tyrese
-  effects:
-    - name: mood
-      vals: [-3]
-  description: Friend from the basketball team.

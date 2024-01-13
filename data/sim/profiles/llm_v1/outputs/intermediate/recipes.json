@@ -1,0 +1,68 @@
+{
+    "breakfast": [
+        {
+            "name": "Mediterranean Veggie Omelet with Avocado Toast",
+            "ingredients": [
+                "eggs",
+                "spinach",
+                "olives",
+                "feta cheese",
+                "tomatoes",
+                "bell peppers",
+                "onions",
+                "garlic",
+                "avocado",
+                "bread",
+                "olive oil",
+                "basil",
+                "oregano",
+                "pepper",
+                "salt",
+                "lemons"
+            ],
+            "calories": 366
+        }
+    ],
+    "lunch": [
+        {
+            "name": "Mediterranean Tuna Melt Panini",
+            "ingredients": [
+                "bread",
+                "onions",
+                "tuna",
+                "olive oil",
+                "mozzarella cheese",
+                "olives",
+                "tomatoes",
+                "lettuce",
+                "basil",
+                "oregano",
+                "ketchup",
+                "garlic",
+                "salt",
+                "pepper"
+            ],
+            "calories": 561
+        }
+    ],
+    "dinner": [
+        {
+            "name": "Beef and Brown Rice Stuffed Bell Peppers",
+            "ingredients": [
+                "beef",
+                "onions",
+                "bell peppers",
+                "brown rice",
+                "tomatoes",
+                "garlic",
+                "olive oil",
+                "cheddar cheese",
+                "feta cheese",
+                "oregano",
+                "salt",
+                "pepper"
+            ],
+            "calories": 528
+        }
+    ]
+}

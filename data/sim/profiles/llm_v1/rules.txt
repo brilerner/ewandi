@@ -2,6 +2,9 @@
 
 
 # Overview of Current Functionality
+
+Journal entries are always entered at 11:30 pm
+
 No event goes past 12 pm to protect sleep.
 - This can be changed later to start sleep after the last event
 

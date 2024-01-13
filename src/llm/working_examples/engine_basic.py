@@ -1,17 +1,18 @@
-
-
 import sys
-sys.path.append('/Users/brianlerner/Library/CloudStorage/OneDrive-Personal/Code/cerebra/src')
+from pathlib import Path
+
+root_path = str(Path(__file__).resolve().parent.parent)
+sys.path.append(root_path)
 
 from openai import OpenAI
 from tenacity import retry, wait_random_exponential, stop_after_attempt
 from termcolor import colored
 import json
 
-from utils.logging import set_logger
+from utils.logging_setup import set_logger
 from viz.plot import plot_occurrence
 from server.query import get_n_occurrences
-from tools.tools import tools
+from llm.my_tools.orig_tools import tools
 import prompts.engine_basic as PROMPTS
 from pathlib import Path
 
@@ -30,26 +31,32 @@ EMBEDDING_MODEL = "text-embedding-ada-002"
 # Choice(finish_reason='stop', index=0, logprobs=None, message=ChatCompletionMessage(content='Sure, could you please provide me with the location?', role='assistant', function_call=None, tool_calls=None))
 
 # set up logs
-log_dir = Path(__file__).parent / 'logs'
+log_dir = Path(__file__).parent / "logs"
 log_dir.mkdir(parents=True, exist_ok=True)
 log_path = log_dir / f"{Path(__file__).stem}.log"
 logger = set_logger(log_path)
 
+
 @retry(wait=wait_random_exponential(multiplier=1, max=40), stop=stop_after_attempt(3))
-def chat_completion_request(conversation, tools=None, tool_choice=None, model=GPT_MODEL, resubmit=True, append=True):
-
+def chat_completion_request(
+    conversation,
+    tools=None,
+    tool_choice=None,
+    model=GPT_MODEL,
+    resubmit=True,
+    append=True,
+):
     logger.info("Generating ChatCompletion response")
-
 
     try:
         client = OpenAI()
         response = client.chat.completions.create(
-                        model=model,
-                        messages=conversation.conversation_history,
-                        # stream=True,
-                        tools=tools,
-                        tool_choice=tool_choice,
-                    )
+            model=model,
+            messages=conversation.conversation_history,
+            # stream=True,
+            tools=tools,
+            tool_choice=tool_choice,
+        )
         logger.info(f"ChatCompletion response: {response}")
         if append:
             assistant_message = response.choices[0].message
@@ -59,24 +66,23 @@ def chat_completion_request(conversation, tools=None, tool_choice=None, model=GP
         # make tool call if necessary
         full_message = response.choices[0].message
         if response.choices[0].finish_reason == "tool_calls":
-
             function = full_message.tool_calls[0].function
-                        
+
             function_content = call_function(function, conversation)
             conversation.conversation_history.append(
-                    {
-                        "tool_call_id": full_message.tool_calls[0].id,
-                        "role": "tool",
-                        "name": function.name,
-                        "content": str(function_content),
-                    }
+                {
+                    "tool_call_id": full_message.tool_calls[0].id,
+                    "role": "tool",
+                    "name": function.name,
+                    "content": str(function_content),
+                }
             )
             if resubmit:
                 logger.info(f"Resubmitting function: {function.name}")
                 response = chat_completion_request(conversation)
 
         return response
-        
+
     except Exception as e:
         logger.exception("Unable to generate ChatCompletion response")
         logger.info(conversation.conversation_history)
@@ -93,15 +99,18 @@ def call_function(function, conversation):
             fargs = json.loads(function.arguments)
             n = get_n_occurrences(**fargs)
             # fig, n = get_occurrence_information(**function_arguments)
-            return n # how to show fig???
-        
+            return n  # how to show fig???
+
         except Exception as e:
             logger.exception(f"Function {function.name} execution failed")
             print(f"Function execution failed")
             print(f"Error message: {e}")
     else:
-        logger.exception(f"Function {function.name} does not exist and cannot be called")
+        logger.exception(
+            f"Function {function.name} does not exist and cannot be called"
+        )
         raise Exception("Function does not exist and cannot be called")
+
 
 def get_occurrence_information(variable):
     logger.info(f"Running get_occurrence_information for argument: {variable}")
@@ -138,6 +147,7 @@ class Conversation:
                 )
             )
 
+
 def pretty_print_conversation(messages):
     role_to_color = {
         "system": "red",
@@ -145,20 +155,41 @@ def pretty_print_conversation(messages):
         "assistant": "blue",
         "tool": "magenta",
     }
-    
+
     for message in messages:
         if type(message) != dict:
             message = dict(message)
         if message["role"] == "system":
-            print(colored(f"system: {message['content']}\n", role_to_color[message["role"]]))
+            print(
+                colored(
+                    f"system: {message['content']}\n", role_to_color[message["role"]]
+                )
+            )
         elif message["role"] == "user":
-            print(colored(f"user: {message['content']}\n", role_to_color[message["role"]]))
+            print(
+                colored(f"user: {message['content']}\n", role_to_color[message["role"]])
+            )
         elif message["role"] == "assistant" and message.get("function_call"):
-            print(colored(f"assistant: {message['function_call']}\n", role_to_color[message["role"]]))
+            print(
+                colored(
+                    f"assistant: {message['function_call']}\n",
+                    role_to_color[message["role"]],
+                )
+            )
         elif message["role"] == "assistant" and not message.get("function_call"):
-            print(colored(f"assistant: {message['content']}\n", role_to_color[message["role"]]))
+            print(
+                colored(
+                    f"assistant: {message['content']}\n", role_to_color[message["role"]]
+                )
+            )
         elif message["role"] == "tool":
-            print(colored(f"function ({message['name']}): {message['content']}\n", role_to_color[message["role"]]))
+            print(
+                colored(
+                    f"function ({message['name']}): {message['content']}\n",
+                    role_to_color[message["role"]],
+                )
+            )
+
 
 ### Conversation
 
@@ -170,9 +201,7 @@ conversation.add_message("system", PROMPTS.schema)
 # Get the initial response from the user (will integrate into streamlit after testing)
 prompt = next(questions)
 conversation.add_message("user", prompt)
-chat_response = chat_completion_request(
-    conversation, tools=tools
-)
+chat_response = chat_completion_request(conversation, tools=tools)
 # assistant_message = chat_response.choices[0].message
 pretty_print_conversation(conversation.conversation_history)
 print()

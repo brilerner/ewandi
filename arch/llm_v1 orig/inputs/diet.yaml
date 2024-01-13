@@ -1,5 +1,0 @@
-# make sure meals are in lower case
-- name: "Bread, whole-wheat, commercially prepared"
-  meals:
-    - lunch
-  prob: 0.5

@@ -1,0 +1,40 @@
+{
+    "breakfast": [
+        {
+            "name": "Savory Oat Bowl with Egg and Avocado",
+            "ingredients": [
+                "oats",
+                "eggs",
+                "avocado",
+                "cheddar cheese",
+                "olive oil",
+                "garlic",
+                "salt",
+                "pepper",
+                "spinach",
+                "mushrooms",
+                "bell peppers"
+            ],
+            "calories": 520
+        }
+    ],
+    "lunch": [
+        {
+            "name": "Open-Faced Steak and Caramelized Onion Sandwich",
+            "ingredients": [
+                "bread",
+                "beef",
+                "onions",
+                "olive oil",
+                "garlic",
+                "mushrooms",
+                "cheddar cheese",
+                "spinach",
+                "salt",
+                "pepper",
+                "balsamic vinegar"
+            ],
+            "calories": 460
+        }
+    ]
+}

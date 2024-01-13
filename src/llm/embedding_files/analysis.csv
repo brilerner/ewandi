@@ -1,0 +1,325 @@
+,category,base,keystring,mode,variation,existing,groups,description,group_percentage,index,distance
+0,people,Mara (girlfriend),Mara (girlfriend),names,False,True,"['personal relationships', 'loved ones', ""important people in one's life""]",Long-term girlfriend.,1.0,0.0,0.0
+1,people,Mara (girlfriend),"Mara, my long-term partner",names,True,True,"['personal relationships', 'loved ones', ""important people in one's life""]",Long-term girlfriend.,1.0,0.0,0.08291372098021688
+2,people,Mara (girlfriend),"My significant other, Mara",names,True,True,"['personal relationships', 'loved ones', ""important people in one's life""]",Long-term girlfriend.,1.0,0.0,0.08680427556255943
+3,people,Mara (girlfriend),"Mara, my steady companion",names,True,True,"['personal relationships', 'loved ones', ""important people in one's life""]",Long-term girlfriend.,1.0,0.0,0.08294664902715532
+4,people,Mom (mother),Mom (mother),names,False,True,"['personal relationships', 'loved ones', ""important people in one's life""]",,1.0,0.0,0.0
+5,people,Mom (mother),Mama,names,True,True,"['personal relationships', 'loved ones', ""important people in one's life""]",,1.0,0.0,0.09315433951254382
+6,people,Mom (mother),Mother,names,True,True,"['personal relationships', 'loved ones', ""important people in one's life""]",,1.0,0.0,0.1157589020053017
+7,people,Mom (mother),Mummy,names,True,True,"['personal relationships', 'loved ones', ""important people in one's life""]",,1.0,0.0,0.1650273652163069
+8,people,Tyrese (friend),Tyrese (friend),names,False,True,"['personal relationships', 'loved ones', ""important people in one's life""]",Friend from the basketball team.,1.0,0.0,0.0
+9,people,Tyrese (friend),Tyrese my buddy from the basketball team,names,True,True,"['personal relationships', 'loved ones', ""important people in one's life""]",Friend from the basketball team.,1.0,0.0,0.05951534222905164
+10,people,Tyrese (friend),My basketball teammate Tyrese,names,True,True,"['personal relationships', 'loved ones', ""important people in one's life""]",Friend from the basketball team.,1.0,0.0,0.11604647683745417
+11,people,Tyrese (friend),"Tyrese, my pal from the court",names,True,True,"['personal relationships', 'loved ones', ""important people in one's life""]",Friend from the basketball team.,1.0,0.0,0.07286355294688196
+12,people,personal relationships,personal relationships,groups,False,True,,,0.2727272727272727,10.0,0.23773758269192657
+13,people,personal relationships,interpersonal connections,groups,True,True,,,0.1875,15.0,0.23773758269192657
+14,people,personal relationships,private relations,groups,True,True,,,0.2,14.0,0.2270992308583083
+15,people,personal relationships,individual interactions,groups,True,True,,,0.17647058823529413,16.0,0.23773758269192657
+16,people,loved ones,loved ones,groups,False,True,,,0.2727272727272727,10.0,0.2273818783277738
+17,people,loved ones,beloved family members,groups,True,True,,,0.75,3.0,0.2273818783277738
+18,people,loved ones,cherished relatives,groups,True,True,,,0.75,3.0,0.2273818783277738
+19,people,loved ones,dearly held friends,groups,True,True,,,0.25,11.0,0.1927396524560422
+20,people,important people in one's life,important people in one's life,groups,False,True,,,0.23076923076923078,12.0,0.24207236378964847
+21,people,important people in one's life,significant individuals in someone's existence,groups,True,True,,,0.3333333333333333,8.0,0.24207236378964847
+22,people,important people in one's life,key figures in a person's life,groups,True,True,,,0.1875,15.0,0.24207236378964847
+23,people,important people in one's life,crucial persons in one's personal journey,groups,True,True,,,0.21428571428571427,13.0,0.24207236378964847
+24,people,Dad (father),Dad (father),names,False,False,,,,,
+25,people,Dad (father),Papa,names,True,False,,,,,
+26,people,Dad (father),Father,names,True,False,,,,,
+27,people,Dad (father),Daddy,names,True,False,,,,,
+28,people,Sister (female sibling),Sister (female sibling),names,False,False,,,,,
+29,people,Sister (female sibling),sibling sister,names,True,False,,,,,
+30,people,Sister (female sibling),sisterly kin,names,True,False,,,,,
+31,people,Sister (female sibling),biological sister,names,True,False,,,,,
+32,people,Professor Oakley (mentor),Professor Oakley (mentor),names,False,False,,,,,
+33,people,Professor Oakley (mentor),Mentor Professor Oakley,names,True,False,,,,,
+34,people,Professor Oakley (mentor),"Instructor Oakley, the guide",names,True,False,,,,,
+35,people,Professor Oakley (mentor),"Teacher Oakley, the advisor",names,True,False,,,,,
+36,people,Max (college roommate),Max (college roommate),names,False,False,,,,,
+37,people,Max (college roommate),"Max, my buddy from university",names,True,False,,,,,
+38,people,Max (college roommate),"Max, who I shared a dorm with in college",names,True,False,,,,,
+39,people,Max (college roommate),Roommate Max from my college days,names,True,False,,,,,
+40,people,Coach Ramirez (sports coach),Coach Ramirez (sports coach),names,False,False,,,,,
+41,people,Coach Ramirez (sports coach),Instructor Ramirez,names,True,False,,,,,
+42,people,Coach Ramirez (sports coach),Trainer Ramirez,names,True,False,,,,,
+43,people,Coach Ramirez (sports coach),Mentor Ramirez,names,True,False,,,,,
+44,people,cherished friendships,cherished friendships,groups,False,False,,,,,
+45,people,cherished friendships,valued companionships,groups,True,False,,,,,
+46,people,cherished friendships,beloved friend bonds,groups,True,False,,,,,
+47,people,cherished friendships,treasured connections with friends,groups,True,False,,,,,
+48,people,close family ties,close family ties,groups,False,False,,,,,
+49,people,close family ties,strong family bonds,groups,True,False,,,,,
+50,people,close family ties,tight-knit familial relationships,groups,True,False,,,,,
+51,people,close family ties,close-knit family connections,groups,True,False,,,,,
+52,people,significant other,significant other,groups,False,False,,,,,
+53,people,significant other,life partner,groups,True,False,,,,,
+54,people,significant other,better half,groups,True,False,,,,,
+55,people,significant other,romantic partner,groups,True,False,,,,,
+56,people,life partners,life partners,groups,False,False,,,,,
+57,people,life partners,soulmates,groups,True,False,,,,,
+58,people,life partners,significant others,groups,True,False,,,,,
+59,people,life partners,companions for life,groups,True,False,,,,,
+60,people,meaningful connections,meaningful connections,groups,False,False,,,,,
+61,people,meaningful connections,significant relationships,groups,True,False,,,,,
+62,people,meaningful connections,substantial interactions,groups,True,False,,,,,
+63,people,meaningful connections,purposeful acquaintances,groups,True,False,,,,,
+64,values,score (energy),score (energy),names,False,True,[],Energy level for the day.,1.0,0.0,0.0
+65,values,score (energy),energy level for today,names,True,True,[],Energy level for the day.,0.0,0.0,0.1706243519817061
+66,values,score (energy),day's energy rating,names,True,True,[],Energy level for the day.,0.0,0.0,0.16078506176837504
+67,values,score (energy),daily energy score,names,True,True,[],Energy level for the day.,0.0,0.0,0.13338394967595513
+68,values,score (stress),score (stress),names,False,True,[],Stress level for the day.,1.0,0.0,0.0
+69,values,score (stress),stress level,names,True,True,[],Stress level for the day.,0.0,0.0,0.10511295231507678
+70,values,score (stress),day's stress rating,names,True,True,[],Stress level for the day.,0.0,0.0,0.13407132748687156
+71,values,score (stress),stress index,names,True,True,[],Stress level for the day.,0.0,0.0,0.13845634099784587
+72,values,score (mood),score (mood),names,False,True,[],Mood level for the day.,1.0,0.0,0.0
+73,values,score (mood),mood rating,names,True,True,[],Mood level for the day.,0.0,0.0,0.0773746623126026
+74,values,score (mood),mood level,names,True,True,[],Mood level for the day.,0.0,0.0,0.10299714802289861
+75,values,score (mood),emotional score,names,True,True,[],Mood level for the day.,0.0,0.0,0.10794908078313681
+76,values,measure of happiness,measure of happiness,names,False,False,,,,,
+77,values,measure of happiness,happiness index,names,True,False,,,,,
+78,values,measure of happiness,well-being metric,names,True,False,,,,,
+79,values,measure of happiness,joyfulness gauge,names,True,False,,,,,
+80,values,level of fatigue,level of fatigue,names,False,False,,,,,
+81,values,level of fatigue,degree of tiredness,names,True,False,,,,,
+82,values,level of fatigue,extent of weariness,names,True,False,,,,,
+83,values,level of fatigue,state of exhaustion,names,True,False,,,,,
+84,values,degree of anxiety,degree of anxiety,names,False,False,,,,,
+85,values,degree of anxiety,level of nervousness,names,True,False,,,,,
+86,values,degree of anxiety,magnitude of apprehension,names,True,False,,,,,
+87,values,degree of anxiety,amount of worry,names,True,False,,,,,
+88,values,assessment of well-being,assessment of well-being,names,False,False,,,,,
+89,values,assessment of well-being,evaluation of personal health,names,True,False,,,,,
+90,values,assessment of well-being,appraisal of wellness,names,True,False,,,,,
+91,values,assessment of well-being,analysis of individual's well-being,names,True,False,,,,,
+92,values,evaluation of emotional state,evaluation of emotional state,names,False,False,,,,,
+93,values,evaluation of emotional state,assessment of feelings,names,True,False,,,,,
+94,values,evaluation of emotional state,appraisal of emotional condition,names,True,False,,,,,
+95,values,evaluation of emotional state,analysis of mood,names,True,False,,,,,
+96,sensations,shoulder pain,shoulder pain,names,False,True,"['musculoskeletal pain', 'physical discomfort']",Pain on the top of the right shoulder.,1.0,0.0,0.0
+97,sensations,shoulder pain,right shoulder discomfort,names,True,True,"['musculoskeletal pain', 'physical discomfort']",Pain on the top of the right shoulder.,1.0,0.0,0.06165756313010062
+98,sensations,shoulder pain,ache in the right shoulder,names,True,True,"['musculoskeletal pain', 'physical discomfort']",Pain on the top of the right shoulder.,1.0,0.0,0.08196790565232959
+99,sensations,shoulder pain,sore right shoulder top,names,True,True,"['musculoskeletal pain', 'physical discomfort']",Pain on the top of the right shoulder.,1.0,0.0,0.11770588313068953
+100,sensations,stomach ache,stomach ache,names,False,True,['physical discomfort'],Mild discomfort.,1.0,0.0,0.0
+101,sensations,stomach ache,tummy pain,names,True,True,['physical discomfort'],Mild discomfort.,1.0,0.0,0.07489926757779453
+102,sensations,stomach ache,gastric discomfort,names,True,True,['physical discomfort'],Mild discomfort.,1.0,0.0,0.11174843496418696
+103,sensations,stomach ache,bellyache,names,True,True,['physical discomfort'],Mild discomfort.,1.0,0.0,0.09088879629719349
+104,sensations,elbow pain,elbow pain,names,False,True,"['musculoskeletal pain', 'physical discomfort']","Outer part of the elbow, especially when twisting or extending the arm.",1.0,0.0,0.0
+105,sensations,elbow pain,lateral elbow soreness,names,True,True,"['musculoskeletal pain', 'physical discomfort']","Outer part of the elbow, especially when twisting or extending the arm.",1.0,0.0,0.09912026106171301
+106,sensations,elbow pain,twisting arm discomfort in elbow,names,True,True,"['musculoskeletal pain', 'physical discomfort']","Outer part of the elbow, especially when twisting or extending the arm.",1.0,0.0,0.11202418615503662
+107,sensations,elbow pain,extending arm elbow ache,names,True,True,"['musculoskeletal pain', 'physical discomfort']","Outer part of the elbow, especially when twisting or extending the arm.",1.0,0.0,0.08637671056363128
+108,sensations,musculoskeletal pain,musculoskeletal pain,groups,False,True,,,1.0,1.0,0.14546001037204048
+109,sensations,musculoskeletal pain,muscle and bone pain,groups,True,True,,,1.0,1.0,0.14546001037204048
+110,sensations,musculoskeletal pain,skeletal muscle discomfort,groups,True,True,,,0.6666666666666666,2.0,0.14546001037204048
+111,sensations,musculoskeletal pain,musculature pain,groups,True,True,,,1.0,1.0,0.14546001037204048
+112,sensations,physical discomfort,physical discomfort,groups,False,True,,,1.0,2.0,0.17567929531212612
+113,sensations,physical discomfort,bodily unease,groups,True,True,,,0.6,4.0,0.16345151850288342
+114,sensations,physical discomfort,physical distress,groups,True,True,,,1.0,2.0,0.17567929531212612
+115,sensations,physical discomfort,somatic discomfort,groups,True,True,,,1.0,2.0,0.17567929531212612
+116,sensations,knee discomfort,knee discomfort,names,False,False,,,,,
+117,sensations,knee discomfort,knee pain,names,True,False,,,,,
+118,sensations,knee discomfort,sore knee,names,True,False,,,,,
+119,sensations,knee discomfort,knee ache,names,True,False,,,,,
+120,sensations,migraine headaches,migraine headaches,names,False,False,,,,,
+121,sensations,migraine headaches,debilitating migraines,names,True,False,,,,,
+122,sensations,migraine headaches,severe headache episodes,names,True,False,,,,,
+123,sensations,migraine headaches,chronic migraine pain,names,True,False,,,,,
+124,sensations,lower back soreness,lower back soreness,names,False,False,,,,,
+125,sensations,lower back soreness,aching in the lumbar region,names,True,False,,,,,
+126,sensations,lower back soreness,pain in the lower spine,names,True,False,,,,,
+127,sensations,lower back soreness,lumbar discomfort,names,True,False,,,,,
+128,sensations,chronic fatigue,chronic fatigue,names,False,False,,,,,
+129,sensations,chronic fatigue,persistent tiredness,names,True,False,,,,,
+130,sensations,chronic fatigue,lasting exhaustion,names,True,False,,,,,
+131,sensations,chronic fatigue,constant weariness,names,True,False,,,,,
+132,sensations,muscle cramps,muscle cramps,names,False,False,,,,,
+133,sensations,muscle cramps,muscular spasms,names,True,False,,,,,
+134,sensations,muscle cramps,muscle contractions,names,True,False,,,,,
+135,sensations,muscle cramps,muscle twitches,names,True,False,,,,,
+136,sensations,chronic fatigue,chronic fatigue,groups,False,False,,,,,
+137,sensations,chronic fatigue,persistent tiredness,groups,True,False,,,,,
+138,sensations,chronic fatigue,constant exhaustion,groups,True,False,,,,,
+139,sensations,chronic fatigue,long-term weariness,groups,True,False,,,,,
+140,sensations,sports injury recovery,sports injury recovery,groups,False,False,,,,,
+141,sensations,sports injury recovery,athletic injury rehabilitation,groups,True,False,,,,,
+142,sensations,sports injury recovery,recovery from sports-related injuries,groups,True,False,,,,,
+143,sensations,sports injury recovery,healing process for athletic injuries,groups,True,False,,,,,
+144,sensations,daily exercise regimen,daily exercise regimen,groups,False,False,,,,,
+145,sensations,daily exercise regimen,daily workout routine,groups,True,False,,,,,
+146,sensations,daily exercise regimen,everyday fitness schedule,groups,True,False,,,,,
+147,sensations,daily exercise regimen,daily exercise routine,groups,True,False,,,,,
+148,sensations,joint stiffness in mornings,joint stiffness in mornings,groups,False,False,,,,,
+149,sensations,joint stiffness in mornings,morning joint rigidity,groups,True,False,,,,,
+150,sensations,joint stiffness in mornings,stiff joints upon waking,groups,True,False,,,,,
+151,sensations,joint stiffness in mornings,morning joint inflexibility,groups,True,False,,,,,
+152,sensations,posture improvement classes,posture improvement classes,groups,False,False,,,,,
+153,sensations,posture improvement classes,stance enhancement courses,groups,True,False,,,,,
+154,sensations,posture improvement classes,posture betterment workshops,groups,True,False,,,,,
+155,sensations,posture improvement classes,poise refinement training,groups,True,False,,,,,
+156,ingredients,tomato,tomato,names,False,True,"['foods', 'plant-based foods', 'natural foods']",,1.0,0.0,0.0
+157,ingredients,tomato,red fruit,names,True,True,"['foods', 'plant-based foods', 'natural foods']",,1.0,1.0,0.1459468719756668
+158,ingredients,tomato,garden vegetable,names,True,True,"['foods', 'plant-based foods', 'natural foods']",,1.0,0.0,0.13346783705509824
+159,ingredients,tomato,ripe tomato,names,True,True,"['foods', 'plant-based foods', 'natural foods']",,1.0,0.0,0.10213767060693835
+160,ingredients,blueberries,blueberries,names,False,True,"['foods', 'plant-based foods', 'natural foods']",,1.0,0.0,0.0
+161,ingredients,blueberries,blueberry fruit,names,True,True,"['foods', 'plant-based foods', 'natural foods']",,1.0,0.0,0.055425932772142805
+162,ingredients,blueberries,wild blueberries,names,True,True,"['foods', 'plant-based foods', 'natural foods']",,1.0,0.0,0.057086544304933984
+163,ingredients,blueberries,fresh blueberry produce,names,True,True,"['foods', 'plant-based foods', 'natural foods']",,1.0,0.0,0.09612696887996608
+164,ingredients,almonds,almonds,names,False,True,"['foods', 'plant-based foods', 'natural foods']",,1.0,0.0,0.0
+165,ingredients,almonds,almond nuts,names,True,True,"['foods', 'plant-based foods', 'natural foods']",,1.0,0.0,0.04475160725957328
+166,ingredients,almonds,shelled almonds,names,True,True,"['foods', 'plant-based foods', 'natural foods']",,1.0,0.0,0.07402056892121156
+167,ingredients,almonds,raw almonds,names,True,True,"['foods', 'plant-based foods', 'natural foods']",,1.0,0.0,0.07536189154837336
+168,ingredients,foods,foods,groups,False,True,,,0.42857142857142855,6.0,0.17095999474754597
+169,ingredients,foods,edibles,groups,True,True,,,0.42857142857142855,6.0,0.17095999474754597
+170,ingredients,foods,cuisine,groups,True,True,,,0.42857142857142855,6.0,0.16336645119679416
+171,ingredients,foods,nutrition,groups,True,True,,,0.3,9.0,0.16286020377920107
+172,ingredients,plant-based foods,plant-based foods,groups,False,True,,,1.0,2.0,0.1869430395097833
+173,ingredients,plant-based foods,vegan-friendly edibles,groups,True,True,,,0.5,5.0,0.18129380438684428
+174,ingredients,plant-based foods,vegetable-derived meals,groups,True,True,,,0.5,5.0,0.1869430395097833
+175,ingredients,plant-based foods,botanical cuisine,groups,True,True,,,0.5,5.0,0.1869430395097833
+176,ingredients,natural foods,natural foods,groups,False,True,,,1.0,2.0,0.20159497019370942
+177,ingredients,natural foods,whole foods,groups,True,True,,,1.0,2.0,0.20159497019370942
+178,ingredients,natural foods,organic produce,groups,True,True,,,1.0,2.0,0.18863794113272514
+179,ingredients,natural foods,unprocessed edibles,groups,True,True,,,0.42857142857142855,6.0,0.20159497019370942
+180,ingredients,apple orchard visit,apple orchard visit,names,False,False,,,,,
+181,ingredients,apple orchard visit,trip to the apple grove,names,True,False,,,,,
+182,ingredients,apple orchard visit,tour of the apple farm,names,True,False,,,,,
+183,ingredients,apple orchard visit,excursion to the apple plantation,names,True,False,,,,,
+184,ingredients,strawberry picking,strawberry picking,names,False,False,,,,,
+185,ingredients,strawberry picking,harvesting strawberries,names,True,False,,,,,
+186,ingredients,strawberry picking,collecting strawberries from the field,names,True,False,,,,,
+187,ingredients,strawberry picking,gathering fresh strawberries,names,True,False,,,,,
+188,ingredients,peanut butter sandwich,peanut butter sandwich,names,False,False,,,,,
+189,ingredients,peanut butter sandwich,peanut butter and jelly sandwich,names,True,False,,,,,
+190,ingredients,peanut butter sandwich,PB&J sandwich,names,True,False,,,,,
+191,ingredients,peanut butter sandwich,peanut spread on bread,names,True,False,,,,,
+192,ingredients,vegetable gardening,vegetable gardening,names,False,False,,,,,
+193,ingredients,vegetable gardening,growing vegetables,names,True,False,,,,,
+194,ingredients,vegetable gardening,kitchen garden cultivation,names,True,False,,,,,
+195,ingredients,vegetable gardening,edible garden tending,names,True,False,,,,,
+196,ingredients,banana smoothie,banana smoothie,names,False,False,,,,,
+197,ingredients,banana smoothie,banana blend drink,names,True,False,,,,,
+198,ingredients,banana smoothie,creamy banana beverage,names,True,False,,,,,
+199,ingredients,banana smoothie,blended banana concoction,names,True,False,,,,,
+200,ingredients,farmers market visits,farmers market visits,groups,False,False,,,,,
+201,ingredients,farmers market visits,visiting the local farmer's market,groups,True,False,,,,,
+202,ingredients,farmers market visits,trips to the farmers market,groups,True,False,,,,,
+203,ingredients,farmers market visits,farmers market excursions,groups,True,False,,,,,
+204,ingredients,cooking homemade meals,cooking homemade meals,groups,False,False,,,,,
+205,ingredients,cooking homemade meals,preparing home-cooked dishes,groups,True,False,,,,,
+206,ingredients,cooking homemade meals,making meals from scratch,groups,True,False,,,,,
+207,ingredients,cooking homemade meals,whipping up homemade cuisine,groups,True,False,,,,,
+208,ingredients,organic product selection,organic product selection,groups,False,False,,,,,
+209,ingredients,organic product selection,assortment of natural products,groups,True,False,,,,,
+210,ingredients,organic product selection,range of organic goods,groups,True,False,,,,,
+211,ingredients,organic product selection,collection of organic items,groups,True,False,,,,,
+212,ingredients,vegan lifestyle adoption,vegan lifestyle adoption,groups,False,False,,,,,
+213,ingredients,vegan lifestyle adoption,embracing a vegan way of life,groups,True,False,,,,,
+214,ingredients,vegan lifestyle adoption,adopting plant-based living,groups,True,False,,,,,
+215,ingredients,vegan lifestyle adoption,switching to a vegan lifestyle,groups,True,False,,,,,
+216,ingredients,whole grain recipes,whole grain recipes,groups,False,False,,,,,
+217,ingredients,whole grain recipes,whole wheat meal ideas,groups,True,False,,,,,
+218,ingredients,whole grain recipes,recipes with whole grains,groups,True,False,,,,,
+219,ingredients,whole grain recipes,whole grain dish inspiration,groups,True,False,,,,,
+220,true_events,homework due: Discrete Mathematics,homework due: Discrete Mathematics,names,False,True,['academic responsibilities'],The due day for the current homework.,1.0,0.0,0.0
+221,true_events,homework due: Discrete Mathematics,Discrete Mathematics homework submission deadline,names,True,True,['academic responsibilities'],The due day for the current homework.,1.0,0.0,0.10197340469680594
+222,true_events,homework due: Discrete Mathematics,Deadline for Discrete Mathematics assignment,names,True,True,['academic responsibilities'],The due day for the current homework.,1.0,0.0,0.10070359143137264
+223,true_events,homework due: Discrete Mathematics,Discrete Mathematics coursework due date,names,True,True,['academic responsibilities'],The due day for the current homework.,1.0,0.0,0.11313445087880769
+224,true_events,weightlifting,weightlifting,names,False,True,['athletic activities'],Required weightlifting for the Duke basketball team.,1.0,0.0,0.0
+225,true_events,weightlifting,strength training for the Duke basketball team,names,True,True,['athletic activities'],Required weightlifting for the Duke basketball team.,1.0,0.0,0.1851895227431707
+226,true_events,weightlifting,resistance training for Duke's basketball players,names,True,True,['athletic activities'],Required weightlifting for the Duke basketball team.,1.0,0.0,0.20786032863176285
+227,true_events,weightlifting,barbell workouts for the Duke basketball squad,names,True,True,['athletic activities'],Required weightlifting for the Duke basketball team.,1.0,0.0,0.19632784078473609
+228,true_events,class: Computer Programming,class: Computer Programming,names,False,True,"['academic responsibilities', 'duke university routines']",A class on computer programming at Duke University.,1.0,0.0,0.0
+229,true_events,class: Computer Programming,Computer Programming Course,names,True,True,"['academic responsibilities', 'duke university routines']",A class on computer programming at Duke University.,1.0,0.0,0.0853447392043104
+230,true_events,class: Computer Programming,Programming Fundamentals Class,names,True,True,"['academic responsibilities', 'duke university routines']",A class on computer programming at Duke University.,1.0,0.0,0.13428612862257394
+231,true_events,class: Computer Programming,Software Development Lectures,names,True,True,"['academic responsibilities', 'duke university routines']",A class on computer programming at Duke University.,1.0,0.0,0.13905767121041734
+232,true_events,studying,studying,names,False,True,"['academic responsibilities', 'duke university routines']",Studying for classes.,1.0,0.0,0.0
+233,true_events,studying,hitting the books,names,True,True,"['academic responsibilities', 'duke university routines']",Studying for classes.,1.0,0.0,0.0976263345358952
+234,true_events,studying,engaging in coursework,names,True,True,"['academic responsibilities', 'duke university routines']",Studying for classes.,1.0,0.0,0.13328520126859167
+235,true_events,studying,preparing for class,names,True,True,"['academic responsibilities', 'duke university routines']",Studying for classes.,1.0,0.0,0.14344152478638317
+236,true_events,talking on the phone,talking on the phone,names,False,True,['communication methods'],Having a conversation on the phone.,1.0,0.0,0.0
+237,true_events,talking on the phone,speaking over the phone,names,True,True,['communication methods'],Having a conversation on the phone.,1.0,0.0,0.05531052066602049
+238,true_events,talking on the phone,chatting on a call,names,True,True,['communication methods'],Having a conversation on the phone.,1.0,0.0,0.06483066108154911
+239,true_events,talking on the phone,having a telephone conversation,names,True,True,['communication methods'],Having a conversation on the phone.,1.0,0.0,0.06266131851562806
+240,true_events,walking outside,walking outside,names,False,True,['duke university routines'],Going for a walk at Duke Gardens.,1.0,0.0,0.0
+241,true_events,walking outside,strolling through the gardens,names,True,True,['duke university routines'],Going for a walk at Duke Gardens.,1.0,0.0,0.11277820804956029
+242,true_events,walking outside,taking a walk outside,names,True,True,['duke university routines'],Going for a walk at Duke Gardens.,1.0,0.0,0.04093731541312384
+243,true_events,walking outside,wandering around Duke Gardens,names,True,True,['duke university routines'],Going for a walk at Duke Gardens.,1.0,0.0,0.15582527006839708
+244,true_events,breakfast,breakfast,names,False,True,['daily meals'],"The first meal of the day, usually consumed in the morning.",1.0,0.0,0.0
+245,true_events,breakfast,morning meal,names,True,True,['daily meals'],"The first meal of the day, usually consumed in the morning.",1.0,0.0,0.07230010218501981
+246,true_events,breakfast,break of fast,names,True,True,['daily meals'],"The first meal of the day, usually consumed in the morning.",1.0,0.0,0.10983769031788393
+247,true_events,breakfast,first meal of the day,names,True,True,['daily meals'],"The first meal of the day, usually consumed in the morning.",1.0,0.0,0.09681995282594136
+248,true_events,dinner,dinner,names,False,True,['daily meals'],"The third meal of the day, usually consumed in the evening.",1.0,0.0,0.0
+249,true_events,dinner,evening meal,names,True,True,['daily meals'],"The third meal of the day, usually consumed in the evening.",1.0,0.0,0.08181111392292251
+250,true_events,dinner,supper,names,True,True,['daily meals'],"The third meal of the day, usually consumed in the evening.",1.0,0.0,0.1627584966757215
+251,true_events,dinner,nightly feast,names,True,True,['daily meals'],"The third meal of the day, usually consumed in the evening.",1.0,0.0,0.13229042168948435
+252,true_events,lunch,lunch,names,False,True,['daily meals'],"The second meal of the day, usually consumed in the afternoon.",1.0,0.0,0.0
+253,true_events,lunch,midday meal,names,True,True,['daily meals'],"The second meal of the day, usually consumed in the afternoon.",1.0,0.0,0.10131370341817725
+254,true_events,lunch,afternoon feast,names,True,True,['daily meals'],"The second meal of the day, usually consumed in the afternoon.",1.0,0.0,0.1181672935214152
+255,true_events,lunch,noon repast,names,True,True,['daily meals'],"The second meal of the day, usually consumed in the afternoon.",1.0,0.0,0.12100463698701336
+256,true_events,sleep,sleep,names,False,True,['resting periods'],The period of the day outside the waking hours.,1.0,0.0,0.0
+257,true_events,sleep,slumber,names,True,True,['resting periods'],The period of the day outside the waking hours.,1.0,0.0,0.10145327960119899
+258,true_events,sleep,rest,names,True,True,['resting periods'],The period of the day outside the waking hours.,1.0,0.0,0.10921244601515645
+259,true_events,sleep,doze off,names,True,True,['resting periods'],The period of the day outside the waking hours.,1.0,0.0,0.15330073339626982
+260,true_events,academic responsibilities,academic responsibilities,groups,False,True,,,0.5,5.0,0.2270165779617176
+261,true_events,academic responsibilities,scholarly duties,groups,True,True,,,0.5,5.0,0.2270165779617176
+262,true_events,academic responsibilities,educational obligations,groups,True,True,,,0.3333333333333333,8.0,0.2270165779617176
+263,true_events,academic responsibilities,academic tasks,groups,True,True,,,0.42857142857142855,6.0,0.2270165779617176
+264,true_events,athletic activities,athletic activities,groups,False,True,,,1.0,0.0,0.19022665962654073
+265,true_events,athletic activities,sports,groups,True,True,,,0.5,1.0,0.19022665962654073
+266,true_events,athletic activities,physical exercises,groups,True,True,,,1.0,0.0,0.19022665962654073
+267,true_events,athletic activities,fitness activities,groups,True,True,,,1.0,0.0,0.19022665962654073
+268,true_events,duke university routines,duke university routines,groups,False,True,,,0.25,11.0,0.2659416856746252
+269,true_events,duke university routines,Duke University practices,groups,True,True,,,0.5,5.0,0.2475029521530261
+270,true_events,duke university routines,Duke University customs,groups,True,True,,,0.21428571428571427,13.0,0.2659416856746252
+271,true_events,duke university routines,Duke University regular activities,groups,True,True,,,0.2727272727272727,10.0,0.2659416856746252
+272,true_events,communication methods,communication methods,groups,False,True,,,1.0,0.0,0.14605035809688816
+273,true_events,communication methods,communication channels,groups,True,True,,,1.0,0.0,0.14605035809688816
+274,true_events,communication methods,communication techniques,groups,True,True,,,1.0,0.0,0.14605035809688816
+275,true_events,communication methods,methods of communication,groups,True,True,,,1.0,0.0,0.14605035809688816
+276,true_events,daily meals,daily meals,groups,False,True,,,1.0,2.0,0.15389154381799564
+277,true_events,daily meals,daily food intake,groups,True,True,,,1.0,2.0,0.15389154381799564
+278,true_events,daily meals,everyday dishes,groups,True,True,,,1.0,2.0,0.15389154381799564
+279,true_events,daily meals,regular meals,groups,True,True,,,1.0,2.0,0.1510670894988213
+280,true_events,resting periods,resting periods,groups,False,True,,,1.0,0.0,0.18105424963960604
+281,true_events,resting periods,break intervals,groups,True,True,,,0.3333333333333333,2.0,0.18105424963960604
+282,true_events,resting periods,relaxation times,groups,True,True,,,1.0,0.0,0.18105424963960604
+283,true_events,resting periods,downtime phases,groups,True,True,,,1.0,0.0,0.18105424963960604
+284,true_events,jogging in the park,jogging in the park,names,False,False,,,,,
+285,true_events,jogging in the park,running through the park,names,True,False,,,,,
+286,true_events,jogging in the park,going for a jog in the park,names,True,False,,,,,
+287,true_events,jogging in the park,park jogging,names,True,False,,,,,
+288,true_events,project deadline: Software Engineering,project deadline: Software Engineering,names,False,False,,,,,
+289,true_events,project deadline: Software Engineering,software engineering project due date,names,True,False,,,,,
+290,true_events,project deadline: Software Engineering,submission deadline for the software engineering project,names,True,False,,,,,
+291,true_events,project deadline: Software Engineering,deadline for the software engineering project submission,names,True,False,,,,,
+292,true_events,meal prep for the week,meal prep for the week,names,False,False,,,,,
+293,true_events,meal prep for the week,weekly meal preparation,names,True,False,,,,,
+294,true_events,meal prep for the week,food prep for the week,names,True,False,,,,,
+295,true_events,meal prep for the week,organizing meals for the week,names,True,False,,,,,
+296,true_events,taking a power nap,taking a power nap,names,False,False,,,,,
+297,true_events,taking a power nap,grabbing a quick snooze,names,True,False,,,,,
+298,true_events,taking a power nap,having a short sleep,names,True,False,,,,,
+299,true_events,taking a power nap,catching some z's briefly,names,True,False,,,,,
+300,true_events,attending a study group,attending a study group,names,False,False,,,,,
+301,true_events,attending a study group,participating in a study circle,names,True,False,,,,,
+302,true_events,attending a study group,joining a study session,names,True,False,,,,,
+303,true_events,attending a study group,being part of a study collective,names,True,False,,,,,
+304,true_events,social engagements,social engagements,groups,False,False,,,,,
+305,true_events,social engagements,social commitments,groups,True,False,,,,,
+306,true_events,social engagements,community interactions,groups,True,False,,,,,
+307,true_events,social engagements,social activities,groups,True,False,,,,,
+308,true_events,study group sessions,study group sessions,groups,False,False,,,,,
+309,true_events,study group sessions,group study meetings,groups,True,False,,,,,
+310,true_events,study group sessions,collaborative learning sessions,groups,True,False,,,,,
+311,true_events,study group sessions,peer study gatherings,groups,True,False,,,,,
+312,true_events,personal fitness goals,personal fitness goals,groups,False,False,,,,,
+313,true_events,personal fitness goals,individual health objectives,groups,True,False,,,,,
+314,true_events,personal fitness goals,personal exercise targets,groups,True,False,,,,,
+315,true_events,personal fitness goals,private wellness ambitions,groups,True,False,,,,,
+316,true_events,cultural events attendance,cultural events attendance,groups,False,False,,,,,
+317,true_events,cultural events attendance,participation in cultural activities,groups,True,False,,,,,
+318,true_events,cultural events attendance,attendance at cultural functions,groups,True,False,,,,,
+319,true_events,cultural events attendance,engagement in cultural happenings,groups,True,False,,,,,
+320,true_events,family interactions,family interactions,groups,False,False,,,,,
+321,true_events,family interactions,family dynamics,groups,True,False,,,,,
+322,true_events,family interactions,family relationships,groups,True,False,,,,,
+323,true_events,family interactions,family engagements,groups,True,False,,,,,

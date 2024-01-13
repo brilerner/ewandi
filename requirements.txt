@@ -1,7 +1,6 @@
 openai
 pip
-plotly
-python=3.11
+python==3.11
 pymongo
 tenacity
 streamlit-calendar

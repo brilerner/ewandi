@@ -198,45 +198,38 @@ def show_chatbot_tab():
     def plot_to_streamlit(plot):
         st.plotly_chart(plot)
 
-    if "messages" not in st.session_state:
-        # st.write("Resetting messages")
-        st.session_state.messages = []
-    if "user_id" not in st.session_state:
-        st.session_state["user_id"] = "brian"
-    if "client" not in st.session_state:
-        st.session_state["client"] = OpenAI()
-    if "backoff" not in st.session_state:
-        st.session_state["backoff"] = True
-    # display non-tool messages
+    if "session" not in st.session_state:
+        st.session_state["session_started"] = True
+        st.session_state["session"] = CerebraUserSession("brian")
+        session = st.session_state["session"]
+    else:
+        session = st.session_state["session"]
+
     # for message in st.session_state.session.conversation.get_display_messages():
-    for message in st.session_state.messages:
-        # if message["role"] != "system" and message["role"] != "tool":
-        with st.chat_message(message["role"]):
-            st.markdown(message["content"])
+    for message in session.messages:
+        if message["role"] != "system" and message["role"] != "tool":
+            with st.chat_message(message["role"]):
+                st.markdown(message["content"])
 
     # opener = prompts.engine.get_opener()
-    opener = random.choice(openers)
+    # opener = random.choice(openers)
+    opener = "Enter"
     if prompt := st.chat_input(opener):
-        # add user input to conversation
-        st.session_state.messages.append({"role": "user", "content": prompt})
-        # time.sleep(5)
-        # st.session_state.session.conversation.messages.append(
-        #     {"role": "user", "content": prompt}
-        # )
+        session.messages.append({"role": "user", "content": prompt})
 
         with st.chat_message("user"):
             st.markdown(prompt)
 
         with st.chat_message("assistant"):
             message_placeholder = st.empty()
+
             # run request
             message = cerebra_completion_request(
-                st.session_state,
-                # st.session_state.session,
+                session,
                 stream_handler=message_placeholder.markdown,
                 plot_handler=plot_to_streamlit,
             )
-        st.session_state.messages.append(message)
+            session.messages.append(message)
 
         # # (response.choices[0].delta.content or "")
         # def stream_to_streamlit(message_chunk):

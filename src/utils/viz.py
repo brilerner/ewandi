@@ -76,6 +76,7 @@ def get_plotly_figure():
         title="Simulated Data: Sine Wave with Noise",
         xaxis_title="X Axis",
         yaxis_title="Y Axis",
+        height=300,
     )
     return fig
 

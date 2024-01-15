@@ -8,7 +8,7 @@ sys.path.append(root_path)
 import streamlit as st
 
 # st.set_page_config(layout="wide", page_title="Cerebra Demo")
-import plotly.express as px
+import plotly.express as c
 from streamlit_calendar import calendar
 import numpy as np
 from pathlib import Path

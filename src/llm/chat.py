@@ -67,7 +67,8 @@ class Conversation:
         return messages_to_display
 
     def display_conversation(self):
-        from termcolor import colored       
+        from termcolor import colored
+
         role_to_color = {
             "system": "red",
             "user": "green",
@@ -255,7 +256,7 @@ def handle_stream_output(content, stream_handler="print"):
     if stream_handler == "print":
         print(content, end="")
     else:
-        stream_handler(content)
+        stream_handler.markdown(content)
 
 
 def handle_stream_completion(
@@ -282,7 +283,6 @@ def handle_stream_completion(
     previous_content_chunks = []
     raw_chunks = []
     is_tool = False
-    message_to_display = ""
     for i, chunk in enumerate(completion):
         raw_chunks.append(chunk)
         logging.info(chunk)
@@ -309,10 +309,13 @@ def handle_stream_completion(
                         # handle_stream_output(
                         #     previous_content_chunks[-(i + 1)], stream_handler
                 else:
-                    stream_handler("".join(previous_content_chunks))
+                    stream_handler.markdown("".join(previous_content_chunks))
+                    respond(
+                        "".join(previous_content_chunks),
+                        stream_handler,
+                    )
 
-                handle_stream_output(message_to_display, stream_handler)
-
+# MAKE SURE MARKDOWN AND MESSAGE APPENDING ARE BEING PERFORMED CORRECTLY
                 break
 
             content = chunk.choices[0].delta.content
@@ -363,6 +366,7 @@ def run_completion(client, backoff=True, **completions_kwargs):
 
 
 def general_completion_request(
+    prompt,
     session,
     tool_module=None,
     handlers=None,
@@ -385,6 +389,10 @@ def general_completion_request(
     completions_kwargs.update(input_completions_kwargs)
     if tool_module:
         completions_kwargs["tools"] = tool_module.tools
+
+
+    # add the prompt message into the session messages
+    session.messages.append({"role": "user", "content": prompt})
 
     # logging.info(f"Conversation (Pre-Completion): {session.conversation.messages}")
     logging.info(f"Conversation (Pre-Completion): {session.messages}")
@@ -420,16 +428,32 @@ def general_completion_request(
             **input_completions_kwargs,
         )
 
+    session.messages.append(recombined_message)
 
-def cerebra_completion_request(session, stream_handler="print", plot_handler="show"):
+
+def respond(prompt, stream_handler):
+    full_response = ""
+    for r in prompt:
+        time.sleep(0.05)
+        full_response += r
+        stream_handler.markdown(full_response + "▌")
+    stream_handler.markdown(full_response)
+    message = {"role": "assistant", "content": full_response}
+    return message
+
+
+def cerebra_completion_request(prompt, session, stream_handler="print", plot_handler="show"):
     """
     This is where the main error handling is performed.
     This is also where I add in tools and some specificications for the run.
     """
 
+
     handlers = {"stream_handler": stream_handler, "plot_handler": plot_handler}
 
     try:
+        # response = respond("hello", stream_handler)
+        # return response
         general_completion_request(
             session,
             tool_module=my_tools,
@@ -442,49 +466,46 @@ def cerebra_completion_request(session, stream_handler="print", plot_handler="sh
         # session.conversation.messages.append(
         #     {"role": "assistant", "content": err_msg_for_user}
         # )
-        session.messages.append({"role": "assistant", "content": err_msg_for_user})
+        # session.messages.append({"role": "assistant", "content": err_msg_for_user})
         if isinstance(stream_handler, str) and stream_handler == "print":
             print(err_msg_for_user)
         else:
-            stream_handler(err_msg_for_user)
+            respond(err_msg_for_user, stream_handler, session)
+        return {"role": "assistant", "content": err_msg_for_user}
 
 
-def start_cerebra_session(userid=None, conversation=None, backoff=True):
-    class UserSession:
-        def __init__(self, userid=None, conversation=None, backoff=True):
-            self.userid = userid
-            self.add_userid_if_missing()
-            self.conversation = conversation
-            self.backoff = backoff
-            self.client = OpenAI()
+class CerebraUserSession:
+    def __init__(self, userid=None):
+        self.userid = userid
+        self.add_userid_if_missing()
+        self.conversation = self.start_cerebra_conversation()
+        self.messages = self.conversation.messages
+        self.backoff = True
+        self.client = OpenAI()
 
-            # set up logging
-            setup_logging(__file__, self.userid)
-            # set up tmp dir
-            self.setup_tmp_dir()
+        # set up logging
+        setup_logging(__file__, self.userid)
+        # set up tmp dir
+        self.setup_tmp_dir()
 
-        def add_userid_if_missing(self):
-            def generate_userid():
-                import uuid
+    def add_userid_if_missing(self):
+        def generate_userid():
+            import uuid
 
-                return str(uuid.uuid4())[:8]
+            return str(uuid.uuid4())[:8]
 
-            if not self.userid:
-                self.userid = generate_userid()
+        if not self.userid:
+            self.userid = generate_userid()
 
-        def setup_tmp_dir(self):
-            save_dir = Path(root_path) / "tmp" / self.userid / "plots"
-            if not save_dir.exists():
-                save_dir.mkdir(parents=True, exist_ok=True)
+    def setup_tmp_dir(self):
+        save_dir = Path(root_path) / "tmp" / self.userid / "plots"
+        if not save_dir.exists():
+            save_dir.mkdir(parents=True, exist_ok=True)
 
-    def start_cerebra_conversation(userid=None):
+    def start_cerebra_conversation(self):
         conversation = Conversation()
         conversation.add_message("system", engine_prompts.system)
         return conversation
-
-    session = UserSession(userid=userid, backoff=backoff)
-    session.conversation = start_cerebra_conversation(userid)
-    return session
 
 
 def cerebra_test_run(userid=None):

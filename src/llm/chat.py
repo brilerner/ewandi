@@ -1,9 +1,11 @@
 import sys
 from pathlib import Path
+import streamlit as st
 
 root_path = str(Path(__file__).resolve().parent.parent)
 sys.path.append(root_path)
 
+# nqs
 import logging
 from utils.logging_setup import setup_logging
 from utils.viz import (
@@ -15,7 +17,7 @@ from utils.errors import (
     ArgumentParseError,
     handle_error,
 )
-
+from utils.placeholders import extract_placeholder
 import prompts.engine as engine_prompts
 
 # from utils.chat import Conversation
@@ -27,38 +29,141 @@ from tenacity import (
     stop_after_attempt,
     wait_random_exponential,
 )  # for exponential backoff
-
+from utils.viz import get_plotly_figure
 
 # GPT_MODEL = "gpt-3.5-turbo-0613"
 GPT_MODEL = "gpt-4-1106-preview"
 
-
-# def main_function(self):
-#     # You can access self.userid here
-#     self.nested_function()
-
-# def nested_function(self):
-#     # userid is accessible here as well
-#     print(f"The userid is {self.userid}")
 import time
+
+
+### HANDLERS
+
+
+class Message:
+    """
+    Creates a message.
+    Each message is a dictionary with role and content keys.
+    The content value is a list of dicts, each of which has a type and content key.
+    The order of the list determines the order of the elements in the message.
+    A message can include text, figures, and other elements.
+    It is independent of the display method.
+    """
+
+    def __init__(self, role, first_text=None):
+        self.role = role
+        self.content = []
+        if first_text:
+            self.add_text(first_text)
+
+    def add_text(self, text):
+        self.content.append({"type": "text", "content": text})
+
+    def add_figure(self, figure, placeholder=None):
+        self.content.append(
+            {"type": "figure", "content": figure, "placeholder": placeholder}
+        )
+
+    def add_dict(self, dict):
+        self.content.append(dict)
+
+    def display(self):
+        for element in self.content:
+            if element["type"] == "text":
+                print(element["content"], end="")
+            elif element["type"] == "figure":
+                element["content"].show()
+
+    # I need to figure out how to handle this with plots
+    def api_message(self):
+        text_elements = [e["content"] for e in self.content if e["type"] == "text"]
+        full_text = "".join(text_elements)
+        return {"role": self.role, "content": full_text}
+
+    # def __repr__(self):
+    #     return f"{self.role}: {self.content}"
+
+    # def __str__(self):
+    #     return f"{self.role}: {self.content}"
+
+    # def __dict__(self):
+    #     return {"role": self.role, "content": self.content}
+
+    # def __getitem__(self, key):
+    #     return self.__dict__()[key]
+
+
+class StreamlitMessage(Message):
+    """
+    Creates a message.
+    Each message is a dictionary with role and content keys.
+    The content value is a list of dicts, each of which has a type and content key.
+    The order of the list determines the order of the elements in the message.
+    A message can include text, figures, and other elements.
+    It is independent of the display method.
+    This subclass also deals with handling plots...
+    """
+
+    def __init__(self, role, first_text=None):
+        super().__init__(role, first_text)
+        # self.full_message = {"role": role, "content": content}
+        # self.content = self.message["content"]  # for convenience
+
+    # def add_text(self, text):
+    #     self.content.append({"type": "text", "content": text})
+    def add_text(self, text):
+        # I need to figure out how to update the last text message
+        if self.content and self.content[-1]["type"] == "text":
+            self.content[-1]["content"] += text
+            # self.content[-1]["content"] = text
+        else:
+            self.content.append({"type": "text", "content": text})
+
+    def add_figure(self, figure, placeholder=None):
+        self.content.append(
+            {"type": "figure", "content": figure, "placeholder": placeholder}
+        )
+
+    def add_dict(self, dict):
+        self.content.append(dict)
+
+    def display(self):
+        # with st.container(): # NECESSAry? cl
+        for element in self.content:
+            if element["type"] == "text":
+                st.markdown(element["content"])
+            elif element["type"] == "figure":
+                st.plotly_chart(element["content"])
+
+    def streamlit_message(self):
+        return {"role": self.role, "content": self.content}
 
 
 class Conversation:
     """
-    First message is a system message
+    Creates a conversation that is used as an argument for the OpenAI API call.
+    First message is a system message.
+    Only system and user should use add_text_message.
+    Assistant and tool should be formatted correctly upon return of the API call.
     """
 
     def __init__(self):
         self.messages = []
 
-    def add_message(self, role, content):
+    def add_text_message(self, role, content):
         message = {"role": role, "content": content}
         self.messages.append(message)
+
+    def add_obj_message(self, message):
+        self.messages.append(message.api_message())
+
+    def add_tool_response(self, tool_response):
+        self.messages.append(tool_response)
 
     def get_display_messages(self):
         messages_to_display = []
         for message in self.messages:
-            logging.info(f"message : {message}")
+            # logging.info(f"message : {message}")
             if not isinstance(message, dict):
                 message = dict(message)
             if message["role"] != "system" and message["role"] != "tool":
@@ -66,7 +171,7 @@ class Conversation:
                 messages_to_display.append(message)
         return messages_to_display
 
-    def display_conversation(self):
+    def display(self):
         from termcolor import colored
 
         role_to_color = {
@@ -77,7 +182,7 @@ class Conversation:
         }
 
         for message in self.messages:
-            if type(message) != dict:
+            if not isinstance(message, dict):
                 message = dict(message)
             if message["role"] == "system":
                 print(
@@ -115,7 +220,302 @@ class Conversation:
                 )
 
 
-def format_tool_response(recombined_message, tool_module, userid):
+class StreamlitConversation(Conversation):
+    """
+    Extends the Conversation class to properly format/filter messages for display in Streamlit.
+    """
+
+    def __init__(self):
+        super().__init__()
+        self.streamlit_messages = []
+
+    def add_text_message(self, role, text):
+        super().add_text_message(role, text)
+        message = StreamlitMessage(role, text)
+        if role in ["user", "assistant"]:
+            self.streamlit_messages.append(message)
+
+    def add_obj_message(self, message):
+        super().add_obj_message(message)
+        self.streamlit_messages.append(message)
+
+    def display(self):
+        """
+        I've previously filtered out the messages that are not system or tool.
+        """
+        for message in self.streamlit_messages:
+            # if message["role"] != "system" and message["role"] != "tool":
+            # if message.role != "system" and message["role"] != "tool":
+            # with st.chat_message(message["role"]):
+            with st.chat_message(message.role):
+                message.display()
+
+
+class CerebraUser:
+    def __init__(self, userid=None):
+        self.userid = userid
+        self.add_userid_if_missing()
+        # set up logging
+        setup_logging(__file__, self.userid)
+        # set up tmp dir
+        self.setup_tmp_dir()
+
+    def add_userid_if_missing(self):
+        def generate_userid():
+            import uuid
+
+            return str(uuid.uuid4())[:8]
+
+        if not self.userid:
+            self.userid = generate_userid()
+
+    def setup_tmp_dir(self):
+        save_dir = Path(root_path) / "tmp" / self.userid / "plots"
+        if not save_dir.exists():
+            save_dir.mkdir(parents=True, exist_ok=True)
+
+
+class Session:
+    def __init__(self, userid):
+        self.user = CerebraUser(userid)
+        self.conversation = self.start_conversation()
+        self.conversation.add_text_message("system", engine_prompts.system)
+        self.backoff = True
+        self.client = OpenAI()
+        self.model = "gpt-4-1106-preview"
+        self.stream_handler_class = PrintStreamHandler
+        self.tool_module = my_tools
+
+    def start_conversation(self):
+        return Conversation()
+
+    def completion_request(self, prompt):
+        """
+        This is where the main error handling is performed.
+        This is also where I add in tools and some specificications for the run.
+        """
+        try:
+            general_completion_request(
+                self,
+                prompt,
+            )
+
+        except Exception as e:
+            raise
+            err_msg_for_user = handle_error(e)
+            self.respond_to_error(err_msg_for_user)
+
+    def respond(self, text):
+        stream_handler = self.stream_handler_class()
+        for r in text:
+            time.sleep(0.05)
+            stream_handler.add_text(r)
+        stream_handler.finish()
+        self.conversation.add_obj_message(stream_handler)
+
+    def respond_to_error(self, error_message):
+        self.conversation.add_text_message("user", error_message)
+        self.respond(error_message)
+
+
+class StreamlitSession(Session):
+    def __init__(self, userid):
+        super().__init__(userid)
+        self.stream_handler_class = StreamlitStreamHandler
+
+    def start_conversation(self):
+        return StreamlitConversation()
+
+
+# class CoreStreamHandler(Message):
+#     """
+#     Needs to used by Streamlit or Print classes
+
+#     """
+
+#     def __init__(self):
+#         super().__init__("assistant")
+
+#     def add_text(self, text):
+#         super().add_text(text)
+#         self._update()
+
+#     def add_figure(self, figure):
+#         super().add_figure(figure)
+#         self._update()
+
+
+class StreamlitStreamHandler(StreamlitMessage):
+    """
+    This function is used each time an assistant message is expected from the API call.
+    As the stream is processed, the current message needs to be updated, and when the stream is finished, the message needs to be added to the conversation.
+    There is clearly some overlap between this and the StreamlitConversation class.
+
+    """
+
+    def __init__(self):
+        super().__init__("assistant")
+        self.streamlit_container = st.empty()
+        self.in_progress_symb = "▌"
+        # self.message = StreamlitMessage("assistant")
+
+    # can I integrate with "core handler" later?
+    def add_text(self, text):
+        super().add_text(text)
+        self._update()
+
+    def add_figure(self, figure, placeholder=None):
+        super().add_figure(figure, placeholder=placeholder)
+        self._update()
+
+    def add_dict(self, dict):
+        super().add_dict(dict)
+        self._update()
+
+    def _update(self):
+        self.streamlit_container.empty()
+        # adding small sleep seems to be nec: see https://discuss.streamlit.io/t/using-st-empty/29509
+        time.sleep(0.000001)  # necessart
+        # time.sleep(2)  # necessart
+        with self.streamlit_container.container():
+            self.display()
+
+    def display(self):
+        # with st.container(): # NECESSAry? clreak
+        def break_up(content):
+            parts = []
+            current_text = ""
+            for element in content:
+                if element["type"] == "text":
+                    current_text += element["content"]
+                elif element["type"] == "figure":
+                    parts.append({"type": "text", "content": current_text})
+                    parts.append(element)
+                    current_text = ""
+            if current_text:
+                parts.append({"type": "text", "content": current_text})
+            return parts
+
+        for i, element in enumerate(break_up(self.content)):
+            # for i, element in enumerate(self.content):
+            if element["type"] == "text":
+                if i == len(self.content) - 1:
+                    st.markdown(element["content"] + self.in_progress_symb)
+                else:
+                    st.markdown(element["content"])
+            elif element["type"] == "figure":
+                st.plotly_chart(element["content"])
+
+    # def display(self):
+    #     # with st.container(): # NECESSAry? cl
+    #     for i, element in enumerate(self.content):
+    #         if element["type"] == "text":
+    #             if i == len(self.content) - 1:
+    #                 st.markdown(element["content"] + self.in_progress_symb)
+    #             else:
+    #                 st.markdown(element["content"])
+    #         elif element["type"] == "figure":
+    #             st.plotly_chart(element["content"])
+
+    def finish(self):
+        pass
+        # self.streamlit_container.empty()
+        # time.sleep(0.01)  # necessart
+        # with self.streamlit_container.container():
+        #     super().display()
+
+
+class PrintStreamHandler(Message):
+    """
+    This function is used each time an assistant message is expected from the API call.
+    As the stream is processed, the current message needs to be updated, and when the stream is finished, the message needs to be added to the conversation.
+    There is clearly some overlap between this and the StreamlitConversation class.
+
+    """
+
+    def __init__(self):
+        super().__init__("assistant")
+
+    def add_text(self, text):
+        super().add_text(text)
+        self._update()
+
+    def add_figure(self, figure, placeholder=None):
+        super().add_figure(figure, placeholder=placeholder)
+        self._update()
+
+    def _update(self):
+        self.display()
+
+    def add_dict(self, dict):
+        super().add_dict(dict)
+        self._update()
+
+    def display(self):
+        current = self.content[-1]
+        if current["type"] == "text":
+            print(current["content"], end="")
+        elif current["type"] == "figure":
+            current["content"].show()
+
+    def finish(self):
+        pass
+
+
+### CHATTING
+
+
+def reprocess_chunks(session, content, placeholder):
+    content_strings = [e["content"] for e in content]
+
+    combined = "".join(content_strings)
+
+    first_index = combined.find(placeholder)
+    last_index = first_index + len(placeholder) - 1
+    placeholder_indices = list(range(first_index, last_index + 1))
+
+    # get first and last chunk index
+    index_counter = 0
+    for i, chunk in enumerate(content_strings):
+        for char in chunk:
+            if index_counter == first_index:
+                first_chunk_index = i
+            if index_counter == last_index:
+                last_chunk_index = i
+            index_counter += 1
+
+    # get modified chunks
+    index_counter = 0
+    modified_chunks = []
+    for i, chunk in enumerate(content_strings):
+        new_chunk = ""
+        for char in chunk:
+            if i >= first_chunk_index or i <= last_chunk_index:
+                if index_counter in placeholder_indices:
+                    pass
+                else:
+                    new_chunk += char
+            else:
+                new_chunk += char
+            index_counter += 1
+        modified_chunks.append(new_chunk)
+
+    # now make each chunk a dictionaru
+    modified_chunks = [{"type": "text", "content": chunk} for chunk in modified_chunks]
+
+    # add in figure
+    modified_chunks.insert(
+        last_chunk_index,
+        {
+            "type": "figure",
+            "placeholder": placeholder,
+            "content": load_temp_plot(session, placeholder),
+        },
+    )
+    return modified_chunks
+
+
+def get_tool_response(session, message):
     """
     This is where the value is retrieved
     """
@@ -132,7 +532,7 @@ def format_tool_response(recombined_message, tool_module, userid):
 
     def call_function(function_name, all_args, userid):
         def extract_args_kwargs(function_name, all_args):
-            for tool in tool_module.tools:
+            for tool in session.tool_module.tools:
                 if (
                     tool["type"] == "function"
                     and tool["function"]["name"] == function_name
@@ -154,9 +554,9 @@ def format_tool_response(recombined_message, tool_module, userid):
 
         args, kwargs = extract_args_kwargs(function_name, all_args)
         args = [userid] + args
-        return getattr(tool_module, function_name)(*args, **kwargs)
+        return getattr(session.tool_module, function_name)(*args, **kwargs)
 
-    tool_call = get_value(recombined_message, "tool_calls")[0]
+    tool_call = get_value(message, "tool_calls")[0]
     id = get_value(tool_call, "id")
     function = get_value(tool_call, "function")
     function_name = get_value(function, "name")
@@ -168,7 +568,7 @@ def format_tool_response(recombined_message, tool_module, userid):
     # except:
     #     raise Exception(f"Unable to parse arguments: {arguments_string}")
 
-    content = call_function(function_name, arguments, userid)
+    content = call_function(function_name, arguments, session.userid)
     # need to make into str?
     tool_message = {
         "tool_call_id": id,
@@ -184,10 +584,10 @@ def general_recombine(chunks, role="assistant"):
     Role should be redefined but this works for now.
     """
     msg = {"role": role, "content": ""}
-    finish_reason = None
+    # finish_reason = None
     for chunk in chunks:
-        if chunk.choices[0].finish_reason:
-            finish_reason = chunk.choices[0].finish_reason
+        # if chunk.choices[0].finish_reason:
+        # finish_reason = chunk.choices[0].finish_reason
 
         d = chunk.choices[0].delta
         if content := d.content:
@@ -216,161 +616,170 @@ def general_recombine(chunks, role="assistant"):
     if msg.get("tool_calls"):
         msg["tool_calls"][0]["type"] = "function"
 
-    return finish_reason, msg
+    return msg
 
 
-def remove_word_and_rechunk(chunks, word):
-    # Combine chunks into a single string
-    combined = "".join(chunks)
+class ChunkHandler:
+    def __init__(self, session, completion_generator, delay=4):
+        self.session = session
+        self.completion_generator = completion_generator
+        self.delay = delay
+        self.first_chunk = next(completion_generator)
+        self.is_tool = self.check_if_tool_response(self.first_chunk)
+        self.raw_chunks = []
+        self.message = self.session.stream_handler_class()  # message
+        self.buffer_message = Message("assistant")
+        self.buffer_index = 0
 
-    # Remove the specified word and keep track of the indices where it was removed
-    removal_indices = []
-    start = 0
-    while start < len(combined):
-        index = combined.find(word, start)
-        if index == -1:
-            break
-        removal_indices.extend(range(index, index + len(word)))
-        start = index + 1
+    def check_if_tool_response(self, chunk):
+        if chunk.choices[0].delta.tool_calls:
+            return True
 
-    # Break the modified string back into chunks
-    new_chunks = []
-    start = 0
-    for chunk in chunks:
-        new_chunk = ""
-        for i in range(start, start + len(chunk)):
-            if i not in removal_indices:
-                new_chunk += combined[i] if i < len(combined) else ""
-        new_chunks.append(new_chunk)
-        start += len(chunk)
+    def stream_buffer(self, i):
+        self.message.add_dict(self.buffer_message.content[i])
 
-    return new_chunks
-
-
-def handle_tool_stream(completion):
-    for i, chunk in enumerate(completion):
-        logging.info(chunk)
-
-
-def handle_stream_output(content, stream_handler="print"):
-    if stream_handler == "print":
-        print(content, end="")
-    else:
-        stream_handler.markdown(content)
-
-
-def handle_stream_completion(
-    session,
-    completion,
-    placeholder=None,
-    tool_module=None,
-    stream_handler="print",
-    plot_handler="show",
-):
-    """
-    handle_plot enables the plot to display during streaming
-    """
-
-    def handle_plot(session, placeholder):
-        fig = load_temp_plot(session, placeholder)
-        if plot_handler == "show":
-            fig.show()
+    def process_chunks(self):
+        self.process_single_chunk(self.first_chunk)
+        self.raw_chunks.append(self.first_chunk)
+        if self.is_tool:
+            self.process_tool_chunks()
         else:
-            plot_handler(placeholder)
+            self.process_assistant_chunks()
+        message = general_recombine(self.raw_chunks)
+        logging.info(f"message: {message}")
 
-    current_message = ""
-    delay = 4
-    previous_content_chunks = []
-    raw_chunks = []
-    is_tool = False
-    for i, chunk in enumerate(completion):
-        raw_chunks.append(chunk)
-        logging.info(chunk)
+    def process_single_chunk(self, chunk):
+        """
+        I need to keep track of a few things.
+        A response is ready to be printed/processed when (i>=delay -->chunk[i-delay])
+        then I need to add
+        """
 
-        # check if tool response; use first since last chunk has no tools, just finish reason = tool calls
-        if i == 0:
-            if chunk.choices[0].delta.tool_calls:
-                is_tool = True
-                continue
+        def split_content(elements):
+            for i, element in enumerate(elements[::-1]):
+                if element.get("placeholder"):
+                    break
+            return elements[: -i + 1], elements[-i + 1 :]
 
-        # if not tool response, handle as normal
-        if is_tool:
-            pass  # recombine can handle all the chunks
-            # if finish_reason == "stop":
-            #     break
+        def parse_buffer():
+            # split up the content at any previous placeholders and adjust the buffer content
+            # logging.info(f"pre buff message: {self.buffer_message.content}")
+            inactive_content, active_content = split_content(
+                self.buffer_message.content
+            )
+            active_message_text = "".join([e["content"] for e in active_content])
+            if placeholder := extract_placeholder(active_message_text):
+                self.buffer_index += 1
+                active_content = reprocess_chunks(active_content, placeholder)
+            self.buffer_message.content = inactive_content + active_content
+            # logging.info(f"post buff message: {self.buffer_message.content}")
 
-        else:
-            finish_reason = chunk.choices[0].finish_reason
-            if finish_reason == "stop":
-                if stream_handler == "print":
-                    for i in list(range(delay))[::-1]:
-                        time.sleep(0.1)
-                        print(previous_content_chunks[-(i + 1)], end="")
-                        # handle_stream_output(
-                        #     previous_content_chunks[-(i + 1)], stream_handler
-                else:
-                    stream_handler.markdown("".join(previous_content_chunks))
-                    respond(
-                        "".join(previous_content_chunks),
-                        stream_handler,
-                    )
+        # add to buffer
+        content = chunk.choices[0].delta.content
+        if isinstance(content, str):
+            self.buffer_message.add_text(content)
+            parse_buffer()
 
-# MAKE SURE MARKDOWN AND MESSAGE APPENDING ARE BEING PERFORMED CORRECTLY
+    # """
+    #     chunks = 10
+    #     delay  = 4
+    #     for 0-9, first process: 4, 5, 6, 7, 8, 9
+    #     so stream_buffer 0,1,2,3,4,5
+    #     for i range(10-4, 10)=range(6,10)
+    #     for in rang
+    # """
+    def process_assistant_chunks(self):
+        for i, chunk in enumerate(self.completion_generator):
+            if chunk.choices[0].finish_reason == "stop":
                 break
+            i += 1  # since first chunk is already processed
+            self.raw_chunks.append(chunk)
+            self.process_single_chunk(chunk)
+            if i >= self.delay:
+                # stream the buffer
+                self.stream_buffer(i - self.delay)
+                # display up to this point
 
-            content = chunk.choices[0].delta.content
-            current_message += content
-            previous_content_chunks.append(content)
+        # process after delay
+        for i in range(len(self.raw_chunks) - self.delay, len(self.raw_chunks)):
+            self.process_single_chunk(self.raw_chunks[i])
+            self.stream_buffer(i)
 
-            if i < delay:
-                pass
-            else:
-                if placeholder and (placeholder in current_message):
-                    handle_plot(session, placeholder)
-                    # previous_content_chunks[0] = previous_content_chunks[0].strip()
-                    previous_content_chunks = remove_word_and_rechunk(
-                        previous_content_chunks, placeholder
-                    )
-                if stream_handler == "print":
-                    print(previous_content_chunks[i - delay], end="")
-                else:
-                    stream_handler("".join(previous_content_chunks) + "▌")
-                # handle_stream_output(message_to_display + "▌", stream_handler)
-                # handle_stream_output(previous_content_chunks[i - delay], stream_handler)
-    #
-    finish_reason, recombined_message = general_recombine(raw_chunks)
-    # append intial tool response
-    session.messages.append(recombined_message)
-    # session.conversation.messages.append(recombined_message)
-    if finish_reason == "tool_calls":
-        recombined_message = format_tool_response(
-            recombined_message, tool_module, session.userid
-        )
-        session.messages.append(recombined_message)
-    logging.info(f"RECOMBINED: {recombined_message}")
-    return finish_reason, recombined_message
+        # process leftover buffer
+        for i in range(-self.buffer_index, 0):
+            self.stream_buffer(i)
+
+        logging.info(f"buffer length: {len(self.buffer_message.content)}")
+        logging.info(f"length of raw chunks: {len(self.raw_chunks)}")
+        # finish and add message to the conversation
+        # self.message.finish()
+        self.session.conversation.add_obj_message(self.message)
+
+    def process_tool_chunks(self):
+        for i, chunk in enumerate(self.completion_generator):
+            i += 1  # since first chunk is already processed
+            self.raw_chunks.append(chunk)
+
+        message = general_recombine(self.raw_chunks)
+        tool_response = get_tool_response(self.session, message)
+        self.session.conversation.add_tool_response(tool_response)
 
 
-def run_completion(client, backoff=True, **completions_kwargs):
-    if backoff:
+def process_completion(session, **input_completions_kwargs):
+    def prepare_completion_generator(session, **input_completions_kwargs):
+        # refine args/kwargs
+        completions_kwargs = {
+            "model": session.model,
+            "messages": getattr(session.conversation, "messages", None),
+            "stream": True,
+            "tools": getattr(session, "tools", None),
+        }
+        completions_kwargs.update(input_completions_kwargs)
+        client = session.client
 
-        @retry(wait=wait_random_exponential(min=1, max=60), stop=stop_after_attempt(6))
-        def completion_func():
-            return client.chat.completions.create(**completions_kwargs)
-    else:
+        # can I make this less clunky?
+        if session.backoff:
 
-        def completion_func():
-            return client.chat.completions.create(**completions_kwargs)
+            @retry(
+                wait=wait_random_exponential(min=1, max=60), stop=stop_after_attempt(6)
+            )
+            def completion_func():
+                return client.chat.completions.create(**completions_kwargs)
+        else:
 
-    return completion_func()
+            def completion_func():
+                return client.chat.completions.create(**completions_kwargs)
+
+        return completion_func()
+
+    def parse_stream(
+        session,
+        completion,
+    ):
+        """
+        When I process a chunk, I need to do the following things.
+        First, I need to see whether it is a tool response.
+        If it is a tool response, I skip over most of the processing.
+        For non-tool response, I print out the message.
+        """
+
+        # intialize stream handler
+        # stream_handler = session.stream_handler_class()
+        # get the first chunk and see if it is a tool response
+        chunk_handler = ChunkHandler(session, completion, delay=2)
+        chunk_handler.process_chunks()
+
+    # get completion generator
+    completion_generator = prepare_completion_generator(
+        session, **input_completions_kwargs
+    )
+    # now parse the stream
+    parse_stream(session, completion_generator)
 
 
 def general_completion_request(
-    prompt,
     session,
-    tool_module=None,
-    handlers=None,
-    placeholder=None,
+    prompt=None,
     **input_completions_kwargs,
 ):
     """
@@ -379,153 +788,21 @@ def general_completion_request(
     The placeholder is generated when a tool response is parsed.
     The placeholder is extracted when the assistant response to the tool is parsed.
     """
-    # update defaults
-    completions_kwargs = {
-        "model": GPT_MODEL,
-        "messages": session.messages,
-        # "messages": session.conversation.messages,
-        "stream": True,
-    }
-    completions_kwargs.update(input_completions_kwargs)
-    if tool_module:
-        completions_kwargs["tools"] = tool_module.tools
 
+    if prompt:
+        session.conversation.add_text_message("user", prompt)
 
-    # add the prompt message into the session messages
-    session.messages.append({"role": "user", "content": prompt})
-
-    # logging.info(f"Conversation (Pre-Completion): {session.conversation.messages}")
-    logging.info(f"Conversation (Pre-Completion): {session.messages}")
-
-    # get completion generator
-    completion = run_completion(session.client, session.backoff, **completions_kwargs)
+    logging.info(f"Conversation (Pre-Completion): {session.conversation.messages}")
 
     # parse completion
-    if completions_kwargs["stream"]:
-        finish_reason, recombined_message = handle_stream_completion(
-            session, completion, placeholder, tool_module=tool_module, **handlers
-        )
-    else:
-        # logging.info(completion)
-        # content = completion.choices[0].message.content
-        print("Non-streaming not currently supported.")
-        raise NotImplementedError
+    process_completion(session, **input_completions_kwargs)
 
-    # always append
-    # session.conversation.messages.append(recombined_message)
-    # session.messages.append(recombined_message)
-
-    placeholder = None  # just in case
     # determine if resubmit; can further specify resubmit conditions
-    if finish_reason == "tool_calls":
-        placeholder = recombined_message["content"].get("placeholder")
-        recombined_message["content"] = str(recombined_message["content"])
+    if session.conversation.messages[-1]["role"] == "tool":
         general_completion_request(
             session,
-            tool_module,
-            handlers=handlers,
-            placeholder=placeholder,
             **input_completions_kwargs,
         )
-
-    session.messages.append(recombined_message)
-
-
-def respond(prompt, stream_handler):
-    full_response = ""
-    for r in prompt:
-        time.sleep(0.05)
-        full_response += r
-        stream_handler.markdown(full_response + "▌")
-    stream_handler.markdown(full_response)
-    message = {"role": "assistant", "content": full_response}
-    return message
-
-
-def cerebra_completion_request(prompt, session, stream_handler="print", plot_handler="show"):
-    """
-    This is where the main error handling is performed.
-    This is also where I add in tools and some specificications for the run.
-    """
-
-
-    handlers = {"stream_handler": stream_handler, "plot_handler": plot_handler}
-
-    try:
-        # response = respond("hello", stream_handler)
-        # return response
-        general_completion_request(
-            session,
-            tool_module=my_tools,
-            model=GPT_MODEL,
-            handlers=handlers,
-        )
-
-    except Exception as e:
-        err_msg_for_user = handle_error(e)
-        # session.conversation.messages.append(
-        #     {"role": "assistant", "content": err_msg_for_user}
-        # )
-        # session.messages.append({"role": "assistant", "content": err_msg_for_user})
-        if isinstance(stream_handler, str) and stream_handler == "print":
-            print(err_msg_for_user)
-        else:
-            respond(err_msg_for_user, stream_handler, session)
-        return {"role": "assistant", "content": err_msg_for_user}
-
-
-class CerebraUserSession:
-    def __init__(self, userid=None):
-        self.userid = userid
-        self.add_userid_if_missing()
-        self.conversation = self.start_cerebra_conversation()
-        self.messages = self.conversation.messages
-        self.backoff = True
-        self.client = OpenAI()
-
-        # set up logging
-        setup_logging(__file__, self.userid)
-        # set up tmp dir
-        self.setup_tmp_dir()
-
-    def add_userid_if_missing(self):
-        def generate_userid():
-            import uuid
-
-            return str(uuid.uuid4())[:8]
-
-        if not self.userid:
-            self.userid = generate_userid()
-
-    def setup_tmp_dir(self):
-        save_dir = Path(root_path) / "tmp" / self.userid / "plots"
-        if not save_dir.exists():
-            save_dir.mkdir(parents=True, exist_ok=True)
-
-    def start_cerebra_conversation(self):
-        conversation = Conversation()
-        conversation.add_message("system", engine_prompts.system)
-        return conversation
-
-
-def cerebra_test_run(userid=None):
-    session = start_cerebra_session(userid=userid, backoff=True)
-
-    user_prompt = "What is the average for sleep?"
-    session.conversation.add_message("user", user_prompt)
-
-    # run request
-    logging.info("SESSION STARTING")
-    cerebra_completion_request(session)  # **handlers)
-
-
-if __name__ == "__main__":
-    """
-    to
-    Integrate with streamlit in simple app
-    """
-
-    cerebra_test_run(userid="brian")
 
 
 #### simple
@@ -541,17 +818,16 @@ def get_completion(prompt, model="gpt-4", response_format=None):
     return response.choices[0].message.content
 
 
-# system_prompt = """Prepare for two pieces of information: a description of a plot and a code for that plot. The code will be "PH-" followed by four integers. Please respond with an elaborated description of the plot. Within this description, please include the code for the plot at a place where it should ideally be shown. The code must occur in between sentences or after the period of the last sentence with no period after the code. Respond concisely.
-# """
+def fake_respond(prompt, session):
+    stream_handler = session.stream_handler_class()
+    fig = get_plotly_figure()
+    session.conversation.add_text_message("user", prompt)
 
-# plot_description = f"""Description: This plot shows a sine wave with noise. The x-axis is labeled "X Axis" and the y-axis is labeled "Y Axis". The title of the plot is "Simulated Data: Sine Wave with Noise"." Code: {placeholder}"""
-
-# simple_prompt = f"""This is a test prompt. Please respond with a short sentence, followed by this string directly after the period with no space: "{placeholder}"."""
-
-# joke_prompt = """Tell a joke about a banana."""
-# fig = get_plotly_figure()
-# placeholder = save_temp_plot(fig)
-# conv.add_message("user", "Hello, how are you?")
-# conv.add_message("system", system_prompt)
-# conv.add_message("user", plot_description)
-# conv.add_message("user", simple_prompt)
+    full_response = ""
+    for r in prompt:
+        full_response += r
+        time.sleep(0.05)
+        stream_handler.add_text(r)
+    stream_handler.add_figure(fig)
+    stream_handler.finish()
+    session.conversation.add_obj_message(stream_handler)

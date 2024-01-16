@@ -1,0 +1,2 @@
+2024-01-15 21:28:25,531 - INFO - SESSION STARTING
+2024-01-15 21:28:25,532 - ERROR - Unexpected error: 'Session' object has no attribute 'messages'

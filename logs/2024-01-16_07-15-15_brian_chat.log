@@ -1,0 +1,5 @@
+2024-01-16 07:15:15,169 - INFO - Conversation (Pre-Completion): [{'role': 'system', 'content': "You are Cerebra, a helpful assistant that pulls a user's personal data to help them know themselves better. You answer the user's question concisely and helpfully.\nYou always provide the stored name of the accessed data so the user can understand the process better.\nBegin!"}, {'role': 'user', 'content': "Here's the first prompt"}]
+2024-01-16 07:15:15,860 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-01-16 07:15:17,737 - INFO - buffer length: 40
+2024-01-16 07:15:17,737 - INFO - length of raw chunks: 37
+2024-01-16 07:15:17,737 - INFO - message: {'role': 'assistant', 'content': "Certainly! Please provide me with the prompt or question you have, and I'll do my best to help you understand yourself better based on the personal data you've shared with me."}

@@ -1,1 +1,0 @@
-If things get's laggy, the LLM that's powering this application is probably overloaded. Wait a bit and try again.

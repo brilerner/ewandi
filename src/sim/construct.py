@@ -140,7 +140,6 @@ def save_for_transfer(day_groups, dates, profile_dir):
         "source",
     ]
 
-
     def clean_event(event, parent=None):
         # handle times
         if not parent:
@@ -167,13 +166,10 @@ def save_for_transfer(day_groups, dates, profile_dir):
         elif event["dtype"] == "text":
             event["category"] = None
         elif parent and not event.get("category"):
-                event["category"] = parent["category"]
+            event["category"] = parent["category"]
         # else:
         #     print("Category not recognized")
         #     raise Exception
-
-
-
 
         # remove keys
         for k in list(event.keys()):
@@ -348,8 +344,14 @@ def construct_all_day_event(name, description, category):
 
 
 def add_attribute_to_event(
-    parent, name, description, dtype, value=None, unit=None, category=None,
-    is_container=False
+    parent,
+    name,
+    description,
+    dtype,
+    value=None,
+    unit=None,
+    category=None,
+    is_container=False,
 ):
     """
     Parent can be an event or attribute.
@@ -364,14 +366,14 @@ def add_attribute_to_event(
         raise Exception
 
     attribute_dict = {
-            "name": name,
-            "description": description,
-            "value": value,
-            "unit": unit,
-            "dtype": dtype,
-            "category": category,
-            "is_container": is_container,
-        }
+        "name": name,
+        "description": description,
+        "value": value,
+        "unit": unit,
+        "dtype": dtype,
+        "category": category,
+        "is_container": is_container,
+    }
     if value:
         attribute_dict["is_value"] = True
     parent["attributes"].append(attribute_dict)
@@ -382,10 +384,11 @@ def add_attribute_to_event(
 def add_rubric_values(day_groups, rubric_constructor):
     def apply_rubrics_to_event(event):
         def rubric_check(rubric):
-            if (rubric["parent"] == 'TOP_LEVEL')and event.get("is_top"):
+            if (rubric["parent"] == "TOP_LEVEL") and event.get("is_top"):
                 return True
             elif rubric["parent"] == event["name"]:
                 return True
+
         for rubric in rubric_constructor:
             if rubric_check(rubric):
                 add_attribute_to_event(
@@ -469,7 +472,9 @@ def make_day_groups(events, dates, existing=None):
             if causes := spec.get("causes"):
                 # print(spec)
                 if found_events := find_cause(causes, existing[i]):
-                    use_first = random.choice(found_events)  # not set up for multiple causes yet
+                    use_first = random.choice(
+                        found_events
+                    )  # not set up for multiple causes yet
                     if "delay" in spec:
                         add_delay(spec, use_first)
                 else:
@@ -978,7 +983,7 @@ def add_recipes_to_meals(day_groups, recipes):
             "dietary intake",
             "The ingredients consumed.",  # the description
             "binary",
-            is_container=True
+            is_container=True,
         )
 
         # now add recipe name as a subattribute

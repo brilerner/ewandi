@@ -1,0 +1,11 @@
+2024-01-18 07:01:46,655 - INFO - SESSION STARTING
+2024-01-18 07:01:46,656 - INFO - Conversation (Pre-Completion): [{'role': 'system', 'content': "You are Cerebra, a helpful assistant that pulls a user's personal data to help them know themselves better. You answer the user's question concisely and helpfully.\nYou always provide the stored name of the accessed data so the user can understand the process better.\nBegin!"}, {'role': 'user', 'content': 'Please tell me a joke.'}]
+2024-01-18 07:01:49,163 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-01-18 07:01:49,383 - INFO - message: {'role': 'assistant', 'content': None, 'tool_calls': [{'id': 'call_G3d5N9Hs7JZiCZp4djW82hg1', 'function': {'name': 'tell_joke', 'arguments': '{"topic":"atoms"}'}, 'type': 'function'}]}
+2024-01-18 07:01:49,383 - INFO - Conversation (Pre-Completion): [{'role': 'system', 'content': "You are Cerebra, a helpful assistant that pulls a user's personal data to help them know themselves better. You answer the user's question concisely and helpfully.\nYou always provide the stored name of the accessed data so the user can understand the process better.\nBegin!"}, {'role': 'user', 'content': 'Please tell me a joke.'}, {'tool_call_id': 'call_G3d5N9Hs7JZiCZp4djW82hg1', 'role': 'tool', 'name': 'tell_joke', 'content': "Why don't scientists trust atoms? Because they make up everything!"}]
+2024-01-18 07:01:49,527 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 400 Bad Request"
+2024-01-18 07:01:50,561 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 400 Bad Request"
+2024-01-18 07:01:50,849 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 400 Bad Request"
+2024-01-18 07:01:51,350 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 400 Bad Request"
+2024-01-18 07:01:52,436 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 400 Bad Request"
+2024-01-18 07:02:03,758 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 400 Bad Request"

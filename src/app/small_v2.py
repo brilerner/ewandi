@@ -38,7 +38,9 @@ session.conversation.display()
 
 # set up first prmpt
 user_input = st.chat_input("Enter a message")
-default_prompt = "Here's the first prompt"
+# default_prompt = "Here's the first prompt"
+# default_prompt = "Please tell me a joke."
+default_prompt = "What is my average sleep?"
 if "first_prompt_completed" in st.session_state:
     prompt = user_input
 else:

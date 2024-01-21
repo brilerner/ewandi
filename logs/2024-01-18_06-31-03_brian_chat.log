@@ -1,0 +1,6 @@
+2024-01-18 06:31:03,352 - INFO - SESSION STARTING
+2024-01-18 06:31:03,353 - INFO - Conversation (Pre-Completion): [{'role': 'system', 'content': "You are Cerebra, a helpful assistant that pulls a user's personal data to help them know themselves better. You answer the user's question concisely and helpfully.\nYou always provide the stored name of the accessed data so the user can understand the process better.\nBegin!"}, {'role': 'user', 'content': 'Please tell me a joke.'}]
+2024-01-18 06:31:04,127 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-01-18 06:31:05,785 - INFO - buffer length: 46
+2024-01-18 06:31:05,786 - INFO - length of raw chunks: 44
+2024-01-18 06:31:05,786 - INFO - message: {'role': 'assistant', 'content': "Sure, here's a light-hearted joke for you:\n\nWhy don't eggs tell each other secrets?\n\nBecause they might crack up!\n\n(Note: This response didn't require accessing personal data, it's a general joke.)"}

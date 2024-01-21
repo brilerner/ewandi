@@ -7,6 +7,7 @@ import logging
 import numpy as np
 
 
+
 def temp_plot_placeholder(delimiter="PPP"):
     """
     Generate a placeholder for a temporary plot.

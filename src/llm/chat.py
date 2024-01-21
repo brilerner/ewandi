@@ -5,6 +5,8 @@ import streamlit as st
 root_path = str(Path(__file__).resolve().parent.parent)
 sys.path.append(root_path)
 
+from utils.placeholders import make_placeholder
+
 # nqs
 import logging
 from utils.logging_setup import setup_logging
@@ -158,6 +160,9 @@ class Conversation:
         self.messages.append(message.api_message())
 
     def add_tool_response(self, tool_response):
+        self.messages.append(tool_response)
+
+    def add_tool_return(self, tool_response):
         self.messages.append(tool_response)
 
     def get_display_messages(self):
@@ -372,15 +377,15 @@ class StreamlitStreamHandler(StreamlitMessage):
         super().add_dict(dict)
         self._update()
 
-    def _update(self):
+    def _update(self, finish=False):
         self.streamlit_container.empty()
         # adding small sleep seems to be nec: see https://discuss.streamlit.io/t/using-st-empty/29509
         time.sleep(0.000001)  # necessart
         # time.sleep(2)  # necessart
         with self.streamlit_container.container():
-            self.display()
+            self.display(finish=finish)
 
-    def display(self):
+    def display(self, finish=False):
         # with st.container(): # NECESSAry? clreak
         def break_up(content):
             parts = []
@@ -396,33 +401,32 @@ class StreamlitStreamHandler(StreamlitMessage):
                 parts.append({"type": "text", "content": current_text})
             return parts
 
-        for i, element in enumerate(break_up(self.content)):
+        content_to_display = break_up(self.content)
+
+        if finish:
+            pass
+        else:
+            if content_to_display:
+                if content_to_display[-1]["type"] == "text":
+                    content_to_display[-1]["content"] += self.in_progress_symb
+            else:
+                content_to_display = [
+                    {"type": "text", "content": self.in_progress_symb}
+                ]
+
+        for i, element in enumerate(content_to_display):
             # for i, element in enumerate(self.content):
             if element["type"] == "text":
-                if i == len(self.content) - 1:
-                    st.markdown(element["content"] + self.in_progress_symb)
-                else:
-                    st.markdown(element["content"])
+                st.markdown(element["content"])
+                # if i == len(content_to_display) - 1:
+                #     st.markdown(element["content"] + self.in_progress_symb)
+                # else:
+                #     st.markdown(element["content"])
             elif element["type"] == "figure":
                 st.plotly_chart(element["content"])
 
-    # def display(self):
-    #     # with st.container(): # NECESSAry? cl
-    #     for i, element in enumerate(self.content):
-    #         if element["type"] == "text":
-    #             if i == len(self.content) - 1:
-    #                 st.markdown(element["content"] + self.in_progress_symb)
-    #             else:
-    #                 st.markdown(element["content"])
-    #         elif element["type"] == "figure":
-    #             st.plotly_chart(element["content"])
-
     def finish(self):
-        pass
-        # self.streamlit_container.empty()
-        # time.sleep(0.01)  # necessart
-        # with self.streamlit_container.container():
-        #     super().display()
+        self._update(finish=True)
 
 
 class PrintStreamHandler(Message):
@@ -509,7 +513,8 @@ def reprocess_chunks(session, content, placeholder):
         {
             "type": "figure",
             "placeholder": placeholder,
-            "content": load_temp_plot(session, placeholder),
+            "content": session.figures[placeholder],
+            # "content": load_temp_plot(session, placeholder),
         },
     )
     return modified_chunks
@@ -553,8 +558,21 @@ def get_tool_response(session, message):
             raise ValueError(f"Function {function_name} not found in tools.")
 
         args, kwargs = extract_args_kwargs(function_name, all_args)
-        args = [userid] + args
-        return getattr(session.tool_module, function_name)(*args, **kwargs)
+        # args = [userid] + args
+        func = getattr(session.tool_module, function_name)
+        func_output = func(*args, **kwargs)
+        return func_output
+
+    def process_placeholder(content):
+        if "plot" in content:
+            placeholder = make_placeholder()
+            fig = content["plot"]
+
+            if not hasattr(session, "figures"):
+                session.figures = {}
+            session.figures[placeholder] = fig
+
+            content["plot"] = placeholder
 
     tool_call = get_value(message, "tool_calls")[0]
     id = get_value(tool_call, "id")
@@ -568,8 +586,11 @@ def get_tool_response(session, message):
     # except:
     #     raise Exception(f"Unable to parse arguments: {arguments_string}")
 
-    content = call_function(function_name, arguments, session.userid)
-    # need to make into str?
+    content = call_function(function_name, arguments, session.user.userid)
+    process_placeholder(content)
+
+    content = str(content)
+
     tool_message = {
         "tool_call_id": id,
         "role": "tool",
@@ -620,7 +641,7 @@ def general_recombine(chunks, role="assistant"):
 
 
 class ChunkHandler:
-    def __init__(self, session, completion_generator, delay=4):
+    def __init__(self, session, completion_generator, delay=6):
         self.session = session
         self.completion_generator = completion_generator
         self.delay = delay
@@ -670,7 +691,9 @@ class ChunkHandler:
             active_message_text = "".join([e["content"] for e in active_content])
             if placeholder := extract_placeholder(active_message_text):
                 self.buffer_index += 1
-                active_content = reprocess_chunks(active_content, placeholder)
+                active_content = reprocess_chunks(
+                    self.session, active_content, placeholder
+                )
             self.buffer_message.content = inactive_content + active_content
             # logging.info(f"post buff message: {self.buffer_message.content}")
 
@@ -711,8 +734,9 @@ class ChunkHandler:
 
         logging.info(f"buffer length: {len(self.buffer_message.content)}")
         logging.info(f"length of raw chunks: {len(self.raw_chunks)}")
+
         # finish and add message to the conversation
-        # self.message.finish()
+        self.message.finish()
         self.session.conversation.add_obj_message(self.message)
 
     def process_tool_chunks(self):
@@ -721,8 +745,9 @@ class ChunkHandler:
             self.raw_chunks.append(chunk)
 
         message = general_recombine(self.raw_chunks)
+        self.session.conversation.add_tool_response(message)  # make different func
         tool_response = get_tool_response(self.session, message)
-        self.session.conversation.add_tool_response(tool_response)
+        self.session.conversation.add_tool_return(tool_response)
 
 
 def process_completion(session, **input_completions_kwargs):
@@ -732,7 +757,7 @@ def process_completion(session, **input_completions_kwargs):
             "model": session.model,
             "messages": getattr(session.conversation, "messages", None),
             "stream": True,
-            "tools": getattr(session, "tools", None),
+            "tools": getattr(session.tool_module, "tools", None),
         }
         completions_kwargs.update(input_completions_kwargs)
         client = session.client
@@ -766,7 +791,7 @@ def process_completion(session, **input_completions_kwargs):
         # intialize stream handler
         # stream_handler = session.stream_handler_class()
         # get the first chunk and see if it is a tool response
-        chunk_handler = ChunkHandler(session, completion, delay=2)
+        chunk_handler = ChunkHandler(session, completion, delay=4)
         chunk_handler.process_chunks()
 
     # get completion generator
@@ -806,6 +831,19 @@ def general_completion_request(
 
 
 #### simple
+
+
+def json_request(prompt, model="gpt-4"):
+    client = OpenAI()
+    messages = [{"role": "user", "content": prompt}]
+    response = client.chat.completions.create(
+        model=model,
+        messages=messages,
+        temperature=0,
+        response_format={"type": "json_object"},
+    )
+    content = response.choices[0].message.content
+    return json.loads(content)
 
 
 def get_completion(prompt, model="gpt-4", response_format=None):

@@ -1,0 +1,11 @@
+2024-01-18 07:19:51,811 - INFO - SESSION STARTING
+2024-01-18 07:19:51,812 - INFO - Conversation (Pre-Completion): [{'role': 'system', 'content': "You are Cerebra, a helpful assistant that pulls a user's personal data to help them know themselves better. You answer the user's question concisely and helpfully.\nYou always provide the stored name of the accessed data so the user can understand the process better.\nBegin!"}, {'role': 'user', 'content': 'What is my average sleep?'}]
+2024-01-18 07:19:52,765 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-01-18 07:19:54,719 - INFO - message: {'role': 'assistant', 'content': None, 'tool_calls': [{'id': 'call_gWHepfrHsPgeBzw6244ahQhn', 'function': {'name': 'get_average', 'arguments': '{"avg_var":"sleep"}'}, 'type': 'function'}]}
+2024-01-18 07:19:54,719 - INFO - Conversation (Pre-Completion): [{'role': 'system', 'content': "You are Cerebra, a helpful assistant that pulls a user's personal data to help them know themselves better. You answer the user's question concisely and helpfully.\nYou always provide the stored name of the accessed data so the user can understand the process better.\nBegin!"}, {'role': 'user', 'content': 'What is my average sleep?'}, {'role': 'assistant', 'content': None, 'tool_calls': [{'id': 'call_gWHepfrHsPgeBzw6244ahQhn', 'function': {'name': 'get_average', 'arguments': '{"avg_var":"sleep"}'}, 'type': 'function'}]}, {'tool_call_id': 'call_gWHepfrHsPgeBzw6244ahQhn', 'role': 'tool', 'name': 'get_average', 'content': {'average': 9, 'plot': 'PPPWKLKPPP'}}]
+2024-01-18 07:19:54,849 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 400 Bad Request"
+2024-01-18 07:19:55,572 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 400 Bad Request"
+2024-01-18 07:19:55,954 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 400 Bad Request"
+2024-01-18 07:19:57,114 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 400 Bad Request"
+2024-01-18 07:20:01,173 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 400 Bad Request"
+2024-01-18 07:20:09,630 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 400 Bad Request"

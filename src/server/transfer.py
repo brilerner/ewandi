@@ -10,84 +10,74 @@ from pathlib import Path
 
 from server import connect_to_collection
 
-root = "/Users/brianlerner/Library/CloudStorage/OneDrive-Personal/Code/Cerebra/data/sim/profiles/llm_v1/outputs/final"
+profiles_dir = "/Users/brianlerner/Library/CloudStorage/OneDrive-Personal/Code/Cerebra/data/sim/profiles"
 
 
-def insert_profile_data(profile="llm_v1", name="Len Matthews"):
+def upsert_data(data, section, profile="llm_v1"):
+    """
+    Replaces the data in the section with the new data.
+    Creates the section if it doesn't exist.
+    """
     collection = connect_to_collection()
 
-    base_path = Path(root)
-    print(base_path.exists())
+    # Preparing the document to be inserted
+    document = {
+        "_id": profile,
+        section: data,
+    }
 
-    for file_path in base_path.glob("*"):
-        print(file_path)
-        if file_path.is_file():
-            with open(file_path, "r") as f:
-                data = json.load(f)
-            if len(data) == 0:
-                continue
-            data_type = file_path.stem
+    # Use update_one with upsert=True to either update the existing document or insert a new one
+    result = collection.update_one(
+        {"_id": document["_id"]}, {"$set": document}, upsert=True
+    )
 
-            if data_type == "events":
-                convert_datetime = lambda x: datetime.strptime(x, "%Y-%m-%dT%H:%M:%S")
-                for event in data:
-                    if "start_datetime" in event:
-                        event["start_datetime"] = convert_datetime(
-                            event["start_datetime"]
-                        )
-                    if "end_datetime" in event:
-                        event["end_datetime"] = convert_datetime(event["end_datetime"])
+    # Check the result
+    if result.matched_count > 0 or result.upserted_id:
+        print("Document updated or inserted successfully.")
+    else:
+        print("Failed to update or insert the document.")
+        # Inserting the document in MongoDB
+        collection.insert_one(document)
 
-            # Preparing the document to be inserted
-            document = {
-                "_id": profile,
-                "name": name,
-                "section": data_type,
-                "data": data,
-            }
-            # Inserting the document in MongoDB
-            collection.insert_one(document)
-
-    print("Done inserting profile data")
+        print("Done inserting profile data")
 
 
-# if __name__ == 'main':
-# insert_profile_data(profile='llm_v1')
+def update_profile_data(
+    profile="llm_v1",
+):  # , name="Len Matthews"):
+    """
+    Adds profile data and replaces it if it exists.
+    """
+
+    def convert_datetime(x):
+        # return datetime.strptime(x, "%Y-%m-%dT%H:%M:%S")
+        return datetime.strptime(x, "%Y-%m-%dT%H:%M:%S")
+
+    final_outputs_dir = Path(profiles_dir) / "llm_v1/outputs/final"
+    filepath = final_outputs_dir / "events_breakout.json"
+
+    with open(filepath, "r") as f:
+        data = json.load(f)
+
+    for event in data:
+        event["start_datetime"] = convert_datetime(event["start_datetime"])
+        event["end_datetime"] = convert_datetime(event["end_datetime"])
+
+    upsert_data(data, "data", profile=profile)
+
+# old; not sure if useful
+def add_to_array(value_to_add, section, profile_id="llm_v1"):
+    """
+    If it can't find the right array, nothing happens
+    """
+    collection = connect_to_collection()
+    collection.update_one(
+        {"profile_id": profile_id}, {"$push": {section: value_to_add}}
+    )
 
 
-# def insert_profile_data(profile='llm_v0'):
+def add_entry(key, value, section, profile_id="llm_v1"):
+    """ """
+    collection = connect_to_collection()
+    collection.update_one({"profile_id": profile_id}, {"$set": {section: {key: value}}})
 
-#     collection = connect_to_collection()
-
-#     base_path = Path.cwd().parent /'data'/'sim'/'profiles'/profile/'outputs'/'final'
-
-#     # print(base_path)
-#     # print(base_path.exists())
-#     for file_path in base_path.glob('*'):
-#         if file_path.is_file():
-#             data_category = file_path.stem
-
-#             if data_category in ['hobbies', 'sensations']:
-#                 data_category = 'extracted'
-
-#             with open(file_path, 'r') as f:
-#                 data = json.load(f)
-#             if len(data) == 0:
-#                 continue
-
-#             convert_datetime = lambda x: datetime.strptime(x, '%Y-%m-%dT%H:%M:%S')
-#             for event in data:
-#                 if 'start_datetime' in event:
-#                     event['start_datetime'] = convert_datetime(event['start_datetime'])
-#                 if 'end_datetime' in event:
-#                     event['end_datetime'] = convert_datetime(event['end_datetime'])
-
-#             # Preparing the document to be inserted
-#             document = {
-#                 "profile_id": profile,
-#                 data_category: data
-#             }
-#             # Inserting or updating the document in MongoDB
-
-#             collection.update_one({"profile_id": profile}, {"$set": document}, upsert=True)
-#     print("Done inserting profile data")

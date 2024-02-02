@@ -1,21 +1,29 @@
-
 import sys
 from pathlib import Path
+
 root_path = str(Path(__file__).resolve().parent.parent)
 sys.path.append(root_path)
 
 from server import connect_to_db, connect_to_collection
 
-def remove_profile(profile='llm_v1'):
+
+def delete_field(field, profile="llm_v1"):
+    collection = connect_to_collection()
+    # Use $unset to delete the specified field
+    collection.update_one({"_id": profile}, {"$unset": {field: ""}})
+    print(f"Removed section: {field}")
+
+
+def remove_profile(profile="llm_v1"):
     """
     Remove a profile from the database.
     """
     collection = connect_to_collection()
-    collection.delete_one({'person_id': profile})
+    collection.delete_one({"_id": profile})
     print(f"Removed profile: {profile}")
 
-def delete_collections(collection_name=None):
 
+def delete_collections(collection_name=None):
     db = connect_to_db()
 
     if collection_name:
@@ -32,9 +40,8 @@ def delete_collections(collection_name=None):
     print("Operation completed.")
 
 
-
 # if __name__ == 'main': # using this causes RuntimeError: can't create new thread at interpreter shutdown
-delete_collections() 
+# delete_collections()
 
 
 # # Usage examples:

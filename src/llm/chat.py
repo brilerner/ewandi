@@ -33,7 +33,7 @@ from tenacity import (
 )  # for exponential backoff
 from utils.viz import get_plotly_figure
 
-# GPT_MODEL = "gpt-3.5-turbo-0613"
+# GPT_MODEL = "gpt-3.5-turbo-1106"
 GPT_MODEL = "gpt-4-1106-preview"
 
 import time
@@ -832,21 +832,33 @@ def general_completion_request(
 
 #### simple
 
+helicone_info = {
+    "api_key": "sk-345rsyy-cxiemia-ve5mdoy-j7p2k7i",
+    "base_url": "https://oai.hconeai.com/v1",
+    "default_headers": {
+        "Helicone-Auth": f"Bearer sk-345rsyy-cxiemia-ve5mdoy-j7p2k7i",
+    },
+}
 
-def json_request(prompt, model="gpt-4"):
+
+def json_request(prompt, model=GPT_MODEL, **completions_kwargs):
+    # from helicone.openai_async import openai
     client = OpenAI()
+    # client = OpenAI(**helicone_info)
+
     messages = [{"role": "user", "content": prompt}]
     response = client.chat.completions.create(
         model=model,
         messages=messages,
-        temperature=0,
         response_format={"type": "json_object"},
+        **completions_kwargs,
     )
     content = response.choices[0].message.content
-    return json.loads(content)
+    return content
+    # return json.loads(content)
 
 
-def get_completion(prompt, model="gpt-4", response_format=None):
+def get_completion(prompt, model=GPT_MODEL, response_format=None):
     client = OpenAI()
     messages = [{"role": "user", "content": prompt}]
     print(response_format)

@@ -4,13 +4,13 @@ Name: headache
 
 	- Name: Headache
 
-Name: stomachache
+Name: walking outside
 
-	- Name: Stomachache
+	- Name: Walking outside
 
-Name: reading
+Name: playing videogames
 
-	- Name: Reading
+	- Name: Playing videogames
 
 Name: talking on the phone
 
@@ -29,11 +29,11 @@ Name: party
 	- Name: Party
 
 End of Day Survey:
-	- Energy: 4/10
+	- Energy: 6/10
 
 	- Mood: 4/10
 
-	- Stress: 9/10
+	- Stress: 6/10
 
 
 --------------------------------------------------
@@ -52,14 +52,10 @@ Name: studying
 
 	- Name: Studying
 
-Name: playing videogames
-
-	- Name: Playing videogames
-
 End of Day Survey:
 	- Energy: 4/10
 
-	- Mood: 4/10
+	- Mood: 3/10
 
 	- Stress: 5/10
 
@@ -72,33 +68,49 @@ Name: studying
 
 	- Name: Studying
 
+Name: hiking
+
+	- Name: Hiking
+
+Name: playing videogames
+
+	- Name: Playing videogames
+
+Name: date night
+
+	- Name: Date night
+
 End of Day Survey:
 	- Energy: 6/10
 
-	- Mood: 5/10
+	- Mood: 8/10
 
-	- Stress: 5/10
+	- Stress: 7/10
 
 
 --------------------------------------------------
 
 Date: 2023-09-04 00:00:00 (Monday)
 
+Name: shoulder pain
+
+	- Name: Shoulder pain
+
 Name: headache
 
 	- Name: Headache
-
-Name: stomachache
-
-	- Name: Stomachache
 
 Name: playing videogames
 
 	- Name: Playing videogames
 
-Name: weightlifting
+Name: talking on the phone
 
-	- Name: Weightlifting
+	- Name: Talking on the phone
+
+Name: basketball practice
+
+	- Name: Basketball practice
 
 Name: class: Discrete Mathematics
 
@@ -109,20 +121,16 @@ Name: homework due: Discrete Mathematics
 	- Name: Homework due: discrete mathematics
 
 End of Day Survey:
-	- Energy: 4/10
+	- Energy: 6/10
 
-	- Mood: 2/10
+	- Mood: 5/10
 
-	- Stress: 6/10
+	- Stress: 5/10
 
 
 --------------------------------------------------
 
 Date: 2023-09-05 00:00:00 (Tuesday)
-
-Name: headache
-
-	- Name: Headache
 
 Name: stomachache
 
@@ -131,6 +139,30 @@ Name: stomachache
 Name: studying
 
 	- Name: Studying
+
+Name: playing videogames
+
+	- Name: Playing videogames
+
+Name: basketball game
+
+	- Name: Basketball game
+
+End of Day Survey:
+	- Energy: 3/10
+
+	- Mood: 6/10
+
+	- Stress: 5/10
+
+
+--------------------------------------------------
+
+Date: 2023-09-06 00:00:00 (Wednesday)
+
+Name: stomachache
+
+	- Name: Stomachache
 
 Name: walking outside
 
@@ -144,48 +176,20 @@ Name: talking on the phone
 
 	- Name: Talking on the phone
 
-Name: basketball game
+Name: weightlifting
 
-	- Name: Basketball game
-
-End of Day Survey:
-	- Energy: 3/10
-
-	- Mood: 7/10
-
-	- Stress: 10/10
-
-
---------------------------------------------------
-
-Date: 2023-09-06 00:00:00 (Wednesday)
-
-Name: headache
-
-	- Name: Headache
-
-Name: stomachache
-
-	- Name: Stomachache
-
-Name: playing videogames
-
-	- Name: Playing videogames
-
-Name: basketball practice
-
-	- Name: Basketball practice
+	- Name: Weightlifting
 
 Name: class: Discrete Mathematics
 
 	- Name: Class: discrete mathematics
 
 End of Day Survey:
-	- Energy: 3/10
+	- Energy: 4/10
 
-	- Mood: 4/10
+	- Mood: 8/10
 
-	- Stress: 5/10
+	- Stress: 7/10
 
 
 --------------------------------------------------
@@ -196,21 +200,9 @@ Name: elbow pain
 
 	- Name: Elbow pain
 
-Name: headache
-
-	- Name: Headache
-
-Name: stomachache
-
-	- Name: Stomachache
-
 Name: walking outside
 
 	- Name: Walking outside
-
-Name: playing videogames
-
-	- Name: Playing videogames
 
 Name: talking on the phone
 
@@ -229,28 +221,28 @@ Name: homework due: Computer Programming
 	- Name: Homework due: computer programming
 
 End of Day Survey:
-	- Energy: 3/10
+	- Energy: 6/10
 
-	- Mood: 5/10
+	- Mood: 7/10
 
-	- Stress: 10/10
+	- Stress: 6/10
 
 
 --------------------------------------------------
 
 Date: 2023-09-08 00:00:00 (Friday)
 
-Name: headache
-
-	- Name: Headache
-
-Name: stomachache
-
-	- Name: Stomachache
-
 Name: walking outside
 
 	- Name: Walking outside
+
+Name: playing videogames
+
+	- Name: Playing videogames
+
+Name: talking on the phone
+
+	- Name: Talking on the phone
 
 Name: weightlifting
 
@@ -265,11 +257,11 @@ Name: party
 	- Name: Party
 
 End of Day Survey:
-	- Energy: 4/10
+	- Energy: 6/10
 
-	- Mood: 2/10
+	- Mood: 4/10
 
-	- Stress: 6/10
+	- Stress: 10/10
 
 
 --------------------------------------------------
@@ -288,13 +280,17 @@ Name: studying
 
 	- Name: Studying
 
+Name: walking outside
+
+	- Name: Walking outside
+
 Name: hiking
 
 	- Name: Hiking
 
-Name: reading
+Name: playing videogames
 
-	- Name: Reading
+	- Name: Playing videogames
 
 Name: talking on the phone
 
@@ -305,32 +301,20 @@ Name: basketball game
 	- Name: Basketball game
 
 End of Day Survey:
-	- Energy: 4/10
+	- Energy: 3/10
 
-	- Mood: 6/10
+	- Mood: 7/10
 
-	- Stress: 6/10
+	- Stress: 7/10
 
 
 --------------------------------------------------
 
 Date: 2023-09-10 00:00:00 (Sunday)
 
-Name: headache
+Name: playing videogames
 
-	- Name: Headache
-
-Name: walking outside
-
-	- Name: Walking outside
-
-Name: hiking
-
-	- Name: Hiking
-
-Name: reading
-
-	- Name: Reading
+	- Name: Playing videogames
 
 Name: talking on the phone
 
@@ -343,22 +327,22 @@ Name: movie night
 End of Day Survey:
 	- Energy: 6/10
 
-	- Mood: 9/10
+	- Mood: 5/10
 
-	- Stress: 7/10
+	- Stress: 4/10
 
 
 --------------------------------------------------
 
 Date: 2023-09-11 00:00:00 (Monday)
 
+Name: shoulder pain
+
+	- Name: Shoulder pain
+
 Name: stomachache
 
 	- Name: Stomachache
-
-Name: walking outside
-
-	- Name: Walking outside
 
 Name: basketball practice
 
@@ -373,28 +357,24 @@ Name: homework due: Discrete Mathematics
 	- Name: Homework due: discrete mathematics
 
 End of Day Survey:
-	- Energy: 4/10
+	- Energy: 3/10
 
-	- Mood: 6/10
+	- Mood: 5/10
 
-	- Stress: 8/10
+	- Stress: 5/10
 
 
 --------------------------------------------------
 
 Date: 2023-09-12 00:00:00 (Tuesday)
 
-Name: stomachache
+Name: shoulder pain
 
-	- Name: Stomachache
+	- Name: Shoulder pain
 
 Name: studying
 
 	- Name: Studying
-
-Name: walking outside
-
-	- Name: Walking outside
 
 Name: playing videogames
 
@@ -405,72 +385,48 @@ Name: basketball practice
 	- Name: Basketball practice
 
 End of Day Survey:
-	- Energy: 4/10
+	- Energy: 6/10
 
-	- Mood: 8/10
+	- Mood: 6/10
 
-	- Stress: 6/10
+	- Stress: 5/10
 
 
 --------------------------------------------------
 
 Date: 2023-09-13 00:00:00 (Wednesday)
 
+Name: shoulder pain
+
+	- Name: Shoulder pain
+
 Name: headache
 
 	- Name: Headache
 
-Name: stomachache
+Name: basketball practice
 
-	- Name: Stomachache
-
-Name: playing videogames
-
-	- Name: Playing videogames
-
-Name: talking on the phone
-
-	- Name: Talking on the phone
-
-Name: weightlifting
-
-	- Name: Weightlifting
+	- Name: Basketball practice
 
 Name: class: Discrete Mathematics
 
 	- Name: Class: discrete mathematics
 
 End of Day Survey:
-	- Energy: 3/10
+	- Energy: 6/10
 
-	- Mood: 1/10
+	- Mood: 4/10
 
-	- Stress: 4/10
+	- Stress: 5/10
 
 
 --------------------------------------------------
 
 Date: 2023-09-14 00:00:00 (Thursday)
 
-Name: elbow pain
-
-	- Name: Elbow pain
-
-Name: headache
-
-	- Name: Headache
-
-Name: stomachache
-
-	- Name: Stomachache
-
 Name: playing videogames
 
 	- Name: Playing videogames
-
-Name: talking on the phone
-
-	- Name: Talking on the phone
 
 Name: basketball game
 
@@ -485,32 +441,28 @@ Name: homework due: Computer Programming
 	- Name: Homework due: computer programming
 
 End of Day Survey:
-	- Energy: 3/10
+	- Energy: 6/10
 
-	- Mood: 5/10
+	- Mood: 6/10
 
-	- Stress: 4/10
+	- Stress: 5/10
 
 
 --------------------------------------------------
 
 Date: 2023-09-15 00:00:00 (Friday)
 
-Name: headache
-
-	- Name: Headache
-
-Name: stomachache
-
-	- Name: Stomachache
-
 Name: walking outside
 
 	- Name: Walking outside
 
-Name: playing videogames
+Name: reading
 
-	- Name: Playing videogames
+	- Name: Reading
+
+Name: talking on the phone
+
+	- Name: Talking on the phone
 
 Name: weightlifting
 
@@ -525,20 +477,16 @@ Name: party
 	- Name: Party
 
 End of Day Survey:
-	- Energy: 3/10
+	- Energy: 6/10
 
-	- Mood: 2/10
+	- Mood: 3/10
 
-	- Stress: 7/10
+	- Stress: 5/10
 
 
 --------------------------------------------------
 
 Date: 2023-09-16 00:00:00 (Saturday)
-
-Name: headache
-
-	- Name: Headache
 
 Name: studying
 
@@ -556,12 +504,16 @@ Name: playing videogames
 
 	- Name: Playing videogames
 
+Name: basketball game
+
+	- Name: Basketball game
+
 End of Day Survey:
 	- Energy: 6/10
 
-	- Mood: 8/10
+	- Mood: 10/10
 
-	- Stress: 8/10
+	- Stress: 7/10
 
 
 --------------------------------------------------
@@ -576,486 +528,6 @@ Name: stomachache
 
 	- Name: Stomachache
 
-Name: walking outside
-
-	- Name: Walking outside
-
-Name: playing videogames
-
-	- Name: Playing videogames
-
-End of Day Survey:
-	- Energy: 3/10
-
-	- Mood: 6/10
-
-	- Stress: 7/10
-
-
---------------------------------------------------
-
-Date: 2023-09-18 00:00:00 (Monday)
-
-Name: headache
-
-	- Name: Headache
-
-Name: stomachache
-
-	- Name: Stomachache
-
-Name: walking outside
-
-	- Name: Walking outside
-
-Name: playing videogames
-
-	- Name: Playing videogames
-
-Name: talking on the phone
-
-	- Name: Talking on the phone
-
-Name: basketball practice
-
-	- Name: Basketball practice
-
-Name: class: Discrete Mathematics
-
-	- Name: Class: discrete mathematics
-
-Name: homework due: Discrete Mathematics
-
-	- Name: Homework due: discrete mathematics
-
-End of Day Survey:
-	- Energy: 3/10
-
-	- Mood: 6/10
-
-	- Stress: 10/10
-
-
---------------------------------------------------
-
-Date: 2023-09-19 00:00:00 (Tuesday)
-
-Name: headache
-
-	- Name: Headache
-
-Name: stomachache
-
-	- Name: Stomachache
-
-Name: walking outside
-
-	- Name: Walking outside
-
-Name: reading
-
-	- Name: Reading
-
-Name: basketball practice
-
-	- Name: Basketball practice
-
-End of Day Survey:
-	- Energy: 3/10
-
-	- Mood: 6/10
-
-	- Stress: 6/10
-
-
---------------------------------------------------
-
-Date: 2023-09-20 00:00:00 (Wednesday)
-
-Name: headache
-
-	- Name: Headache
-
-Name: playing videogames
-
-	- Name: Playing videogames
-
-Name: weightlifting
-
-	- Name: Weightlifting
-
-Name: class: Discrete Mathematics
-
-	- Name: Class: discrete mathematics
-
-End of Day Survey:
-	- Energy: 6/10
-
-	- Mood: 3/10
-
-	- Stress: 5/10
-
-
---------------------------------------------------
-
-Date: 2023-09-21 00:00:00 (Thursday)
-
-Name: headache
-
-	- Name: Headache
-
-Name: stomachache
-
-	- Name: Stomachache
-
-Name: reading
-
-	- Name: Reading
-
-Name: talking on the phone
-
-	- Name: Talking on the phone
-
-Name: basketball game
-
-	- Name: Basketball game
-
-Name: class: Computer Programming
-
-	- Name: Class: computer programming
-
-Name: homework due: Computer Programming
-
-	- Name: Homework due: computer programming
-
-End of Day Survey:
-	- Energy: 4/10
-
-	- Mood: 4/10
-
-	- Stress: 9/10
-
-
---------------------------------------------------
-
-Date: 2023-09-22 00:00:00 (Friday)
-
-Name: stomachache
-
-	- Name: Stomachache
-
-Name: playing videogames
-
-	- Name: Playing videogames
-
-Name: talking on the phone
-
-	- Name: Talking on the phone
-
-Name: weightlifting
-
-	- Name: Weightlifting
-
-Name: class: Computer Programming
-
-	- Name: Class: computer programming
-
-Name: party
-
-	- Name: Party
-
-End of Day Survey:
-	- Energy: 3/10
-
-	- Mood: 5/10
-
-	- Stress: 5/10
-
-
---------------------------------------------------
-
-Date: 2023-09-23 00:00:00 (Saturday)
-
-Name: headache
-
-	- Name: Headache
-
-Name: stomachache
-
-	- Name: Stomachache
-
-Name: playing videogames
-
-	- Name: Playing videogames
-
-End of Day Survey:
-	- Energy: 3/10
-
-	- Mood: 4/10
-
-	- Stress: 5/10
-
-
---------------------------------------------------
-
-Date: 2023-09-24 00:00:00 (Sunday)
-
-Name: headache
-
-	- Name: Headache
-
-Name: stomachache
-
-	- Name: Stomachache
-
-Name: studying
-
-	- Name: Studying
-
-Name: hiking
-
-	- Name: Hiking
-
-Name: reading
-
-	- Name: Reading
-
-Name: date night
-
-	- Name: Date night
-
-End of Day Survey:
-	- Energy: 3/10
-
-	- Mood: 7/10
-
-	- Stress: 6/10
-
-
---------------------------------------------------
-
-Date: 2023-09-25 00:00:00 (Monday)
-
-Name: headache
-
-	- Name: Headache
-
-Name: stomachache
-
-	- Name: Stomachache
-
-Name: playing videogames
-
-	- Name: Playing videogames
-
-Name: talking on the phone
-
-	- Name: Talking on the phone
-
-Name: basketball practice
-
-	- Name: Basketball practice
-
-Name: class: Discrete Mathematics
-
-	- Name: Class: discrete mathematics
-
-Name: homework due: Discrete Mathematics
-
-	- Name: Homework due: discrete mathematics
-
-End of Day Survey:
-	- Energy: 4/10
-
-	- Mood: 4/10
-
-	- Stress: 5/10
-
-
---------------------------------------------------
-
-Date: 2023-09-26 00:00:00 (Tuesday)
-
-Name: headache
-
-	- Name: Headache
-
-Name: studying
-
-	- Name: Studying
-
-Name: walking outside
-
-	- Name: Walking outside
-
-Name: playing videogames
-
-	- Name: Playing videogames
-
-Name: basketball game
-
-	- Name: Basketball game
-
-End of Day Survey:
-	- Energy: 6/10
-
-	- Mood: 6/10
-
-	- Stress: 6/10
-
-
---------------------------------------------------
-
-Date: 2023-09-27 00:00:00 (Wednesday)
-
-Name: headache
-
-	- Name: Headache
-
-Name: stomachache
-
-	- Name: Stomachache
-
-Name: reading
-
-	- Name: Reading
-
-Name: basketball practice
-
-	- Name: Basketball practice
-
-Name: class: Discrete Mathematics
-
-	- Name: Class: discrete mathematics
-
-End of Day Survey:
-	- Energy: 4/10
-
-	- Mood: 4/10
-
-	- Stress: 5/10
-
-
---------------------------------------------------
-
-Date: 2023-09-28 00:00:00 (Thursday)
-
-Name: elbow pain
-
-	- Name: Elbow pain
-
-Name: headache
-
-	- Name: Headache
-
-Name: stomachache
-
-	- Name: Stomachache
-
-Name: playing videogames
-
-	- Name: Playing videogames
-
-Name: basketball game
-
-	- Name: Basketball game
-
-Name: class: Computer Programming
-
-	- Name: Class: computer programming
-
-Name: homework due: Computer Programming
-
-	- Name: Homework due: computer programming
-
-End of Day Survey:
-	- Energy: 4/10
-
-	- Mood: 5/10
-
-	- Stress: 5/10
-
-
---------------------------------------------------
-
-Date: 2023-09-29 00:00:00 (Friday)
-
-Name: headache
-
-	- Name: Headache
-
-Name: stomachache
-
-	- Name: Stomachache
-
-Name: weightlifting
-
-	- Name: Weightlifting
-
-Name: class: Computer Programming
-
-	- Name: Class: computer programming
-
-Name: party
-
-	- Name: Party
-
-End of Day Survey:
-	- Energy: 3/10
-
-	- Mood: 1/10
-
-	- Stress: 5/10
-
-
---------------------------------------------------
-
-Date: 2023-09-30 00:00:00 (Saturday)
-
-Name: headache
-
-	- Name: Headache
-
-Name: stomachache
-
-	- Name: Stomachache
-
-Name: studying
-
-	- Name: Studying
-
-Name: walking outside
-
-	- Name: Walking outside
-
-Name: basketball game
-
-	- Name: Basketball game
-
-End of Day Survey:
-	- Energy: 3/10
-
-	- Mood: 6/10
-
-	- Stress: 6/10
-
-
---------------------------------------------------
-
-Date: 2023-10-01 00:00:00 (Sunday)
-
-Name: headache
-
-	- Name: Headache
-
-Name: stomachache
-
-	- Name: Stomachache
-
-Name: studying
-
-	- Name: Studying
-
 Name: playing videogames
 
 	- Name: Playing videogames
@@ -1073,12 +545,180 @@ End of Day Survey:
 
 	- Mood: 5/10
 
-	- Stress: 9/10
+	- Stress: 4/10
 
 
 --------------------------------------------------
 
-Date: 2023-10-02 00:00:00 (Monday)
+Date: 2023-09-18 00:00:00 (Monday)
+
+Name: stomachache
+
+	- Name: Stomachache
+
+Name: talking on the phone
+
+	- Name: Talking on the phone
+
+Name: basketball practice
+
+	- Name: Basketball practice
+
+Name: class: Discrete Mathematics
+
+	- Name: Class: discrete mathematics
+
+Name: homework due: Discrete Mathematics
+
+	- Name: Homework due: discrete mathematics
+
+End of Day Survey:
+	- Energy: 3/10
+
+	- Mood: 5/10
+
+	- Stress: 5/10
+
+
+--------------------------------------------------
+
+Date: 2023-09-19 00:00:00 (Tuesday)
+
+Name: shoulder pain
+
+	- Name: Shoulder pain
+
+Name: headache
+
+	- Name: Headache
+
+Name: studying
+
+	- Name: Studying
+
+Name: reading
+
+	- Name: Reading
+
+Name: basketball practice
+
+	- Name: Basketball practice
+
+End of Day Survey:
+	- Energy: 6/10
+
+	- Mood: 5/10
+
+	- Stress: 5/10
+
+
+--------------------------------------------------
+
+Date: 2023-09-20 00:00:00 (Wednesday)
+
+Name: shoulder pain
+
+	- Name: Shoulder pain
+
+Name: headache
+
+	- Name: Headache
+
+Name: stomachache
+
+	- Name: Stomachache
+
+Name: walking outside
+
+	- Name: Walking outside
+
+Name: reading
+
+	- Name: Reading
+
+Name: basketball practice
+
+	- Name: Basketball practice
+
+Name: class: Discrete Mathematics
+
+	- Name: Class: discrete mathematics
+
+End of Day Survey:
+	- Energy: 3/10
+
+	- Mood: 5/10
+
+	- Stress: 7/10
+
+
+--------------------------------------------------
+
+Date: 2023-09-21 00:00:00 (Thursday)
+
+Name: stomachache
+
+	- Name: Stomachache
+
+Name: walking outside
+
+	- Name: Walking outside
+
+Name: reading
+
+	- Name: Reading
+
+Name: talking on the phone
+
+	- Name: Talking on the phone
+
+Name: basketball game
+
+	- Name: Basketball game
+
+Name: class: Computer Programming
+
+	- Name: Class: computer programming
+
+Name: homework due: Computer Programming
+
+	- Name: Homework due: computer programming
+
+End of Day Survey:
+	- Energy: 4/10
+
+	- Mood: 8/10
+
+	- Stress: 10/10
+
+
+--------------------------------------------------
+
+Date: 2023-09-22 00:00:00 (Friday)
+
+Name: playing videogames
+
+	- Name: Playing videogames
+
+Name: weightlifting
+
+	- Name: Weightlifting
+
+Name: class: Computer Programming
+
+	- Name: Class: computer programming
+
+End of Day Survey:
+	- Energy: 6/10
+
+	- Mood: 6/10
+
+	- Stress: 5/10
+
+
+--------------------------------------------------
+
+Date: 2023-09-23 00:00:00 (Saturday)
 
 Name: stomachache
 
@@ -1092,13 +732,65 @@ Name: playing videogames
 
 	- Name: Playing videogames
 
+Name: basketball game
+
+	- Name: Basketball game
+
+End of Day Survey:
+	- Energy: 3/10
+
+	- Mood: 7/10
+
+	- Stress: 7/10
+
+
+--------------------------------------------------
+
+Date: 2023-09-24 00:00:00 (Sunday)
+
+Name: headache
+
+	- Name: Headache
+
+Name: playing videogames
+
+	- Name: Playing videogames
+
+End of Day Survey:
+	- Energy: 6/10
+
+	- Mood: 5/10
+
+	- Stress: 5/10
+
+
+--------------------------------------------------
+
+Date: 2023-09-25 00:00:00 (Monday)
+
+Name: shoulder pain
+
+	- Name: Shoulder pain
+
+Name: stomachache
+
+	- Name: Stomachache
+
+Name: walking outside
+
+	- Name: Walking outside
+
+Name: reading
+
+	- Name: Reading
+
 Name: talking on the phone
 
 	- Name: Talking on the phone
 
-Name: weightlifting
+Name: basketball practice
 
-	- Name: Weightlifting
+	- Name: Basketball practice
 
 Name: class: Discrete Mathematics
 
@@ -1118,7 +810,7 @@ End of Day Survey:
 
 --------------------------------------------------
 
-Date: 2023-10-03 00:00:00 (Tuesday)
+Date: 2023-09-26 00:00:00 (Tuesday)
 
 Name: headache
 
@@ -1136,9 +828,9 @@ Name: walking outside
 
 	- Name: Walking outside
 
-Name: reading
+Name: playing videogames
 
-	- Name: Reading
+	- Name: Playing videogames
 
 Name: basketball game
 
@@ -1147,14 +839,50 @@ Name: basketball game
 End of Day Survey:
 	- Energy: 3/10
 
-	- Mood: 5/10
+	- Mood: 7/10
 
-	- Stress: 6/10
+	- Stress: 7/10
 
 
 --------------------------------------------------
 
-Date: 2023-10-04 00:00:00 (Wednesday)
+Date: 2023-09-27 00:00:00 (Wednesday)
+
+Name: shoulder pain
+
+	- Name: Shoulder pain
+
+Name: playing videogames
+
+	- Name: Playing videogames
+
+Name: basketball practice
+
+	- Name: Basketball practice
+
+Name: class: Discrete Mathematics
+
+	- Name: Class: discrete mathematics
+
+End of Day Survey:
+	- Energy: 6/10
+
+	- Mood: 6/10
+
+	- Stress: 5/10
+
+
+--------------------------------------------------
+
+Date: 2023-09-28 00:00:00 (Thursday)
+
+Name: elbow pain
+
+	- Name: Elbow pain
+
+Name: shoulder pain
+
+	- Name: Shoulder pain
 
 Name: stomachache
 
@@ -1167,50 +895,6 @@ Name: walking outside
 Name: playing videogames
 
 	- Name: Playing videogames
-
-Name: talking on the phone
-
-	- Name: Talking on the phone
-
-Name: basketball practice
-
-	- Name: Basketball practice
-
-Name: class: Discrete Mathematics
-
-	- Name: Class: discrete mathematics
-
-End of Day Survey:
-	- Energy: 3/10
-
-	- Mood: 8/10
-
-	- Stress: 10/10
-
-
---------------------------------------------------
-
-Date: 2023-10-05 00:00:00 (Thursday)
-
-Name: elbow pain
-
-	- Name: Elbow pain
-
-Name: headache
-
-	- Name: Headache
-
-Name: stomachache
-
-	- Name: Stomachache
-
-Name: playing videogames
-
-	- Name: Playing videogames
-
-Name: talking on the phone
-
-	- Name: Talking on the phone
 
 Name: basketball practice
 
@@ -1225,32 +909,24 @@ Name: homework due: Computer Programming
 	- Name: Homework due: computer programming
 
 End of Day Survey:
-	- Energy: 3/10
+	- Energy: 4/10
 
-	- Mood: 4/10
+	- Mood: 8/10
 
-	- Stress: 5/10
+	- Stress: 7/10
 
 
 --------------------------------------------------
 
-Date: 2023-10-06 00:00:00 (Friday)
+Date: 2023-09-29 00:00:00 (Friday)
 
-Name: headache
+Name: walking outside
 
-	- Name: Headache
+	- Name: Walking outside
 
-Name: stomachache
+Name: playing videogames
 
-	- Name: Stomachache
-
-Name: reading
-
-	- Name: Reading
-
-Name: talking on the phone
-
-	- Name: Talking on the phone
+	- Name: Playing videogames
 
 Name: weightlifting
 
@@ -1265,16 +941,124 @@ Name: party
 	- Name: Party
 
 End of Day Survey:
-	- Energy: 4/10
+	- Energy: 6/10
 
-	- Mood: 1/10
+	- Mood: 2/10
 
-	- Stress: 4/10
+	- Stress: 6/10
 
 
 --------------------------------------------------
 
-Date: 2023-10-07 00:00:00 (Saturday)
+Date: 2023-09-30 00:00:00 (Saturday)
+
+Name: headache
+
+	- Name: Headache
+
+Name: studying
+
+	- Name: Studying
+
+Name: hiking
+
+	- Name: Hiking
+
+Name: reading
+
+	- Name: Reading
+
+Name: basketball game
+
+	- Name: Basketball game
+
+End of Day Survey:
+	- Energy: 6/10
+
+	- Mood: 6/10
+
+	- Stress: 7/10
+
+
+--------------------------------------------------
+
+Date: 2023-10-01 00:00:00 (Sunday)
+
+Name: stomachache
+
+	- Name: Stomachache
+
+Name: studying
+
+	- Name: Studying
+
+Name: walking outside
+
+	- Name: Walking outside
+
+Name: hiking
+
+	- Name: Hiking
+
+Name: reading
+
+	- Name: Reading
+
+Name: talking on the phone
+
+	- Name: Talking on the phone
+
+Name: movie night
+
+	- Name: Movie night
+
+End of Day Survey:
+	- Energy: 4/10
+
+	- Mood: 7/10
+
+	- Stress: 8/10
+
+
+--------------------------------------------------
+
+Date: 2023-10-02 00:00:00 (Monday)
+
+Name: shoulder pain
+
+	- Name: Shoulder pain
+
+Name: stomachache
+
+	- Name: Stomachache
+
+Name: basketball practice
+
+	- Name: Basketball practice
+
+Name: class: Discrete Mathematics
+
+	- Name: Class: discrete mathematics
+
+Name: homework due: Discrete Mathematics
+
+	- Name: Homework due: discrete mathematics
+
+End of Day Survey:
+	- Energy: 3/10
+
+	- Mood: 5/10
+
+	- Stress: 5/10
+
+
+--------------------------------------------------
+
+Date: 2023-10-03 00:00:00 (Tuesday)
+
+Name: shoulder pain
+
+	- Name: Shoulder pain
 
 Name: headache
 
@@ -1288,25 +1072,129 @@ Name: studying
 
 	- Name: Studying
 
-Name: hiking
+Name: playing videogames
 
-	- Name: Hiking
+	- Name: Playing videogames
+
+Name: basketball practice
+
+	- Name: Basketball practice
+
+End of Day Survey:
+	- Energy: 4/10
+
+	- Mood: 4/10
+
+	- Stress: 5/10
+
+
+--------------------------------------------------
+
+Date: 2023-10-04 00:00:00 (Wednesday)
+
+Name: shoulder pain
+
+	- Name: Shoulder pain
+
+Name: walking outside
+
+	- Name: Walking outside
+
+Name: basketball practice
+
+	- Name: Basketball practice
+
+Name: class: Discrete Mathematics
+
+	- Name: Class: discrete mathematics
+
+End of Day Survey:
+	- Energy: 6/10
+
+	- Mood: 6/10
+
+	- Stress: 6/10
+
+
+--------------------------------------------------
+
+Date: 2023-10-05 00:00:00 (Thursday)
+
+Name: elbow pain
+
+	- Name: Elbow pain
+
+Name: shoulder pain
+
+	- Name: Shoulder pain
+
+Name: walking outside
+
+	- Name: Walking outside
 
 Name: playing videogames
 
 	- Name: Playing videogames
 
+Name: basketball practice
+
+	- Name: Basketball practice
+
+Name: class: Computer Programming
+
+	- Name: Class: computer programming
+
+Name: homework due: Computer Programming
+
+	- Name: Homework due: computer programming
+
 End of Day Survey:
-	- Energy: 3/10
+	- Energy: 6/10
 
 	- Mood: 7/10
 
-	- Stress: 7/10
+	- Stress: 6/10
 
 
 --------------------------------------------------
 
-Date: 2023-10-08 00:00:00 (Sunday)
+Date: 2023-10-06 00:00:00 (Friday)
+
+Name: headache
+
+	- Name: Headache
+
+Name: walking outside
+
+	- Name: Walking outside
+
+Name: talking on the phone
+
+	- Name: Talking on the phone
+
+Name: weightlifting
+
+	- Name: Weightlifting
+
+Name: class: Computer Programming
+
+	- Name: Class: computer programming
+
+End of Day Survey:
+	- Energy: 6/10
+
+	- Mood: 7/10
+
+	- Stress: 10/10
+
+
+--------------------------------------------------
+
+Date: 2023-10-07 00:00:00 (Saturday)
+
+Name: headache
+
+	- Name: Headache
 
 Name: stomachache
 
@@ -1324,12 +1212,40 @@ Name: talking on the phone
 
 	- Name: Talking on the phone
 
-End of Day Survey:
-	- Energy: 3/10
+Name: basketball game
 
-	- Mood: 7/10
+	- Name: Basketball game
+
+End of Day Survey:
+	- Energy: 4/10
+
+	- Mood: 6/10
 
 	- Stress: 7/10
+
+
+--------------------------------------------------
+
+Date: 2023-10-08 00:00:00 (Sunday)
+
+Name: headache
+
+	- Name: Headache
+
+Name: studying
+
+	- Name: Studying
+
+Name: reading
+
+	- Name: Reading
+
+End of Day Survey:
+	- Energy: 6/10
+
+	- Mood: 4/10
+
+	- Stress: 5/10
 
 
 --------------------------------------------------
@@ -1340,17 +1256,9 @@ Name: shoulder pain
 
 	- Name: Shoulder pain
 
-Name: headache
+Name: reading
 
-	- Name: Headache
-
-Name: stomachache
-
-	- Name: Stomachache
-
-Name: playing videogames
-
-	- Name: Playing videogames
+	- Name: Reading
 
 Name: basketball practice
 
@@ -1365,9 +1273,9 @@ Name: homework due: Discrete Mathematics
 	- Name: Homework due: discrete mathematics
 
 End of Day Survey:
-	- Energy: 4/10
+	- Energy: 6/10
 
-	- Mood: 4/10
+	- Mood: 6/10
 
 	- Stress: 6/10
 
@@ -1388,6 +1296,14 @@ Name: stomachache
 
 	- Name: Stomachache
 
+Name: studying
+
+	- Name: Studying
+
+Name: walking outside
+
+	- Name: Walking outside
+
 Name: playing videogames
 
 	- Name: Playing videogames
@@ -1397,37 +1313,41 @@ Name: basketball practice
 	- Name: Basketball practice
 
 End of Day Survey:
-	- Energy: 3/10
+	- Energy: 4/10
 
-	- Mood: 5/10
+	- Mood: 6/10
 
-	- Stress: 5/10
+	- Stress: 7/10
 
 
 --------------------------------------------------
 
 Date: 2023-10-11 00:00:00 (Wednesday)
 
+Name: shoulder pain
+
+	- Name: Shoulder pain
+
 Name: headache
 
 	- Name: Headache
 
-Name: stomachache
+Name: reading
 
-	- Name: Stomachache
+	- Name: Reading
 
-Name: weightlifting
+Name: basketball practice
 
-	- Name: Weightlifting
+	- Name: Basketball practice
 
 Name: class: Discrete Mathematics
 
 	- Name: Class: discrete mathematics
 
 End of Day Survey:
-	- Energy: 3/10
+	- Energy: 6/10
 
-	- Mood: 1/10
+	- Mood: 5/10
 
 	- Stress: 5/10
 
@@ -1480,21 +1400,9 @@ Name: headache
 
 	- Name: Headache
 
-Name: stomachache
-
-	- Name: Stomachache
-
-Name: walking outside
-
-	- Name: Walking outside
-
 Name: reading
 
 	- Name: Reading
-
-Name: talking on the phone
-
-	- Name: Talking on the phone
 
 Name: weightlifting
 
@@ -1509,47 +1417,35 @@ Name: party
 	- Name: Party
 
 End of Day Survey:
-	- Energy: 4/10
+	- Energy: 6/10
 
-	- Mood: 1/10
+	- Mood: 3/10
 
-	- Stress: 6/10
+	- Stress: 5/10
 
 
 --------------------------------------------------
 
 Date: 2023-10-14 00:00:00 (Saturday)
 
-Name: headache
-
-	- Name: Headache
-
-Name: stomachache
-
-	- Name: Stomachache
-
 Name: studying
 
 	- Name: Studying
 
-Name: hiking
+Name: walking outside
 
-	- Name: Hiking
+	- Name: Walking outside
 
-Name: talking on the phone
+Name: reading
 
-	- Name: Talking on the phone
-
-Name: basketball game
-
-	- Name: Basketball game
+	- Name: Reading
 
 End of Day Survey:
-	- Energy: 4/10
+	- Energy: 6/10
 
-	- Mood: 5/10
+	- Mood: 8/10
 
-	- Stress: 10/10
+	- Stress: 7/10
 
 
 --------------------------------------------------
@@ -1560,32 +1456,20 @@ Name: headache
 
 	- Name: Headache
 
-Name: stomachache
+Name: hiking
 
-	- Name: Stomachache
+	- Name: Hiking
 
-Name: studying
+Name: date night
 
-	- Name: Studying
-
-Name: walking outside
-
-	- Name: Walking outside
-
-Name: playing videogames
-
-	- Name: Playing videogames
-
-Name: movie night
-
-	- Name: Movie night
+	- Name: Date night
 
 End of Day Survey:
-	- Energy: 3/10
+	- Energy: 6/10
 
-	- Mood: 8/10
+	- Mood: 7/10
 
-	- Stress: 7/10
+	- Stress: 6/10
 
 
 --------------------------------------------------
@@ -1604,9 +1488,9 @@ Name: stomachache
 
 	- Name: Stomachache
 
-Name: reading
+Name: playing videogames
 
-	- Name: Reading
+	- Name: Playing videogames
 
 Name: basketball practice
 
@@ -1623,47 +1507,27 @@ Name: homework due: Discrete Mathematics
 End of Day Survey:
 	- Energy: 3/10
 
-	- Mood: 4/10
+	- Mood: 5/10
 
-	- Stress: 6/10
+	- Stress: 5/10
 
 
 --------------------------------------------------
 
 Date: 2023-10-17 00:00:00 (Tuesday)
 
-Name: headache
-
-	- Name: Headache
-
-Name: stomachache
-
-	- Name: Stomachache
-
-Name: studying
-
-	- Name: Studying
-
 Name: walking outside
 
 	- Name: Walking outside
 
-Name: playing videogames
+Name: basketball game
 
-	- Name: Playing videogames
-
-Name: talking on the phone
-
-	- Name: Talking on the phone
-
-Name: basketball practice
-
-	- Name: Basketball practice
+	- Name: Basketball game
 
 End of Day Survey:
-	- Energy: 4/10
+	- Energy: 6/10
 
-	- Mood: 5/10
+	- Mood: 7/10
 
 	- Stress: 6/10
 
@@ -1672,21 +1536,21 @@ End of Day Survey:
 
 Date: 2023-10-18 00:00:00 (Wednesday)
 
-Name: headache
+Name: shoulder pain
 
-	- Name: Headache
+	- Name: Shoulder pain
 
 Name: stomachache
 
 	- Name: Stomachache
 
-Name: playing videogames
+Name: talking on the phone
 
-	- Name: Playing videogames
+	- Name: Talking on the phone
 
-Name: weightlifting
+Name: basketball practice
 
-	- Name: Weightlifting
+	- Name: Basketball practice
 
 Name: class: Discrete Mathematics
 
@@ -1697,7 +1561,7 @@ End of Day Survey:
 
 	- Mood: 5/10
 
-	- Stress: 5/10
+	- Stress: 9/10
 
 
 --------------------------------------------------
@@ -1708,13 +1572,9 @@ Name: elbow pain
 
 	- Name: Elbow pain
 
-Name: headache
+Name: shoulder pain
 
-	- Name: Headache
-
-Name: stomachache
-
-	- Name: Stomachache
+	- Name: Shoulder pain
 
 Name: walking outside
 
@@ -1724,13 +1584,9 @@ Name: playing videogames
 
 	- Name: Playing videogames
 
-Name: talking on the phone
+Name: basketball practice
 
-	- Name: Talking on the phone
-
-Name: basketball game
-
-	- Name: Basketball game
+	- Name: Basketball practice
 
 Name: class: Computer Programming
 
@@ -1741,107 +1597,7 @@ Name: homework due: Computer Programming
 	- Name: Homework due: computer programming
 
 End of Day Survey:
-	- Energy: 4/10
-
-	- Mood: 6/10
-
-	- Stress: 6/10
-
-
---------------------------------------------------
-
-Date: 2023-10-20 00:00:00 (Friday)
-
-Name: headache
-
-	- Name: Headache
-
-Name: stomachache
-
-	- Name: Stomachache
-
-Name: playing videogames
-
-	- Name: Playing videogames
-
-Name: talking on the phone
-
-	- Name: Talking on the phone
-
-Name: weightlifting
-
-	- Name: Weightlifting
-
-Name: class: Computer Programming
-
-	- Name: Class: computer programming
-
-End of Day Survey:
-	- Energy: 3/10
-
-	- Mood: 4/10
-
-	- Stress: 9/10
-
-
---------------------------------------------------
-
-Date: 2023-10-21 00:00:00 (Saturday)
-
-Name: headache
-
-	- Name: Headache
-
-Name: stomachache
-
-	- Name: Stomachache
-
-Name: playing videogames
-
-	- Name: Playing videogames
-
-Name: basketball game
-
-	- Name: Basketball game
-
-End of Day Survey:
-	- Energy: 3/10
-
-	- Mood: 4/10
-
-	- Stress: 5/10
-
-
---------------------------------------------------
-
-Date: 2023-10-22 00:00:00 (Sunday)
-
-Name: stomachache
-
-	- Name: Stomachache
-
-Name: studying
-
-	- Name: Studying
-
-Name: hiking
-
-	- Name: Hiking
-
-Name: reading
-
-	- Name: Reading
-
-Name: talking on the phone
-
-	- Name: Talking on the phone
-
-Name: movie night
-
-	- Name: Movie night
-
-End of Day Survey:
-	- Energy: 4/10
+	- Energy: 6/10
 
 	- Mood: 7/10
 
@@ -1850,15 +1606,15 @@ End of Day Survey:
 
 --------------------------------------------------
 
-Date: 2023-10-23 00:00:00 (Monday)
-
-Name: headache
-
-	- Name: Headache
+Date: 2023-10-20 00:00:00 (Friday)
 
 Name: stomachache
 
 	- Name: Stomachache
+
+Name: walking outside
+
+	- Name: Walking outside
 
 Name: reading
 
@@ -1867,162 +1623,6 @@ Name: reading
 Name: talking on the phone
 
 	- Name: Talking on the phone
-
-Name: weightlifting
-
-	- Name: Weightlifting
-
-Name: class: Discrete Mathematics
-
-	- Name: Class: discrete mathematics
-
-Name: homework due: Discrete Mathematics
-
-	- Name: Homework due: discrete mathematics
-
-End of Day Survey:
-	- Energy: 4/10
-
-	- Mood: 2/10
-
-	- Stress: 6/10
-
-
---------------------------------------------------
-
-Date: 2023-10-24 00:00:00 (Tuesday)
-
-Name: headache
-
-	- Name: Headache
-
-Name: stomachache
-
-	- Name: Stomachache
-
-Name: studying
-
-	- Name: Studying
-
-Name: walking outside
-
-	- Name: Walking outside
-
-Name: playing videogames
-
-	- Name: Playing videogames
-
-Name: talking on the phone
-
-	- Name: Talking on the phone
-
-Name: basketball practice
-
-	- Name: Basketball practice
-
-End of Day Survey:
-	- Energy: 4/10
-
-	- Mood: 6/10
-
-	- Stress: 6/10
-
-
---------------------------------------------------
-
-Date: 2023-10-25 00:00:00 (Wednesday)
-
-Name: headache
-
-	- Name: Headache
-
-Name: stomachache
-
-	- Name: Stomachache
-
-Name: playing videogames
-
-	- Name: Playing videogames
-
-Name: basketball practice
-
-	- Name: Basketball practice
-
-Name: class: Discrete Mathematics
-
-	- Name: Class: discrete mathematics
-
-End of Day Survey:
-	- Energy: 3/10
-
-	- Mood: 4/10
-
-	- Stress: 5/10
-
-
---------------------------------------------------
-
-Date: 2023-10-26 00:00:00 (Thursday)
-
-Name: elbow pain
-
-	- Name: Elbow pain
-
-Name: headache
-
-	- Name: Headache
-
-Name: stomachache
-
-	- Name: Stomachache
-
-Name: walking outside
-
-	- Name: Walking outside
-
-Name: talking on the phone
-
-	- Name: Talking on the phone
-
-Name: basketball game
-
-	- Name: Basketball game
-
-Name: class: Computer Programming
-
-	- Name: Class: computer programming
-
-Name: homework due: Computer Programming
-
-	- Name: Homework due: computer programming
-
-End of Day Survey:
-	- Energy: 3/10
-
-	- Mood: 5/10
-
-	- Stress: 10/10
-
-
---------------------------------------------------
-
-Date: 2023-10-27 00:00:00 (Friday)
-
-Name: headache
-
-	- Name: Headache
-
-Name: stomachache
-
-	- Name: Stomachache
-
-Name: walking outside
-
-	- Name: Walking outside
-
-Name: playing videogames
-
-	- Name: Playing videogames
 
 Name: weightlifting
 
@@ -2037,16 +1637,44 @@ Name: party
 	- Name: Party
 
 End of Day Survey:
-	- Energy: 3/10
+	- Energy: 4/10
 
-	- Mood: 6/10
+	- Mood: 5/10
 
-	- Stress: 7/10
+	- Stress: 5/10
 
 
 --------------------------------------------------
 
-Date: 2023-10-28 00:00:00 (Saturday)
+Date: 2023-10-21 00:00:00 (Saturday)
+
+Name: headache
+
+	- Name: Headache
+
+Name: studying
+
+	- Name: Studying
+
+Name: playing videogames
+
+	- Name: Playing videogames
+
+Name: date night
+
+	- Name: Date night
+
+End of Day Survey:
+	- Energy: 6/10
+
+	- Mood: 6/10
+
+	- Stress: 5/10
+
+
+--------------------------------------------------
+
+Date: 2023-10-22 00:00:00 (Sunday)
 
 Name: headache
 
@@ -2060,10 +1688,6 @@ Name: studying
 
 	- Name: Studying
 
-Name: walking outside
-
-	- Name: Walking outside
-
 Name: hiking
 
 	- Name: Hiking
@@ -2072,12 +1696,208 @@ Name: playing videogames
 
 	- Name: Playing videogames
 
+Name: talking on the phone
+
+	- Name: Talking on the phone
+
+Name: movie night
+
+	- Name: Movie night
+
 End of Day Survey:
 	- Energy: 4/10
 
+	- Mood: 7/10
+
+	- Stress: 10/10
+
+
+--------------------------------------------------
+
+Date: 2023-10-23 00:00:00 (Monday)
+
+Name: walking outside
+
+	- Name: Walking outside
+
+Name: weightlifting
+
+	- Name: Weightlifting
+
+Name: class: Discrete Mathematics
+
+	- Name: Class: discrete mathematics
+
+Name: homework due: Discrete Mathematics
+
+	- Name: Homework due: discrete mathematics
+
+End of Day Survey:
+	- Energy: 6/10
+
 	- Mood: 8/10
 
-	- Stress: 9/10
+	- Stress: 7/10
+
+
+--------------------------------------------------
+
+Date: 2023-10-24 00:00:00 (Tuesday)
+
+Name: shoulder pain
+
+	- Name: Shoulder pain
+
+Name: headache
+
+	- Name: Headache
+
+Name: studying
+
+	- Name: Studying
+
+Name: walking outside
+
+	- Name: Walking outside
+
+Name: playing videogames
+
+	- Name: Playing videogames
+
+Name: talking on the phone
+
+	- Name: Talking on the phone
+
+Name: basketball practice
+
+	- Name: Basketball practice
+
+End of Day Survey:
+	- Energy: 6/10
+
+	- Mood: 5/10
+
+	- Stress: 10/10
+
+
+--------------------------------------------------
+
+Date: 2023-10-25 00:00:00 (Wednesday)
+
+Name: shoulder pain
+
+	- Name: Shoulder pain
+
+Name: headache
+
+	- Name: Headache
+
+Name: walking outside
+
+	- Name: Walking outside
+
+Name: playing videogames
+
+	- Name: Playing videogames
+
+Name: basketball practice
+
+	- Name: Basketball practice
+
+Name: class: Discrete Mathematics
+
+	- Name: Class: discrete mathematics
+
+End of Day Survey:
+	- Energy: 6/10
+
+	- Mood: 5/10
+
+	- Stress: 7/10
+
+
+--------------------------------------------------
+
+Date: 2023-10-26 00:00:00 (Thursday)
+
+Name: elbow pain
+
+	- Name: Elbow pain
+
+Name: shoulder pain
+
+	- Name: Shoulder pain
+
+Name: headache
+
+	- Name: Headache
+
+Name: basketball practice
+
+	- Name: Basketball practice
+
+Name: class: Computer Programming
+
+	- Name: Class: computer programming
+
+Name: homework due: Computer Programming
+
+	- Name: Homework due: computer programming
+
+End of Day Survey:
+	- Energy: 6/10
+
+	- Mood: 3/10
+
+	- Stress: 5/10
+
+
+--------------------------------------------------
+
+Date: 2023-10-27 00:00:00 (Friday)
+
+Name: walking outside
+
+	- Name: Walking outside
+
+Name: weightlifting
+
+	- Name: Weightlifting
+
+Name: class: Computer Programming
+
+	- Name: Class: computer programming
+
+Name: party
+
+	- Name: Party
+
+End of Day Survey:
+	- Energy: 6/10
+
+	- Mood: 6/10
+
+	- Stress: 6/10
+
+
+--------------------------------------------------
+
+Date: 2023-10-28 00:00:00 (Saturday)
+
+Name: playing videogames
+
+	- Name: Playing videogames
+
+Name: basketball game
+
+	- Name: Basketball game
+
+End of Day Survey:
+	- Energy: 6/10
+
+	- Mood: 6/10
+
+	- Stress: 5/10
 
 
 --------------------------------------------------
@@ -2096,29 +1916,41 @@ Name: studying
 
 	- Name: Studying
 
-Name: reading
+Name: walking outside
 
-	- Name: Reading
+	- Name: Walking outside
 
-Name: movie night
+Name: playing videogames
 
-	- Name: Movie night
+	- Name: Playing videogames
+
+Name: date night
+
+	- Name: Date night
 
 End of Day Survey:
 	- Energy: 3/10
 
-	- Mood: 4/10
+	- Mood: 5/10
 
-	- Stress: 5/10
+	- Stress: 6/10
 
 
 --------------------------------------------------
 
 Date: 2023-10-30 00:00:00 (Monday)
 
-Name: headache
+Name: shoulder pain
 
-	- Name: Headache
+	- Name: Shoulder pain
+
+Name: stomachache
+
+	- Name: Stomachache
+
+Name: walking outside
+
+	- Name: Walking outside
 
 Name: playing videogames
 
@@ -2137,32 +1969,20 @@ Name: homework due: Discrete Mathematics
 	- Name: Homework due: discrete mathematics
 
 End of Day Survey:
-	- Energy: 6/10
+	- Energy: 3/10
 
-	- Mood: 4/10
+	- Mood: 8/10
 
-	- Stress: 6/10
+	- Stress: 7/10
 
 
 --------------------------------------------------
 
 Date: 2023-10-31 00:00:00 (Tuesday)
 
-Name: headache
-
-	- Name: Headache
-
 Name: stomachache
 
 	- Name: Stomachache
-
-Name: studying
-
-	- Name: Studying
-
-Name: walking outside
-
-	- Name: Walking outside
 
 Name: playing videogames
 
@@ -2181,32 +2001,28 @@ End of Day Survey:
 
 	- Mood: 6/10
 
-	- Stress: 6/10
+	- Stress: 4/10
 
 
 --------------------------------------------------
 
 Date: 2023-11-01 00:00:00 (Wednesday)
 
-Name: headache
-
-	- Name: Headache
-
 Name: stomachache
 
 	- Name: Stomachache
 
-Name: reading
+Name: walking outside
 
-	- Name: Reading
+	- Name: Walking outside
 
-Name: talking on the phone
+Name: playing videogames
 
-	- Name: Talking on the phone
+	- Name: Playing videogames
 
-Name: basketball practice
+Name: weightlifting
 
-	- Name: Basketball practice
+	- Name: Weightlifting
 
 Name: class: Discrete Mathematics
 
@@ -2217,7 +2033,7 @@ End of Day Survey:
 
 	- Mood: 5/10
 
-	- Stress: 9/10
+	- Stress: 7/10
 
 
 --------------------------------------------------
@@ -2236,9 +2052,9 @@ Name: stomachache
 
 	- Name: Stomachache
 
-Name: reading
+Name: playing videogames
 
-	- Name: Reading
+	- Name: Playing videogames
 
 Name: basketball game
 
@@ -2253,7 +2069,7 @@ Name: homework due: Computer Programming
 	- Name: Homework due: computer programming
 
 End of Day Survey:
-	- Energy: 3/10
+	- Energy: 4/10
 
 	- Mood: 5/10
 
@@ -2264,13 +2080,17 @@ End of Day Survey:
 
 Date: 2023-11-03 00:00:00 (Friday)
 
-Name: headache
-
-	- Name: Headache
-
 Name: stomachache
 
 	- Name: Stomachache
+
+Name: walking outside
+
+	- Name: Walking outside
+
+Name: playing videogames
+
+	- Name: Playing videogames
 
 Name: weightlifting
 
@@ -2280,21 +2100,21 @@ Name: class: Computer Programming
 
 	- Name: Class: computer programming
 
+Name: party
+
+	- Name: Party
+
 End of Day Survey:
-	- Energy: 4/10
+	- Energy: 3/10
 
-	- Mood: 4/10
+	- Mood: 7/10
 
-	- Stress: 5/10
+	- Stress: 6/10
 
 
 --------------------------------------------------
 
 Date: 2023-11-04 00:00:00 (Saturday)
-
-Name: headache
-
-	- Name: Headache
 
 Name: stomachache
 
@@ -2304,52 +2124,44 @@ Name: studying
 
 	- Name: Studying
 
-Name: playing videogames
+Name: hiking
 
-	- Name: Playing videogames
+	- Name: Hiking
 
-Name: basketball game
+Name: reading
 
-	- Name: Basketball game
+	- Name: Reading
+
+Name: talking on the phone
+
+	- Name: Talking on the phone
 
 End of Day Survey:
 	- Energy: 4/10
 
-	- Mood: 5/10
+	- Mood: 7/10
 
-	- Stress: 5/10
+	- Stress: 10/10
 
 
 --------------------------------------------------
 
 Date: 2023-11-05 00:00:00 (Sunday)
 
-Name: headache
+Name: studying
 
-	- Name: Headache
-
-Name: stomachache
-
-	- Name: Stomachache
-
-Name: hiking
-
-	- Name: Hiking
+	- Name: Studying
 
 Name: playing videogames
 
 	- Name: Playing videogames
-
-Name: talking on the phone
-
-	- Name: Talking on the phone
 
 Name: movie night
 
 	- Name: Movie night
 
 End of Day Survey:
-	- Energy: 4/10
+	- Energy: 6/10
 
 	- Mood: 8/10
 
@@ -2360,41 +2172,9 @@ End of Day Survey:
 
 Date: 2023-11-06 00:00:00 (Monday)
 
-Name: headache
+Name: shoulder pain
 
-	- Name: Headache
-
-Name: stomachache
-
-	- Name: Stomachache
-
-Name: reading
-
-	- Name: Reading
-
-Name: basketball practice
-
-	- Name: Basketball practice
-
-Name: class: Discrete Mathematics
-
-	- Name: Class: discrete mathematics
-
-Name: homework due: Discrete Mathematics
-
-	- Name: Homework due: discrete mathematics
-
-End of Day Survey:
-	- Energy: 4/10
-
-	- Mood: 4/10
-
-	- Stress: 6/10
-
-
---------------------------------------------------
-
-Date: 2023-11-07 00:00:00 (Tuesday)
+	- Name: Shoulder pain
 
 Name: headache
 
@@ -2412,29 +2192,53 @@ Name: basketball practice
 
 	- Name: Basketball practice
 
+Name: class: Discrete Mathematics
+
+	- Name: Class: discrete mathematics
+
+Name: homework due: Discrete Mathematics
+
+	- Name: Homework due: discrete mathematics
+
 End of Day Survey:
-	- Energy: 3/10
+	- Energy: 4/10
+
+	- Mood: 5/10
+
+	- Stress: 8/10
+
+
+--------------------------------------------------
+
+Date: 2023-11-07 00:00:00 (Tuesday)
+
+Name: playing videogames
+
+	- Name: Playing videogames
+
+End of Day Survey:
+	- Energy: 6/10
 
 	- Mood: 6/10
 
-	- Stress: 6/10
+	- Stress: 5/10
 
 
 --------------------------------------------------
 
 Date: 2023-11-08 00:00:00 (Wednesday)
 
-Name: headache
+Name: shoulder pain
 
-	- Name: Headache
+	- Name: Shoulder pain
 
-Name: stomachache
+Name: walking outside
 
-	- Name: Stomachache
+	- Name: Walking outside
 
-Name: playing videogames
+Name: reading
 
-	- Name: Playing videogames
+	- Name: Reading
 
 Name: talking on the phone
 
@@ -2449,11 +2253,11 @@ Name: class: Discrete Mathematics
 	- Name: Class: discrete mathematics
 
 End of Day Survey:
-	- Energy: 3/10
+	- Energy: 6/10
 
-	- Mood: 4/10
+	- Mood: 8/10
 
-	- Stress: 5/10
+	- Stress: 10/10
 
 
 --------------------------------------------------
@@ -2464,21 +2268,17 @@ Name: elbow pain
 
 	- Name: Elbow pain
 
-Name: headache
-
-	- Name: Headache
-
 Name: stomachache
 
 	- Name: Stomachache
 
+Name: walking outside
+
+	- Name: Walking outside
+
 Name: playing videogames
 
 	- Name: Playing videogames
-
-Name: talking on the phone
-
-	- Name: Talking on the phone
 
 Name: basketball game
 
@@ -2495,26 +2295,18 @@ Name: homework due: Computer Programming
 End of Day Survey:
 	- Energy: 4/10
 
-	- Mood: 5/10
+	- Mood: 8/10
 
-	- Stress: 5/10
+	- Stress: 6/10
 
 
 --------------------------------------------------
 
 Date: 2023-11-10 00:00:00 (Friday)
 
-Name: headache
+Name: reading
 
-	- Name: Headache
-
-Name: stomachache
-
-	- Name: Stomachache
-
-Name: playing videogames
-
-	- Name: Playing videogames
+	- Name: Reading
 
 Name: weightlifting
 
@@ -2524,14 +2316,10 @@ Name: class: Computer Programming
 
 	- Name: Class: computer programming
 
-Name: party
-
-	- Name: Party
-
 End of Day Survey:
-	- Energy: 4/10
+	- Energy: 6/10
 
-	- Mood: 5/10
+	- Mood: 4/10
 
 	- Stress: 5/10
 
@@ -2539,10 +2327,6 @@ End of Day Survey:
 --------------------------------------------------
 
 Date: 2023-11-11 00:00:00 (Saturday)
-
-Name: headache
-
-	- Name: Headache
 
 Name: stomachache
 
@@ -2556,9 +2340,9 @@ Name: walking outside
 
 	- Name: Walking outside
 
-Name: playing videogames
+Name: hiking
 
-	- Name: Playing videogames
+	- Name: Hiking
 
 Name: basketball game
 
@@ -2567,18 +2351,14 @@ Name: basketball game
 End of Day Survey:
 	- Energy: 4/10
 
-	- Mood: 7/10
+	- Mood: 8/10
 
-	- Stress: 7/10
+	- Stress: 8/10
 
 
 --------------------------------------------------
 
 Date: 2023-11-12 00:00:00 (Sunday)
-
-Name: headache
-
-	- Name: Headache
 
 Name: stomachache
 
@@ -2588,41 +2368,37 @@ Name: studying
 
 	- Name: Studying
 
-Name: reading
+Name: hiking
 
-	- Name: Reading
+	- Name: Hiking
+
+Name: playing videogames
+
+	- Name: Playing videogames
 
 Name: movie night
 
 	- Name: Movie night
 
 End of Day Survey:
-	- Energy: 3/10
+	- Energy: 4/10
 
-	- Mood: 5/10
+	- Mood: 8/10
 
-	- Stress: 5/10
+	- Stress: 7/10
 
 
 --------------------------------------------------
 
 Date: 2023-11-13 00:00:00 (Monday)
 
-Name: headache
-
-	- Name: Headache
-
 Name: stomachache
 
 	- Name: Stomachache
 
-Name: playing videogames
+Name: basketball practice
 
-	- Name: Playing videogames
-
-Name: weightlifting
-
-	- Name: Weightlifting
+	- Name: Basketball practice
 
 Name: class: Discrete Mathematics
 
@@ -2637,56 +2413,48 @@ End of Day Survey:
 
 	- Mood: 5/10
 
-	- Stress: 6/10
+	- Stress: 5/10
 
 
 --------------------------------------------------
 
 Date: 2023-11-14 00:00:00 (Tuesday)
 
-Name: headache
+Name: shoulder pain
 
-	- Name: Headache
+	- Name: Shoulder pain
 
-Name: stomachache
+Name: playing videogames
 
-	- Name: Stomachache
+	- Name: Playing videogames
 
-Name: studying
+Name: basketball practice
 
-	- Name: Studying
-
-Name: reading
-
-	- Name: Reading
-
-Name: talking on the phone
-
-	- Name: Talking on the phone
-
-Name: basketball game
-
-	- Name: Basketball game
+	- Name: Basketball practice
 
 End of Day Survey:
-	- Energy: 4/10
+	- Energy: 6/10
 
-	- Mood: 5/10
+	- Mood: 6/10
 
-	- Stress: 9/10
+	- Stress: 5/10
 
 
 --------------------------------------------------
 
 Date: 2023-11-15 00:00:00 (Wednesday)
 
+Name: shoulder pain
+
+	- Name: Shoulder pain
+
 Name: headache
 
 	- Name: Headache
 
-Name: stomachache
+Name: walking outside
 
-	- Name: Stomachache
+	- Name: Walking outside
 
 Name: basketball practice
 
@@ -2697,40 +2465,28 @@ Name: class: Discrete Mathematics
 	- Name: Class: discrete mathematics
 
 End of Day Survey:
-	- Energy: 3/10
+	- Energy: 6/10
 
-	- Mood: 4/10
+	- Mood: 5/10
 
-	- Stress: 5/10
+	- Stress: 6/10
 
 
 --------------------------------------------------
 
 Date: 2023-11-16 00:00:00 (Thursday)
 
-Name: elbow pain
+Name: shoulder pain
 
-	- Name: Elbow pain
+	- Name: Shoulder pain
 
-Name: headache
+Name: walking outside
 
-	- Name: Headache
+	- Name: Walking outside
 
-Name: stomachache
+Name: basketball practice
 
-	- Name: Stomachache
-
-Name: playing videogames
-
-	- Name: Playing videogames
-
-Name: talking on the phone
-
-	- Name: Talking on the phone
-
-Name: basketball game
-
-	- Name: Basketball game
+	- Name: Basketball practice
 
 Name: class: Computer Programming
 
@@ -2741,11 +2497,11 @@ Name: homework due: Computer Programming
 	- Name: Homework due: computer programming
 
 End of Day Survey:
-	- Energy: 4/10
+	- Energy: 6/10
 
-	- Mood: 5/10
+	- Mood: 6/10
 
-	- Stress: 5/10
+	- Stress: 7/10
 
 
 --------------------------------------------------
@@ -2756,9 +2512,9 @@ Name: headache
 
 	- Name: Headache
 
-Name: stomachache
+Name: walking outside
 
-	- Name: Stomachache
+	- Name: Walking outside
 
 Name: weightlifting
 
@@ -2773,7 +2529,47 @@ Name: party
 	- Name: Party
 
 End of Day Survey:
-	- Energy: 3/10
+	- Energy: 6/10
+
+	- Mood: 3/10
+
+	- Stress: 7/10
+
+
+--------------------------------------------------
+
+Date: 2023-11-18 00:00:00 (Saturday)
+
+Name: hiking
+
+	- Name: Hiking
+
+Name: basketball game
+
+	- Name: Basketball game
+
+End of Day Survey:
+	- Energy: 6/10
+
+	- Mood: 6/10
+
+	- Stress: 6/10
+
+
+--------------------------------------------------
+
+Date: 2023-11-19 00:00:00 (Sunday)
+
+Name: studying
+
+	- Name: Studying
+
+Name: reading
+
+	- Name: Reading
+
+End of Day Survey:
+	- Energy: 6/10
 
 	- Mood: 6/10
 
@@ -2782,83 +2578,19 @@ End of Day Survey:
 
 --------------------------------------------------
 
-Date: 2023-11-18 00:00:00 (Saturday)
-
-Name: headache
-
-	- Name: Headache
-
-Name: stomachache
-
-	- Name: Stomachache
-
-Name: studying
-
-	- Name: Studying
-
-Name: reading
-
-	- Name: Reading
-
-Name: talking on the phone
-
-	- Name: Talking on the phone
-
-Name: basketball game
-
-	- Name: Basketball game
-
-End of Day Survey:
-	- Energy: 3/10
-
-	- Mood: 5/10
-
-	- Stress: 5/10
-
-
---------------------------------------------------
-
-Date: 2023-11-19 00:00:00 (Sunday)
-
-Name: headache
-
-	- Name: Headache
-
-Name: studying
-
-	- Name: Studying
-
-Name: hiking
-
-	- Name: Hiking
-
-Name: reading
-
-	- Name: Reading
-
-Name: movie night
-
-	- Name: Movie night
-
-End of Day Survey:
-	- Energy: 6/10
-
-	- Mood: 7/10
-
-	- Stress: 6/10
-
-
---------------------------------------------------
-
 Date: 2023-11-20 00:00:00 (Monday)
 
+Name: shoulder pain
+
+	- Name: Shoulder pain
+
 Name: headache
 
 	- Name: Headache
 
-Name: stomachache
+Name: reading
 
-	- Name: Stomachache
+	- Name: Reading
 
 Name: basketball practice
 
@@ -2873,9 +2605,9 @@ Name: homework due: Discrete Mathematics
 	- Name: Homework due: discrete mathematics
 
 End of Day Survey:
-	- Energy: 3/10
+	- Energy: 6/10
 
-	- Mood: 3/10
+	- Mood: 5/10
 
 	- Stress: 6/10
 
@@ -2884,41 +2616,37 @@ End of Day Survey:
 
 Date: 2023-11-21 00:00:00 (Tuesday)
 
+Name: shoulder pain
+
+	- Name: Shoulder pain
+
 Name: headache
 
 	- Name: Headache
 
-Name: stomachache
-
-	- Name: Stomachache
-
 Name: studying
 
 	- Name: Studying
+
+Name: talking on the phone
+
+	- Name: Talking on the phone
 
 Name: basketball practice
 
 	- Name: Basketball practice
 
 End of Day Survey:
-	- Energy: 3/10
+	- Energy: 6/10
 
 	- Mood: 4/10
 
-	- Stress: 5/10
+	- Stress: 4/10
 
 
 --------------------------------------------------
 
 Date: 2023-11-22 00:00:00 (Wednesday)
-
-Name: headache
-
-	- Name: Headache
-
-Name: stomachache
-
-	- Name: Stomachache
 
 Name: walking outside
 
@@ -2928,18 +2656,18 @@ Name: playing videogames
 
 	- Name: Playing videogames
 
-Name: basketball practice
+Name: weightlifting
 
-	- Name: Basketball practice
+	- Name: Weightlifting
 
 Name: class: Discrete Mathematics
 
 	- Name: Class: discrete mathematics
 
 End of Day Survey:
-	- Energy: 3/10
+	- Energy: 6/10
 
-	- Mood: 5/10
+	- Mood: 9/10
 
 	- Stress: 7/10
 
@@ -2947,22 +2675,6 @@ End of Day Survey:
 --------------------------------------------------
 
 Date: 2023-11-23 00:00:00 (Thursday)
-
-Name: elbow pain
-
-	- Name: Elbow pain
-
-Name: headache
-
-	- Name: Headache
-
-Name: stomachache
-
-	- Name: Stomachache
-
-Name: walking outside
-
-	- Name: Walking outside
 
 Name: playing videogames
 
@@ -2981,20 +2693,16 @@ Name: homework due: Computer Programming
 	- Name: Homework due: computer programming
 
 End of Day Survey:
-	- Energy: 4/10
+	- Energy: 6/10
 
 	- Mood: 6/10
 
-	- Stress: 6/10
+	- Stress: 5/10
 
 
 --------------------------------------------------
 
 Date: 2023-11-24 00:00:00 (Friday)
-
-Name: headache
-
-	- Name: Headache
 
 Name: weightlifting
 
@@ -3004,14 +2712,10 @@ Name: class: Computer Programming
 
 	- Name: Class: computer programming
 
-Name: party
-
-	- Name: Party
-
 End of Day Survey:
 	- Energy: 6/10
 
-	- Mood: 1/10
+	- Mood: 5/10
 
 	- Stress: 5/10
 
@@ -3024,6 +2728,30 @@ Name: headache
 
 	- Name: Headache
 
+Name: walking outside
+
+	- Name: Walking outside
+
+Name: reading
+
+	- Name: Reading
+
+Name: date night
+
+	- Name: Date night
+
+End of Day Survey:
+	- Energy: 6/10
+
+	- Mood: 8/10
+
+	- Stress: 6/10
+
+
+--------------------------------------------------
+
+Date: 2023-11-26 00:00:00 (Sunday)
+
 Name: stomachache
 
 	- Name: Stomachache
@@ -3040,77 +2768,37 @@ Name: reading
 
 	- Name: Reading
 
-Name: talking on the phone
+Name: movie night
 
-	- Name: Talking on the phone
-
-Name: date night
-
-	- Name: Date night
+	- Name: Movie night
 
 End of Day Survey:
-	- Energy: 3/10
+	- Energy: 4/10
 
 	- Mood: 8/10
 
-	- Stress: 6/10
-
-
---------------------------------------------------
-
-Date: 2023-11-26 00:00:00 (Sunday)
-
-Name: headache
-
-	- Name: Headache
-
-Name: stomachache
-
-	- Name: Stomachache
-
-Name: studying
-
-	- Name: Studying
-
-Name: walking outside
-
-	- Name: Walking outside
-
-Name: hiking
-
-	- Name: Hiking
-
-Name: playing videogames
-
-	- Name: Playing videogames
-
-End of Day Survey:
-	- Energy: 3/10
-
-	- Mood: 6/10
-
-	- Stress: 9/10
+	- Stress: 7/10
 
 
 --------------------------------------------------
 
 Date: 2023-11-27 00:00:00 (Monday)
 
+Name: shoulder pain
+
+	- Name: Shoulder pain
+
 Name: headache
 
 	- Name: Headache
-
-Name: stomachache
-
-	- Name: Stomachache
 
 Name: walking outside
 
 	- Name: Walking outside
 
-Name: playing videogames
+Name: talking on the phone
 
-	- Name: Playing videogames
+	- Name: Talking on the phone
 
 Name: basketball practice
 
@@ -3125,32 +2813,76 @@ Name: homework due: Discrete Mathematics
 	- Name: Homework due: discrete mathematics
 
 End of Day Survey:
-	- Energy: 4/10
+	- Energy: 6/10
 
-	- Mood: 7/10
+	- Mood: 5/10
 
-	- Stress: 8/10
+	- Stress: 6/10
 
 
 --------------------------------------------------
 
 Date: 2023-11-28 00:00:00 (Tuesday)
 
-Name: headache
+Name: shoulder pain
 
-	- Name: Headache
-
-Name: stomachache
-
-	- Name: Stomachache
-
-Name: studying
-
-	- Name: Studying
+	- Name: Shoulder pain
 
 Name: walking outside
 
 	- Name: Walking outside
+
+Name: playing videogames
+
+	- Name: Playing videogames
+
+Name: basketball practice
+
+	- Name: Basketball practice
+
+End of Day Survey:
+	- Energy: 6/10
+
+	- Mood: 7/10
+
+	- Stress: 7/10
+
+
+--------------------------------------------------
+
+Date: 2023-11-29 00:00:00 (Wednesday)
+
+Name: shoulder pain
+
+	- Name: Shoulder pain
+
+Name: basketball practice
+
+	- Name: Basketball practice
+
+Name: class: Discrete Mathematics
+
+	- Name: Class: discrete mathematics
+
+End of Day Survey:
+	- Energy: 6/10
+
+	- Mood: 5/10
+
+	- Stress: 5/10
+
+
+--------------------------------------------------
+
+Date: 2023-11-30 00:00:00 (Thursday)
+
+Name: elbow pain
+
+	- Name: Elbow pain
+
+Name: stomachache
+
+	- Name: Stomachache
 
 Name: playing videogames
 
@@ -3164,74 +2896,6 @@ Name: basketball game
 
 	- Name: Basketball game
 
-End of Day Survey:
-	- Energy: 3/10
-
-	- Mood: 7/10
-
-	- Stress: 10/10
-
-
---------------------------------------------------
-
-Date: 2023-11-29 00:00:00 (Wednesday)
-
-Name: headache
-
-	- Name: Headache
-
-Name: stomachache
-
-	- Name: Stomachache
-
-Name: walking outside
-
-	- Name: Walking outside
-
-Name: reading
-
-	- Name: Reading
-
-Name: basketball practice
-
-	- Name: Basketball practice
-
-Name: class: Discrete Mathematics
-
-	- Name: Class: discrete mathematics
-
-End of Day Survey:
-	- Energy: 4/10
-
-	- Mood: 6/10
-
-	- Stress: 7/10
-
-
---------------------------------------------------
-
-Date: 2023-11-30 00:00:00 (Thursday)
-
-Name: elbow pain
-
-	- Name: Elbow pain
-
-Name: headache
-
-	- Name: Headache
-
-Name: stomachache
-
-	- Name: Stomachache
-
-Name: playing videogames
-
-	- Name: Playing videogames
-
-Name: basketball practice
-
-	- Name: Basketball practice
-
 Name: class: Computer Programming
 
 	- Name: Class: computer programming
@@ -3241,24 +2905,20 @@ Name: homework due: Computer Programming
 	- Name: Homework due: computer programming
 
 End of Day Survey:
-	- Energy: 4/10
+	- Energy: 3/10
 
-	- Mood: 4/10
+	- Mood: 6/10
 
-	- Stress: 5/10
+	- Stress: 9/10
 
 
 --------------------------------------------------
 
 Date: 2023-12-01 00:00:00 (Friday)
 
-Name: headache
+Name: playing videogames
 
-	- Name: Headache
-
-Name: walking outside
-
-	- Name: Walking outside
+	- Name: Playing videogames
 
 Name: weightlifting
 
@@ -3275,43 +2935,27 @@ Name: party
 End of Day Survey:
 	- Energy: 6/10
 
-	- Mood: 0/10
+	- Mood: 2/10
 
-	- Stress: 6/10
+	- Stress: 5/10
 
 
 --------------------------------------------------
 
 Date: 2023-12-02 00:00:00 (Saturday)
 
-Name: headache
-
-	- Name: Headache
-
-Name: stomachache
-
-	- Name: Stomachache
-
-Name: studying
-
-	- Name: Studying
-
 Name: walking outside
 
 	- Name: Walking outside
 
-Name: playing videogames
+Name: basketball game
 
-	- Name: Playing videogames
-
-Name: date night
-
-	- Name: Date night
+	- Name: Basketball game
 
 End of Day Survey:
-	- Energy: 4/10
+	- Energy: 6/10
 
-	- Mood: 8/10
+	- Mood: 6/10
 
 	- Stress: 7/10
 
@@ -3324,36 +2968,20 @@ Name: headache
 
 	- Name: Headache
 
-Name: stomachache
-
-	- Name: Stomachache
-
 Name: studying
 
 	- Name: Studying
-
-Name: walking outside
-
-	- Name: Walking outside
-
-Name: hiking
-
-	- Name: Hiking
-
-Name: talking on the phone
-
-	- Name: Talking on the phone
 
 Name: movie night
 
 	- Name: Movie night
 
 End of Day Survey:
-	- Energy: 3/10
+	- Energy: 6/10
 
-	- Mood: 5/10
+	- Mood: 6/10
 
-	- Stress: 6/10
+	- Stress: 5/10
 
 
 --------------------------------------------------
@@ -3368,13 +2996,9 @@ Name: stomachache
 
 	- Name: Stomachache
 
-Name: playing videogames
+Name: weightlifting
 
-	- Name: Playing videogames
-
-Name: basketball practice
-
-	- Name: Basketball practice
+	- Name: Weightlifting
 
 Name: class: Discrete Mathematics
 
@@ -3385,24 +3009,24 @@ Name: homework due: Discrete Mathematics
 	- Name: Homework due: discrete mathematics
 
 End of Day Survey:
-	- Energy: 4/10
+	- Energy: 3/10
 
-	- Mood: 4/10
+	- Mood: 3/10
 
-	- Stress: 6/10
+	- Stress: 5/10
 
 
 --------------------------------------------------
 
 Date: 2023-12-05 00:00:00 (Tuesday)
 
+Name: shoulder pain
+
+	- Name: Shoulder pain
+
 Name: headache
 
 	- Name: Headache
-
-Name: stomachache
-
-	- Name: Stomachache
 
 Name: studying
 
@@ -3412,16 +3036,16 @@ Name: walking outside
 
 	- Name: Walking outside
 
-Name: playing videogames
+Name: reading
 
-	- Name: Playing videogames
+	- Name: Reading
 
-Name: basketball game
+Name: basketball practice
 
-	- Name: Basketball game
+	- Name: Basketball practice
 
 End of Day Survey:
-	- Energy: 3/10
+	- Energy: 6/10
 
 	- Mood: 5/10
 
@@ -3432,9 +3056,9 @@ End of Day Survey:
 
 Date: 2023-12-06 00:00:00 (Wednesday)
 
-Name: headache
+Name: shoulder pain
 
-	- Name: Headache
+	- Name: Shoulder pain
 
 Name: stomachache
 
@@ -3452,9 +3076,9 @@ Name: talking on the phone
 
 	- Name: Talking on the phone
 
-Name: weightlifting
+Name: basketball practice
 
-	- Name: Weightlifting
+	- Name: Basketball practice
 
 Name: class: Discrete Mathematics
 
@@ -3463,7 +3087,7 @@ Name: class: Discrete Mathematics
 End of Day Survey:
 	- Energy: 3/10
 
-	- Mood: 5/10
+	- Mood: 8/10
 
 	- Stress: 10/10
 
@@ -3472,17 +3096,21 @@ End of Day Survey:
 
 Date: 2023-12-07 00:00:00 (Thursday)
 
-Name: headache
+Name: elbow pain
 
-	- Name: Headache
+	- Name: Elbow pain
+
+Name: shoulder pain
+
+	- Name: Shoulder pain
 
 Name: stomachache
 
 	- Name: Stomachache
 
-Name: playing videogames
+Name: talking on the phone
 
-	- Name: Playing videogames
+	- Name: Talking on the phone
 
 Name: basketball practice
 
@@ -3499,9 +3127,9 @@ Name: homework due: Computer Programming
 End of Day Survey:
 	- Energy: 4/10
 
-	- Mood: 4/10
+	- Mood: 5/10
 
-	- Stress: 5/10
+	- Stress: 9/10
 
 
 --------------------------------------------------
@@ -3516,9 +3144,9 @@ Name: stomachache
 
 	- Name: Stomachache
 
-Name: reading
+Name: playing videogames
 
-	- Name: Reading
+	- Name: Playing videogames
 
 Name: weightlifting
 
@@ -3533,9 +3161,9 @@ Name: party
 	- Name: Party
 
 End of Day Survey:
-	- Energy: 3/10
+	- Energy: 4/10
 
-	- Mood: 8/10
+	- Mood: 1/10
 
 	- Stress: 5/10
 
@@ -3552,37 +3180,9 @@ Name: stomachache
 
 	- Name: Stomachache
 
-Name: playing videogames
+Name: studying
 
-	- Name: Playing videogames
-
-Name: date night
-
-	- Name: Date night
-
-End of Day Survey:
-	- Energy: 4/10
-
-	- Mood: 4/10
-
-	- Stress: 5/10
-
-
---------------------------------------------------
-
-Date: 2023-12-10 00:00:00 (Sunday)
-
-Name: headache
-
-	- Name: Headache
-
-Name: stomachache
-
-	- Name: Stomachache
-
-Name: walking outside
-
-	- Name: Walking outside
+	- Name: Studying
 
 Name: hiking
 
@@ -3596,29 +3196,57 @@ Name: talking on the phone
 
 	- Name: Talking on the phone
 
+End of Day Survey:
+	- Energy: 4/10
+
+	- Mood: 6/10
+
+	- Stress: 10/10
+
+
+--------------------------------------------------
+
+Date: 2023-12-10 00:00:00 (Sunday)
+
+Name: headache
+
+	- Name: Headache
+
+Name: hiking
+
+	- Name: Hiking
+
+Name: playing videogames
+
+	- Name: Playing videogames
+
+Name: talking on the phone
+
+	- Name: Talking on the phone
+
 Name: date night
 
 	- Name: Date night
 
 End of Day Survey:
-	- Energy: 4/10
+	- Energy: 6/10
 
-	- Mood: 8/10
+	- Mood: 9/10
 
-	- Stress: 6/10
+	- Stress: 10/10
 
 
 --------------------------------------------------
 
 Date: 2023-12-11 00:00:00 (Monday)
 
+Name: shoulder pain
+
+	- Name: Shoulder pain
+
 Name: headache
 
 	- Name: Headache
-
-Name: stomachache
-
-	- Name: Stomachache
 
 Name: playing videogames
 
@@ -3637,24 +3265,24 @@ Name: homework due: Discrete Mathematics
 	- Name: Homework due: discrete mathematics
 
 End of Day Survey:
-	- Energy: 3/10
+	- Energy: 6/10
 
-	- Mood: 5/10
+	- Mood: 4/10
 
-	- Stress: 6/10
+	- Stress: 5/10
 
 
 --------------------------------------------------
 
 Date: 2023-12-12 00:00:00 (Tuesday)
 
-Name: headache
-
-	- Name: Headache
-
 Name: stomachache
 
 	- Name: Stomachache
+
+Name: walking outside
+
+	- Name: Walking outside
 
 Name: playing videogames
 
@@ -3665,28 +3293,32 @@ Name: basketball game
 	- Name: Basketball game
 
 End of Day Survey:
-	- Energy: 3/10
+	- Energy: 4/10
 
-	- Mood: 5/10
+	- Mood: 7/10
 
-	- Stress: 5/10
+	- Stress: 6/10
 
 
 --------------------------------------------------
 
 Date: 2023-12-13 00:00:00 (Wednesday)
 
-Name: headache
+Name: shoulder pain
 
-	- Name: Headache
+	- Name: Shoulder pain
 
 Name: stomachache
 
 	- Name: Stomachache
 
-Name: talking on the phone
+Name: walking outside
 
-	- Name: Talking on the phone
+	- Name: Walking outside
+
+Name: playing videogames
+
+	- Name: Playing videogames
 
 Name: basketball practice
 
@@ -3699,9 +3331,9 @@ Name: class: Discrete Mathematics
 End of Day Survey:
 	- Energy: 3/10
 
-	- Mood: 4/10
+	- Mood: 7/10
 
-	- Stress: 4/10
+	- Stress: 6/10
 
 
 --------------------------------------------------
@@ -3720,10 +3352,6 @@ Name: stomachache
 
 	- Name: Stomachache
 
-Name: playing videogames
-
-	- Name: Playing videogames
-
 Name: basketball game
 
 	- Name: Basketball game
@@ -3739,7 +3367,7 @@ Name: homework due: Computer Programming
 End of Day Survey:
 	- Energy: 3/10
 
-	- Mood: 5/10
+	- Mood: 3/10
 
 	- Stress: 5/10
 
@@ -3747,6 +3375,34 @@ End of Day Survey:
 --------------------------------------------------
 
 Date: 2023-12-15 00:00:00 (Friday)
+
+Name: headache
+
+	- Name: Headache
+
+Name: playing videogames
+
+	- Name: Playing videogames
+
+Name: weightlifting
+
+	- Name: Weightlifting
+
+Name: class: Computer Programming
+
+	- Name: Class: computer programming
+
+End of Day Survey:
+	- Energy: 6/10
+
+	- Mood: 2/10
+
+	- Stress: 5/10
+
+
+--------------------------------------------------
+
+Date: 2023-12-16 00:00:00 (Saturday)
 
 Name: stomachache
 
@@ -3760,50 +3416,18 @@ Name: reading
 
 	- Name: Reading
 
-Name: weightlifting
+Name: talking on the phone
 
-	- Name: Weightlifting
+	- Name: Talking on the phone
 
-Name: class: Computer Programming
+Name: basketball game
 
-	- Name: Class: computer programming
-
-Name: party
-
-	- Name: Party
+	- Name: Basketball game
 
 End of Day Survey:
 	- Energy: 3/10
 
-	- Mood: 3/10
-
-	- Stress: 7/10
-
-
---------------------------------------------------
-
-Date: 2023-12-16 00:00:00 (Saturday)
-
-Name: headache
-
-	- Name: Headache
-
-Name: stomachache
-
-	- Name: Stomachache
-
-Name: hiking
-
-	- Name: Hiking
-
-Name: playing videogames
-
-	- Name: Playing videogames
-
-End of Day Survey:
-	- Energy: 4/10
-
-	- Mood: 6/10
+	- Mood: 7/10
 
 	- Stress: 6/10
 
@@ -3811,14 +3435,6 @@ End of Day Survey:
 --------------------------------------------------
 
 Date: 2023-12-17 00:00:00 (Sunday)
-
-Name: headache
-
-	- Name: Headache
-
-Name: stomachache
-
-	- Name: Stomachache
 
 Name: hiking
 
@@ -3833,9 +3449,9 @@ Name: movie night
 	- Name: Movie night
 
 End of Day Survey:
-	- Energy: 4/10
+	- Energy: 6/10
 
-	- Mood: 4/10
+	- Mood: 6/10
 
 	- Stress: 7/10
 
@@ -3844,9 +3460,37 @@ End of Day Survey:
 
 Date: 2023-12-18 00:00:00 (Monday)
 
-Name: headache
+Name: shoulder pain
 
-	- Name: Headache
+	- Name: Shoulder pain
+
+Name: playing videogames
+
+	- Name: Playing videogames
+
+Name: talking on the phone
+
+	- Name: Talking on the phone
+
+Name: basketball practice
+
+	- Name: Basketball practice
+
+End of Day Survey:
+	- Energy: 6/10
+
+	- Mood: 6/10
+
+	- Stress: 9/10
+
+
+--------------------------------------------------
+
+Date: 2023-12-19 00:00:00 (Tuesday)
+
+Name: shoulder pain
+
+	- Name: Shoulder pain
 
 Name: stomachache
 
@@ -3855,26 +3499,6 @@ Name: stomachache
 Name: walking outside
 
 	- Name: Walking outside
-
-Name: weightlifting
-
-	- Name: Weightlifting
-
-End of Day Survey:
-	- Energy: 4/10
-
-	- Mood: 6/10
-
-	- Stress: 6/10
-
-
---------------------------------------------------
-
-Date: 2023-12-19 00:00:00 (Tuesday)
-
-Name: stomachache
-
-	- Name: Stomachache
 
 Name: playing videogames
 
@@ -3891,9 +3515,9 @@ Name: basketball practice
 End of Day Survey:
 	- Energy: 4/10
 
-	- Mood: 6/10
+	- Mood: 7/10
 
-	- Stress: 5/10
+	- Stress: 10/10
 
 
 --------------------------------------------------
@@ -3904,34 +3528,14 @@ Name: shoulder pain
 
 	- Name: Shoulder pain
 
-Name: headache
-
-	- Name: Headache
-
-Name: stomachache
-
-	- Name: Stomachache
-
-Name: walking outside
-
-	- Name: Walking outside
-
-Name: playing videogames
-
-	- Name: Playing videogames
-
-Name: talking on the phone
-
-	- Name: Talking on the phone
-
 Name: basketball practice
 
 	- Name: Basketball practice
 
 End of Day Survey:
-	- Energy: 4/10
+	- Energy: 6/10
 
-	- Mood: 7/10
+	- Mood: 5/10
 
 	- Stress: 5/10
 
@@ -3940,10 +3544,6 @@ End of Day Survey:
 
 Date: 2023-12-21 00:00:00 (Thursday)
 
-Name: headache
-
-	- Name: Headache
-
 Name: stomachache
 
 	- Name: Stomachache
@@ -3952,16 +3552,12 @@ Name: walking outside
 
 	- Name: Walking outside
 
-Name: playing videogames
-
-	- Name: Playing videogames
-
 Name: basketball game
 
 	- Name: Basketball game
 
 End of Day Survey:
-	- Energy: 3/10
+	- Energy: 4/10
 
 	- Mood: 7/10
 
@@ -3971,10 +3567,6 @@ End of Day Survey:
 --------------------------------------------------
 
 Date: 2023-12-22 00:00:00 (Friday)
-
-Name: stomachache
-
-	- Name: Stomachache
 
 Name: playing videogames
 
@@ -3989,9 +3581,9 @@ Name: party
 	- Name: Party
 
 End of Day Survey:
-	- Energy: 3/10
+	- Energy: 6/10
 
-	- Mood: 3/10
+	- Mood: 6/10
 
 	- Stress: 5/10
 
@@ -4000,26 +3592,26 @@ End of Day Survey:
 
 Date: 2023-12-23 00:00:00 (Saturday)
 
-Name: headache
+Name: hiking
 
-	- Name: Headache
+	- Name: Hiking
 
-Name: stomachache
+Name: reading
 
-	- Name: Stomachache
+	- Name: Reading
 
-Name: walking outside
+Name: talking on the phone
 
-	- Name: Walking outside
+	- Name: Talking on the phone
 
-Name: playing videogames
+Name: basketball game
 
-	- Name: Playing videogames
+	- Name: Basketball game
 
 End of Day Survey:
-	- Energy: 4/10
+	- Energy: 6/10
 
-	- Mood: 6/10
+	- Mood: 7/10
 
 	- Stress: 6/10
 
@@ -4036,20 +3628,64 @@ Name: stomachache
 
 	- Name: Stomachache
 
-Name: hiking
-
-	- Name: Hiking
-
-Name: reading
-
-	- Name: Reading
-
 Name: movie night
 
 	- Name: Movie night
 
 End of Day Survey:
-	- Energy: 3/10
+	- Energy: 4/10
+
+	- Mood: 3/10
+
+	- Stress: 5/10
+
+
+--------------------------------------------------
+
+Date: 2023-12-25 00:00:00 (Monday)
+
+Name: shoulder pain
+
+	- Name: Shoulder pain
+
+Name: headache
+
+	- Name: Headache
+
+Name: playing videogames
+
+	- Name: Playing videogames
+
+Name: basketball practice
+
+	- Name: Basketball practice
+
+End of Day Survey:
+	- Energy: 6/10
+
+	- Mood: 5/10
+
+	- Stress: 5/10
+
+
+--------------------------------------------------
+
+Date: 2023-12-26 00:00:00 (Tuesday)
+
+Name: shoulder pain
+
+	- Name: Shoulder pain
+
+Name: walking outside
+
+	- Name: Walking outside
+
+Name: basketball practice
+
+	- Name: Basketball practice
+
+End of Day Survey:
+	- Energy: 6/10
 
 	- Mood: 6/10
 
@@ -4058,15 +3694,15 @@ End of Day Survey:
 
 --------------------------------------------------
 
-Date: 2023-12-25 00:00:00 (Monday)
+Date: 2023-12-27 00:00:00 (Wednesday)
+
+Name: shoulder pain
+
+	- Name: Shoulder pain
 
 Name: headache
 
 	- Name: Headache
-
-Name: stomachache
-
-	- Name: Stomachache
 
 Name: walking outside
 
@@ -4076,29 +3712,21 @@ Name: playing videogames
 
 	- Name: Playing videogames
 
-Name: weightlifting
+Name: basketball practice
 
-	- Name: Weightlifting
+	- Name: Basketball practice
 
 End of Day Survey:
-	- Energy: 3/10
+	- Energy: 6/10
 
-	- Mood: 3/10
+	- Mood: 5/10
 
 	- Stress: 7/10
 
 
 --------------------------------------------------
 
-Date: 2023-12-26 00:00:00 (Tuesday)
-
-Name: headache
-
-	- Name: Headache
-
-Name: stomachache
-
-	- Name: Stomachache
+Date: 2023-12-28 00:00:00 (Thursday)
 
 Name: playing videogames
 
@@ -4108,66 +3736,14 @@ Name: talking on the phone
 
 	- Name: Talking on the phone
 
-Name: basketball game
-
-	- Name: Basketball game
-
-End of Day Survey:
-	- Energy: 3/10
-
-	- Mood: 4/10
-
-	- Stress: 5/10
-
-
---------------------------------------------------
-
-Date: 2023-12-27 00:00:00 (Wednesday)
-
-Name: headache
-
-	- Name: Headache
-
-Name: stomachache
-
-	- Name: Stomachache
-
 Name: basketball practice
 
 	- Name: Basketball practice
 
 End of Day Survey:
-	- Energy: 3/10
+	- Energy: 6/10
 
-	- Mood: 3/10
-
-	- Stress: 5/10
-
-
---------------------------------------------------
-
-Date: 2023-12-28 00:00:00 (Thursday)
-
-Name: headache
-
-	- Name: Headache
-
-Name: stomachache
-
-	- Name: Stomachache
-
-Name: playing videogames
-
-	- Name: Playing videogames
-
-Name: basketball game
-
-	- Name: Basketball game
-
-End of Day Survey:
-	- Energy: 4/10
-
-	- Mood: 5/10
+	- Mood: 6/10
 
 	- Stress: 5/10
 
@@ -4176,9 +3752,9 @@ End of Day Survey:
 
 Date: 2023-12-29 00:00:00 (Friday)
 
-Name: stomachache
+Name: headache
 
-	- Name: Stomachache
+	- Name: Headache
 
 Name: playing videogames
 
@@ -4192,25 +3768,17 @@ Name: weightlifting
 
 	- Name: Weightlifting
 
-Name: party
-
-	- Name: Party
-
 End of Day Survey:
-	- Energy: 4/10
+	- Energy: 6/10
 
 	- Mood: 4/10
 
-	- Stress: 9/10
+	- Stress: 4/10
 
 
 --------------------------------------------------
 
 Date: 2023-12-30 00:00:00 (Saturday)
-
-Name: headache
-
-	- Name: Headache
 
 Name: stomachache
 
@@ -4220,33 +3788,49 @@ Name: walking outside
 
 	- Name: Walking outside
 
+Name: hiking
+
+	- Name: Hiking
+
 Name: talking on the phone
 
 	- Name: Talking on the phone
 
+Name: basketball game
+
+	- Name: Basketball game
+
 End of Day Survey:
 	- Energy: 3/10
 
-	- Mood: 5/10
+	- Mood: 8/10
 
-	- Stress: 6/10
+	- Stress: 10/10
 
 
 --------------------------------------------------
 
 Date: 2023-12-31 00:00:00 (Sunday)
 
-Name: reading
+Name: stomachache
 
-	- Name: Reading
+	- Name: Stomachache
 
-Name: date night
+Name: walking outside
 
-	- Name: Date night
+	- Name: Walking outside
+
+Name: hiking
+
+	- Name: Hiking
+
+Name: movie night
+
+	- Name: Movie night
 
 End of Day Survey:
-	- Energy: 6/10
+	- Energy: 3/10
 
-	- Mood: 8/10
+	- Mood: 9/10
 
-	- Stress: 5/10
+	- Stress: 7/10

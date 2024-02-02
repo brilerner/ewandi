@@ -16,6 +16,8 @@ from utils.general import to_snake_case
 from server.connect import connect_to_collection
 from server.retrieve import get_data
 
+from server.routines import update_eids
+
 INGREDIENT_DESCRIPTION = "A food or drink item that is consumed."
 INGREDIENT_CATEGORY = "dietary intake"
 
@@ -40,26 +42,22 @@ def add_to_array(value_to_add, section, profile_id="llm_v1"):
         {"profile_id": profile_id}, {"$push": {section: value_to_add}}
     )
 
+
 def add_entry(key, value, section, profile_id="llm_v1"):
-    """
-    """
+    """ """
     collection = connect_to_collection()
-    collection.update_one(
-        {"profile_id": profile_id}, {"$set": {section: {key: value}}}
-    )
+    collection.update_one({"profile_id": profile_id}, {"$set": {section: {key: value}}})
+
 
 ### formatting
-    
-
 
 
 def get_stored_nids(section):
-    
     if len(section.split(".")) != 3:
-        raise ValueError("Section must be of the form 'keywords.section.core'")
+        raise ValueError("Section must be of the form '90.section.core'")
     if section.split(".")[0] != "keywords":
         raise ValueError("Section must be of the form 'keywords.section.core'")
-    
+
     keywords = get_data(section)
     return list(keywords.keys())
 
@@ -231,7 +229,6 @@ def add_groups():
         by_cat = {k: list(set(v)) for k, v in by_cat.items()}
         return by_cat
 
-
     keywords = get_data("keywords")
 
     for section, kw_modes in keywords.items():
@@ -253,10 +250,12 @@ def add_embeddings():
     Add embeddings to every keystring.
     """
 
-    embedded_nids = get_stored_nids("embeddings.elements") # probably not optimally scalable; could check for is_embedded
+    embedded_nids = get_stored_nids(
+        "embeddings.elements"
+    )  # probably not optimally scalable; could check for is_embedded
     keywords = get_data("keywords")
-    for section, kw_modes in keywords.items(): # events, people
-        for kw_mode, kws in kw_modes.items(): # names, groups
+    for section, kw_modes in keywords.items():  # events, people
+        for kw_mode, kws in kw_modes.items():  # names, groups
             for kw, kw_info in kws.items():
                 if kw_info["nid"] in embedded_nids:
                     continue
@@ -268,48 +267,12 @@ def add_embeddings():
                     add_to_array(embedding_info, "embeddings.elements")
 
 
-
 def match_keyword(keyword_string, threshold=0.12, section="elements"):
     input_embedding = request_embedding(keyword_string)
     embeddings = get_data(f"embeddings.{section}")
-    matched_embeddings = [embedding for embedding in embeddings if dist(embedding["embedding"], input_embedding) < threshold]
+    matched_embeddings = [
+        embedding
+        for embedding in embeddings
+        if dist(embedding["embedding"], input_embedding) < threshold
+    ]
     return matched_embeddings
-
-def retrieve_matched_keywords
-    Based on the matched embedddings, get all the nids that are applicable
-
-def pipeline():
-    """
-    add the name, nid # dont need role
-    will make it so that the root score names is not stored, only the val name
-    rubric_vals will be scored sleep.good
-    stored_name --> sleep good, mood level
-    can make type=event
-    """
-
-    ### Cleaning/Updating
-    # first, add nids for all events
-    add_nids()
-
-    # then, update keywords for all events/values/ingredients/people & add stored names as necessary
-    update_keywords()
-
-    ### Keyword Padding
-    """ I'll come back to the padding later"""
-    # now, keywords should be current; let's add the groups
-    # using the original group method
-    # add_groups()
-    # assign_groups() # see assign tag above
-    # add_variants()
-
-    ### Embeddings
-    add_embeddings()  # add embeddings to all keywords
-
-    ###
-    # NOW RUN THE PIPELINE AND SEE HOW SIM EMBS WORKS
-
-    ###
-
-    # make the other section definitions>elements
-
-    # Retrieve the event data from the server and check to see what exists

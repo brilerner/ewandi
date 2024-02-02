@@ -15,7 +15,7 @@ from collections import defaultdict
 import random
 import pandas as pd
 # MODEL = 'gpt-4-1106-preview'
-from utils.general import select_random_members_as_dict
+from utils.sampling import select_random_members_as_dict
 import prompts as pr
 from llm.generate import generate_groups, classify_name, generate_nonexisting_keystrings, generate_variations
 

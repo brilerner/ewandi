@@ -1,15 +1,18 @@
 
 name: cerebra
 dependencies:
+- python-dotenv
 - numpy
 - openai
 - pip
 - pandas
 - plotly
-- python=3.11
-- pymongo
+# - python=3.11
+- pyyaml
 - streamlit
+- scipy
 - tenacity
 - pip:
   - streamlit-calendar
+  - pymongo[srv]
 

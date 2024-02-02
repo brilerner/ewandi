@@ -4,9 +4,9 @@
   dtype: binary
   description: Whether or not good sleep was obtained.
   
-- parent: TOP_LEVEL
-  name: duration
-  function: get_duration
-  dtype: numerical
-  description: The event duration.
-  unit: hours
+# - parent: TOP_LEVEL
+#   name: duration
+#   function: get_duration
+#   dtype: numerical
+#   description: The event duration.
+#   unit: hours

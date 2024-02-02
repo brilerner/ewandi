@@ -1,17 +1,35 @@
-from utils.general import select_random_members_as_dict
+from utils.sampling import select_random_members_as_dict
 
 from server import connect_to_collection
 
 
 # work in progress
-def get_data(section, profile="llm_v1"):
+def get_data(section=None, profile="llm_v1"):
     profiles = connect_to_collection()
+    search = {}
+    if section:
+        search[section] = 1
     profile = profiles.find_one(
         {"_id": profile},
-        {
-            section: 1,
-        },
+        search,
     )
+    return profile
+
+
+def get_elements(profile="llm_v1"):
+    data = get_data("elements", profile=profile)
+    return data.get("elements", {})
+
+
+def get_events(profile="llm_v1"):
+    data = get_data("events", profile=profile)
+    return data.get("events", [])
+
+
+def get_embeddings(model="text-embedding-3-small", profile="llm_v1"):
+    section = "embeddings" + "." + model
+    data = get_data(section, profile=profile)
+    return data.get("embeddings", {}).get(model, {})
 
 
 def get_data_source(source, profile="llm_v1"):

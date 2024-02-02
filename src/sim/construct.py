@@ -100,12 +100,12 @@ def add_source_and_category(spec, category):
     elif category == "sleep":
         spec["source"] = "sleep_tracker"
         spec["category"] = "sleep"
-    elif category == "meals":
+    elif category == "dietary intake":
         spec["source"] = "food_tracker"
-        spec["category"] = "meal"
-    elif category == "survey":
+        spec["category"] = "dietary intake"
+    elif category == "daily survey":
         spec["source"] = "survey"
-        spec["category"] = "survey"
+        spec["category"] = "daily survey"
     # else:
     #     print("Category not recognized")
     #     raise Exception
@@ -126,9 +126,10 @@ def save_for_transfer(day_groups, dates, profile_dir):
         "value",
         "unit",
         "dtype",
-        "is_container",
-        "is_value",
-        "is_top",
+        "parent_name",
+        # "is_container",
+        # "is_value",
+        # "is_top",
     ]
 
     propagate_keys = [
@@ -157,16 +158,24 @@ def save_for_transfer(day_groups, dates, profile_dir):
 
         # handle category
 
-        if event.get("is_container"):
-            if not event.get("category"):
-                event["category"] = event["name"]
-        elif event.get("is_value"):
-            if parent and not event.get("category"):
-                event["category"] = parent["name"]
-        elif event["dtype"] == "text":
-            event["category"] = None
-        elif parent and not event.get("category"):
-            event["category"] = parent["category"]
+        # if "value" in event:
+        # event["category"] = None
+
+        if parent:
+            event["parent_name"] = parent["name"]
+        else:
+            event["parent_name"] = None
+
+        # if event.get("is_container"):
+        #     if not event.get("category"):
+        #         event["category"] = event["name"]
+        # elif event.get("is_value"):
+        #     if parent and not event.get("category"):
+        #         event["category"] = parent["name"]
+        # elif event["dtype"] == "text":
+        #     event["category"] = None
+        # elif parent and not event.get("category"):
+        #     event["category"] = parent["category"]
         # else:
         #     print("Category not recognized")
         #     raise Exception
@@ -176,10 +185,10 @@ def save_for_transfer(day_groups, dates, profile_dir):
             if k not in keep_keys:
                 event.pop(k)
 
-        for k in list(event.keys()):
-            if not event[k]:
-                event.pop(k)
-        # recurse
+        # for k in list(event.keys()):
+        #     if not event[k]:
+        #         # event.pop(k)
+        # # recurse
         for attribute in event.get("attributes", []):
             clean_event(attribute, event)
 
@@ -203,8 +212,27 @@ def save_for_transfer(day_groups, dates, profile_dir):
             breakout_event(event, all_events_breakout)
         return all_events_breakout
 
+    def validate_breakout_events(events):
+        def validate_breakout_event(event):
+            if not event.get("description"):
+                print("Need description")
+                raise Exception
+            if "parent_name" not in event:
+                print("Need parent name")
+                raise Exception
+            if "category" not in event:
+                print("Need category")
+                raise Exception
+
+        for event in events:
+            validate_breakout_event(event)
+
     for dg, date in zip(day_groups, dates):
         for event in dg:
+            if "all_day" not in event:
+                event["all_day"] = False
+
+            event["parent_name"] = None
             event["dtype"] = "binary"
             clean_people(event.get("people", []))
             add_source_and_category(event, event["category"])
@@ -213,6 +241,9 @@ def save_for_transfer(day_groups, dates, profile_dir):
     # break out the attributes into their own events
     all_events_nested = [s for specs in day_groups for s in specs]
     all_events_breakout = get_events_breakout(day_groups)
+
+    # validate
+    validate_breakout_events(all_events_breakout)
 
     final_dir = profile_dir / "outputs" / "final"
     with open(final_dir / "events_nested.json", "w") as file:
@@ -306,7 +337,7 @@ def make_single_entry_prompt(date, day_group):
                 key_strings.append(key_string)
     prompt += "\n".join(key_strings)
 
-    survey_event = [e for e in day_group if e["category"] == "survey"][0]
+    survey_event = [e for e in day_group if e["category"] == "daily survey"][0]
     survey_attributes = sorted(survey_event["attributes"], key=lambda x: x["name"])
     survey_strings = []
     for attribute in survey_attributes:
@@ -351,7 +382,7 @@ def add_attribute_to_event(
     value=None,
     unit=None,
     category=None,
-    is_container=False,
+    # is_container=False,
 ):
     """
     Parent can be an event or attribute.
@@ -372,10 +403,10 @@ def add_attribute_to_event(
         "unit": unit,
         "dtype": dtype,
         "category": category,
-        "is_container": is_container,
+        # "is_container": is_container,
     }
-    if value:
-        attribute_dict["is_value"] = True
+    # if value:
+    # attribute_dict["is_value"] = True
     parent["attributes"].append(attribute_dict)
 
     return parent["attributes"][-1]
@@ -384,9 +415,9 @@ def add_attribute_to_event(
 def add_rubric_values(day_groups, rubric_constructor):
     def apply_rubrics_to_event(event):
         def rubric_check(rubric):
-            if (rubric["parent"] == "TOP_LEVEL") and event.get("is_top"):
-                return True
-            elif rubric["parent"] == event["name"]:
+            # if (rubric["parent"] == "TOP_LEVEL") and event.get("is_top"):
+            #     return True
+            if rubric["parent"] == event["name"]:
                 return True
 
         for rubric in rubric_constructor:
@@ -398,6 +429,7 @@ def add_rubric_values(day_groups, rubric_constructor):
                     rubric["dtype"],
                     rubric["function"](event),
                     rubric.get("unit"),
+                    category=None,
                 )
                 # now recursively apply to attributes
                 for attribute in event.get("attributes", []):
@@ -405,7 +437,7 @@ def add_rubric_values(day_groups, rubric_constructor):
 
     for dg in day_groups:
         for event in dg:
-            event["is_top"] = True
+            # event["is_top"] = True
             apply_rubrics_to_event(event)
     check_day_groups(day_groups)
 
@@ -939,9 +971,9 @@ def make_scores(day_groups, score_constructor):
 
     def create_survey_event(current_scores):
         survey_event = construct_all_day_event(
-            "daily recap",
+            "daily survey",
             "A survey performed at the end of the day to assess mood, energy, and stress.",
-            "survey",
+            "daily survey",
         )
         for c in current_scores:
             add_attribute_to_event(
@@ -951,6 +983,7 @@ def make_scores(day_groups, score_constructor):
                 "numerical",
                 c["score"],
                 "arbitrary",
+                category=None,
             )
         return survey_event
 
@@ -978,46 +1011,53 @@ def add_recipes_to_meals(day_groups, recipes):
         recipe_choice = random.choice(recipes[event["name"]]).copy()
 
         # add dietary intake
-        dietary_intake = add_attribute_to_event(
-            event,
-            "dietary intake",
-            "The ingredients consumed.",  # the description
-            "binary",
-            is_container=True,
-        )
+        # dietary_intake = add_attribute_to_event(
+        #     event,
+        #     "dietary intake",
+        #     "The ingredients consumed.",  # the description
+        #     "binary",
+        #     is_container=True,
+        # )
 
         # now add recipe name as a subattribute
-        add_attribute_to_event(
-            dietary_intake,
-            recipe_choice.pop("name"),
-            "The name of the recipe consumed.",
-            "text",
-        )
+        # add_attribute_to_event(
+        #     dietary_intake,
+        #     recipe_choice.pop("name"),
+        #     "The name of the recipe consumed.",
+        #     "text",
+        # )
 
         # now calories
         add_attribute_to_event(
-            dietary_intake,
+            # dietary_intake,
+            event,
             "calories",
             "The number of calories consumed.",
             "numerical",
             recipe_choice.pop("calories"),
             "calorie",
+            category=None,
         )
 
         # now add ingredients # CONFIRM THIS IS RIGHTTTTTTT
         ingredients = recipe_choice.pop("ingredients")
         for ingredient in ingredients:
             add_attribute_to_event(
-                dietary_intake,
+                # dietary_intake,
+                event,
                 ingredient,
                 "The name of the ingredient consumed.",
                 "binary",
+                category="food",
             )
 
     for day_group in day_groups:
         for event in day_group:
             if event["category"] == "meals":
                 add_recipe_to_event(event, recipes)
+                event["name"] = "dietary intake"
+                event["category"] = "dietary intake"
+                event["description"] = "Food consumed."
     check_day_groups(day_groups)
 
 

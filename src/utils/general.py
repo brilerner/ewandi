@@ -1,3 +1,9 @@
+def generate_uid():
+    import uuid
+
+    return uuid.uuid4()
+
+
 def get_root():
     from pathlib import Path
 

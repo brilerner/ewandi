@@ -1,8 +1,13 @@
+python-dotenv
+numpy
 openai
-load_dotenv
-pymongo
-pyyaml
+pip
+pandas
 plotly
+pyyaml
+streamlit
+scipy
 tenacity
 streamlit-calendar
+pymongo[srv]
 

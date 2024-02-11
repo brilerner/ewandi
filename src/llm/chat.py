@@ -2,8 +2,10 @@ import sys
 from pathlib import Path
 import streamlit as st
 
-root_path = str(Path(__file__).resolve().parent.parent)
-sys.path.append(root_path)
+p = Path(__file__).resolve()
+while p.name != "src":
+    p = p.parent
+sys.path.append(str(p))
 
 from utils.placeholders import make_placeholder
 
@@ -35,6 +37,7 @@ from utils.viz import get_plotly_figure
 
 # GPT_MODEL = "gpt-3.5-turbo-1106"
 GPT_MODEL = "gpt-4-1106-preview"
+JSON_MODEL = "gpt-4-1106-preview"
 
 import time
 
@@ -841,12 +844,24 @@ helicone_info = {
 }
 
 
-def json_request(prompt, model=GPT_MODEL, **completions_kwargs):
+def json_request_prompt_only(
+    prompt, model=JSON_MODEL, role="user", load=True, **completions_kwargs
+):
     # from helicone.openai_async import openai
-    client = OpenAI()
     # client = OpenAI(**helicone_info)
 
-    messages = [{"role": "user", "content": prompt}]
+    messages = [{"role": role, "content": prompt}]
+    return json_request(messages, model=model, load=load, **completions_kwargs)
+    # return json.loads(content)
+
+
+def json_request(messages, model=JSON_MODEL, load=True, **completions_kwargs):
+    import json
+
+    from openai import OpenAI
+
+    client = OpenAI()
+    # messages = [{"role": "user", "content": prompt}]
     response = client.chat.completions.create(
         model=model,
         messages=messages,
@@ -854,8 +869,10 @@ def json_request(prompt, model=GPT_MODEL, **completions_kwargs):
         **completions_kwargs,
     )
     content = response.choices[0].message.content
-    return content
-    # return json.loads(content)
+    if load:
+        return json.loads(content)
+    else:
+        return content
 
 
 def get_completion(prompt, model=GPT_MODEL, response_format=None):

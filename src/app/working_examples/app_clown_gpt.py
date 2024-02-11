@@ -6,24 +6,27 @@ from openai import OpenAI
 
 import sys
 from pathlib import Path
-root_path = str(Path(__file__).resolve().parent.parent)
-sys.path.append(root_path)
+
+p = Path(__file__).resolve()
+while p.name != "src":
+    p = p.parent
+sys.path.append(str(p))
 from utils.viz import get_plotly_figure
 import prompts.clowngpt as PROMPTS
 
 client = OpenAI()
-MODEL_NAME = 'gpt-3.5-turbo'
+MODEL_NAME = "gpt-3.5-turbo"
+
 
 def main():
-
     st.sidebar.title("Navigation")
     choice = st.sidebar.radio(
-        "Choose a Tab", 
+        "Choose a Tab",
         [
-            "Overview", 
+            "Overview",
             "CerebraChat",
         ],
-        index=1
+        index=1,
     )
 
     if choice == "Overview":
@@ -34,14 +37,11 @@ def main():
 
 
 def show_chatbot_tab():
-
     if "openai_model" not in st.session_state:
         st.session_state["openai_model"] = MODEL_NAME
 
     if "messages" not in st.session_state:
-        st.session_state.messages = [
-            {"role": "system", "content": PROMPTS.system}
-        ]
+        st.session_state.messages = [{"role": "system", "content": PROMPTS.system}]
 
     # Omit system messages from chat history
     for message in st.session_state.messages:
@@ -66,18 +66,21 @@ def show_chatbot_tab():
                 ],
                 stream=True,
             ):
-                full_response += (response.choices[0].delta.content or "")
+                full_response += response.choices[0].delta.content or ""
                 message_placeholder.markdown(full_response + "▌")
             message_placeholder.markdown(full_response)
-            st.session_state.messages.append({"role": "assistant", "content": full_response})
+            st.session_state.messages.append(
+                {"role": "assistant", "content": full_response}
+            )
         # plot chart to test
         st.plotly_chart(get_plotly_figure(), use_container_width=True)
 
-def show_overview_tab():
 
+def show_overview_tab():
     st.header("Overview")
-    
+
     st.plotly_chart(get_plotly_figure(), use_container_width=True)
+
 
 if __name__ == "__main__":
     main()

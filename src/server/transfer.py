@@ -1,8 +1,10 @@
 import sys
 from pathlib import Path
 
-root_path = str(Path(__file__).resolve().parent.parent)
-sys.path.append(root_path)
+p = Path(__file__).resolve()
+while p.name != "src":
+    p = p.parent
+sys.path.append(str(p))
 
 import json
 from datetime import datetime
@@ -65,6 +67,7 @@ def update_profile_data(
 
     upsert_data(data, "data", profile=profile)
 
+
 # old; not sure if useful
 def add_to_array(value_to_add, section, profile_id="llm_v1"):
     """
@@ -80,4 +83,3 @@ def add_entry(key, value, section, profile_id="llm_v1"):
     """ """
     collection = connect_to_collection()
     collection.update_one({"profile_id": profile_id}, {"$set": {section: {key: value}}})
-

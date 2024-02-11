@@ -1,8 +1,10 @@
-
 import sys
 from pathlib import Path
-root_path = str(Path(__file__).resolve().parent.parent)
-sys.path.append(root_path)
+
+p = Path(__file__).resolve()
+while p.name != "src":
+    p = p.parent
+sys.path.append(str(p))
 
 
 from openai import OpenAI
@@ -17,13 +19,15 @@ import prompts.bio as PROMPTS
 import yaml
 from random import random
 
-MODEL = 'gpt-4-1106-preview'
+MODEL = "gpt-4-1106-preview"
 # MODEL = "gpt-3.5-turbo-1106" # this is faster!
 
 # Set up OpenAI API key
 # openai.api_key = keys.OPENAI
 client = OpenAI()
-root = Path('/Users/brianlerner/Library/CloudStorage/OneDrive-Personal/Code/cerebra/src')
+root = Path(
+    "/Users/brianlerner/Library/CloudStorage/OneDrive-Personal/Code/cerebra/src"
+)
 
 
 prompt = """I will give you a description of a food, including information on the core food and potentially, its preparations.
@@ -59,23 +63,19 @@ Output: {"core_name": "water", "subtypes":[], "preparations": []}
 Now, await the input.
 """
 
-def generate_food_names(profile='llm_v1'):
 
-
+def generate_food_names(profile="llm_v1"):
     # food path
-    food_dir = root.parent /'data'/'sim' / 'food'
-    food_path =  food_dir / 'foods.json' 
+    food_dir = root.parent / "data" / "sim" / "food"
+    food_path = food_dir / "foods.json"
     #  get food info
     foods = load_json(food_path)
 
     # foods = foods[:]
 
-    
     for f in foods:
-
-
         # get food name
-        food_name = lowercase_first_letter(f['description'])
+        food_name = lowercase_first_letter(f["description"])
 
         # get food name prompt
         food_name_prompt = prompt
@@ -83,9 +83,16 @@ def generate_food_names(profile='llm_v1'):
         # get completion
         conversation = Conversation(first_message=food_name_prompt)
 
-        conversation.add_message('user', food_name)
-        
-        response = chat_completion_request(conversation, model=MODEL, stream=False, resubmit=False,append=False, response_format={ "type": "json_object" })
+        conversation.add_message("user", food_name)
+
+        response = chat_completion_request(
+            conversation,
+            model=MODEL,
+            stream=False,
+            resubmit=False,
+            append=False,
+            response_format={"type": "json_object"},
+        )
 
         # get completion text
         try:
@@ -101,19 +108,18 @@ def generate_food_names(profile='llm_v1'):
             print(f"BREAKDOWN: {breakdown}")
             print()
 
-            f['name'] = breakdown['core_name']
-            f['subtypes'] = breakdown['subtypes']
-            f['preparations'] = breakdown['preparations']
+            f["name"] = breakdown["core_name"]
+            f["subtypes"] = breakdown["subtypes"]
+            f["preparations"] = breakdown["preparations"]
 
         except:
             print("ERROR: ", food_name)
             continue
 
-
-    save_path = food_dir / 'foods_revised.json'
-    with open(save_path, 'w') as file:
+    save_path = food_dir / "foods_revised.json"
+    with open(save_path, "w") as file:
         json.dump(foods, file, indent=4)
 
 
 if __name__ == "__main__":
-    generate_food_names(profile='llm_v1')
+    generate_food_names(profile="llm_v1")

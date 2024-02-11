@@ -1,8 +1,10 @@
-
 import sys
 from pathlib import Path
-root_path = str(Path(__file__).resolve().parent.parent)
-sys.path.append(root_path)
+
+p = Path(__file__).resolve()
+while p.name != "src":
+    p = p.parent
+sys.path.append(str(p))
 
 
 from openai import OpenAI
@@ -18,13 +20,16 @@ import yaml
 from random import random
 
 from collections import defaultdict
-MODEL = 'gpt-4-1106-preview'
+
+MODEL = "gpt-4-1106-preview"
 # MODEL = "gpt-3.5-turbo-1106" # this is faster!
 
 # Set up OpenAI API key
 # openai.api_key = keys.OPENAI
 client = OpenAI()
-root = Path('/Users/brianlerner/Library/CloudStorage/OneDrive-Personal/Code/cerebra/src')
+root = Path(
+    "/Users/brianlerner/Library/CloudStorage/OneDrive-Personal/Code/cerebra/src"
+)
 
 
 prompt = """I will give you a description of a food, including information on the core food and potentially, its preparations.
@@ -60,11 +65,11 @@ Output: {"core_name": "water", "subtypes":[], "preparations": []}
 Now, await the input.
 """
 
-def reduce_foods():
 
+def reduce_foods():
     # food path
-    food_dir = root.parent /'data'/'sim' / 'food'
-    food_path =  food_dir / 'foods_revised.json' 
+    food_dir = root.parent / "data" / "sim" / "food"
+    food_path = food_dir / "foods_revised.json"
     #  get food info
     foods = load_json(food_path)
 
@@ -72,18 +77,18 @@ def reduce_foods():
 
     food_dict = defaultdict(list)
     for f in foods:
-        food_dict[f['name']].append(f)
-    
+        food_dict[f["name"]].append(f)
+
     reduced_food_list = []
-    for k,v in food_dict.items():
+    for k, v in food_dict.items():
         if len(v) == 1:
             print("Length greater than 1")
             print(k)
             print(v)
         reduced_food_list.append(v[0])
 
-    save_path = food_dir / 'foods_revised_reduced.json'
-    with open(save_path, 'w') as file:
+    save_path = food_dir / "foods_revised_reduced.json"
+    with open(save_path, "w") as file:
         json.dump(reduced_food_list, file, indent=4)
 
 

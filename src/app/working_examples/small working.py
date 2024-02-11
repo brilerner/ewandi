@@ -1,8 +1,10 @@
 import sys
 from pathlib import Path
 
-root_path = str(Path(__file__).resolve().parent.parent)
-sys.path.append(root_path)
+p = Path(__file__).resolve()
+while p.name != "src":
+    p = p.parent
+sys.path.append(str(p))
 
 
 import streamlit as st
@@ -15,16 +17,16 @@ from llm.chat import start_cerebra_session, cerebra_completion_request
 # client = OpenAI()
 
 # def plot_to_streamlit(plot):
-    # st.plotly_chart(plot)
+# st.plotly_chart(plot)
 response = "This is a test response"
 
 if "messages" not in st.session_state:
     # st.write("Resetting messages")
     st.session_state.messages = []
 # if "user_id" not in st.session_state:
-    # st.session_state["user_id"] = "brian"
+# st.session_state["user_id"] = "brian"
 # if "client" not in st.session_state:
-    # st.session_state["client"] = OpenAI()
+# st.session_state["client"] = OpenAI()
 if "backoff" not in st.session_state:
     st.session_state["backoff"] = True
 
@@ -47,14 +49,7 @@ if prompt := st.chat_input("Enter a message"):
             message_placeholder.markdown(full_response + "▌")
         message_placeholder.markdown(full_response)
 
-    st.session_state.messages.append(
-        {"role": "assistant", "content": full_response}
-    )
-
-
-
-
-
+    st.session_state.messages.append({"role": "assistant", "content": full_response})
 
     #     for response in client.chat.completions.create(
     #         model=st.session_state["openai_model"],

@@ -1,8 +1,10 @@
 import sys
 from pathlib import Path
 
-root_path = str(Path(__file__).resolve().parent.parent)
-sys.path.append(root_path)
+p = Path(__file__).resolve()
+while p.name != "src":
+    p = p.parent
+sys.path.append(str(p))
 
 from utils.general import get_root
 
@@ -23,10 +25,10 @@ def setup_logging(filename, userid=None, level=logging.INFO, default_dir="logs")
     from datetime import datetime
 
     datetime_str = datetime.now().strftime("%Y-%m-%d_%H-%M-%S")
-    final_filename = datetime_str + "_" 
+    final_filename = datetime_str + "_"
     if userid:
         final_filename = final_filename + userid + "_"
-    final_filename = Path( final_filename + Path(filename).name ).with_suffix(".log")
+    final_filename = Path(final_filename + Path(filename).name).with_suffix(".log")
 
     log_dir = get_root() / default_dir
     if not log_dir.is_dir():
@@ -38,4 +40,3 @@ def setup_logging(filename, userid=None, level=logging.INFO, default_dir="logs")
         level=level,  # Set the desired log level
         format="%(asctime)s - %(levelname)s - %(message)s",
     )
-

@@ -1,8 +1,10 @@
 import sys
 from pathlib import Path
 
-root_path = str(Path(__file__).resolve().parent.parent)
-sys.path.append(root_path)
+p = Path(__file__).resolve()
+while p.name != "src":
+    p = p.parent
+sys.path.append(str(p))
 
 
 from server.connect import connect_to_db
@@ -32,8 +34,6 @@ for collection in collections:
     print(f"# of events: {len(events)}")
     print(f"# of event elements: {len(event_elements)}")
     print(f"# of relations_elements: {len(relations_elements)}")
-
-
 
     print()
     # print("Sample documents:")

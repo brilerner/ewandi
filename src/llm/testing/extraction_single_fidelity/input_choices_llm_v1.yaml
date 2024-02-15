@@ -1,0 +1,37 @@
+name: llm_v1
+params:
+  current_date: '2023-12-31'
+  current_time: '22:00'
+load: # for v,p
+  n: 5
+data:
+  dr: # date_range
+  - 'the last month'
+  - 'the last week'
+  - 'the last year'
+  - 'yesterday'
+  - '2023-12-24--2023-12-27'
+  tr: # time_range 
+  - "morning"
+  - "afternoon"
+  - "night"
+  - '12:00--00:00'
+  - '09:00--11:00'
+  d: # days
+  - ["Mon", "Tue"]
+  - "weekend"
+  - "weekdays"
+  - ["Wed"]
+  - ["Tue", "Wed", "Thu"]
+
+  #   dr: # date_range
+  # # last month
+  # - '2023-11-01--'
+  # # last 3 months
+  # - '2023-09-01--'
+  # # last week
+  # - '2023-12-24--'
+  # # previous year
+  # - '2022-01-01--2022-12-31'
+  # # yesterday
+  # - '2023-12-31--'

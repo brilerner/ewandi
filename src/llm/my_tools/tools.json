@@ -1,0 +1,47 @@
+[
+    {
+        "type": "function",
+        "function": {
+            "name": "single_event_count",
+            "description": "Given a variable name corresponding to an event and specifying information, return the event count. If plot is True, return a plot of the event count over time. Return format is a dictionary with keys 'count' and 'plot', where the value for 'plot' is a placeholder for a plotly figure. Return format is a dictionary with keys 'count' and 'plot', where the value for 'plot' is a placeholder string for a plotly figure.",
+            "parameters": {
+                "type": "object",
+                "properties": {
+                    "v": {
+                        "type": "string",
+                        "description": "the event variable"
+                    },
+                    "p": {
+                        "type": "array",
+                        "items": {
+                            "type": "string"
+                        },
+                        "description": "people associated with the event (default: null)"
+                    },
+                    "dr": {
+                        "type": "string",
+                        "description": "date range of the event (default: null)"
+                    },
+                    "tr": {
+                        "type": "string",
+                        "description": "time range of the event (default: null)"
+                    },
+                    "d": {
+                        "type": "array",
+                        "items": {
+                            "type": "string"
+                        },
+                        "description": "days associated with the event (default: null)"
+                    },
+                    "plot": {
+                        "type": "boolean",
+                        "description": "Whether to return a plot. (default: true)"
+                    }
+                },
+                "required": [
+                    "v"
+                ]
+            }
+        }
+    }
+]

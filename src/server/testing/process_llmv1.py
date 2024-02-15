@@ -17,7 +17,6 @@ setup = True
 
 if setup:
     remove_profile(profile)
-    # upsert_data(events, "events", profile=profile)
     update_profile_data(profile=profile)
     update_eids(profile=profile)
     # data = get_data(profile=profile)

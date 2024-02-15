@@ -1,10 +1,9 @@
 import sys
 from pathlib import Path
 
-p = Path(__file__).resolve()
-while p.name != "src":
-    p = p.parent
-sys.path.append(str(p))
+src_dir = Path(__file__).resolve()
+while src_dir.name != "src": src_dir = src_dir.parent
+sys.path.append(str(src_dir))
 
 import json
 from datetime import datetime
@@ -53,7 +52,10 @@ def update_profile_data(
 
     def convert_datetime(x):
         # return datetime.strptime(x, "%Y-%m-%dT%H:%M:%S")
-        return datetime.strptime(x, "%Y-%m-%dT%H:%M:%S")
+        # return datetime.strptime(x, "%Y-%m-%dT%H:%M:%S")
+        return datetime.strptime(x, "%Y-%m-%dT%H:%M")
+
+    print("Updating profile data")
 
     final_outputs_dir = Path(profiles_dir) / "llm_v1/outputs/final"
     filepath = final_outputs_dir / "events_breakout.json"
@@ -65,7 +67,8 @@ def update_profile_data(
         event["start_datetime"] = convert_datetime(event["start_datetime"])
         event["end_datetime"] = convert_datetime(event["end_datetime"])
 
-    upsert_data(data, "data", profile=profile)
+    # upsert_data(data, "data", profile=profile)
+    upsert_data(data, "events", profile=profile)
 
 
 # old; not sure if useful

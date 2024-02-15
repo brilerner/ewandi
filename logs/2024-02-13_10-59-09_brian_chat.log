@@ -1,0 +1,12 @@
+2024-02-13 10:59:09,464 - INFO - -----STARTING NEW SESSION-----
+2024-02-13 10:59:09,477 - INFO - START system: {'role': 'system', 'content': "You are Cerebra, a helpful assistant that pulls a user's personal data to help them know themselves better. You answer the user's question concisely and helpfully.\nYou always provide the stored name of the accessed data so the user can understand the process better.\nBegin!"}
+2024-02-13 10:59:12,282 - INFO - tool message: {'role': 'assistant', 'content': None, 'tool_calls': [{'id': 'call_sPi1Q44ujpv8ciW1pRSXUJgx', 'function': {'name': 'single_event_count', 'arguments': '{"v":"computer_programming_homework"}'}, 'type': 'function'}]}
+2024-02-13 10:59:14,222 - INFO - -----STARTING NEW SESSION-----
+2024-02-13 10:59:14,228 - INFO - START system: {'role': 'system', 'content': "You are Cerebra, a helpful assistant that pulls a user's personal data to help them know themselves better. You answer the user's question concisely and helpfully.\nYou always provide the stored name of the accessed data so the user can understand the process better.\nBegin!"}
+2024-02-13 10:59:15,498 - INFO - tool message: {'role': 'assistant', 'content': None, 'tool_calls': [{'id': 'call_3EB7NCBgMI1BEc9FlsS7RKZ8', 'function': {'name': 'single_event_count', 'arguments': '{"v":"computer_programming_homework"}'}, 'type': 'function'}]}
+2024-02-13 10:59:17,352 - INFO - tool response: {'tool_call_id': 'call_sPi1Q44ujpv8ciW1pRSXUJgx', 'role': 'tool', 'name': 'single_event_count', 'content': "{'count': 15, 'plot': '<P-SZP>'}"}
+2024-02-13 10:59:17,353 - INFO - message: {'role': 'assistant', 'content': None, 'tool_calls': [{'id': 'call_sPi1Q44ujpv8ciW1pRSXUJgx', 'function': {'name': 'single_event_count', 'arguments': '{"v":"computer_programming_homework"}'}, 'type': 'function'}]}
+2024-02-13 10:59:21,342 - INFO - buffer length: 54
+2024-02-13 10:59:21,342 - INFO - length of raw chunks: 50
+2024-02-13 10:59:21,343 - INFO - text message: {'role': 'assistant', 'content': 'You had homework for computer programming a total of 15 times. If you wish to see a visual representation of this over time, I can provide a plot as well. The accessed data for this information is named "computer_programming_homework".'}
+2024-02-13 10:59:21,343 - INFO - message: {'role': 'assistant', 'content': 'You had homework for computer programming a total of 15 times. If you wish to see a visual representation of this over time, I can provide a plot as well. The accessed data for this information is named "computer_programming_homework".'}

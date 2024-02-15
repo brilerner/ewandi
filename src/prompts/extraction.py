@@ -65,6 +65,7 @@ Output: {{'k': 'hanging out', 'p':['friends'], 'dr': '2023-09-01--2023-09-30', '
 
 Go!
 """
+    print(prompt)
     return prompt
 
 

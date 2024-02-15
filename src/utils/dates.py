@@ -1,6 +1,26 @@
 from datetime import datetime, timedelta
 from pathlib import Path
 
+
+# first, filter the events by the eid
+def keep_date(datetime_obj):
+    return datetime_obj.replace(hour=0, minute=0, second=0, microsecond=0)
+def keep_time(datetime_obj):
+    # remove the date information and keep the time; convert to timedelta
+    return datetime_obj - datetime_obj.replace(hour=0, minute=0, second=0, microsecond=0)
+
+        
+def convert_time(time_string):
+    """
+    Same as used in construct.py
+    """
+    from datetime import timedelta
+    t = timedelta()
+    parts = (p for p in ["hours", "minutes", "seconds"])
+    for p in time_string.split(":"):
+        t += timedelta(**{next(parts): float(p)})
+    return t
+
 def get_days_from_range(start_date, end_date):
     total_days = (end_date - start_date).days
     return [start_date+timedelta(days=i) for i in range(total_days+1)]

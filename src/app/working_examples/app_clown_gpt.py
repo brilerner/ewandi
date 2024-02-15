@@ -7,10 +7,9 @@ from openai import OpenAI
 import sys
 from pathlib import Path
 
-p = Path(__file__).resolve()
-while p.name != "src":
-    p = p.parent
-sys.path.append(str(p))
+src_dir = Path(__file__).resolve()
+while src_dir.name != "src": src_dir = src_dir.parent
+sys.path.append(str(src_dir))
 from utils.viz import get_plotly_figure
 import prompts.clowngpt as PROMPTS
 

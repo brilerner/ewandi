@@ -1,3 +1,10 @@
+import sys
+from pathlib import Path
+src_dir = Path(__file__).resolve()
+while src_dir.name != 'src':
+    src_dir = src_dir.parent
+sys.path.append(str(src_dir))
+
 from server.transfer import upsert_data
 from server.retrieve import get_elements, get_events, get_embeddings
 from llm.embeddings import request_embedding
@@ -5,10 +12,10 @@ from llm.embeddings import request_embedding
 
 def run_maintenance(profile="llm_v1"):
     # first, update the eids for events and elements
-    update_eids(profile)
+    update_eids(profile=profile)
 
     # update stored name
-    update_embeddings(profile)
+    update_embeddings(profile=profile)
 
 
 def update_eids(profile="llm_v1"):
@@ -40,7 +47,7 @@ def update_eids(profile="llm_v1"):
         # print(event.keys())
         # print(element.keys())
         for k in keep_keys:
-            if event[k] != element[k]:
+            if event.get(k) != element.get(k):
                 return False
         return True  # passed all tests
 
@@ -68,10 +75,13 @@ def update_eids(profile="llm_v1"):
         for person in event.get("people", []):
             update_event(person, elements, "relations", relation_keys)
 
-    events = get_events(profile)
-    elements = get_elements(profile)
+    print("Updating eids")
+    events = get_events(profile=profile)
+    elements = get_elements(profile=profile)
     # go through each event and see if it exists in the elements
     for event in events:
+        if "evid" not in event:
+            event["evid"] = str(generate_uid())[:8]
         if "eid" in event:
             continue
         else:
@@ -141,6 +151,8 @@ def update_embeddings(model="text-embedding-3-small", profile="llm_v1"):
     def update_group_variants(element, element_type, partition, embeddings):
         pass
 
+    print("Updating embeddings")
+
     # get all the elements
     elements = get_elements(profile=profile)
 
@@ -150,7 +162,7 @@ def update_embeddings(model="text-embedding-3-small", profile="llm_v1"):
     for element_type in elements.keys():  # events, relations
         for partition in elements[element_type].keys():  # core, groups
             for eid, element in elements[element_type][partition].items():
-                print(element)
+                # print(element)
                 if element_type not in embeddings:
                     embeddings[element_type] = []
                 update_core(eid, element, element_type, partition, embeddings)
@@ -160,3 +172,14 @@ def update_embeddings(model="text-embedding-3-small", profile="llm_v1"):
 
     # upsert data
     upsert_data(embeddings, f"embeddings.{model}", profile=profile)
+
+
+def test_run_maintenance(profile="llm_v1"):
+    run_maintenance(profile=profile)
+    # now look at the length of embeddings
+    # embeddings = get_embeddings(profile=profile)
+    # print(len(embeddings["events"]))
+
+if __name__ == "__main__":
+    run_maintenance()
+    print("Done")

@@ -2,10 +2,14 @@ import sys
 from pathlib import Path
 import streamlit as st
 
-p = Path(__file__).resolve()
-while p.name != "src":
-    p = p.parent
-sys.path.append(str(p))
+
+src_dir = Path(__file__).resolve()
+while src_dir.name != "src": src_dir = src_dir.parent
+sys.path.append(str(src_dir))
+
+
+import warnings
+warnings.simplefilter(action='ignore', category=FutureWarning)
 
 from utils.placeholders import make_placeholder
 
@@ -35,6 +39,8 @@ from tenacity import (
 )  # for exponential backoff
 from utils.viz import get_plotly_figure
 
+import plotly.io as pio
+
 # GPT_MODEL = "gpt-3.5-turbo-1106"
 GPT_MODEL = "gpt-4-1106-preview"
 JSON_MODEL = "gpt-4-1106-preview"
@@ -55,11 +61,12 @@ class Message:
     It is independent of the display method.
     """
 
-    def __init__(self, role, first_text=None):
+    def __init__(self, role, first_text=None, show=True):
         self.role = role
         self.content = []
         if first_text:
             self.add_text(first_text)
+        self.show = show
 
     def add_text(self, text):
         self.content.append({"type": "text", "content": text})
@@ -77,7 +84,8 @@ class Message:
             if element["type"] == "text":
                 print(element["content"], end="")
             elif element["type"] == "figure":
-                element["content"].show()
+                if self.show:
+                    element["content"].show()
 
     # I need to figure out how to handle this with plots
     def api_message(self):
@@ -251,20 +259,32 @@ class StreamlitConversation(Conversation):
         """
         I've previously filtered out the messages that are not system or tool.
         """
-        for message in self.streamlit_messages:
+        messages_to_display = self.streamlit_messages
+
+        # for message in self.streamlit_messages:
+        for message in messages_to_display:
+            with st.chat_message(message.role):
+
+                for element in break_up(message.content):
+                    if element["type"] == "text":
+                        st.markdown(element["content"])
+                    elif element["type"] == "figure":
+                        st.plotly_chart(element["content"])
+
             # if message["role"] != "system" and message["role"] != "tool":
             # if message.role != "system" and message["role"] != "tool":
             # with st.chat_message(message["role"]):
-            with st.chat_message(message.role):
-                message.display()
-
+                # message.display()
+                # st.write("hello")
+                # message.display()
 
 class CerebraUser:
-    def __init__(self, userid=None):
+    def __init__(self, userid=None, persistent_log=False):
         self.userid = userid
         self.add_userid_if_missing()
         # set up logging
-        setup_logging(__file__, self.userid)
+        setup_logging(__file__, self.userid, persistent_log=persistent_log)
+        logging.info("-----STARTING NEW SESSION-----")
         # set up tmp dir
         self.setup_tmp_dir()
 
@@ -278,14 +298,14 @@ class CerebraUser:
             self.userid = generate_userid()
 
     def setup_tmp_dir(self):
-        save_dir = Path(root_path) / "tmp" / self.userid / "plots"
+        save_dir = Path(src_dir) / "tmp" / self.userid / "plots"
         if not save_dir.exists():
             save_dir.mkdir(parents=True, exist_ok=True)
 
 
 class Session:
-    def __init__(self, userid):
-        self.user = CerebraUser(userid)
+    def __init__(self, userid, persistent_log=False):
+        self.user = CerebraUser(userid, persistent_log=persistent_log)
         self.conversation = self.start_conversation()
         self.conversation.add_text_message("system", engine_prompts.system)
         self.backoff = True
@@ -293,6 +313,7 @@ class Session:
         self.model = "gpt-4-1106-preview"
         self.stream_handler_class = PrintStreamHandler
         self.tool_module = my_tools
+        # pio.renderers.default = 'browser'
 
     def start_conversation(self):
         return Conversation()
@@ -302,6 +323,11 @@ class Session:
         This is where the main error handling is performed.
         This is also where I add in tools and some specificications for the run.
         """
+
+        self.conversation.add_text_message("user", prompt)
+        
+        for msg in self.conversation.messages:
+            logging.info(f"START {msg['role']}: {msg}")
         try:
             general_completion_request(
                 self,
@@ -313,6 +339,7 @@ class Session:
             err_msg_for_user = handle_error(e)
             self.respond_to_error(err_msg_for_user)
 
+    # both for error responding
     def respond(self, text):
         stream_handler = self.stream_handler_class()
         for r in text:
@@ -352,6 +379,19 @@ class StreamlitSession(Session):
 #         super().add_figure(figure)
 #         self._update()
 
+def break_up(content):
+    parts = []
+    current_text = ""
+    for element in content:
+        if element["type"] == "text":
+            current_text += element["content"]
+        elif element["type"] == "figure":
+            parts.append({"type": "text", "content": current_text})
+            parts.append(element)
+            current_text = ""
+    if current_text:
+        parts.append({"type": "text", "content": current_text})
+    return parts
 
 class StreamlitStreamHandler(StreamlitMessage):
     """
@@ -390,19 +430,7 @@ class StreamlitStreamHandler(StreamlitMessage):
 
     def display(self, finish=False):
         # with st.container(): # NECESSAry? clreak
-        def break_up(content):
-            parts = []
-            current_text = ""
-            for element in content:
-                if element["type"] == "text":
-                    current_text += element["content"]
-                elif element["type"] == "figure":
-                    parts.append({"type": "text", "content": current_text})
-                    parts.append(element)
-                    current_text = ""
-            if current_text:
-                parts.append({"type": "text", "content": current_text})
-            return parts
+        
 
         content_to_display = break_up(self.content)
 
@@ -523,7 +551,7 @@ def reprocess_chunks(session, content, placeholder):
     return modified_chunks
 
 
-def get_tool_response(session, message):
+def get_tool_return(session, message):
     """
     This is where the value is retrieved
     """
@@ -652,8 +680,14 @@ class ChunkHandler:
         self.is_tool = self.check_if_tool_response(self.first_chunk)
         self.raw_chunks = []
         self.message = self.session.stream_handler_class()  # message
-        self.buffer_message = Message("assistant")
         self.buffer_index = 0
+        # if self.session.stream_handler_class.__name__ == "StreamlitStreamHandler":
+        #     self.buffer_message = StreamlitMessage("assistant")
+        self.buffer_message = Message("assistant", show=False)
+        # elif self.session.stream_handler_class.__name__ == "PrintStreamHandler":
+        #     self.buffer_message = Message("assistant")
+        # self.buffer_message = Message("assistant")
+        # self.streamlit_buffer_message = StreamlitMessage("assistant")
 
     def check_if_tool_response(self, chunk):
         if chunk.choices[0].delta.tool_calls:
@@ -669,8 +703,7 @@ class ChunkHandler:
             self.process_tool_chunks()
         else:
             self.process_assistant_chunks()
-        message = general_recombine(self.raw_chunks)
-        logging.info(f"message: {message}")
+
 
     def process_single_chunk(self, chunk):
         """
@@ -728,7 +761,6 @@ class ChunkHandler:
 
         # process after delay
         for i in range(len(self.raw_chunks) - self.delay, len(self.raw_chunks)):
-            self.process_single_chunk(self.raw_chunks[i])
             self.stream_buffer(i)
 
         # process leftover buffer
@@ -740,17 +772,25 @@ class ChunkHandler:
 
         # finish and add message to the conversation
         self.message.finish()
-        self.session.conversation.add_obj_message(self.message)
+
+        # message = general_recombine(self.raw_chunks)
+        
+        self.session.conversation.add_obj_message(self.buffer_message)
+        logging.info(f"process_assistant_chunks: {self.session.conversation.messages[-1]}")
+        # logging.info(f"text message: {self.message.api_message()}")
 
     def process_tool_chunks(self):
         for i, chunk in enumerate(self.completion_generator):
             i += 1  # since first chunk is already processed
             self.raw_chunks.append(chunk)
 
-        message = general_recombine(self.raw_chunks)
-        self.session.conversation.add_tool_response(message)  # make different func
-        tool_response = get_tool_response(self.session, message)
-        self.session.conversation.add_tool_return(tool_response)
+        t_response = general_recombine(self.raw_chunks)
+        self.session.conversation.add_tool_response(t_response)  # make different func
+        logging.info(f"process_tool_chunks: {self.session.conversation.messages[-1]}")
+
+        t_return = get_tool_return(self.session, t_response)
+        self.session.conversation.add_tool_return(t_return)
+        logging.info(f"process_tool_chunks: {self.session.conversation.messages[-1]}")
 
 
 def process_completion(session, **input_completions_kwargs):
@@ -794,7 +834,10 @@ def process_completion(session, **input_completions_kwargs):
         # intialize stream handler
         # stream_handler = session.stream_handler_class()
         # get the first chunk and see if it is a tool response
-        chunk_handler = ChunkHandler(session, completion, delay=4)
+        chunk_handler = ChunkHandler(session, completion, 
+                                    #  delay=4
+                                     delay=6
+                                     )
         chunk_handler.process_chunks()
 
     # get completion generator
@@ -817,13 +860,14 @@ def general_completion_request(
     The placeholder is extracted when the assistant response to the tool is parsed.
     """
 
-    if prompt:
-        session.conversation.add_text_message("user", prompt)
+    # if prompt:
+    #     session.conversation.add_text_message("user", prompt)
 
-    logging.info(f"Conversation (Pre-Completion): {session.conversation.messages}")
 
     # parse completion
     process_completion(session, **input_completions_kwargs)
+
+    # logging.info(f"Conversation (Post-Completion): {session.conversation.messages}")
 
     # determine if resubmit; can further specify resubmit conditions
     if session.conversation.messages[-1]["role"] == "tool":
@@ -855,6 +899,8 @@ def json_request_prompt_only(
     # return json.loads(content)
 
 
+
+@retry(wait=wait_random_exponential(min=1, max=60), stop=stop_after_attempt(6))
 def json_request(messages, model=JSON_MODEL, load=True, **completions_kwargs):
     import json
 

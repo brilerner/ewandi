@@ -1,10 +1,9 @@
 import sys
 from pathlib import Path
 
-p = Path(__file__).resolve()
-while p.name != "src":
-    p = p.parent
-sys.path.append(str(p))
+src_dir = Path(__file__).resolve()
+while src_dir.name != "src": src_dir = src_dir.parent
+sys.path.append(str(src_dir))
 
 
 import streamlit as st
@@ -15,7 +14,7 @@ from streamlit_calendar import calendar
 import numpy as np
 from pathlib import Path
 import prompts
-import app_text
+import app.display_msgs as display_msgs
 from utils.general import get_root
 from utils.io import load_json
 
@@ -162,7 +161,7 @@ def show_overview_tab():
     st.header("Overview")
 
     st.write("Welcome to Cerebra...")
-    st.write(app_text.intro)
+    st.write(display_msgs.intro)
 
 
 def show_bio_tab():

@@ -1,5 +1,6 @@
 import inspect
 import re
+from typing import get_origin, get_args
 
 
 def python_type_to_json_type(python_type):
@@ -43,6 +44,7 @@ def python_value_to_json_value(value):
 def generate_tool_description(func):
     """
     Generates a dictionary description of a tool function in a specific format.
+    The arg type is taken from the annotation of the function.
 
     Args:
         func (function): The tool function to describe.
@@ -74,8 +76,7 @@ def generate_tool_description(func):
 
     # Extract argument details
     for name, param in signature.parameters.items():
-        # get the JSON type
-        json_type = python_type_to_json_type(param.annotation)
+
 
         # Check if the parameter is required
         is_required = param.default is inspect.Parameter.empty
@@ -100,12 +101,31 @@ def generate_tool_description(func):
         #     "description": param_desc,
         # }
 
-        tool_description["function"]["parameters"]["properties"][name] = {
-            "type": json_type,
-            "description": param_desc,
-        }
+        # get the JSON type
+        
+        base_type = get_origin(param.annotation)
+        if base_type == list:
+            json_type = python_type_to_json_type(base_type)
+            subtype = get_args(param.annotation)[0]
+            json_subtype = python_type_to_json_type(subtype)
+            curr_tool = {
+                "type": json_type,
+                "items": {
+                    "type": json_subtype
+                },
+                "description": param_desc,
+            }
+        else:
+            json_type = python_type_to_json_type(param.annotation)
+            curr_tool = {
+                "type": json_type,
+                "description": param_desc,
+            }
+
+        tool_description["function"]["parameters"]["properties"][name] = curr_tool
 
         if is_required:
             tool_description["function"]["parameters"]["required"].append(name)
 
     return tool_description
+

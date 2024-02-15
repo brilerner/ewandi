@@ -1,16 +1,6 @@
-import sys
-from pathlib import Path
-
-p = Path(__file__).resolve()
-while p.name != "src":
-    p = p.parent
-sys.path.append(str(p))
-from server.query import get_events
-from datetime import datetime, timedelta
-import pandas as pd
-import plotly.express as px
 
 
+    
 def plot_occurrence(
     variable_name,
 ):

@@ -1,0 +1,1 @@
+json_request_prompt = "Return a JSON with key 'test' and value true."

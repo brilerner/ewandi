@@ -15,9 +15,9 @@
 	// 	],
 	// 	"description": "Log output to console"
 	// }
-	"Add src to sys path": {
+	"py src": {
 		"scope": "python",
-		"prefix": "add_src",
+		"prefix": "py_src",
 		"body": [
 			"import sys",
 			"from pathlib import Path",
@@ -27,5 +27,18 @@
 			"sys.path.append(str(p))"
 		],
 		"description": "Add the src path to the sys.path"
-	}
+	},
+	"jup src": {
+		"scope": "python",
+		"prefix": "jup_src",
+		"body": [
+			"%load_ext autoreload",
+			"%autoreload 2",
+			"import sys",
+			"from pathlib import Path",
+			"root_path = '/Users/brianlerner/Library/CloudStorage/OneDrive-Personal/Code/cerebra/src'",
+			"sys.path.append(root_path)"
+		],
+		"description": "Add the src path to the sys.path for jupyter"
+	},
 }

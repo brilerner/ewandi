@@ -1,0 +1,101 @@
+v,p,dr,tr,d
+sleep (sleep),['Tyrese (people)'],2023-12-24--2023-12-27,afternoon,
+movie night (activity),,,09:00--11:00,
+garlic (food) (dietary intake),,the last month,afternoon,
+date night (activity),,the last year,12:00--00:00,
+brown rice (food) (dietary intake),,the last month,night,"['Mon', 'Tue']"
+basil (food) (dietary intake),['Ron (people)'],the last week,,
+reading (activity),['Ron (people)'],2023-12-24--2023-12-27,night,
+reading (activity),,,12:00--00:00,"['Tue', 'Wed', 'Thu']"
+brown rice (food) (dietary intake),,2023-12-24--2023-12-27,morning,
+spinach (food) (dietary intake),,the last year,night,weekdays
+date night (activity),,the last year,night,
+onions (food) (dietary intake),"['Mara (people)', 'Tyrese (people)', 'Mom (people)']",,,
+basketball game (activity),,yesterday,,
+party (activity),"['Mara (people)', 'Ron (people)']",the last week,night,
+playing videogames (activity),['Mara (people)'],yesterday,,
+avocado (food) (dietary intake),"['Mara (people)', 'Ron (people)']",,,"['Tue', 'Wed', 'Thu']"
+tomatoes (food) (dietary intake),"['Mom (people)', 'Tyrese (people)']",the last month,,"['Tue', 'Wed', 'Thu']"
+ketchup (food) (dietary intake),,the last year,morning,['Wed']
+tomatoes (food) (dietary intake),,,12:00--00:00,
+mozzarella cheese (food) (dietary intake),,yesterday,,
+olive oil (food) (dietary intake),,,night,
+talking on the phone (activity),,yesterday,afternoon,
+party (activity),"['Mara (people)', 'Ron (people)', 'Tyrese (people)']",the last week,09:00--11:00,
+lettuce (food) (dietary intake),"['Tyrese (people)', 'Mom (people)']",the last month,afternoon,"['Mon', 'Tue']"
+cheddar cheese (food) (dietary intake),,yesterday,,
+salt (food) (dietary intake),['Tyrese (people)'],2023-12-24--2023-12-27,,
+olives (food) (dietary intake),"['Mara (people)', 'Ron (people)', 'Mom (people)']",,night,"['Mon', 'Tue']"
+elbow pain (sensation),,the last week,12:00--00:00,
+lettuce (food) (dietary intake),"['Mara (people)', 'Tyrese (people)']",,,
+hiking (activity),,the last week,night,
+class: Computer Programming (activity),,,09:00--11:00,weekend
+class: Computer Programming (activity),,the last week,,
+party (activity),['Tyrese (people)'],,,
+bread (food) (dietary intake),"['Ron (people)', 'Mara (people)']",yesterday,night,
+party (activity),"['Ron (people)', 'Mara (people)']",,,weekdays
+basketball game (activity),['Mom (people)'],,12:00--00:00,
+garlic (food) (dietary intake),,the last month,,
+reading (activity),,,,"['Mon', 'Tue']"
+lemons (food) (dietary intake),,2023-12-24--2023-12-27,09:00--11:00,
+sleep (sleep),['Tyrese (people)'],,morning,
+salt (food) (dietary intake),['Tyrese (people)'],2023-12-24--2023-12-27,night,
+eggs (food) (dietary intake),"['Mom (people)', 'Mara (people)']",2023-12-24--2023-12-27,morning,
+olive oil (food) (dietary intake),['Ron (people)'],,12:00--00:00,weekend
+class: Computer Programming (activity),,the last year,,['Wed']
+class: Computer Programming (activity),,,,"['Tue', 'Wed', 'Thu']"
+studying (activity),,the last year,night,
+homework due: Computer Programming (activity),,,afternoon,
+calories (None) (dietary intake),"['Mara (people)', 'Ron (people)', 'Tyrese (people)']",,,
+lettuce (food) (dietary intake),,the last month,night,weekdays
+basil (food) (dietary intake),"['Mom (people)', 'Mara (people)']",yesterday,,
+lemons (food) (dietary intake),,the last month,,
+talking on the phone (activity),"['Mara (people)', 'Mom (people)']",the last year,morning,
+sleep (sleep),['Tyrese (people)'],,afternoon,['Wed']
+calories (None) (dietary intake),['Mara (people)'],2023-12-24--2023-12-27,,
+lemons (food) (dietary intake),,2023-12-24--2023-12-27,12:00--00:00,
+lettuce (food) (dietary intake),"['Mom (people)', 'Mara (people)', 'Tyrese (people)']",yesterday,,
+date night (activity),,yesterday,,
+tuna (food) (dietary intake),['Mara (people)'],the last month,,
+studying (activity),,the last week,,
+feta cheese (food) (dietary intake),,,night,"['Mon', 'Tue']"
+olives (food) (dietary intake),,,12:00--00:00,"['Tue', 'Wed', 'Thu']"
+hiking (activity),['Mom (people)'],the last month,,
+party (activity),['Mom (people)'],,morning,weekend
+homework due: Computer Programming (activity),"['Mara (people)', 'Ron (people)', 'Mom (people)']",,afternoon,weekend
+basketball game (activity),,,,['Wed']
+elbow pain (sensation),['Ron (people)'],the last year,12:00--00:00,"['Tue', 'Wed', 'Thu']"
+movie night (activity),['Tyrese (people)'],the last week,,
+hiking (activity),['Mara (people)'],,,
+elbow pain (sensation),['Mom (people)'],,,
+reading (activity),['Tyrese (people)'],,09:00--11:00,weekend
+avocado (food) (dietary intake),,,,"['Mon', 'Tue']"
+lettuce (food) (dietary intake),['Ron (people)'],,morning,['Wed']
+basil (food) (dietary intake),"['Mom (people)', 'Mara (people)', 'Ron (people)']",2023-12-24--2023-12-27,,
+sleep (sleep),,the last year,,weekdays
+bread (food) (dietary intake),"['Mom (people)', 'Mara (people)']",2023-12-24--2023-12-27,12:00--00:00,
+reading (activity),"['Tyrese (people)', 'Mara (people)']",2023-12-24--2023-12-27,12:00--00:00,
+class: Computer Programming (activity),,2023-12-24--2023-12-27,,
+basketball game (activity),,yesterday,morning,
+party (activity),,the last year,afternoon,['Wed']
+garlic (food) (dietary intake),,the last year,night,
+date night (activity),,,12:00--00:00,
+basketball game (activity),"['Mara (people)', 'Tyrese (people)', 'Ron (people)']",,morning,
+feta cheese (food) (dietary intake),,yesterday,night,
+mood (None) (daily survey),,,,
+onions (food) (dietary intake),"['Tyrese (people)', 'Mara (people)', 'Mom (people)']",,,weekdays
+tomatoes (food) (dietary intake),"['Mom (people)', 'Ron (people)']",the last week,,
+lemons (food) (dietary intake),,,afternoon,
+eggs (food) (dietary intake),['Mara (people)'],,,
+sleep (sleep),"['Tyrese (people)', 'Mom (people)']",the last month,,['Wed']
+energy (None) (daily survey),,,,
+lemons (food) (dietary intake),,the last month,morning,
+date night (activity),,,,
+cheddar cheese (food) (dietary intake),['Mara (people)'],,,
+studying (activity),,the last year,,weekdays
+tuna (food) (dietary intake),['Ron (people)'],the last year,,weekend
+basketball game (activity),,,12:00--00:00,"['Tue', 'Wed', 'Thu']"
+onions (food) (dietary intake),,the last week,12:00--00:00,
+reading (activity),"['Mom (people)', 'Ron (people)']",,,
+party (activity),,,,
+movie night (activity),,,12:00--00:00,['Wed']

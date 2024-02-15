@@ -1,10 +1,9 @@
 import sys
 from pathlib import Path
 
-p = Path(__file__).resolve()
-while p.name != "src":
-    p = p.parent
-sys.path.append(str(p))
+src_dir = Path(__file__).resolve()
+while src_dir.name != "src": src_dir = src_dir.parent
+sys.path.append(str(src_dir))
 import copy
 import itertools
 import json

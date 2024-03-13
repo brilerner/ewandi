@@ -10,6 +10,26 @@ def good_sleep(event):
 
     return label
 
+def good_mood(event):
+    from datetime import timedelta
+
+    # score cutoffs
+    good_mood = 6
+    neutral_mood = 4
+
+    mood = event["value"]
+
+    if mood >= good_mood:
+        label = "good"
+
+    if duration >= timedelta(hours=7):
+        label = True
+    else:
+        label = False
+
+    return label
+
+
 
 def get_duration(event):
     """

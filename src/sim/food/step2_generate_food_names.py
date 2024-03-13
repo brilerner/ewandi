@@ -25,7 +25,7 @@ MODEL = "gpt-4-1106-preview"
 # openai.api_key = keys.OPENAI
 client = OpenAI()
 root = Path(
-    "/Users/brianlerner/Library/CloudStorage/OneDrive-Personal/Code/cerebra/src"
+    "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/cerebra/src"
 )
 
 

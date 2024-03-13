@@ -1,0 +1,25 @@
+{
+    "dinner": [
+        {
+            "name": "Loaded Cheeseburger Pasta Skillet",
+            "ingredients": [
+                "pasta",
+                "beef",
+                "butter",
+                "cheddar cheese",
+                "mozzarella cheese",
+                "parmesan cheese",
+                "sour cream",
+                "egg",
+                "milk",
+                "onion",
+                "garlic",
+                "salt",
+                "pepper",
+                "ketchup",
+                "mustard"
+            ],
+            "calories": 651
+        }
+    ]
+}

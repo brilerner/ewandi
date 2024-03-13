@@ -1,0 +1,108 @@
+{
+    "dinner": [
+        {
+            "name": "Mediterranean Spinach and Quinoa Salad with Grilled Chicken",
+            "ingredients": [
+                "quinoa",
+                "chicken",
+                "spinach",
+                "avocado",
+                "peanuts",
+                "olive oil",
+                "lemons",
+                "garlic",
+                "feta cheese",
+                "salt",
+                "pepper",
+                "bell peppers",
+                "olives",
+                "cucumbers",
+                "grapes"
+            ],
+            "calories": 337
+        },
+        {
+            "name": "Grilled Lemon Herb Chicken Salad",
+            "ingredients": [
+                "chicken",
+                "sweet potatoes",
+                "olive oil",
+                "salt",
+                "pepper",
+                "rosemary",
+                "basil",
+                "oregano",
+                "lemons",
+                "kale",
+                "spinach",
+                "avocado",
+                "cucumbers",
+                "bell peppers",
+                "almonds"
+            ],
+            "calories": 209
+        },
+        {
+            "name": "Mediterranean-Spiced Chicken with Quinoa Salad",
+            "ingredients": [
+                "chicken",
+                "quinoa",
+                "bell peppers",
+                "cucumbers",
+                "kale",
+                "tomatoes",
+                "olives",
+                "feta cheese",
+                "lemons",
+                "olive oil",
+                "garlic",
+                "lemons",
+                "salt",
+                "pepper",
+                "rosemary",
+                "basil",
+                "oregano"
+            ],
+            "calories": 348
+        },
+        {
+            "name": "Mediterranean Stuffed Chicken with Quinoa Salad",
+            "ingredients": [
+                "chicken",
+                "spinach",
+                "feta cheese",
+                "garlic",
+                "rosemary",
+                "olive oil",
+                "quinoa",
+                "kale",
+                "tomatoes",
+                "cucumbers",
+                "lemons",
+                "salt",
+                "pepper"
+            ],
+            "calories": 266
+        },
+        {
+            "name": "Grilled Lemon Herb Chicken and Quinoa Salad",
+            "ingredients": [
+                "chicken",
+                "quinoa",
+                "onions",
+                "bell peppers",
+                "olive oil",
+                "lemons",
+                "spinach",
+                "avocado",
+                "garlic",
+                "salt",
+                "pepper",
+                "rosemary",
+                "basil",
+                "balsamic vinegar"
+            ],
+            "calories": 325
+        }
+    ]
+}

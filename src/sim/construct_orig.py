@@ -28,12 +28,12 @@ from utils.io import load_json, load_yaml_file
 # inputs_dir = Path.cwd().parent.parent /'data'/'sim' / 'profiles'/profile/'inputs'
 
 profile = "llm_v1"
-profile_dir = f"/Users/brianlerner/Library/CloudStorage/OneDrive-Personal/Code/cerebra/data/sim/profiles/{profile}"
+profile_dir = f"/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/cerebra/data/sim/profiles/{profile}"
 inputs_dir = Path(profile_dir) / "inputs"
 sys.path.append(inputs_dir)
 
 sim_path = (
-    "/Users/brianlerner/Library/CloudStorage/OneDrive-Personal/Code/cerebra/data/sim"
+    "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/cerebra/data/sim"
 )
 sys.path.append(sim_path)
 import rubrics.rubrics as rubrics
@@ -50,7 +50,7 @@ class CustomEncoder(json.JSONEncoder):
 
 def construct(profile="llm_v1"):
     profile_dir = Path(
-        f"/Users/brianlerner/Library/CloudStorage/OneDrive-Personal/Code/cerebra/data/sim/profiles/{profile}"
+        f"/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/cerebra/data/sim/profiles/{profile}"
     )
     inputs_dir = profile_dir / "inputs"
     outputs_dir = Path(profile_dir) / "outputs"

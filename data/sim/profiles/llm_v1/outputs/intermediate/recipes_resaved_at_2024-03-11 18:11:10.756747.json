@@ -1,0 +1,123 @@
+{
+    "breakfast": [
+        {
+            "name": "Mediterranean Breakfast Scramble",
+            "ingredients": [
+                "olive oil",
+                "eggs",
+                "feta cheese",
+                "tomatoes",
+                "spinach",
+                "mushrooms",
+                "black beans",
+                "avocado",
+                "lemons",
+                "salt",
+                "pepper"
+            ],
+            "calories": 441
+        },
+        {
+            "name": "Cheesy Beef Breakfast Burrito",
+            "ingredients": [
+                "bread",
+                "beef",
+                "butter",
+                "cheddar cheese",
+                "sour cream",
+                "eggs",
+                "potatoes",
+                "onions",
+                "bell peppers",
+                "salt",
+                "pepper",
+                "tomatoes"
+            ],
+            "calories": 681
+        }
+    ],
+    "lunch": [
+        {
+            "name": "Mediterranean Tuna and White Bean Toast",
+            "ingredients": [
+                "bread",
+                "tuna",
+                "onions",
+                "olive oil",
+                "lettuce",
+                "black beans",
+                "tomatoes",
+                "feta cheese",
+                "lemons",
+                "garlic",
+                "oregano",
+                "salt",
+                "pepper"
+            ],
+            "calories": 591
+        },
+        {
+            "name": "Loaded Cheesy Beef Sandwich",
+            "ingredients": [
+                "bread",
+                "beef",
+                "butter",
+                "cheddar cheese",
+                "mozzarella cheese",
+                "parmesan cheese",
+                "sour cream",
+                "eggs",
+                "ketchup",
+                "garlic",
+                "potatoes",
+                "salt",
+                "pepper"
+            ],
+            "calories": 667
+        }
+    ],
+    "dinner": [
+        {
+            "name": "Cheesy Beef Pasta Bake",
+            "ingredients": [
+                "pasta",
+                "beef",
+                "butter",
+                "cheddar cheese",
+                "mozzarella cheese",
+                "parmesan cheese",
+                "milk",
+                "sour cream",
+                "garlic",
+                "mushrooms",
+                "bread",
+                "olive oil",
+                "salt",
+                "pepper",
+                "rosemary"
+            ],
+            "calories": 624
+        },
+        {
+            "name": "Cheesy Beef Pasta Bake",
+            "ingredients": [
+                "onions",
+                "beef",
+                "pasta",
+                "cheddar cheese",
+                "mozzarella cheese",
+                "parmesan cheese",
+                "tomatoes",
+                "garlic",
+                "olive oil",
+                "butter",
+                "milk",
+                "oregano",
+                "basil",
+                "salt",
+                "pepper"
+            ],
+            "calories": 733
+        }
+    ]
+}

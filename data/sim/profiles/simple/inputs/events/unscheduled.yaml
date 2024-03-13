@@ -1,0 +1,82 @@
+
+## School
+
+- name: studying
+  description: Studying for classes.
+  start_time: "14:00:00"
+  duration: {hours: 1, minutes: 30}
+  start_date: PH_fall_semester_start
+  end_date: PH_fall_semester_end
+  precedence: 3
+  prob: 0.8
+
+
+
+
+## Exercise
+
+- name: walking outside
+  location: Duke Gardens
+  description: Going for a walk at Duke Gardens.
+  start_time: "16:00:00"
+  # days:
+  #   - Sat
+  #   - Sun
+  duration: {minutes: 30}
+  prob: 0.4
+  effects:
+    - name: stress
+      vals: [1,2]
+    - name: mood
+      vals: [1,2]
+  precedence: 4
+
+- name: hiking
+  location: Eno River State Park
+  description: Going hiking at Eno River State Park.
+  days:
+    - Sat
+    - Sun
+  start_time: "09:00:00"
+  duration: {hours: 2}
+  prob: 0.5
+  precedence: 4
+  effects:
+    - name: stress
+      vals: [1,2]
+    - name: mood
+      vals: [1,2]
+
+## Relaxation
+
+- name: playing videogames
+  location: Apartment
+  description: Playing videogames.
+  start_time: "23:00:00"
+  duration: {hours: 0, minutes: 45}
+  precedence: 5
+  effects:
+    - name: mood
+      vals: [1]
+  prob: 0.5
+
+- name: reading
+  location: Apartment
+  description: Reading a book or magazine.
+  start_time: "23:00:00"
+  duration: {hours: 0, minutes: 45}
+  precedence: 5
+  effects:
+    - name: mood
+      vals: [1]
+  prob: 0.5
+
+## Talking
+
+- name: talking on the phone
+  description: Having a conversation on the phone.
+  start_time: "17:00:00"
+  duration: {minutes: 30}
+  prob: 0.3
+  precedence: 3
+  people: [Mom]

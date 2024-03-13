@@ -1,0 +1,23 @@
+{
+    "breakfast": [
+        {
+            "name": "Morning Sunshine Veggie Scramble with Avocado Toast",
+            "ingredients": [
+                "eggs",
+                "onions",
+                "mushrooms",
+                "spinach",
+                "bell peppers",
+                "tomatoes",
+                "feta cheese",
+                "avocado",
+                "bread",
+                "olive oil",
+                "salt",
+                "pepper",
+                "garlic"
+            ],
+            "calories": 344
+        }
+    ]
+}

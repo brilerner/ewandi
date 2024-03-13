@@ -1,7 +1,7 @@
 import json
 from pathlib import Path
 
-path = Path("/Users/brianlerner/Library/CloudStorage/OneDrive-Personal/Code/Cerebra/data/sim/food/foundationDownload.json")
+path = Path("/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/Cerebra/data/sim/food/foundationDownload.json")
 foods = json.load(open(path))
 
 ENERGY_NAME = "energy" # no need for multiple types of conversions

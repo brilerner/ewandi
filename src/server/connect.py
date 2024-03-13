@@ -4,7 +4,7 @@ from pymongo.errors import ConnectionFailure
 import os
 
 from dotenv import load_dotenv
-
+from pymongo.errors import ConfigurationError
 # Load environment variables from .env file
 load_dotenv()
 
@@ -21,16 +21,23 @@ uri = os.environ["MONGO_URI"]
 def connect_to_db(db_loc="atlas"):
     if db_loc == "atlas":
         # Create a new client and connect to the server
-        client = MongoClient(
-            uri, server_api=ServerApi("1"), serverSelectionTimeoutMS=TIMEOUT_MS
-        )
+        try:
+            client = MongoClient(
+                uri, server_api=ServerApi("1"), serverSelectionTimeoutMS=TIMEOUT_MS
+            )
+        except ConfigurationError as e:
+            # this occurs when there is no internet
+            print(e)
+            raise ConfigurationError
 
         # Send a ping to confirm a successful connection
         try:
             client.admin.command("ping")
             # print("Pinged your deployment. You successfully connected to MongoDB!")
-        except Exception as e:
+        except ConnectionFailure as e:
+            # this occurs when the connection is not otherwise working
             print(e)
+            raise ConnectionFailure
 
     elif db_loc == "local":
         client = MongoClient(

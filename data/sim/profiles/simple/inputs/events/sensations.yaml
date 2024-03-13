@@ -1,0 +1,42 @@
+
+- name: elbow pain
+  causes:
+    - name: "homework due: Computer Programming"
+  delay: {hours: 6, minutes: 0} 
+  duration: {hours: 4, minutes: 0}
+  prob: 0.9
+  description: Outer part of the elbow, especially when twisting or extending the arm.
+
+- name: shoulder pain
+  causes:
+    - name: "basketball practice"
+  delay: {minutes: 10} 
+  duration: {hours: 4, minutes: 0}
+  prob: 0.9
+  description: Pain on the top of the right shoulder.
+
+- name: headache
+  causes:
+    - name: "bread"
+      type: ingredient  
+  effects:
+    - name: mood
+      vals: [-1, -2]
+      probs: [0.5, 0.5]
+  delay: {hours: 2, minutes: 0}
+  duration: {hours: 1, minutes: 0}
+  prob: 0.4
+  description: Dull pain on the left side of the head.
+
+- name: stomachache
+  causes:
+    - name: "onions"
+      type: ingredient  
+  effects:
+    - name: energy
+      vals: [-3, -2]
+      probs: [0.5, 0.5]
+  delay: {hours: 2, minutes: 0}
+  duration: {hours: 1, minutes: 0}
+  prob: 0.4
+  description: Mild discomfort in the stomach.

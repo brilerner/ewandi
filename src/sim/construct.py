@@ -4,12 +4,11 @@ import sys
 from pathlib import Path
 
 src_dir = Path(__file__).resolve()
-while src_dir.name != "src": src_dir = src_dir.parent
+while src_dir.name != "src":
+    src_dir = src_dir.parent
 sys.path.append(str(src_dir))
 
-sim_dir = (
-    "/Users/brianlerner/Library/CloudStorage/OneDrive-Personal/Code/cerebra/data/sim"
-)
+sim_dir = "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/cerebra/data/sim"
 sys.path.append(sim_dir)
 
 import copy
@@ -650,6 +649,11 @@ def get_sim_data(profile_dir):
                 cat_events.append(event_info)
             by_cat[cat] = cat_events
 
+        # check if dict is empty and raise exception if so
+        if by_cat == {}:
+            print("No events found")
+            raise Exception
+
         return by_cat
 
     def get_constructor_specs(constructors_dir):
@@ -750,13 +754,13 @@ def get_sim_data(profile_dir):
     sim_constructor["sim_params"] = load_sim_params(inputs_dir / "sim_params.yaml")
     sim_constructor["dates"] = get_dates(sim_constructor["sim_params"])
 
-    # set up recipes
-    sim_constructor["recipes"] = load_recipes(recipes_path)
-
     sim_constructor["specs"] = {
         "events": get_event_specs(inputs_dir / "events"),
         "constructors": get_constructor_specs(inputs_dir / "constructors"),
     }
+
+    # set up recipes
+    sim_constructor["recipes"] = load_recipes(recipes_path)
 
     # validate/format events
     for category, specs in sim_constructor["specs"]["events"].items():

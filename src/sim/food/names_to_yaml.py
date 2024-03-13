@@ -4,7 +4,7 @@ from pathlib import Path
 import yaml
 
 food_data_dir = Path(
-    "/Users/brianlerner/Library/CloudStorage/OneDrive-Personal/Code/Cerebra/data/sim/foods"
+    "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/Cerebra/data/sim/foods"
 )
 
 

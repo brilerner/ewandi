@@ -1,0 +1,120 @@
+{
+    "breakfast": [
+        {
+            "name": "Mediterranean-style veggie and egg toast",
+            "ingredients": [
+                "bread",
+                "eggs",
+                "feta cheese",
+                "tomatoes",
+                "spinach",
+                "olives",
+                "avocado",
+                "olive oil",
+                "salt",
+                "pepper",
+                "basil"
+            ],
+            "calories": 600
+        },
+        {
+            "name": "Savory Tuscan Herb Omelette with Rosemary Potatoes",
+            "ingredients": [
+                "olive oil",
+                "eggs",
+                "cheddar cheese",
+                "mozzarella cheese",
+                "parmesan cheese",
+                "spinach",
+                "tomatoes",
+                "garlic",
+                "onions",
+                "mushrooms",
+                "potatoes",
+                "salt",
+                "pepper",
+                "rosemary",
+                "basil",
+                "oregano"
+            ],
+            "calories": 584
+        }
+    ],
+    "lunch": [
+        {
+            "name": "Mediterranean Quinoa Tuna Salad",
+            "ingredients": [
+                "quinoa",
+                "tuna",
+                "olive oil",
+                "lemons",
+                "feta cheese",
+                "kale",
+                "cucumbers",
+                "tomatoes",
+                "olives",
+                "garlic",
+                "salt",
+                "pepper",
+                "balsamic vinegar"
+            ],
+            "calories": 547
+        },
+        {
+            "name": "Mediterranean Tuna Brown Rice Bowl",
+            "ingredients": [
+                "onions",
+                "olive oil",
+                "tuna",
+                "brown rice",
+                "feta cheese",
+                "tomatoes",
+                "cucumbers",
+                "kale",
+                "lemons",
+                "salt",
+                "pepper"
+            ],
+            "calories": 418
+        }
+    ],
+    "dinner": [
+        {
+            "name": "Cheesy Potato Bake with Creamy Beef",
+            "ingredients": [
+                "potatoes",
+                "beef",
+                "butter",
+                "cheddar cheese",
+                "mozzarella cheese",
+                "sour cream",
+                "milk",
+                "garlic",
+                "rosemary"
+            ],
+            "calories": 643
+        },
+        {
+            "name": "Mediterranean Quinoa Salad with Grilled Lemon Chicken",
+            "ingredients": [
+                "quinoa",
+                "chicken",
+                "onions",
+                "cucumbers",
+                "tomatoes",
+                "olive oil",
+                "feta cheese",
+                "black beans",
+                "avocado",
+                "lemons",
+                "garlic",
+                "balsamic vinegar",
+                "salt",
+                "pepper",
+                "basil",
+                "rosemary"
+            ],
+            "calories": 365
+        }
+    ]
+}

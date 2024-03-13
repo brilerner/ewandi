@@ -1,0 +1,57 @@
+{
+    "breakfast": [
+        {
+            "name": "Savory Morning Scramble",
+            "ingredients": [
+                "eggs",
+                "spinach",
+                "mushrooms",
+                "onions",
+                "feta cheese",
+                "avocado",
+                "olive oil",
+                "pepper",
+                "salt"
+            ],
+            "calories": 280
+        }
+    ],
+    "lunch": [
+        {
+            "name": "Mediterranean Tuna & Avocado Salad on Multigrain Bread",
+            "ingredients": [
+                "bread",
+                "onions",
+                "tuna",
+                "avocado",
+                "lettuce",
+                "cucumbers",
+                "olive oil",
+                "feta cheese",
+                "rosemary",
+                "oregano",
+                "balsamic vinegar",
+                "kale"
+            ],
+            "calories": 352
+        }
+    ],
+    "dinner": [
+        {
+            "name": "Beef and Cheddar Au Gratin",
+            "ingredients": [
+                "beef",
+                "onions",
+                "butter",
+                "cheddar cheese",
+                "parmesan cheese",
+                "milk",
+                "potatoes",
+                "garlic",
+                "salt",
+                "pepper"
+            ],
+            "calories": 752
+        }
+    ]
+}

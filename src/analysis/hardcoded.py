@@ -21,7 +21,7 @@ def get_all_events():
         )
         return event
 
-    all_events_path = "/Users/brianlerner/Library/CloudStorage/OneDrive-Personal/Code/cerebra/data/sim/profiles/llm_v1/outputs/final/events_breakout.json"
+    all_events_path = "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/cerebra/data/sim/profiles/llm_v1/outputs/final/events_breakout.json"
     all_events = load_json(all_events_path)
     all_events = [format_datetime(event) for event in all_events]
     return all_events

@@ -1,0 +1,555 @@
+{
+    "breakfast": [
+        {
+            "name": "Savory Oats with Veggie Scrambled Eggs and Cheese",
+            "ingredients": [
+                "oats",
+                "olive oil",
+                "eggs",
+                "cheddar cheese",
+                "spinach",
+                "tomatoes",
+                "mushrooms",
+                "onions",
+                "garlic",
+                "salt",
+                "pepper",
+                "bell peppers"
+            ],
+            "calories": 420
+        },
+        {
+            "name": "Mediterranean Breakfast Scramble",
+            "ingredients": [
+                "eggs",
+                "spinach",
+                "feta cheese",
+                "tomatoes",
+                "garlic",
+                "onions",
+                "olive oil",
+                "bell peppers",
+                "black beans",
+                "avocado",
+                "lemons"
+            ],
+            "calories": 234
+        },
+        {
+            "name": "Savory Oatmeal with Egg and Avocado",
+            "ingredients": [
+                "oats",
+                "eggs",
+                "milk",
+                "cheddar cheese",
+                "avocado",
+                "garlic",
+                "salt",
+                "pepper",
+                "olive oil"
+            ],
+            "calories": 404
+        },
+        {
+            "name": "Morning Boost Salmon Scramble",
+            "ingredients": [
+                "eggs",
+                "salmon",
+                "spinach",
+                "tomatoes",
+                "feta cheese",
+                "avocado",
+                "olive oil",
+                "garlic",
+                "lemons",
+                "salt",
+                "pepper"
+            ],
+            "calories": 298
+        },
+        {
+            "name": "Mediterranean Scrambled Eggs with Avocado Toast",
+            "ingredients": [
+                "eggs",
+                "feta cheese",
+                "spinach",
+                "tomatoes",
+                "onions",
+                "olive oil",
+                "bread",
+                "avocado",
+                "lemons",
+                "garlic",
+                "salt",
+                "pepper"
+            ],
+            "calories": 215
+        },
+        {
+            "name": "Savory Morning Frittata with Toasted Bread",
+            "ingredients": [
+                "eggs",
+                "olive oil",
+                "spinach",
+                "tomatoes",
+                "feta cheese",
+                "onions",
+                "garlic",
+                "salt",
+                "pepper",
+                "bread"
+            ],
+            "calories": 225
+        },
+        {
+            "name": "Spinach Feta Egg Muffins with Quinoa",
+            "ingredients": [
+                "eggs",
+                "feta cheese",
+                "spinach",
+                "quinoa",
+                "garlic",
+                "milk",
+                "salt",
+                "pepper",
+                "olive oil",
+                "tomatoes"
+            ],
+            "calories": 214
+        },
+        {
+            "name": "Savory Oatmeal with Cheddar and Soft-Boiled Eggs",
+            "ingredients": [
+                "oats",
+                "cheddar cheese",
+                "eggs",
+                "milk",
+                "butter",
+                "salt",
+                "pepper",
+                "spinach",
+                "mushrooms",
+                "bell peppers",
+                "olive oil"
+            ],
+            "calories": 454
+        },
+        {
+            "name": "Mediterranean Avocado and Feta Omelette",
+            "ingredients": [
+                "eggs",
+                "feta cheese",
+                "spinach",
+                "olives",
+                "tomatoes",
+                "mushrooms",
+                "avocado",
+                "onions",
+                "olive oil",
+                "salt",
+                "pepper"
+            ],
+            "calories": 396
+        },
+        {
+            "name": "Cheesy Beef and Potato Hash",
+            "ingredients": [
+                "bread",
+                "beef",
+                "butter",
+                "cheddar cheese",
+                "mozzarella cheese",
+                "parmesan cheese",
+                "eggs",
+                "potatoes",
+                "onions",
+                "garlic",
+                "olive oil",
+                "salt",
+                "pepper"
+            ],
+            "calories": 783
+        }
+    ],
+    "lunch": [
+        {
+            "name": "Mediterranean Grilled Chicken Bowl",
+            "ingredients": [
+                "chicken",
+                "brown rice",
+                "feta cheese",
+                "olive oil",
+                "hummus",
+                "kale",
+                "cucumbers",
+                "tomatoes",
+                "avocado",
+                "olives",
+                "lemons",
+                "salt",
+                "pepper",
+                "garlic",
+                "basil",
+                "oregano"
+            ],
+            "calories": 591
+        },
+        {
+            "name": "Brown Rice Salad with Roasted Chicken and Vegetables",
+            "ingredients": [
+                "brown rice",
+                "chicken",
+                "avocado",
+                "bell peppers",
+                "cucumbers",
+                "tomatoes",
+                "lettuce",
+                "lemons",
+                "feta cheese",
+                "olive oil",
+                "oregano",
+                "salt",
+                "pepper"
+            ],
+            "calories": 511
+        },
+        {
+            "name": "Beef and Brown Rice Stuffed Bell Peppers",
+            "ingredients": [
+                "beef",
+                "brown rice",
+                "onions",
+                "garlic",
+                "mozzarella cheese",
+                "parmesan cheese",
+                "olive oil",
+                "tomatoes",
+                "bell peppers",
+                "basil",
+                "salt",
+                "pepper"
+            ],
+            "calories": 533
+        },
+        {
+            "name": "Mediterranean Tuna Melt",
+            "ingredients": [
+                "bread",
+                "olive oil",
+                "tuna",
+                "lettuce",
+                "tomatoes",
+                "mozzarella cheese",
+                "oregano",
+                "basil",
+                "salt",
+                "pepper",
+                "lemons"
+            ],
+            "calories": 403
+        },
+        {
+            "name": "Mediterranean Quinoa Salad with Grilled Chicken",
+            "ingredients": [
+                "quinoa",
+                "olive oil",
+                "lemons",
+                "avocado",
+                "cucumbers",
+                "tomatoes",
+                "kale",
+                "feta cheese",
+                "black beans",
+                "chicken",
+                "basil",
+                "rosemary",
+                "salt",
+                "pepper"
+            ],
+            "calories": 355
+        },
+        {
+            "name": "Mediterranean Grilled Chicken Salad",
+            "ingredients": [
+                "chicken",
+                "broccoli",
+                "carrots",
+                "bell peppers",
+                "garlic",
+                "olive oil",
+                "feta cheese",
+                "kale",
+                "lettuce",
+                "cucumbers",
+                "olives",
+                "balsamic vinegar",
+                "salt",
+                "pepper",
+                "oregano",
+                "lemons"
+            ],
+            "calories": 541
+        },
+        {
+            "name": "Cheesy Beef Pasta Bake",
+            "ingredients": [
+                "beef",
+                "pasta",
+                "butter",
+                "cheddar cheese",
+                "mozzarella cheese",
+                "parmesan cheese",
+                "sour cream",
+                "milk",
+                "olive oil",
+                "garlic",
+                "tomatoes"
+            ],
+            "calories": 701
+        },
+        {
+            "name": "Mediterranean Quinoa Salad with Grilled Lemon Chicken",
+            "ingredients": [
+                "quinoa",
+                "olive oil",
+                "lemons",
+                "garlic",
+                "rosemary",
+                "basil",
+                "chicken",
+                "salt",
+                "pepper",
+                "avocado",
+                "tomatoes",
+                "cucumbers",
+                "spinach",
+                "feta cheese",
+                "balsamic vinegar"
+            ],
+            "calories": 205
+        },
+        {
+            "name": "Mediterranean Quinoa Salad with Grilled Chicken",
+            "ingredients": [
+                "quinoa",
+                "olive oil",
+                "balsamic vinegar",
+                "lemons",
+                "salmon",
+                "avocado",
+                "kale",
+                "cucumbers",
+                "grapes",
+                "feta cheese",
+                "pine nuts",
+                "garlic",
+                "salt",
+                "pepper",
+                "oregano"
+            ],
+            "calories": 284
+        },
+        {
+            "name": "Tuscan Grilled Chicken and Avocado Sandwich",
+            "ingredients": [
+                "bread",
+                "onions",
+                "chicken",
+                "avocado",
+                "spinach",
+                "tomatoes",
+                "olive oil",
+                "balsamic vinegar",
+                "garlic",
+                "basil",
+                "pepper",
+                "salt"
+            ],
+            "calories": 392
+        }
+    ],
+    "dinner": [
+        {
+            "name": "Cheesy Beef Pasta Bake",
+            "ingredients": [
+                "pasta",
+                "beef",
+                "butter",
+                "cheddar cheese",
+                "mozzarella cheese",
+                "parmesan cheese",
+                "milk",
+                "garlic",
+                "tomatoes",
+                "olive oil",
+                "bread",
+                "salt",
+                "pepper"
+            ],
+            "calories": 613
+        },
+        {
+            "name": "Mediterranean Grilled Chicken and Quinoa Salad",
+            "ingredients": [
+                "chicken",
+                "olive oil",
+                "garlic",
+                "lemons",
+                "rosemary",
+                "balsamic vinegar",
+                "quinoa",
+                "spinach",
+                "olives",
+                "feta cheese",
+                "cucumbers",
+                "bell peppers",
+                "salt",
+                "pepper"
+            ],
+            "calories": 425
+        },
+        {
+            "name": "Mediterranean Beef and Brown Rice Stuffed Peppers",
+            "ingredients": [
+                "brown rice",
+                "onions",
+                "beef",
+                "bell peppers",
+                "tomatoes",
+                "spinach",
+                "garlic",
+                "olive oil",
+                "oregano",
+                "parmesan cheese",
+                "salt",
+                "pepper"
+            ],
+            "calories": 462
+        },
+        {
+            "name": "Mediterranean Quinoa Salad with Grilled Chicken",
+            "ingredients": [
+                "quinoa",
+                "olive oil",
+                "lemons",
+                "avocado",
+                "broccoli",
+                "cucumbers",
+                "garlic",
+                "kale",
+                "bell peppers",
+                "spinach",
+                "chicken",
+                "salt",
+                "pepper",
+                "rosemary",
+                "feta cheese"
+            ],
+            "calories": 347
+        },
+        {
+            "name": "Mediterranean Quinoa Salad with Lemon-Honey Dressing",
+            "ingredients": [
+                "quinoa",
+                "avocado",
+                "cucumbers",
+                "tomatoes",
+                "olives",
+                "feta cheese",
+                "lemons",
+                "olive oil",
+                "honey",
+                "garlic",
+                "salt",
+                "pepper",
+                "balsamic vinegar"
+            ],
+            "calories": 365
+        },
+        {
+            "name": "Cheesy Beef and Onion Pasta Bake",
+            "ingredients": [
+                "onions",
+                "beef",
+                "pasta",
+                "butter",
+                "cheddar cheese",
+                "mozzarella cheese",
+                "parmesan cheese",
+                "milk",
+                "garlic",
+                "salt",
+                "pepper",
+                "bread"
+            ],
+            "calories": 650
+        },
+        {
+            "name": "Mediterranean Quinoa Salad with Grilled Chicken",
+            "ingredients": [
+                "quinoa",
+                "olive oil",
+                "chicken",
+                "lemons",
+                "feta cheese",
+                "garlic",
+                "kale",
+                "bell peppers",
+                "cucumbers",
+                "tomatoes",
+                "olives",
+                "balsamic vinegar",
+                "salt",
+                "pepper",
+                "basil"
+            ],
+            "calories": 393
+        },
+        {
+            "name": "Cheesy Garlic Butter Beef Pasta",
+            "ingredients": [
+                "pasta",
+                "beef",
+                "butter",
+                "garlic",
+                "cheddar cheese",
+                "parmesan cheese",
+                "salt",
+                "pepper"
+            ],
+            "calories": 647
+        },
+        {
+            "name": "Grilled Salmon with Quinoa and Saut\u00e9ed Spinach",
+            "ingredients": [
+                "salmon",
+                "quinoa",
+                "avocado",
+                "olive oil",
+                "garlic",
+                "sweet potatoes",
+                "spinach",
+                "lemons",
+                "salt",
+                "pepper"
+            ],
+            "calories": 331
+        },
+        {
+            "name": "Cheesy Beef and Buttered Pasta",
+            "ingredients": [
+                "pasta",
+                "beef",
+                "butter",
+                "cheddar cheese",
+                "parmesan cheese",
+                "mozzarella cheese",
+                "sour cream",
+                "garlic",
+                "salt",
+                "pepper"
+            ],
+            "calories": 703
+        }
+    ]
+}

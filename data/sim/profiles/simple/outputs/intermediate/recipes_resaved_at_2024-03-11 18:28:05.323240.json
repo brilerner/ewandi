@@ -1,0 +1,24 @@
+{
+    "dinner": [
+        {
+            "name": "Mediterranean Stuffed Bell Peppers with Quinoa & Vegetables",
+            "ingredients": [
+                "bell pepper",
+                "quinoa",
+                "chicken",
+                "onion",
+                "garlic",
+                "kale",
+                "feta cheese",
+                "olive oil",
+                "rosemary",
+                "salt",
+                "pepper",
+                "olive",
+                "balsamic vinegar",
+                "sweet potato"
+            ],
+            "calories": 566
+        }
+    ]
+}

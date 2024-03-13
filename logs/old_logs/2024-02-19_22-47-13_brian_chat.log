@@ -1,0 +1,17 @@
+2024-02-19 22:47:13,550 - INFO - -----STARTING NEW SESSION-----
+2024-02-19 22:47:13,572 - INFO - SESSION STARTING
+2024-02-19 22:47:13,572 - INFO - START system: {'role': 'system', 'content': 'You are Cerebra, a helpful assistant that pulls a user\'s personal data to help them know themselves better. You answer the user\'s question concisely and helpfully.\nAdditional Guidelines:\nYou may receive a tool output that contains a text placeholder for a plot. In your response, place the placeholder text directly at the end of the sentence or phrase after which the user should see the plot. Please do this since the user will see the plot in a separate window. Aside from showing the plot, you may reference it depending on the context of the conversation. If you reference the plot, say something along the lines of "...and here is a plot that shows...<describe>.". This is to ensure that the conversation is as natural as possible.\nHere is an example:\n"...and here is a plot that shows the average sleep over time.<P-45L>"\nMake sure the placeholder is at the end of the response with NO punctuation after it.\nA placeholder will take this form: "<P-45L>". The only differences will be the three characters after the dash.\n\nBegin!'}
+2024-02-19 22:47:13,572 - INFO - START user: {'role': 'user', 'content': 'What is my average sleep?'}
+2024-02-19 22:47:13,596 - INFO - Retrying request to /chat/completions in 0.970098 seconds
+2024-02-19 22:47:14,573 - INFO - Retrying request to /chat/completions in 1.813484 seconds
+2024-02-19 22:47:17,392 - INFO - Retrying request to /chat/completions in 0.959204 seconds
+2024-02-19 22:47:18,356 - INFO - Retrying request to /chat/completions in 1.910302 seconds
+2024-02-19 22:47:22,201 - INFO - Retrying request to /chat/completions in 0.926594 seconds
+2024-02-19 22:47:23,135 - INFO - Retrying request to /chat/completions in 1.651498 seconds
+2024-02-19 22:47:25,907 - INFO - Retrying request to /chat/completions in 0.865183 seconds
+2024-02-19 22:47:26,781 - INFO - Retrying request to /chat/completions in 1.984326 seconds
+2024-02-19 22:47:32,214 - INFO - Retrying request to /chat/completions in 0.970413 seconds
+2024-02-19 22:47:33,194 - INFO - Retrying request to /chat/completions in 1.664350 seconds
+2024-02-19 22:47:46,976 - INFO - Retrying request to /chat/completions in 0.859720 seconds
+2024-02-19 22:47:47,846 - INFO - Retrying request to /chat/completions in 1.505362 seconds
+2024-02-19 22:47:49,362 - ERROR - Error: RetryError[<Future at 0x14c06d2d0 state=finished raised APIConnectionError>]

@@ -1,0 +1,39 @@
+{
+    "breakfast": [
+        {
+            "name": "Savory Breakfast Bowl",
+            "ingredients": [
+                "eggs",
+                "spinach",
+                "mushrooms",
+                "sweet potatoes",
+                "onions",
+                "garlic",
+                "cheddar cheese",
+                "olive oil",
+                "salt",
+                "pepper",
+                "brown rice"
+            ],
+            "calories": 434
+        }
+    ],
+    "lunch": [
+        {
+            "name": "Cheesy Beef and Caramelized Onion Grilled Cheese",
+            "ingredients": [
+                "bread",
+                "onions",
+                "butter",
+                "cheddar cheese",
+                "mozzarella cheese",
+                "beef",
+                "mustard",
+                "pepper",
+                "salt",
+                "garlic"
+            ],
+            "calories": 611
+        }
+    ]
+}

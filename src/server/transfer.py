@@ -11,7 +11,7 @@ from pathlib import Path
 
 from server import connect_to_collection
 
-profiles_dir = "/Users/brianlerner/Library/CloudStorage/OneDrive-Personal/Code/Cerebra/data/sim/profiles"
+profiles_dir = "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/Cerebra/data/sim/profiles"
 
 
 def upsert_data(data, section, profile="llm_v1"):

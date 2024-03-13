@@ -1,0 +1,170 @@
+2024-03-13 07:37:58,559 - INFO - -----STARTING NEW SESSION-----
+2024-03-13 07:37:58,639 - INFO - START system: {'role': 'system', 'content': 'You are Cerebra, a helpful assistant that pulls a user\'s personal data to help them know themselves better. You answer the user\'s question concisely and helpfully.\nAdditional Guidelines:\nYou may receive a tool output that contains a text placeholder for a plot. In your response, place the placeholder text directly at the end of the sentence or phrase after which the user should see the plot. Please do this since the user will see the plot in a separate window. Aside from showing the plot, you may reference it depending on the context of the conversation. If you reference the plot, say something along the lines of "...and here is a plot that shows...<describe>.". This is to ensure that the conversation is as natural as possible.\nHere is an example:\n"...and here is a plot that shows the average sleep over time.<P-45L>"\nMake sure the placeholder is at the end of the response with NO punctuation after it.\nA placeholder will take this form: "<P-45L>". The only differences will be the three characters after the dash.\n\nBegin!'}
+2024-03-13 07:37:58,639 - INFO - START user: {'role': 'user', 'content': 'How many times did I have foot pain?'}
+2024-03-13 07:37:59,578 - INFO - process_tool_chunks: {'role': 'assistant', 'content': None, 'tool_calls': [{'id': 'call_8b8gx392r0bke2wVduB8TAag', 'function': {'name': 'single_event_count', 'arguments': '{"v":"foot pain"}'}, 'type': 'function'}]}
+2024-03-13 07:38:01,488 - ERROR - Error: Traceback (most recent call last):
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/cerebra/src/llm/chat/sessions.py", line 92, in completion_request
+    general_completion_request(
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/cerebra/src/llm/chat/chat.py", line 63, in general_completion_request
+    process_completion(session, **input_completions_kwargs)
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/cerebra/src/llm/chat/chat.py", line 425, in process_completion
+    parse_stream(session, completion_generator)
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/cerebra/src/llm/chat/chat.py", line 418, in parse_stream
+    chunk_handler.process_chunks()
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/cerebra/src/llm/chat/chat.py", line 280, in process_chunks
+    self.process_tool_chunks()
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/cerebra/src/llm/chat/chat.py", line 368, in process_tool_chunks
+    t_return = get_tool_return(self.session, t_response)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/cerebra/src/llm/chat/chat.py", line 197, in get_tool_return
+    content = call_function(function_name, arguments, session.user.userid)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/cerebra/src/llm/chat/chat.py", line 171, in call_function
+    func_output = func(*args, **kwargs)
+                  ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/cerebra/src/llm/my_tools/tool_funcs.py", line 48, in single_event_count
+    events = validate_input(v, p, dr, tr, d)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/cerebra/src/llm/my_tools/validation.py", line 33, in validate_input
+    return _validate(v, p, dr, tr, d)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/cerebra/src/llm/my_tools/validation.py", line 64, in _validate
+    raise ValidationError(f"Event {v} not found")
+utils.errors.ValidationError: Event foot pain not found
+
+2024-03-13 08:06:50,464 - INFO - -----STARTING NEW SESSION-----
+2024-03-13 08:06:50,476 - INFO - START system: {'role': 'system', 'content': 'You are Cerebra, a helpful assistant that pulls a user\'s personal data to help them know themselves better. You answer the user\'s question concisely and helpfully.\nAdditional Guidelines:\nYou may receive a tool output that contains a text placeholder for a plot. In your response, place the placeholder text directly at the end of the sentence or phrase after which the user should see the plot. Please do this since the user will see the plot in a separate window. Aside from showing the plot, you may reference it depending on the context of the conversation. If you reference the plot, say something along the lines of "...and here is a plot that shows...<describe>.". This is to ensure that the conversation is as natural as possible.\nHere is an example:\n"...and here is a plot that shows the average sleep over time.<P-45L>"\nMake sure the placeholder is at the end of the response with NO punctuation after it.\nA placeholder will take this form: "<P-45L>". The only differences will be the three characters after the dash.\n\nBegin!'}
+2024-03-13 08:06:50,476 - INFO - START user: {'role': 'user', 'content': 'How many times did I have foot pain?'}
+2024-03-13 08:06:52,278 - INFO - process_tool_chunks: {'role': 'assistant', 'content': None, 'tool_calls': [{'id': 'call_IfCLyiJ5fB8ftDUOtANBbldL', 'function': {'name': 'single_event_count', 'arguments': '{"v":"foot pain"}'}, 'type': 'function'}]}
+2024-03-13 08:06:54,119 - ERROR - Error: Traceback (most recent call last):
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/cerebra/src/llm/chat/sessions.py", line 92, in completion_request
+    general_completion_request(
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/cerebra/src/llm/chat/chat.py", line 63, in general_completion_request
+    process_completion(session, **input_completions_kwargs)
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/cerebra/src/llm/chat/chat.py", line 425, in process_completion
+    parse_stream(session, completion_generator)
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/cerebra/src/llm/chat/chat.py", line 418, in parse_stream
+    chunk_handler.process_chunks()
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/cerebra/src/llm/chat/chat.py", line 280, in process_chunks
+    self.process_tool_chunks()
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/cerebra/src/llm/chat/chat.py", line 368, in process_tool_chunks
+    t_return = get_tool_return(self.session, t_response)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/cerebra/src/llm/chat/chat.py", line 197, in get_tool_return
+    content = call_function(function_name, arguments, session.user.userid)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/cerebra/src/llm/chat/chat.py", line 171, in call_function
+    func_output = func(*args, **kwargs)
+                  ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/cerebra/src/llm/my_tools/tool_funcs.py", line 48, in single_event_count
+    events = validate_input(v, p, dr, tr, d)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/cerebra/src/llm/my_tools/validation.py", line 38, in validate_input
+    return _validate(v, p, dr, tr, d)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/cerebra/src/llm/my_tools/validation.py", line 70, in _validate
+    raise ValidationFindError("events")
+utils.errors.ValidationFindError: events
+
+2024-03-13 08:08:05,221 - INFO - -----STARTING NEW SESSION-----
+2024-03-13 08:08:05,234 - INFO - START system: {'role': 'system', 'content': 'You are Cerebra, a helpful assistant that pulls a user\'s personal data to help them know themselves better. You answer the user\'s question concisely and helpfully.\nAdditional Guidelines:\nYou may receive a tool output that contains a text placeholder for a plot. In your response, place the placeholder text directly at the end of the sentence or phrase after which the user should see the plot. Please do this since the user will see the plot in a separate window. Aside from showing the plot, you may reference it depending on the context of the conversation. If you reference the plot, say something along the lines of "...and here is a plot that shows...<describe>.". This is to ensure that the conversation is as natural as possible.\nHere is an example:\n"...and here is a plot that shows the average sleep over time.<P-45L>"\nMake sure the placeholder is at the end of the response with NO punctuation after it.\nA placeholder will take this form: "<P-45L>". The only differences will be the three characters after the dash.\n\nBegin!'}
+2024-03-13 08:08:05,234 - INFO - START user: {'role': 'user', 'content': 'How many times did I have foot pain?'}
+2024-03-13 08:08:07,056 - INFO - process_tool_chunks: {'role': 'assistant', 'content': None, 'tool_calls': [{'id': 'call_V1Br0sqjMrUMX3cOTutR4p33', 'function': {'name': 'single_event_count', 'arguments': '{"v":"foot pain"}'}, 'type': 'function'}]}
+2024-03-13 08:08:08,928 - ERROR - Error: Traceback (most recent call last):
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/cerebra/src/llm/chat/sessions.py", line 92, in completion_request
+    general_completion_request(
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/cerebra/src/llm/chat/chat.py", line 63, in general_completion_request
+    process_completion(session, **input_completions_kwargs)
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/cerebra/src/llm/chat/chat.py", line 425, in process_completion
+    parse_stream(session, completion_generator)
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/cerebra/src/llm/chat/chat.py", line 418, in parse_stream
+    chunk_handler.process_chunks()
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/cerebra/src/llm/chat/chat.py", line 280, in process_chunks
+    self.process_tool_chunks()
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/cerebra/src/llm/chat/chat.py", line 368, in process_tool_chunks
+    t_return = get_tool_return(self.session, t_response)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/cerebra/src/llm/chat/chat.py", line 197, in get_tool_return
+    content = call_function(function_name, arguments, session.user.userid)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/cerebra/src/llm/chat/chat.py", line 171, in call_function
+    func_output = func(*args, **kwargs)
+                  ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/cerebra/src/llm/my_tools/tool_funcs.py", line 48, in single_event_count
+    events = validate_input(v, p, dr, tr, d)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/cerebra/src/llm/my_tools/validation.py", line 38, in validate_input
+    return _validate(v, p, dr, tr, d)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/cerebra/src/llm/my_tools/validation.py", line 70, in _validate
+    raise ValidationFindError("events")
+utils.errors.ValidationFindError: events
+
+2024-03-13 08:08:30,746 - INFO - -----STARTING NEW SESSION-----
+2024-03-13 08:08:30,757 - INFO - START system: {'role': 'system', 'content': 'You are Cerebra, a helpful assistant that pulls a user\'s personal data to help them know themselves better. You answer the user\'s question concisely and helpfully.\nAdditional Guidelines:\nYou may receive a tool output that contains a text placeholder for a plot. In your response, place the placeholder text directly at the end of the sentence or phrase after which the user should see the plot. Please do this since the user will see the plot in a separate window. Aside from showing the plot, you may reference it depending on the context of the conversation. If you reference the plot, say something along the lines of "...and here is a plot that shows...<describe>.". This is to ensure that the conversation is as natural as possible.\nHere is an example:\n"...and here is a plot that shows the average sleep over time.<P-45L>"\nMake sure the placeholder is at the end of the response with NO punctuation after it.\nA placeholder will take this form: "<P-45L>". The only differences will be the three characters after the dash.\n\nBegin!'}
+2024-03-13 08:08:30,757 - INFO - START user: {'role': 'user', 'content': 'How many times did I have foot pain?'}
+2024-03-13 08:08:31,761 - INFO - process_tool_chunks: {'role': 'assistant', 'content': None, 'tool_calls': [{'id': 'call_wlIEZ74BUULZjjoEQHpkvX8F', 'function': {'name': 'single_event_count', 'arguments': '{"v":"foot pain"}'}, 'type': 'function'}]}
+2024-03-13 08:08:33,660 - ERROR - Error: Traceback (most recent call last):
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/cerebra/src/llm/chat/sessions.py", line 92, in completion_request
+    general_completion_request(
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/cerebra/src/llm/chat/chat.py", line 63, in general_completion_request
+    process_completion(session, **input_completions_kwargs)
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/cerebra/src/llm/chat/chat.py", line 425, in process_completion
+    parse_stream(session, completion_generator)
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/cerebra/src/llm/chat/chat.py", line 418, in parse_stream
+    chunk_handler.process_chunks()
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/cerebra/src/llm/chat/chat.py", line 280, in process_chunks
+    self.process_tool_chunks()
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/cerebra/src/llm/chat/chat.py", line 368, in process_tool_chunks
+    t_return = get_tool_return(self.session, t_response)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/cerebra/src/llm/chat/chat.py", line 197, in get_tool_return
+    content = call_function(function_name, arguments, session.user.userid)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/cerebra/src/llm/chat/chat.py", line 171, in call_function
+    func_output = func(*args, **kwargs)
+                  ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/cerebra/src/llm/my_tools/tool_funcs.py", line 48, in single_event_count
+    events = validate_input(v, p, dr, tr, d)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/cerebra/src/llm/my_tools/validation.py", line 38, in validate_input
+    return _validate(v, p, dr, tr, d)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/cerebra/src/llm/my_tools/validation.py", line 70, in _validate
+    raise ValidationFindError("events")
+utils.errors.ValidationFindError: events
+
+2024-03-13 08:09:18,084 - INFO - -----STARTING NEW SESSION-----
+2024-03-13 08:09:18,098 - INFO - START system: {'role': 'system', 'content': 'You are Cerebra, a helpful assistant that pulls a user\'s personal data to help them know themselves better. You answer the user\'s question concisely and helpfully.\nAdditional Guidelines:\nYou may receive a tool output that contains a text placeholder for a plot. In your response, place the placeholder text directly at the end of the sentence or phrase after which the user should see the plot. Please do this since the user will see the plot in a separate window. Aside from showing the plot, you may reference it depending on the context of the conversation. If you reference the plot, say something along the lines of "...and here is a plot that shows...<describe>.". This is to ensure that the conversation is as natural as possible.\nHere is an example:\n"...and here is a plot that shows the average sleep over time.<P-45L>"\nMake sure the placeholder is at the end of the response with NO punctuation after it.\nA placeholder will take this form: "<P-45L>". The only differences will be the three characters after the dash.\n\nBegin!'}
+2024-03-13 08:09:18,098 - INFO - START user: {'role': 'user', 'content': 'How many times did I have foot pain?'}
+2024-03-13 08:09:20,053 - INFO - process_tool_chunks: {'role': 'assistant', 'content': None, 'tool_calls': [{'id': 'call_vrGemYJFbiXO50hMCV4hCtIi', 'function': {'name': 'single_event_count', 'arguments': '{"v":"foot pain"}'}, 'type': 'function'}]}
+2024-03-13 08:09:21,812 - ERROR - Error: Traceback (most recent call last):
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/cerebra/src/llm/chat/sessions.py", line 92, in completion_request
+    general_completion_request(
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/cerebra/src/llm/chat/chat.py", line 63, in general_completion_request
+    process_completion(session, **input_completions_kwargs)
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/cerebra/src/llm/chat/chat.py", line 425, in process_completion
+    parse_stream(session, completion_generator)
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/cerebra/src/llm/chat/chat.py", line 418, in parse_stream
+    chunk_handler.process_chunks()
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/cerebra/src/llm/chat/chat.py", line 280, in process_chunks
+    self.process_tool_chunks()
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/cerebra/src/llm/chat/chat.py", line 368, in process_tool_chunks
+    t_return = get_tool_return(self.session, t_response)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/cerebra/src/llm/chat/chat.py", line 197, in get_tool_return
+    content = call_function(function_name, arguments, session.user.userid)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/cerebra/src/llm/chat/chat.py", line 171, in call_function
+    func_output = func(*args, **kwargs)
+                  ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/cerebra/src/llm/my_tools/tool_funcs.py", line 48, in single_event_count
+    events = validate_input(v, p, dr, tr, d)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/cerebra/src/llm/my_tools/validation.py", line 38, in validate_input
+    return _validate(v, p, dr, tr, d)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/cerebra/src/llm/my_tools/validation.py", line 70, in _validate
+    raise ValidationFindError("events")
+utils.errors.ValidationFindError: events
+

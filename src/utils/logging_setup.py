@@ -2,7 +2,8 @@ import sys
 from pathlib import Path
 
 src_dir = Path(__file__).resolve()
-while src_dir.name != "src": src_dir = src_dir.parent
+while src_dir.name != "src":
+    src_dir = src_dir.parent
 sys.path.append(str(src_dir))
 
 from utils.general import get_root
@@ -17,7 +18,14 @@ def set_test(file):
     print("__file__:", __file__)
 
 
-def setup_logging(filename, userid=None, level=logging.INFO, default_dir="logs", persistent_log=False):
+def setup_logging(
+    filename,
+    userid=None,
+    level=logging.INFO,
+    default_dir="logs",
+    persistent_log=False,
+    modality="cmd",
+):
     """
     Put the datetime in the log filename.
     """
@@ -28,10 +36,13 @@ def setup_logging(filename, userid=None, level=logging.INFO, default_dir="logs",
     else:
         datetime_str = datetime.now().strftime("%Y-%m-%d_%H-%M-%S")
 
+
     final_filename = datetime_str + "_"
     if userid:
-        final_filename = final_filename + userid + "_"
-    final_filename = Path(final_filename + Path(filename).name).with_suffix(".log")
+        final_filename += userid + "_"
+    final_filename = final_filename + Path(filename).stem + "_"
+    final_filename += modality.upper()
+    final_filename = Path(final_filename).with_suffix(".log")
 
     log_dir = get_root() / default_dir
     if not log_dir.is_dir():

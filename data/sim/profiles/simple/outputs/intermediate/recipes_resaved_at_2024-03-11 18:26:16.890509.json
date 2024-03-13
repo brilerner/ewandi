@@ -1,0 +1,49 @@
+{
+    "dinner": [
+        {
+            "name": "Cheesy Beef Pasta Bake",
+            "ingredients": [
+                "pasta",
+                "beef",
+                "butter",
+                "cheddar cheese",
+                "mozzarella cheese",
+                "parmesan cheese",
+                "sour cream",
+                "milk",
+                "bread",
+                "garlic",
+                "olive oil",
+                "onion",
+                "oregano",
+                "salt",
+                "pepper",
+                "granulated sugar"
+            ],
+            "calories": 692
+        },
+        {
+            "name": "Mediterranean Grilled Chicken Salad",
+            "ingredients": [
+                "chicken",
+                "olive oil",
+                "garlic",
+                "lemons",
+                "salt",
+                "pepper",
+                "oregano",
+                "kale",
+                "spinach",
+                "cucumber",
+                "onion",
+                "bell pepper",
+                "tomato",
+                "feta cheese",
+                "black bean",
+                "balsamic vinegar",
+                "pumpkin seed"
+            ],
+            "calories": 335
+        }
+    ]
+}

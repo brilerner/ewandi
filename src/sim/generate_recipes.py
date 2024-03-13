@@ -2,7 +2,8 @@ import sys
 from pathlib import Path
 
 src_dir = Path(__file__).resolve()
-while src_dir.name != "src": src_dir = src_dir.parent
+while src_dir.name != "src":
+    src_dir = src_dir.parent
 sys.path.append(str(src_dir))
 
 import copy
@@ -10,7 +11,7 @@ import json
 import random
 from pathlib import Path
 
-from llm.chat import json_request
+from llm.chat.completions import json_request_prompt_only
 from prompts.recipes import get_food_prompt
 from utils.io import load_yaml
 from utils.sampling import get_sample
@@ -24,7 +25,7 @@ def prepare_ingredients(foods, diet_info, meal_type):
         use_ingredients = {}
         for ingredient in diet_info:
             if meal_type in ingredient["meals"]:
-                prob = ingredient.get("probability", 1)
+                prob = ingredient.get("prob", 1)
                 if random.random() < prob:
                     use_ingredients[ingredient["name"]] = True
                 else:
@@ -34,6 +35,7 @@ def prepare_ingredients(foods, diet_info, meal_type):
     def remove_foods(foods, remove_foods):
         for cat, cat_foods in foods.items():
             foods[cat] = [f for f in cat_foods if f not in remove_foods]
+        foods = {k: v for k, v in foods.items() if v}
         return foods
 
     foods = copy.deepcopy(foods)
@@ -76,6 +78,23 @@ def validate_recipe(recipe, ingredient_usage):
     #     raise Exception("Calories not a str")
     # if recipe["calories"] not in ["low", "medium", "high"]:
     #     raise Exception("Calories not low, medium, or high")
+
+    # check to see if the names of any of the generated ingredients contain a substring of existing ingredients
+    ingredients_updated = []
+    for ingredient in recipe["ingredients"]:
+        if ingredient in ingredient_usage["all"]:
+            ingredients_updated.append(ingredient)
+            continue
+        else:
+            for existing_ingredient in ingredient_usage["all"]:
+                if existing_ingredient in ingredient:
+                    ingredients_updated.append(existing_ingredient)
+                    print("GENERATED INGREDIENT:", ingredient)
+                    print("UPDATED INGREDIENT:", existing_ingredient)
+                    break
+            else:
+                ingredients_updated.append(ingredient)
+    recipe["ingredients"] = ingredients_updated
 
     # validate ingredients
     unknown_ingredients = [
@@ -133,7 +152,9 @@ def resave_recipes(recipes_save_path):
 def generate_recipe(meal_type, ingredient_usage, healthiness="medium"):
     system_prompt = get_food_prompt(meal_type, ingredient_usage, healthiness)
     # print(system_prompt)
-    recipe = json_request(system_prompt, temperature=1.5, model=MODEL)
+    recipe = json_request_prompt_only(
+        system_prompt, temperature=1.5, model=MODEL, role="system"
+    )
 
     return recipe
 
@@ -183,8 +204,9 @@ def generate_recipes(
             try_count = 0
             while try_count < try_limit:
                 try:
+                    must_use = ingredient_usage["must_use"]
                     print(
-                        f"DAY: {i+1}  MEAL: {meal_type}  TRY: {try_count}  HEALTH: {healthiness} MUST_USE: {ingredient_usage["must_use"]}"
+                        f"DAY: {i+1}  MEAL: {meal_type}  TRY: {try_count}  HEALTH: {healthiness} MUST_USE: {must_use}"
                     )
 
                     recipe = generate_recipe(meal_type, ingredient_usage, healthiness)
@@ -211,4 +233,6 @@ def generate_recipes(
 
 
 if __name__ == "__main__":
-    generate_recipes(profile="llm_v1", n_days=20)  # , input_meal_type="lunch")
+    generate_recipes(
+        profile="llm_v1", n_days=10, input_meal_type="dinner"
+    )  # , input_meal_type="lunch")

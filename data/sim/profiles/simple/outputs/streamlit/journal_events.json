@@ -1,0 +1,25 @@
+[
+    {
+        "title": "Event 2",
+        "start": "2024-01-01T08:30:00",
+        "end": "2024-01-01T10:30:00",
+        "resourceId": "a",
+        "location": "K Center",
+        "content": "Day A: Len L. Mays is a junior student-athlete at Duke University, playing for the basketball team. He is currently in-season, and due to his major in Computer Science, is also taking classes. Outside of the court and classroom, Len enjoys going on hikes, playing videogames, and talking to friends, family, and his girlfriend. He has ambitions of making it to the NBA and is intent on optimizing his performance."
+    },
+    {
+        "title": "Event 1",
+        "start": "2024-01-01T07:30:00",
+        "end": "2024-01-01T10:30:00",
+        "resourceId": "b",
+        "content": "Day B: Len L. Mays is a junior student-athlete at Duke University, playing for the basketball team. He is currently in-season, and due to his major in Computer Science, is also taking classes. Outside of the court and classroom, Len enjoys going on hikes, playing videogames, and talking to friends, family, and his girlfriend. He has ambitions of making it to the NBA and is intent on optimizing his performance."
+    },
+    {
+        "title": "Event 3",
+        "start": "2024-01-01T10:40:00",
+        "end": "2024-01-01T12:30:00",
+        "resourceId": "a",
+        "value": 70,
+        "content": "Day C: Len L. Mays is a junior student-athlete at Duke University, playing for the basketball team. He is currently in-season, and due to his major in Computer Science, is also taking classes. Outside of the court and classroom, Len enjoys going on hikes, playing videogames, and talking to friends, family, and his girlfriend. He has ambitions of making it to the NBA and is intent on optimizing his performance."
+    }
+]

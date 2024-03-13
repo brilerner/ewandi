@@ -1,5 +1,5 @@
 # start server
-mongod --dbpath /Users/brianlerner/Library/CloudStorage/OneDrive-Personal/Code/Cerebra v2/data/db
+mongod --dbpath /Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/Cerebra v2/data/db
 
 # tips
 If Apple suspicious of mongodb, check in system prefs to allow

@@ -15,21 +15,21 @@ Here is a list of ingredients you can use, listed by category:
 {all_ingredients_string}
 Please adhere to the following guidelines:
 - You may use only ingredients in this list.
-- Of these ingredients, you may incorporate different preparations or subcategories into the recipe. Here are a few examples along these lines:
-    - beef --> steak for
-    - tomatoes--> grape tomatoes
-    - bread --> bun
-    - lemons --> lemon juice
 """
     if must_use_ingredients_string:
         system_prompt += f"""-You MUST use the following ingredients: {must_use_ingredients_string}\n"""
 
-    system_prompt += """Please return a JSON containing a name for the recipe, and a list of ingredients used. When constructing the recipe name, avoid using unneeded adjectives such as "healthy" or "decadent"; just keep it simple. When listing the ingredients used, please include only the ingredient names listed above, even if the recipe calls for a specific preparation or type of an ingredient. The JSON must be formatted with keys "name" and "ingredients". Return the ingredient names exactly as they are listed above. I repeat, exactly.
+    system_prompt += """Please return a JSON containing a name for the recipe, and a list of ingredients used. When constructing the recipe name, avoid using unneeded adjectives such as "healthy" or "decadent"; just keep it simple. While a recipe may call for a specific preparation or type of an ingredient, when listing the ingredients used in the output JSON, please phrase ingredient names phrased exactly as shown above. The JSON must be formatted with keys "name" and "ingredients". Return the ingredient names exactly as they are listed above. I repeat, exactly.
 Go!"""
 
     return system_prompt
 
 
+# - Of these ingredients, you may incorporate different preparations or subcategories into the recipe. Here are a few examples along these lines:
+#     - beef --> steak for
+#     - tomatoes--> grape tomatoes
+#     - bread --> bun
+#     - lemons --> lemon juice
 # def get_food_prompt(
 #     food_prefs, food_names_string, meal_info="lunch", must_use_ingredients=None
 # ):

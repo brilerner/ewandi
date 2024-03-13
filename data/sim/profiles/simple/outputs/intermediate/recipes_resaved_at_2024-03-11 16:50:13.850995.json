@@ -1,0 +1,108 @@
+{
+    "breakfast": [
+        {
+            "name": "Savory Mediterranean Oat Bowl",
+            "ingredients": [
+                "oats",
+                "olive oil",
+                "onions",
+                "garlic",
+                "spinach",
+                "feta cheese",
+                "eggs",
+                "tomatoes",
+                "feta cheese",
+                "black beans",
+                "avocado",
+                "balsamic vinegar",
+                "salt",
+                "pepper"
+            ],
+            "calories": 256
+        },
+        {
+            "name": "Savory Breakfast Bowl",
+            "ingredients": [
+                "oats",
+                "avocado",
+                "eggs",
+                "kale",
+                "mushrooms",
+                "olive oil",
+                "salt",
+                "pepper"
+            ],
+            "calories": 255
+        }
+    ],
+    "lunch": [
+        {
+            "name": "Grilled Steak Sandwich with Caramelized Onions and Avocado",
+            "ingredients": [
+                "bread",
+                "onions",
+                "beef",
+                "avocado",
+                "lettuce",
+                "tomatoes",
+                "olive oil",
+                "cheddar cheese",
+                "mustard",
+                "balsamic vinegar",
+                "salt",
+                "pepper"
+            ],
+            "calories": 542
+        },
+        {
+            "name": "Grilled Cheese and Onion Sandwich",
+            "ingredients": [
+                "bread",
+                "butter",
+                "cheddar cheese",
+                "onions",
+                "ketchup"
+            ],
+            "calories": 759
+        }
+    ],
+    "dinner": [
+        {
+            "name": "Quinoa Stuffed Bell Peppers",
+            "ingredients": [
+                "quinoa",
+                "spinach",
+                "onions",
+                "feta cheese",
+                "garlic",
+                "chicken",
+                "bell peppers",
+                "mushrooms",
+                "olive oil",
+                "rosemary",
+                "basil",
+                "salt",
+                "pepper"
+            ],
+            "calories": 254
+        },
+        {
+            "name": "Grilled Salmon with Quinoa and Roasted Vegetables",
+            "ingredients": [
+                "salmon",
+                "quinoa",
+                "onions",
+                "sweet potatoes",
+                "spinach",
+                "garlic",
+                "lemons",
+                "olive oil",
+                "pepper",
+                "salt",
+                "rosemary",
+                "balsamic vinegar"
+            ],
+            "calories": 281
+        }
+    ]
+}

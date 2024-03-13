@@ -29,7 +29,7 @@ Begin!
 2023-12-20 02:36:57,242:INFO: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 400 Bad Request"
 2023-12-20 02:36:57,243:ERROR: Unable to generate ChatCompletion response
 Traceback (most recent call last):
-  File "/Users/brianlerner/Library/CloudStorage/OneDrive-Personal/Code/cerebra/src/llm/working_examples/engine_basic.py", line 45, in chat_completion_request
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/cerebra/src/llm/working_examples/engine_basic.py", line 45, in chat_completion_request
     response = client.chat.completions.create(
                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
   File "/Users/brianlerner/miniconda3/envs/c2/lib/python3.12/site-packages/openai/_utils/_utils.py", line 303, in wrapper

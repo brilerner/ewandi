@@ -1,4 +1,3 @@
-
 from pymongo import MongoClient
 from pymongo.server_api import ServerApi
 from pymongo.errors import ConnectionFailure
@@ -6,13 +5,13 @@ from pymongo.errors import ConnectionFailure
 
 import os
 
-#these dont seem nec
+# these dont seem nec
 # from dotenv import load_dotenv
 # load_dotenv()
 # Local
-HOST = 'localhost'
+HOST = "localhost"
 PORT = 27017
-DATABASE_NAME = 'CerebraDB'
+DATABASE_NAME = "EwandiDB"
 TIMEOUT_MS = 500
 
 # try:
@@ -27,8 +26,3 @@ print(uri)
 #     # print("Pinged your deployment. You successfully connected to MongoDB!")
 # except Exception as e:
 #     print(e)
-
-
-
-
-

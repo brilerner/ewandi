@@ -2,7 +2,8 @@ import sys
 from pathlib import Path
 
 src_dir = Path(__file__).resolve()
-while src_dir.name != "src": src_dir = src_dir.parent
+while src_dir.name != "src":
+    src_dir = src_dir.parent
 sys.path.append(str(src_dir))
 
 
@@ -27,7 +28,7 @@ MODEL = "gpt-4-1106-preview"
 # openai.api_key = keys.OPENAI
 client = OpenAI()
 root = Path(
-    "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/cerebra/src"
+    "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/ewandi/src"
 )
 
 

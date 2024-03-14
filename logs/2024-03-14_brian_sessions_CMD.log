@@ -1,0 +1,701 @@
+2024-03-14 01:31:11,300 - INFO - -----STARTING NEW SESSION-----
+2024-03-14 01:31:11,331 - INFO - START system: {'role': 'system', 'content': 'You are Ewandi, a helpful assistant that pulls a user\'s personal data to help them know themselves better. You answer the user\'s question concisely and helpfully.\nAdditional Guidelines:\nYou may receive a tool output that contains a text placeholder for a plot. In your response, place the placeholder text directly at the end of the sentence or phrase after which the user should see the plot. Please do this since the user will see the plot in a separate window. Aside from showing the plot, you may reference it depending on the context of the conversation. If you reference the plot, say something along the lines of "...and here is a plot that shows...<describe>.". This is to ensure that the conversation is as natural as possible.\nHere is an example:\n"...and here is a plot that shows the average sleep over time.<P-45L>"\nMake sure the placeholder is at the end of the response with NO punctuation after it.\nA placeholder will take this form: "<P-45L>". The only differences will be the three characters after the dash.\n\nBegin!'}
+2024-03-14 01:31:11,332 - INFO - START user: {'role': 'user', 'content': 'How many times did I have foot pain?'}
+2024-03-14 01:31:13,004 - INFO - process_tool_chunks: {'role': 'assistant', 'content': None, 'tool_calls': [{'id': 'call_5DafS5UELtDqWC7IvLsFDG0J', 'function': {'name': 'single_event_count', 'arguments': '{"v":"foot pain"}'}, 'type': 'function'}]}
+2024-03-14 01:31:27,780 - INFO - -----STARTING NEW SESSION-----
+2024-03-14 01:31:27,813 - INFO - START system: {'role': 'system', 'content': 'You are Ewandi, a helpful assistant that pulls a user\'s personal data to help them know themselves better. You answer the user\'s question concisely and helpfully.\nAdditional Guidelines:\nYou may receive a tool output that contains a text placeholder for a plot. In your response, place the placeholder text directly at the end of the sentence or phrase after which the user should see the plot. Please do this since the user will see the plot in a separate window. Aside from showing the plot, you may reference it depending on the context of the conversation. If you reference the plot, say something along the lines of "...and here is a plot that shows...<describe>.". This is to ensure that the conversation is as natural as possible.\nHere is an example:\n"...and here is a plot that shows the average sleep over time.<P-45L>"\nMake sure the placeholder is at the end of the response with NO punctuation after it.\nA placeholder will take this form: "<P-45L>". The only differences will be the three characters after the dash.\n\nBegin!'}
+2024-03-14 01:31:27,813 - INFO - START user: {'role': 'user', 'content': 'How many times did I have foot pain?'}
+2024-03-14 01:31:28,791 - INFO - process_tool_chunks: {'role': 'assistant', 'content': None, 'tool_calls': [{'id': 'call_7C0HDQYTXkmpp7TCDo6SBpzn', 'function': {'name': 'single_event_count', 'arguments': '{"v":"foot pain"}'}, 'type': 'function'}]}
+2024-03-14 01:32:20,854 - INFO - -----STARTING NEW SESSION-----
+2024-03-14 01:32:20,885 - INFO - START system: {'role': 'system', 'content': 'You are Ewandi, a helpful assistant that pulls a user\'s personal data to help them know themselves better. You answer the user\'s question concisely and helpfully.\nAdditional Guidelines:\nYou may receive a tool output that contains a text placeholder for a plot. In your response, place the placeholder text directly at the end of the sentence or phrase after which the user should see the plot. Please do this since the user will see the plot in a separate window. Aside from showing the plot, you may reference it depending on the context of the conversation. If you reference the plot, say something along the lines of "...and here is a plot that shows...<describe>.". This is to ensure that the conversation is as natural as possible.\nHere is an example:\n"...and here is a plot that shows the average sleep over time.<P-45L>"\nMake sure the placeholder is at the end of the response with NO punctuation after it.\nA placeholder will take this form: "<P-45L>". The only differences will be the three characters after the dash.\n\nBegin!'}
+2024-03-14 01:32:20,885 - INFO - START user: {'role': 'user', 'content': 'How many times did I have foot pain?'}
+2024-03-14 01:32:22,488 - INFO - process_tool_chunks: {'role': 'assistant', 'content': None, 'tool_calls': [{'id': 'call_ezOV6P8X2YemTfQpA8GUZ00U', 'function': {'name': 'single_event_count', 'arguments': '{"v":"foot pain"}'}, 'type': 'function'}]}
+2024-03-14 01:33:58,719 - INFO - -----STARTING NEW SESSION-----
+2024-03-14 01:33:58,742 - INFO - START system: {'role': 'system', 'content': 'You are Ewandi, a helpful assistant that pulls a user\'s personal data to help them know themselves better. You answer the user\'s question concisely and helpfully.\nAdditional Guidelines:\nYou may receive a tool output that contains a text placeholder for a plot. In your response, place the placeholder text directly at the end of the sentence or phrase after which the user should see the plot. Please do this since the user will see the plot in a separate window. Aside from showing the plot, you may reference it depending on the context of the conversation. If you reference the plot, say something along the lines of "...and here is a plot that shows...<describe>.". This is to ensure that the conversation is as natural as possible.\nHere is an example:\n"...and here is a plot that shows the average sleep over time.<P-45L>"\nMake sure the placeholder is at the end of the response with NO punctuation after it.\nA placeholder will take this form: "<P-45L>". The only differences will be the three characters after the dash.\n\nBegin!'}
+2024-03-14 01:33:58,742 - INFO - START user: {'role': 'user', 'content': 'How many times did I have foot pain?'}
+2024-03-14 01:34:00,876 - INFO - process_tool_chunks: {'role': 'assistant', 'content': None, 'tool_calls': [{'id': 'call_VuTHTSNEntjlEMDZat1cfyUH', 'function': {'name': 'single_event_count', 'arguments': '{"v":"foot pain"}'}, 'type': 'function'}]}
+2024-03-14 01:35:26,844 - INFO - -----STARTING NEW SESSION-----
+2024-03-14 01:35:26,865 - INFO - START system: {'role': 'system', 'content': 'You are Ewandi, a helpful assistant that pulls a user\'s personal data to help them know themselves better. You answer the user\'s question concisely and helpfully.\nAdditional Guidelines:\nYou may receive a tool output that contains a text placeholder for a plot. In your response, place the placeholder text directly at the end of the sentence or phrase after which the user should see the plot. Please do this since the user will see the plot in a separate window. Aside from showing the plot, you may reference it depending on the context of the conversation. If you reference the plot, say something along the lines of "...and here is a plot that shows...<describe>.". This is to ensure that the conversation is as natural as possible.\nHere is an example:\n"...and here is a plot that shows the average sleep over time.<P-45L>"\nMake sure the placeholder is at the end of the response with NO punctuation after it.\nA placeholder will take this form: "<P-45L>". The only differences will be the three characters after the dash.\n\nBegin!'}
+2024-03-14 01:35:26,865 - INFO - START user: {'role': 'user', 'content': 'How many times did I have foot pain?'}
+2024-03-14 01:35:28,730 - INFO - process_tool_chunks: {'role': 'assistant', 'content': None, 'tool_calls': [{'id': 'call_jzdn4Uclkhq0AEWIqjCunqOL', 'function': {'name': 'single_event_count', 'arguments': '{"v":"foot pain"}'}, 'type': 'function'}]}
+2024-03-14 01:37:11,920 - INFO - -----STARTING NEW SESSION-----
+2024-03-14 01:37:11,944 - INFO - START system: {'role': 'system', 'content': 'You are Ewandi, a helpful assistant that pulls a user\'s personal data to help them know themselves better. You answer the user\'s question concisely and helpfully.\nAdditional Guidelines:\nYou may receive a tool output that contains a text placeholder for a plot. In your response, place the placeholder text directly at the end of the sentence or phrase after which the user should see the plot. Please do this since the user will see the plot in a separate window. Aside from showing the plot, you may reference it depending on the context of the conversation. If you reference the plot, say something along the lines of "...and here is a plot that shows...<describe>.". This is to ensure that the conversation is as natural as possible.\nHere is an example:\n"...and here is a plot that shows the average sleep over time.<P-45L>"\nMake sure the placeholder is at the end of the response with NO punctuation after it.\nA placeholder will take this form: "<P-45L>". The only differences will be the three characters after the dash.\n\nBegin!'}
+2024-03-14 01:37:11,945 - INFO - START user: {'role': 'user', 'content': 'How many times did I have foot pain?'}
+2024-03-14 01:37:13,650 - INFO - process_tool_chunks: {'role': 'assistant', 'content': None, 'tool_calls': [{'id': 'call_GYUzkjFyWevLMt7MTD4hHIZU', 'function': {'name': 'single_event_count', 'arguments': '{"v":"foot pain"}'}, 'type': 'function'}]}
+2024-03-14 01:37:24,806 - INFO - process_tool_chunks: {'tool_call_id': 'call_GYUzkjFyWevLMt7MTD4hHIZU', 'role': 'tool', 'name': 'single_event_count', 'content': ''}
+2024-03-14 01:37:24,809 - ERROR - Error: Traceback (most recent call last):
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/ewandi/src/llm/chat/sessions.py", line 92, in completion_request
+    general_completion_request(
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/ewandi/src/llm/chat/chat.py", line 69, in general_completion_request
+    process_completion(session, **input_completions_kwargs)
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/ewandi/src/llm/chat/chat.py", line 449, in process_completion
+    parse_stream(session, completion_generator)
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/ewandi/src/llm/chat/chat.py", line 442, in parse_stream
+    chunk_handler.process_chunks()
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/ewandi/src/llm/chat/chat.py", line 303, in process_chunks
+    self.process_tool_chunks()
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/ewandi/src/llm/chat/chat.py", line 392, in process_tool_chunks
+    get_tool_return(self.session, t_response)
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/ewandi/src/llm/chat/chat.py", line 202, in get_tool_return
+    content = call_function(function_name, arguments, session.user.userid)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/ewandi/src/llm/chat/chat.py", line 175, in call_function
+    func_output = func(*args, **kwargs)
+                  ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/ewandi/src/llm/my_tools/tool_funcs.py", line 48, in single_event_count
+    events = validate_input(v, p, dr, tr, d)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/ewandi/src/llm/my_tools/validation.py", line 38, in validate_input
+    return _validate(v, p, dr, tr, d)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/ewandi/src/llm/my_tools/validation.py", line 70, in _validate
+    raise ValidationFindError("events")
+utils.errors.ValidationFindError: events
+
+2024-03-14 01:39:33,361 - INFO - -----STARTING NEW SESSION-----
+2024-03-14 01:39:33,469 - INFO - START system: {'role': 'system', 'content': 'You are Ewandi, a helpful assistant that pulls a user\'s personal data to help them know themselves better. You answer the user\'s question concisely and helpfully.\nAdditional Guidelines:\nYou may receive a tool output that contains a text placeholder for a plot. In your response, place the placeholder text directly at the end of the sentence or phrase after which the user should see the plot. Please do this since the user will see the plot in a separate window. Aside from showing the plot, you may reference it depending on the context of the conversation. If you reference the plot, say something along the lines of "...and here is a plot that shows...<describe>.". This is to ensure that the conversation is as natural as possible.\nHere is an example:\n"...and here is a plot that shows the average sleep over time.<P-45L>"\nMake sure the placeholder is at the end of the response with NO punctuation after it.\nA placeholder will take this form: "<P-45L>". The only differences will be the three characters after the dash.\n\nBegin!'}
+2024-03-14 01:39:33,470 - INFO - START user: {'role': 'user', 'content': 'How many times have I played videogames?'}
+2024-03-14 01:39:34,510 - INFO - process_tool_chunks: {'role': 'assistant', 'content': None, 'tool_calls': [{'id': 'call_h8Yqmbisf3B52m6HEJELPii4', 'function': {'name': 'single_event_count', 'arguments': '{"v":"videogame_played"}'}, 'type': 'function'}]}
+2024-03-14 01:39:37,337 - INFO - Index(['name', 'location', 'description', 'category', 'all_day', 'parent_name',
+       'dtype', 'source', 'start_datetime', 'end_datetime', 'evid', 'eid',
+       'start_date', 'end_date', 'start_time', 'end_time', 'day'],
+      dtype='object')
+2024-03-14 01:39:38,313 - INFO - process_tool_chunks: {'tool_call_id': 'call_h8Yqmbisf3B52m6HEJELPii4', 'role': 'tool', 'name': 'single_event_count', 'content': "{'count': 61, 'plot': '<P-AY8>'}"}
+2024-03-14 01:39:38,315 - ERROR - Error: Traceback (most recent call last):
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/ewandi/src/llm/chat/sessions.py", line 92, in completion_request
+    general_completion_request(
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/ewandi/src/llm/chat/chat.py", line 69, in general_completion_request
+    process_completion(session, **input_completions_kwargs)
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/ewandi/src/llm/chat/chat.py", line 449, in process_completion
+    parse_stream(session, completion_generator)
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/ewandi/src/llm/chat/chat.py", line 442, in parse_stream
+    chunk_handler.process_chunks()
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/ewandi/src/llm/chat/chat.py", line 303, in process_chunks
+    self.process_tool_chunks()
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/ewandi/src/llm/chat/chat.py", line 392, in process_tool_chunks
+    get_tool_return(self.session, t_response)
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/ewandi/src/llm/chat/chat.py", line 216, in get_tool_return
+    raise
+RuntimeError: No active exception to reraise
+
+2024-03-14 01:40:45,980 - INFO - -----STARTING NEW SESSION-----
+2024-03-14 01:40:46,005 - INFO - START system: {'role': 'system', 'content': 'You are Ewandi, a helpful assistant that pulls a user\'s personal data to help them know themselves better. You answer the user\'s question concisely and helpfully.\nAdditional Guidelines:\nYou may receive a tool output that contains a text placeholder for a plot. In your response, place the placeholder text directly at the end of the sentence or phrase after which the user should see the plot. Please do this since the user will see the plot in a separate window. Aside from showing the plot, you may reference it depending on the context of the conversation. If you reference the plot, say something along the lines of "...and here is a plot that shows...<describe>.". This is to ensure that the conversation is as natural as possible.\nHere is an example:\n"...and here is a plot that shows the average sleep over time.<P-45L>"\nMake sure the placeholder is at the end of the response with NO punctuation after it.\nA placeholder will take this form: "<P-45L>". The only differences will be the three characters after the dash.\n\nBegin!'}
+2024-03-14 01:40:46,005 - INFO - START user: {'role': 'user', 'content': 'How many times have I played videogames?'}
+2024-03-14 01:40:47,480 - INFO - process_tool_chunks: {'role': 'assistant', 'content': None, 'tool_calls': [{'id': 'call_qObwflbYpQLt3gTUDsXyVZLP', 'function': {'name': 'single_event_count', 'arguments': '{"v":"videogames"}'}, 'type': 'function'}]}
+2024-03-14 01:40:50,082 - INFO - Index(['name', 'location', 'description', 'category', 'all_day', 'parent_name',
+       'dtype', 'source', 'start_datetime', 'end_datetime', 'evid', 'eid',
+       'start_date', 'end_date', 'start_time', 'end_time', 'day'],
+      dtype='object')
+2024-03-14 01:40:51,054 - INFO - process_tool_chunks: {'tool_call_id': 'call_qObwflbYpQLt3gTUDsXyVZLP', 'role': 'tool', 'name': 'single_event_count', 'content': "{'count': 61, 'plot': '<P-YGA>'}"}
+2024-03-14 01:40:53,705 - INFO - buffer length: 31
+2024-03-14 01:40:53,706 - INFO - length of raw chunks: 30
+2024-03-14 01:40:53,707 - INFO - process_assistant_chunks: {'role': 'assistant', 'content': 'You have played video games 61 times. Here is a plot that shows the frequency of your video game sessions over time.'}
+2024-03-14 01:42:55,209 - INFO - -----STARTING NEW SESSION-----
+2024-03-14 01:42:55,240 - INFO - START system: {'role': 'system', 'content': 'You are Ewandi, a helpful assistant that pulls a user\'s personal data to help them know themselves better. You answer the user\'s question concisely and helpfully.\nAdditional Guidelines:\nYou may receive a tool output that contains a text placeholder for a plot. In your response, place the placeholder text directly at the end of the sentence or phrase after which the user should see the plot. Please do this since the user will see the plot in a separate window. Aside from showing the plot, you may reference it depending on the context of the conversation. If you reference the plot, say something along the lines of "...and here is a plot that shows...<describe>.". This is to ensure that the conversation is as natural as possible.\nHere is an example:\n"...and here is a plot that shows the average sleep over time.<P-45L>"\nMake sure the placeholder is at the end of the response with NO punctuation after it.\nA placeholder will take this form: "<P-45L>". The only differences will be the three characters after the dash.\n\nBegin!'}
+2024-03-14 01:42:55,241 - INFO - START user: {'role': 'user', 'content': 'How often did I go hiking in the morning?'}
+2024-03-14 01:42:56,874 - INFO - process_tool_chunks: {'role': 'assistant', 'content': None, 'tool_calls': [{'id': 'call_zVfgrwo3aE5KxZhPnzaYjOwJ', 'function': {'name': 'single_event_count', 'arguments': '{"v":"hiking","dr":["morning"]}'}, 'type': 'function'}]}
+2024-03-14 01:42:59,548 - INFO - process_tool_chunks: {'tool_call_id': 'call_zVfgrwo3aE5KxZhPnzaYjOwJ', 'role': 'tool', 'name': 'single_event_count', 'content': ''}
+2024-03-14 01:42:59,552 - ERROR - Error: Traceback (most recent call last):
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/ewandi/src/llm/chat/sessions.py", line 92, in completion_request
+    general_completion_request(
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/ewandi/src/llm/chat/chat.py", line 69, in general_completion_request
+    process_completion(session, **input_completions_kwargs)
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/ewandi/src/llm/chat/chat.py", line 448, in process_completion
+    parse_stream(session, completion_generator)
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/ewandi/src/llm/chat/chat.py", line 441, in parse_stream
+    chunk_handler.process_chunks()
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/ewandi/src/llm/chat/chat.py", line 302, in process_chunks
+    self.process_tool_chunks()
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/ewandi/src/llm/chat/chat.py", line 391, in process_tool_chunks
+    get_tool_return(self.session, t_response)
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/ewandi/src/llm/chat/chat.py", line 202, in get_tool_return
+    content = call_function(function_name, arguments, session.user.userid)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/ewandi/src/llm/chat/chat.py", line 175, in call_function
+    func_output = func(*args, **kwargs)
+                  ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/ewandi/src/llm/my_tools/tool_funcs.py", line 48, in single_event_count
+    events = validate_input(v, p, dr, tr, d)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/ewandi/src/llm/my_tools/validation.py", line 38, in validate_input
+    return _validate(v, p, dr, tr, d)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/ewandi/src/llm/my_tools/validation.py", line 99, in _validate
+    raise ValidationParseError("date range")
+utils.errors.ValidationParseError: date range
+
+2024-03-14 01:44:37,767 - INFO - -----STARTING NEW SESSION-----
+2024-03-14 01:44:37,788 - INFO - START system: {'role': 'system', 'content': 'You are Ewandi, a helpful assistant that pulls a user\'s personal data to help them know themselves better. You answer the user\'s question concisely and helpfully.\nAdditional Guidelines:\nYou may receive a tool output that contains a text placeholder for a plot. In your response, place the placeholder text directly at the end of the sentence or phrase after which the user should see the plot. Please do this since the user will see the plot in a separate window. Aside from showing the plot, you may reference it depending on the context of the conversation. If you reference the plot, say something along the lines of "...and here is a plot that shows...<describe>.". This is to ensure that the conversation is as natural as possible.\nHere is an example:\n"...and here is a plot that shows the average sleep over time.<P-45L>"\nMake sure the placeholder is at the end of the response with NO punctuation after it.\nA placeholder will take this form: "<P-45L>". The only differences will be the three characters after the dash.\n\nBegin!'}
+2024-03-14 01:44:37,788 - INFO - START user: {'role': 'user', 'content': 'How often did I go hiking in the morning?'}
+2024-03-14 01:44:40,694 - INFO - process_tool_chunks: {'role': 'assistant', 'content': None, 'tool_calls': [{'id': 'call_4QhFYHSFUPcUWZSFLk8PMnYK', 'function': {'name': 'single_event_count', 'arguments': '{"v":"hiking","tr":"00:00-12:00","plot":true}'}, 'type': 'function'}]}
+2024-03-14 01:44:43,284 - INFO - process_tool_chunks: {'tool_call_id': 'call_4QhFYHSFUPcUWZSFLk8PMnYK', 'role': 'tool', 'name': 'single_event_count', 'content': ''}
+2024-03-14 01:44:43,286 - ERROR - Error: Traceback (most recent call last):
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/ewandi/src/llm/chat/sessions.py", line 92, in completion_request
+    general_completion_request(
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/ewandi/src/llm/chat/chat.py", line 69, in general_completion_request
+    process_completion(session, **input_completions_kwargs)
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/ewandi/src/llm/chat/chat.py", line 448, in process_completion
+    parse_stream(session, completion_generator)
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/ewandi/src/llm/chat/chat.py", line 441, in parse_stream
+    chunk_handler.process_chunks()
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/ewandi/src/llm/chat/chat.py", line 302, in process_chunks
+    self.process_tool_chunks()
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/ewandi/src/llm/chat/chat.py", line 391, in process_tool_chunks
+    get_tool_return(self.session, t_response)
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/ewandi/src/llm/chat/chat.py", line 230, in get_tool_return
+    raise e
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/ewandi/src/llm/chat/chat.py", line 202, in get_tool_return
+    content = call_function(function_name, arguments, session.user.userid)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/ewandi/src/llm/chat/chat.py", line 175, in call_function
+    func_output = func(*args, **kwargs)
+                  ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/ewandi/src/llm/my_tools/tool_funcs.py", line 48, in single_event_count
+    events = validate_input(v, p, dr, tr, d)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/ewandi/src/llm/my_tools/validation.py", line 38, in validate_input
+    return _validate(v, p, dr, tr, d)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/ewandi/src/llm/my_tools/validation.py", line 124, in _validate
+    raise ValidationParseError("time range")
+utils.errors.ValidationParseError: time range
+
+2024-03-14 01:45:53,487 - INFO - -----STARTING NEW SESSION-----
+2024-03-14 01:45:53,518 - INFO - START system: {'role': 'system', 'content': 'You are Ewandi, a helpful assistant that pulls a user\'s personal data to help them know themselves better. You answer the user\'s question concisely and helpfully.\nAdditional Guidelines:\nYou may receive a tool output that contains a text placeholder for a plot. In your response, place the placeholder text directly at the end of the sentence or phrase after which the user should see the plot. Please do this since the user will see the plot in a separate window. Aside from showing the plot, you may reference it depending on the context of the conversation. If you reference the plot, say something along the lines of "...and here is a plot that shows...<describe>.". This is to ensure that the conversation is as natural as possible.\nHere is an example:\n"...and here is a plot that shows the average sleep over time.<P-45L>"\nMake sure the placeholder is at the end of the response with NO punctuation after it.\nA placeholder will take this form: "<P-45L>". The only differences will be the three characters after the dash.\n\nBegin!'}
+2024-03-14 01:45:53,519 - INFO - START user: {'role': 'user', 'content': 'How often did I go hiking in the morning?'}
+2024-03-14 01:45:59,298 - INFO - process_tool_chunks: {'role': 'assistant', 'content': None, 'tool_calls': [{'id': 'call_oRpu64o1DFGkQd70cHBPDqPU', 'function': {'name': 'single_event_count', 'arguments': '{"v":"hiking","tr":"morning"}'}, 'type': 'function'}]}
+2024-03-14 01:47:07,655 - INFO - -----STARTING NEW SESSION-----
+2024-03-14 01:47:07,676 - INFO - START system: {'role': 'system', 'content': 'You are Ewandi, a helpful assistant that pulls a user\'s personal data to help them know themselves better. You answer the user\'s question concisely and helpfully.\nAdditional Guidelines:\nYou may receive a tool output that contains a text placeholder for a plot. In your response, place the placeholder text directly at the end of the sentence or phrase after which the user should see the plot. Please do this since the user will see the plot in a separate window. Aside from showing the plot, you may reference it depending on the context of the conversation. If you reference the plot, say something along the lines of "...and here is a plot that shows...<describe>.". This is to ensure that the conversation is as natural as possible.\nHere is an example:\n"...and here is a plot that shows the average sleep over time.<P-45L>"\nMake sure the placeholder is at the end of the response with NO punctuation after it.\nA placeholder will take this form: "<P-45L>". The only differences will be the three characters after the dash.\n\nBegin!'}
+2024-03-14 01:47:07,676 - INFO - START user: {'role': 'user', 'content': 'How often did I go hiking in the morning?'}
+2024-03-14 01:47:09,418 - INFO - process_tool_chunks: {'role': 'assistant', 'content': None, 'tool_calls': [{'id': 'call_wPFXgZTIlewVBZwRNlZHIfCa', 'function': {'name': 'single_event_count', 'arguments': '{"v":"hiking","tr":"morning"}'}, 'type': 'function'}]}
+2024-03-14 01:47:11,996 - INFO - process_tool_chunks: {'tool_call_id': 'call_wPFXgZTIlewVBZwRNlZHIfCa', 'role': 'tool', 'name': 'single_event_count', 'content': ''}
+2024-03-14 01:47:11,998 - ERROR - Error: Traceback (most recent call last):
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/ewandi/src/llm/chat/sessions.py", line 92, in completion_request
+    general_completion_request(
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/ewandi/src/llm/chat/chat.py", line 69, in general_completion_request
+    process_completion(session, **input_completions_kwargs)
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/ewandi/src/llm/chat/chat.py", line 448, in process_completion
+    parse_stream(session, completion_generator)
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/ewandi/src/llm/chat/chat.py", line 441, in parse_stream
+    chunk_handler.process_chunks()
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/ewandi/src/llm/chat/chat.py", line 302, in process_chunks
+    self.process_tool_chunks()
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/ewandi/src/llm/chat/chat.py", line 391, in process_tool_chunks
+    get_tool_return(self.session, t_response)
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/ewandi/src/llm/chat/chat.py", line 230, in get_tool_return
+    raise e
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/ewandi/src/llm/chat/chat.py", line 202, in get_tool_return
+    content = call_function(function_name, arguments, session.user.userid)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/ewandi/src/llm/chat/chat.py", line 175, in call_function
+    func_output = func(*args, **kwargs)
+                  ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/ewandi/src/llm/my_tools/tool_funcs.py", line 48, in single_event_count
+    events = validate_input(v, p, dr, tr, d)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/ewandi/src/llm/my_tools/validation.py", line 38, in validate_input
+    return _validate(v, p, dr, tr, d)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/ewandi/src/llm/my_tools/validation.py", line 124, in _validate
+    raise ValidationParseError("time range")
+utils.errors.ValidationParseError: time range
+
+2024-03-14 01:47:45,201 - INFO - -----STARTING NEW SESSION-----
+2024-03-14 01:47:45,226 - INFO - START system: {'role': 'system', 'content': 'You are Ewandi, a helpful assistant that pulls a user\'s personal data to help them know themselves better. You answer the user\'s question concisely and helpfully.\nAdditional Guidelines:\nYou may receive a tool output that contains a text placeholder for a plot. In your response, place the placeholder text directly at the end of the sentence or phrase after which the user should see the plot. Please do this since the user will see the plot in a separate window. Aside from showing the plot, you may reference it depending on the context of the conversation. If you reference the plot, say something along the lines of "...and here is a plot that shows...<describe>.". This is to ensure that the conversation is as natural as possible.\nHere is an example:\n"...and here is a plot that shows the average sleep over time.<P-45L>"\nMake sure the placeholder is at the end of the response with NO punctuation after it.\nA placeholder will take this form: "<P-45L>". The only differences will be the three characters after the dash.\n\nBegin!'}
+2024-03-14 01:47:45,226 - INFO - START user: {'role': 'user', 'content': 'How often did I go hiking in the morning?'}
+2024-03-14 01:47:46,735 - INFO - process_tool_chunks: {'role': 'assistant', 'content': None, 'tool_calls': [{'id': 'call_Wmrn9Kop0mcO3wFkzYbMLoAh', 'function': {'name': 'single_event_count', 'arguments': '{"v":"hiking","tr":"morning"}'}, 'type': 'function'}]}
+2024-03-14 01:47:49,336 - INFO - process_tool_chunks: {'tool_call_id': 'call_Wmrn9Kop0mcO3wFkzYbMLoAh', 'role': 'tool', 'name': 'single_event_count', 'content': ''}
+2024-03-14 01:47:49,338 - ERROR - Error: Traceback (most recent call last):
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/ewandi/src/llm/chat/sessions.py", line 92, in completion_request
+    general_completion_request(
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/ewandi/src/llm/chat/chat.py", line 69, in general_completion_request
+    process_completion(session, **input_completions_kwargs)
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/ewandi/src/llm/chat/chat.py", line 448, in process_completion
+    parse_stream(session, completion_generator)
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/ewandi/src/llm/chat/chat.py", line 441, in parse_stream
+    chunk_handler.process_chunks()
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/ewandi/src/llm/chat/chat.py", line 302, in process_chunks
+    self.process_tool_chunks()
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/ewandi/src/llm/chat/chat.py", line 391, in process_tool_chunks
+    get_tool_return(self.session, t_response)
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/ewandi/src/llm/chat/chat.py", line 230, in get_tool_return
+    raise e
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/ewandi/src/llm/chat/chat.py", line 202, in get_tool_return
+    content = call_function(function_name, arguments, session.user.userid)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/ewandi/src/llm/chat/chat.py", line 175, in call_function
+    func_output = func(*args, **kwargs)
+                  ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/ewandi/src/llm/my_tools/tool_funcs.py", line 48, in single_event_count
+    events = validate_input(v, p, dr, tr, d)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/ewandi/src/llm/my_tools/validation.py", line 38, in validate_input
+    return _validate(v, p, dr, tr, d)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/ewandi/src/llm/my_tools/validation.py", line 124, in _validate
+    raise ValidationParseError("time range")
+utils.errors.ValidationParseError: time range
+
+2024-03-14 01:49:59,110 - INFO - -----STARTING NEW SESSION-----
+2024-03-14 01:49:59,131 - INFO - START system: {'role': 'system', 'content': 'You are Ewandi, a helpful assistant that pulls a user\'s personal data to help them know themselves better. You answer the user\'s question concisely and helpfully.\nAdditional Guidelines:\nYou may receive a tool output that contains a text placeholder for a plot. In your response, place the placeholder text directly at the end of the sentence or phrase after which the user should see the plot. Please do this since the user will see the plot in a separate window. Aside from showing the plot, you may reference it depending on the context of the conversation. If you reference the plot, say something along the lines of "...and here is a plot that shows...<describe>.". This is to ensure that the conversation is as natural as possible.\nHere is an example:\n"...and here is a plot that shows the average sleep over time.<P-45L>"\nMake sure the placeholder is at the end of the response with NO punctuation after it.\nA placeholder will take this form: "<P-45L>". The only differences will be the three characters after the dash.\n\nBegin!'}
+2024-03-14 01:49:59,131 - INFO - START user: {'role': 'user', 'content': 'How often did I go hiking in the morning?'}
+2024-03-14 01:50:00,753 - INFO - process_tool_chunks: {'role': 'assistant', 'content': None, 'tool_calls': [{'id': 'call_buDLv9k7DeBLGZJHhTqnFdUe', 'function': {'name': 'single_event_count', 'arguments': '{"v":"hiking","tr":"morning"}'}, 'type': 'function'}]}
+2024-03-14 01:50:03,498 - INFO - process_tool_chunks: {'tool_call_id': 'call_buDLv9k7DeBLGZJHhTqnFdUe', 'role': 'tool', 'name': 'single_event_count', 'content': ''}
+2024-03-14 01:50:03,500 - ERROR - Error: Traceback (most recent call last):
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/ewandi/src/llm/chat/sessions.py", line 92, in completion_request
+    general_completion_request(
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/ewandi/src/llm/chat/chat.py", line 69, in general_completion_request
+    process_completion(session, **input_completions_kwargs)
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/ewandi/src/llm/chat/chat.py", line 448, in process_completion
+    parse_stream(session, completion_generator)
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/ewandi/src/llm/chat/chat.py", line 441, in parse_stream
+    chunk_handler.process_chunks()
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/ewandi/src/llm/chat/chat.py", line 302, in process_chunks
+    self.process_tool_chunks()
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/ewandi/src/llm/chat/chat.py", line 391, in process_tool_chunks
+    get_tool_return(self.session, t_response)
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/ewandi/src/llm/chat/chat.py", line 230, in get_tool_return
+    raise e
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/ewandi/src/llm/chat/chat.py", line 202, in get_tool_return
+    content = call_function(function_name, arguments, session.user.userid)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/ewandi/src/llm/chat/chat.py", line 175, in call_function
+    func_output = func(*args, **kwargs)
+                  ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/ewandi/src/llm/my_tools/tool_funcs.py", line 48, in single_event_count
+    events = validate_input(v, p, dr, tr, d)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/ewandi/src/llm/my_tools/validation.py", line 38, in validate_input
+    return _validate(v, p, dr, tr, d)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/ewandi/src/llm/my_tools/validation.py", line 124, in _validate
+    raise ValidationParseError("time range")
+utils.errors.ValidationParseError: time range
+
+2024-03-14 01:50:47,767 - INFO - -----STARTING NEW SESSION-----
+2024-03-14 01:50:47,859 - INFO - START system: {'role': 'system', 'content': 'You are Ewandi, a helpful assistant that pulls a user\'s personal data to help them know themselves better. You answer the user\'s question concisely and helpfully.\nAdditional Guidelines:\nYou may receive a tool output that contains a text placeholder for a plot. In your response, place the placeholder text directly at the end of the sentence or phrase after which the user should see the plot. Please do this since the user will see the plot in a separate window. Aside from showing the plot, you may reference it depending on the context of the conversation. If you reference the plot, say something along the lines of "...and here is a plot that shows...<describe>.". This is to ensure that the conversation is as natural as possible.\nHere is an example:\n"...and here is a plot that shows the average sleep over time.<P-45L>"\nMake sure the placeholder is at the end of the response with NO punctuation after it.\nA placeholder will take this form: "<P-45L>". The only differences will be the three characters after the dash.\n\nBegin!'}
+2024-03-14 01:50:47,859 - INFO - START user: {'role': 'user', 'content': 'How often did I go hiking in the morning?'}
+2024-03-14 01:50:49,537 - INFO - process_tool_chunks: {'role': 'assistant', 'content': None, 'tool_calls': [{'id': 'call_a4oVwLsYeMBqO7ft1MAqCCzz', 'function': {'name': 'single_event_count', 'arguments': '{"v":"hiking","tr":"morning"}'}, 'type': 'function'}]}
+2024-03-14 01:50:52,149 - INFO - process_tool_chunks: {'tool_call_id': 'call_a4oVwLsYeMBqO7ft1MAqCCzz', 'role': 'tool', 'name': 'single_event_count', 'content': ''}
+2024-03-14 01:50:52,151 - ERROR - Error: Traceback (most recent call last):
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/ewandi/src/llm/chat/sessions.py", line 92, in completion_request
+    general_completion_request(
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/ewandi/src/llm/chat/chat.py", line 69, in general_completion_request
+    process_completion(session, **input_completions_kwargs)
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/ewandi/src/llm/chat/chat.py", line 448, in process_completion
+    parse_stream(session, completion_generator)
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/ewandi/src/llm/chat/chat.py", line 441, in parse_stream
+    chunk_handler.process_chunks()
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/ewandi/src/llm/chat/chat.py", line 302, in process_chunks
+    self.process_tool_chunks()
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/ewandi/src/llm/chat/chat.py", line 391, in process_tool_chunks
+    get_tool_return(self.session, t_response)
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/ewandi/src/llm/chat/chat.py", line 230, in get_tool_return
+    raise e
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/ewandi/src/llm/chat/chat.py", line 202, in get_tool_return
+    content = call_function(function_name, arguments, session.user.userid)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/ewandi/src/llm/chat/chat.py", line 175, in call_function
+    func_output = func(*args, **kwargs)
+                  ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/ewandi/src/llm/my_tools/tool_funcs.py", line 48, in single_event_count
+    events = validate_input(v, p, dr, tr, d)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/ewandi/src/llm/my_tools/validation.py", line 38, in validate_input
+    return _validate(v, p, dr, tr, d)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/ewandi/src/llm/my_tools/validation.py", line 124, in _validate
+    raise ValidationParseError("time range")
+utils.errors.ValidationParseError: time range
+
+2024-03-14 01:53:11,090 - INFO - -----STARTING NEW SESSION-----
+2024-03-14 01:53:11,166 - INFO - START system: {'role': 'system', 'content': 'You are Ewandi, a helpful assistant that pulls a user\'s personal data to help them know themselves better. You answer the user\'s question concisely and helpfully.\nAdditional Guidelines:\nYou may receive a tool output that contains a text placeholder for a plot. In your response, place the placeholder text directly at the end of the sentence or phrase after which the user should see the plot. Please do this since the user will see the plot in a separate window. Aside from showing the plot, you may reference it depending on the context of the conversation. If you reference the plot, say something along the lines of "...and here is a plot that shows...<describe>.". This is to ensure that the conversation is as natural as possible.\nHere is an example:\n"...and here is a plot that shows the average sleep over time.<P-45L>"\nMake sure the placeholder is at the end of the response with NO punctuation after it.\nA placeholder will take this form: "<P-45L>". The only differences will be the three characters after the dash.\n\nBegin!'}
+2024-03-14 01:53:11,166 - INFO - START user: {'role': 'user', 'content': 'How often did I go hiking in the morning?'}
+2024-03-14 01:53:12,936 - INFO - process_tool_chunks: {'role': 'assistant', 'content': None, 'tool_calls': [{'id': 'call_78s7OcbOTnbNf6QESKsP4yhY', 'function': {'name': 'single_event_count', 'arguments': '{"v":"hiking","tr":"morning"}'}, 'type': 'function'}]}
+2024-03-14 01:53:15,740 - INFO - process_tool_chunks: {'tool_call_id': 'call_78s7OcbOTnbNf6QESKsP4yhY', 'role': 'tool', 'name': 'single_event_count', 'content': ''}
+2024-03-14 01:53:15,743 - ERROR - Error: Traceback (most recent call last):
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/ewandi/src/llm/chat/sessions.py", line 92, in completion_request
+    general_completion_request(
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/ewandi/src/llm/chat/chat.py", line 69, in general_completion_request
+    process_completion(session, **input_completions_kwargs)
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/ewandi/src/llm/chat/chat.py", line 448, in process_completion
+    parse_stream(session, completion_generator)
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/ewandi/src/llm/chat/chat.py", line 441, in parse_stream
+    chunk_handler.process_chunks()
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/ewandi/src/llm/chat/chat.py", line 302, in process_chunks
+    self.process_tool_chunks()
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/ewandi/src/llm/chat/chat.py", line 391, in process_tool_chunks
+    get_tool_return(self.session, t_response)
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/ewandi/src/llm/chat/chat.py", line 230, in get_tool_return
+    raise e
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/ewandi/src/llm/chat/chat.py", line 202, in get_tool_return
+    content = call_function(function_name, arguments, session.user.userid)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/ewandi/src/llm/chat/chat.py", line 175, in call_function
+    func_output = func(*args, **kwargs)
+                  ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/ewandi/src/llm/my_tools/tool_funcs.py", line 48, in single_event_count
+    events = validate_input(v, p, dr, tr, d)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/ewandi/src/llm/my_tools/validation.py", line 38, in validate_input
+    return _validate(v, p, dr, tr, d)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/ewandi/src/llm/my_tools/validation.py", line 124, in _validate
+    raise ValidationParseError("time range")
+utils.errors.ValidationParseError: time range
+
+2024-03-14 01:53:50,080 - INFO - -----STARTING NEW SESSION-----
+2024-03-14 01:53:50,113 - INFO - START system: {'role': 'system', 'content': 'You are Ewandi, a helpful assistant that pulls a user\'s personal data to help them know themselves better. You answer the user\'s question concisely and helpfully.\nAdditional Guidelines:\nYou may receive a tool output that contains a text placeholder for a plot. In your response, place the placeholder text directly at the end of the sentence or phrase after which the user should see the plot. Please do this since the user will see the plot in a separate window. Aside from showing the plot, you may reference it depending on the context of the conversation. If you reference the plot, say something along the lines of "...and here is a plot that shows...<describe>.". This is to ensure that the conversation is as natural as possible.\nHere is an example:\n"...and here is a plot that shows the average sleep over time.<P-45L>"\nMake sure the placeholder is at the end of the response with NO punctuation after it.\nA placeholder will take this form: "<P-45L>". The only differences will be the three characters after the dash.\n\nBegin!'}
+2024-03-14 01:53:50,113 - INFO - START user: {'role': 'user', 'content': 'How often did I go hiking in the morning?'}
+2024-03-14 01:53:52,136 - INFO - process_tool_chunks: {'role': 'assistant', 'content': None, 'tool_calls': [{'id': 'call_KOjI6fF6gO0MsmlAWuLzhoEI', 'function': {'name': 'single_event_count', 'arguments': '{"v":"hiking","tr":"morning"}'}, 'type': 'function'}]}
+2024-03-14 01:53:54,802 - INFO - process_tool_chunks: {'tool_call_id': 'call_KOjI6fF6gO0MsmlAWuLzhoEI', 'role': 'tool', 'name': 'single_event_count', 'content': ''}
+2024-03-14 01:53:54,804 - ERROR - Error: Traceback (most recent call last):
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/ewandi/src/llm/chat/sessions.py", line 92, in completion_request
+    general_completion_request(
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/ewandi/src/llm/chat/chat.py", line 69, in general_completion_request
+    process_completion(session, **input_completions_kwargs)
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/ewandi/src/llm/chat/chat.py", line 448, in process_completion
+    parse_stream(session, completion_generator)
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/ewandi/src/llm/chat/chat.py", line 441, in parse_stream
+    chunk_handler.process_chunks()
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/ewandi/src/llm/chat/chat.py", line 302, in process_chunks
+    self.process_tool_chunks()
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/ewandi/src/llm/chat/chat.py", line 391, in process_tool_chunks
+    get_tool_return(self.session, t_response)
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/ewandi/src/llm/chat/chat.py", line 230, in get_tool_return
+    raise e
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/ewandi/src/llm/chat/chat.py", line 202, in get_tool_return
+    content = call_function(function_name, arguments, session.user.userid)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/ewandi/src/llm/chat/chat.py", line 175, in call_function
+    func_output = func(*args, **kwargs)
+                  ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/ewandi/src/llm/my_tools/tool_funcs.py", line 48, in single_event_count
+    events = validate_input(v, p, dr, tr, d)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/ewandi/src/llm/my_tools/validation.py", line 38, in validate_input
+    return _validate(v, p, dr, tr, d)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/ewandi/src/llm/my_tools/validation.py", line 124, in _validate
+    raise ValidationParseError("time range")
+utils.errors.ValidationParseError: time range
+
+2024-03-14 01:59:01,497 - INFO - -----STARTING NEW SESSION-----
+2024-03-14 01:59:01,682 - INFO - START system: {'role': 'system', 'content': 'You are Ewandi, a helpful assistant that pulls a user\'s personal data to help them know themselves better. You answer the user\'s question concisely and helpfully.\nAdditional Guidelines:\nYou may receive a tool output that contains a text placeholder for a plot. In your response, place the placeholder text directly at the end of the sentence or phrase after which the user should see the plot. Please do this since the user will see the plot in a separate window. Aside from showing the plot, you may reference it depending on the context of the conversation. If you reference the plot, say something along the lines of "...and here is a plot that shows...<describe>.". This is to ensure that the conversation is as natural as possible.\nHere is an example:\n"...and here is a plot that shows the average sleep over time.<P-45L>"\nMake sure the placeholder is at the end of the response with NO punctuation after it.\nA placeholder will take this form: "<P-45L>". The only differences will be the three characters after the dash.\n\nBegin!'}
+2024-03-14 01:59:01,682 - INFO - START user: {'role': 'user', 'content': 'How often did I go hiking in the morning?'}
+2024-03-14 01:59:04,563 - INFO - process_tool_chunks: {'role': 'assistant', 'content': None, 'tool_calls': [{'id': 'call_cpYGZoVL7Lk5XkqQF4LE8aBb', 'function': {'name': 'single_event_count', 'arguments': '{"v":"hiking","tr":"06:00-12:00"}'}, 'type': 'function'}]}
+2024-03-14 01:59:04,563 - INFO - Validating input: hiking, None, None, 06:00-12:00, None
+2024-03-14 01:59:07,927 - INFO - process_tool_chunks: {'tool_call_id': 'call_cpYGZoVL7Lk5XkqQF4LE8aBb', 'role': 'tool', 'name': 'single_event_count', 'content': ''}
+2024-03-14 01:59:07,930 - ERROR - Error: Traceback (most recent call last):
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/ewandi/src/llm/chat/sessions.py", line 92, in completion_request
+    general_completion_request(
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/ewandi/src/llm/chat/chat.py", line 69, in general_completion_request
+    process_completion(session, **input_completions_kwargs)
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/ewandi/src/llm/chat/chat.py", line 448, in process_completion
+    parse_stream(session, completion_generator)
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/ewandi/src/llm/chat/chat.py", line 441, in parse_stream
+    chunk_handler.process_chunks()
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/ewandi/src/llm/chat/chat.py", line 302, in process_chunks
+    self.process_tool_chunks()
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/ewandi/src/llm/chat/chat.py", line 391, in process_tool_chunks
+    get_tool_return(self.session, t_response)
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/ewandi/src/llm/chat/chat.py", line 230, in get_tool_return
+    raise e
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/ewandi/src/llm/chat/chat.py", line 202, in get_tool_return
+    content = call_function(function_name, arguments, session.user.userid)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/ewandi/src/llm/chat/chat.py", line 175, in call_function
+    func_output = func(*args, **kwargs)
+                  ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/ewandi/src/llm/my_tools/tool_funcs.py", line 48, in single_event_count
+    events = validate_input(v, p, dr, tr, d)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/ewandi/src/llm/my_tools/validation.py", line 40, in validate_input
+    return _validate(v, p, dr, tr, d)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/ewandi/src/llm/my_tools/validation.py", line 127, in _validate
+    raise ValidationParseError("time range")
+utils.errors.ValidationParseError: time range
+
+2024-03-14 02:04:10,825 - INFO - -----STARTING NEW SESSION-----
+2024-03-14 02:04:10,929 - INFO - START system: {'role': 'system', 'content': 'You are Ewandi, a helpful assistant that pulls a user\'s personal data to help them know themselves better. You answer the user\'s question concisely and helpfully.\nAdditional Guidelines:\nYou may receive a tool output that contains a text placeholder for a plot. In your response, place the placeholder text directly at the end of the sentence or phrase after which the user should see the plot. Please do this since the user will see the plot in a separate window. Aside from showing the plot, you may reference it depending on the context of the conversation. If you reference the plot, say something along the lines of "...and here is a plot that shows...<describe>.". This is to ensure that the conversation is as natural as possible.\nHere is an example:\n"...and here is a plot that shows the average sleep over time.<P-45L>"\nMake sure the placeholder is at the end of the response with NO punctuation after it.\nA placeholder will take this form: "<P-45L>". The only differences will be the three characters after the dash.\n\nBegin!'}
+2024-03-14 02:04:10,929 - INFO - START user: {'role': 'user', 'content': 'How often did I go hiking in the morning?'}
+2024-03-14 02:04:12,494 - INFO - process_tool_chunks: {'role': 'assistant', 'content': None, 'tool_calls': [{'id': 'call_XEVJ2dL9F54knooKqQzPSTKr', 'function': {'name': 'single_event_count', 'arguments': '{"v":"hiking","tr":"morning"}'}, 'type': 'function'}]}
+2024-03-14 02:04:12,494 - INFO - Validating input: hiking, None, None, morning, None
+2024-03-14 02:04:15,351 - INFO - process_tool_chunks: {'tool_call_id': 'call_XEVJ2dL9F54knooKqQzPSTKr', 'role': 'tool', 'name': 'single_event_count', 'content': ''}
+2024-03-14 02:04:15,354 - ERROR - Error: Traceback (most recent call last):
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/ewandi/src/llm/chat/sessions.py", line 92, in completion_request
+    general_completion_request(
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/ewandi/src/llm/chat/chat.py", line 69, in general_completion_request
+    process_completion(session, **input_completions_kwargs)
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/ewandi/src/llm/chat/chat.py", line 448, in process_completion
+    parse_stream(session, completion_generator)
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/ewandi/src/llm/chat/chat.py", line 441, in parse_stream
+    chunk_handler.process_chunks()
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/ewandi/src/llm/chat/chat.py", line 302, in process_chunks
+    self.process_tool_chunks()
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/ewandi/src/llm/chat/chat.py", line 391, in process_tool_chunks
+    get_tool_return(self.session, t_response)
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/ewandi/src/llm/chat/chat.py", line 230, in get_tool_return
+    raise e
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/ewandi/src/llm/chat/chat.py", line 202, in get_tool_return
+    content = call_function(function_name, arguments, session.user.userid)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/ewandi/src/llm/chat/chat.py", line 175, in call_function
+    func_output = func(*args, **kwargs)
+                  ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/ewandi/src/llm/my_tools/tool_funcs.py", line 48, in single_event_count
+    events = validate_input(v, p, dr, tr, d)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/ewandi/src/llm/my_tools/validation.py", line 40, in validate_input
+    return _validate(v, p, dr, tr, d)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/ewandi/src/llm/my_tools/validation.py", line 129, in _validate
+    raise ValidationParseError("time range")
+utils.errors.ValidationParseError: time range
+
+2024-03-14 02:04:49,667 - INFO - -----STARTING NEW SESSION-----
+2024-03-14 02:04:49,710 - INFO - START system: {'role': 'system', 'content': 'You are Ewandi, a helpful assistant that pulls a user\'s personal data to help them know themselves better. You answer the user\'s question concisely and helpfully.\nAdditional Guidelines:\nYou may receive a tool output that contains a text placeholder for a plot. In your response, place the placeholder text directly at the end of the sentence or phrase after which the user should see the plot. Please do this since the user will see the plot in a separate window. Aside from showing the plot, you may reference it depending on the context of the conversation. If you reference the plot, say something along the lines of "...and here is a plot that shows...<describe>.". This is to ensure that the conversation is as natural as possible.\nHere is an example:\n"...and here is a plot that shows the average sleep over time.<P-45L>"\nMake sure the placeholder is at the end of the response with NO punctuation after it.\nA placeholder will take this form: "<P-45L>". The only differences will be the three characters after the dash.\n\nBegin!'}
+2024-03-14 02:04:49,711 - INFO - START user: {'role': 'user', 'content': 'How often did I go hiking from 6am to 12pm?'}
+2024-03-14 02:04:50,967 - INFO - process_tool_chunks: {'role': 'assistant', 'content': None, 'tool_calls': [{'id': 'call_7b8AqwamE5EsfIywSQPrIQ4e', 'function': {'name': 'single_event_count', 'arguments': '{"v":"hiking","tr":"06:00-12:00"}'}, 'type': 'function'}]}
+2024-03-14 02:04:50,967 - INFO - Validating input: hiking, None, None, 06:00-12:00, None
+2024-03-14 02:04:54,019 - INFO - process_tool_chunks: {'tool_call_id': 'call_7b8AqwamE5EsfIywSQPrIQ4e', 'role': 'tool', 'name': 'single_event_count', 'content': ''}
+2024-03-14 02:04:54,022 - ERROR - Error: Traceback (most recent call last):
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/ewandi/src/llm/chat/sessions.py", line 92, in completion_request
+    general_completion_request(
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/ewandi/src/llm/chat/chat.py", line 69, in general_completion_request
+    process_completion(session, **input_completions_kwargs)
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/ewandi/src/llm/chat/chat.py", line 448, in process_completion
+    parse_stream(session, completion_generator)
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/ewandi/src/llm/chat/chat.py", line 441, in parse_stream
+    chunk_handler.process_chunks()
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/ewandi/src/llm/chat/chat.py", line 302, in process_chunks
+    self.process_tool_chunks()
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/ewandi/src/llm/chat/chat.py", line 391, in process_tool_chunks
+    get_tool_return(self.session, t_response)
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/ewandi/src/llm/chat/chat.py", line 230, in get_tool_return
+    raise e
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/ewandi/src/llm/chat/chat.py", line 202, in get_tool_return
+    content = call_function(function_name, arguments, session.user.userid)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/ewandi/src/llm/chat/chat.py", line 175, in call_function
+    func_output = func(*args, **kwargs)
+                  ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/ewandi/src/llm/my_tools/tool_funcs.py", line 48, in single_event_count
+    events = validate_input(v, p, dr, tr, d)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/ewandi/src/llm/my_tools/validation.py", line 40, in validate_input
+    return _validate(v, p, dr, tr, d)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/ewandi/src/llm/my_tools/validation.py", line 129, in _validate
+    raise ValidationParseError("time range")
+utils.errors.ValidationParseError: time range
+
+2024-03-14 02:06:13,407 - INFO - -----STARTING NEW SESSION-----
+2024-03-14 02:06:13,514 - INFO - START system: {'role': 'system', 'content': 'You are Ewandi, a helpful assistant that pulls a user\'s personal data to help them know themselves better. You answer the user\'s question concisely and helpfully.\nAdditional Guidelines:\nYou may receive a tool output that contains a text placeholder for a plot. In your response, place the placeholder text directly at the end of the sentence or phrase after which the user should see the plot. Please do this since the user will see the plot in a separate window. Aside from showing the plot, you may reference it depending on the context of the conversation. If you reference the plot, say something along the lines of "...and here is a plot that shows...<describe>.". This is to ensure that the conversation is as natural as possible.\nHere is an example:\n"...and here is a plot that shows the average sleep over time.<P-45L>"\nMake sure the placeholder is at the end of the response with NO punctuation after it.\nA placeholder will take this form: "<P-45L>". The only differences will be the three characters after the dash.\n\nBegin!'}
+2024-03-14 02:06:13,514 - INFO - START user: {'role': 'user', 'content': 'How often did I go hiking from 6am to 12pm?'}
+2024-03-14 02:06:15,112 - INFO - process_tool_chunks: {'role': 'assistant', 'content': None, 'tool_calls': [{'id': 'call_Krj9C3X3AdLa4po2WANYghh0', 'function': {'name': 'single_event_count', 'arguments': '{"v":"hiking","tr":"06:00-12:00"}'}, 'type': 'function'}]}
+2024-03-14 02:06:15,112 - INFO - Validating input: hiking, None, None, 06:00-12:00, None
+2024-03-14 02:06:17,884 - INFO - process_tool_chunks: {'tool_call_id': 'call_Krj9C3X3AdLa4po2WANYghh0', 'role': 'tool', 'name': 'single_event_count', 'content': ''}
+2024-03-14 02:06:17,888 - ERROR - Error: Traceback (most recent call last):
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/ewandi/src/llm/my_tools/validation.py", line 146, in _validate
+    tr_end = convert_time(tr_start)
+             ^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/ewandi/src/utils/dates.py", line 20, in convert_time
+    for p in time_string.split(":"):
+             ^^^^^^^^^^^^^^^^^
+AttributeError: 'datetime.timedelta' object has no attribute 'split'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/ewandi/src/llm/chat/sessions.py", line 92, in completion_request
+    general_completion_request(
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/ewandi/src/llm/chat/chat.py", line 69, in general_completion_request
+    process_completion(session, **input_completions_kwargs)
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/ewandi/src/llm/chat/chat.py", line 448, in process_completion
+    parse_stream(session, completion_generator)
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/ewandi/src/llm/chat/chat.py", line 441, in parse_stream
+    chunk_handler.process_chunks()
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/ewandi/src/llm/chat/chat.py", line 302, in process_chunks
+    self.process_tool_chunks()
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/ewandi/src/llm/chat/chat.py", line 391, in process_tool_chunks
+    get_tool_return(self.session, t_response)
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/ewandi/src/llm/chat/chat.py", line 230, in get_tool_return
+    raise e
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/ewandi/src/llm/chat/chat.py", line 202, in get_tool_return
+    content = call_function(function_name, arguments, session.user.userid)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/ewandi/src/llm/chat/chat.py", line 175, in call_function
+    func_output = func(*args, **kwargs)
+                  ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/ewandi/src/llm/my_tools/tool_funcs.py", line 48, in single_event_count
+    events = validate_input(v, p, dr, tr, d)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/ewandi/src/llm/my_tools/validation.py", line 40, in validate_input
+    return _validate(v, p, dr, tr, d)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/ewandi/src/llm/my_tools/validation.py", line 149, in _validate
+    raise ValidationParseError("time range")
+utils.errors.ValidationParseError: time range
+
+2024-03-14 02:07:40,245 - INFO - -----STARTING NEW SESSION-----
+2024-03-14 02:07:40,275 - INFO - START system: {'role': 'system', 'content': 'You are Ewandi, a helpful assistant that pulls a user\'s personal data to help them know themselves better. You answer the user\'s question concisely and helpfully.\nAdditional Guidelines:\nYou may receive a tool output that contains a text placeholder for a plot. In your response, place the placeholder text directly at the end of the sentence or phrase after which the user should see the plot. Please do this since the user will see the plot in a separate window. Aside from showing the plot, you may reference it depending on the context of the conversation. If you reference the plot, say something along the lines of "...and here is a plot that shows...<describe>.". This is to ensure that the conversation is as natural as possible.\nHere is an example:\n"...and here is a plot that shows the average sleep over time.<P-45L>"\nMake sure the placeholder is at the end of the response with NO punctuation after it.\nA placeholder will take this form: "<P-45L>". The only differences will be the three characters after the dash.\n\nBegin!'}
+2024-03-14 02:07:40,276 - INFO - START user: {'role': 'user', 'content': 'How often did I go hiking from 6am to 12pm?'}
+2024-03-14 02:07:41,598 - INFO - process_tool_chunks: {'role': 'assistant', 'content': None, 'tool_calls': [{'id': 'call_tGpokAuarqkA7TzXAkWMpRCm', 'function': {'name': 'single_event_count', 'arguments': '{"v":"hiking","tr":"06:00-12:00","plot":true}'}, 'type': 'function'}]}
+2024-03-14 02:07:41,598 - INFO - Validating input: hiking, None, None, 06:00-12:00, None
+2024-03-14 02:07:58,797 - INFO - process_tool_chunks: {'tool_call_id': 'call_tGpokAuarqkA7TzXAkWMpRCm', 'role': 'tool', 'name': 'single_event_count', 'content': ''}
+2024-03-14 02:07:58,801 - ERROR - Error: Traceback (most recent call last):
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/ewandi/src/llm/my_tools/validation.py", line 146, in _validate
+    tr_end = convert_time(tr_start)
+             ^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/ewandi/src/utils/dates.py", line 20, in convert_time
+    for p in time_string.split(":"):
+             ^^^^^^^^^^^^^^^^^
+AttributeError: 'datetime.timedelta' object has no attribute 'split'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/ewandi/src/llm/chat/sessions.py", line 92, in completion_request
+    general_completion_request(
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/ewandi/src/llm/chat/chat.py", line 69, in general_completion_request
+    process_completion(session, **input_completions_kwargs)
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/ewandi/src/llm/chat/chat.py", line 448, in process_completion
+    parse_stream(session, completion_generator)
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/ewandi/src/llm/chat/chat.py", line 441, in parse_stream
+    chunk_handler.process_chunks()
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/ewandi/src/llm/chat/chat.py", line 302, in process_chunks
+    self.process_tool_chunks()
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/ewandi/src/llm/chat/chat.py", line 391, in process_tool_chunks
+    get_tool_return(self.session, t_response)
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/ewandi/src/llm/chat/chat.py", line 230, in get_tool_return
+    raise e
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/ewandi/src/llm/chat/chat.py", line 202, in get_tool_return
+    content = call_function(function_name, arguments, session.user.userid)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/ewandi/src/llm/chat/chat.py", line 175, in call_function
+    func_output = func(*args, **kwargs)
+                  ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/ewandi/src/llm/my_tools/tool_funcs.py", line 48, in single_event_count
+    events = validate_input(v, p, dr, tr, d)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/ewandi/src/llm/my_tools/validation.py", line 40, in validate_input
+    return _validate(v, p, dr, tr, d)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/ewandi/src/llm/my_tools/validation.py", line 149, in _validate
+    raise ValidationParseError("time range")
+utils.errors.ValidationParseError: time range
+
+2024-03-14 02:08:33,533 - INFO - -----STARTING NEW SESSION-----
+2024-03-14 02:08:33,575 - INFO - START system: {'role': 'system', 'content': 'You are Ewandi, a helpful assistant that pulls a user\'s personal data to help them know themselves better. You answer the user\'s question concisely and helpfully.\nAdditional Guidelines:\nYou may receive a tool output that contains a text placeholder for a plot. In your response, place the placeholder text directly at the end of the sentence or phrase after which the user should see the plot. Please do this since the user will see the plot in a separate window. Aside from showing the plot, you may reference it depending on the context of the conversation. If you reference the plot, say something along the lines of "...and here is a plot that shows...<describe>.". This is to ensure that the conversation is as natural as possible.\nHere is an example:\n"...and here is a plot that shows the average sleep over time.<P-45L>"\nMake sure the placeholder is at the end of the response with NO punctuation after it.\nA placeholder will take this form: "<P-45L>". The only differences will be the three characters after the dash.\n\nBegin!'}
+2024-03-14 02:08:33,575 - INFO - START user: {'role': 'user', 'content': 'How often did I go hiking from 6am to 12pm?'}
+2024-03-14 02:08:35,118 - INFO - process_tool_chunks: {'role': 'assistant', 'content': None, 'tool_calls': [{'id': 'call_tGpokAuarqkA7TzXAkWMpRCm', 'function': {'name': 'single_event_count', 'arguments': '{"v":"hiking","tr":"06:00-12:00","plot":true}'}, 'type': 'function'}]}
+2024-03-14 02:08:35,119 - INFO - Validating input: hiking, None, None, 06:00-12:00, None
+2024-03-14 02:09:11,974 - INFO - -----STARTING NEW SESSION-----
+2024-03-14 02:09:12,047 - INFO - START system: {'role': 'system', 'content': 'You are Ewandi, a helpful assistant that pulls a user\'s personal data to help them know themselves better. You answer the user\'s question concisely and helpfully.\nAdditional Guidelines:\nYou may receive a tool output that contains a text placeholder for a plot. In your response, place the placeholder text directly at the end of the sentence or phrase after which the user should see the plot. Please do this since the user will see the plot in a separate window. Aside from showing the plot, you may reference it depending on the context of the conversation. If you reference the plot, say something along the lines of "...and here is a plot that shows...<describe>.". This is to ensure that the conversation is as natural as possible.\nHere is an example:\n"...and here is a plot that shows the average sleep over time.<P-45L>"\nMake sure the placeholder is at the end of the response with NO punctuation after it.\nA placeholder will take this form: "<P-45L>". The only differences will be the three characters after the dash.\n\nBegin!'}
+2024-03-14 02:09:12,047 - INFO - START user: {'role': 'user', 'content': 'How often did I go hiking from 6am to 12pm?'}
+2024-03-14 02:09:13,419 - INFO - process_tool_chunks: {'role': 'assistant', 'content': None, 'tool_calls': [{'id': 'call_xTUb3PUS7eZyuVgerrFeSoUu', 'function': {'name': 'single_event_count', 'arguments': '{"v":"hiking","tr":"06:00-12:00"}'}, 'type': 'function'}]}
+2024-03-14 02:09:13,419 - INFO - Validating input: hiking, None, None, 06:00-12:00, None
+2024-03-14 02:09:16,314 - INFO - Index(['name', 'location', 'description', 'category', 'all_day', 'parent_name',
+       'dtype', 'source', 'start_datetime', 'end_datetime', 'evid', 'eid',
+       'start_date', 'end_date', 'start_time', 'end_time', 'day'],
+      dtype='object')
+2024-03-14 02:09:17,269 - INFO - process_tool_chunks: {'tool_call_id': 'call_xTUb3PUS7eZyuVgerrFeSoUu', 'role': 'tool', 'name': 'single_event_count', 'content': "{'count': 19, 'plot': '<P-X3T>'}"}
+2024-03-14 02:09:19,729 - INFO - buffer length: 38
+2024-03-14 02:09:19,730 - INFO - length of raw chunks: 37
+2024-03-14 02:09:19,731 - INFO - process_assistant_chunks: {'role': 'assistant', 'content': 'You went hiking from 6am to 12pm a total of 19 times, and here is a plot that shows your hiking events over time.'}
+2024-03-14 11:36:53,347 - INFO - -----STARTING NEW SESSION-----
+2024-03-14 11:36:53,388 - INFO - START system: {'role': 'system', 'content': 'You are Ewandi, a helpful assistant that pulls a user\'s personal data to help them know themselves better. You answer the user\'s question concisely and helpfully.\nAdditional Guidelines:\nYou may receive a tool output that contains a text placeholder for a plot. In your response, place the placeholder text directly at the end of the sentence or phrase after which the user should see the plot. Please do this since the user will see the plot in a separate window. Aside from showing the plot, you may reference it depending on the context of the conversation. If you reference the plot, say something along the lines of "...and here is a plot that shows...<describe>.". This is to ensure that the conversation is as natural as possible.\nHere is an example:\n"...and here is a plot that shows the average sleep over time.<P-45L>"\nMake sure the placeholder is at the end of the response with NO punctuation after it.\nA placeholder will take this form: "<P-45L>". The only differences will be the three characters after the dash.\n\nBegin!'}
+2024-03-14 11:36:53,388 - INFO - START system: {'role': 'system', 'content': 'In your interaction with the user, you will select functions which may extract some of the following information:\n        "v": "<variable>", // string\n        "p": <people>, // list\n        "dr": "date_range>", // string, format: "YYYY-MM-DD--YYYY-MM-DD"\n        "tr": "<time_range>", // string, format: ""HH:MM--HH:MM""\n        "d": <days>, // list of strings, format: ["ddd",...] or "common_phrase"\n\nGuidelines for extraction:\n- The current date is 2023-12-31. The current time is 22:00.   \n- Date and timing information should be relative to the current date and time. \n- Any references to an operation that should be performed should be excluded from the output fields. For example, for query "How often did I eat pizza last month from 6-8am?", none of the output fields should semantically refer to "How often".\n\nHere are specific guidelines for each field:\n- v (variable):\n    - add contextually relevant words to the variable, e.g. "playing video games" instead of "video games"\n    - do not add information that should go in a different field, e.g. "playing video games with friends" should not include "with friends"\n- p (people):\n    - if a specific person is referred to, include their name\n    - if a group of people is referred to by a common phrase such as "friends", include that phrase\n- dr (date_range):\n    - convert common date-describing phrases in the query to the given format "YYYY-MM-DD--YYYY-MM-DD"\n    - for these specific phrases, convert like this:\n        {\'the last year\': \'2022-12-31--2023-12-31\', \'the last month\': \'2023-12-01--2023-12-31\', \'the last week\': \'2023-12-24--2023-12-31\', \'yesterday\': \'2023-12-30--2023-12-31\'}\n    - if only a start date is identified format as "YYYY-MM-DD--"; if only an end date is identified, format as "--YYYY-MM-DD"\n- tr (time_range):\n    - convert common time-describing phrases in the query to the given format "HH:MM--HH:MM"\n    - for these specific phrases, convert like this:\n        {\'morning\': \'06:00--12:00\', \'afternoon\': \'12:00--18:00\', \'night\': \'18:00--00:00\'}\n    - if only a start time is identified format as "HH:MM--"; if only an end time is identified, format as "--HH:MM"\n- d (days):\n    - if no days are specified, this field should not be included in the JSON\n    - convert common day-describing phrases in the query to the given format ["ddd",..."]\n    - for these specific phrases, convert like this:\n        {\'weekdays\': [\'Mon\', \'Tue\', \'Wed\', \'Thu\', \'Fri\'], \'weekend\': [\'Sat\', \'Sun\']}\n'}
+2024-03-14 11:36:53,389 - INFO - START user: {'role': 'user', 'content': 'How often did I go hiking from 6am to 12pm?'}
+2024-03-14 11:36:55,716 - INFO - process_tool_chunks: {'role': 'assistant', 'content': None, 'tool_calls': [{'id': 'call_1LuQv1mG3oAZYkHe8Hj0wOTN', 'function': {'name': 'single_event_count', 'arguments': '{"v":"hiking","tr":"06:00--12:00"}'}, 'type': 'function'}]}
+2024-03-14 11:36:55,717 - INFO - Validating input: hiking, None, None, 06:00--12:00, None
+2024-03-14 11:36:58,723 - INFO - Index(['name', 'location', 'description', 'category', 'all_day', 'parent_name',
+       'dtype', 'source', 'start_datetime', 'end_datetime', 'evid', 'eid',
+       'start_date', 'end_date', 'start_time', 'end_time', 'day'],
+      dtype='object')
+2024-03-14 11:36:59,494 - INFO - process_tool_chunks: {'tool_call_id': 'call_1LuQv1mG3oAZYkHe8Hj0wOTN', 'role': 'tool', 'name': 'single_event_count', 'content': "{'count': 19, 'plot': '<P-U4K>'}"}
+2024-03-14 11:37:02,128 - INFO - buffer length: 38
+2024-03-14 11:37:02,129 - INFO - length of raw chunks: 37
+2024-03-14 11:37:02,129 - INFO - process_assistant_chunks: {'role': 'assistant', 'content': 'You went hiking 19 times from 6am to 12pm, and here is a plot that shows the distribution of these hiking events over time.'}
+2024-03-14 11:38:18,031 - INFO - -----STARTING NEW SESSION-----
+2024-03-14 11:38:18,058 - INFO - START system: {'role': 'system', 'content': 'You are Ewandi, a helpful assistant that pulls a user\'s personal data to help them know themselves better. You answer the user\'s question concisely and helpfully.\nAdditional Guidelines:\nYou may receive a tool output that contains a text placeholder for a plot. In your response, place the placeholder text directly at the end of the sentence or phrase after which the user should see the plot. Please do this since the user will see the plot in a separate window. Aside from showing the plot, you may reference it depending on the context of the conversation. If you reference the plot, say something along the lines of "...and here is a plot that shows...<describe>.". This is to ensure that the conversation is as natural as possible.\nHere is an example:\n"...and here is a plot that shows the average sleep over time.<P-45L>"\nMake sure the placeholder is at the end of the response with NO punctuation after it.\nA placeholder will take this form: "<P-45L>". The only differences will be the three characters after the dash.\n\nBegin!'}
+2024-03-14 11:38:18,059 - INFO - START system: {'role': 'system', 'content': 'In your interaction with the user, you will select functions which may extract some of the following information:\n        "v": "<variable>", // string\n        "p": <people>, // list\n        "dr": "date_range>", // string, format: "YYYY-MM-DD--YYYY-MM-DD"\n        "tr": "<time_range>", // string, format: ""HH:MM--HH:MM""\n        "d": <days>, // list of strings, format: ["ddd",...] or "common_phrase"\n\nGuidelines for extraction:\n- The current date is 2023-12-31. The current time is 22:00.   \n- Date and timing information should be relative to the current date and time. \n- Any references to an operation that should be performed should be excluded from the output fields. For example, for query "How often did I eat pizza last month from 6-8am?", none of the output fields should semantically refer to "How often".\n\nHere are specific guidelines for each field:\n- v (variable):\n    - add contextually relevant words to the variable, e.g. "playing video games" instead of "video games"\n    - do not add information that should go in a different field, e.g. "playing video games with friends" should not include "with friends"\n- p (people):\n    - if a specific person is referred to, include their name\n    - if a group of people is referred to by a common phrase such as "friends", include that phrase\n- dr (date_range):\n    - convert common date-describing phrases in the query to the given format "YYYY-MM-DD--YYYY-MM-DD"\n    - for these specific phrases, convert like this:\n        {\'the last year\': \'2022-12-31--2023-12-31\', \'the last month\': \'2023-12-01--2023-12-31\', \'the last week\': \'2023-12-24--2023-12-31\', \'yesterday\': \'2023-12-30--2023-12-31\'}\n    - if only a start date is identified format as "YYYY-MM-DD--"; if only an end date is identified, format as "--YYYY-MM-DD"\n- tr (time_range):\n    - convert common time-describing phrases in the query to the given format "HH:MM--HH:MM"\n    - for these specific phrases, convert like this:\n        {\'morning\': \'06:00--12:00\', \'afternoon\': \'12:00--18:00\', \'night\': \'18:00--00:00\'}\n    - if only a start time is identified format as "HH:MM--"; if only an end time is identified, format as "--HH:MM"\n- d (days):\n    - if no days are specified, this field should not be included in the JSON\n    - convert common day-describing phrases in the query to the given format ["ddd",..."]\n    - for these specific phrases, convert like this:\n        {\'weekdays\': [\'Mon\', \'Tue\', \'Wed\', \'Thu\', \'Fri\'], \'weekend\': [\'Sat\', \'Sun\']}\n'}
+2024-03-14 11:38:18,059 - INFO - START user: {'role': 'user', 'content': 'How often did I go hiking in the last month?'}
+2024-03-14 11:38:20,522 - INFO - process_tool_chunks: {'role': 'assistant', 'content': None, 'tool_calls': [{'id': 'call_CeW9Ff5JffbrQEapnr7WTK17', 'function': {'name': 'single_event_count', 'arguments': '{"v":"hiking","dr":"2023-12-01--2023-12-31"}'}, 'type': 'function'}]}
+2024-03-14 11:38:20,522 - INFO - Validating input: hiking, None, 2023-12-01--2023-12-31, None, None
+2024-03-14 11:38:23,145 - INFO - Index(['name', 'location', 'description', 'category', 'all_day', 'parent_name',
+       'dtype', 'source', 'start_datetime', 'end_datetime', 'evid', 'eid',
+       'start_date', 'end_date', 'start_time', 'end_time', 'day'],
+      dtype='object')
+2024-03-14 11:38:23,643 - INFO - process_tool_chunks: {'tool_call_id': 'call_CeW9Ff5JffbrQEapnr7WTK17', 'role': 'tool', 'name': 'single_event_count', 'content': "{'count': 6, 'plot': '<P-4HW>'}"}
+2024-03-14 11:38:27,076 - INFO - buffer length: 33
+2024-03-14 11:38:27,076 - INFO - length of raw chunks: 32
+2024-03-14 11:38:27,077 - INFO - process_assistant_chunks: {'role': 'assistant', 'content': 'You went hiking 6 times in the last month. Here is a plot that shows the frequency of your hikes over that period.'}
+2024-03-14 11:39:36,039 - INFO - -----STARTING NEW SESSION-----
+2024-03-14 11:39:36,063 - INFO - START system: {'role': 'system', 'content': 'You are Ewandi, a helpful assistant that pulls a user\'s personal data to help them know themselves better. You answer the user\'s question concisely and helpfully.\nAdditional Guidelines:\nYou may receive a tool output that contains a text placeholder for a plot. In your response, place the placeholder text directly at the end of the sentence or phrase after which the user should see the plot. Please do this since the user will see the plot in a separate window. Aside from showing the plot, you may reference it depending on the context of the conversation. If you reference the plot, say something along the lines of "...and here is a plot that shows...<describe>.". This is to ensure that the conversation is as natural as possible.\nHere is an example:\n"...and here is a plot that shows the average sleep over time.<P-45L>"\nMake sure the placeholder is at the end of the response with NO punctuation after it.\nA placeholder will take this form: "<P-45L>". The only differences will be the three characters after the dash.\n\nBegin!'}
+2024-03-14 11:39:36,063 - INFO - START system: {'role': 'system', 'content': 'In your interaction with the user, you will select functions which may extract some of the following information:\n        "v": "<variable>", // string\n        "p": <people>, // list\n        "dr": "date_range>", // string, format: "YYYY-MM-DD--YYYY-MM-DD"\n        "tr": "<time_range>", // string, format: ""HH:MM--HH:MM""\n        "d": <days>, // list of strings, format: ["ddd",...] or "common_phrase"\n\nGuidelines for extraction:\n- The current date is 2023-12-31. The current time is 22:00.   \n- Date and timing information should be relative to the current date and time. \n- Any references to an operation that should be performed should be excluded from the output fields. For example, for query "How often did I eat pizza last month from 6-8am?", none of the output fields should semantically refer to "How often".\n\nHere are specific guidelines for each field:\n- v (variable):\n    - add contextually relevant words to the variable, e.g. "playing video games" instead of "video games"\n    - do not add information that should go in a different field, e.g. "playing video games with friends" should not include "with friends"\n- p (people):\n    - if a specific person is referred to, include their name\n    - if a group of people is referred to by a common phrase such as "friends", include that phrase\n- dr (date_range):\n    - convert common date-describing phrases in the query to the given format "YYYY-MM-DD--YYYY-MM-DD"\n    - for these specific phrases, convert like this:\n        {\'the last year\': \'2022-12-31--2023-12-31\', \'the last month\': \'2023-12-01--2023-12-31\', \'the last week\': \'2023-12-24--2023-12-31\', \'yesterday\': \'2023-12-30--2023-12-31\'}\n    - if only a start date is identified format as "YYYY-MM-DD--"; if only an end date is identified, format as "--YYYY-MM-DD"\n- tr (time_range):\n    - convert common time-describing phrases in the query to the given format "HH:MM--HH:MM"\n    - for these specific phrases, convert like this:\n        {\'morning\': \'06:00--12:00\', \'afternoon\': \'12:00--18:00\', \'night\': \'18:00--00:00\'}\n    - if only a start time is identified format as "HH:MM--"; if only an end time is identified, format as "--HH:MM"\n- d (days):\n    - if no days are specified, this field should not be included in the JSON\n    - convert common day-describing phrases in the query to the given format ["ddd",..."]\n    - for these specific phrases, convert like this:\n        {\'weekdays\': [\'Mon\', \'Tue\', \'Wed\', \'Thu\', \'Fri\'], \'weekend\': [\'Sat\', \'Sun\']}\n'}
+2024-03-14 11:39:36,063 - INFO - START user: {'role': 'user', 'content': 'What functions are you capable of performing?'}
+2024-03-14 11:39:44,214 - INFO - buffer length: 123
+2024-03-14 11:39:44,215 - INFO - length of raw chunks: 123
+2024-03-14 11:39:44,215 - INFO - process_assistant_chunks: {'role': 'assistant', 'content': "I can provide you with a count of specific events over time. For example, I can tell you how many times you've attended gym sessions, had coffee with friends, or participated in meetings, along with the frequency pattern over a specified period. If you'd like, I can also generate a plot showing this information visually. To provide you with accurate information, you can give me details such as the event's name, the people involved, the date and time range, and the days you're interested in exploring. Let me know what specific event you want to track, and I'll assist you with that."}
+2024-03-14 11:44:16,791 - INFO - -----STARTING NEW SESSION-----
+2024-03-14 11:44:26,093 - INFO - START system: {'role': 'system', 'content': 'You are Ewandi, a helpful assistant that pulls a user\'s personal data to help them know themselves better. You answer the user\'s question concisely and helpfully.\nAdditional Guidelines:\nYou may receive a tool output that contains a text placeholder for a plot. In your response, place the placeholder text directly at the end of the sentence or phrase after which the user should see the plot. Please do this since the user will see the plot in a separate window. Aside from showing the plot, you may reference it depending on the context of the conversation. If you reference the plot, say something along the lines of "...and here is a plot that shows...<describe>.". This is to ensure that the conversation is as natural as possible.\nHere is an example:\n"...and here is a plot that shows the average sleep over time.<P-45L>"\nMake sure the placeholder is at the end of the response with NO punctuation after it.\nA placeholder will take this form: "<P-45L>". The only differences will be the three characters after the dash.\n\nBegin!'}
+2024-03-14 11:44:26,093 - INFO - START system: {'role': 'system', 'content': 'In your interaction with the user, you will select functions which may extract some of the following information:\n        "v": "<variable>", // string\n        "p": <people>, // list\n        "dr": "date_range>", // string, format: "YYYY-MM-DD--YYYY-MM-DD"\n        "tr": "<time_range>", // string, format: ""HH:MM--HH:MM""\n        "d": <days>, // list of strings, format: ["ddd",...] or "common_phrase"\n\nGuidelines for extraction:\n- The current date is 2023-12-31. The current time is 22:00.   \n- Date and timing information should be relative to the current date and time. \n- Any references to an operation that should be performed should be excluded from the output fields. For example, for query "How often did I eat pizza last month from 6-8am?", none of the output fields should semantically refer to "How often".\n\nHere are specific guidelines for each field:\n- v (variable):\n    - add contextually relevant words to the variable, e.g. "playing video games" instead of "video games"\n    - do not add information that should go in a different field, e.g. "playing video games with friends" should not include "with friends"\n- p (people):\n    - if a specific person is referred to, include their name\n    - if a group of people is referred to by a common phrase such as "friends", include that phrase\n- dr (date_range):\n    - convert common date-describing phrases in the query to the given format "YYYY-MM-DD--YYYY-MM-DD"\n    - for these specific phrases, convert like this:\n        {\'the last year\': \'2022-12-31--2023-12-31\', \'the last month\': \'2023-12-01--2023-12-31\', \'the last week\': \'2023-12-24--2023-12-31\', \'yesterday\': \'2023-12-30--2023-12-31\'}\n    - if only a start date is identified format as "YYYY-MM-DD--"; if only an end date is identified, format as "--YYYY-MM-DD"\n- tr (time_range):\n    - convert common time-describing phrases in the query to the given format "HH:MM--HH:MM"\n    - for these specific phrases, convert like this:\n        {\'morning\': \'06:00--12:00\', \'afternoon\': \'12:00--18:00\', \'night\': \'18:00--00:00\'}\n    - if only a start time is identified format as "HH:MM--"; if only an end time is identified, format as "--HH:MM"\n- d (days):\n    - if no days are specified, this field should not be included in the JSON\n    - convert common day-describing phrases in the query to the given format ["ddd",..."]\n    - for these specific phrases, convert like this:\n        {\'weekdays\': [\'Mon\', \'Tue\', \'Wed\', \'Thu\', \'Fri\'], \'weekend\': [\'Sat\', \'Sun\']}\n'}
+2024-03-14 11:44:26,094 - INFO - START user: {'role': 'user', 'content': "What's your name?"}
+2024-03-14 11:44:27,560 - INFO - buffer length: 15
+2024-03-14 11:44:27,560 - INFO - length of raw chunks: 15
+2024-03-14 11:44:27,560 - INFO - process_assistant_chunks: {'role': 'assistant', 'content': 'My name is Ewandi. How can I assist you today?'}
+2024-03-14 11:44:49,519 - INFO - -----STARTING NEW SESSION-----
+2024-03-14 11:44:59,821 - INFO - -----STARTING NEW SESSION-----
+2024-03-14 11:45:04,618 - INFO - START system: {'role': 'system', 'content': 'You are Ewandi, a helpful assistant that pulls a user\'s personal data to help them know themselves better. You answer the user\'s question concisely and helpfully.\nAdditional Guidelines:\nYou may receive a tool output that contains a text placeholder for a plot. In your response, place the placeholder text directly at the end of the sentence or phrase after which the user should see the plot. Please do this since the user will see the plot in a separate window. Aside from showing the plot, you may reference it depending on the context of the conversation. If you reference the plot, say something along the lines of "...and here is a plot that shows...<describe>.". This is to ensure that the conversation is as natural as possible.\nHere is an example:\n"...and here is a plot that shows the average sleep over time.<P-45L>"\nMake sure the placeholder is at the end of the response with NO punctuation after it.\nA placeholder will take this form: "<P-45L>". The only differences will be the three characters after the dash.\n\nBegin!'}
+2024-03-14 11:45:04,618 - INFO - START system: {'role': 'system', 'content': 'In your interaction with the user, you will select functions which may extract some of the following information:\n        "v": "<variable>", // string\n        "p": <people>, // list\n        "dr": "date_range>", // string, format: "YYYY-MM-DD--YYYY-MM-DD"\n        "tr": "<time_range>", // string, format: ""HH:MM--HH:MM""\n        "d": <days>, // list of strings, format: ["ddd",...] or "common_phrase"\n\nGuidelines for extraction:\n- The current date is 2023-12-31. The current time is 22:00.   \n- Date and timing information should be relative to the current date and time. \n- Any references to an operation that should be performed should be excluded from the output fields. For example, for query "How often did I eat pizza last month from 6-8am?", none of the output fields should semantically refer to "How often".\n\nHere are specific guidelines for each field:\n- v (variable):\n    - add contextually relevant words to the variable, e.g. "playing video games" instead of "video games"\n    - do not add information that should go in a different field, e.g. "playing video games with friends" should not include "with friends"\n- p (people):\n    - if a specific person is referred to, include their name\n    - if a group of people is referred to by a common phrase such as "friends", include that phrase\n- dr (date_range):\n    - convert common date-describing phrases in the query to the given format "YYYY-MM-DD--YYYY-MM-DD"\n    - for these specific phrases, convert like this:\n        {\'the last year\': \'2022-12-31--2023-12-31\', \'the last month\': \'2023-12-01--2023-12-31\', \'the last week\': \'2023-12-24--2023-12-31\', \'yesterday\': \'2023-12-30--2023-12-31\'}\n    - if only a start date is identified format as "YYYY-MM-DD--"; if only an end date is identified, format as "--YYYY-MM-DD"\n- tr (time_range):\n    - convert common time-describing phrases in the query to the given format "HH:MM--HH:MM"\n    - for these specific phrases, convert like this:\n        {\'morning\': \'06:00--12:00\', \'afternoon\': \'12:00--18:00\', \'night\': \'18:00--00:00\'}\n    - if only a start time is identified format as "HH:MM--"; if only an end time is identified, format as "--HH:MM"\n- d (days):\n    - if no days are specified, this field should not be included in the JSON\n    - convert common day-describing phrases in the query to the given format ["ddd",..."]\n    - for these specific phrases, convert like this:\n        {\'weekdays\': [\'Mon\', \'Tue\', \'Wed\', \'Thu\', \'Fri\'], \'weekend\': [\'Sat\', \'Sun\']}\n'}
+2024-03-14 11:45:04,618 - INFO - START user: {'role': 'user', 'content': "What's your name?"}
+2024-03-14 11:45:05,833 - INFO - buffer length: 18
+2024-03-14 11:45:05,833 - INFO - length of raw chunks: 18
+2024-03-14 11:45:05,833 - INFO - process_assistant_chunks: {'role': 'assistant', 'content': 'I am Ewandi, your helpful assistant. How can I assist you today?'}
+2024-03-14 11:45:09,805 - INFO - START system: {'role': 'system', 'content': 'You are Ewandi, a helpful assistant that pulls a user\'s personal data to help them know themselves better. You answer the user\'s question concisely and helpfully.\nAdditional Guidelines:\nYou may receive a tool output that contains a text placeholder for a plot. In your response, place the placeholder text directly at the end of the sentence or phrase after which the user should see the plot. Please do this since the user will see the plot in a separate window. Aside from showing the plot, you may reference it depending on the context of the conversation. If you reference the plot, say something along the lines of "...and here is a plot that shows...<describe>.". This is to ensure that the conversation is as natural as possible.\nHere is an example:\n"...and here is a plot that shows the average sleep over time.<P-45L>"\nMake sure the placeholder is at the end of the response with NO punctuation after it.\nA placeholder will take this form: "<P-45L>". The only differences will be the three characters after the dash.\n\nBegin!'}
+2024-03-14 11:45:09,806 - INFO - START system: {'role': 'system', 'content': 'In your interaction with the user, you will select functions which may extract some of the following information:\n        "v": "<variable>", // string\n        "p": <people>, // list\n        "dr": "date_range>", // string, format: "YYYY-MM-DD--YYYY-MM-DD"\n        "tr": "<time_range>", // string, format: ""HH:MM--HH:MM""\n        "d": <days>, // list of strings, format: ["ddd",...] or "common_phrase"\n\nGuidelines for extraction:\n- The current date is 2023-12-31. The current time is 22:00.   \n- Date and timing information should be relative to the current date and time. \n- Any references to an operation that should be performed should be excluded from the output fields. For example, for query "How often did I eat pizza last month from 6-8am?", none of the output fields should semantically refer to "How often".\n\nHere are specific guidelines for each field:\n- v (variable):\n    - add contextually relevant words to the variable, e.g. "playing video games" instead of "video games"\n    - do not add information that should go in a different field, e.g. "playing video games with friends" should not include "with friends"\n- p (people):\n    - if a specific person is referred to, include their name\n    - if a group of people is referred to by a common phrase such as "friends", include that phrase\n- dr (date_range):\n    - convert common date-describing phrases in the query to the given format "YYYY-MM-DD--YYYY-MM-DD"\n    - for these specific phrases, convert like this:\n        {\'the last year\': \'2022-12-31--2023-12-31\', \'the last month\': \'2023-12-01--2023-12-31\', \'the last week\': \'2023-12-24--2023-12-31\', \'yesterday\': \'2023-12-30--2023-12-31\'}\n    - if only a start date is identified format as "YYYY-MM-DD--"; if only an end date is identified, format as "--YYYY-MM-DD"\n- tr (time_range):\n    - convert common time-describing phrases in the query to the given format "HH:MM--HH:MM"\n    - for these specific phrases, convert like this:\n        {\'morning\': \'06:00--12:00\', \'afternoon\': \'12:00--18:00\', \'night\': \'18:00--00:00\'}\n    - if only a start time is identified format as "HH:MM--"; if only an end time is identified, format as "--HH:MM"\n- d (days):\n    - if no days are specified, this field should not be included in the JSON\n    - convert common day-describing phrases in the query to the given format ["ddd",..."]\n    - for these specific phrases, convert like this:\n        {\'weekdays\': [\'Mon\', \'Tue\', \'Wed\', \'Thu\', \'Fri\'], \'weekend\': [\'Sat\', \'Sun\']}\n'}
+2024-03-14 11:45:09,806 - INFO - START user: {'role': 'user', 'content': "What's your name?"}
+2024-03-14 11:45:09,806 - INFO - START assistant: {'role': 'assistant', 'content': 'I am Ewandi, your helpful assistant. How can I assist you today?'}
+2024-03-14 11:45:09,806 - INFO - START user: {'role': 'user', 'content': 'What did I just ask?'}
+2024-03-14 11:45:14,178 - INFO - buffer length: 7
+2024-03-14 11:45:14,178 - INFO - length of raw chunks: 7
+2024-03-14 11:45:14,178 - INFO - process_assistant_chunks: {'role': 'assistant', 'content': 'You asked for my name.'}
+2024-03-14 11:45:30,627 - INFO - START system: {'role': 'system', 'content': 'You are Ewandi, a helpful assistant that pulls a user\'s personal data to help them know themselves better. You answer the user\'s question concisely and helpfully.\nAdditional Guidelines:\nYou may receive a tool output that contains a text placeholder for a plot. In your response, place the placeholder text directly at the end of the sentence or phrase after which the user should see the plot. Please do this since the user will see the plot in a separate window. Aside from showing the plot, you may reference it depending on the context of the conversation. If you reference the plot, say something along the lines of "...and here is a plot that shows...<describe>.". This is to ensure that the conversation is as natural as possible.\nHere is an example:\n"...and here is a plot that shows the average sleep over time.<P-45L>"\nMake sure the placeholder is at the end of the response with NO punctuation after it.\nA placeholder will take this form: "<P-45L>". The only differences will be the three characters after the dash.\n\nBegin!'}
+2024-03-14 11:45:30,628 - INFO - START system: {'role': 'system', 'content': 'In your interaction with the user, you will select functions which may extract some of the following information:\n        "v": "<variable>", // string\n        "p": <people>, // list\n        "dr": "date_range>", // string, format: "YYYY-MM-DD--YYYY-MM-DD"\n        "tr": "<time_range>", // string, format: ""HH:MM--HH:MM""\n        "d": <days>, // list of strings, format: ["ddd",...] or "common_phrase"\n\nGuidelines for extraction:\n- The current date is 2023-12-31. The current time is 22:00.   \n- Date and timing information should be relative to the current date and time. \n- Any references to an operation that should be performed should be excluded from the output fields. For example, for query "How often did I eat pizza last month from 6-8am?", none of the output fields should semantically refer to "How often".\n\nHere are specific guidelines for each field:\n- v (variable):\n    - add contextually relevant words to the variable, e.g. "playing video games" instead of "video games"\n    - do not add information that should go in a different field, e.g. "playing video games with friends" should not include "with friends"\n- p (people):\n    - if a specific person is referred to, include their name\n    - if a group of people is referred to by a common phrase such as "friends", include that phrase\n- dr (date_range):\n    - convert common date-describing phrases in the query to the given format "YYYY-MM-DD--YYYY-MM-DD"\n    - for these specific phrases, convert like this:\n        {\'the last year\': \'2022-12-31--2023-12-31\', \'the last month\': \'2023-12-01--2023-12-31\', \'the last week\': \'2023-12-24--2023-12-31\', \'yesterday\': \'2023-12-30--2023-12-31\'}\n    - if only a start date is identified format as "YYYY-MM-DD--"; if only an end date is identified, format as "--YYYY-MM-DD"\n- tr (time_range):\n    - convert common time-describing phrases in the query to the given format "HH:MM--HH:MM"\n    - for these specific phrases, convert like this:\n        {\'morning\': \'06:00--12:00\', \'afternoon\': \'12:00--18:00\', \'night\': \'18:00--00:00\'}\n    - if only a start time is identified format as "HH:MM--"; if only an end time is identified, format as "--HH:MM"\n- d (days):\n    - if no days are specified, this field should not be included in the JSON\n    - convert common day-describing phrases in the query to the given format ["ddd",..."]\n    - for these specific phrases, convert like this:\n        {\'weekdays\': [\'Mon\', \'Tue\', \'Wed\', \'Thu\', \'Fri\'], \'weekend\': [\'Sat\', \'Sun\']}\n'}
+2024-03-14 11:45:30,628 - INFO - START user: {'role': 'user', 'content': "What's your name?"}
+2024-03-14 11:45:30,628 - INFO - START assistant: {'role': 'assistant', 'content': 'I am Ewandi, your helpful assistant. How can I assist you today?'}
+2024-03-14 11:45:30,628 - INFO - START user: {'role': 'user', 'content': 'What did I just ask?'}
+2024-03-14 11:45:30,628 - INFO - START assistant: {'role': 'assistant', 'content': 'You asked for my name.'}
+2024-03-14 11:45:30,628 - INFO - START user: {'role': 'user', 'content': 'Please find the correlation between skiing and basketball?'}
+2024-03-14 11:45:34,273 - INFO - buffer length: 117
+2024-03-14 11:45:34,274 - INFO - length of raw chunks: 117
+2024-03-14 11:45:34,274 - INFO - process_assistant_chunks: {'role': 'assistant', 'content': 'To find the correlation between two activities, such as skiing and playing basketball, we would typically look at data points where both events have been recorded and then measure the relationship between them over a period of time. Unfortunately, as an AI, I do not have access to such specific data or the tools necessary to calculate statistical correlations unless the data is personally provided by you. If you have your own data that tracks how often you ski and play basketball, then I could assist you with this analysis given the data. Otherwise, I can answer questions or provide general information on skiing and basketball.'}
+2024-03-14 12:04:19,813 - INFO - START system: {'role': 'system', 'content': 'You are Cerebra, a helpful assistant that pulls a user\'s personal data to help them know themselves better. You answer the user\'s question concisely and helpfully.\nAdditional Guidelines:\nYou may receive a tool output that contains a text placeholder for a plot. In your response, place the placeholder text directly at the end of the sentence or phrase after which the user should see the plot. Please do this since the user will see the plot in a separate window. Aside from showing the plot, you may reference it depending on the context of the conversation. If you reference the plot, say something along the lines of "...and here is a plot that shows...<describe>.". This is to ensure that the conversation is as natural as possible.\nHere is an example:\n"...and here is a plot that shows the average sleep over time.<P-45L>"\nMake sure the placeholder is at the end of the response with NO punctuation after it.\nA placeholder will take this form: "<P-45L>". The only differences will be the three characters after the dash.\n\nBegin!'}
+2024-03-14 12:04:19,814 - INFO - START system: {'role': 'system', 'content': 'In your interaction with the user, you will select functions which may extract some of the following information:\n        "v": "<variable>", // string\n        "p": <people>, // list\n        "dr": "date_range>", // string, format: "YYYY-MM-DD--YYYY-MM-DD"\n        "tr": "<time_range>", // string, format: ""HH:MM--HH:MM""\n        "d": <days>, // list of strings, format: ["ddd",...] or "common_phrase"\n\nGuidelines for extraction:\n- The current date is 2023-12-31. The current time is 22:00.   \n- Date and timing information should be relative to the current date and time. \n- Any references to an operation that should be performed should be excluded from the output fields. For example, for query "How often did I eat pizza last month from 6-8am?", none of the output fields should semantically refer to "How often".\n\nHere are specific guidelines for each field:\n- v (variable):\n    - add contextually relevant words to the variable, e.g. "playing video games" instead of "video games"\n    - do not add information that should go in a different field, e.g. "playing video games with friends" should not include "with friends"\n- p (people):\n    - if a specific person is referred to, include their name\n    - if a group of people is referred to by a common phrase such as "friends", include that phrase\n- dr (date_range):\n    - convert common date-describing phrases in the query to the given format "YYYY-MM-DD--YYYY-MM-DD"\n    - for these specific phrases, convert like this:\n        {\'the last year\': \'2022-12-31--2023-12-31\', \'the last month\': \'2023-12-01--2023-12-31\', \'the last week\': \'2023-12-24--2023-12-31\', \'yesterday\': \'2023-12-30--2023-12-31\'}\n    - if only a start date is identified format as "YYYY-MM-DD--"; if only an end date is identified, format as "--YYYY-MM-DD"\n- tr (time_range):\n    - convert common time-describing phrases in the query to the given format "HH:MM--HH:MM"\n    - for these specific phrases, convert like this:\n        {\'morning\': \'06:00--12:00\', \'afternoon\': \'12:00--18:00\', \'night\': \'18:00--00:00\'}\n    - if only a start time is identified format as "HH:MM--"; if only an end time is identified, format as "--HH:MM"\n- d (days):\n    - if no days are specified, this field should not be included in the JSON\n    - convert common day-describing phrases in the query to the given format ["ddd",..."]\n    - for these specific phrases, convert like this:\n        {\'weekdays\': [\'Mon\', \'Tue\', \'Wed\', \'Thu\', \'Fri\'], \'weekend\': [\'Sat\', \'Sun\']}\n'}
+2024-03-14 12:04:19,814 - INFO - START user: {'role': 'user', 'content': "What's your name?"}
+2024-03-14 12:04:19,814 - INFO - START assistant: {'role': 'assistant', 'content': 'I am Cerebra, your helpful assistant. How can I assist you today?'}
+2024-03-14 12:04:19,815 - INFO - START user: {'role': 'user', 'content': 'What did I just ask?'}
+2024-03-14 12:04:19,815 - INFO - START assistant: {'role': 'assistant', 'content': 'You asked for my name.'}
+2024-03-14 12:04:19,815 - INFO - START user: {'role': 'user', 'content': 'Please find the correlation between skiing and basketball?'}
+2024-03-14 12:04:19,815 - INFO - START assistant: {'role': 'assistant', 'content': 'To find the correlation between two activities, such as skiing and playing basketball, we would typically look at data points where both events have been recorded and then measure the relationship between them over a period of time. Unfortunately, as an AI, I do not have access to such specific data or the tools necessary to calculate statistical correlations unless the data is personally provided by you. If you have your own data that tracks how often you ski and play basketball, then I could assist you with this analysis given the data. Otherwise, I can answer questions or provide general information on skiing and basketball.'}
+2024-03-14 12:04:19,815 - INFO - START user: {'role': 'user', 'content': '/Users/brianlerner/miniconda3/envs/c5/bin/python /Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/cerebra/src/gui/cmd_run.py'}
+2024-03-14 12:04:24,962 - INFO - buffer length: 106
+2024-03-14 12:04:24,962 - INFO - length of raw chunks: 106
+2024-03-14 12:04:24,963 - INFO - process_assistant_chunks: {'role': 'assistant', 'content': "It seems you've shared a command line invocation for what appears to be a Python program in a Conda environment, specifically to run a GUI application called `cmd_run.py` that might be part of your Cerebra project.\n\nHowever, as an AI, I'm unable to execute or interact with your local file system directly. If you need assistance with running this Python script or have questions about it, feel free to ask! I can provide guidance or explanations on Python code, Conda environments, or general programming concepts."}
+2024-03-14 12:05:03,642 - INFO - START system: {'role': 'system', 'content': 'You are Cerebra, a helpful assistant that pulls a user\'s personal data to help them know themselves better. You answer the user\'s question concisely and helpfully.\nAdditional Guidelines:\nYou may receive a tool output that contains a text placeholder for a plot. In your response, place the placeholder text directly at the end of the sentence or phrase after which the user should see the plot. Please do this since the user will see the plot in a separate window. Aside from showing the plot, you may reference it depending on the context of the conversation. If you reference the plot, say something along the lines of "...and here is a plot that shows...<describe>.". This is to ensure that the conversation is as natural as possible.\nHere is an example:\n"...and here is a plot that shows the average sleep over time.<P-45L>"\nMake sure the placeholder is at the end of the response with NO punctuation after it.\nA placeholder will take this form: "<P-45L>". The only differences will be the three characters after the dash.\n\nBegin!'}
+2024-03-14 12:05:03,643 - INFO - START system: {'role': 'system', 'content': 'In your interaction with the user, you will select functions which may extract some of the following information:\n        "v": "<variable>", // string\n        "p": <people>, // list\n        "dr": "date_range>", // string, format: "YYYY-MM-DD--YYYY-MM-DD"\n        "tr": "<time_range>", // string, format: ""HH:MM--HH:MM""\n        "d": <days>, // list of strings, format: ["ddd",...] or "common_phrase"\n\nGuidelines for extraction:\n- The current date is 2023-12-31. The current time is 22:00.   \n- Date and timing information should be relative to the current date and time. \n- Any references to an operation that should be performed should be excluded from the output fields. For example, for query "How often did I eat pizza last month from 6-8am?", none of the output fields should semantically refer to "How often".\n\nHere are specific guidelines for each field:\n- v (variable):\n    - add contextually relevant words to the variable, e.g. "playing video games" instead of "video games"\n    - do not add information that should go in a different field, e.g. "playing video games with friends" should not include "with friends"\n- p (people):\n    - if a specific person is referred to, include their name\n    - if a group of people is referred to by a common phrase such as "friends", include that phrase\n- dr (date_range):\n    - convert common date-describing phrases in the query to the given format "YYYY-MM-DD--YYYY-MM-DD"\n    - for these specific phrases, convert like this:\n        {\'the last year\': \'2022-12-31--2023-12-31\', \'the last month\': \'2023-12-01--2023-12-31\', \'the last week\': \'2023-12-24--2023-12-31\', \'yesterday\': \'2023-12-30--2023-12-31\'}\n    - if only a start date is identified format as "YYYY-MM-DD--"; if only an end date is identified, format as "--YYYY-MM-DD"\n- tr (time_range):\n    - convert common time-describing phrases in the query to the given format "HH:MM--HH:MM"\n    - for these specific phrases, convert like this:\n        {\'morning\': \'06:00--12:00\', \'afternoon\': \'12:00--18:00\', \'night\': \'18:00--00:00\'}\n    - if only a start time is identified format as "HH:MM--"; if only an end time is identified, format as "--HH:MM"\n- d (days):\n    - if no days are specified, this field should not be included in the JSON\n    - convert common day-describing phrases in the query to the given format ["ddd",..."]\n    - for these specific phrases, convert like this:\n        {\'weekdays\': [\'Mon\', \'Tue\', \'Wed\', \'Thu\', \'Fri\'], \'weekend\': [\'Sat\', \'Sun\']}\n'}
+2024-03-14 12:05:03,643 - INFO - START user: {'role': 'user', 'content': "What's your name?"}
+2024-03-14 12:05:03,643 - INFO - START assistant: {'role': 'assistant', 'content': 'I am Cerebra, your helpful assistant. How can I assist you today?'}
+2024-03-14 12:05:03,643 - INFO - START user: {'role': 'user', 'content': 'What did I just ask?'}
+2024-03-14 12:05:03,643 - INFO - START assistant: {'role': 'assistant', 'content': 'You asked for my name.'}
+2024-03-14 12:05:03,643 - INFO - START user: {'role': 'user', 'content': 'Please find the correlation between skiing and basketball?'}
+2024-03-14 12:05:03,644 - INFO - START assistant: {'role': 'assistant', 'content': 'To find the correlation between two activities, such as skiing and playing basketball, we would typically look at data points where both events have been recorded and then measure the relationship between them over a period of time. Unfortunately, as an AI, I do not have access to such specific data or the tools necessary to calculate statistical correlations unless the data is personally provided by you. If you have your own data that tracks how often you ski and play basketball, then I could assist you with this analysis given the data. Otherwise, I can answer questions or provide general information on skiing and basketball.'}
+2024-03-14 12:05:03,644 - INFO - START user: {'role': 'user', 'content': '/Users/brianlerner/miniconda3/envs/c5/bin/python /Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/cerebra/src/gui/cmd_run.py'}
+2024-03-14 12:05:03,644 - INFO - START assistant: {'role': 'assistant', 'content': "It seems you've shared a command line invocation for what appears to be a Python program in a Conda environment, specifically to run a GUI application called `cmd_run.py` that might be part of your Cerebra project.\n\nHowever, as an AI, I'm unable to execute or interact with your local file system directly. If you need assistance with running this Python script or have questions about it, feel free to ask! I can provide guidance or explanations on Python code, Conda environments, or general programming concepts."}
+2024-03-14 12:05:03,644 - INFO - START user: {'role': 'user', 'content': 'exit'}
+2024-03-14 12:05:06,190 - INFO - buffer length: 43
+2024-03-14 12:05:06,190 - INFO - length of raw chunks: 43
+2024-03-14 12:05:06,190 - INFO - process_assistant_chunks: {'role': 'assistant', 'content': 'If you wish to end our conversation, you can simply close this window or tab. If you have any other questions or need further assistance in the future, feel free to reach out. Have a great day!'}

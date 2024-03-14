@@ -1,5 +1,5 @@
 # start server
-mongod --dbpath /Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/Cerebra v2/data/db
+mongod --dbpath /Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/Ewandi v2/data/db
 
 # tips
 If Apple suspicious of mongodb, check in system prefs to allow
@@ -8,7 +8,7 @@ When working locally, I need to start the mongodb server each time I want to use
 
 # conda
 conda env create -f environment.yml -n my_env
-conda env remove --name cerebra_proto   
+conda env remove --name ewandi_proto   
 conda list --export > requirements.txt
 conda env export --name c2  > environment.yml
 

@@ -2,7 +2,8 @@ import sys
 from pathlib import Path
 
 src_dir = Path(__file__).resolve()
-while src_dir.name != "src": src_dir = src_dir.parent
+while src_dir.name != "src":
+    src_dir = src_dir.parent
 sys.path.append(str(src_dir))
 
 import json
@@ -11,7 +12,7 @@ from pathlib import Path
 
 from server import connect_to_collection
 
-profiles_dir = "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/Cerebra/data/sim/profiles"
+profiles_dir = "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/Ewandi/data/sim/profiles"
 
 
 def upsert_data(data, section, profile="llm_v1"):

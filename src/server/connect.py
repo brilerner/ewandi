@@ -5,13 +5,14 @@ import os
 
 from dotenv import load_dotenv
 from pymongo.errors import ConfigurationError
+
 # Load environment variables from .env file
 load_dotenv()
 
 # Local
 HOST = "localhost"
 PORT = 27017
-DATABASE_NAME = "CerebraDB"
+DATABASE_NAME = "EwandiDB"
 TIMEOUT_MS = 500
 
 # Atlas

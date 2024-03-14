@@ -25,7 +25,7 @@ Demo assumptions
 
 Improving method extractin
     Agents
-    - The next version of Cerebra-A will have an agent that access a small finetuned model that can rapidly create code/output that can be used to construct flexible querying.
+    - The next version of Ewandi-A will have an agent that access a small finetuned model that can rapidly create code/output that can be used to construct flexible querying.
 
     grouping
     - agent approach is better but either through embedding hacks or extraction I could group together variables (i.e.  "do x and y happen on the same time as...)
@@ -44,7 +44,7 @@ Improving method extractin
 ### To add to prompt
 
 to tell user (not in prompt)
-- in contrast to other LLM systems, Cerebra has been designed to be fast and to answer concisely
+- in contrast to other LLM systems, Ewandi has been designed to be fast and to answer concisely
 - while ot can find complex relationships, it can not handle overly complex questions or demands
 - so, keep these limitatios in mind (tell limits)
 

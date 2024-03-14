@@ -7,7 +7,7 @@
 2023-12-21 16:09:35,569:INFO: Processing stream response
 2023-12-21 16:09:36,900:ERROR: Unable to generate ChatCompletion response
 Traceback (most recent call last):
-  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/Cerebra/src/llm/framework.py", line 60, in chat_completion_request
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/Ewandi/src/llm/framework.py", line 60, in chat_completion_request
     finish_reason, full_message = recombine_chunks(chunks)
                                   ^^^^^^^^^^^^^^^^
 NameError: name 'recombine_chunks' is not defined
@@ -27,7 +27,7 @@ NameError: name 'recombine_chunks' is not defined
 2023-12-21 16:11:25,534:INFO: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 400 Bad Request"
 2023-12-21 16:11:25,537:ERROR: Unable to generate ChatCompletion response
 Traceback (most recent call last):
-  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/Cerebra/src/llm/framework.py", line 45, in chat_completion_request
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/Ewandi/src/llm/framework.py", line 45, in chat_completion_request
     response = client.chat.completions.create(
                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
   File "/Users/brianlerner/miniconda3/envs/c2/lib/python3.12/site-packages/openai/_utils/_utils.py", line 303, in wrapper
@@ -52,7 +52,7 @@ openai.BadRequestError: Error code: 400 - {'error': {'message': "'json_object' i
 2023-12-21 16:16:09,881:INFO: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 400 Bad Request"
 2023-12-21 16:16:09,884:ERROR: Unable to generate ChatCompletion response
 Traceback (most recent call last):
-  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/Cerebra/src/llm/framework.py", line 45, in chat_completion_request
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/Ewandi/src/llm/framework.py", line 45, in chat_completion_request
     response = client.chat.completions.create(
                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
   File "/Users/brianlerner/miniconda3/envs/c2/lib/python3.12/site-packages/openai/_utils/_utils.py", line 303, in wrapper
@@ -131,7 +131,7 @@ openai.BadRequestError: Error code: 400 - {'error': {'message': "'messages' must
 2023-12-21 16:30:51,992:INFO: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 404 Not Found"
 2023-12-21 16:30:51,994:ERROR: Unable to generate ChatCompletion response
 Traceback (most recent call last):
-  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/Cerebra/src/llm/framework.py", line 46, in chat_completion_request
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/Ewandi/src/llm/framework.py", line 46, in chat_completion_request
     response = client.chat.completions.create(
                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
   File "/Users/brianlerner/miniconda3/envs/c2/lib/python3.12/site-packages/openai/_utils/_utils.py", line 303, in wrapper
@@ -156,7 +156,7 @@ openai.NotFoundError: Error code: 404 - {'error': {'message': 'The model `gpt-4-
 2023-12-21 16:31:13,227:INFO: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 400 Bad Request"
 2023-12-21 16:31:13,229:ERROR: Unable to generate ChatCompletion response
 Traceback (most recent call last):
-  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/Cerebra/src/llm/framework.py", line 46, in chat_completion_request
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/Ewandi/src/llm/framework.py", line 46, in chat_completion_request
     response = client.chat.completions.create(
                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
   File "/Users/brianlerner/miniconda3/envs/c2/lib/python3.12/site-packages/openai/_utils/_utils.py", line 303, in wrapper
@@ -361,7 +361,7 @@ openai.BadRequestError: Error code: 400 - {'error': {'message': "Invalid paramet
 2023-12-21 17:30:48,735:INFO: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 400 Bad Request"
 2023-12-21 17:30:48,739:ERROR: Unable to generate ChatCompletion response
 Traceback (most recent call last):
-  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/Cerebra/src/llm/framework.py", line 46, in chat_completion_request
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/Ewandi/src/llm/framework.py", line 46, in chat_completion_request
     response = client.chat.completions.create(
                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
   File "/Users/brianlerner/miniconda3/envs/c2/lib/python3.12/site-packages/openai/_utils/_utils.py", line 303, in wrapper
@@ -440,7 +440,7 @@ openai.BadRequestError: Error code: 400 - {'error': {'message': "'messages' must
 2024-01-04 20:38:13,053:INFO: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 400 Bad Request"
 2024-01-04 20:38:13,056:ERROR: Unable to generate ChatCompletion response
 Traceback (most recent call last):
-  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/Cerebra/src/llm/framework.py", line 46, in chat_completion_request
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/Ewandi/src/llm/framework.py", line 46, in chat_completion_request
     response = client.chat.completions.create(
                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
   File "/Users/brianlerner/miniconda3/envs/c2/lib/python3.12/site-packages/openai/_utils/_utils.py", line 303, in wrapper

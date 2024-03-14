@@ -1,7 +1,9 @@
 import sys
 from pathlib import Path
 
-root_path = "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/cerebra/src"
+root_path = (
+    "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/ewandi/src"
+)
 sys.path.append(root_path)
 
 from server.search import find_nearest

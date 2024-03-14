@@ -8,7 +8,7 @@ while src_dir.name != "src":
     src_dir = src_dir.parent
 sys.path.append(str(src_dir))
 
-sim_dir = "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/cerebra/data/sim"
+sim_dir = "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/ewandi/data/sim"
 sys.path.append(sim_dir)
 
 import copy

@@ -26,6 +26,7 @@ def get_events(profile="llm_v1"):
     return data.get("events", [])
 
 
+
 def get_embeddings(model="text-embedding-3-small", profile="llm_v1"):
     section = "embeddings" + "." + model
     data = get_data(section, profile=profile)

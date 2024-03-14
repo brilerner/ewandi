@@ -1,5 +1,6 @@
 import streamlit as st
-st.set_page_config(layout="wide", page_title="Cerebra Demo")
+
+st.set_page_config(layout="wide", page_title="Ewandi Demo")
 import plotly.express as px
 from streamlit_calendar import calendar
 import numpy as np
@@ -74,24 +75,30 @@ def get_plotly_figure():
     y = np.sin(x) + np.random.normal(scale=0.2, size=x.shape)
 
     # Creating a plotly figure
-    fig = go.Figure(data=go.Scatter(x=x, y=y, mode='markers+lines', name='Sin with Noise'))
-    fig.update_layout(title='Simulated Data: Sine Wave with Noise',
-                    xaxis_title='X Axis',
-                    yaxis_title='Y Axis')
+    fig = go.Figure(
+        data=go.Scatter(x=x, y=y, mode="markers+lines", name="Sin with Noise")
+    )
+    fig.update_layout(
+        title="Simulated Data: Sine Wave with Noise",
+        xaxis_title="X Axis",
+        yaxis_title="Y Axis",
+    )
     return fig
-    
+
+
 def format_event_data(event_data):
     formatted_data = f"**Event Title:** {event_data.get('title')}\n\n"
     formatted_data += f"**Start Time:** {event_data.get('start')}\n"
     formatted_data += f"**End Time:** {event_data.get('end')}\n"
     return formatted_data
 
-def parse_callback(calendar_component):
 
+def parse_callback(calendar_component):
     if calendar_component.get("callback", "") == "eventClick":
         cb = calendar_component.get("eventClick")
         event = cb["event"]
         st.markdown(format_event_data(event))
+
 
 def show_calendar_with_output():
     col1, col2 = st.columns([2, 1])
@@ -108,6 +115,7 @@ def show_calendar_with_output():
     with col2:
         st.header("Event Details")
         parse_callback(calendar_component)
+
 
 def main():
     choice = st.sidebar.radio(
@@ -132,11 +140,10 @@ def main():
 
 def show_overview_tab():
     st.header("Overview")
-    st.write("Welcome to Cerebra...")
+    st.write("Welcome to Ewandi...")
 
 
 def show_bio_tab():
-
     col1, col2 = st.columns([0.4, 0.6])
 
     with col1:
@@ -145,10 +152,12 @@ def show_bio_tab():
 
     with col2:
         st.header("Len's Bio")
-        st.write("Len L. Mays is a junior student-athlete at Duke University, playing for the basketball team. He is currently in-season, and due to his major in Computer Science, is also taking classes. Outside of the court and classroom, Len enjoys going on hikes, playing videogames, and talking to friends, family, and his girlfriend. He has ambitions of making it to the NBA and is intent on optimizing his performance.")
+        st.write(
+            "Len L. Mays is a junior student-athlete at Duke University, playing for the basketball team. He is currently in-season, and due to his major in Computer Science, is also taking classes. Outside of the court and classroom, Len enjoys going on hikes, playing videogames, and talking to friends, family, and his girlfriend. He has ambitions of making it to the NBA and is intent on optimizing his performance."
+        )
+
 
 def show_dataset_tab():
-
     st.header("Available Data")
 
     tab1, tab2, tab3 = st.tabs(["Schedule", "Nutrition", "Survey"])
@@ -158,7 +167,7 @@ def show_dataset_tab():
 
     with tab2:
         st.write("Nutrition Placeholder")
-    
+
     with tab3:
         st.plotly_chart(get_plotly_figure())
 
@@ -167,6 +176,7 @@ def show_chatbot_tab():
     prompt = st.chat_input("Say something")
     if prompt:
         st.write(f"User has sent the following prompt: {prompt}")
+
 
 if __name__ == "__main__":
     main()

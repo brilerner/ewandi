@@ -2,13 +2,14 @@ import sys
 from pathlib import Path
 
 src_dir = Path(__file__).resolve()
-while src_dir.name != "src": src_dir = src_dir.parent
+while src_dir.name != "src":
+    src_dir = src_dir.parent
 sys.path.append(str(src_dir))
 
 
 import streamlit as st
 
-st.set_page_config(layout="wide", page_title="Cerebra Demo")
+st.set_page_config(layout="wide", page_title="Ewandi Demo")
 from streamlit_calendar import calendar
 import numpy as np
 from pathlib import Path
@@ -18,7 +19,7 @@ from utils.general import get_root
 
 from utils.io import load_json
 from viz.plot import plot_events
-from llm.chat import start_cerebra_session, cerebra_completion_request
+from llm.chat import start_ewandi_session, ewandi_completion_request
 from openai import OpenAI
 import time
 import random
@@ -32,7 +33,7 @@ events_dir = (
 
 openers = prompts.engine.openers
 # start session
-# st.session_state.session = start_cerebra_session()
+# st.session_state.session = start_ewandi_session()
 
 
 #### Dataset Tabs
@@ -156,7 +157,7 @@ def show_survey_tab():
 def show_overview_tab():
     st.header("Overview")
 
-    st.write("Welcome to Cerebra...")
+    st.write("Welcome to Ewandi...")
     st.write(display_msgs.intro)
 
 
@@ -201,7 +202,7 @@ def show_chatbot_tab():
 
     if "session" not in st.session_state:
         st.session_state["session_started"] = True
-        st.session_state["session"] = CerebraUserSession("brian")
+        st.session_state["session"] = EwandiUserSession("brian")
         session = st.session_state["session"]
     else:
         session = st.session_state["session"]
@@ -225,7 +226,7 @@ def show_chatbot_tab():
             message_placeholder = st.empty()
 
             # run request
-            message = cerebra_completion_request(
+            message = ewandi_completion_request(
                 session,
                 stream_handler=message_placeholder.markdown,
                 plot_handler=plot_to_streamlit,
@@ -250,7 +251,7 @@ def main():
         "Overview",
         "Learn about Len",
         "Explore the Data",
-        "Chat with Cerebra",
+        "Chat with Ewandi",
     ]
 
     tab_funcs = [
@@ -282,7 +283,7 @@ if __name__ == "__main__":
 # if "session" not in st.session_state:
 # logging.info(st.session_state)
 
-# st.session_state["session"] = start_cerebra_session()
+# st.session_state["session"] = start_ewandi_session()
 
 
 # with st.chat_message("user"):

@@ -12,7 +12,7 @@ load_dotenv()
 # Local
 HOST = "localhost"
 PORT = 27017
-DATABASE_NAME = "CerebraDB"
+DATABASE_NAME = "EwandiDB"
 TIMEOUT_MS = 500
 
 # Atlas
@@ -23,13 +23,10 @@ uri = os.environ["MONGO_URI"]
 
 def connect_to_db(db_loc="atlas"):
     if db_loc == "atlas":
-
         try:
             # Create a new client and connect to the server
             client = MongoClient(
-                uri, 
-                server_api=ServerApi("1"), 
-                serverSelectionTimeoutMS=TIMEOUT_MS
+                uri, server_api=ServerApi("1"), serverSelectionTimeoutMS=TIMEOUT_MS
             )
 
             client.admin.command("ping")
@@ -41,8 +38,6 @@ def connect_to_db(db_loc="atlas"):
             # this occurs when the connection is not otherwise working
             print(e)
 
-   
-
     db = client[DATABASE_NAME]
     return db
 
@@ -50,6 +45,7 @@ def connect_to_db(db_loc="atlas"):
 def connect_to_collection(collection: str = "profiles"):
     db = connect_to_db()
     return db[collection]
+
 
 if __name__ == "__main__":
     connect_to_db()

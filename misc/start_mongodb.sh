@@ -5,7 +5,7 @@
 # to run: sh start_mongodb.sh
 
 # Custom MongoDB Data Directory
-MONGO_DATA_DIR="$HOME/Library/CloudStorage/OneDrive-DukeUniversity/Code/cerebra_v2/data/db"
+MONGO_DATA_DIR="$HOME/Library/CloudStorage/OneDrive-DukeUniversity/Code/ewandi_v2/data/db"
 
 # Check if the MongoDB data directory exists, create it if it doesn't
 if [ ! -d "$MONGO_DATA_DIR" ]; then

@@ -6,6 +6,101 @@
 # "people": [<people>, // list, optional
 
 
+def system_extraction_guidelines():
+    from datetime import datetime
+    import json
+    import pandas as pd
+
+    def convert_dr_convention(current_date, days):
+        current_date_obj = pd.to_datetime(current_date)
+        start = (current_date_obj - pd.Timedelta(days=days)).strftime("%Y-%m-%d")
+        end = current_date_obj.strftime("%Y-%m-%d")
+        return f"{start}--{end}"
+
+    current_date = "2023-12-31"
+    current_time = "22:00"
+
+    time_conventions = {
+        "morning": "06:00--12:00",
+        "afternoon": "12:00--18:00",
+        "night": "18:00--00:00",
+    }
+
+    # "WD" for weekdays, "WE" for weekends.
+    day_conventions = {
+        "weekdays": ["Mon", "Tue", "Wed", "Thu", "Fri"],
+        "weekend": ["Sat", "Sun"],
+    }
+
+    dr_conventions = {
+        "the last year": convert_dr_convention(current_date, 365),
+        "the last month": convert_dr_convention(current_date, 30),
+        "the last week": convert_dr_convention(current_date, 7),
+        "yesterday": convert_dr_convention(current_date, 1),
+    }
+
+    conventions = {
+        "dr": dr_conventions,
+        "tr": time_conventions,
+        "d": day_conventions,
+    }
+
+    # if current_date is None:
+    #     current_date = datetime.now().strftime("%Y-%m-%d")
+    # if current_time is None:
+    #     current_time = datetime.now().strftime("%H:%M")
+
+    # conventions = {k: json.dumps(v, indent=2) for k, v in conventions.items()}
+
+    prompt = f"""In your interaction with the user, you will select functions which may extract some of the following information:
+        "v": "<variable>", // string
+        "p": <people>, // list
+        "dr": "date_range>", // string, format: "YYYY-MM-DD--YYYY-MM-DD"
+        "tr": "<time_range>", // string, format: ""HH:MM--HH:MM""
+        "d": <days>, // list of strings, format: ["ddd",...] or "common_phrase"
+
+Guidelines for extraction:
+- The current date is {current_date}. The current time is {current_time}.   
+- Date and timing information should be relative to the current date and time. 
+- Any references to an operation that should be performed should be excluded from the output fields. For example, for query "How often did I eat pizza last month from 6-8am?", none of the output fields should semantically refer to "How often".
+
+Here are specific guidelines for each field:
+- v (variable):
+    - add contextually relevant words to the variable, e.g. "playing video games" instead of "video games"
+    - do not add information that should go in a different field, e.g. "playing video games with friends" should not include "with friends"
+- p (people):
+    - if a specific person is referred to, include their name
+    - if a group of people is referred to by a common phrase such as "friends", include that phrase
+- dr (date_range):
+    - convert common date-describing phrases in the query to the given format "YYYY-MM-DD--YYYY-MM-DD"
+    - for these specific phrases, convert like this:
+        {conventions["dr"]}
+    - if only a start date is identified format as "YYYY-MM-DD--"; if only an end date is identified, format as "--YYYY-MM-DD"
+- tr (time_range):
+    - convert common time-describing phrases in the query to the given format "HH:MM--HH:MM"
+    - for these specific phrases, convert like this:
+        {conventions["tr"]}
+    - if only a start time is identified format as "HH:MM--"; if only an end time is identified, format as "--HH:MM"
+- d (days):
+    - if no days are specified, this field should not be included in the JSON
+    - convert common day-describing phrases in the query to the given format ["ddd",..."]
+    - for these specific phrases, convert like this:
+        {conventions["d"]}
+"""
+    return prompt
+
+
+# Here are examples:
+
+# Input: "How often did I eat pizza last month from 6-8am?"
+# Output: {{'k': 'eat pizza', 'dr': '2023-12-01--2023-12-31', 'tr': '06:00--08:00'}}
+
+# Input: "How often did I engage in hanging out with friends on weekends over the last month?"
+# Output: {{'k': 'hanging out', 'p':['friends'], 'dr': '2023-09-01--2023-09-30', 'd': ['Sat', 'Sun']}}
+
+# Go!
+
+
 def get_system(conventions, current_date=None, current_time=None):
     from datetime import datetime
     import json
@@ -65,9 +160,11 @@ Output: {{'k': 'hanging out', 'p':['friends'], 'dr': '2023-09-01--2023-09-30', '
 
 Go!
 """
-    print(prompt)
+    # print(prompt)
     return prompt
 
+
+# print(system_extraction_guidelines())
 
 #     prompt = f"""The user will input a query or directive regarding one or more variables. Extract the following information as a JSON:
 #     {{

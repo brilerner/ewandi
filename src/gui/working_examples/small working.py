@@ -2,7 +2,8 @@ import sys
 from pathlib import Path
 
 src_dir = Path(__file__).resolve()
-while src_dir.name != "src": src_dir = src_dir.parent
+while src_dir.name != "src":
+    src_dir = src_dir.parent
 sys.path.append(str(src_dir))
 
 
@@ -10,7 +11,7 @@ import streamlit as st
 
 from pathlib import Path
 import time
-from llm.chat import start_cerebra_session, cerebra_completion_request
+from llm.chat import start_ewandi_session, ewandi_completion_request
 # from openai import OpenAI
 
 # client = OpenAI()
@@ -66,7 +67,7 @@ if prompt := st.chat_input("Enter a message"):
     # with st.chat_message("assistant"):
     #     message_placeholder = st.empty()
     #     # run request
-    #     message = cerebra_completion_request(
+    #     message = ewandi_completion_request(
     #         st.session_state,
     #         # st.session_state.session,
     #         stream_handler=message_placeholder.markdown,

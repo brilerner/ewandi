@@ -8,7 +8,8 @@ import sys
 from pathlib import Path
 
 src_dir = Path(__file__).resolve()
-while src_dir.name != "src": src_dir = src_dir.parent
+while src_dir.name != "src":
+    src_dir = src_dir.parent
 sys.path.append(str(src_dir))
 from utils.viz import get_plotly_figure
 import prompts.clowngpt as PROMPTS
@@ -23,14 +24,14 @@ def main():
         "Choose a Tab",
         [
             "Overview",
-            "CerebraChat",
+            "EwandiChat",
         ],
         index=1,
     )
 
     if choice == "Overview":
         show_overview_tab()
-    if choice == "CerebraChat":
+    if choice == "EwandiChat":
         # st.write("Chatbot Placeholder")
         show_chatbot_tab()
 

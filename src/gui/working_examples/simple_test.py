@@ -2,12 +2,13 @@ import sys
 from pathlib import Path
 
 src_dir = Path(__file__).resolve()
-while src_dir.name != "src": src_dir = src_dir.parent
+while src_dir.name != "src":
+    src_dir = src_dir.parent
 sys.path.append(str(src_dir))
 
 import streamlit as st
 
-st.set_page_config(layout="wide", page_title="Cerebra Demo")
+st.set_page_config(layout="wide", page_title="Ewandi Demo")
 import plotly.express as px
 from streamlit_calendar import calendar
 import numpy as np
@@ -149,7 +150,7 @@ def main():
 
 def show_overview_tab():
     st.header("Overview")
-    st.write("Welcome to Cerebra...")
+    st.write("Welcome to Ewandi...")
 
 
 def show_bio_tab():

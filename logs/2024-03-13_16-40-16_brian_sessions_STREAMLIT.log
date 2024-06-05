@@ -1,0 +1,286 @@
+2024-03-13 16:40:16,859 - INFO - -----STARTING NEW SESSION-----
+2024-03-13 16:40:16,887 - INFO - START system: {'role': 'system', 'content': 'You are Ewandi, a helpful assistant that pulls a user\'s personal data to help them know themselves better. You answer the user\'s question concisely and helpfully.\nAdditional Guidelines:\nYou may receive a tool output that contains a text placeholder for a plot. In your response, place the placeholder text directly at the end of the sentence or phrase after which the user should see the plot. Please do this since the user will see the plot in a separate window. Aside from showing the plot, you may reference it depending on the context of the conversation. If you reference the plot, say something along the lines of "...and here is a plot that shows...<describe>.". This is to ensure that the conversation is as natural as possible.\nHere is an example:\n"...and here is a plot that shows the average sleep over time.<P-45L>"\nMake sure the placeholder is at the end of the response with NO punctuation after it.\nA placeholder will take this form: "<P-45L>". The only differences will be the three characters after the dash.\n\nBegin!'}
+2024-03-13 16:40:16,887 - INFO - START user: {'role': 'user', 'content': 'How many times did I have computer programming homework?'}
+2024-03-13 16:40:16,931 - INFO - Retrying request to /chat/completions in 0.848824 seconds
+2024-03-13 16:40:17,787 - INFO - Retrying request to /chat/completions in 1.789196 seconds
+2024-03-13 16:40:19,707 - INFO - Retrying request to /chat/completions in 0.763517 seconds
+2024-03-13 16:40:20,476 - INFO - Retrying request to /chat/completions in 1.526625 seconds
+2024-03-13 16:40:22,704 - INFO - Retrying request to /chat/completions in 0.750543 seconds
+2024-03-13 16:40:23,461 - INFO - Retrying request to /chat/completions in 1.854640 seconds
+2024-03-13 16:40:27,643 - INFO - Retrying request to /chat/completions in 0.829200 seconds
+2024-03-13 16:40:28,478 - INFO - Retrying request to /chat/completions in 1.745892 seconds
+2024-03-13 16:40:36,495 - INFO - Retrying request to /chat/completions in 0.924476 seconds
+2024-03-13 16:40:37,424 - INFO - Retrying request to /chat/completions in 1.783138 seconds
+2024-03-13 16:40:43,081 - INFO - Retrying request to /chat/completions in 0.951121 seconds
+2024-03-13 16:40:44,035 - INFO - Retrying request to /chat/completions in 1.738838 seconds
+2024-03-13 16:40:45,797 - ERROR - Error: Traceback (most recent call last):
+  File "/Users/brianlerner/miniconda3/envs/c5/lib/python3.11/site-packages/httpcore/_exceptions.py", line 8, in map_exceptions
+    yield
+  File "/Users/brianlerner/miniconda3/envs/c5/lib/python3.11/site-packages/httpcore/backends/sync.py", line 86, in connect_tcp
+    sock = socket.create_connection(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/brianlerner/miniconda3/envs/c5/lib/python3.11/socket.py", line 827, in create_connection
+    for res in getaddrinfo(host, port, 0, SOCK_STREAM):
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/brianlerner/miniconda3/envs/c5/lib/python3.11/socket.py", line 962, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+socket.gaierror: [Errno 8] nodename nor servname provided, or not known
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/brianlerner/miniconda3/envs/c5/lib/python3.11/site-packages/httpx/_transports/default.py", line 60, in map_httpcore_exceptions
+    yield
+  File "/Users/brianlerner/miniconda3/envs/c5/lib/python3.11/site-packages/httpx/_transports/default.py", line 218, in handle_request
+    resp = self._pool.handle_request(req)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/brianlerner/miniconda3/envs/c5/lib/python3.11/site-packages/httpcore/_sync/connection_pool.py", line 253, in handle_request
+    raise exc
+  File "/Users/brianlerner/miniconda3/envs/c5/lib/python3.11/site-packages/httpcore/_sync/connection_pool.py", line 237, in handle_request
+    response = connection.handle_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/brianlerner/miniconda3/envs/c5/lib/python3.11/site-packages/httpcore/_sync/connection.py", line 86, in handle_request
+    raise exc
+  File "/Users/brianlerner/miniconda3/envs/c5/lib/python3.11/site-packages/httpcore/_sync/connection.py", line 63, in handle_request
+    stream = self._connect(request)
+             ^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/brianlerner/miniconda3/envs/c5/lib/python3.11/site-packages/httpcore/_sync/connection.py", line 111, in _connect
+    stream = self._network_backend.connect_tcp(**kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/brianlerner/miniconda3/envs/c5/lib/python3.11/site-packages/httpcore/backends/sync.py", line 85, in connect_tcp
+    with map_exceptions(exc_map):
+  File "/Users/brianlerner/miniconda3/envs/c5/lib/python3.11/contextlib.py", line 158, in __exit__
+    self.gen.throw(typ, value, traceback)
+  File "/Users/brianlerner/miniconda3/envs/c5/lib/python3.11/site-packages/httpcore/_exceptions.py", line 12, in map_exceptions
+    raise to_exc(exc)
+httpcore.ConnectError: [Errno 8] nodename nor servname provided, or not known
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/brianlerner/miniconda3/envs/c5/lib/python3.11/site-packages/openai/_base_client.py", line 866, in _request
+    response = self._client.send(request, auth=self.custom_auth, stream=stream)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/brianlerner/miniconda3/envs/c5/lib/python3.11/site-packages/httpx/_client.py", line 902, in send
+    response = self._send_handling_auth(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/brianlerner/miniconda3/envs/c5/lib/python3.11/site-packages/httpx/_client.py", line 930, in _send_handling_auth
+    response = self._send_handling_redirects(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/brianlerner/miniconda3/envs/c5/lib/python3.11/site-packages/httpx/_client.py", line 967, in _send_handling_redirects
+    response = self._send_single_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/brianlerner/miniconda3/envs/c5/lib/python3.11/site-packages/httpx/_client.py", line 1003, in _send_single_request
+    response = transport.handle_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/brianlerner/miniconda3/envs/c5/lib/python3.11/site-packages/httpx/_transports/default.py", line 217, in handle_request
+    with map_httpcore_exceptions():
+  File "/Users/brianlerner/miniconda3/envs/c5/lib/python3.11/contextlib.py", line 158, in __exit__
+    self.gen.throw(typ, value, traceback)
+  File "/Users/brianlerner/miniconda3/envs/c5/lib/python3.11/site-packages/httpx/_transports/default.py", line 77, in map_httpcore_exceptions
+    raise mapped_exc(message) from exc
+httpx.ConnectError: [Errno 8] nodename nor servname provided, or not known
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/brianlerner/miniconda3/envs/c5/lib/python3.11/site-packages/httpcore/_exceptions.py", line 8, in map_exceptions
+    yield
+  File "/Users/brianlerner/miniconda3/envs/c5/lib/python3.11/site-packages/httpcore/backends/sync.py", line 86, in connect_tcp
+    sock = socket.create_connection(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/brianlerner/miniconda3/envs/c5/lib/python3.11/socket.py", line 827, in create_connection
+    for res in getaddrinfo(host, port, 0, SOCK_STREAM):
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/brianlerner/miniconda3/envs/c5/lib/python3.11/socket.py", line 962, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+socket.gaierror: [Errno 8] nodename nor servname provided, or not known
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/brianlerner/miniconda3/envs/c5/lib/python3.11/site-packages/httpx/_transports/default.py", line 60, in map_httpcore_exceptions
+    yield
+  File "/Users/brianlerner/miniconda3/envs/c5/lib/python3.11/site-packages/httpx/_transports/default.py", line 218, in handle_request
+    resp = self._pool.handle_request(req)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/brianlerner/miniconda3/envs/c5/lib/python3.11/site-packages/httpcore/_sync/connection_pool.py", line 253, in handle_request
+    raise exc
+  File "/Users/brianlerner/miniconda3/envs/c5/lib/python3.11/site-packages/httpcore/_sync/connection_pool.py", line 237, in handle_request
+    response = connection.handle_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/brianlerner/miniconda3/envs/c5/lib/python3.11/site-packages/httpcore/_sync/connection.py", line 86, in handle_request
+    raise exc
+  File "/Users/brianlerner/miniconda3/envs/c5/lib/python3.11/site-packages/httpcore/_sync/connection.py", line 63, in handle_request
+    stream = self._connect(request)
+             ^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/brianlerner/miniconda3/envs/c5/lib/python3.11/site-packages/httpcore/_sync/connection.py", line 111, in _connect
+    stream = self._network_backend.connect_tcp(**kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/brianlerner/miniconda3/envs/c5/lib/python3.11/site-packages/httpcore/backends/sync.py", line 85, in connect_tcp
+    with map_exceptions(exc_map):
+  File "/Users/brianlerner/miniconda3/envs/c5/lib/python3.11/contextlib.py", line 158, in __exit__
+    self.gen.throw(typ, value, traceback)
+  File "/Users/brianlerner/miniconda3/envs/c5/lib/python3.11/site-packages/httpcore/_exceptions.py", line 12, in map_exceptions
+    raise to_exc(exc)
+httpcore.ConnectError: [Errno 8] nodename nor servname provided, or not known
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/brianlerner/miniconda3/envs/c5/lib/python3.11/site-packages/openai/_base_client.py", line 866, in _request
+    response = self._client.send(request, auth=self.custom_auth, stream=stream)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/brianlerner/miniconda3/envs/c5/lib/python3.11/site-packages/httpx/_client.py", line 902, in send
+    response = self._send_handling_auth(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/brianlerner/miniconda3/envs/c5/lib/python3.11/site-packages/httpx/_client.py", line 930, in _send_handling_auth
+    response = self._send_handling_redirects(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/brianlerner/miniconda3/envs/c5/lib/python3.11/site-packages/httpx/_client.py", line 967, in _send_handling_redirects
+    response = self._send_single_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/brianlerner/miniconda3/envs/c5/lib/python3.11/site-packages/httpx/_client.py", line 1003, in _send_single_request
+    response = transport.handle_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/brianlerner/miniconda3/envs/c5/lib/python3.11/site-packages/httpx/_transports/default.py", line 217, in handle_request
+    with map_httpcore_exceptions():
+  File "/Users/brianlerner/miniconda3/envs/c5/lib/python3.11/contextlib.py", line 158, in __exit__
+    self.gen.throw(typ, value, traceback)
+  File "/Users/brianlerner/miniconda3/envs/c5/lib/python3.11/site-packages/httpx/_transports/default.py", line 77, in map_httpcore_exceptions
+    raise mapped_exc(message) from exc
+httpx.ConnectError: [Errno 8] nodename nor servname provided, or not known
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/brianlerner/miniconda3/envs/c5/lib/python3.11/site-packages/httpcore/_exceptions.py", line 8, in map_exceptions
+    yield
+  File "/Users/brianlerner/miniconda3/envs/c5/lib/python3.11/site-packages/httpcore/backends/sync.py", line 86, in connect_tcp
+    sock = socket.create_connection(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/brianlerner/miniconda3/envs/c5/lib/python3.11/socket.py", line 827, in create_connection
+    for res in getaddrinfo(host, port, 0, SOCK_STREAM):
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/brianlerner/miniconda3/envs/c5/lib/python3.11/socket.py", line 962, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+socket.gaierror: [Errno 8] nodename nor servname provided, or not known
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/brianlerner/miniconda3/envs/c5/lib/python3.11/site-packages/httpx/_transports/default.py", line 60, in map_httpcore_exceptions
+    yield
+  File "/Users/brianlerner/miniconda3/envs/c5/lib/python3.11/site-packages/httpx/_transports/default.py", line 218, in handle_request
+    resp = self._pool.handle_request(req)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/brianlerner/miniconda3/envs/c5/lib/python3.11/site-packages/httpcore/_sync/connection_pool.py", line 253, in handle_request
+    raise exc
+  File "/Users/brianlerner/miniconda3/envs/c5/lib/python3.11/site-packages/httpcore/_sync/connection_pool.py", line 237, in handle_request
+    response = connection.handle_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/brianlerner/miniconda3/envs/c5/lib/python3.11/site-packages/httpcore/_sync/connection.py", line 86, in handle_request
+    raise exc
+  File "/Users/brianlerner/miniconda3/envs/c5/lib/python3.11/site-packages/httpcore/_sync/connection.py", line 63, in handle_request
+    stream = self._connect(request)
+             ^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/brianlerner/miniconda3/envs/c5/lib/python3.11/site-packages/httpcore/_sync/connection.py", line 111, in _connect
+    stream = self._network_backend.connect_tcp(**kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/brianlerner/miniconda3/envs/c5/lib/python3.11/site-packages/httpcore/backends/sync.py", line 85, in connect_tcp
+    with map_exceptions(exc_map):
+  File "/Users/brianlerner/miniconda3/envs/c5/lib/python3.11/contextlib.py", line 158, in __exit__
+    self.gen.throw(typ, value, traceback)
+  File "/Users/brianlerner/miniconda3/envs/c5/lib/python3.11/site-packages/httpcore/_exceptions.py", line 12, in map_exceptions
+    raise to_exc(exc)
+httpcore.ConnectError: [Errno 8] nodename nor servname provided, or not known
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/brianlerner/miniconda3/envs/c5/lib/python3.11/site-packages/openai/_base_client.py", line 866, in _request
+    response = self._client.send(request, auth=self.custom_auth, stream=stream)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/brianlerner/miniconda3/envs/c5/lib/python3.11/site-packages/httpx/_client.py", line 902, in send
+    response = self._send_handling_auth(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/brianlerner/miniconda3/envs/c5/lib/python3.11/site-packages/httpx/_client.py", line 930, in _send_handling_auth
+    response = self._send_handling_redirects(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/brianlerner/miniconda3/envs/c5/lib/python3.11/site-packages/httpx/_client.py", line 967, in _send_handling_redirects
+    response = self._send_single_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/brianlerner/miniconda3/envs/c5/lib/python3.11/site-packages/httpx/_client.py", line 1003, in _send_single_request
+    response = transport.handle_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/brianlerner/miniconda3/envs/c5/lib/python3.11/site-packages/httpx/_transports/default.py", line 217, in handle_request
+    with map_httpcore_exceptions():
+  File "/Users/brianlerner/miniconda3/envs/c5/lib/python3.11/contextlib.py", line 158, in __exit__
+    self.gen.throw(typ, value, traceback)
+  File "/Users/brianlerner/miniconda3/envs/c5/lib/python3.11/site-packages/httpx/_transports/default.py", line 77, in map_httpcore_exceptions
+    raise mapped_exc(message) from exc
+httpx.ConnectError: [Errno 8] nodename nor servname provided, or not known
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/brianlerner/miniconda3/envs/c5/lib/python3.11/site-packages/tenacity/__init__.py", line 382, in __call__
+    result = fn(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/ewandi/src/llm/chat/chat.py", line 392, in completion_func
+    return client.chat.completions.create(**completions_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/brianlerner/miniconda3/envs/c5/lib/python3.11/site-packages/openai/_utils/_utils.py", line 301, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/brianlerner/miniconda3/envs/c5/lib/python3.11/site-packages/openai/resources/chat/completions.py", line 598, in create
+    return self._post(
+           ^^^^^^^^^^^
+  File "/Users/brianlerner/miniconda3/envs/c5/lib/python3.11/site-packages/openai/_base_client.py", line 1063, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/brianlerner/miniconda3/envs/c5/lib/python3.11/site-packages/openai/_base_client.py", line 842, in request
+    return self._request(
+           ^^^^^^^^^^^^^^
+  File "/Users/brianlerner/miniconda3/envs/c5/lib/python3.11/site-packages/openai/_base_client.py", line 898, in _request
+    return self._retry_request(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/brianlerner/miniconda3/envs/c5/lib/python3.11/site-packages/openai/_base_client.py", line 933, in _retry_request
+    return self._request(
+           ^^^^^^^^^^^^^^
+  File "/Users/brianlerner/miniconda3/envs/c5/lib/python3.11/site-packages/openai/_base_client.py", line 898, in _request
+    return self._retry_request(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/brianlerner/miniconda3/envs/c5/lib/python3.11/site-packages/openai/_base_client.py", line 933, in _retry_request
+    return self._request(
+           ^^^^^^^^^^^^^^
+  File "/Users/brianlerner/miniconda3/envs/c5/lib/python3.11/site-packages/openai/_base_client.py", line 905, in _request
+    raise APIConnectionError(request=request) from err
+openai.APIConnectionError: Connection error.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/ewandi/src/llm/chat/sessions.py", line 92, in completion_request
+    general_completion_request(
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/ewandi/src/llm/chat/chat.py", line 63, in general_completion_request
+    process_completion(session, **input_completions_kwargs)
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/ewandi/src/llm/chat/chat.py", line 421, in process_completion
+    completion_generator = prepare_completion_generator(
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/ewandi/src/llm/chat/chat.py", line 398, in prepare_completion_generator
+    return completion_func()
+           ^^^^^^^^^^^^^^^^^
+  File "/Users/brianlerner/miniconda3/envs/c5/lib/python3.11/site-packages/tenacity/__init__.py", line 289, in wrapped_f
+    return self(f, *args, **kw)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/brianlerner/miniconda3/envs/c5/lib/python3.11/site-packages/tenacity/__init__.py", line 379, in __call__
+    do = self.iter(retry_state=retry_state)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/brianlerner/miniconda3/envs/c5/lib/python3.11/site-packages/tenacity/__init__.py", line 326, in iter
+    raise retry_exc from fut.exception()
+tenacity.RetryError: RetryError[<Future at 0x1264b7ad0 state=finished raised APIConnectionError>]
+

@@ -1,0 +1,73 @@
+2024-03-14 11:46:46,053 - INFO - -----STARTING NEW SESSION-----
+2024-03-14 11:46:52,286 - INFO - Index(['name', 'description', 'category', 'all_day', 'parent_name', 'dtype',
+       'source', 'start_datetime', 'end_datetime', 'value'],
+      dtype='object')
+2024-03-14 11:46:52,909 - INFO - Index(['name', 'description', 'category', 'all_day', 'parent_name', 'dtype',
+       'source', 'start_datetime', 'end_datetime', 'value'],
+      dtype='object')
+2024-03-14 11:46:53,284 - INFO - Index(['name', 'description', 'value', 'unit', 'dtype', 'category',
+       'start_datetime', 'end_datetime', 'all_day', 'source', 'parent_name'],
+      dtype='object')
+2024-03-14 11:46:54,949 - INFO - Index(['name', 'description', 'category', 'all_day', 'parent_name', 'dtype',
+       'source', 'start_datetime', 'end_datetime', 'value'],
+      dtype='object')
+2024-03-14 11:46:55,003 - INFO - Index(['name', 'description', 'value', 'unit', 'dtype', 'category',
+       'start_datetime', 'end_datetime', 'all_day', 'source', 'parent_name'],
+      dtype='object')
+2024-03-14 11:46:56,072 - INFO - Index(['name', 'description', 'category', 'all_day', 'parent_name', 'dtype',
+       'source', 'start_datetime', 'end_datetime', 'value'],
+      dtype='object')
+2024-03-14 11:46:56,104 - INFO - Index(['name', 'description', 'value', 'unit', 'dtype', 'category',
+       'start_datetime', 'end_datetime', 'all_day', 'source', 'parent_name'],
+      dtype='object')
+2024-03-14 11:46:57,051 - INFO - Index(['name', 'description', 'category', 'all_day', 'parent_name', 'dtype',
+       'source', 'start_datetime', 'end_datetime', 'value'],
+      dtype='object')
+2024-03-14 11:46:57,085 - INFO - Index(['name', 'description', 'value', 'unit', 'dtype', 'category',
+       'start_datetime', 'end_datetime', 'all_day', 'source', 'parent_name'],
+      dtype='object')
+2024-03-14 11:46:58,059 - INFO - Index(['name', 'description', 'category', 'all_day', 'parent_name', 'dtype',
+       'source', 'start_datetime', 'end_datetime', 'value'],
+      dtype='object')
+2024-03-14 11:46:58,109 - INFO - Index(['name', 'description', 'value', 'unit', 'dtype', 'category',
+       'start_datetime', 'end_datetime', 'all_day', 'source', 'parent_name'],
+      dtype='object')
+2024-03-14 11:46:58,952 - INFO - Index(['name', 'description', 'category', 'all_day', 'parent_name', 'dtype',
+       'source', 'start_datetime', 'end_datetime', 'value'],
+      dtype='object')
+2024-03-14 11:46:58,982 - INFO - Index(['name', 'description', 'value', 'unit', 'dtype', 'category',
+       'start_datetime', 'end_datetime', 'all_day', 'source', 'parent_name'],
+      dtype='object')
+2024-03-14 11:46:59,903 - INFO - Index(['name', 'description', 'category', 'all_day', 'parent_name', 'dtype',
+       'source', 'start_datetime', 'end_datetime', 'value'],
+      dtype='object')
+2024-03-14 11:46:59,939 - INFO - Index(['name', 'description', 'value', 'unit', 'dtype', 'category',
+       'start_datetime', 'end_datetime', 'all_day', 'source', 'parent_name'],
+      dtype='object')
+2024-03-14 11:47:00,805 - INFO - Index(['name', 'description', 'category', 'all_day', 'parent_name', 'dtype',
+       'source', 'start_datetime', 'end_datetime', 'value'],
+      dtype='object')
+2024-03-14 11:47:00,849 - INFO - Index(['name', 'description', 'value', 'unit', 'dtype', 'category',
+       'start_datetime', 'end_datetime', 'all_day', 'source', 'parent_name'],
+      dtype='object')
+2024-03-14 11:47:09,047 - INFO - START system: {'role': 'system', 'content': 'You are Ewandi, a helpful assistant that pulls a user\'s personal data to help them know themselves better. You answer the user\'s question concisely and helpfully.\nAdditional Guidelines:\nYou may receive a tool output that contains a text placeholder for a plot. In your response, place the placeholder text directly at the end of the sentence or phrase after which the user should see the plot. Please do this since the user will see the plot in a separate window. Aside from showing the plot, you may reference it depending on the context of the conversation. If you reference the plot, say something along the lines of "...and here is a plot that shows...<describe>.". This is to ensure that the conversation is as natural as possible.\nHere is an example:\n"...and here is a plot that shows the average sleep over time.<P-45L>"\nMake sure the placeholder is at the end of the response with NO punctuation after it.\nA placeholder will take this form: "<P-45L>". The only differences will be the three characters after the dash.\n\nBegin!'}
+2024-03-14 11:47:09,047 - INFO - START system: {'role': 'system', 'content': 'In your interaction with the user, you will select functions which may extract some of the following information:\n        "v": "<variable>", // string\n        "p": <people>, // list\n        "dr": "date_range>", // string, format: "YYYY-MM-DD--YYYY-MM-DD"\n        "tr": "<time_range>", // string, format: ""HH:MM--HH:MM""\n        "d": <days>, // list of strings, format: ["ddd",...] or "common_phrase"\n\nGuidelines for extraction:\n- The current date is 2023-12-31. The current time is 22:00.   \n- Date and timing information should be relative to the current date and time. \n- Any references to an operation that should be performed should be excluded from the output fields. For example, for query "How often did I eat pizza last month from 6-8am?", none of the output fields should semantically refer to "How often".\n\nHere are specific guidelines for each field:\n- v (variable):\n    - add contextually relevant words to the variable, e.g. "playing video games" instead of "video games"\n    - do not add information that should go in a different field, e.g. "playing video games with friends" should not include "with friends"\n- p (people):\n    - if a specific person is referred to, include their name\n    - if a group of people is referred to by a common phrase such as "friends", include that phrase\n- dr (date_range):\n    - convert common date-describing phrases in the query to the given format "YYYY-MM-DD--YYYY-MM-DD"\n    - for these specific phrases, convert like this:\n        {\'the last year\': \'2022-12-31--2023-12-31\', \'the last month\': \'2023-12-01--2023-12-31\', \'the last week\': \'2023-12-24--2023-12-31\', \'yesterday\': \'2023-12-30--2023-12-31\'}\n    - if only a start date is identified format as "YYYY-MM-DD--"; if only an end date is identified, format as "--YYYY-MM-DD"\n- tr (time_range):\n    - convert common time-describing phrases in the query to the given format "HH:MM--HH:MM"\n    - for these specific phrases, convert like this:\n        {\'morning\': \'06:00--12:00\', \'afternoon\': \'12:00--18:00\', \'night\': \'18:00--00:00\'}\n    - if only a start time is identified format as "HH:MM--"; if only an end time is identified, format as "--HH:MM"\n- d (days):\n    - if no days are specified, this field should not be included in the JSON\n    - convert common day-describing phrases in the query to the given format ["ddd",..."]\n    - for these specific phrases, convert like this:\n        {\'weekdays\': [\'Mon\', \'Tue\', \'Wed\', \'Thu\', \'Fri\'], \'weekend\': [\'Sat\', \'Sun\']}\n'}
+2024-03-14 11:47:09,047 - INFO - START user: {'role': 'user', 'content': 'Do I like to party?'}
+2024-03-14 11:47:12,262 - INFO - buffer length: 60
+2024-03-14 11:47:12,262 - INFO - length of raw chunks: 60
+2024-03-14 11:47:12,263 - INFO - process_assistant_chunks: {'role': 'assistant', 'content': "To determine if you like to party, I would need more information about your behavior and feelings associated with parties. I can check your historical data to see how often you've attended parties. If that would help, could you specify a time period to examine, such as the last month or year?"}
+2024-03-14 11:47:19,009 - INFO - START system: {'role': 'system', 'content': 'You are Ewandi, a helpful assistant that pulls a user\'s personal data to help them know themselves better. You answer the user\'s question concisely and helpfully.\nAdditional Guidelines:\nYou may receive a tool output that contains a text placeholder for a plot. In your response, place the placeholder text directly at the end of the sentence or phrase after which the user should see the plot. Please do this since the user will see the plot in a separate window. Aside from showing the plot, you may reference it depending on the context of the conversation. If you reference the plot, say something along the lines of "...and here is a plot that shows...<describe>.". This is to ensure that the conversation is as natural as possible.\nHere is an example:\n"...and here is a plot that shows the average sleep over time.<P-45L>"\nMake sure the placeholder is at the end of the response with NO punctuation after it.\nA placeholder will take this form: "<P-45L>". The only differences will be the three characters after the dash.\n\nBegin!'}
+2024-03-14 11:47:19,010 - INFO - START system: {'role': 'system', 'content': 'In your interaction with the user, you will select functions which may extract some of the following information:\n        "v": "<variable>", // string\n        "p": <people>, // list\n        "dr": "date_range>", // string, format: "YYYY-MM-DD--YYYY-MM-DD"\n        "tr": "<time_range>", // string, format: ""HH:MM--HH:MM""\n        "d": <days>, // list of strings, format: ["ddd",...] or "common_phrase"\n\nGuidelines for extraction:\n- The current date is 2023-12-31. The current time is 22:00.   \n- Date and timing information should be relative to the current date and time. \n- Any references to an operation that should be performed should be excluded from the output fields. For example, for query "How often did I eat pizza last month from 6-8am?", none of the output fields should semantically refer to "How often".\n\nHere are specific guidelines for each field:\n- v (variable):\n    - add contextually relevant words to the variable, e.g. "playing video games" instead of "video games"\n    - do not add information that should go in a different field, e.g. "playing video games with friends" should not include "with friends"\n- p (people):\n    - if a specific person is referred to, include their name\n    - if a group of people is referred to by a common phrase such as "friends", include that phrase\n- dr (date_range):\n    - convert common date-describing phrases in the query to the given format "YYYY-MM-DD--YYYY-MM-DD"\n    - for these specific phrases, convert like this:\n        {\'the last year\': \'2022-12-31--2023-12-31\', \'the last month\': \'2023-12-01--2023-12-31\', \'the last week\': \'2023-12-24--2023-12-31\', \'yesterday\': \'2023-12-30--2023-12-31\'}\n    - if only a start date is identified format as "YYYY-MM-DD--"; if only an end date is identified, format as "--YYYY-MM-DD"\n- tr (time_range):\n    - convert common time-describing phrases in the query to the given format "HH:MM--HH:MM"\n    - for these specific phrases, convert like this:\n        {\'morning\': \'06:00--12:00\', \'afternoon\': \'12:00--18:00\', \'night\': \'18:00--00:00\'}\n    - if only a start time is identified format as "HH:MM--"; if only an end time is identified, format as "--HH:MM"\n- d (days):\n    - if no days are specified, this field should not be included in the JSON\n    - convert common day-describing phrases in the query to the given format ["ddd",..."]\n    - for these specific phrases, convert like this:\n        {\'weekdays\': [\'Mon\', \'Tue\', \'Wed\', \'Thu\', \'Fri\'], \'weekend\': [\'Sat\', \'Sun\']}\n'}
+2024-03-14 11:47:19,010 - INFO - START user: {'role': 'user', 'content': 'Do I like to party?'}
+2024-03-14 11:47:19,010 - INFO - START assistant: {'role': 'assistant', 'content': "To determine if you like to party, I would need more information about your behavior and feelings associated with parties. I can check your historical data to see how often you've attended parties. If that would help, could you specify a time period to examine, such as the last month or year?"}
+2024-03-14 11:47:19,010 - INFO - START user: {'role': 'user', 'content': 'No, I mean how often did I party?'}
+2024-03-14 11:47:20,977 - INFO - process_tool_chunks: {'role': 'assistant', 'content': None, 'tool_calls': [{'id': 'call_GvGK6xRayGEFfYeYYau3Chzq', 'function': {'name': 'single_event_count', 'arguments': '{"v":"party","plot":true}'}, 'type': 'function'}]}
+2024-03-14 11:47:20,977 - INFO - Validating input: party, None, None, None, None
+2024-03-14 11:47:23,900 - INFO - Index(['name', 'description', 'people', 'category', 'all_day', 'parent_name',
+       'dtype', 'source', 'start_datetime', 'end_datetime', 'evid', 'eid',
+       'start_date', 'end_date', 'start_time', 'end_time', 'day'],
+      dtype='object')
+2024-03-14 11:47:23,941 - INFO - process_tool_chunks: {'tool_call_id': 'call_GvGK6xRayGEFfYeYYau3Chzq', 'role': 'tool', 'name': 'single_event_count', 'content': "{'count': 12, 'plot': '<P-RQK>'}"}
+2024-03-14 11:47:26,722 - INFO - buffer length: 28
+2024-03-14 11:47:26,722 - INFO - length of raw chunks: 27
+2024-03-14 11:47:26,724 - INFO - process_assistant_chunks: {'role': 'assistant', 'content': 'You attended parties 12 times, and here is a plot that shows the frequency of parties over time.'}

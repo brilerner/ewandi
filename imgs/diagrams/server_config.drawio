@@ -25,7 +25,7 @@
         <mxCell id="zp6I06ycOG8ytDusZXST-17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="zp6I06ycOG8ytDusZXST-1" target="zp6I06ycOG8ytDusZXST-15">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="zp6I06ycOG8ytDusZXST-1" value="CerebraDB" style="rounded=0;whiteSpace=wrap;html=1;shape=process;backgroundOutline=1;" vertex="1" parent="1">
+        <mxCell id="zp6I06ycOG8ytDusZXST-1" value="EwandiDB" style="rounded=0;whiteSpace=wrap;html=1;shape=process;backgroundOutline=1;" vertex="1" parent="1">
           <mxGeometry x="270" y="190" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="zp6I06ycOG8ytDusZXST-3" value="profiles" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">

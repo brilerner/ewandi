@@ -1,3 +1,0 @@
-- rethink names
-    - actions instead of unscheduled
-    - states instead of scores

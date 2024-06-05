@@ -47,7 +47,7 @@ def handle_error(e):
         elif arg_type == "relations":
             error_msg = "Sorry, I can't find anything related to this person."
         return error_msg
-    if isinstance(e, ValidationFilterError):
+    elif isinstance(e, ValidationFilterError):
         arg_type = e.args[0]
         if arg_type == "relations":
             error_msg = "Sorry, I don't have any record of the requested events involving this person."
@@ -57,7 +57,8 @@ def handle_error(e):
             error_msg = "Sorry, I don't have any record of the requested events within this timeframe."
         elif arg_type == "days":
             error_msg = "Sorry, I don't have any record of the requested events within those days."
-    if isinstance(e, ValidationParseError):
+        return error_msg
+    elif isinstance(e, ValidationParseError):
         arg_type = e.args[0]
         if arg_type == "date range":
             error_msg = "I'm having trouble understanding the requested dates. Please try again."
@@ -67,12 +68,13 @@ def handle_error(e):
             error_msg = (
                 "I'm having trouble understanding the requested days. Please try again."
             )
+        return error_msg
 
-    if isinstance(e, ConfigurationError):
+    elif isinstance(e, ConfigurationError):
         return "Sorry, I'm having trouble connecting to the database. Please confirm your internet connection and try again."
-    if isinstance(e, ConnectionFailure):
+    elif isinstance(e, ConnectionFailure):
         return "Sorry, I'm having trouble connecting to the database. Please try again in a few moments."
-    if isinstance(e, RetryError):
+    elif isinstance(e, RetryError):
         return "Please check your internet connection and try again."
     # elif isinstance(e, NetworkError):
     #     return "I'm having network issues, please try again later."

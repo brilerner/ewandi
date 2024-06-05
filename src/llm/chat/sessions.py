@@ -9,6 +9,7 @@ sys.path.append(str(src_dir))
 import time
 import logging
 import prompts.engine as engine_prompts
+from prompts.extraction import system_extraction_guidelines
 from openai import OpenAI
 from llm.chat.messages import PrintStreamHandler, StreamlitStreamHandler
 from llm.chat.conversations import Conversation, StreamlitConversation
@@ -23,7 +24,7 @@ from utils.errors import (
 from utils.logging_setup import setup_logging
 
 
-class CerebraUser:
+class EwandiUser:
     def __init__(self, userid=None, persistent_log=False, modality="cmd"):
         self.userid = userid
         self.add_userid_if_missing()
@@ -60,13 +61,15 @@ class Session:
             self.persistent_log = True
         else:
             self.persistent_log = persistent_log
-            self.default_respond_wait_time = 0.05
+            self.default_respond_wait_time = 0.025
 
-        self.user = CerebraUser(
+        self.user = EwandiUser(
             self.userid, persistent_log=self.persistent_log, modality=self.modality
         )
         self.conversation = self.start_conversation()
         self.conversation.add_text_message("system", engine_prompts.system)
+        self.conversation.add_text_message("system", system_extraction_guidelines())
+
         self.backoff = True
         self.client = OpenAI()
         self.model = "gpt-4-1106-preview"

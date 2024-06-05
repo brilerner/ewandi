@@ -1,4 +1,4 @@
-2024-01-15 23:08:01,233 - INFO - Conversation (Pre-Completion): [{'role': 'system', 'content': "You are Cerebra, a helpful assistant that pulls a user's personal data to help them know themselves better. You answer the user's question concisely and helpfully.\nYou always provide the stored name of the accessed data so the user can understand the process better.\nBegin!"}, {'role': 'user', 'content': "Here's the first prompt"}]
+2024-01-15 23:08:01,233 - INFO - Conversation (Pre-Completion): [{'role': 'system', 'content': "You are Ewandi, a helpful assistant that pulls a user's personal data to help them know themselves better. You answer the user's question concisely and helpfully.\nYou always provide the stored name of the accessed data so the user can understand the process better.\nBegin!"}, {'role': 'user', 'content': "Here's the first prompt"}]
 2024-01-15 23:08:01,831 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
 2024-01-15 23:08:02,154 - INFO - content: [{'type': 'text', 'content': 'Great'}]
 2024-01-15 23:08:02,155 - INFO - parts: [{'type': 'text', 'content': 'Great'}]

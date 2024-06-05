@@ -2,13 +2,14 @@ import sys
 from pathlib import Path
 
 src_dir = Path(__file__).resolve()
-while src_dir.name != "src": src_dir = src_dir.parent
+while src_dir.name != "src":
+    src_dir = src_dir.parent
 sys.path.append(str(src_dir))
 
 
 import streamlit as st
 
-# st.set_page_config(layout="wide", page_title="Cerebra Demo")
+# st.set_page_config(layout="wide", page_title="Ewandi Demo")
 import plotly.express as c
 from streamlit_calendar import calendar
 import numpy as np
@@ -19,11 +20,11 @@ from utils.general import get_root
 from utils.io import load_json
 
 from viz.plot import plot_events
-from llm.chat import start_cerebra_session, cerebra_completion_request
+from llm.chat import start_ewandi_session, ewandi_completion_request
 from openai import OpenAI
 import time
 import random
-from analysis.hardcoded import person_effect_on_mood_plot
+from analysis.utils import person_effect_on_mood_plot
 # import logging
 
 profile = "llm_v1"
@@ -34,7 +35,7 @@ events_dir = (
 
 openers = prompts.engine.openers
 # start session
-# st.session_state.session = start_cerebra_session()
+# st.session_state.session = start_ewandi_session()
 
 tyrese_par = """Based off of your end of day surveys, your average mood is around 5/10. On the days you see Tyrese, you rate your mood at 3.6. You seem to be correct to be concerned about your relationship. Here's a more detailed breakdown of your mood over time."""
 
@@ -160,7 +161,7 @@ def show_survey_tab():
 def show_overview_tab():
     st.header("Overview")
 
-    st.write("Welcome to Cerebra...")
+    st.write("Welcome to Ewandi...")
     st.write(intro)
 
 
@@ -254,7 +255,7 @@ def show_chatbot_tab():
         )
 
         #     # run request
-        #     message = cerebra_completion_request(
+        #     message = ewandi_completion_request(
         #         st.session_state,
         #         # st.session_state.session,
         #         stream_handler=message_placeholder.markdown,
@@ -280,7 +281,7 @@ def main():
         "Overview",
         "Learn about Len",
         "Explore the Data",
-        "Chat with Cerebra",
+        "Chat with Ewandi",
     ]
 
     tab_funcs = [
@@ -311,7 +312,7 @@ if __name__ == "__main__":
 # if "session" not in st.session_state:
 # logging.info(st.session_state)
 
-# st.session_state["session"] = start_cerebra_session()
+# st.session_state["session"] = start_ewandi_session()
 
 
 # with st.chat_message("user"):

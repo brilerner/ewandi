@@ -1,0 +1,272 @@
+2024-03-14 01:54:23,930 - INFO - -----STARTING NEW SESSION-----
+2024-03-14 01:54:33,516 - INFO - START system: {'role': 'system', 'content': 'You are Ewandi, a helpful assistant that pulls a user\'s personal data to help them know themselves better. You answer the user\'s question concisely and helpfully.\nAdditional Guidelines:\nYou may receive a tool output that contains a text placeholder for a plot. In your response, place the placeholder text directly at the end of the sentence or phrase after which the user should see the plot. Please do this since the user will see the plot in a separate window. Aside from showing the plot, you may reference it depending on the context of the conversation. If you reference the plot, say something along the lines of "...and here is a plot that shows...<describe>.". This is to ensure that the conversation is as natural as possible.\nHere is an example:\n"...and here is a plot that shows the average sleep over time.<P-45L>"\nMake sure the placeholder is at the end of the response with NO punctuation after it.\nA placeholder will take this form: "<P-45L>". The only differences will be the three characters after the dash.\n\nBegin!'}
+2024-03-14 01:54:33,517 - INFO - START user: {'role': 'user', 'content': 'How many times have I gone hiking?'}
+2024-03-14 01:54:35,065 - INFO - process_tool_chunks: {'role': 'assistant', 'content': None, 'tool_calls': [{'id': 'call_ahybjs7XEuyvounQ3bH7p379', 'function': {'name': 'single_event_count', 'arguments': '{"v":"hiking"}'}, 'type': 'function'}]}
+2024-03-14 01:54:38,058 - INFO - Index(['name', 'location', 'description', 'category', 'all_day', 'parent_name',
+       'dtype', 'source', 'start_datetime', 'end_datetime', 'evid', 'eid',
+       'start_date', 'end_date', 'start_time', 'end_time', 'day'],
+      dtype='object')
+2024-03-14 01:54:38,500 - INFO - process_tool_chunks: {'tool_call_id': 'call_ahybjs7XEuyvounQ3bH7p379', 'role': 'tool', 'name': 'single_event_count', 'content': "{'count': 19, 'plot': '<P-NAA>'}"}
+2024-03-14 01:54:40,920 - INFO - buffer length: 32
+2024-03-14 01:54:40,920 - INFO - length of raw chunks: 31
+2024-03-14 01:54:40,922 - INFO - process_assistant_chunks: {'role': 'assistant', 'content': 'You have gone hiking a total of 19 times, and here is a plot that shows the frequency of your hikes over time.'}
+2024-03-14 01:55:01,322 - INFO - START system: {'role': 'system', 'content': 'You are Ewandi, a helpful assistant that pulls a user\'s personal data to help them know themselves better. You answer the user\'s question concisely and helpfully.\nAdditional Guidelines:\nYou may receive a tool output that contains a text placeholder for a plot. In your response, place the placeholder text directly at the end of the sentence or phrase after which the user should see the plot. Please do this since the user will see the plot in a separate window. Aside from showing the plot, you may reference it depending on the context of the conversation. If you reference the plot, say something along the lines of "...and here is a plot that shows...<describe>.". This is to ensure that the conversation is as natural as possible.\nHere is an example:\n"...and here is a plot that shows the average sleep over time.<P-45L>"\nMake sure the placeholder is at the end of the response with NO punctuation after it.\nA placeholder will take this form: "<P-45L>". The only differences will be the three characters after the dash.\n\nBegin!'}
+2024-03-14 01:55:01,322 - INFO - START user: {'role': 'user', 'content': 'How many times have I gone hiking?'}
+2024-03-14 01:55:01,322 - INFO - START assistant: {'role': 'assistant', 'content': None, 'tool_calls': [{'id': 'call_ahybjs7XEuyvounQ3bH7p379', 'function': {'name': 'single_event_count', 'arguments': '{"v":"hiking"}'}, 'type': 'function'}]}
+2024-03-14 01:55:01,322 - INFO - START tool: {'tool_call_id': 'call_ahybjs7XEuyvounQ3bH7p379', 'role': 'tool', 'name': 'single_event_count', 'content': "{'count': 19, 'plot': '<P-NAA>'}"}
+2024-03-14 01:55:01,322 - INFO - START assistant: {'role': 'assistant', 'content': 'You have gone hiking a total of 19 times, and here is a plot that shows the frequency of your hikes over time.'}
+2024-03-14 01:55:01,322 - INFO - START user: {'role': 'user', 'content': 'How many times have I done that before noon?'}
+2024-03-14 01:55:03,272 - INFO - process_tool_chunks: {'role': 'assistant', 'content': None, 'tool_calls': [{'id': 'call_c6aOHbL8ImP14i1gI4ki4wc9', 'function': {'name': 'single_event_count', 'arguments': '{"v":"hiking","tr":"00:00-12:00"}'}, 'type': 'function'}]}
+2024-03-14 01:55:05,589 - INFO - process_tool_chunks: {'tool_call_id': 'call_c6aOHbL8ImP14i1gI4ki4wc9', 'role': 'tool', 'name': 'single_event_count', 'content': ''}
+2024-03-14 01:55:05,591 - ERROR - Error: Traceback (most recent call last):
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/ewandi/src/llm/chat/sessions.py", line 92, in completion_request
+    general_completion_request(
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/ewandi/src/llm/chat/chat.py", line 69, in general_completion_request
+    process_completion(session, **input_completions_kwargs)
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/ewandi/src/llm/chat/chat.py", line 448, in process_completion
+    parse_stream(session, completion_generator)
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/ewandi/src/llm/chat/chat.py", line 441, in parse_stream
+    chunk_handler.process_chunks()
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/ewandi/src/llm/chat/chat.py", line 302, in process_chunks
+    self.process_tool_chunks()
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/ewandi/src/llm/chat/chat.py", line 391, in process_tool_chunks
+    get_tool_return(self.session, t_response)
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/ewandi/src/llm/chat/chat.py", line 230, in get_tool_return
+    raise e
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/ewandi/src/llm/chat/chat.py", line 202, in get_tool_return
+    content = call_function(function_name, arguments, session.user.userid)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/ewandi/src/llm/chat/chat.py", line 175, in call_function
+    func_output = func(*args, **kwargs)
+                  ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/ewandi/src/llm/my_tools/tool_funcs.py", line 48, in single_event_count
+    events = validate_input(v, p, dr, tr, d)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/ewandi/src/llm/my_tools/validation.py", line 38, in validate_input
+    return _validate(v, p, dr, tr, d)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/ewandi/src/llm/my_tools/validation.py", line 124, in _validate
+    raise ValidationParseError("time range")
+utils.errors.ValidationParseError: time range
+
+2024-03-14 01:55:17,357 - INFO - START system: {'role': 'system', 'content': 'You are Ewandi, a helpful assistant that pulls a user\'s personal data to help them know themselves better. You answer the user\'s question concisely and helpfully.\nAdditional Guidelines:\nYou may receive a tool output that contains a text placeholder for a plot. In your response, place the placeholder text directly at the end of the sentence or phrase after which the user should see the plot. Please do this since the user will see the plot in a separate window. Aside from showing the plot, you may reference it depending on the context of the conversation. If you reference the plot, say something along the lines of "...and here is a plot that shows...<describe>.". This is to ensure that the conversation is as natural as possible.\nHere is an example:\n"...and here is a plot that shows the average sleep over time.<P-45L>"\nMake sure the placeholder is at the end of the response with NO punctuation after it.\nA placeholder will take this form: "<P-45L>". The only differences will be the three characters after the dash.\n\nBegin!'}
+2024-03-14 01:55:17,357 - INFO - START user: {'role': 'user', 'content': 'How many times have I gone hiking?'}
+2024-03-14 01:55:17,358 - INFO - START assistant: {'role': 'assistant', 'content': None, 'tool_calls': [{'id': 'call_ahybjs7XEuyvounQ3bH7p379', 'function': {'name': 'single_event_count', 'arguments': '{"v":"hiking"}'}, 'type': 'function'}]}
+2024-03-14 01:55:17,358 - INFO - START tool: {'tool_call_id': 'call_ahybjs7XEuyvounQ3bH7p379', 'role': 'tool', 'name': 'single_event_count', 'content': "{'count': 19, 'plot': '<P-NAA>'}"}
+2024-03-14 01:55:17,358 - INFO - START assistant: {'role': 'assistant', 'content': 'You have gone hiking a total of 19 times, and here is a plot that shows the frequency of your hikes over time.'}
+2024-03-14 01:55:17,358 - INFO - START user: {'role': 'user', 'content': 'How many times have I done that before noon?'}
+2024-03-14 01:55:17,358 - INFO - START assistant: {'role': 'assistant', 'content': None, 'tool_calls': [{'id': 'call_c6aOHbL8ImP14i1gI4ki4wc9', 'function': {'name': 'single_event_count', 'arguments': '{"v":"hiking","tr":"00:00-12:00"}'}, 'type': 'function'}]}
+2024-03-14 01:55:17,358 - INFO - START tool: {'tool_call_id': 'call_c6aOHbL8ImP14i1gI4ki4wc9', 'role': 'tool', 'name': 'single_event_count', 'content': ''}
+2024-03-14 01:55:17,358 - INFO - START assistant: {'role': 'assistant', 'content': "I'm having trouble understanding the requested times. Please try again."}
+2024-03-14 01:55:17,359 - INFO - START assistant: {'role': 'assistant', 'content': "I'm having trouble understanding the requested times. Please try again."}
+2024-03-14 01:55:17,359 - INFO - START user: {'role': 'user', 'content': 'I mean before the hour of 12pm.'}
+2024-03-14 01:55:20,101 - INFO - process_tool_chunks: {'role': 'assistant', 'content': None, 'tool_calls': [{'id': 'call_QImlZulfTj1olSc43mZj0L6D', 'function': {'name': 'single_event_count', 'arguments': '{"v":"hiking","tr":"00:00-12:00"}'}, 'type': 'function'}]}
+2024-03-14 01:55:22,636 - INFO - process_tool_chunks: {'tool_call_id': 'call_QImlZulfTj1olSc43mZj0L6D', 'role': 'tool', 'name': 'single_event_count', 'content': ''}
+2024-03-14 01:55:22,637 - ERROR - Error: Traceback (most recent call last):
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/ewandi/src/llm/chat/sessions.py", line 92, in completion_request
+    general_completion_request(
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/ewandi/src/llm/chat/chat.py", line 69, in general_completion_request
+    process_completion(session, **input_completions_kwargs)
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/ewandi/src/llm/chat/chat.py", line 448, in process_completion
+    parse_stream(session, completion_generator)
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/ewandi/src/llm/chat/chat.py", line 441, in parse_stream
+    chunk_handler.process_chunks()
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/ewandi/src/llm/chat/chat.py", line 302, in process_chunks
+    self.process_tool_chunks()
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/ewandi/src/llm/chat/chat.py", line 391, in process_tool_chunks
+    get_tool_return(self.session, t_response)
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/ewandi/src/llm/chat/chat.py", line 230, in get_tool_return
+    raise e
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/ewandi/src/llm/chat/chat.py", line 202, in get_tool_return
+    content = call_function(function_name, arguments, session.user.userid)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/ewandi/src/llm/chat/chat.py", line 175, in call_function
+    func_output = func(*args, **kwargs)
+                  ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/ewandi/src/llm/my_tools/tool_funcs.py", line 48, in single_event_count
+    events = validate_input(v, p, dr, tr, d)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/ewandi/src/llm/my_tools/validation.py", line 38, in validate_input
+    return _validate(v, p, dr, tr, d)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/ewandi/src/llm/my_tools/validation.py", line 124, in _validate
+    raise ValidationParseError("time range")
+utils.errors.ValidationParseError: time range
+
+2024-03-14 01:55:39,026 - INFO - START system: {'role': 'system', 'content': 'You are Ewandi, a helpful assistant that pulls a user\'s personal data to help them know themselves better. You answer the user\'s question concisely and helpfully.\nAdditional Guidelines:\nYou may receive a tool output that contains a text placeholder for a plot. In your response, place the placeholder text directly at the end of the sentence or phrase after which the user should see the plot. Please do this since the user will see the plot in a separate window. Aside from showing the plot, you may reference it depending on the context of the conversation. If you reference the plot, say something along the lines of "...and here is a plot that shows...<describe>.". This is to ensure that the conversation is as natural as possible.\nHere is an example:\n"...and here is a plot that shows the average sleep over time.<P-45L>"\nMake sure the placeholder is at the end of the response with NO punctuation after it.\nA placeholder will take this form: "<P-45L>". The only differences will be the three characters after the dash.\n\nBegin!'}
+2024-03-14 01:55:39,027 - INFO - START user: {'role': 'user', 'content': 'How many times have I gone hiking?'}
+2024-03-14 01:55:39,027 - INFO - START assistant: {'role': 'assistant', 'content': None, 'tool_calls': [{'id': 'call_ahybjs7XEuyvounQ3bH7p379', 'function': {'name': 'single_event_count', 'arguments': '{"v":"hiking"}'}, 'type': 'function'}]}
+2024-03-14 01:55:39,027 - INFO - START tool: {'tool_call_id': 'call_ahybjs7XEuyvounQ3bH7p379', 'role': 'tool', 'name': 'single_event_count', 'content': "{'count': 19, 'plot': '<P-NAA>'}"}
+2024-03-14 01:55:39,027 - INFO - START assistant: {'role': 'assistant', 'content': 'You have gone hiking a total of 19 times, and here is a plot that shows the frequency of your hikes over time.'}
+2024-03-14 01:55:39,027 - INFO - START user: {'role': 'user', 'content': 'How many times have I done that before noon?'}
+2024-03-14 01:55:39,027 - INFO - START assistant: {'role': 'assistant', 'content': None, 'tool_calls': [{'id': 'call_c6aOHbL8ImP14i1gI4ki4wc9', 'function': {'name': 'single_event_count', 'arguments': '{"v":"hiking","tr":"00:00-12:00"}'}, 'type': 'function'}]}
+2024-03-14 01:55:39,028 - INFO - START tool: {'tool_call_id': 'call_c6aOHbL8ImP14i1gI4ki4wc9', 'role': 'tool', 'name': 'single_event_count', 'content': ''}
+2024-03-14 01:55:39,028 - INFO - START assistant: {'role': 'assistant', 'content': "I'm having trouble understanding the requested times. Please try again."}
+2024-03-14 01:55:39,028 - INFO - START assistant: {'role': 'assistant', 'content': "I'm having trouble understanding the requested times. Please try again."}
+2024-03-14 01:55:39,028 - INFO - START user: {'role': 'user', 'content': 'I mean before the hour of 12pm.'}
+2024-03-14 01:55:39,028 - INFO - START assistant: {'role': 'assistant', 'content': None, 'tool_calls': [{'id': 'call_QImlZulfTj1olSc43mZj0L6D', 'function': {'name': 'single_event_count', 'arguments': '{"v":"hiking","tr":"00:00-12:00"}'}, 'type': 'function'}]}
+2024-03-14 01:55:39,028 - INFO - START tool: {'tool_call_id': 'call_QImlZulfTj1olSc43mZj0L6D', 'role': 'tool', 'name': 'single_event_count', 'content': ''}
+2024-03-14 01:55:39,028 - INFO - START assistant: {'role': 'assistant', 'content': "I'm having trouble understanding the requested times. Please try again."}
+2024-03-14 01:55:39,028 - INFO - START assistant: {'role': 'assistant', 'content': "I'm having trouble understanding the requested times. Please try again."}
+2024-03-14 01:55:39,028 - INFO - START user: {'role': 'user', 'content': 'Ok, what about hikes in the past month?'}
+2024-03-14 01:55:40,377 - INFO - process_tool_chunks: {'role': 'assistant', 'content': None, 'tool_calls': [{'id': 'call_ZzuhQe3MMUxAxm2aJN0izP6Z', 'function': {'name': 'single_event_count', 'arguments': '{"v":"hiking","dr":"last month"}'}, 'type': 'function'}]}
+2024-03-14 01:55:43,034 - INFO - process_tool_chunks: {'tool_call_id': 'call_ZzuhQe3MMUxAxm2aJN0izP6Z', 'role': 'tool', 'name': 'single_event_count', 'content': ''}
+2024-03-14 01:55:43,035 - ERROR - Error: Traceback (most recent call last):
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/ewandi/src/llm/chat/sessions.py", line 92, in completion_request
+    general_completion_request(
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/ewandi/src/llm/chat/chat.py", line 69, in general_completion_request
+    process_completion(session, **input_completions_kwargs)
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/ewandi/src/llm/chat/chat.py", line 448, in process_completion
+    parse_stream(session, completion_generator)
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/ewandi/src/llm/chat/chat.py", line 441, in parse_stream
+    chunk_handler.process_chunks()
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/ewandi/src/llm/chat/chat.py", line 302, in process_chunks
+    self.process_tool_chunks()
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/ewandi/src/llm/chat/chat.py", line 391, in process_tool_chunks
+    get_tool_return(self.session, t_response)
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/ewandi/src/llm/chat/chat.py", line 230, in get_tool_return
+    raise e
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/ewandi/src/llm/chat/chat.py", line 202, in get_tool_return
+    content = call_function(function_name, arguments, session.user.userid)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/ewandi/src/llm/chat/chat.py", line 175, in call_function
+    func_output = func(*args, **kwargs)
+                  ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/ewandi/src/llm/my_tools/tool_funcs.py", line 48, in single_event_count
+    events = validate_input(v, p, dr, tr, d)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/ewandi/src/llm/my_tools/validation.py", line 38, in validate_input
+    return _validate(v, p, dr, tr, d)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/ewandi/src/llm/my_tools/validation.py", line 99, in _validate
+    raise ValidationParseError("date range")
+utils.errors.ValidationParseError: date range
+
+2024-03-14 01:55:56,496 - INFO - START system: {'role': 'system', 'content': 'You are Ewandi, a helpful assistant that pulls a user\'s personal data to help them know themselves better. You answer the user\'s question concisely and helpfully.\nAdditional Guidelines:\nYou may receive a tool output that contains a text placeholder for a plot. In your response, place the placeholder text directly at the end of the sentence or phrase after which the user should see the plot. Please do this since the user will see the plot in a separate window. Aside from showing the plot, you may reference it depending on the context of the conversation. If you reference the plot, say something along the lines of "...and here is a plot that shows...<describe>.". This is to ensure that the conversation is as natural as possible.\nHere is an example:\n"...and here is a plot that shows the average sleep over time.<P-45L>"\nMake sure the placeholder is at the end of the response with NO punctuation after it.\nA placeholder will take this form: "<P-45L>". The only differences will be the three characters after the dash.\n\nBegin!'}
+2024-03-14 01:55:56,497 - INFO - START user: {'role': 'user', 'content': 'How many times have I gone hiking?'}
+2024-03-14 01:55:56,497 - INFO - START assistant: {'role': 'assistant', 'content': None, 'tool_calls': [{'id': 'call_ahybjs7XEuyvounQ3bH7p379', 'function': {'name': 'single_event_count', 'arguments': '{"v":"hiking"}'}, 'type': 'function'}]}
+2024-03-14 01:55:56,497 - INFO - START tool: {'tool_call_id': 'call_ahybjs7XEuyvounQ3bH7p379', 'role': 'tool', 'name': 'single_event_count', 'content': "{'count': 19, 'plot': '<P-NAA>'}"}
+2024-03-14 01:55:56,498 - INFO - START assistant: {'role': 'assistant', 'content': 'You have gone hiking a total of 19 times, and here is a plot that shows the frequency of your hikes over time.'}
+2024-03-14 01:55:56,498 - INFO - START user: {'role': 'user', 'content': 'How many times have I done that before noon?'}
+2024-03-14 01:55:56,498 - INFO - START assistant: {'role': 'assistant', 'content': None, 'tool_calls': [{'id': 'call_c6aOHbL8ImP14i1gI4ki4wc9', 'function': {'name': 'single_event_count', 'arguments': '{"v":"hiking","tr":"00:00-12:00"}'}, 'type': 'function'}]}
+2024-03-14 01:55:56,498 - INFO - START tool: {'tool_call_id': 'call_c6aOHbL8ImP14i1gI4ki4wc9', 'role': 'tool', 'name': 'single_event_count', 'content': ''}
+2024-03-14 01:55:56,498 - INFO - START assistant: {'role': 'assistant', 'content': "I'm having trouble understanding the requested times. Please try again."}
+2024-03-14 01:55:56,498 - INFO - START assistant: {'role': 'assistant', 'content': "I'm having trouble understanding the requested times. Please try again."}
+2024-03-14 01:55:56,498 - INFO - START user: {'role': 'user', 'content': 'I mean before the hour of 12pm.'}
+2024-03-14 01:55:56,498 - INFO - START assistant: {'role': 'assistant', 'content': None, 'tool_calls': [{'id': 'call_QImlZulfTj1olSc43mZj0L6D', 'function': {'name': 'single_event_count', 'arguments': '{"v":"hiking","tr":"00:00-12:00"}'}, 'type': 'function'}]}
+2024-03-14 01:55:56,498 - INFO - START tool: {'tool_call_id': 'call_QImlZulfTj1olSc43mZj0L6D', 'role': 'tool', 'name': 'single_event_count', 'content': ''}
+2024-03-14 01:55:56,498 - INFO - START assistant: {'role': 'assistant', 'content': "I'm having trouble understanding the requested times. Please try again."}
+2024-03-14 01:55:56,498 - INFO - START assistant: {'role': 'assistant', 'content': "I'm having trouble understanding the requested times. Please try again."}
+2024-03-14 01:55:56,498 - INFO - START user: {'role': 'user', 'content': 'Ok, what about hikes in the past month?'}
+2024-03-14 01:55:56,498 - INFO - START assistant: {'role': 'assistant', 'content': None, 'tool_calls': [{'id': 'call_ZzuhQe3MMUxAxm2aJN0izP6Z', 'function': {'name': 'single_event_count', 'arguments': '{"v":"hiking","dr":"last month"}'}, 'type': 'function'}]}
+2024-03-14 01:55:56,498 - INFO - START tool: {'tool_call_id': 'call_ZzuhQe3MMUxAxm2aJN0izP6Z', 'role': 'tool', 'name': 'single_event_count', 'content': ''}
+2024-03-14 01:55:56,498 - INFO - START assistant: {'role': 'assistant', 'content': "I'm having trouble understanding the requested dates. Please try again."}
+2024-03-14 01:55:56,498 - INFO - START assistant: {'role': 'assistant', 'content': "I'm having trouble understanding the requested dates. Please try again."}
+2024-03-14 01:55:56,498 - INFO - START user: {'role': 'user', 'content': 'How many times have I gone hiking on Tuesdays?'}
+2024-03-14 01:55:57,832 - INFO - process_tool_chunks: {'role': 'assistant', 'content': None, 'tool_calls': [{'id': 'call_XBhZzj9dDEhfyeMNjjYDTm1W', 'function': {'name': 'single_event_count', 'arguments': '{"v":"hiking","d":["Tuesday"]}'}, 'type': 'function'}]}
+2024-03-14 01:56:00,237 - INFO - process_tool_chunks: {'tool_call_id': 'call_XBhZzj9dDEhfyeMNjjYDTm1W', 'role': 'tool', 'name': 'single_event_count', 'content': ''}
+2024-03-14 01:56:00,238 - ERROR - Error: Traceback (most recent call last):
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/ewandi/src/llm/chat/sessions.py", line 92, in completion_request
+    general_completion_request(
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/ewandi/src/llm/chat/chat.py", line 69, in general_completion_request
+    process_completion(session, **input_completions_kwargs)
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/ewandi/src/llm/chat/chat.py", line 448, in process_completion
+    parse_stream(session, completion_generator)
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/ewandi/src/llm/chat/chat.py", line 441, in parse_stream
+    chunk_handler.process_chunks()
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/ewandi/src/llm/chat/chat.py", line 302, in process_chunks
+    self.process_tool_chunks()
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/ewandi/src/llm/chat/chat.py", line 391, in process_tool_chunks
+    get_tool_return(self.session, t_response)
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/ewandi/src/llm/chat/chat.py", line 230, in get_tool_return
+    raise e
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/ewandi/src/llm/chat/chat.py", line 202, in get_tool_return
+    content = call_function(function_name, arguments, session.user.userid)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/ewandi/src/llm/chat/chat.py", line 175, in call_function
+    func_output = func(*args, **kwargs)
+                  ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/ewandi/src/llm/my_tools/tool_funcs.py", line 48, in single_event_count
+    events = validate_input(v, p, dr, tr, d)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/ewandi/src/llm/my_tools/validation.py", line 38, in validate_input
+    return _validate(v, p, dr, tr, d)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/ewandi/src/llm/my_tools/validation.py", line 151, in _validate
+    raise ValidationParseError("days")
+utils.errors.ValidationParseError: days
+
+2024-03-14 01:56:25,322 - INFO - START system: {'role': 'system', 'content': 'You are Ewandi, a helpful assistant that pulls a user\'s personal data to help them know themselves better. You answer the user\'s question concisely and helpfully.\nAdditional Guidelines:\nYou may receive a tool output that contains a text placeholder for a plot. In your response, place the placeholder text directly at the end of the sentence or phrase after which the user should see the plot. Please do this since the user will see the plot in a separate window. Aside from showing the plot, you may reference it depending on the context of the conversation. If you reference the plot, say something along the lines of "...and here is a plot that shows...<describe>.". This is to ensure that the conversation is as natural as possible.\nHere is an example:\n"...and here is a plot that shows the average sleep over time.<P-45L>"\nMake sure the placeholder is at the end of the response with NO punctuation after it.\nA placeholder will take this form: "<P-45L>". The only differences will be the three characters after the dash.\n\nBegin!'}
+2024-03-14 01:56:25,323 - INFO - START user: {'role': 'user', 'content': 'How many times have I gone hiking?'}
+2024-03-14 01:56:25,323 - INFO - START assistant: {'role': 'assistant', 'content': None, 'tool_calls': [{'id': 'call_ahybjs7XEuyvounQ3bH7p379', 'function': {'name': 'single_event_count', 'arguments': '{"v":"hiking"}'}, 'type': 'function'}]}
+2024-03-14 01:56:25,323 - INFO - START tool: {'tool_call_id': 'call_ahybjs7XEuyvounQ3bH7p379', 'role': 'tool', 'name': 'single_event_count', 'content': "{'count': 19, 'plot': '<P-NAA>'}"}
+2024-03-14 01:56:25,323 - INFO - START assistant: {'role': 'assistant', 'content': 'You have gone hiking a total of 19 times, and here is a plot that shows the frequency of your hikes over time.'}
+2024-03-14 01:56:25,323 - INFO - START user: {'role': 'user', 'content': 'How many times have I done that before noon?'}
+2024-03-14 01:56:25,323 - INFO - START assistant: {'role': 'assistant', 'content': None, 'tool_calls': [{'id': 'call_c6aOHbL8ImP14i1gI4ki4wc9', 'function': {'name': 'single_event_count', 'arguments': '{"v":"hiking","tr":"00:00-12:00"}'}, 'type': 'function'}]}
+2024-03-14 01:56:25,323 - INFO - START tool: {'tool_call_id': 'call_c6aOHbL8ImP14i1gI4ki4wc9', 'role': 'tool', 'name': 'single_event_count', 'content': ''}
+2024-03-14 01:56:25,323 - INFO - START assistant: {'role': 'assistant', 'content': "I'm having trouble understanding the requested times. Please try again."}
+2024-03-14 01:56:25,323 - INFO - START assistant: {'role': 'assistant', 'content': "I'm having trouble understanding the requested times. Please try again."}
+2024-03-14 01:56:25,323 - INFO - START user: {'role': 'user', 'content': 'I mean before the hour of 12pm.'}
+2024-03-14 01:56:25,323 - INFO - START assistant: {'role': 'assistant', 'content': None, 'tool_calls': [{'id': 'call_QImlZulfTj1olSc43mZj0L6D', 'function': {'name': 'single_event_count', 'arguments': '{"v":"hiking","tr":"00:00-12:00"}'}, 'type': 'function'}]}
+2024-03-14 01:56:25,323 - INFO - START tool: {'tool_call_id': 'call_QImlZulfTj1olSc43mZj0L6D', 'role': 'tool', 'name': 'single_event_count', 'content': ''}
+2024-03-14 01:56:25,323 - INFO - START assistant: {'role': 'assistant', 'content': "I'm having trouble understanding the requested times. Please try again."}
+2024-03-14 01:56:25,323 - INFO - START assistant: {'role': 'assistant', 'content': "I'm having trouble understanding the requested times. Please try again."}
+2024-03-14 01:56:25,323 - INFO - START user: {'role': 'user', 'content': 'Ok, what about hikes in the past month?'}
+2024-03-14 01:56:25,323 - INFO - START assistant: {'role': 'assistant', 'content': None, 'tool_calls': [{'id': 'call_ZzuhQe3MMUxAxm2aJN0izP6Z', 'function': {'name': 'single_event_count', 'arguments': '{"v":"hiking","dr":"last month"}'}, 'type': 'function'}]}
+2024-03-14 01:56:25,323 - INFO - START tool: {'tool_call_id': 'call_ZzuhQe3MMUxAxm2aJN0izP6Z', 'role': 'tool', 'name': 'single_event_count', 'content': ''}
+2024-03-14 01:56:25,323 - INFO - START assistant: {'role': 'assistant', 'content': "I'm having trouble understanding the requested dates. Please try again."}
+2024-03-14 01:56:25,323 - INFO - START assistant: {'role': 'assistant', 'content': "I'm having trouble understanding the requested dates. Please try again."}
+2024-03-14 01:56:25,323 - INFO - START user: {'role': 'user', 'content': 'How many times have I gone hiking on Tuesdays?'}
+2024-03-14 01:56:25,323 - INFO - START assistant: {'role': 'assistant', 'content': None, 'tool_calls': [{'id': 'call_XBhZzj9dDEhfyeMNjjYDTm1W', 'function': {'name': 'single_event_count', 'arguments': '{"v":"hiking","d":["Tuesday"]}'}, 'type': 'function'}]}
+2024-03-14 01:56:25,323 - INFO - START tool: {'tool_call_id': 'call_XBhZzj9dDEhfyeMNjjYDTm1W', 'role': 'tool', 'name': 'single_event_count', 'content': ''}
+2024-03-14 01:56:25,324 - INFO - START assistant: {'role': 'assistant', 'content': "I'm having trouble understanding the requested days. Please try again."}
+2024-03-14 01:56:25,324 - INFO - START assistant: {'role': 'assistant', 'content': "I'm having trouble understanding the requested days. Please try again."}
+2024-03-14 01:56:25,324 - INFO - START user: {'role': 'user', 'content': "Ok, let's try something else. How often have I had basketball practice?"}
+2024-03-14 01:56:26,830 - INFO - process_tool_chunks: {'role': 'assistant', 'content': None, 'tool_calls': [{'id': 'call_zQ9irwNbgXL68YgUFXpQ3H79', 'function': {'name': 'single_event_count', 'arguments': '{"v":"basketball practice"}'}, 'type': 'function'}]}
+2024-03-14 01:56:29,209 - INFO - Index(['name', 'location', 'description', 'category', 'all_day', 'parent_name',
+       'dtype', 'source', 'start_datetime', 'end_datetime', 'evid', 'eid',
+       'start_date', 'end_date', 'start_time', 'end_time', 'day'],
+      dtype='object')
+2024-03-14 01:56:29,236 - INFO - process_tool_chunks: {'tool_call_id': 'call_zQ9irwNbgXL68YgUFXpQ3H79', 'role': 'tool', 'name': 'single_event_count', 'content': "{'count': 47, 'plot': '<P-V8F>'}"}
+2024-03-14 01:56:31,995 - INFO - buffer length: 31
+2024-03-14 01:56:31,996 - INFO - length of raw chunks: 30
+2024-03-14 01:56:31,998 - INFO - process_assistant_chunks: {'role': 'assistant', 'content': 'You have had basketball practice 47 times, and here is a plot that shows the frequency of your practices over time.'}
+2024-03-14 01:56:38,279 - INFO - START system: {'role': 'system', 'content': 'You are Ewandi, a helpful assistant that pulls a user\'s personal data to help them know themselves better. You answer the user\'s question concisely and helpfully.\nAdditional Guidelines:\nYou may receive a tool output that contains a text placeholder for a plot. In your response, place the placeholder text directly at the end of the sentence or phrase after which the user should see the plot. Please do this since the user will see the plot in a separate window. Aside from showing the plot, you may reference it depending on the context of the conversation. If you reference the plot, say something along the lines of "...and here is a plot that shows...<describe>.". This is to ensure that the conversation is as natural as possible.\nHere is an example:\n"...and here is a plot that shows the average sleep over time.<P-45L>"\nMake sure the placeholder is at the end of the response with NO punctuation after it.\nA placeholder will take this form: "<P-45L>". The only differences will be the three characters after the dash.\n\nBegin!'}
+2024-03-14 01:56:38,280 - INFO - START user: {'role': 'user', 'content': 'How many times have I gone hiking?'}
+2024-03-14 01:56:38,280 - INFO - START assistant: {'role': 'assistant', 'content': None, 'tool_calls': [{'id': 'call_ahybjs7XEuyvounQ3bH7p379', 'function': {'name': 'single_event_count', 'arguments': '{"v":"hiking"}'}, 'type': 'function'}]}
+2024-03-14 01:56:38,280 - INFO - START tool: {'tool_call_id': 'call_ahybjs7XEuyvounQ3bH7p379', 'role': 'tool', 'name': 'single_event_count', 'content': "{'count': 19, 'plot': '<P-NAA>'}"}
+2024-03-14 01:56:38,280 - INFO - START assistant: {'role': 'assistant', 'content': 'You have gone hiking a total of 19 times, and here is a plot that shows the frequency of your hikes over time.'}
+2024-03-14 01:56:38,280 - INFO - START user: {'role': 'user', 'content': 'How many times have I done that before noon?'}
+2024-03-14 01:56:38,280 - INFO - START assistant: {'role': 'assistant', 'content': None, 'tool_calls': [{'id': 'call_c6aOHbL8ImP14i1gI4ki4wc9', 'function': {'name': 'single_event_count', 'arguments': '{"v":"hiking","tr":"00:00-12:00"}'}, 'type': 'function'}]}
+2024-03-14 01:56:38,280 - INFO - START tool: {'tool_call_id': 'call_c6aOHbL8ImP14i1gI4ki4wc9', 'role': 'tool', 'name': 'single_event_count', 'content': ''}
+2024-03-14 01:56:38,280 - INFO - START assistant: {'role': 'assistant', 'content': "I'm having trouble understanding the requested times. Please try again."}
+2024-03-14 01:56:38,281 - INFO - START assistant: {'role': 'assistant', 'content': "I'm having trouble understanding the requested times. Please try again."}
+2024-03-14 01:56:38,281 - INFO - START user: {'role': 'user', 'content': 'I mean before the hour of 12pm.'}
+2024-03-14 01:56:38,281 - INFO - START assistant: {'role': 'assistant', 'content': None, 'tool_calls': [{'id': 'call_QImlZulfTj1olSc43mZj0L6D', 'function': {'name': 'single_event_count', 'arguments': '{"v":"hiking","tr":"00:00-12:00"}'}, 'type': 'function'}]}
+2024-03-14 01:56:38,281 - INFO - START tool: {'tool_call_id': 'call_QImlZulfTj1olSc43mZj0L6D', 'role': 'tool', 'name': 'single_event_count', 'content': ''}
+2024-03-14 01:56:38,281 - INFO - START assistant: {'role': 'assistant', 'content': "I'm having trouble understanding the requested times. Please try again."}
+2024-03-14 01:56:38,281 - INFO - START assistant: {'role': 'assistant', 'content': "I'm having trouble understanding the requested times. Please try again."}
+2024-03-14 01:56:38,281 - INFO - START user: {'role': 'user', 'content': 'Ok, what about hikes in the past month?'}
+2024-03-14 01:56:38,281 - INFO - START assistant: {'role': 'assistant', 'content': None, 'tool_calls': [{'id': 'call_ZzuhQe3MMUxAxm2aJN0izP6Z', 'function': {'name': 'single_event_count', 'arguments': '{"v":"hiking","dr":"last month"}'}, 'type': 'function'}]}
+2024-03-14 01:56:38,281 - INFO - START tool: {'tool_call_id': 'call_ZzuhQe3MMUxAxm2aJN0izP6Z', 'role': 'tool', 'name': 'single_event_count', 'content': ''}
+2024-03-14 01:56:38,281 - INFO - START assistant: {'role': 'assistant', 'content': "I'm having trouble understanding the requested dates. Please try again."}
+2024-03-14 01:56:38,281 - INFO - START assistant: {'role': 'assistant', 'content': "I'm having trouble understanding the requested dates. Please try again."}
+2024-03-14 01:56:38,281 - INFO - START user: {'role': 'user', 'content': 'How many times have I gone hiking on Tuesdays?'}
+2024-03-14 01:56:38,281 - INFO - START assistant: {'role': 'assistant', 'content': None, 'tool_calls': [{'id': 'call_XBhZzj9dDEhfyeMNjjYDTm1W', 'function': {'name': 'single_event_count', 'arguments': '{"v":"hiking","d":["Tuesday"]}'}, 'type': 'function'}]}
+2024-03-14 01:56:38,281 - INFO - START tool: {'tool_call_id': 'call_XBhZzj9dDEhfyeMNjjYDTm1W', 'role': 'tool', 'name': 'single_event_count', 'content': ''}
+2024-03-14 01:56:38,281 - INFO - START assistant: {'role': 'assistant', 'content': "I'm having trouble understanding the requested days. Please try again."}
+2024-03-14 01:56:38,281 - INFO - START assistant: {'role': 'assistant', 'content': "I'm having trouble understanding the requested days. Please try again."}
+2024-03-14 01:56:38,281 - INFO - START user: {'role': 'user', 'content': "Ok, let's try something else. How often have I had basketball practice?"}
+2024-03-14 01:56:38,281 - INFO - START assistant: {'role': 'assistant', 'content': None, 'tool_calls': [{'id': 'call_zQ9irwNbgXL68YgUFXpQ3H79', 'function': {'name': 'single_event_count', 'arguments': '{"v":"basketball practice"}'}, 'type': 'function'}]}
+2024-03-14 01:56:38,281 - INFO - START tool: {'tool_call_id': 'call_zQ9irwNbgXL68YgUFXpQ3H79', 'role': 'tool', 'name': 'single_event_count', 'content': "{'count': 47, 'plot': '<P-V8F>'}"}
+2024-03-14 01:56:38,281 - INFO - START assistant: {'role': 'assistant', 'content': 'You have had basketball practice 47 times, and here is a plot that shows the frequency of your practices over time.'}
+2024-03-14 01:56:38,281 - INFO - START user: {'role': 'user', 'content': 'What about games?'}
+2024-03-14 01:56:39,485 - INFO - process_tool_chunks: {'role': 'assistant', 'content': None, 'tool_calls': [{'id': 'call_d5VugDJUPPV7obT4AwNbKxkN', 'function': {'name': 'single_event_count', 'arguments': '{"v":"basketball game"}'}, 'type': 'function'}]}
+2024-03-14 01:56:41,906 - INFO - Index(['name', 'location', 'description', 'category', 'all_day', 'parent_name',
+       'dtype', 'source', 'start_datetime', 'end_datetime', 'evid', 'eid',
+       'start_date', 'end_date', 'start_time', 'end_time', 'day'],
+      dtype='object')
+2024-03-14 01:56:41,928 - INFO - process_tool_chunks: {'tool_call_id': 'call_d5VugDJUPPV7obT4AwNbKxkN', 'role': 'tool', 'name': 'single_event_count', 'content': "{'count': 27, 'plot': '<P-D7M>'}"}
+2024-03-14 01:56:44,012 - INFO - buffer length: 31
+2024-03-14 01:56:44,012 - INFO - length of raw chunks: 30
+2024-03-14 01:56:44,014 - INFO - process_assistant_chunks: {'role': 'assistant', 'content': 'You have played in 27 basketball games, and here is a plot that shows the frequency of your games over time.'}

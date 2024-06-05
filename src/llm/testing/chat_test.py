@@ -9,7 +9,7 @@ import logging
 from llm.chat import Session
 
 
-def cerebra_test_run(userid=None):
+def ewandi_test_run(userid=None):
     session = Session(userid=userid)
 
     prompt = "What is your name?"
@@ -27,4 +27,4 @@ if __name__ == "__main__":
     Integrate with streamlit in simple app
     """
 
-    cerebra_test_run(userid="brian")
+    ewandi_test_run(userid="brian")

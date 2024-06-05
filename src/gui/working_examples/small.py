@@ -10,7 +10,7 @@ import streamlit as st
 
 from pathlib import Path
 import time
-from llm.chat import CerebraUserSession, cerebra_completion_request
+from llm.chat import EwandiUserSession, ewandi_completion_request
 
 from utils.plot import get_plotly_figure
 # from openai import OpenAI
@@ -44,7 +44,7 @@ def respond(prompt, stream_handler, session):
 
 if "session" not in st.session_state:
     st.session_state["session_started"] = True
-    st.session_state["session"] = CerebraUserSession("brian")
+    st.session_state["session"] = EwandiUserSession("brian")
     session = st.session_state["session"]
 else:
     session = st.session_state["session"]
@@ -88,7 +88,7 @@ if prompt := st.chat_input("Enter a message"):
 # with st.chat_message("assistant"):
 #     message_placeholder = st.empty()
 #     # run request
-#     message = cerebra_completion_request(
+#     message = ewandi_completion_request(
 #         session,
 #         # session.session,
 #         stream_handler=message_placeholder.markdown,

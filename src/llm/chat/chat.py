@@ -4,12 +4,14 @@ import streamlit as st
 
 
 src_dir = Path(__file__).resolve()
-while src_dir.name != "src": src_dir = src_dir.parent
+while src_dir.name != "src":
+    src_dir = src_dir.parent
 sys.path.append(str(src_dir))
 
 
 import warnings
-warnings.simplefilter(action='ignore', category=FutureWarning)
+
+warnings.simplefilter(action="ignore", category=FutureWarning)
 
 from utils.placeholders import make_placeholder
 
@@ -41,6 +43,11 @@ JSON_MODEL = "gpt-4-1106-preview"
 
 import time
 
+from utils.errors import (
+    ValidationFindError,
+    ValidationParseError,
+    ValidationFilterError,
+)
 
 
 def general_completion_request(
@@ -58,7 +65,6 @@ def general_completion_request(
     # if prompt:
     #     session.conversation.add_text_message("user", prompt)
 
-
     # parse completion
     process_completion(session, **input_completions_kwargs)
 
@@ -70,8 +76,6 @@ def general_completion_request(
             session,
             **input_completions_kwargs,
         )
-
-
 
 
 ### CHATTING
@@ -194,18 +198,36 @@ def get_tool_return(session, message):
     # except:
     #     raise Exception(f"Unable to parse arguments: {arguments_string}")
 
-    content = call_function(function_name, arguments, session.user.userid)
-    process_placeholder(content)
+    try:
+        content = call_function(function_name, arguments, session.user.userid)
 
-    content = str(content)
+        process_placeholder(content)
 
-    tool_message = {
-        "tool_call_id": id,
-        "role": "tool",
-        "name": function_name,
-        "content": content,
-    }
-    return tool_message
+        content = str(content)
+
+        tool_message = {
+            "tool_call_id": id,
+            "role": "tool",
+            "name": function_name,
+            "content": content,
+        }
+        session.conversation.add_tool_return(tool_message)
+        logging.info(f"process_tool_chunks: {session.conversation.messages[-1]}")
+        # return tool_message
+
+    except (ValidationFindError, ValidationParseError, ValidationFilterError) as e:
+        content = ""
+        tool_message = {
+            "tool_call_id": id,
+            "role": "tool",
+            "name": function_name,
+            "content": content,
+        }
+
+        session.conversation.add_tool_return(tool_message)
+        logging.info(f"process_tool_chunks: {session.conversation.messages[-1]}")
+
+        raise e
 
 
 def general_recombine(chunks, role="assistant"):
@@ -281,7 +303,6 @@ class ChunkHandler:
         else:
             self.process_assistant_chunks()
 
-
     def process_single_chunk(self, chunk):
         """
         I need to keep track of a few things.
@@ -351,9 +372,11 @@ class ChunkHandler:
         self.message.finish()
 
         # message = general_recombine(self.raw_chunks)
-        
+
         self.session.conversation.add_obj_message(self.buffer_message)
-        logging.info(f"process_assistant_chunks: {self.session.conversation.messages[-1]}")
+        logging.info(
+            f"process_assistant_chunks: {self.session.conversation.messages[-1]}"
+        )
         # logging.info(f"text message: {self.message.api_message()}")
 
     def process_tool_chunks(self):
@@ -365,9 +388,7 @@ class ChunkHandler:
         self.session.conversation.add_tool_response(t_response)  # make different func
         logging.info(f"process_tool_chunks: {self.session.conversation.messages[-1]}")
 
-        t_return = get_tool_return(self.session, t_response)
-        self.session.conversation.add_tool_return(t_return)
-        logging.info(f"process_tool_chunks: {self.session.conversation.messages[-1]}")
+        get_tool_return(self.session, t_response)
 
 
 def process_completion(session, **input_completions_kwargs):
@@ -411,10 +432,12 @@ def process_completion(session, **input_completions_kwargs):
         # intialize stream handler
         # stream_handler = session.stream_handler_class()
         # get the first chunk and see if it is a tool response
-        chunk_handler = ChunkHandler(session, completion, 
-                                    #  delay=4
-                                     delay=6
-                                     )
+        chunk_handler = ChunkHandler(
+            session,
+            completion,
+            #  delay=4
+            delay=6,
+        )
         chunk_handler.process_chunks()
 
     # get completion generator
@@ -423,9 +446,6 @@ def process_completion(session, **input_completions_kwargs):
     )
     # now parse the stream
     parse_stream(session, completion_generator)
-
-
-
 
 
 def fake_respond(prompt, session):

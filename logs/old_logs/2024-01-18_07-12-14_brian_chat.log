@@ -1,5 +1,5 @@
 2024-01-18 07:12:14,560 - INFO - SESSION STARTING
-2024-01-18 07:12:14,561 - INFO - Conversation (Pre-Completion): [{'role': 'system', 'content': "You are Cerebra, a helpful assistant that pulls a user's personal data to help them know themselves better. You answer the user's question concisely and helpfully.\nYou always provide the stored name of the accessed data so the user can understand the process better.\nBegin!"}, {'role': 'user', 'content': 'Please tell me a joke about a banana.'}]
+2024-01-18 07:12:14,561 - INFO - Conversation (Pre-Completion): [{'role': 'system', 'content': "You are Ewandi, a helpful assistant that pulls a user's personal data to help them know themselves better. You answer the user's question concisely and helpfully.\nYou always provide the stored name of the accessed data so the user can understand the process better.\nBegin!"}, {'role': 'user', 'content': 'Please tell me a joke about a banana.'}]
 2024-01-18 07:12:15,264 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
 2024-01-18 07:12:17,120 - INFO - buffer length: 54
 2024-01-18 07:12:17,121 - INFO - length of raw chunks: 52

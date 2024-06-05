@@ -2,7 +2,8 @@ import sys
 from pathlib import Path
 
 src_dir = Path(__file__).resolve()
-while src_dir.name != "src": src_dir = src_dir.parent
+while src_dir.name != "src":
+    src_dir = src_dir.parent
 sys.path.append(str(src_dir))
 
 from utils.io import load_json
@@ -11,19 +12,28 @@ from datetime import datetime
 import copy
 
 
-def get_all_events():
-    def format_datetime(event):
-        event["start_datetime"] = datetime.strptime(
-            event["start_datetime"], "%Y-%m-%dT%H:%M"
-        )
-        event["end_datetime"] = datetime.strptime(
-            event["end_datetime"], "%Y-%m-%dT%H:%M"
-        )
-        return event
+def get_duration(event):
+    """
+    Get duration of event in hours
+    """
+    duration = event["end_time"] - event["start_time"]
+    duration = duration.total_seconds() / 3600
+    return duration
 
-    all_events_path = "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/cerebra/data/sim/profiles/llm_v1/outputs/final/events_breakout.json"
+
+def format_datetime(event):
+    event["start_datetime"] = datetime.strptime(
+        event["start_datetime"], "%Y-%m-%dT%H:%M"
+    )
+    event["end_datetime"] = datetime.strptime(event["end_datetime"], "%Y-%m-%dT%H:%M")
+    return event
+
+
+def get_all_events(reformat_datetime=True):
+    all_events_path = "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/ewandi/data/sim/profiles/llm_v1/outputs/final/events_breakout.json"
     all_events = load_json(all_events_path)
-    all_events = [format_datetime(event) for event in all_events]
+    if reformat_datetime:
+        all_events = [format_datetime(event) for event in all_events]
     return all_events
 
 
@@ -35,6 +45,26 @@ def filter_by_person(events, person):
                 filtered_events.append(event)
                 break
     return filtered_events
+
+
+def filter_events(all_events, mapping):
+    # make each mapping value a list
+    for k, map_values in mapping.items():
+        if not isinstance(map_values, list):
+            mapping[k] = [map_values]
+
+    # now loop through all events and filter
+    events = []
+    for event in all_events:
+        status = True
+        for k, map_values in mapping.items():
+            if event.get(k) not in map_values:
+                status = False
+                break
+        if status:
+            events.append(event)
+
+    return events
 
 
 def get_events(name, all_events, is_value=False, person=None):

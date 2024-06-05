@@ -18,6 +18,8 @@ from utils.errors import (
     ValidationFilterError,
 )
 
+import logging
+
 
 def search_elements(v: str, element_type: str):
     def threshold_strategy(v, element_type):
@@ -56,6 +58,7 @@ def _validate(v: str, p: list, dr: str, tr: str, d: list):
         d (string): days associated with the event
     """
 
+    logging.info(f"Validating input: {v}, {p}, {dr}, {tr}, {d}")
     import pandas as pd
 
     events = get_events(profile="llm_v1")
@@ -94,10 +97,12 @@ def _validate(v: str, p: list, dr: str, tr: str, d: list):
 
     # date range
     if dr:
+        # if "-" not in dr:
         if "--" not in dr:
             # raise ValueError(f"Invalid date range {dr}")
             raise ValidationParseError("date range")
         else:
+            # dr_start, dr_end = dr.split("-")
             dr_start, dr_end = dr.split("--")
             if dr_start == "":
                 dr_start = None
@@ -120,10 +125,12 @@ def _validate(v: str, p: list, dr: str, tr: str, d: list):
     # time range
     if tr:
         if "--" not in tr:
+            # if "-" not in tr:
             # raise ValueError(f"Invalid time range {tr}")
             raise ValidationParseError("time range")
         else:
             tr_start, tr_end = tr.split("--")
+            # tr_start, tr_end = tr.split("-")
             if tr_start == "":
                 tr_start = None
             else:
@@ -136,7 +143,7 @@ def _validate(v: str, p: list, dr: str, tr: str, d: list):
                 tr_end = None
             else:
                 try:
-                    tr_end = convert_time(tr_start)
+                    tr_end = convert_time(tr_end)
                 except:
                     # raise ValueError(f"Invalid end time {tr_end}")
                     raise ValidationParseError("time range")

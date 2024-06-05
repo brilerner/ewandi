@@ -8,7 +8,7 @@ def get_root():
     from pathlib import Path
 
     cwd = Path.cwd().resolve()
-    while cwd.name != "cerebra":
+    while cwd.name != "ewandi":
         cwd = cwd.parent
     return cwd
 

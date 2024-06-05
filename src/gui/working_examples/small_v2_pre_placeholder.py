@@ -10,7 +10,7 @@ import streamlit as st
 
 from pathlib import Path
 import time
-# from llm.chat import CerebraUserSession, cerebra_completion_request
+# from llm.chat import EwandiUserSession, ewandi_completion_request
 
 from utils.viz import get_plotly_figure
 import prompts.engine as engine_prompts
@@ -251,7 +251,7 @@ class StreamlitConversation(Conversation):
     #             pass
 
 
-class CerebraUser:
+class EwandiUser:
     def __init__(self, userid=None):
         self.userid = userid
         self.add_userid_if_missing()
@@ -277,7 +277,7 @@ class CerebraUser:
 
 class Session:
     def __init__(self, userid):
-        self.user = CerebraUser(userid)
+        self.user = EwandiUser(userid)
         self.conversation = self.start_conversation()
         self.conversation.add_text_message("system", engine_prompts.system)
         self.backoff = True
@@ -432,7 +432,7 @@ if prompt:
 # with st.chat_message("assistant"):
 #     message_placeholder = st.empty()
 #     # run request
-#     message = cerebra_completion_request(
+#     message = ewandi_completion_request(
 #         session,
 #         # session.session,
 #         stream_handler=message_placeholder.markdown,

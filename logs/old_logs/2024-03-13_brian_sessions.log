@@ -1,54 +1,54 @@
 2024-03-13 05:23:30,798 - INFO - -----STARTING NEW SESSION-----
-2024-03-13 05:23:30,839 - INFO - START system: {'role': 'system', 'content': 'You are Cerebra, a helpful assistant that pulls a user\'s personal data to help them know themselves better. You answer the user\'s question concisely and helpfully.\nAdditional Guidelines:\nYou may receive a tool output that contains a text placeholder for a plot. In your response, place the placeholder text directly at the end of the sentence or phrase after which the user should see the plot. Please do this since the user will see the plot in a separate window. Aside from showing the plot, you may reference it depending on the context of the conversation. If you reference the plot, say something along the lines of "...and here is a plot that shows...<describe>.". This is to ensure that the conversation is as natural as possible.\nHere is an example:\n"...and here is a plot that shows the average sleep over time.<P-45L>"\nMake sure the placeholder is at the end of the response with NO punctuation after it.\nA placeholder will take this form: "<P-45L>". The only differences will be the three characters after the dash.\n\nBegin!'}
+2024-03-13 05:23:30,839 - INFO - START system: {'role': 'system', 'content': 'You are Ewandi, a helpful assistant that pulls a user\'s personal data to help them know themselves better. You answer the user\'s question concisely and helpfully.\nAdditional Guidelines:\nYou may receive a tool output that contains a text placeholder for a plot. In your response, place the placeholder text directly at the end of the sentence or phrase after which the user should see the plot. Please do this since the user will see the plot in a separate window. Aside from showing the plot, you may reference it depending on the context of the conversation. If you reference the plot, say something along the lines of "...and here is a plot that shows...<describe>.". This is to ensure that the conversation is as natural as possible.\nHere is an example:\n"...and here is a plot that shows the average sleep over time.<P-45L>"\nMake sure the placeholder is at the end of the response with NO punctuation after it.\nA placeholder will take this form: "<P-45L>". The only differences will be the three characters after the dash.\n\nBegin!'}
 2024-03-13 05:23:30,839 - INFO - START user: {'role': 'user', 'content': 'How many times did I have computer programming homework?'}
 2024-03-13 05:23:33,147 - INFO - process_tool_chunks: {'role': 'assistant', 'content': None, 'tool_calls': [{'id': 'call_66mbRgpf26JsFazxkT0ggSga', 'function': {'name': 'single_event_count', 'arguments': '{"v":"computer programming homework"}'}, 'type': 'function'}]}
 2024-03-13 05:23:33,150 - INFO - RangeIndex(start=0, stop=0, step=1)
 2024-03-13 05:23:33,150 - ERROR - Error: 'name'
 2024-03-13 05:23:58,425 - INFO - -----STARTING NEW SESSION-----
-2024-03-13 05:23:58,440 - INFO - START system: {'role': 'system', 'content': 'You are Cerebra, a helpful assistant that pulls a user\'s personal data to help them know themselves better. You answer the user\'s question concisely and helpfully.\nAdditional Guidelines:\nYou may receive a tool output that contains a text placeholder for a plot. In your response, place the placeholder text directly at the end of the sentence or phrase after which the user should see the plot. Please do this since the user will see the plot in a separate window. Aside from showing the plot, you may reference it depending on the context of the conversation. If you reference the plot, say something along the lines of "...and here is a plot that shows...<describe>.". This is to ensure that the conversation is as natural as possible.\nHere is an example:\n"...and here is a plot that shows the average sleep over time.<P-45L>"\nMake sure the placeholder is at the end of the response with NO punctuation after it.\nA placeholder will take this form: "<P-45L>". The only differences will be the three characters after the dash.\n\nBegin!'}
+2024-03-13 05:23:58,440 - INFO - START system: {'role': 'system', 'content': 'You are Ewandi, a helpful assistant that pulls a user\'s personal data to help them know themselves better. You answer the user\'s question concisely and helpfully.\nAdditional Guidelines:\nYou may receive a tool output that contains a text placeholder for a plot. In your response, place the placeholder text directly at the end of the sentence or phrase after which the user should see the plot. Please do this since the user will see the plot in a separate window. Aside from showing the plot, you may reference it depending on the context of the conversation. If you reference the plot, say something along the lines of "...and here is a plot that shows...<describe>.". This is to ensure that the conversation is as natural as possible.\nHere is an example:\n"...and here is a plot that shows the average sleep over time.<P-45L>"\nMake sure the placeholder is at the end of the response with NO punctuation after it.\nA placeholder will take this form: "<P-45L>". The only differences will be the three characters after the dash.\n\nBegin!'}
 2024-03-13 05:23:58,440 - INFO - START user: {'role': 'user', 'content': 'How many times did I have computer programming homework?'}
 2024-03-13 05:23:59,385 - INFO - process_tool_chunks: {'role': 'assistant', 'content': None, 'tool_calls': [{'id': 'call_kLeO34SPAzHOMiYmP3kwkKz1', 'function': {'name': 'single_event_count', 'arguments': '{"v":"computer programming homework"}'}, 'type': 'function'}]}
 2024-03-13 05:23:59,388 - INFO - RangeIndex(start=0, stop=0, step=1)
 2024-03-13 05:23:59,388 - ERROR - Error: 'name'
 2024-03-13 05:25:00,917 - INFO - -----STARTING NEW SESSION-----
-2024-03-13 05:25:00,933 - INFO - START system: {'role': 'system', 'content': 'You are Cerebra, a helpful assistant that pulls a user\'s personal data to help them know themselves better. You answer the user\'s question concisely and helpfully.\nAdditional Guidelines:\nYou may receive a tool output that contains a text placeholder for a plot. In your response, place the placeholder text directly at the end of the sentence or phrase after which the user should see the plot. Please do this since the user will see the plot in a separate window. Aside from showing the plot, you may reference it depending on the context of the conversation. If you reference the plot, say something along the lines of "...and here is a plot that shows...<describe>.". This is to ensure that the conversation is as natural as possible.\nHere is an example:\n"...and here is a plot that shows the average sleep over time.<P-45L>"\nMake sure the placeholder is at the end of the response with NO punctuation after it.\nA placeholder will take this form: "<P-45L>". The only differences will be the three characters after the dash.\n\nBegin!'}
+2024-03-13 05:25:00,933 - INFO - START system: {'role': 'system', 'content': 'You are Ewandi, a helpful assistant that pulls a user\'s personal data to help them know themselves better. You answer the user\'s question concisely and helpfully.\nAdditional Guidelines:\nYou may receive a tool output that contains a text placeholder for a plot. In your response, place the placeholder text directly at the end of the sentence or phrase after which the user should see the plot. Please do this since the user will see the plot in a separate window. Aside from showing the plot, you may reference it depending on the context of the conversation. If you reference the plot, say something along the lines of "...and here is a plot that shows...<describe>.". This is to ensure that the conversation is as natural as possible.\nHere is an example:\n"...and here is a plot that shows the average sleep over time.<P-45L>"\nMake sure the placeholder is at the end of the response with NO punctuation after it.\nA placeholder will take this form: "<P-45L>". The only differences will be the three characters after the dash.\n\nBegin!'}
 2024-03-13 05:25:00,933 - INFO - START user: {'role': 'user', 'content': 'How many times did I have computer programming homework?'}
 2024-03-13 05:25:02,479 - INFO - process_tool_chunks: {'role': 'assistant', 'content': None, 'tool_calls': [{'id': 'call_RhhoMdfNK8HshCiTy4ZtN7Mw', 'function': {'name': 'single_event_count', 'arguments': '{"v":"computer programming homework"}'}, 'type': 'function'}]}
 2024-03-13 05:25:02,482 - INFO - RangeIndex(start=0, stop=0, step=1)
 2024-03-13 05:25:02,482 - ERROR - Error: 'name'
 2024-03-13 05:32:12,027 - INFO - -----STARTING NEW SESSION-----
-2024-03-13 05:32:12,044 - INFO - START system: {'role': 'system', 'content': 'You are Cerebra, a helpful assistant that pulls a user\'s personal data to help them know themselves better. You answer the user\'s question concisely and helpfully.\nAdditional Guidelines:\nYou may receive a tool output that contains a text placeholder for a plot. In your response, place the placeholder text directly at the end of the sentence or phrase after which the user should see the plot. Please do this since the user will see the plot in a separate window. Aside from showing the plot, you may reference it depending on the context of the conversation. If you reference the plot, say something along the lines of "...and here is a plot that shows...<describe>.". This is to ensure that the conversation is as natural as possible.\nHere is an example:\n"...and here is a plot that shows the average sleep over time.<P-45L>"\nMake sure the placeholder is at the end of the response with NO punctuation after it.\nA placeholder will take this form: "<P-45L>". The only differences will be the three characters after the dash.\n\nBegin!'}
+2024-03-13 05:32:12,044 - INFO - START system: {'role': 'system', 'content': 'You are Ewandi, a helpful assistant that pulls a user\'s personal data to help them know themselves better. You answer the user\'s question concisely and helpfully.\nAdditional Guidelines:\nYou may receive a tool output that contains a text placeholder for a plot. In your response, place the placeholder text directly at the end of the sentence or phrase after which the user should see the plot. Please do this since the user will see the plot in a separate window. Aside from showing the plot, you may reference it depending on the context of the conversation. If you reference the plot, say something along the lines of "...and here is a plot that shows...<describe>.". This is to ensure that the conversation is as natural as possible.\nHere is an example:\n"...and here is a plot that shows the average sleep over time.<P-45L>"\nMake sure the placeholder is at the end of the response with NO punctuation after it.\nA placeholder will take this form: "<P-45L>". The only differences will be the three characters after the dash.\n\nBegin!'}
 2024-03-13 05:32:12,044 - INFO - START user: {'role': 'user', 'content': 'How many times did I have computer programming homework?'}
 2024-03-13 05:32:14,183 - INFO - process_tool_chunks: {'role': 'assistant', 'content': None, 'tool_calls': [{'id': 'call_Maq0up2EQMjNNs3tUTjhyMdJ', 'function': {'name': 'single_event_count', 'arguments': '{"v":"computer programming homework"}'}, 'type': 'function'}]}
 2024-03-13 05:32:14,188 - INFO - RangeIndex(start=0, stop=0, step=1)
 2024-03-13 05:32:14,188 - ERROR - Error: 'name'
 2024-03-13 05:43:40,482 - INFO - -----STARTING NEW SESSION-----
-2024-03-13 05:43:40,497 - INFO - START system: {'role': 'system', 'content': 'You are Cerebra, a helpful assistant that pulls a user\'s personal data to help them know themselves better. You answer the user\'s question concisely and helpfully.\nAdditional Guidelines:\nYou may receive a tool output that contains a text placeholder for a plot. In your response, place the placeholder text directly at the end of the sentence or phrase after which the user should see the plot. Please do this since the user will see the plot in a separate window. Aside from showing the plot, you may reference it depending on the context of the conversation. If you reference the plot, say something along the lines of "...and here is a plot that shows...<describe>.". This is to ensure that the conversation is as natural as possible.\nHere is an example:\n"...and here is a plot that shows the average sleep over time.<P-45L>"\nMake sure the placeholder is at the end of the response with NO punctuation after it.\nA placeholder will take this form: "<P-45L>". The only differences will be the three characters after the dash.\n\nBegin!'}
+2024-03-13 05:43:40,497 - INFO - START system: {'role': 'system', 'content': 'You are Ewandi, a helpful assistant that pulls a user\'s personal data to help them know themselves better. You answer the user\'s question concisely and helpfully.\nAdditional Guidelines:\nYou may receive a tool output that contains a text placeholder for a plot. In your response, place the placeholder text directly at the end of the sentence or phrase after which the user should see the plot. Please do this since the user will see the plot in a separate window. Aside from showing the plot, you may reference it depending on the context of the conversation. If you reference the plot, say something along the lines of "...and here is a plot that shows...<describe>.". This is to ensure that the conversation is as natural as possible.\nHere is an example:\n"...and here is a plot that shows the average sleep over time.<P-45L>"\nMake sure the placeholder is at the end of the response with NO punctuation after it.\nA placeholder will take this form: "<P-45L>". The only differences will be the three characters after the dash.\n\nBegin!'}
 2024-03-13 05:43:40,497 - INFO - START user: {'role': 'user', 'content': 'How many times did I have computer programming homework?'}
 2024-03-13 05:43:42,877 - INFO - process_tool_chunks: {'role': 'assistant', 'content': None, 'tool_calls': [{'id': 'call_RvKzWmABZj3dKrg6cg4pJ8Uc', 'function': {'name': 'single_event_count', 'arguments': '{"v":"computer programming homework"}'}, 'type': 'function'}]}
 2024-03-13 05:43:42,882 - INFO - RangeIndex(start=0, stop=0, step=1)
 2024-03-13 05:43:42,888 - ERROR - Error: Traceback (most recent call last):
-  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/cerebra/src/llm/chat/sessions.py", line 78, in completion_request
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/ewandi/src/llm/chat/sessions.py", line 78, in completion_request
     general_completion_request(
-  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/cerebra/src/llm/chat/chat.py", line 63, in general_completion_request
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/ewandi/src/llm/chat/chat.py", line 63, in general_completion_request
     process_completion(session, **input_completions_kwargs)
-  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/cerebra/src/llm/chat/chat.py", line 425, in process_completion
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/ewandi/src/llm/chat/chat.py", line 425, in process_completion
     parse_stream(session, completion_generator)
-  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/cerebra/src/llm/chat/chat.py", line 418, in parse_stream
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/ewandi/src/llm/chat/chat.py", line 418, in parse_stream
     chunk_handler.process_chunks()
-  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/cerebra/src/llm/chat/chat.py", line 280, in process_chunks
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/ewandi/src/llm/chat/chat.py", line 280, in process_chunks
     self.process_tool_chunks()
-  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/cerebra/src/llm/chat/chat.py", line 368, in process_tool_chunks
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/ewandi/src/llm/chat/chat.py", line 368, in process_tool_chunks
     t_return = get_tool_return(self.session, t_response)
-  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/cerebra/src/llm/chat/chat.py", line 197, in get_tool_return
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/ewandi/src/llm/chat/chat.py", line 197, in get_tool_return
     content = call_function(function_name, arguments, session.user.userid)
-  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/cerebra/src/llm/chat/chat.py", line 171, in call_function
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/ewandi/src/llm/chat/chat.py", line 171, in call_function
     func_output = func(*args, **kwargs)
-  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/cerebra/src/llm/my_tools/tool_funcs.py", line 51, in single_event_count
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/ewandi/src/llm/my_tools/tool_funcs.py", line 51, in single_event_count
     plot = plotting.plot_single_event_count(events)
-  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/cerebra/src/llm/my_tools/plotting.py", line 14, in plot_single_event_count
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/ewandi/src/llm/my_tools/plotting.py", line 14, in plot_single_event_count
     return _occurrence_default(events, type="events")
-  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/cerebra/src/llm/my_tools/plotting.py", line 27, in _occurrence_default
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/ewandi/src/llm/my_tools/plotting.py", line 27, in _occurrence_default
     event_type_mapping = {event: i + 1 for i, event in enumerate(df["name"].unique())}
   File "/Users/brianlerner/miniconda3/envs/c4/lib/python3.10/site-packages/pandas/core/frame.py", line 3893, in __getitem__
     indexer = self.columns.get_loc(key)
@@ -57,32 +57,32 @@
 KeyError: 'name'
 
 2024-03-13 05:45:06,886 - INFO - -----STARTING NEW SESSION-----
-2024-03-13 05:45:06,901 - INFO - START system: {'role': 'system', 'content': 'You are Cerebra, a helpful assistant that pulls a user\'s personal data to help them know themselves better. You answer the user\'s question concisely and helpfully.\nAdditional Guidelines:\nYou may receive a tool output that contains a text placeholder for a plot. In your response, place the placeholder text directly at the end of the sentence or phrase after which the user should see the plot. Please do this since the user will see the plot in a separate window. Aside from showing the plot, you may reference it depending on the context of the conversation. If you reference the plot, say something along the lines of "...and here is a plot that shows...<describe>.". This is to ensure that the conversation is as natural as possible.\nHere is an example:\n"...and here is a plot that shows the average sleep over time.<P-45L>"\nMake sure the placeholder is at the end of the response with NO punctuation after it.\nA placeholder will take this form: "<P-45L>". The only differences will be the three characters after the dash.\n\nBegin!'}
+2024-03-13 05:45:06,901 - INFO - START system: {'role': 'system', 'content': 'You are Ewandi, a helpful assistant that pulls a user\'s personal data to help them know themselves better. You answer the user\'s question concisely and helpfully.\nAdditional Guidelines:\nYou may receive a tool output that contains a text placeholder for a plot. In your response, place the placeholder text directly at the end of the sentence or phrase after which the user should see the plot. Please do this since the user will see the plot in a separate window. Aside from showing the plot, you may reference it depending on the context of the conversation. If you reference the plot, say something along the lines of "...and here is a plot that shows...<describe>.". This is to ensure that the conversation is as natural as possible.\nHere is an example:\n"...and here is a plot that shows the average sleep over time.<P-45L>"\nMake sure the placeholder is at the end of the response with NO punctuation after it.\nA placeholder will take this form: "<P-45L>". The only differences will be the three characters after the dash.\n\nBegin!'}
 2024-03-13 05:45:06,901 - INFO - START user: {'role': 'user', 'content': 'How many times did I have computer programming homework?'}
 2024-03-13 05:45:08,391 - INFO - process_tool_chunks: {'role': 'assistant', 'content': None, 'tool_calls': [{'id': 'call_qhn2Okpx6y2FRwkl8Pc7vXyq', 'function': {'name': 'single_event_count', 'arguments': '{"v":"computer programming homework"}'}, 'type': 'function'}]}
 2024-03-13 05:45:08,393 - INFO - RangeIndex(start=0, stop=0, step=1)
 2024-03-13 05:45:08,397 - ERROR - Error: Traceback (most recent call last):
-  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/cerebra/src/llm/chat/sessions.py", line 78, in completion_request
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/ewandi/src/llm/chat/sessions.py", line 78, in completion_request
     general_completion_request(
-  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/cerebra/src/llm/chat/chat.py", line 63, in general_completion_request
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/ewandi/src/llm/chat/chat.py", line 63, in general_completion_request
     process_completion(session, **input_completions_kwargs)
-  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/cerebra/src/llm/chat/chat.py", line 425, in process_completion
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/ewandi/src/llm/chat/chat.py", line 425, in process_completion
     parse_stream(session, completion_generator)
-  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/cerebra/src/llm/chat/chat.py", line 418, in parse_stream
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/ewandi/src/llm/chat/chat.py", line 418, in parse_stream
     chunk_handler.process_chunks()
-  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/cerebra/src/llm/chat/chat.py", line 280, in process_chunks
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/ewandi/src/llm/chat/chat.py", line 280, in process_chunks
     self.process_tool_chunks()
-  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/cerebra/src/llm/chat/chat.py", line 368, in process_tool_chunks
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/ewandi/src/llm/chat/chat.py", line 368, in process_tool_chunks
     t_return = get_tool_return(self.session, t_response)
-  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/cerebra/src/llm/chat/chat.py", line 197, in get_tool_return
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/ewandi/src/llm/chat/chat.py", line 197, in get_tool_return
     content = call_function(function_name, arguments, session.user.userid)
-  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/cerebra/src/llm/chat/chat.py", line 171, in call_function
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/ewandi/src/llm/chat/chat.py", line 171, in call_function
     func_output = func(*args, **kwargs)
-  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/cerebra/src/llm/my_tools/tool_funcs.py", line 51, in single_event_count
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/ewandi/src/llm/my_tools/tool_funcs.py", line 51, in single_event_count
     plot = plotting.plot_single_event_count(events)
-  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/cerebra/src/llm/my_tools/plotting.py", line 14, in plot_single_event_count
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/ewandi/src/llm/my_tools/plotting.py", line 14, in plot_single_event_count
     return _occurrence_default(events, type="events")
-  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/cerebra/src/llm/my_tools/plotting.py", line 27, in _occurrence_default
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/ewandi/src/llm/my_tools/plotting.py", line 27, in _occurrence_default
     event_type_mapping = {event: i + 1 for i, event in enumerate(df["name"].unique())}
   File "/Users/brianlerner/miniconda3/envs/c4/lib/python3.10/site-packages/pandas/core/frame.py", line 3893, in __getitem__
     indexer = self.columns.get_loc(key)
@@ -91,32 +91,32 @@ KeyError: 'name'
 KeyError: 'name'
 
 2024-03-13 05:46:38,022 - INFO - -----STARTING NEW SESSION-----
-2024-03-13 05:46:38,036 - INFO - START system: {'role': 'system', 'content': 'You are Cerebra, a helpful assistant that pulls a user\'s personal data to help them know themselves better. You answer the user\'s question concisely and helpfully.\nAdditional Guidelines:\nYou may receive a tool output that contains a text placeholder for a plot. In your response, place the placeholder text directly at the end of the sentence or phrase after which the user should see the plot. Please do this since the user will see the plot in a separate window. Aside from showing the plot, you may reference it depending on the context of the conversation. If you reference the plot, say something along the lines of "...and here is a plot that shows...<describe>.". This is to ensure that the conversation is as natural as possible.\nHere is an example:\n"...and here is a plot that shows the average sleep over time.<P-45L>"\nMake sure the placeholder is at the end of the response with NO punctuation after it.\nA placeholder will take this form: "<P-45L>". The only differences will be the three characters after the dash.\n\nBegin!'}
+2024-03-13 05:46:38,036 - INFO - START system: {'role': 'system', 'content': 'You are Ewandi, a helpful assistant that pulls a user\'s personal data to help them know themselves better. You answer the user\'s question concisely and helpfully.\nAdditional Guidelines:\nYou may receive a tool output that contains a text placeholder for a plot. In your response, place the placeholder text directly at the end of the sentence or phrase after which the user should see the plot. Please do this since the user will see the plot in a separate window. Aside from showing the plot, you may reference it depending on the context of the conversation. If you reference the plot, say something along the lines of "...and here is a plot that shows...<describe>.". This is to ensure that the conversation is as natural as possible.\nHere is an example:\n"...and here is a plot that shows the average sleep over time.<P-45L>"\nMake sure the placeholder is at the end of the response with NO punctuation after it.\nA placeholder will take this form: "<P-45L>". The only differences will be the three characters after the dash.\n\nBegin!'}
 2024-03-13 05:46:38,036 - INFO - START user: {'role': 'user', 'content': 'How many times did I have computer programming homework?'}
 2024-03-13 05:46:40,139 - INFO - process_tool_chunks: {'role': 'assistant', 'content': None, 'tool_calls': [{'id': 'call_MsGWw2KIQS939nyRuBDWk0ZX', 'function': {'name': 'single_event_count', 'arguments': '{"v":"computer programming homework"}'}, 'type': 'function'}]}
 2024-03-13 05:47:33,117 - INFO - RangeIndex(start=0, stop=0, step=1)
 2024-03-13 05:47:33,126 - ERROR - Error: Traceback (most recent call last):
-  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/cerebra/src/llm/chat/sessions.py", line 78, in completion_request
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/ewandi/src/llm/chat/sessions.py", line 78, in completion_request
     general_completion_request(
-  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/cerebra/src/llm/chat/chat.py", line 63, in general_completion_request
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/ewandi/src/llm/chat/chat.py", line 63, in general_completion_request
     process_completion(session, **input_completions_kwargs)
-  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/cerebra/src/llm/chat/chat.py", line 425, in process_completion
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/ewandi/src/llm/chat/chat.py", line 425, in process_completion
     parse_stream(session, completion_generator)
-  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/cerebra/src/llm/chat/chat.py", line 418, in parse_stream
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/ewandi/src/llm/chat/chat.py", line 418, in parse_stream
     chunk_handler.process_chunks()
-  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/cerebra/src/llm/chat/chat.py", line 280, in process_chunks
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/ewandi/src/llm/chat/chat.py", line 280, in process_chunks
     self.process_tool_chunks()
-  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/cerebra/src/llm/chat/chat.py", line 368, in process_tool_chunks
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/ewandi/src/llm/chat/chat.py", line 368, in process_tool_chunks
     t_return = get_tool_return(self.session, t_response)
-  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/cerebra/src/llm/chat/chat.py", line 197, in get_tool_return
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/ewandi/src/llm/chat/chat.py", line 197, in get_tool_return
     content = call_function(function_name, arguments, session.user.userid)
-  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/cerebra/src/llm/chat/chat.py", line 171, in call_function
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/ewandi/src/llm/chat/chat.py", line 171, in call_function
     func_output = func(*args, **kwargs)
-  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/cerebra/src/llm/my_tools/tool_funcs.py", line 51, in single_event_count
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/ewandi/src/llm/my_tools/tool_funcs.py", line 51, in single_event_count
     plot = plotting.plot_single_event_count(events)
-  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/cerebra/src/llm/my_tools/plotting.py", line 14, in plot_single_event_count
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/ewandi/src/llm/my_tools/plotting.py", line 14, in plot_single_event_count
     return _occurrence_default(events, type="events")
-  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/cerebra/src/llm/my_tools/plotting.py", line 27, in _occurrence_default
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/ewandi/src/llm/my_tools/plotting.py", line 27, in _occurrence_default
     event_type_mapping = {event: i + 1 for i, event in enumerate(df["name"].unique())}
   File "/Users/brianlerner/miniconda3/envs/c4/lib/python3.10/site-packages/pandas/core/frame.py", line 3893, in __getitem__
     indexer = self.columns.get_loc(key)
@@ -125,86 +125,86 @@ KeyError: 'name'
 KeyError: 'name'
 
 2024-03-13 05:47:40,217 - INFO - -----STARTING NEW SESSION-----
-2024-03-13 05:47:40,232 - INFO - START system: {'role': 'system', 'content': 'You are Cerebra, a helpful assistant that pulls a user\'s personal data to help them know themselves better. You answer the user\'s question concisely and helpfully.\nAdditional Guidelines:\nYou may receive a tool output that contains a text placeholder for a plot. In your response, place the placeholder text directly at the end of the sentence or phrase after which the user should see the plot. Please do this since the user will see the plot in a separate window. Aside from showing the plot, you may reference it depending on the context of the conversation. If you reference the plot, say something along the lines of "...and here is a plot that shows...<describe>.". This is to ensure that the conversation is as natural as possible.\nHere is an example:\n"...and here is a plot that shows the average sleep over time.<P-45L>"\nMake sure the placeholder is at the end of the response with NO punctuation after it.\nA placeholder will take this form: "<P-45L>". The only differences will be the three characters after the dash.\n\nBegin!'}
+2024-03-13 05:47:40,232 - INFO - START system: {'role': 'system', 'content': 'You are Ewandi, a helpful assistant that pulls a user\'s personal data to help them know themselves better. You answer the user\'s question concisely and helpfully.\nAdditional Guidelines:\nYou may receive a tool output that contains a text placeholder for a plot. In your response, place the placeholder text directly at the end of the sentence or phrase after which the user should see the plot. Please do this since the user will see the plot in a separate window. Aside from showing the plot, you may reference it depending on the context of the conversation. If you reference the plot, say something along the lines of "...and here is a plot that shows...<describe>.". This is to ensure that the conversation is as natural as possible.\nHere is an example:\n"...and here is a plot that shows the average sleep over time.<P-45L>"\nMake sure the placeholder is at the end of the response with NO punctuation after it.\nA placeholder will take this form: "<P-45L>". The only differences will be the three characters after the dash.\n\nBegin!'}
 2024-03-13 05:47:40,232 - INFO - START user: {'role': 'user', 'content': 'How many times did I have computer programming homework?'}
 2024-03-13 05:47:41,640 - INFO - process_tool_chunks: {'role': 'assistant', 'content': None, 'tool_calls': [{'id': 'call_OAtQzgw4mukWwECym29KzaJQ', 'function': {'name': 'single_event_count', 'arguments': '{"v":"computer programming homework"}'}, 'type': 'function'}]}
 2024-03-13 05:47:41,642 - INFO - RangeIndex(start=0, stop=0, step=1)
 2024-03-13 05:48:14,483 - INFO - -----STARTING NEW SESSION-----
-2024-03-13 05:48:14,498 - INFO - START system: {'role': 'system', 'content': 'You are Cerebra, a helpful assistant that pulls a user\'s personal data to help them know themselves better. You answer the user\'s question concisely and helpfully.\nAdditional Guidelines:\nYou may receive a tool output that contains a text placeholder for a plot. In your response, place the placeholder text directly at the end of the sentence or phrase after which the user should see the plot. Please do this since the user will see the plot in a separate window. Aside from showing the plot, you may reference it depending on the context of the conversation. If you reference the plot, say something along the lines of "...and here is a plot that shows...<describe>.". This is to ensure that the conversation is as natural as possible.\nHere is an example:\n"...and here is a plot that shows the average sleep over time.<P-45L>"\nMake sure the placeholder is at the end of the response with NO punctuation after it.\nA placeholder will take this form: "<P-45L>". The only differences will be the three characters after the dash.\n\nBegin!'}
+2024-03-13 05:48:14,498 - INFO - START system: {'role': 'system', 'content': 'You are Ewandi, a helpful assistant that pulls a user\'s personal data to help them know themselves better. You answer the user\'s question concisely and helpfully.\nAdditional Guidelines:\nYou may receive a tool output that contains a text placeholder for a plot. In your response, place the placeholder text directly at the end of the sentence or phrase after which the user should see the plot. Please do this since the user will see the plot in a separate window. Aside from showing the plot, you may reference it depending on the context of the conversation. If you reference the plot, say something along the lines of "...and here is a plot that shows...<describe>.". This is to ensure that the conversation is as natural as possible.\nHere is an example:\n"...and here is a plot that shows the average sleep over time.<P-45L>"\nMake sure the placeholder is at the end of the response with NO punctuation after it.\nA placeholder will take this form: "<P-45L>". The only differences will be the three characters after the dash.\n\nBegin!'}
 2024-03-13 05:48:14,498 - INFO - START user: {'role': 'user', 'content': 'How many times did I have computer programming homework?'}
 2024-03-13 05:48:15,559 - INFO - process_tool_chunks: {'role': 'assistant', 'content': None, 'tool_calls': [{'id': 'call_cGUr9HDHg4jjijmbp0W6HjFa', 'function': {'name': 'single_event_count', 'arguments': '{"v":"computer programming homework"}'}, 'type': 'function'}]}
 2024-03-13 05:48:15,561 - INFO - RangeIndex(start=0, stop=0, step=1)
 2024-03-13 05:50:04,241 - INFO - -----STARTING NEW SESSION-----
-2024-03-13 05:50:04,255 - INFO - START system: {'role': 'system', 'content': 'You are Cerebra, a helpful assistant that pulls a user\'s personal data to help them know themselves better. You answer the user\'s question concisely and helpfully.\nAdditional Guidelines:\nYou may receive a tool output that contains a text placeholder for a plot. In your response, place the placeholder text directly at the end of the sentence or phrase after which the user should see the plot. Please do this since the user will see the plot in a separate window. Aside from showing the plot, you may reference it depending on the context of the conversation. If you reference the plot, say something along the lines of "...and here is a plot that shows...<describe>.". This is to ensure that the conversation is as natural as possible.\nHere is an example:\n"...and here is a plot that shows the average sleep over time.<P-45L>"\nMake sure the placeholder is at the end of the response with NO punctuation after it.\nA placeholder will take this form: "<P-45L>". The only differences will be the three characters after the dash.\n\nBegin!'}
+2024-03-13 05:50:04,255 - INFO - START system: {'role': 'system', 'content': 'You are Ewandi, a helpful assistant that pulls a user\'s personal data to help them know themselves better. You answer the user\'s question concisely and helpfully.\nAdditional Guidelines:\nYou may receive a tool output that contains a text placeholder for a plot. In your response, place the placeholder text directly at the end of the sentence or phrase after which the user should see the plot. Please do this since the user will see the plot in a separate window. Aside from showing the plot, you may reference it depending on the context of the conversation. If you reference the plot, say something along the lines of "...and here is a plot that shows...<describe>.". This is to ensure that the conversation is as natural as possible.\nHere is an example:\n"...and here is a plot that shows the average sleep over time.<P-45L>"\nMake sure the placeholder is at the end of the response with NO punctuation after it.\nA placeholder will take this form: "<P-45L>". The only differences will be the three characters after the dash.\n\nBegin!'}
 2024-03-13 05:50:04,255 - INFO - START user: {'role': 'user', 'content': 'How many times did I have computer programming homework?'}
 2024-03-13 05:50:05,089 - INFO - process_tool_chunks: {'role': 'assistant', 'content': None, 'tool_calls': [{'id': 'call_4y0vwkIT2v0tHtYKJ5ju4ARx', 'function': {'name': 'single_event_count', 'arguments': '{"v":"computer programming homework"}'}, 'type': 'function'}]}
 2024-03-13 05:50:05,091 - ERROR - Error: Traceback (most recent call last):
-  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/cerebra/src/llm/chat/sessions.py", line 78, in completion_request
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/ewandi/src/llm/chat/sessions.py", line 78, in completion_request
     general_completion_request(
-  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/cerebra/src/llm/chat/chat.py", line 63, in general_completion_request
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/ewandi/src/llm/chat/chat.py", line 63, in general_completion_request
     process_completion(session, **input_completions_kwargs)
-  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/cerebra/src/llm/chat/chat.py", line 425, in process_completion
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/ewandi/src/llm/chat/chat.py", line 425, in process_completion
     parse_stream(session, completion_generator)
-  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/cerebra/src/llm/chat/chat.py", line 418, in parse_stream
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/ewandi/src/llm/chat/chat.py", line 418, in parse_stream
     chunk_handler.process_chunks()
-  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/cerebra/src/llm/chat/chat.py", line 280, in process_chunks
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/ewandi/src/llm/chat/chat.py", line 280, in process_chunks
     self.process_tool_chunks()
-  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/cerebra/src/llm/chat/chat.py", line 368, in process_tool_chunks
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/ewandi/src/llm/chat/chat.py", line 368, in process_tool_chunks
     t_return = get_tool_return(self.session, t_response)
-  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/cerebra/src/llm/chat/chat.py", line 197, in get_tool_return
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/ewandi/src/llm/chat/chat.py", line 197, in get_tool_return
     content = call_function(function_name, arguments, session.user.userid)
-  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/cerebra/src/llm/chat/chat.py", line 171, in call_function
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/ewandi/src/llm/chat/chat.py", line 171, in call_function
     func_output = func(*args, **kwargs)
-  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/cerebra/src/llm/my_tools/tool_funcs.py", line 48, in single_event_count
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/ewandi/src/llm/my_tools/tool_funcs.py", line 48, in single_event_count
     events = validate_input(v, p, dr, tr, d)
-  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/cerebra/src/llm/my_tools/validation.py", line 30, in validate_input
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/ewandi/src/llm/my_tools/validation.py", line 30, in validate_input
     return _validate(v, p, dr, tr, d)
-  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/cerebra/src/llm/my_tools/validation.py", line 52, in _validate
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/ewandi/src/llm/my_tools/validation.py", line 52, in _validate
     events = get_events(profile="llm_v1")
-  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/cerebra/src/server/retrieve.py", line 25, in get_events
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/ewandi/src/server/retrieve.py", line 25, in get_events
     data = get_data("events", profile=profile)
-  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/cerebra/src/server/retrieve.py", line 8, in get_data
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/ewandi/src/server/retrieve.py", line 8, in get_data
     profiles = connect_to_collection()
-  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/cerebra/src/server/connect.py", line 57, in connect_to_collection
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/ewandi/src/server/connect.py", line 57, in connect_to_collection
     db = connect_to_db()
-  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/cerebra/src/server/connect.py", line 34, in connect_to_db
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/ewandi/src/server/connect.py", line 34, in connect_to_db
     client.admin.command("ping")
 UnboundLocalError: local variable 'client' referenced before assignment
 
 2024-03-13 05:51:17,944 - INFO - -----STARTING NEW SESSION-----
-2024-03-13 05:51:17,959 - INFO - START system: {'role': 'system', 'content': 'You are Cerebra, a helpful assistant that pulls a user\'s personal data to help them know themselves better. You answer the user\'s question concisely and helpfully.\nAdditional Guidelines:\nYou may receive a tool output that contains a text placeholder for a plot. In your response, place the placeholder text directly at the end of the sentence or phrase after which the user should see the plot. Please do this since the user will see the plot in a separate window. Aside from showing the plot, you may reference it depending on the context of the conversation. If you reference the plot, say something along the lines of "...and here is a plot that shows...<describe>.". This is to ensure that the conversation is as natural as possible.\nHere is an example:\n"...and here is a plot that shows the average sleep over time.<P-45L>"\nMake sure the placeholder is at the end of the response with NO punctuation after it.\nA placeholder will take this form: "<P-45L>". The only differences will be the three characters after the dash.\n\nBegin!'}
+2024-03-13 05:51:17,959 - INFO - START system: {'role': 'system', 'content': 'You are Ewandi, a helpful assistant that pulls a user\'s personal data to help them know themselves better. You answer the user\'s question concisely and helpfully.\nAdditional Guidelines:\nYou may receive a tool output that contains a text placeholder for a plot. In your response, place the placeholder text directly at the end of the sentence or phrase after which the user should see the plot. Please do this since the user will see the plot in a separate window. Aside from showing the plot, you may reference it depending on the context of the conversation. If you reference the plot, say something along the lines of "...and here is a plot that shows...<describe>.". This is to ensure that the conversation is as natural as possible.\nHere is an example:\n"...and here is a plot that shows the average sleep over time.<P-45L>"\nMake sure the placeholder is at the end of the response with NO punctuation after it.\nA placeholder will take this form: "<P-45L>". The only differences will be the three characters after the dash.\n\nBegin!'}
 2024-03-13 05:51:17,959 - INFO - START user: {'role': 'user', 'content': 'How many times did I have computer programming homework?'}
 2024-03-13 05:51:19,165 - INFO - process_tool_chunks: {'role': 'assistant', 'content': None, 'tool_calls': [{'id': 'call_6sefomRm0hbDysJxJWZsgbKk', 'function': {'name': 'single_event_count', 'arguments': '{"v":"computer programming homework"}'}, 'type': 'function'}]}
 2024-03-13 05:51:19,168 - ERROR - Error: Traceback (most recent call last):
-  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/cerebra/src/llm/chat/sessions.py", line 78, in completion_request
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/ewandi/src/llm/chat/sessions.py", line 78, in completion_request
     general_completion_request(
-  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/cerebra/src/llm/chat/chat.py", line 63, in general_completion_request
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/ewandi/src/llm/chat/chat.py", line 63, in general_completion_request
     process_completion(session, **input_completions_kwargs)
-  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/cerebra/src/llm/chat/chat.py", line 425, in process_completion
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/ewandi/src/llm/chat/chat.py", line 425, in process_completion
     parse_stream(session, completion_generator)
-  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/cerebra/src/llm/chat/chat.py", line 418, in parse_stream
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/ewandi/src/llm/chat/chat.py", line 418, in parse_stream
     chunk_handler.process_chunks()
-  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/cerebra/src/llm/chat/chat.py", line 280, in process_chunks
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/ewandi/src/llm/chat/chat.py", line 280, in process_chunks
     self.process_tool_chunks()
-  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/cerebra/src/llm/chat/chat.py", line 368, in process_tool_chunks
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/ewandi/src/llm/chat/chat.py", line 368, in process_tool_chunks
     t_return = get_tool_return(self.session, t_response)
-  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/cerebra/src/llm/chat/chat.py", line 197, in get_tool_return
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/ewandi/src/llm/chat/chat.py", line 197, in get_tool_return
     content = call_function(function_name, arguments, session.user.userid)
-  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/cerebra/src/llm/chat/chat.py", line 171, in call_function
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/ewandi/src/llm/chat/chat.py", line 171, in call_function
     func_output = func(*args, **kwargs)
-  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/cerebra/src/llm/my_tools/tool_funcs.py", line 48, in single_event_count
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/ewandi/src/llm/my_tools/tool_funcs.py", line 48, in single_event_count
     events = validate_input(v, p, dr, tr, d)
-  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/cerebra/src/llm/my_tools/validation.py", line 30, in validate_input
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/ewandi/src/llm/my_tools/validation.py", line 30, in validate_input
     return _validate(v, p, dr, tr, d)
-  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/cerebra/src/llm/my_tools/validation.py", line 52, in _validate
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/ewandi/src/llm/my_tools/validation.py", line 52, in _validate
     events = get_events(profile="llm_v1")
-  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/cerebra/src/server/retrieve.py", line 25, in get_events
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/ewandi/src/server/retrieve.py", line 25, in get_events
     data = get_data("events", profile=profile)
-  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/cerebra/src/server/retrieve.py", line 8, in get_data
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/ewandi/src/server/retrieve.py", line 8, in get_data
     profiles = connect_to_collection()
-  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/cerebra/src/server/connect.py", line 59, in connect_to_collection
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/ewandi/src/server/connect.py", line 59, in connect_to_collection
     db = connect_to_db()
-  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/cerebra/src/server/connect.py", line 25, in connect_to_db
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/ewandi/src/server/connect.py", line 25, in connect_to_db
     client = MongoClient(
   File "/Users/brianlerner/miniconda3/envs/c4/lib/python3.10/site-packages/pymongo/mongo_client.py", line 670, in __init__
     res = uri_parser.parse_uri(
@@ -214,11 +214,11 @@ pymongo.errors.ConfigurationError: The "dnspython" module must be installed to u
  /Users/brianlerner/miniconda3/envs/c4/bin/python -m pip install "pymongo[srv]"
 
 2024-03-13 05:51:59,598 - INFO - -----STARTING NEW SESSION-----
-2024-03-13 05:51:59,612 - INFO - START system: {'role': 'system', 'content': 'You are Cerebra, a helpful assistant that pulls a user\'s personal data to help them know themselves better. You answer the user\'s question concisely and helpfully.\nAdditional Guidelines:\nYou may receive a tool output that contains a text placeholder for a plot. In your response, place the placeholder text directly at the end of the sentence or phrase after which the user should see the plot. Please do this since the user will see the plot in a separate window. Aside from showing the plot, you may reference it depending on the context of the conversation. If you reference the plot, say something along the lines of "...and here is a plot that shows...<describe>.". This is to ensure that the conversation is as natural as possible.\nHere is an example:\n"...and here is a plot that shows the average sleep over time.<P-45L>"\nMake sure the placeholder is at the end of the response with NO punctuation after it.\nA placeholder will take this form: "<P-45L>". The only differences will be the three characters after the dash.\n\nBegin!'}
+2024-03-13 05:51:59,612 - INFO - START system: {'role': 'system', 'content': 'You are Ewandi, a helpful assistant that pulls a user\'s personal data to help them know themselves better. You answer the user\'s question concisely and helpfully.\nAdditional Guidelines:\nYou may receive a tool output that contains a text placeholder for a plot. In your response, place the placeholder text directly at the end of the sentence or phrase after which the user should see the plot. Please do this since the user will see the plot in a separate window. Aside from showing the plot, you may reference it depending on the context of the conversation. If you reference the plot, say something along the lines of "...and here is a plot that shows...<describe>.". This is to ensure that the conversation is as natural as possible.\nHere is an example:\n"...and here is a plot that shows the average sleep over time.<P-45L>"\nMake sure the placeholder is at the end of the response with NO punctuation after it.\nA placeholder will take this form: "<P-45L>". The only differences will be the three characters after the dash.\n\nBegin!'}
 2024-03-13 05:51:59,612 - INFO - START user: {'role': 'user', 'content': 'How many times did I have computer programming homework?'}
 2024-03-13 05:52:00,458 - INFO - process_tool_chunks: {'role': 'assistant', 'content': None, 'tool_calls': [{'id': 'call_DfaSpI2gpHI0eALjjiIaytpp', 'function': {'name': 'single_event_count', 'arguments': '{"v":"computer programming homework"}'}, 'type': 'function'}]}
 2024-03-13 05:52:00,461 - ERROR - Error: Traceback (most recent call last):
-  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/cerebra/src/server/connect.py", line 25, in connect_to_db
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/ewandi/src/server/connect.py", line 25, in connect_to_db
     client = MongoClient(
   File "/Users/brianlerner/miniconda3/envs/c4/lib/python3.10/site-packages/pymongo/mongo_client.py", line 670, in __init__
     res = uri_parser.parse_uri(
@@ -230,48 +230,48 @@ pymongo.errors.ConfigurationError: The "dnspython" module must be installed to u
 During handling of the above exception, another exception occurred:
 
 Traceback (most recent call last):
-  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/cerebra/src/llm/chat/sessions.py", line 78, in completion_request
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/ewandi/src/llm/chat/sessions.py", line 78, in completion_request
     general_completion_request(
-  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/cerebra/src/llm/chat/chat.py", line 63, in general_completion_request
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/ewandi/src/llm/chat/chat.py", line 63, in general_completion_request
     process_completion(session, **input_completions_kwargs)
-  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/cerebra/src/llm/chat/chat.py", line 425, in process_completion
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/ewandi/src/llm/chat/chat.py", line 425, in process_completion
     parse_stream(session, completion_generator)
-  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/cerebra/src/llm/chat/chat.py", line 418, in parse_stream
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/ewandi/src/llm/chat/chat.py", line 418, in parse_stream
     chunk_handler.process_chunks()
-  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/cerebra/src/llm/chat/chat.py", line 280, in process_chunks
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/ewandi/src/llm/chat/chat.py", line 280, in process_chunks
     self.process_tool_chunks()
-  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/cerebra/src/llm/chat/chat.py", line 368, in process_tool_chunks
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/ewandi/src/llm/chat/chat.py", line 368, in process_tool_chunks
     t_return = get_tool_return(self.session, t_response)
-  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/cerebra/src/llm/chat/chat.py", line 197, in get_tool_return
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/ewandi/src/llm/chat/chat.py", line 197, in get_tool_return
     content = call_function(function_name, arguments, session.user.userid)
-  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/cerebra/src/llm/chat/chat.py", line 171, in call_function
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/ewandi/src/llm/chat/chat.py", line 171, in call_function
     func_output = func(*args, **kwargs)
-  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/cerebra/src/llm/my_tools/tool_funcs.py", line 48, in single_event_count
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/ewandi/src/llm/my_tools/tool_funcs.py", line 48, in single_event_count
     events = validate_input(v, p, dr, tr, d)
-  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/cerebra/src/llm/my_tools/validation.py", line 30, in validate_input
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/ewandi/src/llm/my_tools/validation.py", line 30, in validate_input
     return _validate(v, p, dr, tr, d)
-  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/cerebra/src/llm/my_tools/validation.py", line 52, in _validate
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/ewandi/src/llm/my_tools/validation.py", line 52, in _validate
     events = get_events(profile="llm_v1")
-  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/cerebra/src/server/retrieve.py", line 25, in get_events
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/ewandi/src/server/retrieve.py", line 25, in get_events
     data = get_data("events", profile=profile)
-  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/cerebra/src/server/retrieve.py", line 8, in get_data
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/ewandi/src/server/retrieve.py", line 8, in get_data
     profiles = connect_to_collection()
-  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/cerebra/src/server/connect.py", line 59, in connect_to_collection
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/ewandi/src/server/connect.py", line 59, in connect_to_collection
     db = connect_to_db()
-  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/cerebra/src/server/connect.py", line 31, in connect_to_db
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/ewandi/src/server/connect.py", line 31, in connect_to_db
     raise ConfigurationError
 pymongo.errors.ConfigurationError
 
 2024-03-13 05:52:18,774 - INFO - -----STARTING NEW SESSION-----
-2024-03-13 05:52:18,787 - INFO - START system: {'role': 'system', 'content': 'You are Cerebra, a helpful assistant that pulls a user\'s personal data to help them know themselves better. You answer the user\'s question concisely and helpfully.\nAdditional Guidelines:\nYou may receive a tool output that contains a text placeholder for a plot. In your response, place the placeholder text directly at the end of the sentence or phrase after which the user should see the plot. Please do this since the user will see the plot in a separate window. Aside from showing the plot, you may reference it depending on the context of the conversation. If you reference the plot, say something along the lines of "...and here is a plot that shows...<describe>.". This is to ensure that the conversation is as natural as possible.\nHere is an example:\n"...and here is a plot that shows the average sleep over time.<P-45L>"\nMake sure the placeholder is at the end of the response with NO punctuation after it.\nA placeholder will take this form: "<P-45L>". The only differences will be the three characters after the dash.\n\nBegin!'}
+2024-03-13 05:52:18,787 - INFO - START system: {'role': 'system', 'content': 'You are Ewandi, a helpful assistant that pulls a user\'s personal data to help them know themselves better. You answer the user\'s question concisely and helpfully.\nAdditional Guidelines:\nYou may receive a tool output that contains a text placeholder for a plot. In your response, place the placeholder text directly at the end of the sentence or phrase after which the user should see the plot. Please do this since the user will see the plot in a separate window. Aside from showing the plot, you may reference it depending on the context of the conversation. If you reference the plot, say something along the lines of "...and here is a plot that shows...<describe>.". This is to ensure that the conversation is as natural as possible.\nHere is an example:\n"...and here is a plot that shows the average sleep over time.<P-45L>"\nMake sure the placeholder is at the end of the response with NO punctuation after it.\nA placeholder will take this form: "<P-45L>". The only differences will be the three characters after the dash.\n\nBegin!'}
 2024-03-13 05:52:18,787 - INFO - START user: {'role': 'user', 'content': 'How many times did I have computer programming homework?'}
 2024-03-13 05:52:19,886 - INFO - process_tool_chunks: {'role': 'assistant', 'content': None, 'tool_calls': [{'id': 'call_C61805lsO41UKO1neP2FHO2z', 'function': {'name': 'single_event_count', 'arguments': '{"v":"computer programming homework"}'}, 'type': 'function'}]}
 2024-03-13 05:52:49,238 - INFO - -----STARTING NEW SESSION-----
-2024-03-13 05:52:49,252 - INFO - START system: {'role': 'system', 'content': 'You are Cerebra, a helpful assistant that pulls a user\'s personal data to help them know themselves better. You answer the user\'s question concisely and helpfully.\nAdditional Guidelines:\nYou may receive a tool output that contains a text placeholder for a plot. In your response, place the placeholder text directly at the end of the sentence or phrase after which the user should see the plot. Please do this since the user will see the plot in a separate window. Aside from showing the plot, you may reference it depending on the context of the conversation. If you reference the plot, say something along the lines of "...and here is a plot that shows...<describe>.". This is to ensure that the conversation is as natural as possible.\nHere is an example:\n"...and here is a plot that shows the average sleep over time.<P-45L>"\nMake sure the placeholder is at the end of the response with NO punctuation after it.\nA placeholder will take this form: "<P-45L>". The only differences will be the three characters after the dash.\n\nBegin!'}
+2024-03-13 05:52:49,252 - INFO - START system: {'role': 'system', 'content': 'You are Ewandi, a helpful assistant that pulls a user\'s personal data to help them know themselves better. You answer the user\'s question concisely and helpfully.\nAdditional Guidelines:\nYou may receive a tool output that contains a text placeholder for a plot. In your response, place the placeholder text directly at the end of the sentence or phrase after which the user should see the plot. Please do this since the user will see the plot in a separate window. Aside from showing the plot, you may reference it depending on the context of the conversation. If you reference the plot, say something along the lines of "...and here is a plot that shows...<describe>.". This is to ensure that the conversation is as natural as possible.\nHere is an example:\n"...and here is a plot that shows the average sleep over time.<P-45L>"\nMake sure the placeholder is at the end of the response with NO punctuation after it.\nA placeholder will take this form: "<P-45L>". The only differences will be the three characters after the dash.\n\nBegin!'}
 2024-03-13 05:52:49,252 - INFO - START user: {'role': 'user', 'content': 'How many times did I have computer programming homework?'}
 2024-03-13 05:52:50,219 - INFO - process_tool_chunks: {'role': 'assistant', 'content': None, 'tool_calls': [{'id': 'call_edPzoIqNjrNzZ72CZkvwKw4g', 'function': {'name': 'single_event_count', 'arguments': '{"v":"computer programming homework"}'}, 'type': 'function'}]}
 2024-03-13 05:52:50,222 - ERROR - Error: Traceback (most recent call last):
-  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/cerebra/src/server/connect.py", line 25, in connect_to_db
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/ewandi/src/server/connect.py", line 25, in connect_to_db
     client = MongoClient(
   File "/Users/brianlerner/miniconda3/envs/c4/lib/python3.10/site-packages/pymongo/mongo_client.py", line 670, in __init__
     res = uri_parser.parse_uri(
@@ -283,44 +283,44 @@ pymongo.errors.ConfigurationError: The "dnspython" module must be installed to u
 During handling of the above exception, another exception occurred:
 
 Traceback (most recent call last):
-  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/cerebra/src/llm/chat/sessions.py", line 78, in completion_request
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/ewandi/src/llm/chat/sessions.py", line 78, in completion_request
     general_completion_request(
-  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/cerebra/src/llm/chat/chat.py", line 63, in general_completion_request
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/ewandi/src/llm/chat/chat.py", line 63, in general_completion_request
     process_completion(session, **input_completions_kwargs)
-  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/cerebra/src/llm/chat/chat.py", line 425, in process_completion
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/ewandi/src/llm/chat/chat.py", line 425, in process_completion
     parse_stream(session, completion_generator)
-  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/cerebra/src/llm/chat/chat.py", line 418, in parse_stream
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/ewandi/src/llm/chat/chat.py", line 418, in parse_stream
     chunk_handler.process_chunks()
-  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/cerebra/src/llm/chat/chat.py", line 280, in process_chunks
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/ewandi/src/llm/chat/chat.py", line 280, in process_chunks
     self.process_tool_chunks()
-  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/cerebra/src/llm/chat/chat.py", line 368, in process_tool_chunks
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/ewandi/src/llm/chat/chat.py", line 368, in process_tool_chunks
     t_return = get_tool_return(self.session, t_response)
-  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/cerebra/src/llm/chat/chat.py", line 197, in get_tool_return
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/ewandi/src/llm/chat/chat.py", line 197, in get_tool_return
     content = call_function(function_name, arguments, session.user.userid)
-  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/cerebra/src/llm/chat/chat.py", line 171, in call_function
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/ewandi/src/llm/chat/chat.py", line 171, in call_function
     func_output = func(*args, **kwargs)
-  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/cerebra/src/llm/my_tools/tool_funcs.py", line 48, in single_event_count
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/ewandi/src/llm/my_tools/tool_funcs.py", line 48, in single_event_count
     events = validate_input(v, p, dr, tr, d)
-  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/cerebra/src/llm/my_tools/validation.py", line 30, in validate_input
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/ewandi/src/llm/my_tools/validation.py", line 30, in validate_input
     return _validate(v, p, dr, tr, d)
-  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/cerebra/src/llm/my_tools/validation.py", line 52, in _validate
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/ewandi/src/llm/my_tools/validation.py", line 52, in _validate
     events = get_events(profile="llm_v1")
-  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/cerebra/src/server/retrieve.py", line 25, in get_events
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/ewandi/src/server/retrieve.py", line 25, in get_events
     data = get_data("events", profile=profile)
-  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/cerebra/src/server/retrieve.py", line 8, in get_data
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/ewandi/src/server/retrieve.py", line 8, in get_data
     profiles = connect_to_collection()
-  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/cerebra/src/server/connect.py", line 59, in connect_to_collection
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/ewandi/src/server/connect.py", line 59, in connect_to_collection
     db = connect_to_db()
-  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/cerebra/src/server/connect.py", line 31, in connect_to_db
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/ewandi/src/server/connect.py", line 31, in connect_to_db
     raise ConfigurationError
 pymongo.errors.ConfigurationError
 
 2024-03-13 05:53:16,323 - INFO - -----STARTING NEW SESSION-----
-2024-03-13 05:53:16,337 - INFO - START system: {'role': 'system', 'content': 'You are Cerebra, a helpful assistant that pulls a user\'s personal data to help them know themselves better. You answer the user\'s question concisely and helpfully.\nAdditional Guidelines:\nYou may receive a tool output that contains a text placeholder for a plot. In your response, place the placeholder text directly at the end of the sentence or phrase after which the user should see the plot. Please do this since the user will see the plot in a separate window. Aside from showing the plot, you may reference it depending on the context of the conversation. If you reference the plot, say something along the lines of "...and here is a plot that shows...<describe>.". This is to ensure that the conversation is as natural as possible.\nHere is an example:\n"...and here is a plot that shows the average sleep over time.<P-45L>"\nMake sure the placeholder is at the end of the response with NO punctuation after it.\nA placeholder will take this form: "<P-45L>". The only differences will be the three characters after the dash.\n\nBegin!'}
+2024-03-13 05:53:16,337 - INFO - START system: {'role': 'system', 'content': 'You are Ewandi, a helpful assistant that pulls a user\'s personal data to help them know themselves better. You answer the user\'s question concisely and helpfully.\nAdditional Guidelines:\nYou may receive a tool output that contains a text placeholder for a plot. In your response, place the placeholder text directly at the end of the sentence or phrase after which the user should see the plot. Please do this since the user will see the plot in a separate window. Aside from showing the plot, you may reference it depending on the context of the conversation. If you reference the plot, say something along the lines of "...and here is a plot that shows...<describe>.". This is to ensure that the conversation is as natural as possible.\nHere is an example:\n"...and here is a plot that shows the average sleep over time.<P-45L>"\nMake sure the placeholder is at the end of the response with NO punctuation after it.\nA placeholder will take this form: "<P-45L>". The only differences will be the three characters after the dash.\n\nBegin!'}
 2024-03-13 05:53:16,337 - INFO - START user: {'role': 'user', 'content': 'How many times did I have computer programming homework?'}
 2024-03-13 05:53:17,253 - INFO - process_tool_chunks: {'role': 'assistant', 'content': None, 'tool_calls': [{'id': 'call_9RypQlVlgVc8G3QqC5QX4MdO', 'function': {'name': 'single_event_count', 'arguments': '{"v":"computer programming homework"}'}, 'type': 'function'}]}
 2024-03-13 05:53:17,256 - ERROR - Error: Traceback (most recent call last):
-  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/cerebra/src/server/connect.py", line 25, in connect_to_db
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/ewandi/src/server/connect.py", line 25, in connect_to_db
     client = MongoClient(
   File "/Users/brianlerner/miniconda3/envs/c4/lib/python3.10/site-packages/pymongo/mongo_client.py", line 670, in __init__
     res = uri_parser.parse_uri(
@@ -332,44 +332,44 @@ pymongo.errors.ConfigurationError: The "dnspython" module must be installed to u
 During handling of the above exception, another exception occurred:
 
 Traceback (most recent call last):
-  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/cerebra/src/llm/chat/sessions.py", line 78, in completion_request
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/ewandi/src/llm/chat/sessions.py", line 78, in completion_request
     general_completion_request(
-  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/cerebra/src/llm/chat/chat.py", line 63, in general_completion_request
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/ewandi/src/llm/chat/chat.py", line 63, in general_completion_request
     process_completion(session, **input_completions_kwargs)
-  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/cerebra/src/llm/chat/chat.py", line 425, in process_completion
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/ewandi/src/llm/chat/chat.py", line 425, in process_completion
     parse_stream(session, completion_generator)
-  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/cerebra/src/llm/chat/chat.py", line 418, in parse_stream
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/ewandi/src/llm/chat/chat.py", line 418, in parse_stream
     chunk_handler.process_chunks()
-  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/cerebra/src/llm/chat/chat.py", line 280, in process_chunks
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/ewandi/src/llm/chat/chat.py", line 280, in process_chunks
     self.process_tool_chunks()
-  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/cerebra/src/llm/chat/chat.py", line 368, in process_tool_chunks
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/ewandi/src/llm/chat/chat.py", line 368, in process_tool_chunks
     t_return = get_tool_return(self.session, t_response)
-  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/cerebra/src/llm/chat/chat.py", line 197, in get_tool_return
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/ewandi/src/llm/chat/chat.py", line 197, in get_tool_return
     content = call_function(function_name, arguments, session.user.userid)
-  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/cerebra/src/llm/chat/chat.py", line 171, in call_function
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/ewandi/src/llm/chat/chat.py", line 171, in call_function
     func_output = func(*args, **kwargs)
-  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/cerebra/src/llm/my_tools/tool_funcs.py", line 48, in single_event_count
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/ewandi/src/llm/my_tools/tool_funcs.py", line 48, in single_event_count
     events = validate_input(v, p, dr, tr, d)
-  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/cerebra/src/llm/my_tools/validation.py", line 30, in validate_input
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/ewandi/src/llm/my_tools/validation.py", line 30, in validate_input
     return _validate(v, p, dr, tr, d)
-  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/cerebra/src/llm/my_tools/validation.py", line 52, in _validate
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/ewandi/src/llm/my_tools/validation.py", line 52, in _validate
     events = get_events(profile="llm_v1")
-  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/cerebra/src/server/retrieve.py", line 25, in get_events
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/ewandi/src/server/retrieve.py", line 25, in get_events
     data = get_data("events", profile=profile)
-  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/cerebra/src/server/retrieve.py", line 8, in get_data
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/ewandi/src/server/retrieve.py", line 8, in get_data
     profiles = connect_to_collection()
-  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/cerebra/src/server/connect.py", line 59, in connect_to_collection
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/ewandi/src/server/connect.py", line 59, in connect_to_collection
     db = connect_to_db()
-  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/cerebra/src/server/connect.py", line 31, in connect_to_db
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/ewandi/src/server/connect.py", line 31, in connect_to_db
     raise ConfigurationError
 pymongo.errors.ConfigurationError
 
 2024-03-13 05:55:40,834 - INFO - -----STARTING NEW SESSION-----
-2024-03-13 05:55:40,849 - INFO - START system: {'role': 'system', 'content': 'You are Cerebra, a helpful assistant that pulls a user\'s personal data to help them know themselves better. You answer the user\'s question concisely and helpfully.\nAdditional Guidelines:\nYou may receive a tool output that contains a text placeholder for a plot. In your response, place the placeholder text directly at the end of the sentence or phrase after which the user should see the plot. Please do this since the user will see the plot in a separate window. Aside from showing the plot, you may reference it depending on the context of the conversation. If you reference the plot, say something along the lines of "...and here is a plot that shows...<describe>.". This is to ensure that the conversation is as natural as possible.\nHere is an example:\n"...and here is a plot that shows the average sleep over time.<P-45L>"\nMake sure the placeholder is at the end of the response with NO punctuation after it.\nA placeholder will take this form: "<P-45L>". The only differences will be the three characters after the dash.\n\nBegin!'}
+2024-03-13 05:55:40,849 - INFO - START system: {'role': 'system', 'content': 'You are Ewandi, a helpful assistant that pulls a user\'s personal data to help them know themselves better. You answer the user\'s question concisely and helpfully.\nAdditional Guidelines:\nYou may receive a tool output that contains a text placeholder for a plot. In your response, place the placeholder text directly at the end of the sentence or phrase after which the user should see the plot. Please do this since the user will see the plot in a separate window. Aside from showing the plot, you may reference it depending on the context of the conversation. If you reference the plot, say something along the lines of "...and here is a plot that shows...<describe>.". This is to ensure that the conversation is as natural as possible.\nHere is an example:\n"...and here is a plot that shows the average sleep over time.<P-45L>"\nMake sure the placeholder is at the end of the response with NO punctuation after it.\nA placeholder will take this form: "<P-45L>". The only differences will be the three characters after the dash.\n\nBegin!'}
 2024-03-13 05:55:40,850 - INFO - START user: {'role': 'user', 'content': 'How many times did I have computer programming homework?'}
 2024-03-13 05:55:41,836 - INFO - process_tool_chunks: {'role': 'assistant', 'content': None, 'tool_calls': [{'id': 'call_c0NweoSAdxTKYmtQQk63CQnb', 'function': {'name': 'single_event_count', 'arguments': '{"v":"computer programming homework"}'}, 'type': 'function'}]}
 2024-03-13 05:55:41,839 - ERROR - Error: Traceback (most recent call last):
-  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/cerebra/src/server/connect.py", line 25, in connect_to_db
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/ewandi/src/server/connect.py", line 25, in connect_to_db
     client = MongoClient(
   File "/Users/brianlerner/miniconda3/envs/c4/lib/python3.10/site-packages/pymongo/mongo_client.py", line 670, in __init__
     res = uri_parser.parse_uri(
@@ -381,40 +381,40 @@ pymongo.errors.ConfigurationError: The "dnspython" module must be installed to u
 During handling of the above exception, another exception occurred:
 
 Traceback (most recent call last):
-  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/cerebra/src/llm/chat/sessions.py", line 81, in completion_request
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/ewandi/src/llm/chat/sessions.py", line 81, in completion_request
     general_completion_request(
-  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/cerebra/src/llm/chat/chat.py", line 63, in general_completion_request
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/ewandi/src/llm/chat/chat.py", line 63, in general_completion_request
     process_completion(session, **input_completions_kwargs)
-  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/cerebra/src/llm/chat/chat.py", line 425, in process_completion
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/ewandi/src/llm/chat/chat.py", line 425, in process_completion
     parse_stream(session, completion_generator)
-  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/cerebra/src/llm/chat/chat.py", line 418, in parse_stream
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/ewandi/src/llm/chat/chat.py", line 418, in parse_stream
     chunk_handler.process_chunks()
-  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/cerebra/src/llm/chat/chat.py", line 280, in process_chunks
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/ewandi/src/llm/chat/chat.py", line 280, in process_chunks
     self.process_tool_chunks()
-  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/cerebra/src/llm/chat/chat.py", line 368, in process_tool_chunks
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/ewandi/src/llm/chat/chat.py", line 368, in process_tool_chunks
     t_return = get_tool_return(self.session, t_response)
-  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/cerebra/src/llm/chat/chat.py", line 197, in get_tool_return
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/ewandi/src/llm/chat/chat.py", line 197, in get_tool_return
     content = call_function(function_name, arguments, session.user.userid)
-  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/cerebra/src/llm/chat/chat.py", line 171, in call_function
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/ewandi/src/llm/chat/chat.py", line 171, in call_function
     func_output = func(*args, **kwargs)
-  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/cerebra/src/llm/my_tools/tool_funcs.py", line 48, in single_event_count
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/ewandi/src/llm/my_tools/tool_funcs.py", line 48, in single_event_count
     events = validate_input(v, p, dr, tr, d)
-  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/cerebra/src/llm/my_tools/validation.py", line 30, in validate_input
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/ewandi/src/llm/my_tools/validation.py", line 30, in validate_input
     return _validate(v, p, dr, tr, d)
-  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/cerebra/src/llm/my_tools/validation.py", line 52, in _validate
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/ewandi/src/llm/my_tools/validation.py", line 52, in _validate
     events = get_events(profile="llm_v1")
-  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/cerebra/src/server/retrieve.py", line 25, in get_events
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/ewandi/src/server/retrieve.py", line 25, in get_events
     data = get_data("events", profile=profile)
-  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/cerebra/src/server/retrieve.py", line 8, in get_data
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/ewandi/src/server/retrieve.py", line 8, in get_data
     profiles = connect_to_collection()
-  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/cerebra/src/server/connect.py", line 59, in connect_to_collection
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/ewandi/src/server/connect.py", line 59, in connect_to_collection
     db = connect_to_db()
-  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/cerebra/src/server/connect.py", line 31, in connect_to_db
+  File "/Users/brianlerner/Library/CloudStorage/OneDrive-DukeUniversity/Code/ewandi/src/server/connect.py", line 31, in connect_to_db
     raise ConfigurationError
 pymongo.errors.ConfigurationError
 
 2024-03-13 05:57:23,702 - INFO - -----STARTING NEW SESSION-----
-2024-03-13 05:57:23,713 - INFO - START system: {'role': 'system', 'content': 'You are Cerebra, a helpful assistant that pulls a user\'s personal data to help them know themselves better. You answer the user\'s question concisely and helpfully.\nAdditional Guidelines:\nYou may receive a tool output that contains a text placeholder for a plot. In your response, place the placeholder text directly at the end of the sentence or phrase after which the user should see the plot. Please do this since the user will see the plot in a separate window. Aside from showing the plot, you may reference it depending on the context of the conversation. If you reference the plot, say something along the lines of "...and here is a plot that shows...<describe>.". This is to ensure that the conversation is as natural as possible.\nHere is an example:\n"...and here is a plot that shows the average sleep over time.<P-45L>"\nMake sure the placeholder is at the end of the response with NO punctuation after it.\nA placeholder will take this form: "<P-45L>". The only differences will be the three characters after the dash.\n\nBegin!'}
+2024-03-13 05:57:23,713 - INFO - START system: {'role': 'system', 'content': 'You are Ewandi, a helpful assistant that pulls a user\'s personal data to help them know themselves better. You answer the user\'s question concisely and helpfully.\nAdditional Guidelines:\nYou may receive a tool output that contains a text placeholder for a plot. In your response, place the placeholder text directly at the end of the sentence or phrase after which the user should see the plot. Please do this since the user will see the plot in a separate window. Aside from showing the plot, you may reference it depending on the context of the conversation. If you reference the plot, say something along the lines of "...and here is a plot that shows...<describe>.". This is to ensure that the conversation is as natural as possible.\nHere is an example:\n"...and here is a plot that shows the average sleep over time.<P-45L>"\nMake sure the placeholder is at the end of the response with NO punctuation after it.\nA placeholder will take this form: "<P-45L>". The only differences will be the three characters after the dash.\n\nBegin!'}
 2024-03-13 05:57:23,713 - INFO - START user: {'role': 'user', 'content': 'How many times did I have computer programming homework?'}
 2024-03-13 05:57:24,576 - INFO - process_tool_chunks: {'role': 'assistant', 'content': None, 'tool_calls': [{'id': 'call_43HRfTju8nodKEK7NxyQF9Ko', 'function': {'name': 'single_event_count', 'arguments': '{"v":"computer programming homework"}'}, 'type': 'function'}]}
 2024-03-13 05:57:33,941 - INFO - Index(['name', 'description', 'all_day', 'category', 'parent_name', 'dtype',

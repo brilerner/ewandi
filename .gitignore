@@ -1,5 +1,6 @@
 .DS_Store
-secrets.toml
-.env
+# secrets.toml
+# .env
 */arch*/
 /logs
+.vscode

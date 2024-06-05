@@ -55,12 +55,12 @@ def _occurrence_default(events, type="events"):
         margin=dict(l=40, r=40, t=40, b=40),
         font=dict(size=10),  # Adjust font size for smaller labels if necessary
         # xaxis=dict(
-            # title_standoff=10  # Reduces the space between the x-axis title and the axis itself
+        # title_standoff=10  # Reduces the space between the x-axis title and the axis itself
         # ),
     )
     if type == "events":
         fig.update_layout(
-            yaxis_title="Event Type",
+            # yaxis_title="Event Type",
             yaxis=dict(
                 tickmode="array",
                 tickvals=list(event_type_mapping.values()),

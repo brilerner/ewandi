@@ -12,7 +12,8 @@ load_dotenv()
 # Local
 HOST = "localhost"
 PORT = 27017
-DATABASE_NAME = "EwandiDB"
+# DATABASE_NAME = "EwandiDB"
+DATABASE_NAME = "CerebraDB"
 TIMEOUT_MS = 500
 
 # Atlas

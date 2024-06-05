@@ -16,10 +16,10 @@ session = Session("brian", persistent_log=True, debug=debug)
 # prompt = "How often did I have a headache in the past month?"
 # prompt = "How many times did I have computer programming homework?"
 # prompt = "How many times did I have foot pain?"
-# prompt = "How many times have I played videogames?"
+prompt = "How many times have I played videogames?"
 # prompt = "How often did I go hiking from 6am to 12pm?"
 # prompt = "How often did I go hiking in the last month?"
-prompt = "What functions are you capable of performing?"
+# prompt = "What functions are you capable of performing?"
 # session.completion_request(prompt)
 
 

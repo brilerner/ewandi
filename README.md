@@ -1,21 +1,58 @@
 # ewandi
 
-In order to run the project, use the `environment.yml` file to install the required packages (`requirements.txt` should work too).
 
-Then, open a terminal in src/gui and run the following command:
-streamlit run app.py
 
-This will allow you to run the app in your browser. You will get bugs, but see `example_streamlit_interaction_060424`.png for a sense of how things should work. To get a sense of what data is available, see `notebooks/data_tour.ipynb`.
+**ewandi** is an experimental prototype exploring how personal health data could be analyzed, visualized, and queried through an agentic large language model (LLM) interface.
 
-The data that I'm using is stored in a cloud mongodb server. The `data/sim` contains the metadata used to construct the simulation.
+The project was created as a learning exercise to practice building server-backed applications, integrating LLM APIs, and developing interactive data visualizations. While motivated by the idea of helping users learn from their own health data, ewandi remains a prototype rather than a production system.
 
-The scripts that power everything are in `src`. 
+<img src="example_streamlit_interaction_060424.png" alt="description" width="600">
 
-- `analysis`: correlation of data; this is mainly still being workshopped
-- `gui`: the streamlit application
-- `llm`: all code related to chatbot functionality
-- `server`: mongodb related functions
-- `utils`: self-explanatory
-- `viz`: visualization functions
+---
 
-My recommendation would be to start from app.py and work your way through the code. There's not a ton of documentation, but I'm happy to answer any questions you might have. There are no correlation functions implemented now, but it won't take much to do so (that's the last ~10% remaining to a MVP that's worth a damn).
+## Overview
+
+ewandi combines:
+- Simulated personal health data
+- A MongoDB-backed data layer
+- Exploratory data analysis and visualization
+- A Streamlit-based interface
+- Early-stage LLM chatbot functionality
+
+---
+
+## Repository Structure
+src/
+
+├── analysis/ # Exploratory analysis (partial)
+
+├── gui/ # Streamlit application
+
+├── llm/ # LLM and chatbot logic
+
+├── server/ # MongoDB utilities
+
+├── utils/ # Shared helpers
+
+└── viz/ # Visualization functions
+
+Additional materials include simulated data metadata (`data/sim/`) and exploratory notebooks (`notebooks/`).
+
+---
+
+## Status
+
+- Prototype / learning sandbox
+- Core infrastructure implemented
+- Analysis features incomplete
+
+---
+
+## Running (Optional)
+
+```bash
+streamlit run src/gui/app.py
+```
+Dependencies can be installed via environment.yml or requirements.txt.
+
+Note: ewandi uses simulated data and is not intended for real-world health or medical use.
